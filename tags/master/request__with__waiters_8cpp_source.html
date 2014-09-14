@@ -131,60 +131,59 @@ $(document).ready(function(){initNavTree('request__with__waiters_8cpp_source.htm
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="algorithm.html">algorithm</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#a4fa2aa7c02479a74da5fa941572e3252">   25</a></span>&#160;<span class="keywordtype">bool</span> request_with_waiters::add_waiter(<a class="code" href="classstxxl_1_1onoff__switch.html">onoff_switch</a>* sw)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// this lock needs to be obtained before poll(), otherwise a race</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// condition might occur: the state might change and notify_waiters()</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// could be called between poll() and insert() resulting in waiter sw</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// never being notified</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (poll())                     <span class="comment">// request already finished</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    m_waiters.insert(sw);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#a888ccd25c1fe4c9d2374b499380c0eff">   43</a></span>&#160;<span class="keywordtype">void</span> request_with_waiters::delete_waiter(<a class="code" href="classstxxl_1_1onoff__switch.html">onoff_switch</a>* sw)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_waiters.erase(sw);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#a5552a19a8169029341e9dfa48b47f97f">   49</a></span>&#160;<span class="keywordtype">void</span> request_with_waiters::notify_waiters()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="group__stlalgo.html#ga86417fcd034d22a9cbfdddd951baff2f">std::for_each</a>(m_waiters.begin(),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  m_waiters.end(),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  std::mem_fun(&amp;onoff_switch::on)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  <a class="code" href="parallel_8h.html#a4dc4da00219c72e80e954f7ec14fc3e9">_STXXL_FORCE_SEQUENTIAL</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#aad7501e87b6ec9bf2f52a5c2896be82d">   58</a></span>&#160;<span class="keywordtype">size_t</span> request_with_waiters::num_waiters()</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> m_waiters.size();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#a4fa2aa7c02479a74da5fa941572e3252">   24</a></span>&#160;<span class="keywordtype">bool</span> request_with_waiters::add_waiter(<a class="code" href="classstxxl_1_1onoff__switch.html">onoff_switch</a>* sw)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// this lock needs to be obtained before poll(), otherwise a race</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// condition might occur: the state might change and notify_waiters()</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// could be called between poll() and insert() resulting in waiter sw</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// never being notified</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (poll())                     <span class="comment">// request already finished</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    m_waiters.insert(sw);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#a888ccd25c1fe4c9d2374b499380c0eff">   42</a></span>&#160;<span class="keywordtype">void</span> request_with_waiters::delete_waiter(<a class="code" href="classstxxl_1_1onoff__switch.html">onoff_switch</a>* sw)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_waiters.erase(sw);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#a5552a19a8169029341e9dfa48b47f97f">   48</a></span>&#160;<span class="keywordtype">void</span> request_with_waiters::notify_waiters()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="group__stlalgo.html#ga86417fcd034d22a9cbfdddd951baff2f">std::for_each</a>(m_waiters.begin(),</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  m_waiters.end(),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  std::mem_fun(&amp;onoff_switch::on)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  <a class="code" href="parallel_8h.html#a4dc4da00219c72e80e954f7ec14fc3e9">_STXXL_FORCE_SEQUENTIAL</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classstxxl_1_1request__with__waiters.html#aad7501e87b6ec9bf2f52a5c2896be82d">   57</a></span>&#160;<span class="keywordtype">size_t</span> request_with_waiters::num_waiters()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_waiters_mutex);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> m_waiters.size();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="onoff__switch_8h_html"><div class="ttname"><a href="onoff__switch_8h.html">onoff_switch.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1onoff__switch_html"><div class="ttname"><a href="classstxxl_1_1onoff__switch.html">stxxl::onoff_switch</a></div><div class="ttdef"><b>Definition:</b> <a href="onoff__switch_8h_source.html#l00029">onoff_switch.h:29</a></div></div>
+<div class="ttc" id="classstxxl_1_1onoff__switch_html"><div class="ttname"><a href="classstxxl_1_1onoff__switch.html">stxxl::onoff_switch</a></div><div class="ttdef"><b>Definition:</b> <a href="onoff__switch_8h_source.html#l00028">onoff_switch.h:28</a></div></div>
 <div class="ttc" id="request__with__waiters_8h_html"><div class="ttname"><a href="request__with__waiters_8h.html">request_with_waiters.h</a></div></div>
-<div class="ttc" id="group__stlalgo_html_ga86417fcd034d22a9cbfdddd951baff2f"><div class="ttname"><a href="group__stlalgo.html#ga86417fcd034d22a9cbfdddd951baff2f">stxxl::for_each</a></div><div class="ttdeci">UnaryFunction for_each(ExtIterator begin, ExtIterator end, UnaryFunction functor, int_type nbuffers=0)</div><div class="ttdoc">External equivalent of std::for_each, see stxxl::for_each. </div><div class="ttdef"><b>Definition:</b> <a href="scan_8h_source.html#l00051">scan.h:51</a></div></div>
+<div class="ttc" id="group__stlalgo_html_ga86417fcd034d22a9cbfdddd951baff2f"><div class="ttname"><a href="group__stlalgo.html#ga86417fcd034d22a9cbfdddd951baff2f">stxxl::for_each</a></div><div class="ttdeci">UnaryFunction for_each(ExtIterator begin, ExtIterator end, UnaryFunction functor, int_type nbuffers=0)</div><div class="ttdoc">External equivalent of std::for_each, see stxxl::for_each. </div><div class="ttdef"><b>Definition:</b> <a href="scan_8h_source.html#l00050">scan.h:50</a></div></div>
 <div class="ttc" id="parallel_8h_html"><div class="ttname"><a href="parallel_8h.html">parallel.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00106">mutex.h:106</a></div></div>
+<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00105">mutex.h:105</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="mutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="algorithm_html"><div class="ttname"><a href="algorithm.html">algorithm</a></div></div>
-<div class="ttc" id="parallel_8h_html_a4dc4da00219c72e80e954f7ec14fc3e9"><div class="ttname"><a href="parallel_8h.html#a4dc4da00219c72e80e954f7ec14fc3e9">_STXXL_FORCE_SEQUENTIAL</a></div><div class="ttdeci">#define _STXXL_FORCE_SEQUENTIAL</div><div class="ttdef"><b>Definition:</b> <a href="parallel_8h_source.html#l00051">parallel.h:51</a></div></div>
+<div class="ttc" id="parallel_8h_html_a4dc4da00219c72e80e954f7ec14fc3e9"><div class="ttname"><a href="parallel_8h.html#a4dc4da00219c72e80e954f7ec14fc3e9">_STXXL_FORCE_SEQUENTIAL</a></div><div class="ttdeci">#define _STXXL_FORCE_SEQUENTIAL</div><div class="ttdef"><b>Definition:</b> <a href="parallel_8h_source.html#l00050">parallel.h:50</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -192,10 +191,10 @@ $(document).ready(function(){initNavTree('request__with__waiters_8cpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="request__with__waiters_8cpp.html">request_with_waiters.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:03:26 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:04:21 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

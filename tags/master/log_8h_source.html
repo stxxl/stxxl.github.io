@@ -131,51 +131,50 @@ $(document).ready(function(){initNavTree('log_8h_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="namespace_8h.html">stxxl/bits/namespace.h</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="singleton_8h.html">stxxl/bits/singleton.h</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1logger.html">logger</a> : <span class="keyword">public</span> <a class="code" href="classstxxl_1_1singleton.html">singleton</a>&lt;logger&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#a568e0733d4add58a1c20947fbc9f8ad5">   27</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classstxxl_1_1singleton.html">singleton</a>&lt;<a class="code" href="classstxxl_1_1logger.html">logger</a>&gt;;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c">   29</a></span>&#160;    std::ofstream <a class="code" href="classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c">log_stream_</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10">   30</a></span>&#160;    std::ofstream <a class="code" href="classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10">errlog_stream_</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#ad974e41073802fc5a8f53dd33e8d7603">   31</a></span>&#160;    std::ofstream* <a class="code" href="classstxxl_1_1logger.html#ad974e41073802fc5a8f53dd33e8d7603">waitlog_stream_</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classstxxl_1_1logger.html">logger</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ~<a class="code" href="classstxxl_1_1logger.html">logger</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#a918245f8fcfb0a52ddfa3f6926050a9c">   37</a></span>&#160;    <span class="keyword">inline</span> std::ofstream &amp; <a class="code" href="classstxxl_1_1logger.html#a918245f8fcfb0a52ddfa3f6926050a9c">log_stream</a>()</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> log_stream_;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#ae438009b7faac4face1ad89a1cd0ed3e">   42</a></span>&#160;    <span class="keyword">inline</span> std::ofstream &amp; <a class="code" href="classstxxl_1_1logger.html#ae438009b7faac4face1ad89a1cd0ed3e">errlog_stream</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> errlog_stream_;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#af249725cda8359413b4167911ef90fd8">   47</a></span>&#160;    <span class="keyword">inline</span> std::ofstream * <a class="code" href="classstxxl_1_1logger.html#af249725cda8359413b4167911ef90fd8">waitlog_stream</a>()</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> waitlog_stream_;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_LOG_HEADER</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1logger.html">logger</a> : <span class="keyword">public</span> <a class="code" href="classstxxl_1_1singleton.html">singleton</a>&lt;logger&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#a568e0733d4add58a1c20947fbc9f8ad5">   26</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classstxxl_1_1singleton.html">singleton</a>&lt;<a class="code" href="classstxxl_1_1logger.html">logger</a>&gt;;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c">   28</a></span>&#160;    std::ofstream <a class="code" href="classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c">log_stream_</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10">   29</a></span>&#160;    std::ofstream <a class="code" href="classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10">errlog_stream_</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#ad974e41073802fc5a8f53dd33e8d7603">   30</a></span>&#160;    std::ofstream* <a class="code" href="classstxxl_1_1logger.html#ad974e41073802fc5a8f53dd33e8d7603">waitlog_stream_</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classstxxl_1_1logger.html">logger</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ~<a class="code" href="classstxxl_1_1logger.html">logger</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#a918245f8fcfb0a52ddfa3f6926050a9c">   36</a></span>&#160;    <span class="keyword">inline</span> std::ofstream &amp; <a class="code" href="classstxxl_1_1logger.html#a918245f8fcfb0a52ddfa3f6926050a9c">log_stream</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> log_stream_;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#ae438009b7faac4face1ad89a1cd0ed3e">   41</a></span>&#160;    <span class="keyword">inline</span> std::ofstream &amp; <a class="code" href="classstxxl_1_1logger.html#ae438009b7faac4face1ad89a1cd0ed3e">errlog_stream</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> errlog_stream_;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classstxxl_1_1logger.html#af249725cda8359413b4167911ef90fd8">   46</a></span>&#160;    <span class="keyword">inline</span> std::ofstream * <a class="code" href="classstxxl_1_1logger.html#af249725cda8359413b4167911ef90fd8">waitlog_stream</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> waitlog_stream_;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_LOG_HEADER</span></div>
 <div class="ttc" id="singleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html_a918245f8fcfb0a52ddfa3f6926050a9c"><div class="ttname"><a href="classstxxl_1_1logger.html#a918245f8fcfb0a52ddfa3f6926050a9c">stxxl::logger::log_stream</a></div><div class="ttdeci">std::ofstream &amp; log_stream()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00037">log.h:37</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html_a918245f8fcfb0a52ddfa3f6926050a9c"><div class="ttname"><a href="classstxxl_1_1logger.html#a918245f8fcfb0a52ddfa3f6926050a9c">stxxl::logger::log_stream</a></div><div class="ttdeci">std::ofstream &amp; log_stream()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00036">log.h:36</a></div></div>
 <div class="ttc" id="namespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
-<div class="ttc" id="classstxxl_1_1singleton_html"><div class="ttname"><a href="classstxxl_1_1singleton.html">stxxl::singleton</a></div><div class="ttdef"><b>Definition:</b> <a href="singleton_8h_source.html#l00027">singleton.h:27</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html_a908b4602e9be349baa97e793bafa517c"><div class="ttname"><a href="classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c">stxxl::logger::log_stream_</a></div><div class="ttdeci">std::ofstream log_stream_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00029">log.h:29</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html_af249725cda8359413b4167911ef90fd8"><div class="ttname"><a href="classstxxl_1_1logger.html#af249725cda8359413b4167911ef90fd8">stxxl::logger::waitlog_stream</a></div><div class="ttdeci">std::ofstream * waitlog_stream()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00047">log.h:47</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html_ad974e41073802fc5a8f53dd33e8d7603"><div class="ttname"><a href="classstxxl_1_1logger.html#ad974e41073802fc5a8f53dd33e8d7603">stxxl::logger::waitlog_stream_</a></div><div class="ttdeci">std::ofstream * waitlog_stream_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html_ad100164ceb5b040a13cb8436a4233b10"><div class="ttname"><a href="classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10">stxxl::logger::errlog_stream_</a></div><div class="ttdeci">std::ofstream errlog_stream_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00030">log.h:30</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html_ae438009b7faac4face1ad89a1cd0ed3e"><div class="ttname"><a href="classstxxl_1_1logger.html#ae438009b7faac4face1ad89a1cd0ed3e">stxxl::logger::errlog_stream</a></div><div class="ttdeci">std::ofstream &amp; errlog_stream()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00042">log.h:42</a></div></div>
-<div class="ttc" id="classstxxl_1_1logger_html"><div class="ttname"><a href="classstxxl_1_1logger.html">stxxl::logger</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00025">log.h:25</a></div></div>
+<div class="ttc" id="classstxxl_1_1singleton_html"><div class="ttname"><a href="classstxxl_1_1singleton.html">stxxl::singleton</a></div><div class="ttdef"><b>Definition:</b> <a href="singleton_8h_source.html#l00026">singleton.h:26</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html_a908b4602e9be349baa97e793bafa517c"><div class="ttname"><a href="classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c">stxxl::logger::log_stream_</a></div><div class="ttdeci">std::ofstream log_stream_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00028">log.h:28</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html_af249725cda8359413b4167911ef90fd8"><div class="ttname"><a href="classstxxl_1_1logger.html#af249725cda8359413b4167911ef90fd8">stxxl::logger::waitlog_stream</a></div><div class="ttdeci">std::ofstream * waitlog_stream()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00046">log.h:46</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html_ad974e41073802fc5a8f53dd33e8d7603"><div class="ttname"><a href="classstxxl_1_1logger.html#ad974e41073802fc5a8f53dd33e8d7603">stxxl::logger::waitlog_stream_</a></div><div class="ttdeci">std::ofstream * waitlog_stream_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00030">log.h:30</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html_ad100164ceb5b040a13cb8436a4233b10"><div class="ttname"><a href="classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10">stxxl::logger::errlog_stream_</a></div><div class="ttdeci">std::ofstream errlog_stream_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00029">log.h:29</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html_ae438009b7faac4face1ad89a1cd0ed3e"><div class="ttname"><a href="classstxxl_1_1logger.html#ae438009b7faac4face1ad89a1cd0ed3e">stxxl::logger::errlog_stream</a></div><div class="ttdeci">std::ofstream &amp; errlog_stream()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00041">log.h:41</a></div></div>
+<div class="ttc" id="classstxxl_1_1logger_html"><div class="ttname"><a href="classstxxl_1_1logger.html">stxxl::logger</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00024">log.h:24</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -183,10 +182,10 @@ $(document).ready(function(){initNavTree('log_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_c603cd6ede12b974eecb818db9d72642.html">common</a></li><li class="navelem"><a class="el" href="log_8h.html">log.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:52 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:03:23 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

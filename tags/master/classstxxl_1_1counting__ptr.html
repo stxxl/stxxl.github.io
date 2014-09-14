@@ -127,7 +127,7 @@ class stxxl::counting_ptr&lt; Type &gt;</h3>
 <p>Accompanying the <a class="el" href="classstxxl_1_1counting__ptr.html" title="High-performance smart pointer used as a wrapping reference counting pointer. ">counting_ptr</a> is a <a class="el" href="classstxxl_1_1const__counting__ptr.html" title="High-performance smart pointer used as a wrapping reference counting pointer. ">const_counting_ptr</a> and a class <a class="el" href="classstxxl_1_1counted__object.html" title="Provides reference counting abilities for use with counting_ptr. ">counted_object</a>, from which reference counted classes must be derive from. The class <a class="el" href="classstxxl_1_1counted__object.html" title="Provides reference counting abilities for use with counting_ptr. ">counted_object</a> implement all methods required for reference counting.</p>
 <p>The whole method is more similar to boost' instrusive_ptr, but also yields something resembling shared_ptr. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00048">48</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00047">47</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::counting_ptr&lt; Type &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -233,7 +233,7 @@ template&lt;class Type&gt; </div>
 
 <p>contained type. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00052">52</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00051">51</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ template&lt;class Type&gt; </div>
 
 <p>default constructor: contains a NULL pointer. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00073">73</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00072">72</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ template&lt;class Type&gt; </div>
 
 <p>constructor with pointer: initializes new reference to ptr. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00077">77</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00076">76</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ template&lt;class Type&gt; </div>
 
 <p>copy-constructor: also initializes new reference to ptr. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00081">81</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00080">80</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ template&lt;class Type&gt; </div>
 
 <p>destructor: decrements reference counter in ptr. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00098">98</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00097">97</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ template&lt;class Type&gt; </div>
 
 <p>decrement reference counter of current object and maybe delete it. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00068">68</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00067">67</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -411,9 +411,9 @@ template&lt;class Type&gt; </div>
 
 <p>test for a NULL pointer </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00140">140</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00139">139</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
-<p>Referenced by <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00053">stxxl::request_queue_impl_1q::add_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00052">stxxl::request_queue_impl_qwqr::add_request()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00077">stxxl::linuxaio_queue::add_request()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00079">stxxl::request_queue_impl_1q::cancel_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00097">stxxl::request_queue_impl_qwqr::cancel_request()</a>, and <a class="el" href="linuxaio__queue_8cpp_source.html#l00092">stxxl::linuxaio_queue::cancel_request()</a>.</p>
+<p>Referenced by <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00053">stxxl::request_queue_impl_1q::add_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00052">stxxl::request_queue_impl_qwqr::add_request()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00076">stxxl::linuxaio_queue::add_request()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00079">stxxl::request_queue_impl_1q::cancel_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00097">stxxl::request_queue_impl_qwqr::cancel_request()</a>, and <a class="el" href="linuxaio__queue_8cpp_source.html#l00091">stxxl::linuxaio_queue::cancel_request()</a>.</p>
 
 </div>
 </div>
@@ -442,9 +442,9 @@ template&lt;class Type&gt; </div>
 
 <p>return the enclosed pointer. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00120">120</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00119">119</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
-<p>Referenced by <a class="el" href="disk__queues_8h_source.html#l00053">stxxl::disk_queues::add_request()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00053">stxxl::request_queue_impl_1q::add_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00052">stxxl::request_queue_impl_qwqr::add_request()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00077">stxxl::linuxaio_queue::add_request()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00079">stxxl::request_queue_impl_1q::cancel_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00097">stxxl::request_queue_impl_qwqr::cancel_request()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00092">stxxl::linuxaio_queue::cancel_request()</a>, <a class="el" href="counting__ptr_8h_source.html#l00285">stxxl::const_counting_ptr&lt; Type &gt;::operator!=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00234">stxxl::const_counting_ptr&lt; Type &gt;::operator=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00281">stxxl::const_counting_ptr&lt; Type &gt;::operator==()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00148">stxxl::linuxaio_queue::post_requests()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00111">stxxl::request_queue_impl_1q::worker()</a>, and <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00142">stxxl::request_queue_impl_qwqr::worker()</a>.</p>
+<p>Referenced by <a class="el" href="disk__queues_8h_source.html#l00052">stxxl::disk_queues::add_request()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00053">stxxl::request_queue_impl_1q::add_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00052">stxxl::request_queue_impl_qwqr::add_request()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00076">stxxl::linuxaio_queue::add_request()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00079">stxxl::request_queue_impl_1q::cancel_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00097">stxxl::request_queue_impl_qwqr::cancel_request()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00091">stxxl::linuxaio_queue::cancel_request()</a>, <a class="el" href="counting__ptr_8h_source.html#l00284">stxxl::const_counting_ptr&lt; Type &gt;::operator!=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00233">stxxl::const_counting_ptr&lt; Type &gt;::operator=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00280">stxxl::const_counting_ptr&lt; Type &gt;::operator==()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00147">stxxl::linuxaio_queue::post_requests()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00111">stxxl::request_queue_impl_1q::worker()</a>, and <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00142">stxxl::request_queue_impl_qwqr::worker()</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ template&lt;class Type&gt; </div>
 
 <p>increment reference counter for current object. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00060">60</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00059">59</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +503,7 @@ template&lt;class Type&gt; </div>
 
 <p>increment reference counter of other object. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00064">64</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00063">63</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +532,7 @@ template&lt;class Type&gt; </div>
 
 <p>cast to bool check for a NULL pointer </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00132">132</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00131">131</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ template&lt;class Type&gt; </div>
 
 <p>implicit cast to the enclosed pointer. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00116">116</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00115">115</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +591,7 @@ template&lt;class Type&gt; </div>
 
 <p>test inequality of only the pointer values. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00128">128</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00127">127</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ template&lt;class Type&gt; </div>
 
 <p>return the enclosed object as reference. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00102">102</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00101">101</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +649,7 @@ template&lt;class Type&gt; </div>
 
 <p>return the enclosed pointer. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00109">109</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00108">108</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +679,7 @@ template&lt;class Type&gt; </div>
 
 <p>assignment operator: dereference current object and acquire reference on new one. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00085">85</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00084">84</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +709,7 @@ template&lt;class Type&gt; </div>
 
 <p>assignment to pointer: dereference current and acquire reference to new ptr. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00089">89</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00088">88</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -739,7 +739,7 @@ template&lt;class Type&gt; </div>
 
 <p>test equality of only the pointer values. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00124">124</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00123">123</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -769,9 +769,9 @@ template&lt;class Type&gt; </div>
 
 <p>swap enclosed object with another counting pointer (no reference counts need change) </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00155">155</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00154">154</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
-<p>Referenced by <a class="el" href="counting__ptr_8h_source.html#l00163">stxxl::swap()</a>.</p>
+<p>Referenced by <a class="el" href="counting__ptr_8h_source.html#l00162">stxxl::swap()</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ template&lt;class Type&gt; </div>
 
 <p>make and refer a copy if the original object was shared. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00148">148</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00147">147</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ template&lt;class Type&gt; </div>
 
 <p>if the object is referred by this <a class="el" href="classstxxl_1_1counting__ptr.html" title="High-performance smart pointer used as a wrapping reference counting pointer. ">counting_ptr</a> only </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00144">144</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00143">143</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -858,7 +858,7 @@ template&lt;class Type&gt; </div>
 
 <p>test for a non-NULL pointer </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00136">136</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00135">135</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 <p>Referenced by <a class="el" href="block__scheduler_8h_source.html#l00171">stxxl::swappable_block&lt; ValueType, BlockSideLength *BlockSideLength &gt;::clean_sync()</a>, <a class="el" href="block__scheduler_8h_source.html#l00497">stxxl::block_scheduler&lt; SwappableBlockType &gt;::flush()</a>, and <a class="el" href="block__scheduler_8h_source.html#l01210">stxxl::block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::schedule_write()</a>.</p>
 
@@ -887,9 +887,9 @@ template&lt;class Type&gt; </div>
 
 <p>the pointer to the currently referenced object. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00056">56</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00055">55</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
-<p>Referenced by <a class="el" href="counting__ptr_8h_source.html#l00128">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::operator!=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00085">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::operator=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00124">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::operator==()</a>, and <a class="el" href="counting__ptr_8h_source.html#l00155">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="counting__ptr_8h_source.html#l00127">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::operator!=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00084">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::operator=()</a>, <a class="el" href="counting__ptr_8h_source.html#l00123">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::operator==()</a>, and <a class="el" href="counting__ptr_8h_source.html#l00154">stxxl::counting_ptr&lt; sorted_runs_data_type &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -902,10 +902,10 @@ template&lt;class Type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1counting__ptr.html">counting_ptr</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:03:58 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:05:17 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

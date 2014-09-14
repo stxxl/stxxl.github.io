@@ -131,81 +131,80 @@ $(document).ready(function(){initNavTree('state_8h_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mutex_8h.html">stxxl/bits/common/mutex.h</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="condition__variable_8h.html">stxxl/bits/common/condition_variable.h</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType = <span class="keywordtype">int</span>&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1state.html">state</a> : <span class="keyword">private</span> <a class="code" href="classstxxl_1_1noncopyable.html">noncopyable</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">   28</a></span>&#160;    <span class="keyword">typedef</span> ValueType <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    //! mutex for condition variable</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">   31</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1mutex.html">mutex</a> <a class="code" href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">m_mutex</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    //! condition variable</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#af20070989fee73ad83456fc84983ec2b">   34</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1condition__variable.html">condition_variable</a> <a class="code" href="classstxxl_1_1state.html#af20070989fee73ad83456fc84983ec2b">m_cond</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    //! current state</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a397e8cd8b83370ee2b95da60b36b144d">   37</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a> <a class="code" href="classstxxl_1_1state.html#a397e8cd8b83370ee2b95da60b36b144d">m_state</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#acf3a1c9abbb105bdd296a45fbd119af0">   40</a></span>&#160;    <a class="code" href="classstxxl_1_1state.html#acf3a1c9abbb105bdd296a45fbd119af0">state</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>&amp; s)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        : m_state(s)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    { }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">set_to</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>&amp; new_state)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_mutex);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        m_state = new_state;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        lock.<a class="code" href="classstxxl_1_1scoped__mutex__lock.html#a2c0b23c1d09955b23bb5983d207ea535">unlock</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        m_cond.notify_all();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a6d3ec344374d4c959a6bf413d1ec6fe2">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1state.html#a6d3ec344374d4c959a6bf413d1ec6fe2">wait_for</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>&amp; needed_state)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_mutex);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">while</span> (needed_state != m_state)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            m_cond.wait(lock);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a769da8d45e0bf34ba7fe0772d62c6d45">   59</a></span>&#160;    <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a> operator () ()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_mutex);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> m_state;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_STATE_HEADER</span></div>
-<div class="ttc" id="classstxxl_1_1state_html_acf3a1c9abbb105bdd296a45fbd119af0"><div class="ttname"><a href="classstxxl_1_1state.html#acf3a1c9abbb105bdd296a45fbd119af0">stxxl::state::state</a></div><div class="ttdeci">state(const value_type &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00040">state.h:40</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html_a116fab9c69268d59fe9af9882ce327e6"><div class="ttname"><a href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">stxxl::state::set_to</a></div><div class="ttdeci">void set_to(const value_type &amp;new_state)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00044">state.h:44</a></div></div>
-<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html_a2c0b23c1d09955b23bb5983d207ea535"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html#a2c0b23c1d09955b23bb5983d207ea535">stxxl::scoped_mutex_lock::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdoc">unlock mutex hold prematurely </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00127">mutex.h:127</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html_a397e8cd8b83370ee2b95da60b36b144d"><div class="ttname"><a href="classstxxl_1_1state.html#a397e8cd8b83370ee2b95da60b36b144d">stxxl::state::m_state</a></div><div class="ttdeci">value_type m_state</div><div class="ttdoc">current state </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00037">state.h:37</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType = <span class="keywordtype">int</span>&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1state.html">state</a> : <span class="keyword">private</span> <a class="code" href="classstxxl_1_1noncopyable.html">noncopyable</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">   27</a></span>&#160;    <span class="keyword">typedef</span> ValueType <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    //! mutex for condition variable</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">   30</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1mutex.html">mutex</a> <a class="code" href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">m_mutex</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    //! condition variable</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#af20070989fee73ad83456fc84983ec2b">   33</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1condition__variable.html">condition_variable</a> <a class="code" href="classstxxl_1_1state.html#af20070989fee73ad83456fc84983ec2b">m_cond</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    //! current state</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a397e8cd8b83370ee2b95da60b36b144d">   36</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a> <a class="code" href="classstxxl_1_1state.html#a397e8cd8b83370ee2b95da60b36b144d">m_state</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#acf3a1c9abbb105bdd296a45fbd119af0">   39</a></span>&#160;    <a class="code" href="classstxxl_1_1state.html#acf3a1c9abbb105bdd296a45fbd119af0">state</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>&amp; s)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : m_state(s)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    { }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">set_to</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>&amp; new_state)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_mutex);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        m_state = new_state;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        lock.<a class="code" href="classstxxl_1_1scoped__mutex__lock.html#a2c0b23c1d09955b23bb5983d207ea535">unlock</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        m_cond.notify_all();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a6d3ec344374d4c959a6bf413d1ec6fe2">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1state.html#a6d3ec344374d4c959a6bf413d1ec6fe2">wait_for</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a>&amp; needed_state)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_mutex);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">while</span> (needed_state != m_state)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            m_cond.wait(lock);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classstxxl_1_1state.html#a769da8d45e0bf34ba7fe0772d62c6d45">   58</a></span>&#160;    <a class="code" href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">value_type</a> operator () ()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> lock(m_mutex);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> m_state;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_STATE_HEADER</span></div>
+<div class="ttc" id="classstxxl_1_1state_html_acf3a1c9abbb105bdd296a45fbd119af0"><div class="ttname"><a href="classstxxl_1_1state.html#acf3a1c9abbb105bdd296a45fbd119af0">stxxl::state::state</a></div><div class="ttdeci">state(const value_type &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00039">state.h:39</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html_a116fab9c69268d59fe9af9882ce327e6"><div class="ttname"><a href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">stxxl::state::set_to</a></div><div class="ttdeci">void set_to(const value_type &amp;new_state)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00043">state.h:43</a></div></div>
+<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html_a2c0b23c1d09955b23bb5983d207ea535"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html#a2c0b23c1d09955b23bb5983d207ea535">stxxl::scoped_mutex_lock::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdoc">unlock mutex hold prematurely </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00126">mutex.h:126</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html_a397e8cd8b83370ee2b95da60b36b144d"><div class="ttname"><a href="classstxxl_1_1state.html#a397e8cd8b83370ee2b95da60b36b144d">stxxl::state::m_state</a></div><div class="ttdeci">value_type m_state</div><div class="ttdoc">current state </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00036">state.h:36</a></div></div>
 <div class="ttc" id="condition__variable_8h_html"><div class="ttname"><a href="condition__variable_8h.html">condition_variable.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html_ab3e07ee4b4cf14b07994865088af6944"><div class="ttname"><a href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">stxxl::state::value_type</a></div><div class="ttdeci">ValueType value_type</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00028">state.h:28</a></div></div>
-<div class="ttc" id="classstxxl_1_1condition__variable_html"><div class="ttname"><a href="classstxxl_1_1condition__variable.html">stxxl::condition_variable</a></div><div class="ttdef"><b>Definition:</b> <a href="condition__variable_8h_source.html#l00047">condition_variable.h:47</a></div></div>
-<div class="ttc" id="classstxxl_1_1mutex_html"><div class="ttname"><a href="classstxxl_1_1mutex.html">stxxl::mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00047">mutex.h:47</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html"><div class="ttname"><a href="classstxxl_1_1state.html">stxxl::state</a></div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00026">state.h:26</a></div></div>
-<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00106">mutex.h:106</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html_ab3e07ee4b4cf14b07994865088af6944"><div class="ttname"><a href="classstxxl_1_1state.html#ab3e07ee4b4cf14b07994865088af6944">stxxl::state::value_type</a></div><div class="ttdeci">ValueType value_type</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00027">state.h:27</a></div></div>
+<div class="ttc" id="classstxxl_1_1condition__variable_html"><div class="ttname"><a href="classstxxl_1_1condition__variable.html">stxxl::condition_variable</a></div><div class="ttdef"><b>Definition:</b> <a href="condition__variable_8h_source.html#l00046">condition_variable.h:46</a></div></div>
+<div class="ttc" id="classstxxl_1_1mutex_html"><div class="ttname"><a href="classstxxl_1_1mutex.html">stxxl::mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00046">mutex.h:46</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html"><div class="ttname"><a href="classstxxl_1_1state.html">stxxl::state</a></div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00025">state.h:25</a></div></div>
+<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00105">mutex.h:105</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="mutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html_a6d3ec344374d4c959a6bf413d1ec6fe2"><div class="ttname"><a href="classstxxl_1_1state.html#a6d3ec344374d4c959a6bf413d1ec6fe2">stxxl::state::wait_for</a></div><div class="ttdeci">void wait_for(const value_type &amp;needed_state)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00052">state.h:52</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html_a637831bbadfb599c230ab30fd24df98a"><div class="ttname"><a href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">stxxl::state::m_mutex</a></div><div class="ttdeci">mutex m_mutex</div><div class="ttdoc">mutex for condition variable </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00031">state.h:31</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html_a6d3ec344374d4c959a6bf413d1ec6fe2"><div class="ttname"><a href="classstxxl_1_1state.html#a6d3ec344374d4c959a6bf413d1ec6fe2">stxxl::state::wait_for</a></div><div class="ttdeci">void wait_for(const value_type &amp;needed_state)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00051">state.h:51</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html_a637831bbadfb599c230ab30fd24df98a"><div class="ttname"><a href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">stxxl::state::m_mutex</a></div><div class="ttdeci">mutex m_mutex</div><div class="ttdoc">mutex for condition variable </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00030">state.h:30</a></div></div>
 <div class="ttc" id="noncopyable_8h_html"><div class="ttname"><a href="noncopyable_8h.html">noncopyable.h</a></div></div>
 <div class="ttc" id="classstxxl_1_1noncopyable_html"><div class="ttname"><a href="classstxxl_1_1noncopyable.html">stxxl::noncopyable</a></div><div class="ttdef"><b>Definition:</b> <a href="noncopyable_8h_source.html#l00033">noncopyable.h:33</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
-<div class="ttc" id="classstxxl_1_1state_html_af20070989fee73ad83456fc84983ec2b"><div class="ttname"><a href="classstxxl_1_1state.html#af20070989fee73ad83456fc84983ec2b">stxxl::state::m_cond</a></div><div class="ttdeci">condition_variable m_cond</div><div class="ttdoc">condition variable </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00034">state.h:34</a></div></div>
+<div class="ttc" id="classstxxl_1_1state_html_af20070989fee73ad83456fc84983ec2b"><div class="ttname"><a href="classstxxl_1_1state.html#af20070989fee73ad83456fc84983ec2b">stxxl::state::m_cond</a></div><div class="ttdeci">condition_variable m_cond</div><div class="ttdoc">condition variable </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00033">state.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_c603cd6ede12b974eecb818db9d72642.html">common</a></li><li class="navelem"><a class="el" href="state_8h.html">state.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:52 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:03:24 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -139,67 +139,66 @@ $(document).ready(function(){initNavTree('seed_8cpp_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">  #include &lt;sys/time.h&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">initial_seed</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span>seed_generator_t {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">unsigned</span> seed;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    mutex mtx;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    seed_generator_t(<span class="keywordtype">unsigned</span> s) : seed(s)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    { }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">   43</a></span>&#160;seed_generator_t &amp; <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> seed_generator_t sg(<a class="code" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">initial_seed</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> sg;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">   49</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">initial_seed</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    assert(!initialized); <span class="comment">// this should only be called once!</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    initialized = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // NDEBUG</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if STXXL_WINDOWS</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>    <span class="comment">// GetTickCount():  ms since system start</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> GetTickCount() ^ GetCurrentProcessId();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>    <span class="keyword">struct </span>timeval tv;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    gettimeofday(&amp;tv, 0);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> tv.tv_sec ^ tv.tv_usec ^ (getpid() &lt;&lt; 16);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">set_seed</a>(<span class="keywordtype">unsigned</span> seed)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().seed = seed;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">   74</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">get_next_seed</a>()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().seed++;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="ttc" id="namespacestxxl_html_ab5c1c09aa507f84b32ebd4c5934587a7"><div class="ttname"><a href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">stxxl::initial_seed</a></div><div class="ttdeci">unsigned initial_seed()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00049">seed.cpp:49</a></div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">initial_seed</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span>seed_generator_t {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">unsigned</span> seed;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    mutex mtx;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    seed_generator_t(<span class="keywordtype">unsigned</span> s) : seed(s)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    { }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">   42</a></span>&#160;seed_generator_t &amp; <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> seed_generator_t sg(<a class="code" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">initial_seed</a>());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> sg;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">   48</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">initial_seed</a>()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    assert(!initialized); <span class="comment">// this should only be called once!</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // NDEBUG</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if STXXL_WINDOWS</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>    <span class="comment">// GetTickCount():  ms since system start</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> GetTickCount() ^ GetCurrentProcessId();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span>    <span class="keyword">struct </span>timeval tv;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    gettimeofday(&amp;tv, 0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> tv.tv_sec ^ tv.tv_usec ^ (getpid() &lt;&lt; 16);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">set_seed</a>(<span class="keywordtype">unsigned</span> seed)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().seed = seed;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">   73</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">get_next_seed</a>()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().seed++;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="ttc" id="namespacestxxl_html_ab5c1c09aa507f84b32ebd4c5934587a7"><div class="ttname"><a href="namespacestxxl.html#ab5c1c09aa507f84b32ebd4c5934587a7">stxxl::initial_seed</a></div><div class="ttdeci">unsigned initial_seed()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00048">seed.cpp:48</a></div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
-<div class="ttc" id="namespacestxxl_html_af098af72067a476bc5fccb2efe6074ab"><div class="ttname"><a href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">stxxl::get_next_seed</a></div><div class="ttdeci">unsigned get_next_seed()</div><div class="ttdoc">get a seed value for prng initialization, subsequent calls return a sequence of different values ...</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00074">seed.cpp:74</a></div></div>
+<div class="ttc" id="namespacestxxl_html_af098af72067a476bc5fccb2efe6074ab"><div class="ttname"><a href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">stxxl::get_next_seed</a></div><div class="ttdeci">unsigned get_next_seed()</div><div class="ttdoc">get a seed value for prng initialization, subsequent calls return a sequence of different values ...</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00073">seed.cpp:73</a></div></div>
 <div class="ttc" id="io_8h_html"><div class="ttname"><a href="io_8h.html">io.h</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a3f36e770886eb318aae9b68bcb40dbee"><div class="ttname"><a href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">stxxl::seed_generator</a></div><div class="ttdeci">seed_generator_t &amp; seed_generator()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00043">seed.cpp:43</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a3f36e770886eb318aae9b68bcb40dbee"><div class="ttname"><a href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">stxxl::seed_generator</a></div><div class="ttdeci">seed_generator_t &amp; seed_generator()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00042">seed.cpp:42</a></div></div>
 <div class="ttc" id="namespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00106">mutex.h:106</a></div></div>
+<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00105">mutex.h:105</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="mutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a9a9ece6a4be90cf836b0a3ec3e8d2565"><div class="ttname"><a href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">stxxl::set_seed</a></div><div class="ttdeci">void set_seed(unsigned seed)</div><div class="ttdoc">set the global stxxl seed value </div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00068">seed.cpp:68</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a9a9ece6a4be90cf836b0a3ec3e8d2565"><div class="ttname"><a href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">stxxl::set_seed</a></div><div class="ttdeci">void set_seed(unsigned seed)</div><div class="ttdoc">set the global stxxl seed value </div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00067">seed.cpp:67</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -207,10 +206,10 @@ $(document).ready(function(){initNavTree('seed_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1ea122f7b94457c2332c194612c8b8fe.html">common</a></li><li class="navelem"><a class="el" href="seed_8cpp.html">seed.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:03:24 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:04:17 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -147,47 +147,46 @@ $(document).ready(function(){initNavTree('boostfd__file_8h_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;boost/iostreams/device/file_descriptor.hpp&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//! \addtogroup fileimpl</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//! \{</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span><span class="comment"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//! Implementation based on boost::iostreams::file_decriptor.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span><span class="keyword">class </span>boostfd_file : <span class="keyword">public</span> disk_queued_file</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">typedef</span> boost::iostreams::file_descriptor fd_type;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    //! sequentialize function calls involving m_file_des</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span>    mutex m_fd_mutex;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    fd_type m_file_des;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> m_mode;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    offset_type _size();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    boostfd_file(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">int</span> mode,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> queue_id = DEFAULT_QUEUE,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> allocator_id = NO_ALLOCATOR,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> device_id = DEFAULT_DEVICE_ID);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ~boostfd_file();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    offset_type size();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> set_size(offset_type newsize);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> lock();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> serve(<span class="keywordtype">void</span>* buffer, offset_type offset, size_type <a class="code" href="uint__types_8h.html#acea1c07f4cd964459303d92adec84161">bytes</a>,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;               request::request_type type);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> * io_type() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // #if STXXL_HAVE_BOOSTFD_FILE</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // !STXXL_IO_BOOSTFD_FILE_HEADER</span></div>
-<div class="ttc" id="uint__types_8h_html_acea1c07f4cd964459303d92adec84161"><div class="ttname"><a href="uint__types_8h.html#acea1c07f4cd964459303d92adec84161">bytes</a></div><div class="ttdeci">static const int bytes</div><div class="ttdoc">number of bytes in uint_pair </div><div class="ttdef"><b>Definition:</b> <a href="uint__types_8h_source.html#l00099">uint_types.h:99</a></div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! \addtogroup fileimpl</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//! \{</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span><span class="comment"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//! Implementation based on boost::iostreams::file_decriptor.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span><span class="keyword">class </span>boostfd_file : <span class="keyword">public</span> disk_queued_file</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">typedef</span> boost::iostreams::file_descriptor fd_type;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    //! sequentialize function calls involving m_file_des</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span>    mutex m_fd_mutex;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    fd_type m_file_des;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> m_mode;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    offset_type _size();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    boostfd_file(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> std::string&amp; filename, <span class="keywordtype">int</span> mode,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">int</span> queue_id = DEFAULT_QUEUE,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> allocator_id = NO_ALLOCATOR,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> device_id = DEFAULT_DEVICE_ID);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    ~boostfd_file();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    offset_type size();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> set_size(offset_type newsize);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> lock();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> serve(<span class="keywordtype">void</span>* buffer, offset_type offset, size_type <a class="code" href="uint__types_8h.html#acea1c07f4cd964459303d92adec84161">bytes</a>,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;               request::request_type type);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> * io_type() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // #if STXXL_HAVE_BOOSTFD_FILE</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // !STXXL_IO_BOOSTFD_FILE_HEADER</span></div>
+<div class="ttc" id="uint__types_8h_html_acea1c07f4cd964459303d92adec84161"><div class="ttname"><a href="uint__types_8h.html#acea1c07f4cd964459303d92adec84161">bytes</a></div><div class="ttdeci">static const int bytes</div><div class="ttdoc">number of bytes in uint_pair </div><div class="ttdef"><b>Definition:</b> <a href="uint__types_8h_source.html#l00096">uint_types.h:96</a></div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
 <div class="ttc" id="disk__queued__file_8h_html"><div class="ttname"><a href="disk__queued__file_8h.html">disk_queued_file.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
@@ -199,10 +198,10 @@ $(document).ready(function(){initNavTree('boostfd__file_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_bd2c91cfa38410e85a62a3d0c503e6c6.html">io</a></li><li class="navelem"><a class="el" href="boostfd__file_8h.html">boostfd_file.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:03:14 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:03:56 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

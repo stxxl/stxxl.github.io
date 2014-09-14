@@ -128,41 +128,40 @@ $(document).ready(function(){initNavTree('sort__base_8h_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">stxxl/bits/common/types.h</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef STXXL_NO_WARN_RECURSIVE_SORT</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="sort__base_8h.html#af18b6ad302c95db2764f998de720d0d2">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_WARNMSG_RECURSIVE_SORT STXXL_ERRMSG</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_WARNMSG_RECURSIVE_SORT STXXL_VERBOSE</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef STXXL_SORT_OPTIMAL_PREFETCHING</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="sort__base_8h.html#aef7e2fa2aca4abd5aa576d42f866a2f3">   27</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_SORT_OPTIMAL_PREFETCHING 1</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef STXXL_CHECK_ORDER_IN_SORTS</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="sort__base_8h.html#a0e28700a449d377d3a46c6686824c05f">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_CHECK_ORDER_IN_SORTS 0</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef STXXL_L2_SIZE</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="sort__base_8h.html#ab1b183e29d889e9349cd50a7f228e053">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_L2_SIZE  (512 * 1024)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Optimal merging: merge r = pow(nruns,1/ceil(log(nruns)/log(m))) runs at once</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">   41</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="code" href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">optimal_merge_factor</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> num_runs, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> max_concurrent_runs)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>(ceil(pow(<span class="keywordtype">double</span>(num_runs), 1. / ceil(log(<span class="keywordtype">double</span>(num_runs)) / log(<span class="keywordtype">double</span>(max_concurrent_runs))))));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // !STXXL_ALGO_SORT_BASE_HEADER</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef STXXL_NO_WARN_RECURSIVE_SORT</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="sort__base_8h.html#af18b6ad302c95db2764f998de720d0d2">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_WARNMSG_RECURSIVE_SORT STXXL_ERRMSG</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_WARNMSG_RECURSIVE_SORT STXXL_VERBOSE</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef STXXL_SORT_OPTIMAL_PREFETCHING</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="sort__base_8h.html#aef7e2fa2aca4abd5aa576d42f866a2f3">   26</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_SORT_OPTIMAL_PREFETCHING 1</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef STXXL_CHECK_ORDER_IN_SORTS</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="sort__base_8h.html#a0e28700a449d377d3a46c6686824c05f">   30</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_CHECK_ORDER_IN_SORTS 0</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef STXXL_L2_SIZE</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="sort__base_8h.html#ab1b183e29d889e9349cd50a7f228e053">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STXXL_L2_SIZE  (512 * 1024)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Optimal merging: merge r = pow(nruns,1/ceil(log(nruns)/log(m))) runs at once</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">   40</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="code" href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">optimal_merge_factor</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> num_runs, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> max_concurrent_runs)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>(ceil(pow(<span class="keywordtype">double</span>(num_runs), 1. / ceil(log(<span class="keywordtype">double</span>(num_runs)) / log(<span class="keywordtype">double</span>(max_concurrent_runs))))));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // !STXXL_ALGO_SORT_BASE_HEADER</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00067">types.h:67</a></div></div>
-<div class="ttc" id="namespacestxxl_html_ae0eac40a860d125e436c10c890e1a693"><div class="ttname"><a href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">stxxl::optimal_merge_factor</a></div><div class="ttdeci">unsigned_type optimal_merge_factor(unsigned_type num_runs, unsigned_type max_concurrent_runs)</div><div class="ttdef"><b>Definition:</b> <a href="sort__base_8h_source.html#l00041">sort_base.h:41</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00064">types.h:64</a></div></div>
+<div class="ttc" id="namespacestxxl_html_ae0eac40a860d125e436c10c890e1a693"><div class="ttname"><a href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">stxxl::optimal_merge_factor</a></div><div class="ttdeci">unsigned_type optimal_merge_factor(unsigned_type num_runs, unsigned_type max_concurrent_runs)</div><div class="ttdef"><b>Definition:</b> <a href="sort__base_8h_source.html#l00040">sort_base.h:40</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -170,10 +169,10 @@ $(document).ready(function(){initNavTree('sort__base_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_6dd1bce03f0b0acb6641b4504697927f.html">algo</a></li><li class="navelem"><a class="el" href="sort__base_8h.html">sort_base.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1f6b6c481b317c0def58b91bce363828206126f7">STXXL 1.4.0-209-g1f6b6c4</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:50 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 23:03:19 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
