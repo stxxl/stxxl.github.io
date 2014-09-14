@@ -1,0 +1,10 @@
+<map id="stxxl::btree::normal_leaf&lt; KeyType_, DataType_, KeyCmp_, LogNElem_, BTreeType &gt;::InfoType" name="stxxl::btree::normal_leaf&lt; KeyType_, DataType_, KeyCmp_, LogNElem_, BTreeType &gt;::InfoType">
+<area shape="rect" id="node2" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="48,541,205,571"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="65,349,140,379"/>
+<area shape="rect" id="node17" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="153,445,287,475"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="28,15,159,44"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="101,129,195,159"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="101,235,251,282"/>
+<area shape="rect" id="node13" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="257,121,417,167"/>
+<area shape="rect" id="node15" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="257,6,417,53"/>
+</map>

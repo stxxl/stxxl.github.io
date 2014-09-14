@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classrequest__interface.html" title="Functional interface of a request. " alt="" coords="5,31,131,62"/>
+<area shape="rect" id="node3" href="$classrequest.html" title="Request with basic properties like file and offset. " alt="" coords="219,5,285,35"/>
+<area shape="rect" id="node9" href="$classrequest__with__waiters.html" title="Request that is aware of threads waiting for it to complete. " alt="" coords="179,58,325,89"/>
+<area shape="rect" id="node5" href="$classrequest__with__state.html" title="Request with completion state. " alt="" coords="373,31,507,62"/>
+<area shape="rect" id="node7" href="$classserving__request.html" title="Request which serves an I/O by calling the synchronous routine of the file. " alt="" coords="556,31,673,62"/>
+</map>

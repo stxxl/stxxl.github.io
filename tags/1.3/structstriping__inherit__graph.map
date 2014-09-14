@@ -1,0 +1,5 @@
+<map id="striping" name="striping">
+<area shape="rect" id="node3" href="$structFR.html" title="fully randomized disk allocation scheme functor " alt="" coords="5,86,43,117"/>
+<area shape="rect" id="node5" href="$structRC.html" title="randomized cycling disk allocation scheme functor " alt="" coords="67,86,107,117"/>
+<area shape="rect" id="node7" href="$structSR.html" title="simple randomized disk allocation scheme functor " alt="" coords="131,86,171,117"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="stxxl::request_with_waiters" name="stxxl::request_with_waiters">
+<area shape="rect" id="node2" href="$classstxxl_1_1request.html" title="Request object encapsulating basic properties like file and offset. " alt="" coords="1373,201,1475,230"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1request__interface.html" title="Functional interface of a request. " alt="" coords="524,20,681,49"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="20,82,151,112"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="372,82,465,112"/>
+<area shape="rect" id="node17" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="1104,174,1179,204"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="709,196,859,243"/>
+<area shape="rect" id="node13" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="339,196,499,243"/>
+<area shape="rect" id="node15" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,196,165,243"/>
+<area shape="rect" id="node21" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; stxxl::stxxl::io\l_error \&gt;" alt="" coords="885,333,1032,397"/>
+<area shape="rect" id="node23" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; _Tp \&gt;" alt="" coords="345,310,492,356"/>
+<area shape="rect" id="node27" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; stxxl::completion\l_handler_impl \&gt;" alt="" coords="707,266,861,330"/>
+<area shape="rect" id="node25" href="$classstxxl_1_1completion__handler.html" title="Completion handler class (Loki&#45;style). " alt="" coords="1056,281,1227,310"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="expand_struct&lt; Tp_, RawSize_ &gt;" name="expand_struct&lt; Tp_, RawSize_ &gt;">
+<area shape="rect" id="node7" href="$classexpand__struct.html" title="expand_struct\&lt; block\l_w_info\&lt; T_, RawSize\l_, NRef_, InfoType_ \&gt;,\l RawSize_ \&gt;" alt="" coords="16,398,173,485"/>
+<area shape="rect" id="node2" href="$classadd__filler.html" title="add_filler\&lt; Tp_, RawSize\l_&#45;sizeof(Tp_)\&gt;" alt="" coords="8,142,181,191"/>
+<area shape="rect" id="node4" href="$classadd__filler.html" title="Contains per block filler for stxxl::typed_block , not intended for direct use. " alt="" coords="19,6,171,55"/>
+<area shape="rect" id="node9" href="$classtyped__block.html" title="Block containing elements of fixed length. " alt="" coords="5,537,184,586"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="read_write_pool&lt; BlockType &gt;" name="read_write_pool&lt; BlockType &gt;">
+<area shape="rect" id="node2" href="$classprefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="5,6,197,37"/>
+<area shape="rect" id="node4" href="$classwrite__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="221,6,395,37"/>
+</map>

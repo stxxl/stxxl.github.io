@@ -1,0 +1,16 @@
+<map id="typed_block&lt; RawSize_, T_, NRef_, InfoType_ &gt;" name="typed_block&lt; RawSize_, T_, NRef_, InfoType_ &gt;">
+<area shape="rect" id="node2" href="$classexpand__struct.html" title="expand_struct\&lt; block\l_w_info\&lt; T_, RawSize\l_, NRef_, InfoType_ \&gt;,\l RawSize_ \&gt;" alt="" coords="2324,246,2481,333"/>
+<area shape="rect" id="node4" href="$classadd__filler.html" title="add_filler\&lt; block_w\l_info\&lt; T_, RawSize_,\l NRef_, InfoType_ \&gt;,\l RawSize_&#45;sizeof(block\l_w_info\&lt; T_, RawSize_,\l NRef_, InfoType_ \&gt;)\&gt;" alt="" coords="1935,171,2103,295"/>
+<area shape="rect" id="node6" href="$classblock__w__info.html" title="block_w_info\&lt; T_, RawSize\l_, NRef_, InfoType_ \&gt;" alt="" coords="1692,105,1881,154"/>
+<area shape="rect" id="node8" href="$classblock__w__bids.html" title="block_w_bids\&lt; T_,(\l(RawSize_&#45;sizeof(BID\l\&lt; RawSize_ \&gt;)*NBids_\l&#45;sizeof(InfoType_))/sizeof\l(T_)), RawSize_, NBids_ \&gt;" alt="" coords="1068,71,1249,177"/>
+<area shape="rect" id="node25" href="$classblock__w__info.html" title="Contains per block information for stxxl::typed_block , not intended for direct use. " alt="" coords="1303,137,1492,186"/>
+<area shape="rect" id="node10" href="$classelement__block.html" title="element_block\&lt; T_,\l Size_ \&gt;" alt="" coords="704,5,845,54"/>
+<area shape="rect" id="node12" href="$classelement__block.html" title="Contains data elements for stxxl::typed_block , not intended for direct use. " alt="" coords="372,47,556,78"/>
+<area shape="rect" id="node21" href="$classblock__w__bids.html" title="Contains BID references for stxxl::typed_block , not intended for direct use. " alt="" coords="695,77,855,126"/>
+<area shape="rect" id="node14" href="$structBID.html" title="BID\&lt; raw_size \&gt;" alt="" coords="403,119,525,150"/>
+<area shape="rect" id="node16" href="$classfile.html" title="Defines interface of file. " alt="" coords="7,125,44,155"/>
+<area shape="rect" id="node18" href="$structBID.html" title="Block identifier class. " alt="" coords="145,162,239,193"/>
+<area shape="rect" id="node28" href="$classadd__filler.html" title="Contains per block filler for stxxl::typed_block , not intended for direct use. " alt="" coords="1321,278,1473,327"/>
+<area shape="rect" id="node32" href="$classadd__filler.html" title="add_filler\&lt; Tp_, RawSize\l_&#45;sizeof(Tp_)\&gt;" alt="" coords="1700,318,1873,367"/>
+<area shape="rect" id="node30" href="$classexpand__struct.html" title="Helper to compute the size of the filler , not intended for direct use. " alt="" coords="1947,318,2091,367"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="stxxl::swappable_block&lt; ValueType, BlockSize &gt;" name="stxxl::swappable_block&lt; ValueType, BlockSize &gt;">
+<area shape="rect" id="node2" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="339,471,499,518"/>
+<area shape="rect" id="node12" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="708,402,857,449"/>
+<area shape="rect" id="node4" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,471,165,518"/>
+<area shape="rect" id="node6" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="1439,372,1596,401"/>
+<area shape="rect" id="node29" href="$classstxxl_1_1mng__local_1_1block__w__bids.html" title="stxxl::mng_local::block\l_w_bids\&lt; Type,((RawSize\l&#45;sizeof(BID\&lt; RawSize \&gt;)*NBids\l&#45;sizeof(MetaInfoType))/sizeof\l(Type)), RawSize, NBids \&gt;" alt="" coords="2080,293,2291,392"/>
+<area shape="rect" id="node34" href="$classstxxl_1_1mng__local_1_1block__w__bids.html" title="Contains BID references for stxxl::typed_block , not intended for direct use. " alt="" coords="1672,281,1883,345"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="995,383,1069,412"/>
+<area shape="rect" id="node18" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="1167,415,1300,444"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="20,368,151,397"/>
+<area shape="rect" id="node14" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="372,403,465,432"/>
+<area shape="rect" id="node21" href="$classstxxl_1_1typed__block.html" title="Block containing elements of fixed length. " alt="" coords="3735,317,3900,381"/>
+<area shape="rect" id="node23" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="stxxl::mng_local::expand\l_struct\&lt; mng_local::block\l_w_info\&lt; Type, RawSize, NRef,\l MetaInfoType \&gt;, RawSize \&gt;" alt="" coords="3471,218,3681,299"/>
+<area shape="rect" id="node25" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;, RawSize\l&#45;sizeof(mng_local::block_w_info\l\&lt; Type, RawSize, NRef, MetaInfoType \&gt;)\&gt;" alt="" coords="2995,201,3269,317"/>
+<area shape="rect" id="node27" href="$classstxxl_1_1mng__local_1_1block__w__info.html" title="stxxl::mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;" alt="" coords="2761,296,2935,360"/>
+<area shape="rect" id="node38" href="$classstxxl_1_1mng__local_1_1block__w__info.html" title="Contains per block information for stxxl::typed_block , not intended for direct use. " alt="" coords="2375,296,2548,360"/>
+<area shape="rect" id="node31" href="$classstxxl_1_1mng__local_1_1element__block.html" title="Contains data elements for stxxl::typed_block , not intended for direct use. " alt="" coords="1432,223,1603,270"/>
+<area shape="rect" id="node41" href="$classstxxl_1_1mng__local_1_1filler__struct.html" title="stxxl::mng_local::filler\l_struct\&lt; FillSize \&gt;" alt="" coords="2111,125,2260,171"/>
+<area shape="rect" id="node45" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="Contains per block filler for stxxl::typed_block , not intended for direct use. " alt="" coords="2368,125,2555,171"/>
+<area shape="rect" id="node50" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; Type, RawSize\l&#45;sizeof(Type)\&gt;" alt="" coords="2771,5,2925,69"/>
+<area shape="rect" id="node43" href="$classstxxl_1_1mng__local_1_1filler__struct.html" title="stxxl::mng_local::filler\l_struct\&lt; Bytes \&gt;" alt="" coords="1703,125,1852,171"/>
+<area shape="rect" id="node48" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="Helper to compute the size of the filler , not intended for direct use. " alt="" coords="3044,73,3220,119"/>
+</map>
