@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('linuxaio__request_8cpp_source.html',''
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    cb.aio_offset = m_offset;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//! \brief Submits an I/O request to the OS</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//! Submits an I/O request to the OS</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//! \returns false if submission fails</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__request.html#a7a546cf81549fd6c0152e1607f008f46">   67</a></span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::post()</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('linuxaio__request_8cpp_source.html',''
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> success == 1;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//! \brief Cancel the request</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//! Cancel the request</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//!</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//! Routine is called by user, as part of the request interface.</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__request.html#a58c595fdc3e11e04a8fc5088a523de28">   96</a></span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::cancel()</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('linuxaio__request_8cpp_source.html',''
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> queue-&gt;<a class="code" href="classstxxl_1_1linuxaio__queue.html#a8c57cd446b92bb2300a5f95888133232">cancel_request</a>(req);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">//! \brief Cancel already posted request</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">//! Cancel already posted request</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__request.html#aff52f46de986a0b27f17e187e6726302">  110</a></span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::cancel_aio()</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="linuxaio__request_8h.html#a28f3574021fcb44b576233aa5f72ea60">STXXL_VERBOSE_LINUXAIO</a>(<span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;] cancel_aio()&quot;</span>);</div>
@@ -264,10 +264,10 @@ $(document).ready(function(){initNavTree('linuxaio__request_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="linuxaio__request_8cpp.html">linuxaio_request.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f0eba4dcbc25c8a452a29fe8c36540ba5eaaf456">STXXL 1.4.0-204-gf0eba4d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Mon Sep 8 2014 16:00:13 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:45:38 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

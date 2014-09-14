@@ -131,7 +131,7 @@ class stxxl::uint_pair&lt; HighType &gt;</h3>
 <p>The class combines a 32-bit integer with a HighType (either 8-bit or 16-bit) to get a larger type. Only unsigned values are supported, which fits the general application of file offsets.</p>
 <p>Calculation in <a class="el" href="classstxxl_1_1uint__pair.html" title="Construct an 40-bit or 48-bit unsigned integer stored in five or six bytes. ">uint_pair</a> are generally done by transforming everything to 64-bit data type, so that 64-bit register arithmetic can be used. The exception here is <b>increment</b> and <b>decrement</b>, which is done directly on the lower/higher part. Not all arithmetic operations are supported, patches welcome if you really need the operations. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00053">53</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00052">52</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -265,7 +265,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>higher part type, currently either 8-bit or 16-bit </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00059">59</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00058">58</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>lower part type, always 32-bit </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00057">57</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00056">56</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>empty constructor, does not even initialize to zero! </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00093">93</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00092">92</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +353,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>construct unit pair from lower and higher parts. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00105">105</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00104">104</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>copy constructor </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00110">110</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00109">109</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>const from a simple 32-bit unsigned integer </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00115">115</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00114">114</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>const from a simple 32-bit signed integer </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00120">120</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00119">119</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -473,9 +473,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>construct from an uint64 (unsigned long long) </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00130">130</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
-
-<p>References <a class="el" href="uint__types_8h_source.html#l00092">high_bits</a>, and <a class="el" href="uint__types_8h_source.html#l00083">low_bits</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00129">129</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +503,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>return highest value storable in higher part, also used as a mask. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00077">77</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00076">76</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +532,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>return highest value storable in lower part, also used as a mask. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00068">68</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00067">67</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -563,9 +561,11 @@ template&lt;typename HighType &gt; </div>
 
 <p>return an <a class="el" href="classstxxl_1_1uint__pair.html" title="Construct an 40-bit or 48-bit unsigned integer stored in five or six bytes. ">uint_pair</a> instance containing the largest value possible </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00235">235</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00234">234</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00271">std::numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;::max()</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00244">max()</a>, and <a class="el" href="uint__types_8h_source.html#l00102">uint_pair()</a>.</p>
+
+<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00270">std::numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;::max()</a>.</p>
 
 </div>
 </div>
@@ -594,11 +594,11 @@ template&lt;typename HighType &gt; </div>
 
 <p>return an <a class="el" href="classstxxl_1_1uint__pair.html" title="Construct an 40-bit or 48-bit unsigned integer stored in five or six bytes. ">uint_pair</a> instance containing the smallest value possible </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00228">228</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00227">227</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00237">min()</a>, and <a class="el" href="uint__types_8h_source.html#l00102">uint_pair()</a>.</p>
 
-<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00267">std::numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;::min()</a>.</p>
+<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00266">std::numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;::min()</a>.</p>
 
 </div>
 </div>
@@ -627,7 +627,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>implicit cast to an unsigned long long </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00145">145</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00144">144</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00148">ull()</a>.</p>
 
@@ -659,9 +659,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>inequality checking operator </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00192">192</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00191">191</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>References <a class="el" href="uint__types_8h_source.html#l00065">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00063">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00064">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00062">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
 
 </div>
 </div>
@@ -690,9 +690,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>prefix increment operator (directly manipulates the integer parts) </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00157">157</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00156">156</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>References <a class="el" href="uint__types_8h_source.html#l00072">low</a>, <a class="el" href="uint__types_8h_source.html#l00077">low_max()</a>, and <a class="el" href="utils_8h_source.html#l00226">UNLIKELY</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00072">low</a>, <a class="el" href="uint__types_8h_source.html#l00077">low_max()</a>, and <a class="el" href="utils_8h_source.html#l00226">UNLIKELY</a>.</p>
 
 </div>
 </div>
@@ -722,9 +722,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>addition operator (uses 64-bit arithmetic) </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00177">177</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
-
-<p>References <a class="el" href="uint__types_8h_source.html#l00065">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00086">high_max()</a>, <a class="el" href="uint__types_8h_source.html#l00063">stxxl::uint_pair&lt; HighType &gt;::low</a>, <a class="el" href="uint__types_8h_source.html#l00072">low</a>, <a class="el" href="uint__types_8h_source.html#l00083">low_bits</a>, and <a class="el" href="uint__types_8h_source.html#l00077">low_max()</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00176">176</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -753,9 +751,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>prefix decrement operator (directly manipulates the integer parts) </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00167">167</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
-
-<p>References <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00072">low</a>, <a class="el" href="uint__types_8h_source.html#l00077">low_max()</a>, and <a class="el" href="utils_8h_source.html#l00226">UNLIKELY</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00166">166</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -785,9 +781,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>less-than comparison operator </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00198">198</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00197">197</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>References <a class="el" href="uint__types_8h_source.html#l00065">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00063">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00064">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00062">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
 
 </div>
 </div>
@@ -817,9 +813,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>less-or-equal comparison operator </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00204">204</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00203">203</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>References <a class="el" href="uint__types_8h_source.html#l00065">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00063">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00064">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00062">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
 
 </div>
 </div>
@@ -849,7 +845,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>equality checking operator </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00186">186</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00185">185</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -879,9 +875,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>greater comparison operator </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00210">210</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00209">209</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>References <a class="el" href="uint__types_8h_source.html#l00065">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00063">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00064">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00062">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
 
 </div>
 </div>
@@ -911,9 +907,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>greater-or-equal comparison operator </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00216">216</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00215">215</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>References <a class="el" href="uint__types_8h_source.html#l00065">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00063">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
+<p>References <a class="el" href="uint__types_8h_source.html#l00064">stxxl::uint_pair&lt; HighType &gt;::high</a>, <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00062">stxxl::uint_pair&lt; HighType &gt;::low</a>, and <a class="el" href="uint__types_8h_source.html#l00072">low</a>.</p>
 
 </div>
 </div>
@@ -942,7 +938,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>return the number as a uint64 </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00151">151</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00150">150</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00074">high</a>, <a class="el" href="uint__types_8h_source.html#l00072">low</a>, and <a class="el" href="uint__types_8h_source.html#l00083">low_bits</a>.</p>
 
@@ -973,7 +969,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>return the number as an uint64 (unsigned long long) </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00139">139</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00138">138</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1010,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>make a <a class="el" href="classstxxl_1_1uint__pair.html" title="Construct an 40-bit or 48-bit unsigned integer stored in five or six bytes. ">uint_pair</a> outputtable via iostreams, using unsigned long long. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00222">222</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00221">221</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1037,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>number of bytes in <a class="el" href="classstxxl_1_1uint__pair.html" title="Construct an 40-bit or 48-bit unsigned integer stored in five or six bytes. ">uint_pair</a> </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00090">90</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00089">89</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1063,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>number of binary digits (bits) in <a class="el" href="classstxxl_1_1uint__pair.html" title="Construct an 40-bit or 48-bit unsigned integer stored in five or six bytes. ">uint_pair</a> </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00087">87</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00086">86</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -1093,9 +1089,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>member containing higher significant integer value </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00065">65</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00064">64</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00192">stxxl::uint_pair&lt; HighType &gt;::operator!=()</a>, <a class="el" href="uint__types_8h_source.html#l00177">stxxl::uint_pair&lt; HighType &gt;::operator+=()</a>, <a class="el" href="uint__types_8h_source.html#l00198">stxxl::uint_pair&lt; HighType &gt;::operator&lt;()</a>, <a class="el" href="uint__types_8h_source.html#l00204">stxxl::uint_pair&lt; HighType &gt;::operator&lt;=()</a>, <a class="el" href="uint__types_8h_source.html#l00210">stxxl::uint_pair&lt; HighType &gt;::operator&gt;()</a>, and <a class="el" href="uint__types_8h_source.html#l00216">stxxl::uint_pair&lt; HighType &gt;::operator&gt;=()</a>.</p>
+<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00191">stxxl::uint_pair&lt; HighType &gt;::operator!=()</a>, <a class="el" href="uint__types_8h_source.html#l00186">operator+=()</a>, <a class="el" href="uint__types_8h_source.html#l00197">stxxl::uint_pair&lt; HighType &gt;::operator&lt;()</a>, <a class="el" href="uint__types_8h_source.html#l00203">stxxl::uint_pair&lt; HighType &gt;::operator&lt;=()</a>, <a class="el" href="uint__types_8h_source.html#l00209">stxxl::uint_pair&lt; HighType &gt;::operator&gt;()</a>, and <a class="el" href="uint__types_8h_source.html#l00215">stxxl::uint_pair&lt; HighType &gt;::operator&gt;=()</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1117,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>number of bits in the higher integer part, used a bit shift value. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00083">83</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00082">82</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -1147,9 +1143,9 @@ template&lt;typename HighType &gt; </div>
 
 <p>member containing lower significant integer value </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00063">63</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00062">62</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00192">stxxl::uint_pair&lt; HighType &gt;::operator!=()</a>, <a class="el" href="uint__types_8h_source.html#l00177">stxxl::uint_pair&lt; HighType &gt;::operator+=()</a>, <a class="el" href="uint__types_8h_source.html#l00198">stxxl::uint_pair&lt; HighType &gt;::operator&lt;()</a>, <a class="el" href="uint__types_8h_source.html#l00204">stxxl::uint_pair&lt; HighType &gt;::operator&lt;=()</a>, <a class="el" href="uint__types_8h_source.html#l00210">stxxl::uint_pair&lt; HighType &gt;::operator&gt;()</a>, and <a class="el" href="uint__types_8h_source.html#l00216">stxxl::uint_pair&lt; HighType &gt;::operator&gt;=()</a>.</p>
+<p>Referenced by <a class="el" href="uint__types_8h_source.html#l00191">stxxl::uint_pair&lt; HighType &gt;::operator!=()</a>, <a class="el" href="uint__types_8h_source.html#l00186">operator+=()</a>, <a class="el" href="uint__types_8h_source.html#l00197">stxxl::uint_pair&lt; HighType &gt;::operator&lt;()</a>, <a class="el" href="uint__types_8h_source.html#l00203">stxxl::uint_pair&lt; HighType &gt;::operator&lt;=()</a>, <a class="el" href="uint__types_8h_source.html#l00209">stxxl::uint_pair&lt; HighType &gt;::operator&gt;()</a>, and <a class="el" href="uint__types_8h_source.html#l00215">stxxl::uint_pair&lt; HighType &gt;::operator&gt;=()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1171,7 @@ template&lt;typename HighType &gt; </div>
 
 <p>number of bits in the lower integer part, used a bit shift value. </p>
 
-<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00074">74</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
+<p>Definition at line <a class="el" href="uint__types_8h_source.html#l00073">73</a> of file <a class="el" href="uint__types_8h_source.html">uint_types.h</a>.</p>
 
 </div>
 </div>
@@ -1188,10 +1184,10 @@ template&lt;typename HighType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1uint__pair.html">uint_pair</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f0eba4dcbc25c8a452a29fe8c36540ba5eaaf456">STXXL 1.4.0-204-gf0eba4d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Mon Sep 8 2014 16:00:18 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:46:39 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
