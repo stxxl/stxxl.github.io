@@ -18,7 +18,7 @@
 <area shape="rect" id="node52" href="$classstxxl_1_1counting__ptr.html" title="stxxl::counting_ptr\l\&lt; sorted_runs_data_type \&gt;" alt="" coords="1357,897,1536,943"/>
 <area shape="rect" id="node27" href="$classstxxl_1_1completion__handler.html" title="Completion handler class (Loki&#45;style). " alt="" coords="1021,35,1192,64"/>
 <area shape="rect" id="node29" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; stxxl::completion\l_handler_impl \&gt;" alt="" coords="668,8,823,72"/>
-<area shape="rect" id="node31" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; _Tp \&gt;" alt="" coords="345,17,492,63"/>
+<area shape="rect" id="node31" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; Type \&gt;" alt="" coords="345,17,492,63"/>
 <area shape="rect" id="node44" href="$classstxxl_1_1stream_1_1runs__merger.html" title="Merges sorted runs. " alt="" coords="2139,343,2325,407"/>
 <area shape="rect" id="node47" href="$classstxxl_1_1stream_1_1runs__creator.html" title="stxxl::stream::runs\l_creator\&lt; stream::use\l_push\&lt; ValueType \&gt;, cmp\l_type, block_size, alloc\l_strategy_type \&gt;" alt="" coords="2589,865,2765,964"/>
 <area shape="rect" id="node62" href="$structstxxl_1_1stream_1_1use__push.html" title="stxxl::stream::use\l_push\&lt; ValueType \&gt;" alt="" coords="1704,827,1845,874"/>

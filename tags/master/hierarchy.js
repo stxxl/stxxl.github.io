@@ -110,11 +110,11 @@ var hierarchy =
       [ "stxxl::cmdline_parser::argument_stringlist", "structstxxl_1_1cmdline__parser_1_1argument__stringlist.html", null ],
       [ "stxxl::cmdline_parser::argument_uint", "structstxxl_1_1cmdline__parser_1_1argument__uint.html", null ]
     ] ],
-    [ "stxxl::compat::remove_const< _Tp >", "structstxxl_1_1compat_1_1remove__const.html", null ],
-    [ "stxxl::compat::remove_const< _Tp const  >", "structstxxl_1_1compat_1_1remove__const_3_01__Tp_01const_01_01_4.html", null ],
+    [ "stxxl::compat::remove_const< Type >", "structstxxl_1_1compat_1_1remove__const.html", null ],
+    [ "stxxl::compat::remove_const< Type const  >", "structstxxl_1_1compat_1_1remove__const_3_01Type_01const_01_01_4.html", null ],
     [ "stxxl::compat_hash< _Tp >", "structstxxl_1_1compat__hash.html", null ],
     [ "stxxl::compat_hash_map< _Key, _Tp, _Hash >", "structstxxl_1_1compat__hash__map.html", null ],
-    [ "stxxl::compat_unique_ptr< _Tp >", "structstxxl_1_1compat__unique__ptr.html", null ],
+    [ "stxxl::compat_unique_ptr< Type >", "structstxxl_1_1compat__unique__ptr.html", null ],
     [ "stxxl::completion_handler", "classstxxl_1_1completion__handler.html", null ],
     [ "stxxl::completion_handler_impl", "classstxxl_1_1completion__handler__impl.html", [
       [ "stxxl::completion_handler1< handler_type >", "classstxxl_1_1completion__handler1.html", null ]

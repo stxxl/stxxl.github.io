@@ -167,10 +167,10 @@
 </g>
 <!-- Node12 -->
 <g id="node25" class="node"><title>Node12</title>
-<a xlink:href="structstxxl_1_1compat__unique__ptr.html" target="_top" xlink:title="stxxl::compat_unique\l_ptr\&lt; _Tp \&gt;">
+<a xlink:href="structstxxl_1_1compat__unique__ptr.html" target="_top" xlink:title="stxxl::compat_unique\l_ptr\&lt; Type \&gt;">
 <polygon fill="none" stroke="black" points="255,-25 255,-59 365,-59 365,-25 255,-25"/>
 <text text-anchor="start" x="263" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::compat_unique</text>
-<text text-anchor="middle" x="310" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00">_ptr&lt; _Tp &gt;</text>
+<text text-anchor="middle" x="310" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00">_ptr&lt; Type &gt;</text>
 </a>
 </g>
 <!-- Node12&#45;&gt;Node11 -->

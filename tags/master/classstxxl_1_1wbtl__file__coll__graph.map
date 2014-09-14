@@ -10,7 +10,7 @@
 <area shape="rect" id="node15" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,214,165,261"/>
 <area shape="rect" id="node19" href="$classstxxl_1_1counting__ptr.html" title="stxxl::counting_ptr\l\&lt; request \&gt;" alt="" coords="1708,215,1836,262"/>
 <area shape="rect" id="node28" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; stxxl::stxxl::io\l_error \&gt;" alt="" coords="885,279,1032,343"/>
-<area shape="rect" id="node30" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; _Tp \&gt;" alt="" coords="345,321,492,367"/>
+<area shape="rect" id="node30" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; Type \&gt;" alt="" coords="345,321,492,367"/>
 <area shape="rect" id="node34" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; stxxl::completion\l_handler_impl \&gt;" alt="" coords="707,348,861,412"/>
 <area shape="rect" id="node32" href="$classstxxl_1_1completion__handler.html" title="Completion handler class (Loki&#45;style). " alt="" coords="1056,361,1227,391"/>
 <area shape="rect" id="node37" href="$classstxxl_1_1counting__ptr.html" title="High&#45;performance smart pointer used as a wrapping reference counting pointer. " alt="" coords="1375,277,1503,323"/>

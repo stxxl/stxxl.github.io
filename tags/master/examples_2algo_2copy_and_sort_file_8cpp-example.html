@@ -134,15 +134,11 @@ $(document).ready(function(){initNavTree('examples_2algo_2copy_and_sort_file_8cp
 <div class="line">{</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> key_type;</div>
 <div class="line"></div>
-<div class="line">    key_type _key;</div>
-<div class="line">    <span class="keywordtype">char</span> _data[128 - <span class="keyword">sizeof</span>(key_type)];</div>
-<div class="line">    key_type key()<span class="keyword"> const</span></div>
-<div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> _key;</div>
-<div class="line">    }</div>
+<div class="line">    key_type m_key;</div>
+<div class="line">    <span class="keywordtype">char</span> m_data[128 - <span class="keyword">sizeof</span>(key_type)];</div>
 <div class="line"></div>
 <div class="line">    my_type() { }</div>
-<div class="line">    my_type(key_type __key) : _key(__key) { }</div>
+<div class="line">    my_type(key_type k) : m_key(k) { }</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">static</span> my_type min_value()</div>
 <div class="line">    {</div>
@@ -157,12 +153,12 @@ $(document).ready(function(){initNavTree('examples_2algo_2copy_and_sort_file_8cp
 <div class="line"></div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a name="a2"></a><a class="code" href="uint__types_8h.html#adbe00c091ebf5a14e00337c9ab07180e">operator &lt; </a>(<span class="keyword">const</span> my_type&amp; a, <span class="keyword">const</span> my_type&amp; b)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> a.key() &lt; b.key();</div>
+<div class="line">    <span class="keywordflow">return</span> a.m_key &lt; b.m_key;</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a name="a3"></a><a class="code" href="uint__types_8h.html#aeeaeb80c008f27201493c2b9a0b52937">operator == </a>(<span class="keyword">const</span> my_type&amp; a, <span class="keyword">const</span> my_type&amp; b)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> a.key() == b.key();</div>
+<div class="line">    <span class="keywordflow">return</span> a.m_key == b.m_key;</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">struct </span>Cmp</div>
@@ -186,7 +182,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2copy_and_sort_file_8cp
 <div class="line"></div>
 <div class="line">std::ostream&amp; <a name="a4"></a><a class="code" href="uint__types_8h.html#af636ae167ab4d3b7246d419a3b18c811">operator &lt;&lt; </a>(std::ostream&amp; o, <span class="keyword">const</span> my_type&amp; obj)</div>
 <div class="line">{</div>
-<div class="line">    o &lt;&lt; obj._key;</div>
+<div class="line">    o &lt;&lt; obj.m_key;</div>
 <div class="line">    <span class="keywordflow">return</span> o;</div>
 <div class="line">}</div>
 <div class="line"></div>
@@ -226,7 +222,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2copy_and_sort_file_8cp
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (1) {</div>
 <div class="line">        <a name="a16"></a><a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Checking order...&quot;</span>);</div>
-<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a name="a17"></a><a class="code" href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">stxxl::is_sorted</a>(output.begin(), output.end(), comparator_type()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
+<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a name="a17"></a><a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(output.begin(), output.end(), comparator_type()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
@@ -238,10 +234,10 @@ $(document).ready(function(){initNavTree('examples_2algo_2copy_and_sort_file_8cp
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:44:56 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:44 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

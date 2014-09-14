@@ -131,57 +131,57 @@ $(document).ready(function(){initNavTree('is__sorted_8h_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> _ForwardIter&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ab97ff953b806cbbe6029bced5231c0bb">   23</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#ab97ff953b806cbbe6029bced5231c0bb">is_sorted_helper</a>(_ForwardIter __first, _ForwardIter __last)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ForwardIterator&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">   23</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">is_sorted_helper</a>(ForwardIterator first, ForwardIterator last)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (__first == __last)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (first == last)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    _ForwardIter __next = __first;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">for</span> (++__next; __next != __last; __first = __next, ++__next) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (*__next &lt; *__first)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ForwardIterator next = first;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">for</span> (++next; next != last; first = next, ++next) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (*next &lt; *first)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> _ForwardIter, <span class="keyword">class</span> _StrictWeakOrdering&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a3f258da17989284b5186accd0e854cbd">   38</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#ab97ff953b806cbbe6029bced5231c0bb">is_sorted_helper</a>(_ForwardIter __first, _ForwardIter __last,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                      _StrictWeakOrdering __comp)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ForwardIterator, <span class="keyword">class</span> StrictWeakOrdering&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a718fffc5f42ca792c7107ed7c7d88197">   38</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">is_sorted_helper</a>(ForwardIterator first, ForwardIterator last,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                      StrictWeakOrdering comp)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (__first == __last)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (first == last)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    _ForwardIter __next = __first;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (++__next; __next != __last; __first = __next, ++__next) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (__comp(*__next, *__first))</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ForwardIterator next = first;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (++next; next != last; first = next, ++next) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (comp(*next, *first))</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> _ForwardIter&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">is_sorted</a>(_ForwardIter __first, _ForwardIter __last)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ForwardIterator&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">is_sorted</a>(ForwardIterator first, ForwardIterator last)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#ab97ff953b806cbbe6029bced5231c0bb">is_sorted_helper</a>(__first, __last);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">is_sorted_helper</a>(first, last);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> _ForwardIter, <span class="keyword">class</span> _StrictWeakOrdering&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a24e40b2276b7d58928fbd4ae625c9f67">   60</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">is_sorted</a>(_ForwardIter __first, _ForwardIter __last,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               _StrictWeakOrdering __comp)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ForwardIterator, <span class="keyword">class</span> StrictWeakOrdering&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a7870b6bc46bebb827e1ff6bd724ac64e">   60</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">is_sorted</a>(ForwardIterator first, ForwardIterator last,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               StrictWeakOrdering comp)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#ab97ff953b806cbbe6029bced5231c0bb">is_sorted_helper</a>(__first, __last, __comp);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">is_sorted_helper</a>(first, last, comp);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_IS_SORTED_HEADER</span></div>
-<div class="ttc" id="namespacestxxl_html_a6ee953a2084ce4e78a98f4d3682c994c"><div class="ttname"><a href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">stxxl::is_sorted</a></div><div class="ttdeci">bool is_sorted(_ForwardIter __first, _ForwardIter __last)</div><div class="ttdef"><b>Definition:</b> <a href="is__sorted_8h_source.html#l00054">is_sorted.h:54</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a20823d9598f0abda6a3c61834d8a108f"><div class="ttname"><a href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a></div><div class="ttdeci">bool is_sorted(ForwardIterator first, ForwardIterator last)</div><div class="ttdef"><b>Definition:</b> <a href="is__sorted_8h_source.html#l00054">is_sorted.h:54</a></div></div>
 <div class="ttc" id="namespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
-<div class="ttc" id="namespacestxxl_html_ab97ff953b806cbbe6029bced5231c0bb"><div class="ttname"><a href="namespacestxxl.html#ab97ff953b806cbbe6029bced5231c0bb">stxxl::is_sorted_helper</a></div><div class="ttdeci">bool is_sorted_helper(_ForwardIter __first, _ForwardIter __last)</div><div class="ttdef"><b>Definition:</b> <a href="is__sorted_8h_source.html#l00023">is_sorted.h:23</a></div></div>
+<div class="ttc" id="namespacestxxl_html_ab2e2a578238518c1bdd918e4e21facf0"><div class="ttname"><a href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">stxxl::is_sorted_helper</a></div><div class="ttdeci">bool is_sorted_helper(ForwardIterator first, ForwardIterator last)</div><div class="ttdef"><b>Definition:</b> <a href="is__sorted_8h_source.html#l00023">is_sorted.h:23</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -189,10 +189,10 @@ $(document).ready(function(){initNavTree('is__sorted_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_c603cd6ede12b974eecb818db9d72642.html">common</a></li><li class="navelem"><a class="el" href="is__sorted_8h.html">is_sorted.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:45:03 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:52 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

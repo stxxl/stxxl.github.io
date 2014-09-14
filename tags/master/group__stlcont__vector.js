@@ -381,8 +381,8 @@ var group__stlcont__vector =
       [ "random", "group__stlcont__vector.html#gga35c83847f9847b5e2edc59305a11a52aa4328d560aa45511da84993d408e9b440", null ],
       [ "lru", "group__stlcont__vector.html#gga35c83847f9847b5e2edc59305a11a52aacb90206153ec622270b8289bf5a2179e", null ]
     ] ],
-    [ "is_sorted", "group__stlcont__vector.html#ga914383240c771988ebbef8285b97f807", null ],
-    [ "is_sorted", "group__stlcont__vector.html#ga127d03706af5a737751cee7bd2ad1a0b", null ],
+    [ "is_sorted", "group__stlcont__vector.html#ga753a7428dcca564738d812649ac3b10f", null ],
+    [ "is_sorted", "group__stlcont__vector.html#ga7c6dcd30d30f164dbd99ab83996652e0", null ],
     [ "operator!=", "group__stlcont__vector.html#ga6503be3af6d5d879d3a97a15269c88c7", null ],
     [ "operator<", "group__stlcont__vector.html#ga9718e4f129a0ba3e3881b5fb087a1410", null ],
     [ "operator<=", "group__stlcont__vector.html#ga8000d200aec7b1ba1e7124d032bf1679", null ],

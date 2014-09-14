@@ -10,7 +10,7 @@ var classstxxl_1_1priority__queue__local_1_1internal__priority__queue =
     [ "clear", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ae23465c09c02cb837632f766eca7b01d", null ],
     [ "empty", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a34a38c09a81aae5600dc7e2112bdaa2f", null ],
     [ "pop", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a0c7dcafbfe163fc34f872d340694d1ed", null ],
-    [ "push", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af27b11c5c664aa3e83f597a4618532e8", null ],
+    [ "push", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#abfa469636e04043a9ec9812206b21474", null ],
     [ "size", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa4ad27f31c35fb2cca3e7c00a50471c8", null ],
     [ "sort_to", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a943e0d93b43de577e2e0399c64a947b9", null ],
     [ "top", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a5a09414d3944512f0567217662df3c39", null ],

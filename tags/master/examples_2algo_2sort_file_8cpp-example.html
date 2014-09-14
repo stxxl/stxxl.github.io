@@ -133,15 +133,16 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line">{</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> key_type;</div>
 <div class="line"></div>
-<div class="line">    key_type _key;</div>
-<div class="line">    <span class="keywordtype">char</span> _data[128 - <span class="keyword">sizeof</span>(key_type)];</div>
+<div class="line">    key_type m_key;</div>
+<div class="line">    <span class="keywordtype">char</span> m_data[128 - <span class="keyword">sizeof</span>(key_type)];</div>
+<div class="line"></div>
 <div class="line">    key_type key()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> _key;</div>
+<div class="line">        <span class="keywordflow">return</span> m_key;</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    my_type() { }</div>
-<div class="line">    my_type(key_type __key) : _key(__key) { }</div>
+<div class="line">    my_type(key_type k) : m_key(k) { }</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">static</span> my_type min_value()</div>
 <div class="line">    {</div>
@@ -185,7 +186,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line"></div>
 <div class="line">std::ostream&amp; <a name="a4"></a><a class="code" href="uint__types_8h.html#af636ae167ab4d3b7246d419a3b18c811">operator &lt;&lt; </a>(std::ostream&amp; o, <span class="keyword">const</span> my_type&amp; obj)</div>
 <div class="line">{</div>
-<div class="line">    o &lt;&lt; obj._key;</div>
+<div class="line">    o &lt;&lt; obj.key();</div>
 <div class="line">    <span class="keywordflow">return</span> o;</div>
 <div class="line">}</div>
 <div class="line"></div>
@@ -210,7 +211,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; num_elements / records_in_block; i++)</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j = 0; j &lt; records_in_block; j++)</div>
-<div class="line">                array[j]._key = cur_key--;</div>
+<div class="line">                array[j].m_key = cur_key--;</div>
 <div class="line"></div>
 <div class="line">            <a name="_a8"></a><a class="code" href="classstxxl_1_1counting__ptr.html">stxxl::request_ptr</a> req = f.awrite((<span class="keywordtype">void</span>*)array, <a class="code" href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a>(i) * block_size, block_size, <a name="_a9"></a><a class="code" href="structstxxl_1_1default__completion__handler.html">stxxl::default_completion_handler</a>());</div>
 <div class="line">            req-&gt;<a name="a10"></a><a class="code" href="classstxxl_1_1request__interface.html#ac740c3dd58d02842bed4a4e86fe42b22">wait</a>();</div>
@@ -232,7 +233,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line"><span class="comment">         */</span></div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Checking order...&quot;</span>);</div>
-<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a name="a14"></a><a class="code" href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">stxxl::is_sorted</a>(v.begin(), v.end()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
+<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a name="a14"></a><a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(v.begin(), v.end()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Sorting...&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;sort&quot;</span>) == 0) {</div>
@@ -250,7 +251,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Checking order...&quot;</span>);</div>
-<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a class="code" href="namespacestxxl.html#a6ee953a2084ce4e78a98f4d3682c994c">stxxl::is_sorted</a>(v.begin(), v.end()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
+<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(v.begin(), v.end()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
@@ -262,10 +263,10 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:44:56 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:44 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

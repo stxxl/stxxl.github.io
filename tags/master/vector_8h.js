@@ -2,8 +2,8 @@ var vector_8h =
 [
     [ "bid_vector", "classstxxl_1_1vector_1_1bid__vector.html", "classstxxl_1_1vector_1_1bid__vector" ],
     [ "STXXL_VERBOSE_VECTOR", "vector_8h.html#adce24d9daba86c6533c3ade041e3da39", null ],
-    [ "is_sorted", "vector_8h.html#ga914383240c771988ebbef8285b97f807", null ],
-    [ "is_sorted", "vector_8h.html#ga127d03706af5a737751cee7bd2ad1a0b", null ],
+    [ "is_sorted", "vector_8h.html#ga753a7428dcca564738d812649ac3b10f", null ],
+    [ "is_sorted", "vector_8h.html#ga7c6dcd30d30f164dbd99ab83996652e0", null ],
     [ "operator!=", "vector_8h.html#ga6503be3af6d5d879d3a97a15269c88c7", null ],
     [ "operator<", "vector_8h.html#ga9718e4f129a0ba3e3881b5fb087a1410", null ],
     [ "operator<=", "vector_8h.html#ga8000d200aec7b1ba1e7124d032bf1679", null ],

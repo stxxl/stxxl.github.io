@@ -18,7 +18,7 @@ var searchData=
   ['read_5fwrite_5fpool',['read_write_pool',['../classstxxl_1_1read__write__pool.html',1,'stxxl']]],
   ['rebind',['rebind',['../structstxxl_1_1new__alloc_1_1rebind.html',1,'stxxl::new_alloc']]],
   ['remove_5fconst',['remove_const',['../structstxxl_1_1compat_1_1remove__const.html',1,'stxxl::compat']]],
-  ['remove_5fconst_3c_20_5ftp_20const_20_20_3e',['remove_const&lt; _Tp const  &gt;',['../structstxxl_1_1compat_1_1remove__const_3_01__Tp_01const_01_01_4.html',1,'stxxl::compat']]],
+  ['remove_5fconst_3c_20type_20const_20_20_3e',['remove_const&lt; Type const  &gt;',['../structstxxl_1_1compat_1_1remove__const_3_01Type_01const_01_01_4.html',1,'stxxl::compat']]],
   ['request',['request',['../classstxxl_1_1request.html',1,'stxxl']]],
   ['request_5finterface',['request_interface',['../classstxxl_1_1request__interface.html',1,'stxxl']]],
   ['request_5fqueue',['request_queue',['../classstxxl_1_1request__queue.html',1,'stxxl']]],

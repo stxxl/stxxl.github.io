@@ -11,7 +11,7 @@
 <area shape="rect" id="node20" href="$classstxxl_1_1counting__ptr.html" title="High&#45;performance smart pointer used as a wrapping reference counting pointer. " alt="" coords="688,486,816,533"/>
 <area shape="rect" id="node22" href="$classstxxl_1_1completion__handler.html" title="Completion handler class (Loki&#45;style). " alt="" coords="667,39,837,68"/>
 <area shape="rect" id="node24" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; stxxl::completion\l_handler_impl \&gt;" alt="" coords="321,8,476,72"/>
-<area shape="rect" id="node26" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; _Tp \&gt;" alt="" coords="5,17,152,63"/>
+<area shape="rect" id="node26" href="$structstxxl_1_1compat__unique__ptr.html" title="stxxl::compat_unique\l_ptr\&lt; Type \&gt;" alt="" coords="5,17,152,63"/>
 <area shape="rect" id="node29" href="$classstxxl_1_1BIDArray.html" title="stxxl::BIDArray\&lt; block\l_type::raw_size \&gt;" alt="" coords="1344,197,1499,243"/>
 <area shape="rect" id="node37" href="$classstxxl_1_1BIDArray.html" title="stxxl::BIDArray\&lt; BLK\l_SIZE \&gt;" alt="" coords="984,146,1133,193"/>
 </map>

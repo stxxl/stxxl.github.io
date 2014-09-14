@@ -6,7 +6,7 @@ var utils_8h =
     [ "UNLIKELY", "utils_8h.html#a21c2be1ee56688a6f485ab194b697da7", null ],
     [ "atoi64", "utils_8h.html#a536e4320f733f1d17c454ce720a57e83", null ],
     [ "atouint64", "utils_8h.html#abe387d9749396cf4ac9d6cb4225046a3", null ],
-    [ "div_ceil", "utils_8h.html#a54c198b5a65673e56bfe8e7488560f32", null ],
+    [ "div_ceil", "utils_8h.html#a13269a96a32504fec831ef023fdac7b6", null ],
     [ "format_IEC_size", "utils_8h.html#aacd70e773a27c3e00bd70f59ef731d47", null ],
     [ "format_SI_size", "utils_8h.html#aad1f0319504f525b8683deed27498d61", null ],
     [ "ilog2_ceil", "utils_8h.html#a84d74056e2251f83ae5aa8a526d632e1", null ],

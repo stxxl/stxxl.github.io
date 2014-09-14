@@ -309,14 +309,14 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Integral, <span class="keyword">typename</span> Integral2&gt;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">inline</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">typename</span> compat::remove_const&lt;Integral&gt;::type</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a54c198b5a65673e56bfe8e7488560f32">  200</a></span>&#160;<a class="code" href="namespacestxxl.html#a54c198b5a65673e56bfe8e7488560f32">div_ceil</a>(Integral __n, Integral2 __d)</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a13269a96a32504fec831ef023fdac7b6">  200</a></span>&#160;<a class="code" href="namespacestxxl.html#a13269a96a32504fec831ef023fdac7b6">div_ceil</a>(Integral n, Integral2 d)</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#if 0  // ambiguous overload for std::div(unsigned_anything, unsigned_anything)</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span>    <span class="keyword">typedef</span> __typeof__ (std::div(__n, __d)) div_type;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    div_type result = std::div(__n, __d);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span>    <span class="keyword">typedef</span> __typeof__ (std::div(n, d)) div_type;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    div_type result = std::div(n, d);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> result.quot + (result.rem != 0);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> __n / __d + ((__n % __d) != 0);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> n / d + ((n % d) != 0);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"></span></div>
@@ -417,6 +417,7 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_UTILS_HEADER</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="namespacestxxl_html_a0859f6ff62e9f2113fead81a55e5c8e1"><div class="ttname"><a href="namespacestxxl.html#a0859f6ff62e9f2113fead81a55e5c8e1">stxxl::STXXL_MIN</a></div><div class="ttdeci">const Tp &amp; STXXL_MIN(const Tp &amp;a, const Tp &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00147">utils.h:147</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a13269a96a32504fec831ef023fdac7b6"><div class="ttname"><a href="namespacestxxl.html#a13269a96a32504fec831ef023fdac7b6">stxxl::div_ceil</a></div><div class="ttdeci">compat::remove_const&lt; Integral &gt;::type div_ceil(Integral n, Integral2 d)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00200">utils.h:200</a></div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a251367916f703bddce55e3dbbb00fdf7"><div class="ttname"><a href="namespacestxxl.html#a251367916f703bddce55e3dbbb00fdf7">stxxl::log2_floor</a></div><div class="ttdeci">Integral log2_floor(Integral i)</div><div class="ttdoc">calculate the log2 ceiling of an integral type using math.h </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00170">utils.h:170</a></div></div>
 <div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00040">types.h:40</a></div></div>
@@ -445,7 +446,6 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div class="ttc" id="namespacestxxl_html_a8b223a5b45db8fe6ff5408fcbc6d554e"><div class="ttname"><a href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">stxxl::pop_front</a></div><div class="ttdeci">Container::value_type pop_front(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00278">utils.h:278</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00067">types.h:67</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a84d74056e2251f83ae5aa8a526d632e1"><div class="ttname"><a href="namespacestxxl.html#a84d74056e2251f83ae5aa8a526d632e1">stxxl::ilog2_ceil</a></div><div class="ttdeci">unsigned int ilog2_ceil(const IntegerType &amp;i)</div><div class="ttdoc">calculate the log2 ceiling of an integer type (by repeated bit shifts) </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00189">utils.h:189</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a54c198b5a65673e56bfe8e7488560f32"><div class="ttname"><a href="namespacestxxl.html#a54c198b5a65673e56bfe8e7488560f32">stxxl::div_ceil</a></div><div class="ttdeci">compat::remove_const&lt; Integral &gt;::type div_ceil(Integral __n, Integral2 __d)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00200">utils.h:200</a></div></div>
 <div class="ttc" id="msvc__compatibility_8h_html"><div class="ttname"><a href="msvc__compatibility_8h.html">msvc_compatibility.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a78e11ad4b267e4cf7285a8e4411ac9f7"><div class="ttname"><a href="namespacestxxl.html#a78e11ad4b267e4cf7285a8e4411ac9f7">stxxl::round_up_to_power_of_two</a></div><div class="ttdeci">Integral round_up_to_power_of_two(Integral n, unsigned_type power)</div><div class="ttdoc">round n up to next larger multiple of 2^power. example: (48,4) = 64, (48,3) = 48. ...</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00257">utils.h:257</a></div></div>
 <div class="ttc" id="type__traits_8h_html"><div class="ttname"><a href="type__traits_8h.html">type_traits.h</a></div></div>
@@ -456,10 +456,10 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_c603cd6ede12b974eecb818db9d72642.html">common</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:45:05 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:54 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

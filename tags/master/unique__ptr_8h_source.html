@@ -134,13 +134,13 @@ $(document).ready(function(){initNavTree('unique__ptr_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> _Tp&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structstxxl_1_1compat__unique__ptr.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structstxxl_1_1compat__unique__ptr.html">compat_unique_ptr</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if __cplusplus &gt;= 201103L &amp;&amp; ((__GNUC__ * 10000 + __GNUC_MINOR__ * 100) &gt;= 40400)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span>    <span class="keyword">typedef</span> std::unique_ptr&lt;_Tp&gt; <a class="code" href="structstxxl_1_1compat__unique__ptr.html#a8c6dfe53533e6050f0448416db724e69">result</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span>    <span class="keyword">typedef</span> std::unique_ptr&lt;Type&gt; <a class="code" href="structstxxl_1_1compat__unique__ptr.html#a53cfdf2aae30c0bf1e6f875d9275e3c1">result</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span>    <span class="comment">// auto_ptr is inherently broken and is deprecated by unique_ptr in c++0x</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structstxxl_1_1compat__unique__ptr.html#a8c6dfe53533e6050f0448416db724e69">   31</a></span>&#160;    <span class="keyword">typedef</span> std::auto_ptr&lt;_Tp&gt; <a class="code" href="structstxxl_1_1compat__unique__ptr.html#a8c6dfe53533e6050f0448416db724e69">result</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structstxxl_1_1compat__unique__ptr.html#a53cfdf2aae30c0bf1e6f875d9275e3c1">   31</a></span>&#160;    <span class="keyword">typedef</span> std::auto_ptr&lt;Type&gt; <a class="code" href="structstxxl_1_1compat__unique__ptr.html#a53cfdf2aae30c0bf1e6f875d9275e3c1">result</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span>};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
@@ -150,17 +150,17 @@ $(document).ready(function(){initNavTree('unique__ptr_8h_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>workaround_gcc_3_4 {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// std::swap in gcc 3.4 is broken, __tmp is declared const there</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> _Tp&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// std::swap in gcc 3.4 is broken, tmp is declared const there</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;swap(_Tp&amp; __a, _Tp&amp; __b)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;swap(Type&amp; a, Type&amp; b)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// concept requirements</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    __glibcxx_function_requires(_SGIAssignableConcept&lt;_Tp&gt;)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    __glibcxx_function_requires(_SGIAssignableConcept&lt;Type&gt;)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    _Tp __tmp = __a;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    __a = __b;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    __b = __tmp;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Type tmp = a;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    a = b;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    b = tmp;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace workaround_gcc_3_4</span></div>
@@ -168,8 +168,8 @@ $(document).ready(function(){initNavTree('unique__ptr_8h_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">namespace </span>std {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// overload broken std::swap&lt;auto_ptr&gt; to call a working swap()</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> _Tp&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(std::auto_ptr&lt;_Tp&gt;&amp; a, std::auto_ptr&lt;_Tp&gt;&amp; b)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(std::auto_ptr&lt;Type&gt;&amp; a, std::auto_ptr&lt;Type&gt;&amp; b)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    workaround_gcc_3_4::swap(a, b);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('unique__ptr_8h_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // !STXXL_COMPAT_UNIQUE_PTR_HEADER</span></div>
-<div class="ttc" id="structstxxl_1_1compat__unique__ptr_html_a8c6dfe53533e6050f0448416db724e69"><div class="ttname"><a href="structstxxl_1_1compat__unique__ptr.html#a8c6dfe53533e6050f0448416db724e69">stxxl::compat_unique_ptr::result</a></div><div class="ttdeci">std::auto_ptr&lt; _Tp &gt; result</div><div class="ttdef"><b>Definition:</b> <a href="unique__ptr_8h_source.html#l00031">unique_ptr.h:31</a></div></div>
+<div class="ttc" id="structstxxl_1_1compat__unique__ptr_html_a53cfdf2aae30c0bf1e6f875d9275e3c1"><div class="ttname"><a href="structstxxl_1_1compat__unique__ptr.html#a53cfdf2aae30c0bf1e6f875d9275e3c1">stxxl::compat_unique_ptr::result</a></div><div class="ttdeci">std::auto_ptr&lt; Type &gt; result</div><div class="ttdef"><b>Definition:</b> <a href="unique__ptr_8h_source.html#l00031">unique_ptr.h:31</a></div></div>
 <div class="ttc" id="namespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="structstxxl_1_1compat__unique__ptr_html"><div class="ttname"><a href="structstxxl_1_1compat__unique__ptr.html">stxxl::compat_unique_ptr</a></div><div class="ttdef"><b>Definition:</b> <a href="unique__ptr_8h_source.html#l00026">unique_ptr.h:26</a></div></div>
@@ -190,10 +190,10 @@ $(document).ready(function(){initNavTree('unique__ptr_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_788459c2958d21b1a70a942f0457a532.html">compat</a></li><li class="navelem"><a class="el" href="unique__ptr_8h.html">unique_ptr.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5d45fe3e03902ec3881f0076e382715675a6b268">STXXL 1.4.0-207-g5d45fe3</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/29fc2c1d55d17186634cfdb4c0aa41113bf84760">STXXL 1.4.0-208-g29fc2c1</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 11:45:05 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Sep 14 2014 14:02:54 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
