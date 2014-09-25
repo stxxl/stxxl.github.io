@@ -30,5 +30,5 @@ var classstxxl_1_1uint__pair =
     [ "high", "classstxxl_1_1uint__pair.html#ad6a2a1eca2878fb3a7b24038d75b35e9", null ],
     [ "high_bits", "classstxxl_1_1uint__pair.html#ab766ad702cff9f0ddd5e7343e0d5b505", null ],
     [ "low", "classstxxl_1_1uint__pair.html#aaf9770ba7443c77310b7124152e31cc1", null ],
-    [ "low_bits", "classstxxl_1_1uint__pair.html#ac82ef702fbbf0555e268d48ca691a4e1", null ]
+    [ "low_bits", "classstxxl_1_1uint__pair.html#af06638435d5975b111559432b48e808a", null ]
 ];

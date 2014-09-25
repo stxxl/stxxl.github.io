@@ -30,7 +30,7 @@ var group__schedlayer =
       [ "prefetcher_type", "classstxxl_1_1buf__istream.html#a58ba246d2456d0fe22f9e30d9566ec3f", null ],
       [ "reference", "classstxxl_1_1buf__istream.html#aeba9fe053a6ffd01ed0313ca82c10a81", null ],
       [ "buf_istream", "classstxxl_1_1buf__istream.html#ae0bbdac1a3e9a1e84b8666c496b5d011", null ],
-      [ "buf_istream", "classstxxl_1_1buf__istream.html#a6a38789dc036794c455b1d756717b30b", null ],
+      [ "buf_istream", "classstxxl_1_1buf__istream.html#a7f70ee0cd5b1384b2f4e4661d2b594c6", null ],
       [ "~buf_istream", "classstxxl_1_1buf__istream.html#a759a02adc0fc9be055fffa9d0acf00ff", null ],
       [ "current", "classstxxl_1_1buf__istream.html#a8c9f80e4fa12547157e6b7bbed367bba", null ],
       [ "operator*", "classstxxl_1_1buf__istream.html#a59e7cf827256b02d233e3539139ff7ad", null ],

@@ -160,9 +160,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a38789dc036794c455b1d756717b30b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buf__istream.html#a6a38789dc036794c455b1d756717b30b">buf_istream</a> (<a class="el" href="classstxxl_1_1buf__istream.html#aeaee5418315d0a34691930e4986593d8">bid_iterator_type</a> _begin, <a class="el" href="classstxxl_1_1buf__istream.html#aeaee5418315d0a34691930e4986593d8">bid_iterator_type</a> _end, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> nbuffers)</td></tr>
-<tr class="memdesc:a6a38789dc036794c455b1d756717b30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs input stream object.  <a href="#a6a38789dc036794c455b1d756717b30b">More...</a><br/></td></tr>
-<tr class="separator:a6a38789dc036794c455b1d756717b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f70ee0cd5b1384b2f4e4661d2b594c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buf__istream.html#a7f70ee0cd5b1384b2f4e4661d2b594c6">buf_istream</a> (<a class="el" href="classstxxl_1_1buf__istream.html#aeaee5418315d0a34691930e4986593d8">bid_iterator_type</a> begin, <a class="el" href="classstxxl_1_1buf__istream.html#aeaee5418315d0a34691930e4986593d8">bid_iterator_type</a> end, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> nbuffers)</td></tr>
+<tr class="memdesc:a7f70ee0cd5b1384b2f4e4661d2b594c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs input stream object.  <a href="#a7f70ee0cd5b1384b2f4e4661d2b594c6">More...</a><br/></td></tr>
+<tr class="separator:a7f70ee0cd5b1384b2f4e4661d2b594c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759a02adc0fc9be055fffa9d0acf00ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buf__istream.html#a759a02adc0fc9be055fffa9d0acf00ff">~buf_istream</a> ()</td></tr>
 <tr class="memdesc:a759a02adc0fc9be055fffa9d0acf00ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees used internal objects.  <a href="#a759a02adc0fc9be055fffa9d0acf00ff">More...</a><br/></td></tr>
 <tr class="separator:a759a02adc0fc9be055fffa9d0acf00ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,7 +324,7 @@ template&lt;typename BlockType , typename BIDIteratorType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6a38789dc036794c455b1d756717b30b"></a>
+<a class="anchor" id="a7f70ee0cd5b1384b2f4e4661d2b594c6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -337,18 +337,18 @@ template&lt;typename BlockType , typename BIDIteratorType &gt; </div>
           <td class="memname"><a class="el" href="classstxxl_1_1buf__istream.html">stxxl::buf_istream</a>&lt; BlockType, BIDIteratorType &gt;::<a class="el" href="classstxxl_1_1buf__istream.html">buf_istream</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classstxxl_1_1buf__istream.html#aeaee5418315d0a34691930e4986593d8">bid_iterator_type</a>&#160;</td>
-          <td class="paramname"><em>_begin</em>, </td>
+          <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classstxxl_1_1buf__istream.html#aeaee5418315d0a34691930e4986593d8">bid_iterator_type</a>&#160;</td>
-          <td class="paramname"><em>_end</em>, </td>
+          <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
           <td class="paramname"><em>nbuffers</em>&#160;</td>
         </tr>
         <tr>
@@ -367,8 +367,8 @@ template&lt;typename BlockType , typename BIDIteratorType &gt; </div>
 <p>Constructs input stream object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_begin</td><td><code>bid_iterator</code> pointing to the first block of the stream </td></tr>
-    <tr><td class="paramname">_end</td><td><code>bid_iterator</code> pointing to the ( <b>last</b> + 1 ) block of the stream </td></tr>
+    <tr><td class="paramname">begin</td><td><code>bid_iterator</code> pointing to the first block of the stream </td></tr>
+    <tr><td class="paramname">end</td><td><code>bid_iterator</code> pointing to the ( <b>last</b> + 1 ) block of the stream </td></tr>
     <tr><td class="paramname">nbuffers</td><td>number of buffers for internal use </td></tr>
   </table>
   </dd>
@@ -669,10 +669,10 @@ template&lt;typename BlockType , typename BIDIteratorType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1buf__istream.html">buf_istream</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:34 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:03:30 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
