@@ -100,7 +100,7 @@
 <g id="edge16" class="edge"><title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M363.074,-34.9583C386.551,-38.7374 412.753,-42.9554 435.901,-46.6816"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="363.626,-31.5021 353.196,-33.3682 362.513,-38.4131 363.626,-31.5021"/>
-<text text-anchor="middle" x="396" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00"> sp_impl_</text>
+<text text-anchor="middle" x="396" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00"> m_ptr</text>
 </g>
 <!-- Node8 -->
 <g id="node16" class="node"><title>Node8</title>

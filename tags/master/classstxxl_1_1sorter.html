@@ -141,7 +141,7 @@ class stxxl::sorter&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;</h
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#_a10">examples/applications/skew3.cpp</a>, <a class="el" href="examples_2containers_2sorter1_8cpp-example.html#_a2">examples/containers/sorter1.cpp</a>, <a class="el" href="examples_2containers_2sorter2_8cpp-example.html#_a2">examples/containers/sorter2.cpp</a>, and <a class="el" href="examples_2stream_2stream1_8cpp-example.html#_a9">examples/stream/stream1.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#_a11">examples/applications/skew3.cpp</a>, <a class="el" href="examples_2containers_2sorter1_8cpp-example.html#_a2">examples/containers/sorter1.cpp</a>, <a class="el" href="examples_2containers_2sorter2_8cpp-example.html#_a2">examples/containers/sorter2.cpp</a>, and <a class="el" href="examples_2stream_2stream1_8cpp-example.html#_a9">examples/stream/stream1.cpp</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="sorter_8h_source.html#l00064">64</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -182,6 +182,9 @@ Public Types</h2></td></tr>
 <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554">runs_merger_type</a></td></tr>
 <tr class="memdesc:ace0df183b20c18c63dac7cc61a253554"><td class="mdescLeft">&#160;</td><td class="mdescRight">corresponding runs merger type  <a href="#ace0df183b20c18c63dac7cc61a253554">More...</a><br/></td></tr>
 <tr class="separator:ace0df183b20c18c63dac7cc61a253554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08b54e783589d95e9e60f47ef4cd65f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#aa57b5f51520090c594730fce444f2265">runs_merger_type::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a></td></tr>
+<tr class="memdesc:ad08b54e783589d95e9e60f47ef4cd65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">size type  <a href="#ad08b54e783589d95e9e60f47ef4cd65f">More...</a><br/></td></tr>
+<tr class="separator:ad08b54e783589d95e9e60f47ef4cd65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d3e5beb037629615607b249b4cf7552"><td class="memItemLeft" align="right" valign="top">typedef ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a8d3e5beb037629615607b249b4cf7552">value_type</a></td></tr>
 <tr class="separator:a8d3e5beb037629615607b249b4cf7552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -224,9 +227,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7288ea9fa1e8ebc2294dd36388e1401a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewind output stream to beginning.  <a href="#a7288ea9fa1e8ebc2294dd36388e1401a">More...</a><br/></td></tr>
 <tr class="separator:a7288ea9fa1e8ebc2294dd36388e1401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Capacity</div></td></tr>
-<tr class="memitem:a03dc3f04d0aa22ad5efeff7c0bd1441f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a03dc3f04d0aa22ad5efeff7c0bd1441f">size</a> () const </td></tr>
-<tr class="memdesc:a03dc3f04d0aa22ad5efeff7c0bd1441f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of items pushed or items remaining to be read.  <a href="#a03dc3f04d0aa22ad5efeff7c0bd1441f">More...</a><br/></td></tr>
-<tr class="separator:a03dc3f04d0aa22ad5efeff7c0bd1441f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa7d3fd23e55a709ff7b56c13286486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#affa7d3fd23e55a709ff7b56c13286486">size</a> () const </td></tr>
+<tr class="memdesc:affa7d3fd23e55a709ff7b56c13286486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of items pushed or items remaining to be read.  <a href="#affa7d3fd23e55a709ff7b56c13286486">More...</a><br/></td></tr>
+<tr class="separator:affa7d3fd23e55a709ff7b56c13286486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43f4b9346d59ee2b589c2839bda03088"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a43f4b9346d59ee2b589c2839bda03088">empty</a> () const </td></tr>
 <tr class="memdesc:a43f4b9346d59ee2b589c2839bda03088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#a43f4b9346d59ee2b589c2839bda03088">More...</a><br/></td></tr>
 <tr class="separator:a43f4b9346d59ee2b589c2839bda03088"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,6 +339,24 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 </div>
 </div>
+<a class="anchor" id="ad08b54e783589d95e9e60f47ef4cd65f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#aa57b5f51520090c594730fce444f2265">runs_merger_type::size_type</a> <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>size type </p>
+
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00087">87</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8d3e5beb037629615607b249b4cf7552"></a>
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +422,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00090">90</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00093">93</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +463,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Constructor allocation memory_to_use bytes in ram for sorted runs. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00103">103</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00106">106</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +509,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Constructor variant with differently sizes runs_creator and runs_merger. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00110">110</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00113">113</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +539,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Remove all items and return to input state. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00123">123</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00126">126</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +568,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Standard stream method. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00239">239</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00242">242</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +597,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Finish push input state and deallocate input buffer. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00145">145</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00148">148</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -605,7 +626,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Deallocate buffers and clear result. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00156">156</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00159">159</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +655,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Standard stream method. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00251">251</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00254">254</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +684,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Standard stream method (preincrement operator) </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00264">264</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00267">267</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +713,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Standard stream method. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00258">258</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00261">261</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +743,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Push another item (only callable during input state). </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00133">133</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00136">136</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +772,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Rewind output stream to beginning. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00207">207</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00210">210</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 <p>References <a class="el" href="sort_8h_source.html#l00665">stxxl::sort()</a>.</p>
 
@@ -783,11 +804,11 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Change runs_merger memory usage. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00220">220</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00223">223</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a03dc3f04d0aa22ad5efeff7c0bd1441f"></a>
+<a class="anchor" id="affa7d3fd23e55a709ff7b56c13286486"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -797,7 +818,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::size </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a> <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -812,7 +833,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Number of items pushed or items remaining to be read. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00231">231</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00234">234</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +862,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Switch to output state, <a class="el" href="classstxxl_1_1sorter.html#a7288ea9fa1e8ebc2294dd36388e1401a" title="Rewind output stream to beginning. ">rewind()</a> in case the output was already sorted. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00173">173</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00176">176</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -871,7 +892,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Switch to output state, <a class="el" href="classstxxl_1_1sorter.html#a7288ea9fa1e8ebc2294dd36388e1401a" title="Rewind output stream to beginning. ">rewind()</a> in case the output was already sorted. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00186">186</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00189">189</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 <p>References <a class="el" href="sort_8h_source.html#l00665">stxxl::sort()</a>.</p>
 
@@ -902,7 +923,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Switch to output state, <a class="el" href="classstxxl_1_1sorter.html#a7288ea9fa1e8ebc2294dd36388e1401a" title="Rewind output stream to beginning. ">rewind()</a> in case the output was already sorted. </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00198">198</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00201">201</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +950,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>runs creator object holding all items </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00093">93</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00096">96</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -955,7 +976,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>runs merger reading items when in STATE_OUTPUT </p>
 
-<p>Definition at line <a class="el" href="sorter_8h_source.html#l00096">96</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
+<p>Definition at line <a class="el" href="sorter_8h_source.html#l00099">99</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
 </div>
 </div>
@@ -982,10 +1003,10 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1sorter.html">sorter</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:55 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:53 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

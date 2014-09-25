@@ -2,8 +2,8 @@ var group__fileimpl =
 [
     [ "disk_queued_file", "classstxxl_1_1disk__queued__file.html", [
       [ "disk_queued_file", "classstxxl_1_1disk__queued__file.html#a0ad65ca7a1b652f0ac5b9444bc2ddd35", null ],
-      [ "aread", "classstxxl_1_1disk__queued__file.html#a0babb357951f49bb4283c88d3ded1337", null ],
-      [ "awrite", "classstxxl_1_1disk__queued__file.html#a38f2091f000fe3d01052b83cab00f15f", null ],
+      [ "aread", "classstxxl_1_1disk__queued__file.html#a805702ec2935a0c10f2f8a9e873496b4", null ],
+      [ "awrite", "classstxxl_1_1disk__queued__file.html#a5da65d42b4cb9d0f5c5627af89118a5a", null ],
       [ "get_allocator_id", "classstxxl_1_1disk__queued__file.html#a8d0d928fc7e11defef6a86442239431c", null ],
       [ "get_queue_id", "classstxxl_1_1disk__queued__file.html#a985a30445e8e41099ce67d8d0f9af7cd", null ],
       [ "m_allocator_id", "classstxxl_1_1disk__queued__file.html#a6876c02a7bdc167c223ee0bfdb7a780e", null ],
@@ -26,8 +26,8 @@ var group__fileimpl =
       [ "file", "classstxxl_1_1file.html#ae9afae8a645c9c5c5fdf505eee31273f", null ],
       [ "~file", "classstxxl_1_1file.html#aad6969db5f128ab177ef0e05a117cc59", null ],
       [ "add_request_ref", "classstxxl_1_1file.html#a1e77b6501f6dfe49b62a3624176d8400", null ],
-      [ "aread", "classstxxl_1_1file.html#a922dac38170a7958b310d14176478075", null ],
-      [ "awrite", "classstxxl_1_1file.html#a7d4b22e84358f4bfd861ce06dc525e57", null ],
+      [ "aread", "classstxxl_1_1file.html#ad4ed5ac8e2d25005716fa420f05c56c1", null ],
+      [ "awrite", "classstxxl_1_1file.html#a3aabedede40fe8447134847a2feb5722", null ],
       [ "close_remove", "classstxxl_1_1file.html#a2b73723d8eb119277c63581d36b9b7cf", null ],
       [ "delete_request_ref", "classstxxl_1_1file.html#afe055182948a418cdad51aa6d3033319", null ],
       [ "discard", "classstxxl_1_1file.html#ac6f18cdc7cfacb72aeadd68ab507fd7c", null ],
@@ -72,8 +72,8 @@ var group__fileimpl =
     ] ],
     [ "linuxaio_file", "classstxxl_1_1linuxaio__file.html", [
       [ "linuxaio_file", "classstxxl_1_1linuxaio__file.html#a4b312cdec5cf45640936adcb2421ea08", null ],
-      [ "aread", "classstxxl_1_1linuxaio__file.html#a3e4879c132a118bdbee5a33149d73707", null ],
-      [ "awrite", "classstxxl_1_1linuxaio__file.html#aca4a3c5bad28ab7dc9f27068f51a4d7f", null ],
+      [ "aread", "classstxxl_1_1linuxaio__file.html#a1176ecf3915fc42db9444b3353e076d9", null ],
+      [ "awrite", "classstxxl_1_1linuxaio__file.html#afb7bbaee41761112885b365e33704cc8", null ],
       [ "get_desired_queue_length", "classstxxl_1_1linuxaio__file.html#a1a1830312a57560b6888a36dc2f94127", null ],
       [ "io_type", "classstxxl_1_1linuxaio__file.html#a4a978c7fa1fc288def3d309b52a5c7a5", null ],
       [ "serve", "classstxxl_1_1linuxaio__file.html#a60a0520e34478ea05bbc15ae0855cb4c", null ],
@@ -94,7 +94,7 @@ var group__fileimpl =
       [ "m_size", "classstxxl_1_1mem__file.html#a4f72f6333e0f806d26f6f0240100d858", null ]
     ] ],
     [ "mmap_file", "classstxxl_1_1mmap__file.html", [
-      [ "mmap_file", "classstxxl_1_1mmap__file.html#a48814463bc5066c31137be8ad0db052d", null ],
+      [ "mmap_file", "classstxxl_1_1mmap__file.html#ac382084a771370da3c04157108fca2b3", null ],
       [ "io_type", "classstxxl_1_1mmap__file.html#a964b84f016db0800fa104ec7a80b258b", null ],
       [ "serve", "classstxxl_1_1mmap__file.html#aae42af24c5bd317722856d071e8d1627", null ]
     ] ],

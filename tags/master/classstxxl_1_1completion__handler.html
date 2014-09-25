@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('classstxxl_1_1completion__handler.html
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Completion handler class (Loki-style). </p>
-<p>In some situations one needs to execute some actions after completion of an I/O request. In these cases one can use an I/O completion handler - a function object that can be passed as a parameter to asynchronous I/O calls <code><a class="el" href="classstxxl_1_1file.html#a922dac38170a7958b310d14176478075" title="Schedules an asynchronous read request to the file. ">stxxl::file::aread</a></code> and <code><a class="el" href="classstxxl_1_1file.html#a7d4b22e84358f4bfd861ce06dc525e57" title="Schedules an asynchronous write request to the file. ">stxxl::file::awrite</a></code> . </p>
+<p>In some situations one needs to execute some actions after completion of an I/O request. In these cases one can use an I/O completion handler - a function object that can be passed as a parameter to asynchronous I/O calls <code><a class="el" href="classstxxl_1_1file.html#ad4ed5ac8e2d25005716fa420f05c56c1" title="Schedules an asynchronous read request to the file. ">stxxl::file::aread</a></code> and <code><a class="el" href="classstxxl_1_1file.html#a3aabedede40fe8447134847a2feb5722" title="Schedules an asynchronous write request to the file. ">stxxl::file::awrite</a></code> . </p>
 
 <p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00061">61</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -133,23 +133,28 @@ $(document).ready(function(){initNavTree('classstxxl_1_1completion__handler.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7c178198607bb3c41cb8eccbe9a745b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#ac7c178198607bb3c41cb8eccbe9a745b">completion_handler</a> ()</td></tr>
+<tr class="memdesc:ac7c178198607bb3c41cb8eccbe9a745b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct default, no operation completion handler.  <a href="#ac7c178198607bb3c41cb8eccbe9a745b">More...</a><br/></td></tr>
 <tr class="separator:ac7c178198607bb3c41cb8eccbe9a745b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bb8a3728a51b6e4430cc0cb55aa003"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#a27bb8a3728a51b6e4430cc0cb55aa003">completion_handler</a> (const <a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a> &amp;obj)</td></tr>
+<tr class="memdesc:a27bb8a3728a51b6e4430cc0cb55aa003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a27bb8a3728a51b6e4430cc0cb55aa003">More...</a><br/></td></tr>
 <tr class="separator:a27bb8a3728a51b6e4430cc0cb55aa003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d6187b74fa7af67aa152e815281d32"><td class="memTemplParams" colspan="2">template&lt;typename handler_type &gt; </td></tr>
-<tr class="memitem:af8d6187b74fa7af67aa152e815281d32"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#af8d6187b74fa7af67aa152e815281d32">completion_handler</a> (const handler_type &amp;handler__)</td></tr>
-<tr class="separator:af8d6187b74fa7af67aa152e815281d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954bbef4846b79f7aa7301e0a26d81d9"><td class="memTemplParams" colspan="2">template&lt;typename HandlerType &gt; </td></tr>
+<tr class="memitem:a954bbef4846b79f7aa7301e0a26d81d9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#a954bbef4846b79f7aa7301e0a26d81d9">completion_handler</a> (const HandlerType &amp;handler)</td></tr>
+<tr class="memdesc:a954bbef4846b79f7aa7301e0a26d81d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a completion handler which calls some function.  <a href="#a954bbef4846b79f7aa7301e0a26d81d9">More...</a><br/></td></tr>
+<tr class="separator:a954bbef4846b79f7aa7301e0a26d81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afec79de967442746641010863414f819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#afec79de967442746641010863414f819">operator()</a> (<a class="el" href="classstxxl_1_1request.html">request</a> *req)</td></tr>
+<tr class="memdesc:afec79de967442746641010863414f819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the enclosed completion handler.  <a href="#afec79de967442746641010863414f819">More...</a><br/></td></tr>
 <tr class="separator:afec79de967442746641010863414f819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dda37b864942db6123a4088f6cbfb86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#a0dda37b864942db6123a4088f6cbfb86">operator=</a> (const <a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a> &amp;obj)</td></tr>
+<tr class="memdesc:a0dda37b864942db6123a4088f6cbfb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <a href="#a0dda37b864942db6123a4088f6cbfb86">More...</a><br/></td></tr>
 <tr class="separator:a0dda37b864942db6123a4088f6cbfb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abf9d2b4e2338fa25f3636663a7d7bc9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstxxl_1_1compat__unique__ptr.html">compat_unique_ptr</a><br class="typebreak"/>
+<tr class="memitem:ae5745be254feb4f15adebeb8d3fc169b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstxxl_1_1compat__unique__ptr.html">compat_unique_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classstxxl_1_1completion__handler__impl.html">completion_handler_impl</a> &gt;<br class="typebreak"/>
-::result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#abf9d2b4e2338fa25f3636663a7d7bc9f">sp_impl_</a></td></tr>
-<tr class="separator:abf9d2b4e2338fa25f3636663a7d7bc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+::result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1completion__handler.html#ae5745be254feb4f15adebeb8d3fc169b">m_ptr</a></td></tr>
+<tr class="separator:ae5745be254feb4f15adebeb8d3fc169b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac7c178198607bb3c41cb8eccbe9a745b"></a>
@@ -173,7 +178,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00066">66</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
+<p>Construct default, no operation completion handler. </p>
+
+<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00067">67</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
 
 </div>
 </div>
@@ -199,15 +206,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00070">70</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
+<p>Copy constructor. </p>
+
+<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00072">72</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af8d6187b74fa7af67aa152e815281d32"></a>
+<a class="anchor" id="a954bbef4846b79f7aa7301e0a26d81d9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename handler_type &gt; </div>
+template&lt;typename HandlerType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -215,8 +224,8 @@ template&lt;typename handler_type &gt; </div>
         <tr>
           <td class="memname">stxxl::completion_handler::completion_handler </td>
           <td>(</td>
-          <td class="paramtype">const handler_type &amp;&#160;</td>
-          <td class="paramname"><em>handler__</em></td><td>)</td>
+          <td class="paramtype">const HandlerType &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -227,7 +236,9 @@ template&lt;typename handler_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00075">75</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
+<p>Construct a completion handler which calls some function. </p>
+
+<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00078">78</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +265,9 @@ template&lt;typename handler_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00084">84</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
+<p>Call the enclosed completion handler. </p>
+
+<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00090">90</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
 
 </div>
 </div>
@@ -280,14 +293,16 @@ template&lt;typename handler_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00079">79</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
+<p>Assignment operator. </p>
 
-<p>References <a class="el" href="completion__handler_8h_source.html#l00063">sp_impl_</a>.</p>
+<p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00083">83</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
+
+<p>References <a class="el" href="completion__handler_8h_source.html#l00063">m_ptr</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="abf9d2b4e2338fa25f3636663a7d7bc9f"></a>
+<a class="anchor" id="ae5745be254feb4f15adebeb8d3fc169b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -295,7 +310,7 @@ template&lt;typename handler_type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structstxxl_1_1compat__unique__ptr.html">compat_unique_ptr</a>&lt;<a class="el" href="classstxxl_1_1completion__handler__impl.html">completion_handler_impl</a>&gt;::result stxxl::completion_handler::sp_impl_</td>
+          <td class="memname"><a class="el" href="structstxxl_1_1compat__unique__ptr.html">compat_unique_ptr</a>&lt;<a class="el" href="classstxxl_1_1completion__handler__impl.html">completion_handler_impl</a>&gt;::result stxxl::completion_handler::m_ptr</td>
         </tr>
       </table>
   </td>
@@ -307,7 +322,7 @@ template&lt;typename handler_type &gt; </div>
 
 <p>Definition at line <a class="el" href="completion__handler_8h_source.html#l00063">63</a> of file <a class="el" href="completion__handler_8h_source.html">completion_handler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="completion__handler_8h_source.html#l00079">operator=()</a>.</p>
+<p>Referenced by <a class="el" href="completion__handler_8h_source.html#l00083">operator=()</a>.</p>
 
 </div>
 </div>
@@ -320,10 +335,10 @@ template&lt;typename handler_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:38 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:37 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

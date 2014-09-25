@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>STXXL: stxxl::stream::vector_iterator2stream&lt; InputIterator_ &gt; Class Template Reference</title>
+<title>STXXL: stxxl::stream::vector_iterator2stream&lt; InputIterator &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -116,94 +116,94 @@ $(document).ready(function(){initNavTree('classstxxl_1_1stream_1_1vector__iterat
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classstxxl_1_1stream_1_1vector__iterator2stream-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::stream::vector_iterator2stream&lt; InputIterator_ &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__streampack.html">Stream Package</a></div></div>  </div>
+<div class="title">stxxl::stream::vector_iterator2stream&lt; InputIterator &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__streampack.html">Stream Package</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class InputIterator_&gt;<br/>
-class stxxl::stream::vector_iterator2stream&lt; InputIterator_ &gt;</h3>
+<div class="textblock"><h3>template&lt;class InputIterator&gt;<br/>
+class stxxl::stream::vector_iterator2stream&lt; InputIterator &gt;</h3>
 
 <p>A model of stream that retrieves data from an external <code><a class="el" href="classstxxl_1_1vector.html" title="External vector container.  Introduction to vector container: see STXXL Vector tutorial.  Design and Internals of vector container: see Vector. ">stxxl::vector</a></code> iterator. It is more efficient than generic <code><a class="el" href="classstxxl_1_1stream_1_1iterator2stream.html" title="A model of stream that retrieves the data from an input iterator. For convenience use streamify funct...">iterator2stream</a></code> thanks to use of overlapping For convenience use <code>streamify</code> function instead of direct instantiation of <code><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html" title="A model of stream that retrieves data from an external stxxl::vector iterator. It is more efficient t...">vector_iterator2stream</a></code> . </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2copy_file_8cpp-example.html#_a4">examples/containers/copy_file.cpp</a>, and <a class="el" href="examples_2stream_2stream1_8cpp-example.html#_a3">examples/stream/stream1.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00130">130</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00133">133</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::stream::vector_iterator2stream&lt; InputIterator_ &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::stream::vector_iterator2stream&lt; InputIterator &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1stream_1_1vector__iterator2stream__coll__graph.svg" width="248" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1stream_1_1vector__iterator2stream__coll__graph.svg" width="246" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a64bb951c327572343bd9b80edf807623"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a><br class="typebreak"/>
-&lt; InputIterator_ &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a64bb951c327572343bd9b80edf807623">Self_</a></td></tr>
-<tr class="separator:a64bb951c327572343bd9b80edf807623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ff855ef4501d7dadf34e0bb2be6b63"><td class="memItemLeft" align="right" valign="top">typedef std::iterator_traits<br class="typebreak"/>
-&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a></td></tr>
-<tr class="memdesc:a57ff855ef4501d7dadf34e0bb2be6b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream typedef.  <a href="#a57ff855ef4501d7dadf34e0bb2be6b63">More...</a><br/></td></tr>
-<tr class="separator:a57ff855ef4501d7dadf34e0bb2be6b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ae038ea020bcc3d2e0418b565518dc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a><br class="typebreak"/>
+&lt; InputIterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa7ae038ea020bcc3d2e0418b565518dc">self_type</a></td></tr>
+<tr class="separator:aa7ae038ea020bcc3d2e0418b565518dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43097b34203fa3c0ffc78e99a3fd16a0"><td class="memItemLeft" align="right" valign="top">typedef std::iterator_traits<br class="typebreak"/>
+&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a></td></tr>
+<tr class="memdesc:a43097b34203fa3c0ffc78e99a3fd16a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream typedef.  <a href="#a43097b34203fa3c0ffc78e99a3fd16a0">More...</a><br/></td></tr>
+<tr class="separator:a43097b34203fa3c0ffc78e99a3fd16a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad90fce7cca6dc76db95d4ae5634b2744"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#ad90fce7cca6dc76db95d4ae5634b2744">vector_iterator2stream</a> (InputIterator_ begin, InputIterator_ end, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> nbuffers=0)</td></tr>
-<tr class="separator:ad90fce7cca6dc76db95d4ae5634b2744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5227fb302e79bf08afc135e101bd8d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a5227fb302e79bf08afc135e101bd8d8c">vector_iterator2stream</a> (const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a64bb951c327572343bd9b80edf807623">Self_</a> &amp;a)</td></tr>
-<tr class="separator:a5227fb302e79bf08afc135e101bd8d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea631d81cb4aafaef69473f47e98c1d1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aea631d81cb4aafaef69473f47e98c1d1">~vector_iterator2stream</a> ()</td></tr>
-<tr class="separator:aea631d81cb4aafaef69473f47e98c1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88df8a52277fd221bbfe0abe4f876039"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a88df8a52277fd221bbfe0abe4f876039">empty</a> () const </td></tr>
-<tr class="memdesc:a88df8a52277fd221bbfe0abe4f876039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#a88df8a52277fd221bbfe0abe4f876039">More...</a><br/></td></tr>
-<tr class="separator:a88df8a52277fd221bbfe0abe4f876039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace10d1aa3dff2771a254c40bae0c86b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#ace10d1aa3dff2771a254c40bae0c86b0">operator*</a> () const </td></tr>
-<tr class="memdesc:ace10d1aa3dff2771a254c40bae0c86b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#ace10d1aa3dff2771a254c40bae0c86b0">More...</a><br/></td></tr>
-<tr class="separator:ace10d1aa3dff2771a254c40bae0c86b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986e23af00be4acde97444ed9a6b69ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a64bb951c327572343bd9b80edf807623">Self_</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a986e23af00be4acde97444ed9a6b69ab">operator++</a> ()</td></tr>
-<tr class="memdesc:a986e23af00be4acde97444ed9a6b69ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#a986e23af00be4acde97444ed9a6b69ab">More...</a><br/></td></tr>
-<tr class="separator:a986e23af00be4acde97444ed9a6b69ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b5517ba1108fe5d2a0ed92d66cce87"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#af6b5517ba1108fe5d2a0ed92d66cce87">operator-&gt;</a> () const </td></tr>
-<tr class="separator:af6b5517ba1108fe5d2a0ed92d66cce87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ebe414bd0f8fe166a713ccaf912c95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a40ebe414bd0f8fe166a713ccaf912c95">vector_iterator2stream</a> (InputIterator begin, InputIterator end, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> nbuffers=0)</td></tr>
+<tr class="separator:a40ebe414bd0f8fe166a713ccaf912c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980e6a51da99fd47e6ecfe016ec7cd8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a980e6a51da99fd47e6ecfe016ec7cd8a">vector_iterator2stream</a> (const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa7ae038ea020bcc3d2e0418b565518dc">self_type</a> &amp;a)</td></tr>
+<tr class="separator:a980e6a51da99fd47e6ecfe016ec7cd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6bff6cb51c76c61b282023d1d8e937"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a4a6bff6cb51c76c61b282023d1d8e937">~vector_iterator2stream</a> ()</td></tr>
+<tr class="separator:a4a6bff6cb51c76c61b282023d1d8e937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa0f81ce661913c9ee6b17530f827c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aaaa0f81ce661913c9ee6b17530f827c9">empty</a> () const </td></tr>
+<tr class="memdesc:aaaa0f81ce661913c9ee6b17530f827c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#aaaa0f81ce661913c9ee6b17530f827c9">More...</a><br/></td></tr>
+<tr class="separator:aaaa0f81ce661913c9ee6b17530f827c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9dd4b177e2f894e20f0c0aceeb2d74c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa9dd4b177e2f894e20f0c0aceeb2d74c">operator*</a> () const </td></tr>
+<tr class="memdesc:aa9dd4b177e2f894e20f0c0aceeb2d74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#aa9dd4b177e2f894e20f0c0aceeb2d74c">More...</a><br/></td></tr>
+<tr class="separator:aa9dd4b177e2f894e20f0c0aceeb2d74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f2bc7196fd880e94b70ecdf2481487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa7ae038ea020bcc3d2e0418b565518dc">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a72f2bc7196fd880e94b70ecdf2481487">operator++</a> ()</td></tr>
+<tr class="memdesc:a72f2bc7196fd880e94b70ecdf2481487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream method.  <a href="#a72f2bc7196fd880e94b70ecdf2481487">More...</a><br/></td></tr>
+<tr class="separator:a72f2bc7196fd880e94b70ecdf2481487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa615380f189587da29cbe03ff509f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#affa615380f189587da29cbe03ff509f3">operator-&gt;</a> () const </td></tr>
+<tr class="separator:affa615380f189587da29cbe03ff509f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a744ee4c0953796d706e5436631c049f5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1buf__istream.html">buf_istream</a>&lt; typename <br class="typebreak"/>
-InputIterator_::block_type, <br class="typebreak"/>
+<tr class="memitem:aa5a210d89a3ccedd584c042e6d8bfe16"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1buf__istream.html">buf_istream</a>&lt; typename <br class="typebreak"/>
+InputIterator::block_type, <br class="typebreak"/>
 typename <br class="typebreak"/>
-InputIterator_::bids_container_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a744ee4c0953796d706e5436631c049f5">buf_istream_type</a></td></tr>
-<tr class="separator:a744ee4c0953796d706e5436631c049f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce7a4e225a8562b4538a03981349157"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+InputIterator::bids_container_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa5a210d89a3ccedd584c042e6d8bfe16">buf_istream_type</a></td></tr>
+<tr class="separator:aa5a210d89a3ccedd584c042e6d8bfe16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2688c1dcf5211d8b7c31f19c147d2938"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="structstxxl_1_1compat__unique__ptr.html">stxxl::compat_unique_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a744ee4c0953796d706e5436631c049f5">buf_istream_type</a> &gt;::result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#afce7a4e225a8562b4538a03981349157">buf_istream_unique_ptr_type</a></td></tr>
-<tr class="separator:afce7a4e225a8562b4538a03981349157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa5a210d89a3ccedd584c042e6d8bfe16">buf_istream_type</a> &gt;::result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a2688c1dcf5211d8b7c31f19c147d2938">buf_istream_unique_ptr_type</a></td></tr>
+<tr class="separator:a2688c1dcf5211d8b7c31f19c147d2938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:afcae2411824eb4bc0b5156c20077e925"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#afcae2411824eb4bc0b5156c20077e925">delete_stream</a> ()</td></tr>
-<tr class="separator:afcae2411824eb4bc0b5156c20077e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0444473b27fad256d7bc4bb79167d216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a0444473b27fad256d7bc4bb79167d216">delete_stream</a> ()</td></tr>
+<tr class="separator:a0444473b27fad256d7bc4bb79167d216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5cad3f9672981212a0d06dd1613e4c50"><td class="memItemLeft" align="right" valign="top">InputIterator_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a5cad3f9672981212a0d06dd1613e4c50">current_</a></td></tr>
-<tr class="separator:a5cad3f9672981212a0d06dd1613e4c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3294b05ff88de533da539a5e7e33a75"><td class="memItemLeft" align="right" valign="top">InputIterator_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa3294b05ff88de533da539a5e7e33a75">end_</a></td></tr>
-<tr class="separator:aa3294b05ff88de533da539a5e7e33a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa645c6a1f94de13d5ae2f7e67867f105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#afce7a4e225a8562b4538a03981349157">buf_istream_unique_ptr_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa645c6a1f94de13d5ae2f7e67867f105">in</a></td></tr>
-<tr class="separator:aa645c6a1f94de13d5ae2f7e67867f105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa927315978ca6f8dc4af90da4bfba80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a2688c1dcf5211d8b7c31f19c147d2938">buf_istream_unique_ptr_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aaa927315978ca6f8dc4af90da4bfba80">in</a></td></tr>
+<tr class="separator:aaa927315978ca6f8dc4af90da4bfba80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae7ddf0a3c8985035319bc7c0744029"><td class="memItemLeft" align="right" valign="top">InputIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aaae7ddf0a3c8985035319bc7c0744029">m_current</a></td></tr>
+<tr class="separator:aaae7ddf0a3c8985035319bc7c0744029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73903d296d4bf9721398b900872986ce"><td class="memItemLeft" align="right" valign="top">InputIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a73903d296d4bf9721398b900872986ce">m_end</a></td></tr>
+<tr class="separator:a73903d296d4bf9721398b900872986ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a744ee4c0953796d706e5436631c049f5"></a>
+<a class="anchor" id="aa5a210d89a3ccedd584c042e6d8bfe16"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1buf__istream.html">buf_istream</a>&lt;typename InputIterator_::block_type, typename InputIterator_::bids_container_iterator&gt; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a744ee4c0953796d706e5436631c049f5">buf_istream_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1buf__istream.html">buf_istream</a>&lt;typename InputIterator::block_type, typename InputIterator::bids_container_iterator&gt; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa5a210d89a3ccedd584c042e6d8bfe16">buf_istream_type</a></td>
         </tr>
       </table>
   </td>
@@ -213,21 +213,21 @@ template&lt;class InputIterator_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00134">134</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00137">137</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afce7a4e225a8562b4538a03981349157"></a>
+<a class="anchor" id="a2688c1dcf5211d8b7c31f19c147d2938"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1compat__unique__ptr.html">stxxl::compat_unique_ptr</a>&lt;<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a744ee4c0953796d706e5436631c049f5">buf_istream_type</a>&gt;::result <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#afce7a4e225a8562b4538a03981349157">buf_istream_unique_ptr_type</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1compat__unique__ptr.html">stxxl::compat_unique_ptr</a>&lt;<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa5a210d89a3ccedd584c042e6d8bfe16">buf_istream_type</a>&gt;::result <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a2688c1dcf5211d8b7c31f19c147d2938">buf_istream_unique_ptr_type</a></td>
         </tr>
       </table>
   </td>
@@ -237,64 +237,64 @@ template&lt;class InputIterator_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00136">136</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00139">139</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a64bb951c327572343bd9b80edf807623"></a>
+<a class="anchor" id="aa7ae038ea020bcc3d2e0418b565518dc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a>&lt;InputIterator_&gt; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a64bb951c327572343bd9b80edf807623">Self_</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a>&lt;InputIterator&gt; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa7ae038ea020bcc3d2e0418b565518dc">self_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00145">145</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00148">148</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a57ff855ef4501d7dadf34e0bb2be6b63"></a>
+<a class="anchor" id="a43097b34203fa3c0ffc78e99a3fd16a0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::iterator_traits&lt;InputIterator_&gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a> <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a></td>
+          <td class="memname">typedef std::iterator_traits&lt;InputIterator&gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a> <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Standard stream typedef. </p>
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00148">148</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00151">151</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad90fce7cca6dc76db95d4ae5634b2744"></a>
+<a class="anchor" id="a40ebe414bd0f8fe166a713ccaf912c95"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a> </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a> </td>
           <td>(</td>
-          <td class="paramtype">InputIterator_&#160;</td>
+          <td class="paramtype">InputIterator&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">InputIterator_&#160;</td>
+          <td class="paramtype">InputIterator&#160;</td>
           <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
@@ -316,196 +316,25 @@ template&lt;class InputIterator_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00150">150</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00153">153</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5227fb302e79bf08afc135e101bd8d8c"></a>
+<a class="anchor" id="a980e6a51da99fd47e6ecfe016ec7cd8a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a> </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a64bb951c327572343bd9b80edf807623">Self_</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa7ae038ea020bcc3d2e0418b565518dc">self_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00172">172</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aea631d81cb4aafaef69473f47e98c1d1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::~<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00203">203</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afcae2411824eb4bc0b5156c20077e925"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::delete_stream </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00139">139</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a88df8a52277fd221bbfe0abe4f876039"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::empty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Standard stream method. </p>
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00199">199</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ace10d1aa3dff2771a254c40bae0c86b0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a>&amp; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::operator* </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Standard stream method. </p>
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00176">176</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a986e23af00be4acde97444ed9a6b69ab"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a64bb951c327572343bd9b80edf807623">Self_</a>&amp; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::operator++ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Standard stream method. </p>
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00187">187</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-<p>References <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af6b5517ba1108fe5d2a0ed92d66cce87"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a57ff855ef4501d7dadf34e0bb2be6b63">value_type</a>* <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::operator-&gt; </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
         </tr>
       </table>
   </td>
@@ -519,66 +348,189 @@ template&lt;class InputIterator_&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4a6bff6cb51c76c61b282023d1d8e937"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::~<a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00213">213</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0444473b27fad256d7bc4bb79167d216"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::delete_stream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00142">142</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaaa0f81ce661913c9ee6b17530f827c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standard stream method. </p>
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00209">209</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9dd4b177e2f894e20f0c0aceeb2d74c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a>&amp; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standard stream method. </p>
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00186">186</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72f2bc7196fd880e94b70ecdf2481487"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#aa7ae038ea020bcc3d2e0418b565518dc">self_type</a>&amp; <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standard stream method. </p>
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00197">197</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+<p>References <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="affa615380f189587da29cbe03ff509f3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a43097b34203fa3c0ffc78e99a3fd16a0">value_type</a>* <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00191">191</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5cad3f9672981212a0d06dd1613e4c50"></a>
+<a class="anchor" id="aaa927315978ca6f8dc4af90da4bfba80"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">InputIterator_ <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::current_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00132">132</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa3294b05ff88de533da539a5e7e33a75"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">InputIterator_ <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::end_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00132">132</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa645c6a1f94de13d5ae2f7e67867f105"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator_&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#afce7a4e225a8562b4538a03981349157">buf_istream_unique_ptr_type</a> <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator_ &gt;::in</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html#a2688c1dcf5211d8b7c31f19c147d2938">buf_istream_unique_ptr_type</a> <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::in</td>
         </tr>
       </table>
   </td>
@@ -588,7 +540,55 @@ template&lt;class InputIterator_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00137">137</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00140">140</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaae7ddf0a3c8985035319bc7c0744029"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InputIterator <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::m_current</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00135">135</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73903d296d4bf9721398b900872986ce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InputIterator <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">stxxl::stream::vector_iterator2stream</a>&lt; InputIterator &gt;::m_end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00135">135</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
@@ -601,10 +601,10 @@ template&lt;class InputIterator_&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1stream.html">stream</a></li><li class="navelem"><a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html">vector_iterator2stream</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:04:17 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:04:16 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

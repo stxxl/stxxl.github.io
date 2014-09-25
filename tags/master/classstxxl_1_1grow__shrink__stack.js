@@ -9,7 +9,7 @@ var classstxxl_1_1grow__shrink__stack =
     [ "blocks_per_page", "classstxxl_1_1grow__shrink__stack.html#a6dab8387e0be8485b16f01e07ed5e35da587c6f3bb4b6614ea4c0fb67a02d596a", null ],
     [ "block_size", "classstxxl_1_1grow__shrink__stack.html#a6dab8387e0be8485b16f01e07ed5e35daf34419ea8842a8a09a4bb12f51f2d98a", null ],
     [ "grow_shrink_stack", "classstxxl_1_1grow__shrink__stack.html#a2434f96f0fec1817c5ecca0397bc17d3", null ],
-    [ "grow_shrink_stack", "classstxxl_1_1grow__shrink__stack.html#acfeea542cdc01b554b8d7c06bf0da04c", null ],
+    [ "grow_shrink_stack", "classstxxl_1_1grow__shrink__stack.html#a45c57c7d7c9abf342689e9ab921a1a9e", null ],
     [ "~grow_shrink_stack", "classstxxl_1_1grow__shrink__stack.html#a7ccf754f7afe6f4414c18608754da981", null ],
     [ "empty", "classstxxl_1_1grow__shrink__stack.html#ac1973e75ee542fb5079792cb3850c8a7", null ],
     [ "pop", "classstxxl_1_1grow__shrink__stack.html#ae41f7e4002393f78a944bdf61a046c51", null ],

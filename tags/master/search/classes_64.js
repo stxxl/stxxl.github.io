@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['default_5fcompletion_5fhandler',['default_completion_handler',['../structstxxl_1_1default__completion__handler.html',1,'stxxl']]],
   ['deque',['deque',['../classstxxl_1_1deque.html',1,'stxxl']]],
   ['deque_5fiterator',['deque_iterator',['../classstxxl_1_1deque__iterator.html',1,'stxxl']]],
   ['disk_5fallocator',['disk_allocator',['../classstxxl_1_1disk__allocator.html',1,'stxxl']]],

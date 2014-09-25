@@ -144,11 +144,12 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uint__types_8h.html">stxxl/bits/common/uint_types.h</a>&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">using</span> <a name="a0"></a><a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a>;</div>
-<div class="line"><span class="keyword">using</span> <a name="a1"></a><a class="code" href="namespacestxxl.html#a8a46bdf85465a25d217c9e8894c98ef2">stxxl::external_size_type</a>;</div>
+<div class="line"><span class="keyword">using</span> <a name="a1"></a><a class="code" href="namespacestxxl.html#a2617329df09b282880680c99e5326b2d">stxxl::internal_size_type</a>;</div>
+<div class="line"><span class="keyword">using</span> <a name="a2"></a><a class="code" href="namespacestxxl.html#a8a46bdf85465a25d217c9e8894c98ef2">stxxl::external_size_type</a>;</div>
 <div class="line"><span class="keyword">namespace </span>stream = stxxl::stream;</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// 1 GiB ram used by external data structures / 1 MiB block size</span></div>
-<div class="line"><a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">uint64</a> ram_use = 1024 * 1024 * 1024;</div>
+<div class="line"><a class="code" href="namespacestxxl.html#a2617329df09b282880680c99e5326b2d">internal_size_type</a> ram_use = 1024 * 1024 * 1024;</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// alphabet data type</span></div>
 <div class="line"><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> alphabet_type;</div>
@@ -172,26 +173,26 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"><span class="keywordtype">bool</span> sacheck(InputT&amp; inputT, InputSA&amp; inputSA)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> InputSA::value_type offset_type;</div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a2"></a><a class="code" href="structstxxl_1_1tuple.html">stxxl::tuple&lt;offset_type, offset_type&gt;</a> pair_type;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a3"></a><a class="code" href="structstxxl_1_1tuple.html">stxxl::tuple&lt;offset_type, offset_type&gt;</a> pair_type;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="structstxxl_1_1tuple.html">stxxl::tuple&lt;offset_type, offset_type, offset_type&gt;</a> triple_type;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// *** Pipeline Declaration ***</span></div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Build tuples with index: (SA[i]) -&gt; (i, SA[i])</span></div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a3"></a><a class="code" href="structstxxl_1_1stream_1_1counter.html">stxxl::stream::counter&lt;offset_type&gt;</a> index_counter_type;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a4"></a><a class="code" href="structstxxl_1_1stream_1_1counter.html">stxxl::stream::counter&lt;offset_type&gt;</a> index_counter_type;</div>
 <div class="line">    index_counter_type index_counter;</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">typedef</span> stream::make_tuple&lt;index_counter_type, InputSA&gt; tuple_index_sa_type;</div>
 <div class="line">    tuple_index_sa_type tuple_index_sa(index_counter, inputSA);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// take (i, SA[i]) and sort to (ISA[i], i)</span></div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a4"></a><a class="code" href="structstxxl_1_1tuple__less2nd.html">stxxl::tuple_less2nd&lt;pair_type&gt;</a> pair_less_type;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a5"></a><a class="code" href="structstxxl_1_1tuple__less2nd.html">stxxl::tuple_less2nd&lt;pair_type&gt;</a> pair_less_type;</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> stream::sort&lt;tuple_index_sa_type, pair_less_type&gt; build_isa_type;</div>
 <div class="line"></div>
 <div class="line">    build_isa_type build_isa(tuple_index_sa, pair_less_type(), ram_use / 3);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// build (ISA[i], T[i], ISA[i+1]) and sort to (i, T[SA[i]], ISA[SA[i]+1])</span></div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a5"></a><a class="code" href="structstxxl_1_1tuple__less1st.html">stxxl::tuple_less1st&lt;triple_type&gt;</a> triple_less_type;      <span class="comment">// comparison relation</span></div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a6"></a><a class="code" href="structstxxl_1_1tuple__less1st.html">stxxl::tuple_less1st&lt;triple_type&gt;</a> triple_less_type;      <span class="comment">// comparison relation</span></div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> stream::use_push&lt;triple_type&gt; triple_push_type; <span class="comment">// indicator use push()</span></div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> stream::runs_creator&lt;triple_push_type, triple_less_type&gt; triple_rc_type;</div>
@@ -281,10 +282,10 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"><span class="keywordtype">bool</span> sacheck_vectors(InputT&amp; inputT, InputSA&amp; inputSA)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">typename</span> stream::streamify_traits&lt;typename InputT::iterator&gt;::stream_type streamT</div>
-<div class="line">        = <a name="a6"></a><a class="code" href="group__streampack.html#ga3ba21bad4ec52ff276cb3cdea2fc36f5">stream::streamify</a>(inputT.begin(), inputT.end());</div>
+<div class="line">        = <a name="a7"></a><a class="code" href="group__streampack.html#gac77a17eb336aaef37623e644c3b9a7cb">stream::streamify</a>(inputT.begin(), inputT.end());</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">typename</span> stream::streamify_traits&lt;typename InputSA::iterator&gt;::stream_type streamSA</div>
-<div class="line">        = <a class="code" href="group__streampack.html#ga3ba21bad4ec52ff276cb3cdea2fc36f5">stream::streamify</a>(inputSA.begin(), inputSA.end());</div>
+<div class="line">        = <a class="code" href="group__streampack.html#gac77a17eb336aaef37623e644c3b9a7cb">stream::streamify</a>(inputSA.begin(), inputSA.end());</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> sacheck(streamT, streamSA);</div>
 <div class="line">}</div>
@@ -318,7 +319,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="structstxxl_1_1tuple.html">stxxl::tuple&lt;offset_type, offset_type, offset_type, offset_type&gt;</a> skew_quad_type;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="structstxxl_1_1tuple.html">stxxl::tuple&lt;offset_type, offset_type, offset_type, offset_type, offset_type&gt;</a> skew_quint_type;</div>
 <div class="line"></div>
-<div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a name="_a7"></a><a class="code" href="classstxxl_1_1vector.html">stxxl::VECTOR_GENERATOR&lt;offset_type, 1, 2&gt;::result</a> offset_array_type;</div>
+<div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a name="_a8"></a><a class="code" href="classstxxl_1_1vector.html">stxxl::VECTOR_GENERATOR&lt;offset_type, 1, 2&gt;::result</a> offset_array_type;</div>
 <div class="line">    <span class="keyword">typedef</span> stream::vector_iterator2stream&lt;typename offset_array_type::iterator&gt; offset_array_it_rg;</div>
 <div class="line"><span class="comment"></span></div>
 <div class="line"><span class="comment">    /** Comparison function for the mod0 tuples. */</span></div>
@@ -368,7 +369,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"><span class="keyword">        </span>{</div>
 <div class="line">            <span class="keywordflow">if</span> (a.second == b.second) {</div>
 <div class="line">                <span class="keywordflow">if</span> (a.third == b.third)</div>
-<div class="line">                    <span class="keywordflow">return</span> a.<a name="a8"></a><a class="code" href="structstxxl_1_1tuple.html#ae5006a18c0316af2bb8428e6ed220161">fourth</a> &lt; b.fourth;</div>
+<div class="line">                    <span class="keywordflow">return</span> a.<a name="a9"></a><a class="code" href="structstxxl_1_1tuple.html#ae5006a18c0316af2bb8428e6ed220161">fourth</a> &lt; b.fourth;</div>
 <div class="line">                <span class="keywordflow">else</span></div>
 <div class="line">                    <span class="keywordflow">return</span> a.third &lt; b.third;</div>
 <div class="line">            }</div>
@@ -405,8 +406,8 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">        skew_pair_type result;</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        naming(Input&amp; A_, <span class="keywordtype">bool</span>&amp; unique_) :</div>
-<div class="line">            A(A_), unique(unique_), lexname(0)</div>
+<div class="line">        naming(Input&amp; A_, <span class="keywordtype">bool</span>&amp; unique_)</div>
+<div class="line">            : A(A_), unique(unique_), lexname(0)</div>
 <div class="line">        {</div>
 <div class="line">            assert(!A.empty());</div>
 <div class="line">            unique = <span class="keyword">true</span>;</div>
@@ -421,7 +422,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">            <span class="keywordflow">return</span> result;</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        naming&amp; <a name="a9"></a><a class="code" href="uint__types_8h.html#ab3b8e87c6048edbab667d8c19812d6eb">operator ++ </a>()</div>
+<div class="line">        naming&amp; <a name="a10"></a><a class="code" href="uint__types_8h.html#ab3b8e87c6048edbab667d8c19812d6eb">operator ++ </a>()</div>
 <div class="line">        {</div>
 <div class="line">            assert(!A.empty());</div>
 <div class="line"></div>
@@ -816,7 +817,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    };</div>
 <div class="line"><span class="comment"></span></div>
 <div class="line"><span class="comment">    /** Helper function for computing the size of the 2/3 subproblem. */</span></div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> subp_size(<span class="keywordtype">size_t</span> n)</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">inline</span> size_type subp_size(size_type n)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">return</span> (n / 3) * 2 + ((n % 3) == 2);</div>
 <div class="line">    }</div>
@@ -893,7 +894,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">        value_type result;</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        build_sa(S&amp; source_, Mod1&amp; mod_1_, Mod2&amp; mod_2_, <span class="keywordtype">size_t</span> a_size, <span class="keywordtype">size_t</span> memsize)</div>
+<div class="line">        build_sa(S&amp; source_, Mod1&amp; mod_1_, Mod2&amp; mod_2_, size_type a_size, <span class="keywordtype">size_t</span> memsize)</div>
 <div class="line">            : source(source_), mod_1(mod_1_), mod_2(mod_2_), index(0), ready(false)</div>
 <div class="line">        {</div>
 <div class="line">            assert(!source_.empty());</div>
@@ -1068,7 +1069,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"></div>
 <div class="line">        <span class="comment">// Sorter</span></div>
 <div class="line">        <span class="keyword">typedef</span> <a class="code" href="structstxxl_1_1tuple__less1st.html">stxxl::tuple_less1st&lt;skew_pair_type&gt;</a> mod12cmp;</div>
-<div class="line">        <span class="keyword">typedef</span> <a name="_a10"></a><a class="code" href="classstxxl_1_1sorter.html">stxxl::sorter&lt;skew_pair_type, mod12cmp&gt;</a> mod12_sorter_type;</div>
+<div class="line">        <span class="keyword">typedef</span> <a name="_a11"></a><a class="code" href="classstxxl_1_1sorter.html">stxxl::sorter&lt;skew_pair_type, mod12cmp&gt;</a> mod12_sorter_type;</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// Additional streaming items</span></div>
 <div class="line">        <span class="keyword">typedef</span> stream::choose&lt;mod12_sorter_type, 2&gt; isa_second_type;</div>
@@ -1096,7 +1097,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">            mod12_sorter_type m2_sorter(mod12cmp(), ram_use / 5);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// sorted mod1 runs -concatenate- sorted mod2 runs</span></div>
-<div class="line">            <span class="keyword">typedef</span> <a name="_a11"></a><a class="code" href="classstxxl_1_1stream_1_1concatenate.html">stxxl::stream::concatenate&lt;mod12_sorter_type, mod12_sorter_type&gt;</a> concatenation_type;</div>
+<div class="line">            <span class="keyword">typedef</span> <a name="_a12"></a><a class="code" href="classstxxl_1_1stream_1_1concatenate.html">stxxl::stream::concatenate&lt;mod12_sorter_type, mod12_sorter_type&gt;</a> concatenation_type;</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// (t_i) -&gt; (i,t_i,t_{i+1},t_{i+2})</span></div>
 <div class="line">            offset_array_type text;</div>
@@ -1271,7 +1272,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"><span class="comment"></span>    size_type m_count;</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">public</span>:</div>
-<div class="line">    cut_stream(InputType&amp; input, size_type <a name="a12"></a><a class="code" href="namespacestxxl.html#a5be33455274facbfe5f5a316803174b2">count</a>)</div>
+<div class="line">    cut_stream(InputType&amp; input, size_type <a name="a13"></a><a class="code" href="namespacestxxl.html#a5be33455274facbfe5f5a316803174b2">count</a>)</div>
 <div class="line">        : m_input(input), m_count(count)</div>
 <div class="line">    { }</div>
 <div class="line"></div>
@@ -1311,13 +1312,13 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="classstxxl_1_1vector.html">stxxl::VECTOR_GENERATOR&lt;offset_type, 1, 2, block_size&gt;::result</a> offset_vector_type;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// input and output files (if supplied via command line)</span></div>
-<div class="line">    <a name="_a13"></a><a class="code" href="classstxxl_1_1syscall__file.html">stxxl::syscall_file</a>* input_file = NULL, * output_file = NULL;</div>
+<div class="line">    <a name="_a14"></a><a class="code" href="classstxxl_1_1syscall__file.html">stxxl::syscall_file</a>* input_file = NULL, * output_file = NULL;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// input and output vectors for suffix array construction</span></div>
 <div class="line">    alphabet_vector_type input_vector;</div>
 <div class="line">    offset_vector_type output_vector;</div>
 <div class="line"></div>
-<div class="line">    <span class="keyword">using</span> <a name="_a14"></a><a class="code" href="classstxxl_1_1file.html">stxxl::file</a>;</div>
+<div class="line">    <span class="keyword">using</span> <a name="_a15"></a><a class="code" href="classstxxl_1_1file.html">stxxl::file</a>;</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (input_verbatim)</div>
 <div class="line">    {</div>
@@ -1327,15 +1328,15 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input_filename == <span class="stringliteral">&quot;random&quot;</span>)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">if</span> (sizelimit == <a name="a15"></a><a class="code" href="uint__types_8h.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_type&gt;::max</a>()) {</div>
+<div class="line">        <span class="keywordflow">if</span> (sizelimit == <a name="a16"></a><a class="code" href="uint__types_8h.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_type&gt;::max</a>()) {</div>
 <div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot;You must provide -s &lt;size&gt; for generated inputs.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">            <span class="keywordflow">return</span> 1;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// fill input vector with random bytes</span></div>
 <div class="line">        input_vector.resize(sizelimit);</div>
-<div class="line">        <a name="_a16"></a><a class="code" href="classstxxl_1_1random__number8__r.html">stxxl::random_number8_r</a> rand8;</div>
-<div class="line">        <a name="a17"></a><a class="code" href="group__stlalgo.html#ga1f66b17c000502599f4b98a738094b3a">stxxl::generate</a>(input_vector.begin(), input_vector.end(), rand8);</div>
+<div class="line">        <a name="_a17"></a><a class="code" href="classstxxl_1_1random__number8__r.html">stxxl::random_number8_r</a> rand8;</div>
+<div class="line">        <a name="a18"></a><a class="code" href="group__stlalgo.html#ga1f66b17c000502599f4b98a738094b3a">stxxl::generate</a>(input_vector.begin(), input_vector.end(), rand8);</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input_filename == <span class="stringliteral">&quot;unary&quot;</span>)</div>
 <div class="line">    {</div>
@@ -1365,8 +1366,8 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// I/O measurement</span></div>
-<div class="line">    <a name="_a18"></a><a class="code" href="classstxxl_1_1stats.html">stxxl::stats</a>* Stats = <a name="a19"></a><a class="code" href="classstxxl_1_1singleton.html#ab81b99f8fc8157a2a4b1bdab8afb454b">stxxl::stats::get_instance</a>();</div>
-<div class="line">    <a name="_a20"></a><a class="code" href="classstxxl_1_1stats__data.html">stxxl::stats_data</a> stats_begin(*Stats);</div>
+<div class="line">    <a name="_a19"></a><a class="code" href="classstxxl_1_1stats.html">stxxl::stats</a>* Stats = <a name="a20"></a><a class="code" href="classstxxl_1_1singleton.html#ab81b99f8fc8157a2a4b1bdab8afb454b">stxxl::stats::get_instance</a>();</div>
+<div class="line">    <a name="_a21"></a><a class="code" href="classstxxl_1_1stats__data.html">stxxl::stats_data</a> stats_begin(*Stats);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// construct skew class with bufreader input type</span></div>
 <div class="line">    <span class="keyword">typedef</span> alphabet_vector_type::bufreader_type input_type;</div>
@@ -1391,7 +1392,7 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    output_vector.resize(size);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// write suffix array stream into output vector</span></div>
-<div class="line">    <a name="a21"></a><a class="code" href="group__streampack.html#gaf214a1fc62726c3b8e7fb31aa4bfe20e">stream::materialize</a>(skew, output_vector.begin(), output_vector.end());</div>
+<div class="line">    <a name="a22"></a><a class="code" href="group__streampack.html#gabaafb435e850ebfdef01728414b673f8">stream::materialize</a>(skew, output_vector.begin(), output_vector.end());</div>
 <div class="line"></div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;output size = &quot;</span> &lt;&lt; output_vector.size() &lt;&lt; std::endl;</div>
 <div class="line">    std::cout &lt;&lt; (<a class="code" href="classstxxl_1_1stats__data.html">stxxl::stats_data</a>(*Stats) - stats_begin); <span class="comment">// print i/o statistics</span></div>
@@ -1444,10 +1445,10 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
 <div class="line">{</div>
-<div class="line">    <a name="_a22"></a><a class="code" href="classstxxl_1_1cmdline__parser.html">stxxl::cmdline_parser</a> cp;</div>
+<div class="line">    <a name="_a23"></a><a class="code" href="classstxxl_1_1cmdline__parser.html">stxxl::cmdline_parser</a> cp;</div>
 <div class="line"></div>
-<div class="line">    cp.<a name="a23"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#aa94e3d03fd48f21af08cc237b34bf074">set_description</a>(<span class="stringliteral">&quot;DC3 aka skew3 algorithm for external memory suffix array construction.&quot;</span>);</div>
-<div class="line">    cp.<a name="a24"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a18b3dda858fc13fd774af6a2781c5191">set_author</a>(<span class="stringliteral">&quot;Jens Mehnert &lt;jmehnert@mpi-sb.mpg.de&gt;, Timo Bingmann &lt;tb@panthema.net&gt;, Daniel Feist &lt;daniel.feist@student.kit.edu&gt;&quot;</span>);</div>
+<div class="line">    cp.<a name="a24"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#aa94e3d03fd48f21af08cc237b34bf074">set_description</a>(<span class="stringliteral">&quot;DC3 aka skew3 algorithm for external memory suffix array construction.&quot;</span>);</div>
+<div class="line">    cp.<a name="a25"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a18b3dda858fc13fd774af6a2781c5191">set_author</a>(<span class="stringliteral">&quot;Jens Mehnert &lt;jmehnert@mpi-sb.mpg.de&gt;, Timo Bingmann &lt;tb@panthema.net&gt;, Daniel Feist &lt;daniel.feist@student.kit.edu&gt;&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    std::string input_filename, output_filename;</div>
 <div class="line">    size_type sizelimit = <a class="code" href="uint__types_8h.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_type&gt;::max</a>();</div>
@@ -1456,17 +1457,17 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <div class="line">    <span class="keywordtype">bool</span> input_verbatim = <span class="keyword">false</span>;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> wordsize = 32;</div>
 <div class="line"></div>
-<div class="line">    cp.<a name="a25"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a68747ba66ff3ac1dbd5130e1782391ff">add_param_string</a>(<span class="stringliteral">&quot;input&quot;</span>, <span class="stringliteral">&quot;Path to input file (or verbatim text).\n  The special inputs &#39;random&#39; and &#39;unary&#39; generate such text on-the-fly.&quot;</span>, input_filename);</div>
-<div class="line">    cp.<a name="a26"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#abf89271ba1b967b781f9ace37ee774b3">add_flag</a>(<span class="charliteral">&#39;c&#39;</span>, <span class="stringliteral">&quot;check&quot;</span>, <span class="stringliteral">&quot;Check suffix array for correctness.&quot;</span>, check_flag);</div>
+<div class="line">    cp.<a name="a26"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a68747ba66ff3ac1dbd5130e1782391ff">add_param_string</a>(<span class="stringliteral">&quot;input&quot;</span>, <span class="stringliteral">&quot;Path to input file (or verbatim text).\n  The special inputs &#39;random&#39; and &#39;unary&#39; generate such text on-the-fly.&quot;</span>, input_filename);</div>
+<div class="line">    cp.<a name="a27"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#abf89271ba1b967b781f9ace37ee774b3">add_flag</a>(<span class="charliteral">&#39;c&#39;</span>, <span class="stringliteral">&quot;check&quot;</span>, <span class="stringliteral">&quot;Check suffix array for correctness.&quot;</span>, check_flag);</div>
 <div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#abf89271ba1b967b781f9ace37ee774b3">add_flag</a>(<span class="charliteral">&#39;t&#39;</span>, <span class="stringliteral">&quot;text&quot;</span>, <span class="stringliteral">&quot;Print out suffix array in readable text.&quot;</span>, text_output_flag);</div>
-<div class="line">    cp.<a name="a27"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#aa2e730262ee518815b8d918700944bf2">add_string</a>(<span class="charliteral">&#39;o&#39;</span>, <span class="stringliteral">&quot;output&quot;</span>, <span class="stringliteral">&quot;Output suffix array to given path.&quot;</span>, output_filename);</div>
+<div class="line">    cp.<a name="a28"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#aa2e730262ee518815b8d918700944bf2">add_string</a>(<span class="charliteral">&#39;o&#39;</span>, <span class="stringliteral">&quot;output&quot;</span>, <span class="stringliteral">&quot;Output suffix array to given path.&quot;</span>, output_filename);</div>
 <div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#abf89271ba1b967b781f9ace37ee774b3">add_flag</a>(<span class="charliteral">&#39;v&#39;</span>, <span class="stringliteral">&quot;verbatim&quot;</span>, <span class="stringliteral">&quot;Consider \&quot;input\&quot; as verbatim text to construct suffix array on.&quot;</span>, input_verbatim);</div>
-<div class="line">    cp.<a name="a28"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a1c0995383c15cc8008cc58492d88c836">add_bytes</a>(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, <span class="stringliteral">&quot;Cut input text to given size, e.g. 2 GiB.&quot;</span>, sizelimit);</div>
-<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#a1c0995383c15cc8008cc58492d88c836">add_bytes</a>(<span class="charliteral">&#39;M&#39;</span>, <span class="stringliteral">&quot;memuse&quot;</span>, <span class="stringliteral">&quot;Amount of RAM to use, default: 1 GiB.&quot;</span>, ram_use);</div>
-<div class="line">    cp.<a name="a29"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#afdd88ad7e5e0769bc196414f5e12b316">add_uint</a>(<span class="charliteral">&#39;w&#39;</span>, <span class="stringliteral">&quot;wordsize&quot;</span>, <span class="stringliteral">&quot;Set word size of suffix array to 32, 40 or 64 bit, default: 32-bit.&quot;</span>, wordsize);</div>
+<div class="line">    cp.<a name="a29"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#adf2df88abbd896b842a569f96b96c887">add_bytes</a>(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, <span class="stringliteral">&quot;Cut input text to given size, e.g. 2 GiB.&quot;</span>, sizelimit);</div>
+<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#adf2df88abbd896b842a569f96b96c887">add_bytes</a>(<span class="charliteral">&#39;M&#39;</span>, <span class="stringliteral">&quot;memuse&quot;</span>, <span class="stringliteral">&quot;Amount of RAM to use, default: 1 GiB.&quot;</span>, ram_use);</div>
+<div class="line">    cp.<a name="a30"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#afdd88ad7e5e0769bc196414f5e12b316">add_uint</a>(<span class="charliteral">&#39;w&#39;</span>, <span class="stringliteral">&quot;wordsize&quot;</span>, <span class="stringliteral">&quot;Set word size of suffix array to 32, 40 or 64 bit, default: 32-bit.&quot;</span>, wordsize);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// process command line</span></div>
-<div class="line">    <span class="keywordflow">if</span> (!cp.<a name="a30"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a7a9015e157a687e67fade0694b08f744">process</a>(argc, argv))</div>
+<div class="line">    <span class="keywordflow">if</span> (!cp.<a name="a31"></a><a class="code" href="classstxxl_1_1cmdline__parser.html#a7a9015e157a687e67fade0694b08f744">process</a>(argc, argv))</div>
 <div class="line">        <span class="keywordflow">return</span> -1;</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (wordsize == 32)</div>
@@ -1488,10 +1489,10 @@ $(document).ready(function(){initNavTree('examples_2applications_2skew3_8cpp-exa
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:34 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:35 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

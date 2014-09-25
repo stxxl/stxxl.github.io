@@ -7,7 +7,6 @@ var searchData=
   ['elements',['elements',['../structstxxl_1_1stream_1_1sorted__runs.html#adc667df9470bb7f43c7247808bff6a88',1,'stxxl::stream::sorted_runs']]],
   ['elements_5fin_5fblocks_5ftransposed',['elements_in_blocks_transposed',['../classstxxl_1_1swappable__block__matrix.html#ad87b0324a67576d54970c122b04c19a3',1,'stxxl::swappable_block_matrix']]],
   ['else',['else',['../structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a8a1b843d24f9cf62de140105097ccfa3',1,'stxxl::matrix_local::low_level_matrix_binary_ass_op']]],
-  ['end_5f',['end_',['../classstxxl_1_1stream_1_1iterator2stream.html#ad05a7d2545dfe8ab39580ef77ac621db',1,'stxxl::stream::iterator2stream::end_()'],['../classstxxl_1_1stream_1_1vector__iterator2stream.html#aa3294b05ff88de533da539a5e7e33a75',1,'stxxl::stream::vector_iterator2stream::end_()']]],
   ['end_5fiterator',['end_iterator',['../classstxxl_1_1btree_1_1btree.html#afe288694661bc30560b23985572cd2fc',1,'stxxl::btree::btree']]],
   ['entry',['entry',['../classstxxl_1_1loser__tree.html#adabdce61bbcc7275065a72244374b6b0',1,'stxxl::loser_tree']]],
   ['errlog_5fstream_5f',['errlog_stream_',['../classstxxl_1_1logger.html#ad100164ceb5b040a13cb8436a4233b10',1,'stxxl::logger']]],

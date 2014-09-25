@@ -186,7 +186,7 @@ var group__mnglayer =
       [ "unlink_on_open", "classstxxl_1_1disk__config.html#aaeee3f1270e5e3310e610ae12553007e", null ]
     ] ],
     [ "element_iterator_traits", "structstxxl_1_1element__iterator__traits.html", [
-      [ "element_iterator", "structstxxl_1_1element__iterator__traits.html#af2431ce3b88cb698e59fd7c2a7bc4c61", null ]
+      [ "element_iterator", "structstxxl_1_1element__iterator__traits.html#a13d21a6bc81e98c16f2b940115d4d277", null ]
     ] ],
     [ "two2one_dim_array_adapter_base", "structstxxl_1_1two2one__dim__array__adapter__base.html", [
       [ "_pos_type", "structstxxl_1_1two2one__dim__array__adapter__base.html#a8089d047a276e26898109c9b86f8114d", null ],
@@ -235,15 +235,15 @@ var group__mnglayer =
       [ "operator new", "classstxxl_1_1typed__block.html#a4ea657556d7045b477bc75e9bb0dff2c", null ],
       [ "operator new", "classstxxl_1_1typed__block.html#a18dc9f8604fc4a9c1f7737e4283401d4", null ],
       [ "operator new[]", "classstxxl_1_1typed__block.html#aa4d2d7aadaa575b670794036607e753c", null ],
-      [ "read", "classstxxl_1_1typed__block.html#a07fc505bc9c410b2faecf4aefc27ce96", null ],
-      [ "write", "classstxxl_1_1typed__block.html#ac56caaff994281073b0e81eeaf97af18", null ]
+      [ "read", "classstxxl_1_1typed__block.html#a549322496ba9eb0ae80b221dcddacbb6", null ],
+      [ "write", "classstxxl_1_1typed__block.html#a7d5a8e953e2d10b849bacbdefb44f97c", null ]
     ] ],
     [ "BLOCK_ADAPTOR_OPERATORS", "group__mnglayer.html#gad4fc1802d6c915f1bccf7a33ba542ed4", null ],
     [ "STXXL_ADAPTOR_ARITHMETICS", "group__mnglayer.html#gac26b93594a4c24b76d53ac93f78f9272", null ],
     [ "STXXL_DEFAULT_BLOCK_SIZE", "group__mnglayer.html#ga3c3f065b2005cecc00e52f1e397be532", null ],
     [ "delete_block", "group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f", null ],
     [ "delete_blocks", "group__mnglayer.html#ga1e37cfadb2eb22b38529bc2e85448fbc", null ],
-    [ "make_element_iterator", "group__mnglayer.html#ga92d4696b971e36fa933e138b8a0f9218", null ],
+    [ "make_element_iterator", "group__mnglayer.html#gadb729b29e299075dd737124571519a1b", null ],
     [ "new_blocks_int", "group__mnglayer.html#ga8e20dbade0f68694eaa3f88fc39ac78b", null ],
     [ "operator!=", "group__mnglayer.html#ga4eaa9cd6ccf8f6431b8528eccb7c668c", null ],
     [ "operator<<", "group__mnglayer.html#ga92ffc2f8c67290de8fb6feaf34a07462", null ],

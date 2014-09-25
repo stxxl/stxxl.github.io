@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['gen_5f',['gen_',['../classstxxl_1_1stream_1_1generator2stream.html#a01da055e85ada45de88655f779e01dae',1,'stxxl::stream::generator2stream']]],
+  ['gen_5f',['gen_',['../classstxxl_1_1stream_1_1generator2stream.html#a3c9f6d08ed4ee1dba5241c3d699c7bd6',1,'stxxl::stream::generator2stream']]],
   ['generate',['generate',['../group__stlalgo.html#ga1f66b17c000502599f4b98a738094b3a',1,'stxxl']]],
   ['generator2stream',['generator2stream',['../classstxxl_1_1stream_1_1generator2stream.html',1,'stxxl::stream']]],
-  ['generator2stream',['generator2stream',['../classstxxl_1_1stream_1_1generator2stream.html#af183c4ea4975322d08bd0a5d44983efe',1,'stxxl::stream::generator2stream::generator2stream(Generator_ g)'],['../classstxxl_1_1stream_1_1generator2stream.html#a92544ba508b71e5c7ea10ef69c5772e5',1,'stxxl::stream::generator2stream::generator2stream(const generator2stream &amp;a)']]],
+  ['generator2stream',['generator2stream',['../classstxxl_1_1stream_1_1generator2stream.html#a9713eaf11a8e73b315c46496d55e4345',1,'stxxl::stream::generator2stream::generator2stream(Generator g)'],['../classstxxl_1_1stream_1_1generator2stream.html#a08470acf96703f3e6522c12fb1129570',1,'stxxl::stream::generator2stream::generator2stream(const generator2stream &amp;a)']]],
   ['get',['get',['../classstxxl_1_1binary__reader.html#a76e1c14e00fc874248bdc7ad8f87732b',1,'stxxl::binary_reader::get()'],['../classstxxl_1_1counting__ptr.html#a1229e207a868d8fa4dc56478c53f0ac4',1,'stxxl::counting_ptr::get()'],['../classstxxl_1_1const__counting__ptr.html#aeb6d9c9b086e56b4d2a323fb50b2be46',1,'stxxl::const_counting_ptr::get()'],['../classstxxl_1_1write__pool.html#adac6515ee40a2162869bdf0aeb937de3',1,'stxxl::write_pool::get()']]],
   ['get_5falgorithm_5ffrom_5fblock_5fscheduler',['get_algorithm_from_block_scheduler',['../classstxxl_1_1block__scheduler__algorithm.html#a3efd0ff39461bc6115c7d95a2bc56219',1,'stxxl::block_scheduler_algorithm']]],
   ['get_5fallocator_5fid',['get_allocator_id',['../classstxxl_1_1disk__queued__file.html#a8d0d928fc7e11defef6a86442239431c',1,'stxxl::disk_queued_file::get_allocator_id()'],['../classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0',1,'stxxl::file::get_allocator_id()']]],
@@ -93,7 +93,7 @@ var searchData=
   ['grow_5fshrink',['grow_shrink',['../group__stlcont__stack.html#ggaaea04c2b2dc30f34716e332164d76fb6a599d864b8f91a9a39335c1c545d20f50',1,'stxxl']]],
   ['grow_5fshrink2',['grow_shrink2',['../group__stlcont__stack.html#ggaaea04c2b2dc30f34716e332164d76fb6a1ca0807cfaf63c1b5768604380f654cf',1,'stxxl']]],
   ['grow_5fshrink_5fstack',['grow_shrink_stack',['../classstxxl_1_1grow__shrink__stack.html',1,'stxxl']]],
-  ['grow_5fshrink_5fstack',['grow_shrink_stack',['../classstxxl_1_1grow__shrink__stack.html#a2434f96f0fec1817c5ecca0397bc17d3',1,'stxxl::grow_shrink_stack::grow_shrink_stack()'],['../classstxxl_1_1grow__shrink__stack.html#acfeea542cdc01b554b8d7c06bf0da04c',1,'stxxl::grow_shrink_stack::grow_shrink_stack(const stack_type &amp;stack_)']]],
+  ['grow_5fshrink_5fstack',['grow_shrink_stack',['../classstxxl_1_1grow__shrink__stack.html#a2434f96f0fec1817c5ecca0397bc17d3',1,'stxxl::grow_shrink_stack::grow_shrink_stack()'],['../classstxxl_1_1grow__shrink__stack.html#a45c57c7d7c9abf342689e9ab921a1a9e',1,'stxxl::grow_shrink_stack::grow_shrink_stack(const StackType &amp;stack_)']]],
   ['grow_5fshrink_5fstack2',['grow_shrink_stack2',['../classstxxl_1_1grow__shrink__stack2.html',1,'stxxl']]],
   ['grow_5fshrink_5fstack2',['grow_shrink_stack2',['../classstxxl_1_1grow__shrink__stack2.html#a1bcd2a5aec1cd139e7ff4baa350f6255',1,'stxxl::grow_shrink_stack2::grow_shrink_stack2(pool_type &amp;pool_, unsigned_type prefetch_aggressiveness=0)'],['../classstxxl_1_1grow__shrink__stack2.html#a8d8f270f679052a0de690c569cdfa300',1,'stxxl::grow_shrink_stack2::grow_shrink_stack2(prefetch_pool&lt; block_type &gt; &amp;p_pool_, write_pool&lt; block_type &gt; &amp;w_pool_, unsigned_type prefetch_aggressiveness=0)']]],
   ['grshrtp',['GrShrTp',['../classstxxl_1_1STACK__GENERATOR.html#af768ef204ace5b1a8f6e89de7ba9be5f',1,'stxxl::STACK_GENERATOR']]],

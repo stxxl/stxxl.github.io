@@ -13,7 +13,7 @@ var utils_8h =
     [ "ilog2_floor", "utils_8h.html#aa4d8573183deec84a1f525b93aa79bc4", null ],
     [ "log2_ceil", "utils_8h.html#a97f9f5dbd22c9d61cbf3f3cf660364d6", null ],
     [ "log2_floor", "utils_8h.html#a251367916f703bddce55e3dbbb00fdf7", null ],
-    [ "longhash1", "utils_8h.html#a0e4cfad1b842841ac4b7e6ddce0eeb7a", null ],
+    [ "longhash1", "utils_8h.html#af75bc8070f3dffa1a02a65aa58d78e5a", null ],
     [ "parse_SI_IEC_size", "utils_8h.html#ae3a274b98cc2b798b5977b3bc33cb4a3", null ],
     [ "pop", "utils_8h.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46", null ],
     [ "pop_back", "utils_8h.html#a87b330bead216a9f6cf7b243ae3b6f62", null ],

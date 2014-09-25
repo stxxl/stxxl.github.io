@@ -198,11 +198,11 @@ $(document).ready(function(){initNavTree('queue_8h_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    //! \param D  number of parallel disks, defaulting to the configured number of scratch disks,</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">    //!           memory consumption will be 2 * D + 2 blocks</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">    //!           (first and last block, D blocks as write cache, D block for prefetching)</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#ab09efe6be14bc82c95bae889459e1f9b">   89</a></span>&#160;<span class="comment"></span>    <span class="keyword">explicit</span> <a class="code" href="classstxxl_1_1queue.html#ab09efe6be14bc82c95bae889459e1f9b">queue</a>(<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> D = -1) :</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        m_size(0),</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        delete_pool(true),</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        alloc_count(0),</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#ab09efe6be14bc82c95bae889459e1f9b">   89</a></span>&#160;<span class="comment"></span>    <span class="keyword">explicit</span> <a class="code" href="classstxxl_1_1queue.html#ab09efe6be14bc82c95bae889459e1f9b">queue</a>(<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> D = -1)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        : m_size(0),</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          delete_pool(true),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          alloc_count(0),</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (D &lt; 1)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            D = config::get_instance()-&gt;disks_number();</div>
@@ -217,11 +217,11 @@ $(document).ready(function(){initNavTree('queue_8h_source.html','');});
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">    //! \param p_pool_size  number of blocks in the prefetch pool, recommended at least 1</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">    //! \param blocks2prefetch_  defines the number of blocks to prefetch (\c front side),</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">    //!                          default is number of block in the prefetch pool</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#a279bc7c7aa419db7cb9c758849c29f00">  108</a></span>&#160;<span class="comment"></span>    <span class="keyword">explicit</span> <a class="code" href="classstxxl_1_1queue.html#a279bc7c7aa419db7cb9c758849c29f00">queue</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> w_pool_size, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> p_pool_size, <span class="keywordtype">int</span> blocks2prefetch_ = -1) :</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        m_size(0),</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        delete_pool(true),</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        alloc_count(0),</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#a279bc7c7aa419db7cb9c758849c29f00">  108</a></span>&#160;<span class="comment"></span>    <span class="keyword">explicit</span> <a class="code" href="classstxxl_1_1queue.html#a279bc7c7aa419db7cb9c758849c29f00">queue</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> w_pool_size, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> p_pool_size, <span class="keywordtype">int</span> blocks2prefetch_ = -1)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        : m_size(0),</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          delete_pool(true),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          alloc_count(0),</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="queue_8h.html#aa6bdece284aa2b39bfd85eb792b736ff">STXXL_VERBOSE_QUEUE</a>(<span class="stringliteral">&quot;queue[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]::queue(sizes)&quot;</span>);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        pool = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1read__write__pool.html">pool_type</a>(p_pool_size, w_pool_size);</div>
@@ -237,11 +237,11 @@ $(document).ready(function(){initNavTree('queue_8h_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">    //!  \warning Number of blocks in the write pool must be at least 2, recommended at least 3</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">    //!  \warning Number of blocks in the prefetch pool recommended at least 1</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"></span>    <a class="code" href="deprecated_8h.html#a658dce45b7b08e131d60dcc2fe3421b5">STXXL_DEPRECATED</a>(</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#a30c005057024cbd3c2d24d69597a041a">  128</a></span>&#160;        <a class="code" href="classstxxl_1_1queue.html#a30c005057024cbd3c2d24d69597a041a">queue</a>(<a class="code" href="classstxxl_1_1write__pool.html">write_pool&lt;block_type&gt;</a>&amp; w_pool, <a class="code" href="classstxxl_1_1prefetch__pool.html">prefetch_pool&lt;block_type&gt;</a>&amp; p_pool, <span class="keywordtype">int</span> blocks2prefetch_ = -1)) :</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        m_size(0),</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        delete_pool(true),</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        alloc_count(0),</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#a30c005057024cbd3c2d24d69597a041a">  128</a></span>&#160;        <a class="code" href="classstxxl_1_1queue.html#a30c005057024cbd3c2d24d69597a041a">queue</a>(<a class="code" href="classstxxl_1_1write__pool.html">write_pool&lt;block_type&gt;</a>&amp; w_pool, <a class="code" href="classstxxl_1_1prefetch__pool.html">prefetch_pool&lt;block_type&gt;</a>&amp; p_pool, <span class="keywordtype">int</span> blocks2prefetch_ = -1))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        : m_size(0),</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          delete_pool(true),</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;          alloc_count(0),</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="queue_8h.html#aa6bdece284aa2b39bfd85eb792b736ff">STXXL_VERBOSE_QUEUE</a>(<span class="stringliteral">&quot;queue[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]::queue(pools)&quot;</span>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        pool = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1read__write__pool.html">pool_type</a>(p_pool, w_pool);</div>
@@ -255,12 +255,12 @@ $(document).ready(function(){initNavTree('queue_8h_source.html','');});
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">    //!                          default is number of blocks in the prefetch pool</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">    //!  \warning Number of blocks in the write pool must be at least 2, recommended at least 3</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">    //!  \warning Number of blocks in the prefetch pool recommended at least 1</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#a68bdfef05ae5aa79cae17013f05ba9ca">  146</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1queue.html#a68bdfef05ae5aa79cae17013f05ba9ca">queue</a>(<a class="code" href="classstxxl_1_1read__write__pool.html">pool_type</a>&amp; pool_, <span class="keywordtype">int</span> blocks2prefetch_ = -1) :</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        m_size(0),</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        delete_pool(false),</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        pool(&amp;pool_),</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        alloc_count(0),</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classstxxl_1_1queue.html#a68bdfef05ae5aa79cae17013f05ba9ca">  146</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1queue.html#a68bdfef05ae5aa79cae17013f05ba9ca">queue</a>(<a class="code" href="classstxxl_1_1read__write__pool.html">pool_type</a>&amp; pool_, <span class="keywordtype">int</span> blocks2prefetch_ = -1)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        : m_size(0),</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;          delete_pool(false),</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;          pool(&amp;pool_),</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;          alloc_count(0),</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="queue_8h.html#aa6bdece284aa2b39bfd85eb792b736ff">STXXL_VERBOSE_QUEUE</a>(<span class="stringliteral">&quot;queue[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]::queue(pool)&quot;</span>);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        init(blocks2prefetch_);</div>
@@ -606,10 +606,10 @@ $(document).ready(function(){initNavTree('queue_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_5a7933e30a367341f12be4470fbf844e.html">containers</a></li><li class="navelem"><a class="el" href="queue_8h.html">queue.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:52 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:53 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

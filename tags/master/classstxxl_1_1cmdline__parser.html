@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('classstxxl_1_1cmdline__parser.html',''
 <div class="textblock"><p>Command line parser which automatically fills variables and prints nice usage messages.</p>
 <p>This is a straightforward command line parser in C++, which will recognize short options -s, long options &ndash;long and parameters, both required and optional. It will automatically parse integers and <b>byte sizes</b> with SI/IEC suffixes (e.g. 1 GiB). It also works with lists of strings, e.g. multiple filenames.</p>
 <p>Maybe most important it will nicely format the options and parameters description using word wrapping. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#_a22">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#_a0">examples/common/cmdline.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#_a23">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#_a0">examples/common/cmdline.cpp</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="cmdline_8h_source.html#l00042">42</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -150,8 +150,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1cmdline__parser_1_1argument.html">argument</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base class of all options and parameters  <a href="structstxxl_1_1cmdline__parser_1_1argument.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1cmdline__parser_1_1argument__bytes.html">argument_bytes</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">specialization of argument for SI/IEC suffixes byte size options or parameters  <a href="structstxxl_1_1cmdline__parser_1_1argument__bytes.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1cmdline__parser_1_1argument__bytes32.html">argument_bytes32</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">specialization of argument for SI/IEC suffixes byte size options or parameters  <a href="structstxxl_1_1cmdline__parser_1_1argument__bytes32.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1cmdline__parser_1_1argument__bytes64.html">argument_bytes64</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">specialization of argument for SI/IEC suffixes byte size options or parameters  <a href="structstxxl_1_1cmdline__parser_1_1argument__bytes64.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1cmdline__parser_1_1argument__flag.html">argument_flag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">specialization of argument for boolean flags (can only be set to true).  <a href="structstxxl_1_1cmdline__parser_1_1argument__flag.html#details">More...</a><br/></td></tr>
@@ -177,9 +180,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a424cdc9901dd4218f8808eb791da3f41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a424cdc9901dd4218f8808eb791da3f41">~cmdline_parser</a> ()</td></tr>
 <tr class="memdesc:a424cdc9901dd4218f8808eb791da3f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all added arguments.  <a href="#a424cdc9901dd4218f8808eb791da3f41">More...</a><br/></td></tr>
 <tr class="separator:a424cdc9901dd4218f8808eb791da3f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2df88abbd896b842a569f96b96c887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#adf2df88abbd896b842a569f96b96c887">add_bytes</a> (char key, const std::string &amp;longkey, const std::string &amp;keytype, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">stxxl::uint32</a> &amp;dest)</td></tr>
+<tr class="memdesc:adf2df88abbd896b842a569f96b96c887"><td class="mdescLeft">&#160;</td><td class="mdescRight">add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 64-bit dest  <a href="#adf2df88abbd896b842a569f96b96c887">More...</a><br/></td></tr>
+<tr class="separator:adf2df88abbd896b842a569f96b96c887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c0995383c15cc8008cc58492d88c836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a1c0995383c15cc8008cc58492d88c836">add_bytes</a> (char key, const std::string &amp;longkey, const std::string &amp;keytype, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a> &amp;dest)</td></tr>
 <tr class="memdesc:a1c0995383c15cc8008cc58492d88c836"><td class="mdescLeft">&#160;</td><td class="mdescRight">add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 64-bit dest  <a href="#a1c0995383c15cc8008cc58492d88c836">More...</a><br/></td></tr>
 <tr class="separator:a1c0995383c15cc8008cc58492d88c836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a1524dc4101a1c60e350a03e3ed4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#af6a1524dc4101a1c60e350a03e3ed4ea">add_bytes</a> (char key, const std::string &amp;longkey, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">stxxl::uint32</a> &amp;dest)</td></tr>
+<tr class="memdesc:af6a1524dc4101a1c60e350a03e3ed4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 32-bit dest  <a href="#af6a1524dc4101a1c60e350a03e3ed4ea">More...</a><br/></td></tr>
+<tr class="separator:af6a1524dc4101a1c60e350a03e3ed4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adb7315efca31b8ec49bb46d157804c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a1adb7315efca31b8ec49bb46d157804c">add_bytes</a> (char key, const std::string &amp;longkey, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a> &amp;dest)</td></tr>
 <tr class="memdesc:a1adb7315efca31b8ec49bb46d157804c"><td class="mdescLeft">&#160;</td><td class="mdescRight">add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 64-bit dest  <a href="#a1adb7315efca31b8ec49bb46d157804c">More...</a><br/></td></tr>
 <tr class="separator:a1adb7315efca31b8ec49bb46d157804c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +204,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ebaa3282ea195b0a1c9c0f86b3a7166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a4ebaa3282ea195b0a1c9c0f86b3a7166">add_int</a> (char key, const std::string &amp;longkey, const std::string &amp;desc, int &amp;dest)</td></tr>
 <tr class="memdesc:a4ebaa3282ea195b0a1c9c0f86b3a7166"><td class="mdescLeft">&#160;</td><td class="mdescRight">add signed integer option -key, &ndash;longkey with description and store to dest  <a href="#a4ebaa3282ea195b0a1c9c0f86b3a7166">More...</a><br/></td></tr>
 <tr class="separator:a4ebaa3282ea195b0a1c9c0f86b3a7166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6375f2abc838f06faeadc53482763518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a6375f2abc838f06faeadc53482763518">add_opt_param_bytes</a> (const std::string &amp;name, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">uint32</a> &amp;dest)</td></tr>
+<tr class="memdesc:a6375f2abc838f06faeadc53482763518"><td class="mdescLeft">&#160;</td><td class="mdescRight">add optional SI/IEC suffixes byte size parameter [name] with description and store to dest  <a href="#a6375f2abc838f06faeadc53482763518">More...</a><br/></td></tr>
+<tr class="separator:a6375f2abc838f06faeadc53482763518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137c17aed07a158b347d3dc1aa06a363"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a137c17aed07a158b347d3dc1aa06a363">add_opt_param_bytes</a> (const std::string &amp;name, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">uint64</a> &amp;dest)</td></tr>
 <tr class="memdesc:a137c17aed07a158b347d3dc1aa06a363"><td class="mdescLeft">&#160;</td><td class="mdescRight">add optional SI/IEC suffixes byte size parameter [name] with description and store to dest  <a href="#a137c17aed07a158b347d3dc1aa06a363">More...</a><br/></td></tr>
 <tr class="separator:a137c17aed07a158b347d3dc1aa06a363"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +222,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9798e46738447c2b9208986d44c12f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#aa9798e46738447c2b9208986d44c12f6">add_opt_param_uint</a> (const std::string &amp;name, const std::string &amp;desc, unsigned int &amp;dest)</td></tr>
 <tr class="memdesc:aa9798e46738447c2b9208986d44c12f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">add optional unsigned integer parameter [name] with description and store to dest  <a href="#aa9798e46738447c2b9208986d44c12f6">More...</a><br/></td></tr>
 <tr class="separator:aa9798e46738447c2b9208986d44c12f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551907b3522b3ea88a81b1e50ce62438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a551907b3522b3ea88a81b1e50ce62438">add_param_bytes</a> (const std::string &amp;name, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">uint32</a> &amp;dest)</td></tr>
+<tr class="memdesc:a551907b3522b3ea88a81b1e50ce62438"><td class="mdescLeft">&#160;</td><td class="mdescRight">add SI/IEC suffixes byte size parameter [name] with description and store to dest  <a href="#a551907b3522b3ea88a81b1e50ce62438">More...</a><br/></td></tr>
+<tr class="separator:a551907b3522b3ea88a81b1e50ce62438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ae7d37a353b6c6da24feab86071972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#ac9ae7d37a353b6c6da24feab86071972">add_param_bytes</a> (const std::string &amp;name, const std::string &amp;desc, <a class="el" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">uint64</a> &amp;dest)</td></tr>
 <tr class="memdesc:ac9ae7d37a353b6c6da24feab86071972"><td class="mdescLeft">&#160;</td><td class="mdescRight">add SI/IEC suffixes byte size parameter [name] with description and store to dest  <a href="#ac9ae7d37a353b6c6da24feab86071972">More...</a><br/></td></tr>
 <tr class="separator:ac9ae7d37a353b6c6da24feab86071972"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,15 +300,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:acca6eab585c7c77092914680b49a6b35"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#acca6eab585c7c77092914680b49a6b35">m_linewrap</a></td></tr>
 <tr class="memdesc:acca6eab585c7c77092914680b49a6b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">set line wrap length  <a href="#acca6eab585c7c77092914680b49a6b35">More...</a><br/></td></tr>
 <tr class="separator:acca6eab585c7c77092914680b49a6b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc989d9ecdd7d7c0c635a8ad90fc13f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a8dc989d9ecdd7d7c0c635a8ad90fc13f">m_opt_maxlong</a></td></tr>
-<tr class="memdesc:a8dc989d9ecdd7d7c0c635a8ad90fc13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">formatting width for options, '-s, &ndash;switch &lt;#&gt;'  <a href="#a8dc989d9ecdd7d7c0c635a8ad90fc13f">More...</a><br/></td></tr>
-<tr class="separator:a8dc989d9ecdd7d7c0c635a8ad90fc13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405ca1cd937705504e337814ed0925d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a405ca1cd937705504e337814ed0925d2">m_opt_maxlong</a></td></tr>
+<tr class="memdesc:a405ca1cd937705504e337814ed0925d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">formatting width for options, '-s, &ndash;switch &lt;#&gt;'  <a href="#a405ca1cd937705504e337814ed0925d2">More...</a><br/></td></tr>
+<tr class="separator:a405ca1cd937705504e337814ed0925d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf5fe25e8eacfc52bc7d0136d94fa2be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1cmdline__parser.html#a0dc9c4d43e8a036d95b617829463e3e8">arglist_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#aaf5fe25e8eacfc52bc7d0136d94fa2be">m_optlist</a></td></tr>
 <tr class="memdesc:aaf5fe25e8eacfc52bc7d0136d94fa2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of options available  <a href="#aaf5fe25e8eacfc52bc7d0136d94fa2be">More...</a><br/></td></tr>
 <tr class="separator:aaf5fe25e8eacfc52bc7d0136d94fa2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a284a2f4245ecd9bbce78ab756542de1c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a284a2f4245ecd9bbce78ab756542de1c">m_param_maxlong</a></td></tr>
-<tr class="memdesc:a284a2f4245ecd9bbce78ab756542de1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">formatting width for parameters, 'param &lt;#&gt;'  <a href="#a284a2f4245ecd9bbce78ab756542de1c">More...</a><br/></td></tr>
-<tr class="separator:a284a2f4245ecd9bbce78ab756542de1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559a6751cd7489d6482735047d869125"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#a559a6751cd7489d6482735047d869125">m_param_maxlong</a></td></tr>
+<tr class="memdesc:a559a6751cd7489d6482735047d869125"><td class="mdescLeft">&#160;</td><td class="mdescRight">formatting width for parameters, 'param &lt;#&gt;'  <a href="#a559a6751cd7489d6482735047d869125">More...</a><br/></td></tr>
+<tr class="separator:a559a6751cd7489d6482735047d869125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae54036493a7b927ac8bd00c315676156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1cmdline__parser.html#a0dc9c4d43e8a036d95b617829463e3e8">arglist_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1cmdline__parser.html#ae54036493a7b927ac8bd00c315676156">m_paramlist</a></td></tr>
 <tr class="memdesc:ae54036493a7b927ac8bd00c315676156"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of parameters, both required and optional  <a href="#ae54036493a7b927ac8bd00c315676156">More...</a><br/></td></tr>
 <tr class="separator:ae54036493a7b927ac8bd00c315676156"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,7 +364,7 @@ Private Member Functions</h2></td></tr>
 
 <p>option and parameter list type </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00298">298</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00331">331</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +392,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Construct new command line parser. </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00351">351</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00386">386</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -404,11 +419,68 @@ Private Member Functions</h2></td></tr>
 
 <p>Delete all added arguments. </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00360">360</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00395">395</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adf2df88abbd896b842a569f96b96c887"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stxxl::cmdline_parser::add_bytes </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>longkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>keytype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">stxxl::uint32</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 64-bit dest </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a29">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a4">examples/common/cmdline.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00454">454</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1c0995383c15cc8008cc58492d88c836"></a>
 <div class="memitem">
 <div class="memproto">
@@ -460,9 +532,58 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 64-bit dest </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a28">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a4">examples/common/cmdline.cpp</a>.</dd>
-</dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00419">419</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00463">463</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6a1524dc4101a1c60e350a03e3ed4ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stxxl::cmdline_parser::add_bytes </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>longkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">stxxl::uint32</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 32-bit dest </p>
+
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00502">502</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +633,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add SI/IEC suffixes byte size option -key, &ndash;longkey [keytype] and store to 64-bit dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00458">458</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00506">506</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -567,9 +688,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add boolean option flag -key, &ndash;longkey [keytype] with description and store to dest </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a26">examples/applications/skew3.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a27">examples/applications/skew3.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00392">392</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00427">427</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +740,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add boolean option flag -key, &ndash;longkey with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00446">446</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00490">490</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +796,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add signed integer option -key, &ndash;longkey [keytype] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00401">401</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00436">436</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -725,7 +846,51 @@ Private Member Functions</h2></td></tr>
 
 <p>add signed integer option -key, &ndash;longkey with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00450">450</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00494">494</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6375f2abc838f06faeadc53482763518"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stxxl::cmdline_parser::add_opt_param_bytes </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">uint32</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add optional SI/IEC suffixes byte size parameter [name] with description and store to dest </p>
+
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00595">595</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +934,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add optional SI/IEC suffixes byte size parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00538">538</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00604">604</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +978,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add optional signed integer parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00520">520</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00577">577</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +1022,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add optional string parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00547">547</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00613">613</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +1067,7 @@ Private Member Functions</h2></td></tr>
 <p>add optional string parameter [name] with description and store to dest </p>
 <dl class="section warning"><dt>Warning</dt><dd>this parameter must be last, as it will gobble all non-option arguments! </dd></dl>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00557">557</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00623">623</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -946,7 +1111,51 @@ Private Member Functions</h2></td></tr>
 
 <p>add optional unsigned integer parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00529">529</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00586">586</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a551907b3522b3ea88a81b1e50ce62438"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stxxl::cmdline_parser::add_param_bytes </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a998606efd96ae2e131304baae45e8cc2">uint32</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add SI/IEC suffixes byte size parameter [name] with description and store to dest </p>
+
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00538">538</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +1199,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add SI/IEC suffixes byte size parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00490">490</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00547">547</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1243,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add signed integer parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00472">472</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00520">520</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1077,9 +1286,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add string parameter [name] with description and store to dest </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a25">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a5">examples/common/cmdline.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a26">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a5">examples/common/cmdline.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00499">499</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00556">556</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1333,7 @@ Private Member Functions</h2></td></tr>
 <p>add string list parameter [name] with description and store to dest. </p>
 <dl class="section warning"><dt>Warning</dt><dd>this parameter must be last, as it will gobble all non-option arguments! </dd></dl>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00509">509</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00566">566</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1377,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add unsigned integer parameter [name] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00481">481</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00529">529</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1223,9 +1432,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add string option -key, &ndash;longkey [keytype] and store to dest </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a27">examples/applications/skew3.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a28">examples/applications/skew3.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00428">428</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00472">472</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1275,7 +1484,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add string option -key, &ndash;longkey [keytype] and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00462">462</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00510">510</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1331,7 +1540,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add string list option -key, &ndash;longkey [keytype] and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00437">437</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00481">481</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1381,7 +1590,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add string list option -key, &ndash;longkey [keytype] and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00466">466</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00514">514</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1436,9 +1645,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add unsigned integer option -key, &ndash;longkey [keytype] with description and store to dest </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a29">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a3">examples/common/cmdline.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a30">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a3">examples/common/cmdline.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00410">410</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00445">445</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1488,7 +1697,7 @@ Private Member Functions</h2></td></tr>
 
 <p>add unsigned integer option -key, &ndash;longkey [keytype] with description and store to dest </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00454">454</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00498">498</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1516,7 +1725,7 @@ Private Member Functions</h2></td></tr>
 
 <p>update maximum formatting width for new option </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00329">329</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00362">362</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 <p>References <a class="el" href="cmdline_8h_source.html#l00093">stxxl::cmdline_parser::argument::option_text()</a>, and <a class="el" href="utils_8h_source.html#l00153">stxxl::STXXL_MAX()</a>.</p>
 
@@ -1546,7 +1755,7 @@ Private Member Functions</h2></td></tr>
 
 <p>update maximum formatting width for new parameter </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00335">335</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00369">369</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 <p>References <a class="el" href="cmdline_8h_source.html#l00083">stxxl::cmdline_parser::argument::param_text()</a>, and <a class="el" href="utils_8h_source.html#l00153">stxxl::STXXL_MAX()</a>.</p>
 
@@ -1666,7 +1875,7 @@ Private Member Functions</h2></td></tr>
 
 <p>print error about option. </p>
 
-<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00129">129</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00131">131</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
 
 <p>References <a class="el" href="cmdline_8h_source.html#l00093">stxxl::cmdline_parser::argument::option_text()</a>, and <a class="el" href="structstxxl_1_1cmdline__parser_1_1argument.html#af6663d336146e24a6742c90566aae3d4">stxxl::cmdline_parser::argument::type_name()</a>.</p>
 
@@ -1718,7 +1927,7 @@ Private Member Functions</h2></td></tr>
 
 <p>print error about parameter. </p>
 
-<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00143">143</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00146">146</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
 
 <p>References <a class="el" href="cmdline_8h_source.html#l00083">stxxl::cmdline_parser::argument::param_text()</a>, and <a class="el" href="structstxxl_1_1cmdline__parser_1_1argument.html#af6663d336146e24a6742c90566aae3d4">stxxl::cmdline_parser::argument::type_name()</a>.</p>
 
@@ -1741,7 +1950,7 @@ Private Member Functions</h2></td></tr>
 <p>print nicely formatted result of processing </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2common_2cmdline_8cpp-example.html#a7">examples/common/cmdline.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00303">303</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00306">306</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
 
 <p>References <a class="el" href="cmdline_8h_source.html#l00093">stxxl::cmdline_parser::argument::option_text()</a>, <a class="el" href="cmdline_8h_source.html#l00083">stxxl::cmdline_parser::argument::param_text()</a>, <a class="el" href="structstxxl_1_1cmdline__parser_1_1argument.html#abbda0deb26824adc2f3076c1a33d54d4">stxxl::cmdline_parser::argument::print_value()</a>, <a class="el" href="utils_8h_source.html#l00153">stxxl::STXXL_MAX()</a>, and <a class="el" href="structstxxl_1_1cmdline__parser_1_1argument.html#af6663d336146e24a6742c90566aae3d4">stxxl::cmdline_parser::argument::type_name()</a>.</p>
 
@@ -1801,9 +2010,9 @@ Private Member Functions</h2></td></tr>
 
 <p>parse command line options as specified by the options and parameters added. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if command line is okay and all required parameters are present. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a30">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a6">examples/common/cmdline.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a31">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a6">examples/common/cmdline.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00157">157</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8cpp_source.html#l00160">160</a> of file <a class="el" href="cmdline_8cpp_source.html">cmdline.cpp</a>.</p>
 
 </div>
 </div>
@@ -1830,9 +2039,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set author of program, will be wrapped. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a24">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a2">examples/common/cmdline.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a25">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a2">examples/common/cmdline.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00378">378</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00413">413</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1859,9 +2068,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set description of program, text will be wrapped. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a23">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a1">examples/common/cmdline.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a24">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2common_2cmdline_8cpp-example.html#a1">examples/common/cmdline.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00372">372</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00407">407</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1889,7 +2098,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Set verbose processing of command line arguments. </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00384">384</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00419">419</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1914,7 +2123,7 @@ Private Member Functions</h2></td></tr>
 
 <p>user set author of program, will be wrapped </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00319">319</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00352">352</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1938,7 +2147,7 @@ Private Member Functions</h2></td></tr>
 
 <p>user set description of program, will be wrapped </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00317">317</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00350">350</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1962,7 +2171,7 @@ Private Member Functions</h2></td></tr>
 
 <p>set line wrap length </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00322">322</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00355">355</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -1986,11 +2195,11 @@ Private Member Functions</h2></td></tr>
 
 <p>maximum length of a type_name() result </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00325">325</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00358">358</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8dc989d9ecdd7d7c0c635a8ad90fc13f"></a>
+<a class="anchor" id="a405ca1cd937705504e337814ed0925d2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1998,7 +2207,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t stxxl::cmdline_parser::m_opt_maxlong</td>
+          <td class="memname">int stxxl::cmdline_parser::m_opt_maxlong</td>
         </tr>
       </table>
   </td>
@@ -2010,7 +2219,7 @@ Private Member Functions</h2></td></tr>
 
 <p>formatting width for options, '-s, &ndash;switch &lt;#&gt;' </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00306">306</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00339">339</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -2034,11 +2243,11 @@ Private Member Functions</h2></td></tr>
 
 <p>list of options available </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00301">301</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00334">334</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a284a2f4245ecd9bbce78ab756542de1c"></a>
+<a class="anchor" id="a559a6751cd7489d6482735047d869125"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2046,7 +2255,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t stxxl::cmdline_parser::m_param_maxlong</td>
+          <td class="memname">int stxxl::cmdline_parser::m_param_maxlong</td>
         </tr>
       </table>
   </td>
@@ -2058,7 +2267,7 @@ Private Member Functions</h2></td></tr>
 
 <p>formatting width for parameters, 'param &lt;#&gt;' </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00308">308</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00341">341</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -2082,7 +2291,7 @@ Private Member Functions</h2></td></tr>
 
 <p>list of parameters, both required and optional </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00303">303</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00336">336</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -2106,7 +2315,7 @@ Private Member Functions</h2></td></tr>
 
 <p>argv[0] for usage. </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00311">311</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00344">344</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -2130,7 +2339,7 @@ Private Member Functions</h2></td></tr>
 
 <p>verbose processing of arguments </p>
 
-<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00314">314</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
+<p>Definition at line <a class="el" href="cmdline_8h_source.html#l00347">347</a> of file <a class="el" href="cmdline_8h_source.html">cmdline.h</a>.</p>
 
 </div>
 </div>
@@ -2144,10 +2353,10 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1cmdline__parser.html">cmdline_parser</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:37 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:36 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

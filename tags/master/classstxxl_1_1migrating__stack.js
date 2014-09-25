@@ -8,7 +8,7 @@ var classstxxl_1_1migrating__stack =
     [ "blocks_per_page", "classstxxl_1_1migrating__stack.html#ada7b2d7e9aca903b832d93421581abcbaedc0516b5737917b8b74c8124e97829f", null ],
     [ "block_size", "classstxxl_1_1migrating__stack.html#ada7b2d7e9aca903b832d93421581abcba2baca5734be4b38579fd77f309c76041", null ],
     [ "critical_size", "classstxxl_1_1migrating__stack.html#aae92ae0054d71261bdd89c5eaf6da3f5a600908379ba43e24dd3abdc44bdd78bb", null ],
-    [ "migrating_stack", "classstxxl_1_1migrating__stack.html#a7ca58172797d89279deb1ad4687d825b", null ],
+    [ "migrating_stack", "classstxxl_1_1migrating__stack.html#a1462d7123bb9f5528b089e16c3285322", null ],
     [ "migrating_stack", "classstxxl_1_1migrating__stack.html#a2233b6989e8cbe2e3a644ae3deeee79f", null ],
     [ "~migrating_stack", "classstxxl_1_1migrating__stack.html#aa52755c7aa2843791166f38d5cc52b7e", null ],
     [ "empty", "classstxxl_1_1migrating__stack.html#a981c30d2e90f2dd0279b4383341e0dc6", null ],

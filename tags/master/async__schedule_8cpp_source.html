@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('async__schedule_8cpp_source.html','');
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacestxxl_1_1async__schedule__local.html#a65a16d5c179bf2823207d52c6245c967">   64</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> <a class="code" href="namespacestxxl_1_1async__schedule__local.html#a65a16d5c179bf2823207d52c6245c967">get_disk</a>(<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> i, <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>* disks, <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> D)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> disk = disks[i];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (disk == file::DEFAULT_DEVICE_ID)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (disk == (<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>)file::DEFAULT_DEVICE_ID)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        disk = D;      <span class="comment">// remap to sentinel</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    assert(0 &lt;= disk &amp;&amp; disk &lt;= D);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> disk;</div>
@@ -348,10 +348,10 @@ $(document).ready(function(){initNavTree('async__schedule_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_7c0873e6b80b34380e48b0b11ab08777.html">algo</a></li><li class="navelem"><a class="el" href="async__schedule_8cpp.html">async_schedule.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:06 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:08 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

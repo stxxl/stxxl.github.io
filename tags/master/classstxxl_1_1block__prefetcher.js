@@ -1,7 +1,7 @@
 var classstxxl_1_1block__prefetcher =
 [
     [ "bid_type", "classstxxl_1_1block__prefetcher.html#af8bec81ebb15169afb568d518f53a284", null ],
-    [ "block_prefetcher", "classstxxl_1_1block__prefetcher.html#ad0e657fa39a7faa017ac5356d913fcc5", null ],
+    [ "block_prefetcher", "classstxxl_1_1block__prefetcher.html#a5aa01ab2132f1e79401392693a59dde4", null ],
     [ "~block_prefetcher", "classstxxl_1_1block__prefetcher.html#a166640306d577143a7ecae818bd12995", null ],
     [ "block_consumed", "classstxxl_1_1block__prefetcher.html#abe900ec2bab19b843e45e738bdeaef27", null ],
     [ "empty", "classstxxl_1_1block__prefetcher.html#a716616b3cd22e80a4c1cf89e50fc6dea", null ],

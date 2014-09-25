@@ -168,7 +168,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1disk__config.html">stxxl::disk_config</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulate the configuration of one "disk". The disk is actually a file I/O object which <a class="el" href="classstxxl_1_1block__manager.html" title="Block manager class. ">block_manager</a> uses to read/write blocks.  <a href="classstxxl_1_1disk__config.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1element__iterator__traits.html">stxxl::element_iterator_traits&lt; BlockType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1element__iterator__traits.html">stxxl::element_iterator_traits&lt; BlockType, SizeType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1two2one__dim__array__adapter__base.html">stxxl::two2one_dim_array_adapter_base&lt; one_dim_array_type, data_type, pos_type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,11 +195,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1e37cfadb2eb22b38529bc2e85448fbc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mnglayer.html#ga1e37cfadb2eb22b38529bc2e85448fbc">stxxl::block_manager::delete_blocks</a> (const BIDIteratorClass &amp;bidbegin, const BIDIteratorClass &amp;bidend)</td></tr>
 <tr class="memdesc:ga1e37cfadb2eb22b38529bc2e85448fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates blocks.  <a href="#ga1e37cfadb2eb22b38529bc2e85448fbc">More...</a><br/></td></tr>
 <tr class="separator:ga1e37cfadb2eb22b38529bc2e85448fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92d4696b971e36fa933e138b8a0f9218"><td class="memTemplParams" colspan="2">template&lt;typename BlockType &gt; </td></tr>
-<tr class="memitem:ga92d4696b971e36fa933e138b8a0f9218"><td class="memTemplItemLeft" align="right" valign="top">element_iterator_traits<br class="typebreak"/>
-&lt; BlockType &gt;<br class="typebreak"/>
-::element_iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mnglayer.html#ga92d4696b971e36fa933e138b8a0f9218">stxxl::make_element_iterator</a> (BlockType *blocks, unsigned_type offset)</td></tr>
-<tr class="separator:ga92d4696b971e36fa933e138b8a0f9218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb729b29e299075dd737124571519a1b"><td class="memTemplParams" colspan="2">template&lt;typename BlockType , typename SizeType &gt; </td></tr>
+<tr class="memitem:gadb729b29e299075dd737124571519a1b"><td class="memTemplItemLeft" align="right" valign="top">element_iterator_traits<br class="typebreak"/>
+&lt; BlockType, SizeType &gt;<br class="typebreak"/>
+::element_iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mnglayer.html#gadb729b29e299075dd737124571519a1b">stxxl::make_element_iterator</a> (BlockType *blocks, SizeType offset)</td></tr>
+<tr class="separator:gadb729b29e299075dd737124571519a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e20dbade0f68694eaa3f88fc39ac78b"><td class="memTemplParams" colspan="2">template&lt;class BIDType , class DiskAssignFunctor , class OutputIterator &gt; </td></tr>
 <tr class="memitem:ga8e20dbade0f68694eaa3f88fc39ac78b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mnglayer.html#ga8e20dbade0f68694eaa3f88fc39ac78b">stxxl::block_manager::new_blocks_int</a> (const unsigned_type nblocks, const DiskAssignFunctor &amp;functor, unsigned_type offset, OutputIterator out)</td></tr>
 <tr class="separator:ga8e20dbade0f68694eaa3f88fc39ac78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,17 +347,17 @@ template&lt;class BIDIteratorClass &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga92d4696b971e36fa933e138b8a0f9218"></a>
+<a class="anchor" id="gadb729b29e299075dd737124571519a1b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename BlockType &gt; </div>
+template&lt;typename BlockType , typename SizeType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">element_iterator_traits&lt;BlockType&gt;::element_iterator stxxl::make_element_iterator </td>
+          <td class="memname">element_iterator_traits&lt;BlockType, SizeType&gt;::element_iterator stxxl::make_element_iterator </td>
           <td>(</td>
           <td class="paramtype">BlockType *&#160;</td>
           <td class="paramname"><em>blocks</em>, </td>
@@ -365,7 +365,7 @@ template&lt;typename BlockType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned_type&#160;</td>
+          <td class="paramtype">SizeType&#160;</td>
           <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
         <tr>
@@ -381,9 +381,9 @@ template&lt;typename BlockType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mng_2adaptor_8h_source.html#l00625">625</a> of file <a class="el" href="mng_2adaptor_8h_source.html">adaptor.h</a>.</p>
+<p>Definition at line <a class="el" href="mng_2adaptor_8h_source.html#l00631">631</a> of file <a class="el" href="mng_2adaptor_8h_source.html">adaptor.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00342">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00205">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00847">stxxl::stream::check_sorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00069">stxxl::sort_local::create_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00077">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize_, alloc_strategy_type &gt;::fetch()</a>, <a class="el" href="sort__stream_8h_source.html#l00092">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize_, alloc_strategy_type &gt;::fill_with_max_value()</a>, <a class="el" href="sort__stream_8h_source.html#l00456">stxxl::stream::runs_creator&lt; use_push&lt; ValueType_ &gt;, CompareType_, BlockSize_, AllocStr_ &gt;::fill_with_max_value()</a>, <a class="el" href="sort__stream_8h_source.html#l00107">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize_, alloc_strategy_type &gt;::sort_run()</a>, <a class="el" href="sort__stream_8h_source.html#l00471">stxxl::stream::runs_creator&lt; use_push&lt; ValueType_ &gt;, CompareType_, BlockSize_, AllocStr_ &gt;::sort_run()</a>, and <a class="el" href="inmemsort_8h_source.html#l00029">stxxl::stl_in_memory_sort()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00342">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00205">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00848">stxxl::stream::check_sorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00069">stxxl::sort_local::create_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00079">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize_, alloc_strategy_type &gt;::fetch()</a>, <a class="el" href="sort__stream_8h_source.html#l00093">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize_, alloc_strategy_type &gt;::fill_with_max_value()</a>, <a class="el" href="sort__stream_8h_source.html#l00458">stxxl::stream::runs_creator&lt; use_push&lt; ValueType_ &gt;, CompareType_, BlockSize_, AllocStr_ &gt;::fill_with_max_value()</a>, <a class="el" href="sort__stream_8h_source.html#l00107">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize_, alloc_strategy_type &gt;::sort_run()</a>, <a class="el" href="sort__stream_8h_source.html#l00472">stxxl::stream::runs_creator&lt; use_push&lt; ValueType_ &gt;, CompareType_, BlockSize_, AllocStr_ &gt;::sort_run()</a>, and <a class="el" href="inmemsort_8h_source.html#l00029">stxxl::stl_in_memory_sort()</a>.</p>
 
 </div>
 </div>
@@ -530,10 +530,10 @@ template&lt;unsigned blk_sz&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:29 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:29 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

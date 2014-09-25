@@ -138,37 +138,37 @@ $(document).ready(function(){initNavTree('iostats_8cpp_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classstxxl_1_1stats.html#aa91a587743f2d9b6fb8475e90ea79e90">   29</a></span>&#160;stats::stats() :</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    reads(0),</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    writes(0),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    volume_read(0),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    volume_written(0),</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    c_reads(0),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    c_writes(0),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    c_volume_read(0),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    c_volume_written(0),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    t_reads(0.0),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    t_writes(0.0),</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    p_reads(0.0),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    p_writes(0.0),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    p_begin_read(0.0),</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    p_begin_write(0.0),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    p_ios(0.0),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    p_begin_io(0.0),</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    t_waits(0.0),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    p_waits(0.0),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    p_begin_wait(0.0),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    t_wait_read(0.0),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    p_wait_read(0.0),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    p_begin_wait_read(0.0),</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    t_wait_write(0.0),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    p_wait_write(0.0),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    p_begin_wait_write(0.0),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    acc_reads(0), acc_writes(0),</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    acc_ios(0),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    acc_waits(0),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    acc_wait_read(0), acc_wait_write(0),</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    last_reset(<a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>())</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classstxxl_1_1stats.html#aa91a587743f2d9b6fb8475e90ea79e90">   29</a></span>&#160;stats::stats()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : reads(0),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      writes(0),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      volume_read(0),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      volume_written(0),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      c_reads(0),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      c_writes(0),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      c_volume_read(0),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      c_volume_written(0),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      t_reads(0.0),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      t_writes(0.0),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      p_reads(0.0),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      p_writes(0.0),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      p_begin_read(0.0),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      p_begin_write(0.0),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      p_ios(0.0),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      p_begin_io(0.0),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      t_waits(0.0),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      p_waits(0.0),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      p_begin_wait(0.0),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      t_wait_read(0.0),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      p_wait_read(0.0),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      p_begin_wait_read(0.0),</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      t_wait_write(0.0),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      p_wait_write(0.0),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      p_begin_wait_write(0.0),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      acc_reads(0), acc_writes(0),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      acc_ios(0),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      acc_waits(0),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      acc_wait_read(0), acc_wait_write(0),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      last_reset(<a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>())</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{ }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifndef STXXL_IO_STATS_RESET_FORBIDDEN</span></div>
@@ -472,10 +472,10 @@ $(document).ready(function(){initNavTree('iostats_8cpp_source.html','');});
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      &lt;&lt; <a class="code" href="iostats_8cpp.html#a7a113b8f607568ff9de8c62ad53d72f8">hr</a>(s.<a class="code" href="classstxxl_1_1stats__data.html#a861b7689c4656da453afe569dc69d30c">get_reads</a>() ? s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() / s.<a class="code" href="classstxxl_1_1stats__data.html#a861b7689c4656da453afe569dc69d30c">get_reads</a>() : 0, <span class="stringliteral">&quot;B&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; number of bytes read from disks            : &quot;</span> &lt;&lt; <a class="code" href="iostats_8cpp.html#a7a113b8f607568ff9de8c62ad53d72f8">hr</a>(s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>(), <span class="stringliteral">&quot;B&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; time spent in serving all read requests    : &quot;</span> &lt;&lt; s.<a class="code" href="classstxxl_1_1stats__data.html#a165855e41896535d4f927ab99a0831c5">get_read_time</a>() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; (s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#a165855e41896535d4f927ab99a0831c5">get_read_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; ((double)s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#a165855e41896535d4f927ab99a0831c5">get_read_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; time spent in reading (parallel read time) : &quot;</span> &lt;&lt; s.<a class="code" href="classstxxl_1_1stats__data.html#a5adf3f646341f7bde050b5ca6327d38f">get_pread_time</a>() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; (s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#a5adf3f646341f7bde050b5ca6327d38f">get_pread_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; ((double)s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#a5adf3f646341f7bde050b5ca6327d38f">get_pread_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> (s.<a class="code" href="classstxxl_1_1stats__data.html#a700b28b4514afba92662592900bd0029">get_cached_reads</a>()) {</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        o &lt;&lt; <span class="stringliteral">&quot; total number of cached reads               : &quot;</span> &lt;&lt; <a class="code" href="iostats_8cpp.html#a7a113b8f607568ff9de8c62ad53d72f8">hr</a>(s.<a class="code" href="classstxxl_1_1stats__data.html#a700b28b4514afba92662592900bd0029">get_cached_reads</a>()) &lt;&lt; std::endl;</div>
@@ -492,13 +492,13 @@ $(document).ready(function(){initNavTree('iostats_8cpp_source.html','');});
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      &lt;&lt; <a class="code" href="iostats_8cpp.html#a7a113b8f607568ff9de8c62ad53d72f8">hr</a>(s.<a class="code" href="classstxxl_1_1stats__data.html#a1d7c97d2e3f105cf5831ce9997530606">get_writes</a>() ? s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>() / s.<a class="code" href="classstxxl_1_1stats__data.html#a1d7c97d2e3f105cf5831ce9997530606">get_writes</a>() : 0, <span class="stringliteral">&quot;B&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; number of bytes written to disks           : &quot;</span> &lt;&lt; <a class="code" href="iostats_8cpp.html#a7a113b8f607568ff9de8c62ad53d72f8">hr</a>(s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>(), <span class="stringliteral">&quot;B&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; time spent in serving all write requests   : &quot;</span> &lt;&lt; s.<a class="code" href="classstxxl_1_1stats__data.html#a5f3a0dd203578029d67738a04d4615a4">get_write_time</a>() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; (s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#a5f3a0dd203578029d67738a04d4615a4">get_write_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; ((double)s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#a5f3a0dd203578029d67738a04d4615a4">get_write_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; time spent in writing (parallel write time): &quot;</span> &lt;&lt; s.<a class="code" href="classstxxl_1_1stats__data.html#ad0443a5c434699993d9cb8205f07d579">get_pwrite_time</a>() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; (s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#ad0443a5c434699993d9cb8205f07d579">get_pwrite_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; ((double)s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>() / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#ad0443a5c434699993d9cb8205f07d579">get_pwrite_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; time spent in I/O (parallel I/O time)      : &quot;</span> &lt;&lt; s.<a class="code" href="classstxxl_1_1stats__data.html#ac537746a80635b2d6075f349fa6e27ce">get_pio_time</a>() &lt;&lt; <span class="stringliteral">&quot; s&quot;</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; ((s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() + s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>()) / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#ac537746a80635b2d6075f349fa6e27ce">get_pio_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; @ &quot;</span> &lt;&lt; ((double)(s.<a class="code" href="classstxxl_1_1stats__data.html#a9b494ef0e1a08e658857642c5523a47c">get_read_volume</a>() + s.<a class="code" href="classstxxl_1_1stats__data.html#abd76be24624e4fbec4e06ec907aa9b4f">get_written_volume</a>()) / 1048576.0 / s.<a class="code" href="classstxxl_1_1stats__data.html#ac537746a80635b2d6075f349fa6e27ce">get_pio_time</a>()) &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor"></span>    o &lt;&lt; <span class="stringliteral">&quot; n/a&quot;</span> &lt;&lt; std::endl;</div>
@@ -609,10 +609,10 @@ $(document).ready(function(){initNavTree('iostats_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="iostats_8cpp.html">iostats.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:07 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:09 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

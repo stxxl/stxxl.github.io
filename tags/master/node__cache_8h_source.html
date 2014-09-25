@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('node__cache_8h_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structstxxl_1_1btree_1_1node__cache_1_1bid__hash.html#acc548688f299f463adbcb97b3b75c07a">   59</a></span>&#160;        <span class="keywordtype">size_t</span> operator () (<span class="keyword">const</span> <a class="code" href="classstxxl_1_1btree_1_1node__cache.html#abd2aa18e1142e011e1f5e74feb5146e1">bid_type</a>&amp; bid)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">size_t</span> result =</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="namespacestxxl.html#a0e4cfad1b842841ac4b7e6ddce0eeb7a">longhash1</a>(bid.offset + <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">uint64</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>(bid.storage)));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="namespacestxxl.html#af75bc8070f3dffa1a02a65aa58d78e5a">longhash1</a>(bid.offset + <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">uint64</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>(bid.storage)));</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#if STXXL_MSVC</span></div>
@@ -224,17 +224,17 @@ $(document).ready(function(){initNavTree('node__cache_8h_source.html','');});
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classstxxl_1_1btree_1_1node__cache.html#a079c6199b795f5b853be312e76705d3f">  112</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1node__cache.html#a079c6199b795f5b853be312e76705d3f">node_cache</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> cache_size_in_bytes,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;               <a class="code" href="classstxxl_1_1btree_1_1node__cache.html#a25208b2d9d0f21f5627b4e2565a257e5">btree_type</a>* btree__,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;               <a class="code" href="classstxxl_1_1btree_1_1node__cache.html#aa8926256246e8d7c57e029a96d4bc704">key_compare</a> comp__</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;               ) :</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        btree_(btree__),</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        comp_(comp__),</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance()),</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        n_found(0),</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        n_not_found(0),</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        n_created(0),</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        n_deleted(0),</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        n_read(0),</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        n_written(0),</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        n_clean_forced(0)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;               )</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        : btree_(btree__),</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          comp_(comp__),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          bm(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance()),</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          n_found(0),</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          n_not_found(0),</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          n_created(0),</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;          n_deleted(0),</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;          n_read(0),</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;          n_written(0),</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          n_clean_forced(0)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> nnodes = cache_size_in_bytes / block_type::raw_size;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;btree::node_cache constructor nodes=&quot;</span> &lt;&lt; nnodes);</div>
@@ -739,6 +739,7 @@ $(document).ready(function(){initNavTree('node__cache_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html_a6666ae073ba8ab0fe3468b6e82f50885"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html#a6666ae073ba8ab0fe3468b6e82f50885">stxxl::btree::node_cache::dirty_</a></div><div class="ttdeci">std::vector&lt; bool &gt; dirty_</div><div class="ttdef"><b>Definition:</b> <a href="node__cache_8h_source.html#l00081">node_cache.h:81</a></div></div>
 <div class="ttc" id="classstxxl_1_1block__manager_html"><div class="ttname"><a href="classstxxl_1_1block__manager.html">stxxl::block_manager</a></div><div class="ttdoc">Block manager class. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00063">block_manager.h:63</a></div></div>
 <div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00038">types.h:38</a></div></div>
+<div class="ttc" id="namespacestxxl_html_af75bc8070f3dffa1a02a65aa58d78e5a"><div class="ttname"><a href="namespacestxxl.html#af75bc8070f3dffa1a02a65aa58d78e5a">stxxl::longhash1</a></div><div class="ttdeci">size_t longhash1(uint64 key_)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00230">utils.h:230</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html_aa49cc698317e200cd99c9df492835e2a"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html#aa49cc698317e200cd99c9df492835e2a">stxxl::btree::node_cache::get_const_node</a></div><div class="ttdeci">node_type const * get_const_node(const bid_type &amp;bid, bool fix=false)</div><div class="ttdef"><b>Definition:</b> <a href="node__cache_8h_source.html#l00357">node_cache.h:357</a></div></div>
 <div class="ttc" id="classstxxl_1_1io__error_html"><div class="ttname"><a href="classstxxl_1_1io__error.html">stxxl::io_error</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00025">exceptions.h:25</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a82128fed22a58d0bc7b0eb3670def436"><div class="ttname"><a href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a></div><div class="ttdeci">unsigned long long int uint64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00039">types.h:39</a></div></div>
@@ -748,7 +749,6 @@ $(document).ready(function(){initNavTree('node__cache_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html_a11c53ac3db8155e670a820f3a8576db2"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html#a11c53ac3db8155e670a820f3a8576db2">stxxl::btree::node_cache::swap</a></div><div class="ttdeci">void swap(node_cache &amp;obj)</div><div class="ttdef"><b>Definition:</b> <a href="node__cache_8h_source.html#l00559">node_cache.h:559</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html_a3e6adedb1e9c52f30b1e92d7d60cb508"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html#a3e6adedb1e9c52f30b1e92d7d60cb508">stxxl::btree::node_cache::block_type</a></div><div class="ttdeci">node_type::block_type block_type</div><div class="ttdef"><b>Definition:</b> <a href="node__cache_8h_source.html#l00036">node_cache.h:36</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html_a03f3f6a21bf055c5d267de168332887d"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html#a03f3f6a21bf055c5d267de168332887d">stxxl::btree::node_cache::prefetch_node</a></div><div class="ttdeci">void prefetch_node(const bid_type &amp;bid)</div><div class="ttdef"><b>Definition:</b> <a href="node__cache_8h_source.html#l00476">node_cache.h:476</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a0e4cfad1b842841ac4b7e6ddce0eeb7a"><div class="ttname"><a href="namespacestxxl.html#a0e4cfad1b842841ac4b7e6ddce0eeb7a">stxxl::longhash1</a></div><div class="ttdeci">uint64 longhash1(uint64 key_)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00230">utils.h:230</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html_a6817edf9af11e7626ac530f090660835"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html#a6817edf9af11e7626ac530f090660835">stxxl::btree::node_cache::print_statistics</a></div><div class="ttdeci">void print_statistics(std::ostream &amp;o) const </div><div class="ttdef"><b>Definition:</b> <a href="node__cache_8h_source.html#l00580">node_cache.h:580</a></div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1node__cache_html"><div class="ttname"><a href="classstxxl_1_1btree_1_1node__cache.html">stxxl::btree::node_cache</a></div><div class="ttdef"><b>Definition:</b> <a href="leaf_8h_source.html#l00024">leaf.h:24</a></div></div>
@@ -804,10 +804,10 @@ $(document).ready(function(){initNavTree('node__cache_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_5a7933e30a367341f12be4470fbf844e.html">containers</a></li><li class="navelem"><a class="el" href="dir_eac0ba65acf79d7954208118b5464492.html">btree</a></li><li class="navelem"><a class="el" href="node__cache_8h.html">node_cache.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:45 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:46 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

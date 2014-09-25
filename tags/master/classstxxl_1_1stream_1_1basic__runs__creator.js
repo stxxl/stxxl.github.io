@@ -3,6 +3,7 @@ var classstxxl_1_1stream_1_1basic__runs__creator =
     [ "allocation_strategy_type", "classstxxl_1_1stream_1_1basic__runs__creator.html#ae0f13472d8d66887d3de3fc7d52bf008", null ],
     [ "block_type", "classstxxl_1_1stream_1_1basic__runs__creator.html#a4437cd1cb3be2527ce6d8fc8354eca0d", null ],
     [ "cmp_type", "classstxxl_1_1stream_1_1basic__runs__creator.html#a46f9953c1963d04ca9a2109a2d0e2118", null ],
+    [ "element_iterator", "classstxxl_1_1stream_1_1basic__runs__creator.html#ad7896213d4ccca54829e0fe82d0287e9", null ],
     [ "input_type", "classstxxl_1_1stream_1_1basic__runs__creator.html#a414a12b40d037345734ae49fcd053ac9", null ],
     [ "run_type", "classstxxl_1_1stream_1_1basic__runs__creator.html#a33f50bce2307aa5fa8a90c94ffaef28e", null ],
     [ "sorted_runs_data_type", "classstxxl_1_1stream_1_1basic__runs__creator.html#a358e0188e1c23c27e9b866827bcf23ec", null ],

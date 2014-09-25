@@ -123,9 +123,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae1b3902ce63b96a869f3ef6080b60640"><td class="memTemplParams" colspan="2">template&lt;class type_ , class type_key &gt; </td></tr>
-<tr class="memitem:ae1b3902ce63b96a869f3ef6080b60640"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1stable__ksort__local.html#ae1b3902ce63b96a869f3ef6080b60640">classify_block</a> (type_ *begin, type_ *end, <a class="el" href="structstxxl_1_1stable__ksort__local_1_1type__key.html">type_key</a> *&amp;out, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> *bucket, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> offset, unsigned shift)</td></tr>
-<tr class="separator:ae1b3902ce63b96a869f3ef6080b60640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36a7b75ccf8ed4ff1ea7df25c2028c1"><td class="memTemplParams" colspan="2">template&lt;class type_ , class type_key &gt; </td></tr>
+<tr class="memitem:ab36a7b75ccf8ed4ff1ea7df25c2028c1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1stable__ksort__local.html#ab36a7b75ccf8ed4ff1ea7df25c2028c1">classify_block</a> (type_ *begin, type_ *end, <a class="el" href="structstxxl_1_1stable__ksort__local_1_1type__key.html">type_key</a> *&amp;out, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> *bucket, typename type_::key_type offset, unsigned shift)</td></tr>
+<tr class="separator:ab36a7b75ccf8ed4ff1ea7df25c2028c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0e1a0d6e6657c0ebfcb85dd37f2eee"><td class="memTemplParams" colspan="2">template&lt;typename ExtIterator_ &gt; </td></tr>
 <tr class="memitem:a2a0e1a0d6e6657c0ebfcb85dd37f2eee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1stable__ksort__local.html#a2a0e1a0d6e6657c0ebfcb85dd37f2eee">distribute</a> (<a class="el" href="classstxxl_1_1stable__ksort__local_1_1bid__sequence.html">bid_sequence</a>&lt; typename ExtIterator_::vector_type::block_type::bid_type, typename ExtIterator_::vector_type::alloc_strategy_type &gt; *bucket_bids, <a class="el" href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">int64</a> *bucket_sizes, const <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> nbuckets, const <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> lognbuckets, ExtIterator_ first, ExtIterator_ last, const <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> nread_buffers, const <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> nwrite_buffers)</td></tr>
 <tr class="separator:a2a0e1a0d6e6657c0ebfcb85dd37f2eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +138,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"></div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae1b3902ce63b96a869f3ef6080b60640"></a>
+<a class="anchor" id="ab36a7b75ccf8ed4ff1ea7df25c2028c1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -171,7 +171,7 @@ template&lt;class type_ , class type_key &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned_type&#160;</td>
+          <td class="paramtype">typename type_::key_type&#160;</td>
           <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
@@ -190,7 +190,7 @@ template&lt;class type_ , class type_key &gt; </div>
 
 <p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00042">42</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
 
-<p>References <a class="el" href="stable__ksort_8h_source.html#l00058">stxxl::stable_ksort_local::type_key&lt; type &gt;::key</a>, and <a class="el" href="stable__ksort_8h_source.html#l00059">stxxl::stable_ksort_local::type_key&lt; type &gt;::ptr</a>.</p>
+<p>References <a class="el" href="stable__ksort_8h_source.html#l00060">stxxl::stable_ksort_local::type_key&lt; type &gt;::key</a>, and <a class="el" href="stable__ksort_8h_source.html#l00061">stxxl::stable_ksort_local::type_key&lt; type &gt;::ptr</a>.</p>
 
 </div>
 </div>
@@ -256,11 +256,11 @@ template&lt;typename ExtIterator_ &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00130">130</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
+<p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00132">132</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
 
 <p>References <a class="el" href="stable__ksort_8h_source.html#l00029">STXXL_VERBOSE_STABLE_KSORT</a>.</p>
 
-<p>Referenced by <a class="el" href="stable__ksort_8h_source.html#l00218">stxxl::stable_ksort()</a>.</p>
+<p>Referenced by <a class="el" href="stable__ksort_8h_source.html#l00220">stxxl::stable_ksort()</a>.</p>
 
 </div>
 </div>
@@ -290,9 +290,9 @@ template&lt;typename type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00067">67</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
+<p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00069">69</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
 
-<p>References <a class="el" href="stable__ksort_8h_source.html#l00058">stxxl::stable_ksort_local::type_key&lt; type &gt;::key</a>.</p>
+<p>References <a class="el" href="stable__ksort_8h_source.html#l00060">stxxl::stable_ksort_local::type_key&lt; type &gt;::key</a>.</p>
 
 </div>
 </div>
@@ -322,9 +322,9 @@ template&lt;typename type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00073">73</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
+<p>Definition at line <a class="el" href="stable__ksort_8h_source.html#l00075">75</a> of file <a class="el" href="stable__ksort_8h_source.html">stable_ksort.h</a>.</p>
 
-<p>References <a class="el" href="stable__ksort_8h_source.html#l00058">stxxl::stable_ksort_local::type_key&lt; type &gt;::key</a>.</p>
+<p>References <a class="el" href="stable__ksort_8h_source.html#l00060">stxxl::stable_ksort_local::type_key&lt; type &gt;::key</a>.</p>
 
 </div>
 </div>
@@ -334,10 +334,10 @@ template&lt;typename type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1stable__ksort__local.html">stable_ksort_local</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:04:12 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:04:11 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

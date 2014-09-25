@@ -228,7 +228,7 @@
 <g id="edge34" class="edge"><title>Node12&#45;&gt;Node11</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M526.655,-295.567C564.342,-294.232 610.787,-292.586 647.756,-291.276"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="526.142,-292.083 516.273,-295.935 526.39,-299.079 526.142,-292.083"/>
-<text text-anchor="middle" x="583" y="-299" font-family="Helvetica,sans-Serif" font-size="10.00"> sp_impl_</text>
+<text text-anchor="middle" x="583" y="-299" font-family="Helvetica,sans-Serif" font-size="10.00"> m_ptr</text>
 </g>
 <!-- Node13 -->
 <g id="node30" class="node"><title>Node13</title>

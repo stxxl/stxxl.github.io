@@ -9,7 +9,7 @@ var classstxxl_1_1normal__stack =
     [ "blocks_per_page", "classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a9e849f023220d4891f5beb1035383b4e", null ],
     [ "block_size", "classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4", null ],
     [ "normal_stack", "classstxxl_1_1normal__stack.html#afa95b071973031ffd663cca9d2da9d87", null ],
-    [ "normal_stack", "classstxxl_1_1normal__stack.html#ae79b501c13a5f43734eebe5a37f61fe9", null ],
+    [ "normal_stack", "classstxxl_1_1normal__stack.html#ad6b51214a04c748e2fc6224dcd4ca913", null ],
     [ "~normal_stack", "classstxxl_1_1normal__stack.html#ab3aade361bf28c03d8c8aad001b5fb79", null ],
     [ "element", "classstxxl_1_1normal__stack.html#a8460a63a280d47035ff63454cbd1bc96", null ],
     [ "empty", "classstxxl_1_1normal__stack.html#a81d3f10ed973d7a5a71da28452c9b0f8", null ],

@@ -15,10 +15,10 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classstxxl_1_1completion__handler1.html" target="_top" xlink:title="stxxl::completion_handler1\l\&lt; handler_type \&gt;">
+<a xlink:href="classstxxl_1_1completion__handler1.html" target="_top" xlink:title="stxxl::completion_handler1\l\&lt; HandlerType \&gt;">
 <polygon fill="none" stroke="black" points="8.5,-1 8.5,-35 141.5,-35 141.5,-1 8.5,-1"/>
 <text text-anchor="start" x="16.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::completion_handler1</text>
-<text text-anchor="middle" x="75" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; handler_type &gt;</text>
+<text text-anchor="middle" x="75" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; HandlerType &gt;</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->

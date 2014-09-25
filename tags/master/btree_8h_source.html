@@ -499,14 +499,14 @@ $(document).ready(function(){initNavTree('btree_8h_source.html','');});
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classstxxl_1_1btree_1_1btree.html#a8755058524a17265350ede7484b659e9">  388</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree.html#a8755058524a17265350ede7484b659e9">btree</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> node_cache_size_in_bytes,</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;          <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> leaf_cache_size_in_bytes</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          ) :</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        iterator_map_(this),</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        size_(0),</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        height_(2),</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        prefetching_enabled_(true),</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          )</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        : node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;          leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;          iterator_map_(this),</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          size_(0),</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;          height_(2),</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;          prefetching_enabled_(true),</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;          bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    {</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;Creating a btree, addr=&quot;</span> &lt;&lt; <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot; bytes in a node: &quot;</span> &lt;&lt; node_bid_type::size);</div>
@@ -522,15 +522,15 @@ $(document).ready(function(){initNavTree('btree_8h_source.html','');});
 <div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="classstxxl_1_1btree_1_1btree.html#a0a34e7afa0e18268a677ef35048bfd2d">  410</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree.html#a0a34e7afa0e18268a677ef35048bfd2d">btree</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1btree_1_1btree.html#a5c0396b7ccda69be61a0256e3f610d6d">key_compare</a>&amp; c_,</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;          <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> node_cache_size_in_bytes,</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;          <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> leaf_cache_size_in_bytes</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;          ) :</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        key_compare_(c_),</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        iterator_map_(this),</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        size_(0),</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        height_(2),</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        prefetching_enabled_(true),</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;          )</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        : key_compare_(c_),</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;          node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;          leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;          iterator_map_(this),</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;          size_(0),</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;          height_(2),</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;          prefetching_enabled_(true),</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;          bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    {</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;Creating a btree, addr=&quot;</span> &lt;&lt; <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot; bytes in a node: &quot;</span> &lt;&lt; node_bid_type::size);</div>
@@ -1033,15 +1033,15 @@ $(document).ready(function(){initNavTree('btree_8h_source.html','');});
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;          <span class="keywordtype">bool</span> range_sorted = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;          <span class="keywordtype">double</span> node_fill_factor = 0.75,</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;          <span class="keywordtype">double</span> leaf_fill_factor = 0.6</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;          ) :</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        key_compare_(c_),</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        iterator_map_(this),</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        size_(0),</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;        height_(2),</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;        prefetching_enabled_(true),</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;          )</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        : key_compare_(c_),</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;          node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;          leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;          iterator_map_(this),</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;          size_(0),</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;          height_(2),</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;          prefetching_enabled_(true),</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;          bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    {</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;Creating a btree, addr=&quot;</span> &lt;&lt; <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot; bytes in a node: &quot;</span> &lt;&lt; node_bid_type::size);</div>
@@ -1069,14 +1069,14 @@ $(document).ready(function(){initNavTree('btree_8h_source.html','');});
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;          <span class="keywordtype">bool</span> range_sorted = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;          <span class="keywordtype">double</span> node_fill_factor = 0.75,</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;          <span class="keywordtype">double</span> leaf_fill_factor = 0.6</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;          ) :</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        iterator_map_(this),</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        size_(0),</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;        height_(2),</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        prefetching_enabled_(true),</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;          )</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        : node_cache_(node_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;          leaf_cache_(leaf_cache_size_in_bytes, this, key_compare_),</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;          iterator_map_(this),</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;          size_(0),</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;          height_(2),</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;          prefetching_enabled_(true),</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;          bm_(<a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>::get_instance())</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    {</div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;Creating a btree, addr=&quot;</span> &lt;&lt; <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot; bytes in a node: &quot;</span> &lt;&lt; node_bid_type::size);</div>
@@ -1398,7 +1398,7 @@ $(document).ready(function(){initNavTree('btree_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1btree_1_1btree_html_af7f3f605449182d04686c2d425ddfec3"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree.html#af7f3f605449182d04686c2d425ddfec3">stxxl::btree::btree::disable_prefetching</a></div><div class="ttdeci">void disable_prefetching()</div><div class="ttdef"><b>Definition:</b> <a href="btree_8h_source.html#l01026">btree.h:1026</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1btree_html_aefe3f644fca7e7ea738b0d1cc208657b"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree.html#aefe3f644fca7e7ea738b0d1cc208657b">stxxl::btree::btree::bm_</a></div><div class="ttdeci">block_manager * bm_</div><div class="ttdef"><b>Definition:</b> <a href="btree_8h_source.html#l00094">btree.h:94</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1btree_html_acac3c3d0336b61580f64e379a42c68b7"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree.html#acac3c3d0336b61580f64e379a42c68b7">stxxl::btree::btree::value_compare</a></div><div class="ttdeci">leaf_type::value_compare value_compare</div><div class="ttdef"><b>Definition:</b> <a href="btree_8h_source.html#l00077">btree.h:77</a></div></div>
-<div class="ttc" id="structstxxl_1_1VECTOR__GENERATOR_html"><div class="ttname"><a href="structstxxl_1_1VECTOR__GENERATOR.html">stxxl::VECTOR_GENERATOR</a></div><div class="ttdoc">External vector type generator. </div><div class="ttdef"><b>Definition:</b> <a href="vector_8h_source.html#l02582">vector.h:2582</a></div></div>
+<div class="ttc" id="structstxxl_1_1VECTOR__GENERATOR_html"><div class="ttname"><a href="structstxxl_1_1VECTOR__GENERATOR.html">stxxl::VECTOR_GENERATOR</a></div><div class="ttdoc">External vector type generator. </div><div class="ttdef"><b>Definition:</b> <a href="vector_8h_source.html#l02592">vector.h:2592</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1normal__node_html_ac8d979cfd2d0aae70e1452730ccf4df9"><div class="ttname"><a href="classstxxl_1_1btree_1_1normal__node.html#ac8d979cfd2d0aae70e1452730ccf4df9">stxxl::btree::normal_node::push_back</a></div><div class="ttdeci">void push_back(const value_type &amp;x)</div><div class="ttdef"><b>Definition:</b> <a href="node_8h_source.html#l00744">node.h:744</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1btree_html_a4de769868ece70b8493cd72ddf23d9fc"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree.html#a4de769868ece70b8493cd72ddf23d9fc">stxxl::btree::btree::begin</a></div><div class="ttdeci">const_iterator begin() const </div><div class="ttdef"><b>Definition:</b> <a href="btree_8h_source.html#l00542">btree.h:542</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1btree_html_afe288694661bc30560b23985572cd2fc"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree.html#afe288694661bc30560b23985572cd2fc">stxxl::btree::btree::end_iterator</a></div><div class="ttdeci">iterator end_iterator</div><div class="ttdef"><b>Definition:</b> <a href="btree_8h_source.html#l00103">btree.h:103</a></div></div>
@@ -1421,10 +1421,10 @@ $(document).ready(function(){initNavTree('btree_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_5a7933e30a367341f12be4470fbf844e.html">containers</a></li><li class="navelem"><a class="el" href="dir_eac0ba65acf79d7954208118b5464492.html">btree</a></li><li class="navelem"><a class="el" href="btree_8h.html">btree.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:43 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:44 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

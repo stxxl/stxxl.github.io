@@ -197,10 +197,11 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line">        <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> block_size = <span class="keyword">sizeof</span>(my_type) * 4096;</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a> block_size = <span class="keyword">sizeof</span>(my_type) * 4096;</div>
+<div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;generate&quot;</span>) == 0) {</div>
 <div class="line">        <span class="keyword">const</span> my_type::key_type num_elements = 1 * 1024 * 1024;</div>
-<div class="line">        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> records_in_block = block_size / <span class="keyword">sizeof</span>(my_type);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a> records_in_block = block_size / <span class="keyword">sizeof</span>(my_type);</div>
 <div class="line">        <a name="_a5"></a><a class="code" href="classstxxl_1_1syscall__file.html">stxxl::syscall_file</a> f(argv[2], <a name="a6"></a><a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4daac60aa8b56f9dec972e244185b9d90bc">stxxl::file::CREAT</a> | <a name="a7"></a><a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4da786e608dbd3dbfaf2af1b84030e1e4a3">stxxl::file::RDWR</a>);</div>
 <div class="line">        my_type* array = (my_type*)stxxl::aligned_alloc&lt;STXXL_BLOCK_ALIGN&gt;(block_size);</div>
 <div class="line">        memset(array, 0, block_size);</div>
@@ -211,17 +212,17 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j = 0; j &lt; records_in_block; j++)</div>
 <div class="line">                array[j].m_key = cur_key--;</div>
 <div class="line"></div>
-<div class="line">            <a name="_a8"></a><a class="code" href="classstxxl_1_1counting__ptr.html">stxxl::request_ptr</a> req = f.awrite((<span class="keywordtype">void</span>*)array, <a class="code" href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a>(i) * block_size, block_size, <a name="_a9"></a><a class="code" href="structstxxl_1_1default__completion__handler.html">stxxl::default_completion_handler</a>());</div>
-<div class="line">            req-&gt;<a name="a10"></a><a class="code" href="classstxxl_1_1request__interface.html#ac740c3dd58d02842bed4a4e86fe42b22">wait</a>();</div>
+<div class="line">            <a name="_a8"></a><a class="code" href="classstxxl_1_1counting__ptr.html">stxxl::request_ptr</a> req = f.awrite((<span class="keywordtype">void</span>*)array, <a class="code" href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a>(i) * block_size, block_size);</div>
+<div class="line">            req-&gt;<a name="a9"></a><a class="code" href="classstxxl_1_1request__interface.html#ac740c3dd58d02842bed4a4e86fe42b22">wait</a>();</div>
 <div class="line">        }</div>
 <div class="line">        stxxl::aligned_dealloc&lt;STXXL_BLOCK_ALIGN&gt;(array);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="preprocessor">#if STXXL_PARALLEL_MULTIWAY_MERGE</span></div>
-<div class="line"><span class="preprocessor"></span>        <a name="a11"></a><a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;STXXL_PARALLEL_MULTIWAY_MERGE&quot;</span>);</div>
+<div class="line"><span class="preprocessor"></span>        <a name="a10"></a><a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;STXXL_PARALLEL_MULTIWAY_MERGE&quot;</span>);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>        <a class="code" href="classstxxl_1_1syscall__file.html">stxxl::syscall_file</a> f(argv[2], <a name="a12"></a><a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4daacce758b4300a21d49573fff2caec28f">stxxl::file::DIRECT</a> | <a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4da786e608dbd3dbfaf2af1b84030e1e4a3">stxxl::file::RDWR</a>);</div>
+<div class="line"><span class="preprocessor"></span>        <a class="code" href="classstxxl_1_1syscall__file.html">stxxl::syscall_file</a> f(argv[2], <a name="a11"></a><a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4daacce758b4300a21d49573fff2caec28f">stxxl::file::DIRECT</a> | <a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4da786e608dbd3dbfaf2af1b84030e1e4a3">stxxl::file::RDWR</a>);</div>
 <div class="line">        <span class="keywordtype">unsigned</span> memory_to_use = 50 * 1024 * 1024;</div>
-<div class="line">        <span class="keyword">typedef</span> <a name="_a13"></a><a class="code" href="classstxxl_1_1vector.html">stxxl::vector&lt;my_type, 1, stxxl::lru_pager&lt;8&gt;</a>, block_size&gt; vector_type;</div>
+<div class="line">        <span class="keyword">typedef</span> <a name="_a12"></a><a class="code" href="classstxxl_1_1vector.html">stxxl::vector&lt;my_type, 1, stxxl::lru_pager&lt;8&gt;</a>, block_size&gt; vector_type;</div>
 <div class="line">        vector_type v(&amp;f);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">/*</span></div>
@@ -231,19 +232,19 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <div class="line"><span class="comment">         */</span></div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Checking order...&quot;</span>);</div>
-<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a name="a14"></a><a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(v.begin(), v.end()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
+<div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>((<a name="a13"></a><a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(v.begin(), v.end()) ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;WRONG&quot;</span>));</div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Sorting...&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;sort&quot;</span>) == 0) {</div>
-<div class="line">            <a name="a15"></a><a class="code" href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">stxxl::sort</a>(v.begin(), v.end(), Cmp(), memory_to_use);</div>
+<div class="line">            <a name="a14"></a><a class="code" href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">stxxl::sort</a>(v.begin(), v.end(), Cmp(), memory_to_use);</div>
 <div class="line"><span class="preprocessor">#if 0       // stable_sort is not yet implemented</span></div>
 <div class="line"><span class="preprocessor"></span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;stable_sort&quot;</span>) == 0) {</div>
 <div class="line">            stxxl::stable_sort(v.begin(), v.end(), memory_to_use);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor"></span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;ksort&quot;</span>) == 0) {</div>
-<div class="line">            <a name="a16"></a><a class="code" href="group__stlalgo.html#gaf9b40c5c99c17e08bd8fd59b979b84b5">stxxl::ksort</a>(v.begin(), v.end(), memory_to_use);</div>
+<div class="line">            <a name="a15"></a><a class="code" href="group__stlalgo.html#gaf9b40c5c99c17e08bd8fd59b979b84b5">stxxl::ksort</a>(v.begin(), v.end(), memory_to_use);</div>
 <div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;stable_ksort&quot;</span>) == 0) {</div>
-<div class="line">            <a name="a17"></a><a class="code" href="group__stlalgo.html#gada09f624fc52598ca603fc390f8adb4e">stxxl::stable_ksort</a>(v.begin(), v.end(), memory_to_use);</div>
+<div class="line">            <a name="a16"></a><a class="code" href="group__stlalgo.html#gada09f624fc52598ca603fc390f8adb4e">stxxl::stable_ksort</a>(v.begin(), v.end(), memory_to_use);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            <a class="code" href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a>(<span class="stringliteral">&quot;Not implemented: &quot;</span> &lt;&lt; argv[1]);</div>
 <div class="line">        }</div>
@@ -261,10 +262,10 @@ $(document).ready(function(){initNavTree('examples_2algo_2sort_file_8cpp-example
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:33 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:34 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

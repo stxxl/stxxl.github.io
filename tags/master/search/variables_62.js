@@ -37,6 +37,6 @@ var searchData=
   ['buffer_5fmutex',['buffer_mutex',['../classstxxl_1_1wbtl__file.html#af8330bb4be0eaa1ee40d9ec022f5970b',1,'stxxl::wbtl_file']]],
   ['busy_5fblocks',['busy_blocks',['../classstxxl_1_1prefetch__pool.html#a67044c473693541a6074d523923d1f90',1,'stxxl::prefetch_pool::busy_blocks()'],['../classstxxl_1_1write__pool.html#a51bb19ee20715dc72c3416ad204006eb',1,'stxxl::write_pool::busy_blocks()']]],
   ['busy_5fwrite_5fblocks',['busy_write_blocks',['../classstxxl_1_1buffered__writer.html#a42fb32e5663b50c256d532a1f972eaf0',1,'stxxl::buffered_writer']]],
-  ['bytes',['bytes',['../classstxxl_1_1uint__pair.html#ab97713eb54af74fb47e33eff46ea89b0',1,'stxxl::uint_pair::bytes()'],['../uint__types_8h.html#acea1c07f4cd964459303d92adec84161',1,'bytes():&#160;uint_types.h']]],
+  ['bytes',['bytes',['../classstxxl_1_1uint__pair.html#af33483009508e56a68fdd6a02da1ab30',1,'stxxl::uint_pair::bytes()'],['../uint__types_8h.html#ab09b9b43d1b1783c78e39783e382b3dd',1,'bytes():&#160;uint_types.h']]],
   ['bytes_5fper_5fsector',['bytes_per_sector',['../classstxxl_1_1simdisk__geometry.html#ae2aabb798e9e335d6a58922b709d7336',1,'stxxl::simdisk_geometry::bytes_per_sector()'],['../classstxxl_1_1wfs__file__base.html#a55080a7bb063a9fd8913841be660e8f7',1,'stxxl::wfs_file_base::bytes_per_sector()']]]
 ];

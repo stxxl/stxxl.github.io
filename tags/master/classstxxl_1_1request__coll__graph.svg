@@ -183,7 +183,7 @@
 <g id="edge28" class="edge"><title>Node12&#45;&gt;Node11</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M652.224,-26.2911C693.926,-27.6916 746.932,-29.4716 787.863,-30.8462"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="652.264,-22.7906 642.152,-25.9529 652.029,-29.7866 652.264,-22.7906"/>
-<text text-anchor="middle" x="715" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00"> sp_impl_</text>
+<text text-anchor="middle" x="715" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00"> m_ptr</text>
 </g>
 </g>
 </svg>

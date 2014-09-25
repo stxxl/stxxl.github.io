@@ -63,7 +63,6 @@ var namespacestxxl =
     [ "const_vector_iterator", "classstxxl_1_1const__vector__iterator.html", "classstxxl_1_1const__vector__iterator" ],
     [ "counted_object", "classstxxl_1_1counted__object.html", "classstxxl_1_1counted__object" ],
     [ "counting_ptr", "classstxxl_1_1counting__ptr.html", "classstxxl_1_1counting__ptr" ],
-    [ "default_completion_handler", "structstxxl_1_1default__completion__handler.html", "structstxxl_1_1default__completion__handler" ],
     [ "deque", "classstxxl_1_1deque.html", "classstxxl_1_1deque" ],
     [ "deque_iterator", "classstxxl_1_1deque__iterator.html", "classstxxl_1_1deque__iterator" ],
     [ "disk_allocator", "classstxxl_1_1disk__allocator.html", "classstxxl_1_1disk__allocator" ],

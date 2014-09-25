@@ -145,9 +145,9 @@ class stxxl::block_prefetcher&lt; block_type, bid_iterator_type &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0e657fa39a7faa017ac5356d913fcc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1block__prefetcher.html#ad0e657fa39a7faa017ac5356d913fcc5">block_prefetcher</a> (bid_iterator_type _cons_begin, bid_iterator_type _cons_end, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> *_pref_seq, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> _prefetch_buf_size, <a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a> <a class="el" href="classstxxl_1_1block__prefetcher.html#a0666c5edf87c0d0c6a17038d5799c434">do_after_fetch</a>=<a class="el" href="structstxxl_1_1default__completion__handler.html">default_completion_handler</a>())</td></tr>
-<tr class="memdesc:ad0e657fa39a7faa017ac5356d913fcc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object and immediately starts prefetching.  <a href="#ad0e657fa39a7faa017ac5356d913fcc5">More...</a><br/></td></tr>
-<tr class="separator:ad0e657fa39a7faa017ac5356d913fcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa01ab2132f1e79401392693a59dde4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1block__prefetcher.html#a5aa01ab2132f1e79401392693a59dde4">block_prefetcher</a> (bid_iterator_type _cons_begin, bid_iterator_type _cons_end, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> *_pref_seq, <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> _prefetch_buf_size, <a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a> <a class="el" href="classstxxl_1_1block__prefetcher.html#a0666c5edf87c0d0c6a17038d5799c434">do_after_fetch</a>=<a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a>())</td></tr>
+<tr class="memdesc:a5aa01ab2132f1e79401392693a59dde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object and immediately starts prefetching.  <a href="#a5aa01ab2132f1e79401392693a59dde4">More...</a><br/></td></tr>
+<tr class="separator:a5aa01ab2132f1e79401392693a59dde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166640306d577143a7ecae818bd12995"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1block__prefetcher.html#a166640306d577143a7ecae818bd12995">~block_prefetcher</a> ()</td></tr>
 <tr class="memdesc:a166640306d577143a7ecae818bd12995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees used memory.  <a href="#a166640306d577143a7ecae818bd12995">More...</a><br/></td></tr>
 <tr class="separator:a166640306d577143a7ecae818bd12995"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +235,7 @@ template&lt;typename block_type , typename bid_iterator_type &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad0e657fa39a7faa017ac5356d913fcc5"></a>
+<a class="anchor" id="a5aa01ab2132f1e79401392693a59dde4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -272,7 +272,7 @@ template&lt;typename block_type , typename bid_iterator_type &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a>&#160;</td>
-          <td class="paramname"><em>do_after_fetch</em> = <code><a class="el" href="structstxxl_1_1default__completion__handler.html">default_completion_handler</a>()</code>&#160;</td>
+          <td class="paramname"><em>do_after_fetch</em> = <code><a class="el" href="classstxxl_1_1completion__handler.html">completion_handler</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -463,7 +463,7 @@ template&lt;typename block_type , typename bid_iterator_type &gt; </div>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
 
-<p>Referenced by <a class="el" href="buf__istream__reverse_8h_source.html#l00068">stxxl::buf_istream_reverse&lt; BlockType, BIDIteratorType &gt;::buf_istream_reverse()</a>, and <a class="el" href="sort__stream_8h_source.html#l01098">stxxl::stream::basic_runs_merger&lt; sorted_runs_type, CompareType_, AllocStr_ &gt;::initialize()</a>.</p>
+<p>Referenced by <a class="el" href="buf__istream__reverse_8h_source.html#l00068">stxxl::buf_istream_reverse&lt; BlockType, BIDIteratorType &gt;::buf_istream_reverse()</a>, and <a class="el" href="sort__stream_8h_source.html#l01100">stxxl::stream::basic_runs_merger&lt; sorted_runs_type, CompareType_, AllocStr_ &gt;::initialize()</a>.</p>
 
 </div>
 </div>
@@ -819,10 +819,10 @@ template&lt;typename block_type , typename bid_iterator_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1block__prefetcher.html">block_prefetcher</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:34 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:32 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

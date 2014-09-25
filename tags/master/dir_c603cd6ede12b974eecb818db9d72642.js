@@ -14,7 +14,8 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
     [ "cmdline.h", "cmdline_8h.html", [
       [ "cmdline_parser", "classstxxl_1_1cmdline__parser.html", "classstxxl_1_1cmdline__parser" ],
       [ "argument", "structstxxl_1_1cmdline__parser_1_1argument.html", "structstxxl_1_1cmdline__parser_1_1argument" ],
-      [ "argument_bytes", "structstxxl_1_1cmdline__parser_1_1argument__bytes.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes" ],
+      [ "argument_bytes32", "structstxxl_1_1cmdline__parser_1_1argument__bytes32.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes32" ],
+      [ "argument_bytes64", "structstxxl_1_1cmdline__parser_1_1argument__bytes64.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes64" ],
       [ "argument_flag", "structstxxl_1_1cmdline__parser_1_1argument__flag.html", "structstxxl_1_1cmdline__parser_1_1argument__flag" ],
       [ "argument_int", "structstxxl_1_1cmdline__parser_1_1argument__int.html", "structstxxl_1_1cmdline__parser_1_1argument__int" ],
       [ "argument_string", "structstxxl_1_1cmdline__parser_1_1argument__string.html", "structstxxl_1_1cmdline__parser_1_1argument__string" ],

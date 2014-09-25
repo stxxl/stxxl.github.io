@@ -202,7 +202,7 @@
 <g id="edge30" class="edge"><title>Node13&#45;&gt;Node12</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M652.224,-74.5091C693.926,-74.8203 746.932,-75.2159 787.863,-75.5214"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="652.178,-71.0088 642.152,-74.434 652.126,-78.0086 652.178,-71.0088"/>
-<text text-anchor="middle" x="715" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00"> sp_impl_</text>
+<text text-anchor="middle" x="715" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00"> m_ptr</text>
 </g>
 </g>
 </svg>

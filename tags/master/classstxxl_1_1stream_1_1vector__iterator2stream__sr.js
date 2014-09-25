@@ -1,15 +1,15 @@
 var classstxxl_1_1stream_1_1vector__iterator2stream__sr =
 [
-    [ "block_type", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a920c3c0a21169d2d96bb9e08e0edecd5", null ],
-    [ "Self_", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a2083662247f6dcc1000cf0ddd51bb810", null ],
-    [ "value_type", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a25834486b1248134cad36bc41629fbc5", null ],
-    [ "vector_iterator2stream_sr", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a12e4c47545019a1da6bf2c1b0bbb2589", null ],
-    [ "vector_iterator2stream_sr", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#adc652a105abf6379c8377dd60f235c5b", null ],
-    [ "~vector_iterator2stream_sr", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#ada00d85f83d8205354af1e4a64265bfd", null ],
-    [ "empty", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a0de25c356c552874ef768834808ab5d2", null ],
-    [ "operator*", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#abb05f64c672ba9591e3712760485086c", null ],
-    [ "operator++", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#ae11553c1bae31fd5e0b4372f67628cd8", null ],
-    [ "operator->", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a54b8b5dd78bf8f5a3f8657562976c9f2", null ],
-    [ "it_stream", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a72c0873e11d5dc0d3f413d041e053272", null ],
-    [ "vec_it_stream", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#ac1c36939124ac524fa128f8c1c4a2f24", null ]
+    [ "block_type", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a678f45adaae6ec6b8a77a3f0ffe01bc3", null ],
+    [ "self_type", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a0e35087b695dee8c6c26e2cab003e264", null ],
+    [ "value_type", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#aa654a08262a0ecd68a5d3767cd070b0a", null ],
+    [ "vector_iterator2stream_sr", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a5af65385179eb07d4cbfcff18afd28fc", null ],
+    [ "vector_iterator2stream_sr", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a7a4ac7852b3983cfdbf0804e35abbb05", null ],
+    [ "~vector_iterator2stream_sr", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#adaa03c05cdf65dddfd3784fe2ecc8323", null ],
+    [ "empty", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#af5b02279b8229878e42d36e0f6a29161", null ],
+    [ "operator*", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#ac96004262112dd94612de02272c0a57b", null ],
+    [ "operator++", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a55ac32991ad9a9c0f4b15200de17b673", null ],
+    [ "operator->", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#aa4e0a496154a963d8c2c77a195a12af0", null ],
+    [ "it_stream", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a2ad225f71a4b5bbd6515c363aa906450", null ],
+    [ "vec_it_stream", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html#a6ec800a0a6c2b85b30c9846eb2a0c178", null ]
 ];

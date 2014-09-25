@@ -124,7 +124,7 @@ class stxxl::grow_shrink_stack&lt; StackConfig &gt;</h3>
 <p>Use it if your access pattern consists of many repeated push'es and pop's For semantics of the methods see documentation of the STL <code>std::stack</code>. </p>
 <dl class="section warning"><dt>Warning</dt><dd>The amortized complexity of operation is not O(1/DB), rather O(DB) </dd></dl>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00303">303</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00302">302</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::grow_shrink_stack&lt; StackConfig &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -187,10 +187,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae41f7e4002393f78a944bdf61a046c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at the top of the stack. Precondition: stack is not <a class="el" href="classstxxl_1_1grow__shrink__stack.html#ac1973e75ee542fb5079792cb3850c8a7" title="Returns true if the stack is empty. ">empty()</a>. Postcondition: <a class="el" href="classstxxl_1_1grow__shrink__stack.html#a4e896bcd85be89ef5df09d41c54e9d59" title="Returns the number of elements contained in the stack. ">size()</a> is decremented.  <a href="#ae41f7e4002393f78a944bdf61a046c51">More...</a><br/></td></tr>
 <tr class="separator:ae41f7e4002393f78a944bdf61a046c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors/Destructors</div></td></tr>
-<tr class="memitem:acfeea542cdc01b554b8d7c06bf0da04c"><td class="memTemplParams" colspan="2">template&lt;class stack_type &gt; </td></tr>
-<tr class="memitem:acfeea542cdc01b554b8d7c06bf0da04c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1grow__shrink__stack.html#acfeea542cdc01b554b8d7c06bf0da04c">grow_shrink_stack</a> (const stack_type &amp;stack_)</td></tr>
-<tr class="memdesc:acfeea542cdc01b554b8d7c06bf0da04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-construction from a another stack of any type.  <a href="#acfeea542cdc01b554b8d7c06bf0da04c">More...</a><br/></td></tr>
-<tr class="separator:acfeea542cdc01b554b8d7c06bf0da04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c57c7d7c9abf342689e9ab921a1a9e"><td class="memTemplParams" colspan="2">template&lt;class StackType &gt; </td></tr>
+<tr class="memitem:a45c57c7d7c9abf342689e9ab921a1a9e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1grow__shrink__stack.html#a45c57c7d7c9abf342689e9ab921a1a9e">grow_shrink_stack</a> (const StackType &amp;stack_)</td></tr>
+<tr class="memdesc:a45c57c7d7c9abf342689e9ab921a1a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-construction from a another stack of any type.  <a href="#a45c57c7d7c9abf342689e9ab921a1a9e">More...</a><br/></td></tr>
+<tr class="separator:a45c57c7d7c9abf342689e9ab921a1a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ccf754f7afe6f4414c18608754da981"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1grow__shrink__stack.html#a7ccf754f7afe6f4414c18608754da981">~grow_shrink_stack</a> ()</td></tr>
 <tr class="separator:a7ccf754f7afe6f4414c18608754da981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Capacity</div></td></tr>
@@ -243,7 +243,7 @@ template&lt;class StackConfig&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00309">309</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00308">308</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ template&lt;class StackConfig&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00319">319</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00318">318</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +277,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>type of block used in disk-memory transfers </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00318">318</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00317">317</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ template&lt;class StackConfig&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00306">306</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00305">305</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>type for sizes (64-bit) </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00311">311</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00310">310</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>type of the elements stored in the stack </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00308">308</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00307">307</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ template&lt;class StackConfig&gt; </div>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00312">312</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00311">311</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -382,17 +382,17 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Default constructor: creates empty stack. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00337">337</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00336">336</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acfeea542cdc01b554b8d7c06bf0da04c"></a>
+<a class="anchor" id="a45c57c7d7c9abf342689e9ab921a1a9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class StackConfig&gt; </div>
 <div class="memtemplate">
-template&lt;class stack_type &gt; </div>
+template&lt;class StackType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -400,7 +400,7 @@ template&lt;class stack_type &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classstxxl_1_1grow__shrink__stack.html">stxxl::grow_shrink_stack</a>&lt; StackConfig &gt;::<a class="el" href="classstxxl_1_1grow__shrink__stack.html">grow_shrink_stack</a> </td>
           <td>(</td>
-          <td class="paramtype">const stack_type &amp;&#160;</td>
+          <td class="paramtype">const StackType &amp;&#160;</td>
           <td class="paramname"><em>stack_</em></td><td>)</td>
           <td></td>
         </tr>
@@ -420,7 +420,7 @@ template&lt;class stack_type &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00377">377</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00376">376</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00403">403</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00402">402</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 <p>References <a class="el" href="error__handling_8h_source.html#l00034">STXXL_PRETTY_FUNCTION_NAME</a>, <a class="el" href="verbose_8h_source.html#l00102">STXXL_VERBOSE</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
 
@@ -479,7 +479,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Returns true if the stack is empty. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00427">427</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00426">426</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Removes the element at the top of the stack. Precondition: stack is not <a class="el" href="classstxxl_1_1grow__shrink__stack.html#ac1973e75ee542fb5079792cb3850c8a7" title="Returns true if the stack is empty. ">empty()</a>. Postcondition: <a class="el" href="classstxxl_1_1grow__shrink__stack.html#a4e896bcd85be89ef5df09d41c54e9d59" title="Returns the number of elements contained in the stack. ">size()</a> is decremented. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00497">497</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00496">496</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
 
@@ -540,7 +540,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Inserts an element at the top of the stack. Postconditions: <a class="el" href="classstxxl_1_1grow__shrink__stack.html#a4e896bcd85be89ef5df09d41c54e9d59" title="Returns the number of elements contained in the stack. ">size()</a> is incremented by 1, and <a class="el" href="classstxxl_1_1grow__shrink__stack.html#a2272c16523c6a504105bcb0aca33761f" title="Return mutable reference to the element at the top of the stack. Precondition: stack is not empty()...">top()</a> is the inserted element. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00455">455</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00454">454</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
 
@@ -571,7 +571,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Returns the number of elements contained in the stack. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00422">422</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00421">421</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -599,9 +599,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00355">355</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00354">354</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>References <a class="el" href="stack_8h_source.html#l00330">stxxl::grow_shrink_stack&lt; StackConfig &gt;::alloc_strategy</a>, <a class="el" href="stack_8h_source.html#l00329">stxxl::grow_shrink_stack&lt; StackConfig &gt;::bids</a>, <a class="el" href="stack_8h_source.html#l00325">stxxl::grow_shrink_stack&lt; StackConfig &gt;::cache</a>, <a class="el" href="stack_8h_source.html#l00326">stxxl::grow_shrink_stack&lt; StackConfig &gt;::cache_buffers</a>, <a class="el" href="stack_8h_source.html#l00323">stxxl::grow_shrink_stack&lt; StackConfig &gt;::cache_offset</a>, <a class="el" href="stack_8h_source.html#l00324">stxxl::grow_shrink_stack&lt; StackConfig &gt;::current_element</a>, <a class="el" href="stack_8h_source.html#l00322">stxxl::grow_shrink_stack&lt; StackConfig &gt;::m_size</a>, <a class="el" href="stack_8h_source.html#l00327">stxxl::grow_shrink_stack&lt; StackConfig &gt;::overlap_buffers</a>, and <a class="el" href="stack_8h_source.html#l00328">stxxl::grow_shrink_stack&lt; StackConfig &gt;::requests</a>.</p>
+<p>References <a class="el" href="stack_8h_source.html#l00329">stxxl::grow_shrink_stack&lt; StackConfig &gt;::alloc_strategy</a>, <a class="el" href="stack_8h_source.html#l00328">stxxl::grow_shrink_stack&lt; StackConfig &gt;::bids</a>, <a class="el" href="stack_8h_source.html#l00324">stxxl::grow_shrink_stack&lt; StackConfig &gt;::cache</a>, <a class="el" href="stack_8h_source.html#l00325">stxxl::grow_shrink_stack&lt; StackConfig &gt;::cache_buffers</a>, <a class="el" href="stack_8h_source.html#l00322">stxxl::grow_shrink_stack&lt; StackConfig &gt;::cache_offset</a>, <a class="el" href="stack_8h_source.html#l00323">stxxl::grow_shrink_stack&lt; StackConfig &gt;::current_element</a>, <a class="el" href="stack_8h_source.html#l00321">stxxl::grow_shrink_stack&lt; StackConfig &gt;::m_size</a>, <a class="el" href="stack_8h_source.html#l00326">stxxl::grow_shrink_stack&lt; StackConfig &gt;::overlap_buffers</a>, and <a class="el" href="stack_8h_source.html#l00327">stxxl::grow_shrink_stack&lt; StackConfig &gt;::requests</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Return mutable reference to the element at the top of the stack. Precondition: stack is not <a class="el" href="classstxxl_1_1grow__shrink__stack.html#ac1973e75ee542fb5079792cb3850c8a7" title="Returns true if the stack is empty. ">empty()</a>. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00439">439</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00438">438</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -659,7 +659,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Return constant reference to the element at the top of the stack. Precondition: stack is not <a class="el" href="classstxxl_1_1grow__shrink__stack.html#ac1973e75ee542fb5079792cb3850c8a7" title="Returns true if the stack is empty. ">empty()</a>. </p>
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00447">447</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00446">446</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
 </div>
 </div>
@@ -684,9 +684,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00330">330</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00329">329</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -710,9 +710,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00329">329</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00328">328</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -736,9 +736,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00325">325</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00324">324</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -762,9 +762,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00326">326</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00325">325</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +788,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00323">323</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00322">322</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -814,9 +814,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00324">324</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00323">323</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -840,9 +840,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00322">322</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00321">321</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -866,9 +866,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00327">327</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00326">326</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -892,9 +892,9 @@ template&lt;class StackConfig&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stack_8h_source.html#l00328">328</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p>Definition at line <a class="el" href="stack_8h_source.html#l00327">327</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stack_8h_source.html#l00355">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="stack_8h_source.html#l00354">stxxl::grow_shrink_stack&lt; StackConfig &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -907,10 +907,10 @@ template&lt;class StackConfig&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1grow__shrink__stack.html">grow_shrink_stack</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:42 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:41 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

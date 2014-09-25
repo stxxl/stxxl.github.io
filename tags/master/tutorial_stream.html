@@ -297,7 +297,7 @@ Miscellaneous Utilities Provided by the Stream Package</h1>
 <div class="line">std::vector&lt;int&gt; intvector (100);</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// materialize 100 integers from stream and put into vector</span></div>
-<div class="line"><a class="code" href="group__streampack.html#gaf214a1fc62726c3b8e7fb31aa4bfe20e">stxxl::stream::materialize</a>(squares, intvector.<a class="code" href="classstxxl_1_1vector.html#aa4a96d116db4303b73c5bb23913661d9">begin</a>(), intvector.<a class="code" href="classstxxl_1_1vector.html#aa26fab42d8e28bf2d440158c97f8d52d">end</a>());</div>
+<div class="line"><a class="code" href="group__streampack.html#gabaafb435e850ebfdef01728414b673f8">stxxl::stream::materialize</a>(squares, intvector.<a class="code" href="classstxxl_1_1vector.html#aa4a96d116db4303b73c5bb23913661d9">begin</a>(), intvector.<a class="code" href="classstxxl_1_1vector.html#aa26fab42d8e28bf2d440158c97f8d52d">end</a>());</div>
 </div><!-- fragment --><p>And the only modification needed to support larger data sets is to materialize to an STXXL vector: </p>
 <div class="fragment"><div class="line"><span class="comment">// construct the squared counter stream</span></div>
 <div class="line">counter_object counter;</div>
@@ -307,7 +307,7 @@ Miscellaneous Utilities Provided by the Stream Package</h1>
 <div class="line"><a class="code" href="classstxxl_1_1vector.html">stxxl::vector&lt;int&gt;</a> intvector (100);</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// materialize 100 integers from stream and put into STXXL vector</span></div>
-<div class="line"><a class="code" href="group__streampack.html#gaf214a1fc62726c3b8e7fb31aa4bfe20e">stxxl::stream::materialize</a>(squares, intvector.<a class="code" href="classstxxl_1_1vector.html#aa4a96d116db4303b73c5bb23913661d9">begin</a>(), intvector.<a class="code" href="classstxxl_1_1vector.html#aa26fab42d8e28bf2d440158c97f8d52d">end</a>());</div>
+<div class="line"><a class="code" href="group__streampack.html#gabaafb435e850ebfdef01728414b673f8">stxxl::stream::materialize</a>(squares, intvector.<a class="code" href="classstxxl_1_1vector.html#aa4a96d116db4303b73c5bb23913661d9">begin</a>(), intvector.<a class="code" href="classstxxl_1_1vector.html#aa26fab42d8e28bf2d440158c97f8d52d">end</a>());</div>
 </div><!-- fragment --><h1><a class="anchor" id="stream4"></a>
 Sorting As Provided by the Stream Package</h1>
 <p>Maybe the most important set of tools in the stream package is the pairs of sorter classes <a class="el" href="classstxxl_1_1stream_1_1runs__creator.html" title="Forms sorted runs of data from a stream. ">runs_creator</a> and <a class="el" href="classstxxl_1_1stream_1_1runs__merger.html" title="Merges sorted runs. ">runs_merger</a>. The general way to sort a sequential input stream is to first consolidate a large number of input items in an internal memory buffer. Then when the buffer is full, it can be sorted in internal memory and subsequently written out to disk. This sorted sequence is then called a run. When the input stream is finished and the sorted output must be produced, theses sorted sequences can efficiently be merged using a tournament tree or similar multi-way comparison structure. (see <a class="el" href="design_algo_sorting.html">Parallel Disk Sorting</a>.)</p>
@@ -421,10 +421,10 @@ Sorting As Provided by the Stream Package</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Welcome to STXXL</a></li><li class="navelem"><a class="el" href="tutorial.html">Tutorials and Examples</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:26 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:26 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

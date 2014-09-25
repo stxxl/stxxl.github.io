@@ -35,7 +35,7 @@ var classstxxl_1_1priority__queue =
     [ "pop", "classstxxl_1_1priority__queue.html#a3e84d541805e7cdeec82356b0957c74f", null ],
     [ "push", "classstxxl_1_1priority__queue.html#a75194e42c0270abed5d483cd993f4fdf", null ],
     [ "refill_delete_buffer", "classstxxl_1_1priority__queue.html#a0786e70caaa33012213335ba9a8469eb", null ],
-    [ "refill_group_buffer", "classstxxl_1_1priority__queue.html#ad1ee8c0e18f02a618d3aee0df38e3132", null ],
+    [ "refill_group_buffer", "classstxxl_1_1priority__queue.html#af77a2ddcfaad3ff0a7c8a1b0ff8ed144", null ],
     [ "size", "classstxxl_1_1priority__queue.html#aa41d93f1ce34c2ff81956b28750585b1", null ],
     [ "top", "classstxxl_1_1priority__queue.html#aa90aa7a17b0f402e0b10ff1d73499f7e", null ],
     [ "cmp", "classstxxl_1_1priority__queue.html#a9dd205cd9bbd726a9b4bf763050b1bec", null ],

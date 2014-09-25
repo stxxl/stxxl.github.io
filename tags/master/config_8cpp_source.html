@@ -494,7 +494,7 @@ $(document).ready(function(){initNavTree('config_8cpp_source.html','');});
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            }</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordtype">char</span>* endp;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="classstxxl_1_1queue.html">queue</a> = strtoul(eq[1].c_str(), &amp;endp, 10);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="classstxxl_1_1queue.html">queue</a> = (int)strtoul(eq[1].c_str(), &amp;endp, 10);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">if</span> (endp &amp;&amp; *endp != 0) {</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                <a class="code" href="error__handling_8h.html#adc2599b345ea2aabce216d46e57aaabe">STXXL_THROW</a>(std::runtime_error,</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                            <span class="stringliteral">&quot;Invalid parameter &#39;&quot;</span> &lt;&lt; *p &lt;&lt; <span class="stringliteral">&quot;&#39; in disk configuration file.&quot;</span>);</div>
@@ -503,7 +503,7 @@ $(document).ready(function(){initNavTree('config_8cpp_source.html','');});
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eq[0] == <span class="stringliteral">&quot;device_id&quot;</span> || eq[0] == <span class="stringliteral">&quot;devid&quot;</span>)</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        {</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordtype">char</span>* endp;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <a class="code" href="classstxxl_1_1disk__config.html#a025a6abd5a25beb2d4ab8cf9114f7bde">device_id</a> = strtoul(eq[1].c_str(), &amp;endp, 10);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <a class="code" href="classstxxl_1_1disk__config.html#a025a6abd5a25beb2d4ab8cf9114f7bde">device_id</a> = (int)strtoul(eq[1].c_str(), &amp;endp, 10);</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keywordflow">if</span> (endp &amp;&amp; *endp != 0) {</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <a class="code" href="error__handling_8h.html#adc2599b345ea2aabce216d46e57aaabe">STXXL_THROW</a>(std::runtime_error,</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                            <span class="stringliteral">&quot;Invalid parameter &#39;&quot;</span> &lt;&lt; *p &lt;&lt; <span class="stringliteral">&quot;&#39; in disk configuration file.&quot;</span>);</div>
@@ -628,10 +628,10 @@ $(document).ready(function(){initNavTree('config_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dca09d62f7fad5b5747dfa2fe6bb6d34.html">mng</a></li><li class="navelem"><a class="el" href="config_8cpp.html">config.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:11 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:11 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -137,60 +137,60 @@ $(document).ready(function(){initNavTree('exceptions_8h_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classstxxl_1_1io__error.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1io__error.html">io_error</a> : <span class="keyword">public</span> std::ios_base::failure</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classstxxl_1_1io__error.html#ac66e4c988af0a2b452ab40cc3d2e78e9">   28</a></span>&#160;    <a class="code" href="classstxxl_1_1io__error.html#ac66e4c988af0a2b452ab40cc3d2e78e9">io_error</a>() throw () :</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::ios_base::failure(&quot;&quot;)</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classstxxl_1_1io__error.html#ac66e4c988af0a2b452ab40cc3d2e78e9">   28</a></span>&#160;    <a class="code" href="classstxxl_1_1io__error.html#ac66e4c988af0a2b452ab40cc3d2e78e9">io_error</a>() throw ()</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        : std::ios_base::failure(&quot;&quot;)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    { }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classstxxl_1_1io__error.html#a524c61605f78eb2973781aed0ee01836">   32</a></span>&#160;    <a class="code" href="classstxxl_1_1io__error.html#a524c61605f78eb2973781aed0ee01836">io_error</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> () :</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::ios_base::failure(msg_)</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classstxxl_1_1io__error.html#a524c61605f78eb2973781aed0ee01836">   32</a></span>&#160;    <a class="code" href="classstxxl_1_1io__error.html#a524c61605f78eb2973781aed0ee01836">io_error</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> ()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        : std::ios_base::failure(msg_)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    { }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classstxxl_1_1resource__error.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1resource__error.html">resource_error</a> : <span class="keyword">public</span> std::runtime_error</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classstxxl_1_1resource__error.html#a47cea5a95308107234779fa866cac166">   40</a></span>&#160;    <a class="code" href="classstxxl_1_1resource__error.html#a47cea5a95308107234779fa866cac166">resource_error</a>() throw () :</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::runtime_error(&quot;&quot;)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classstxxl_1_1resource__error.html#a47cea5a95308107234779fa866cac166">   40</a></span>&#160;    <a class="code" href="classstxxl_1_1resource__error.html#a47cea5a95308107234779fa866cac166">resource_error</a>() throw ()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        : std::runtime_error(&quot;&quot;)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    { }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classstxxl_1_1resource__error.html#aa52e9230236a1359428a27b1325beac6">   44</a></span>&#160;    <a class="code" href="classstxxl_1_1resource__error.html#aa52e9230236a1359428a27b1325beac6">resource_error</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> () :</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::runtime_error(msg_)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classstxxl_1_1resource__error.html#aa52e9230236a1359428a27b1325beac6">   44</a></span>&#160;    <a class="code" href="classstxxl_1_1resource__error.html#aa52e9230236a1359428a27b1325beac6">resource_error</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> ()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        : std::runtime_error(msg_)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    { }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__ext__alloc.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1bad__ext__alloc.html">bad_ext_alloc</a> : <span class="keyword">public</span> std::runtime_error</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__ext__alloc.html#af7d236af1f6a979ca9e300f8eafdf824">   52</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__ext__alloc.html#af7d236af1f6a979ca9e300f8eafdf824">bad_ext_alloc</a>() throw () :</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::runtime_error(&quot;&quot;)</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__ext__alloc.html#af7d236af1f6a979ca9e300f8eafdf824">   52</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__ext__alloc.html#af7d236af1f6a979ca9e300f8eafdf824">bad_ext_alloc</a>() throw ()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        : std::runtime_error(&quot;&quot;)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    { }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__ext__alloc.html#a24bfa3b0a33b8bd686e4c0469feb1be4">   56</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__ext__alloc.html#a24bfa3b0a33b8bd686e4c0469feb1be4">bad_ext_alloc</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> () :</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::runtime_error(msg_)</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__ext__alloc.html#a24bfa3b0a33b8bd686e4c0469feb1be4">   56</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__ext__alloc.html#a24bfa3b0a33b8bd686e4c0469feb1be4">bad_ext_alloc</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> ()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        : std::runtime_error(msg_)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    { }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__parameter.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1bad__parameter.html">bad_parameter</a> : <span class="keyword">public</span> std::runtime_error</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__parameter.html#acdc0a92c9066e1fae18c510726e45d0e">   64</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__parameter.html#acdc0a92c9066e1fae18c510726e45d0e">bad_parameter</a>() throw () :</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::runtime_error(&quot;&quot;)</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__parameter.html#acdc0a92c9066e1fae18c510726e45d0e">   64</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__parameter.html#acdc0a92c9066e1fae18c510726e45d0e">bad_parameter</a>() throw ()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        : std::runtime_error(&quot;&quot;)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    { }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__parameter.html#a752f64ae4d9c7d594722ba7a139e2200">   68</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__parameter.html#a752f64ae4d9c7d594722ba7a139e2200">bad_parameter</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> () :</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::runtime_error(msg_)</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classstxxl_1_1bad__parameter.html#a752f64ae4d9c7d594722ba7a139e2200">   68</a></span>&#160;    <a class="code" href="classstxxl_1_1bad__parameter.html#a752f64ae4d9c7d594722ba7a139e2200">bad_parameter</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> ()</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : std::runtime_error(msg_)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    { }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classstxxl_1_1unreachable.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstxxl_1_1unreachable.html">unreachable</a> : <span class="keyword">public</span> std::runtime_error</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classstxxl_1_1unreachable.html#a36caf399bf1510555e1ad216cccf327a">   76</a></span>&#160;    <a class="code" href="classstxxl_1_1unreachable.html#a36caf399bf1510555e1ad216cccf327a">unreachable</a>() throw () :</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        std::runtime_error(&quot;&quot;)</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classstxxl_1_1unreachable.html#a36caf399bf1510555e1ad216cccf327a">   76</a></span>&#160;    <a class="code" href="classstxxl_1_1unreachable.html#a36caf399bf1510555e1ad216cccf327a">unreachable</a>() throw ()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        : std::runtime_error(&quot;&quot;)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    { }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classstxxl_1_1unreachable.html#afcf9f88b787d4b74de73cecd98955eca">   80</a></span>&#160;    <a class="code" href="classstxxl_1_1unreachable.html#afcf9f88b787d4b74de73cecd98955eca">unreachable</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> () :</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        std::runtime_error(msg_)</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classstxxl_1_1unreachable.html#afcf9f88b787d4b74de73cecd98955eca">   80</a></span>&#160;    <a class="code" href="classstxxl_1_1unreachable.html#afcf9f88b787d4b74de73cecd98955eca">unreachable</a>(<span class="keyword">const</span> std::string&amp; msg_) <span class="keywordflow">throw</span> ()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        : std::runtime_error(msg_)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    { }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
@@ -222,10 +222,10 @@ $(document).ready(function(){initNavTree('exceptions_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_c603cd6ede12b974eecb818db9d72642.html">common</a></li><li class="navelem"><a class="el" href="exceptions_8h.html">exceptions.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:39 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:40 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

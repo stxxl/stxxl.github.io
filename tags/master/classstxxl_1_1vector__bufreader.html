@@ -164,6 +164,9 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classstxxl_1_1vector__bufreader.html">vector_bufreader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1vector__bufreader.html#a92f43d23a3dcb24c9a2da2b6d61f2a8d">bufreader_iterator</a></td></tr>
 <tr class="memdesc:a92f43d23a3dcb24c9a2da2b6d61f2a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct an iterator for <a class="el" href="classstxxl_1_1vector__bufreader.html" title="Buffered sequential reader from a vector using overlapped I/O. ">vector_bufreader</a> (for C++11 range-based for loop)  <a href="#a92f43d23a3dcb24c9a2da2b6d61f2a8d">More...</a><br/></td></tr>
 <tr class="separator:a92f43d23a3dcb24c9a2da2b6d61f2a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab516bf75df0f13f6b6278842dd212846"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1vector.html#a3482fa22dbaa46d74b02d3d74da9cf28">vector_type::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1vector__bufreader.html#ab516bf75df0f13f6b6278842dd212846">size_type</a></td></tr>
+<tr class="memdesc:ab516bf75df0f13f6b6278842dd212846"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of remaining data  <a href="#ab516bf75df0f13f6b6278842dd212846">More...</a><br/></td></tr>
+<tr class="separator:ab516bf75df0f13f6b6278842dd212846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3b6f8ce6074eb1e373bbbe1bcaf6b7e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1vector__iterator.html#a5b03cba4c12a83ff5d7aef5ee9c0a7ae">vector_iterator::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1vector__bufreader.html#ab3b6f8ce6074eb1e373bbbe1bcaf6b7e">value_type</a></td></tr>
 <tr class="memdesc:ab3b6f8ce6074eb1e373bbbe1bcaf6b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">value type of the output vector  <a href="#ab3b6f8ce6074eb1e373bbbe1bcaf6b7e">More...</a><br/></td></tr>
 <tr class="separator:ab3b6f8ce6074eb1e373bbbe1bcaf6b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,9 +213,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af290d20df6a724e6c2592ee6b13c53ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1vector__bufreader.html#af290d20df6a724e6c2592ee6b13c53ac">rewind</a> ()</td></tr>
 <tr class="memdesc:af290d20df6a724e6c2592ee6b13c53ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewind stream back to begin. Note that this recreates the buffered reader and is thus not cheap.  <a href="#af290d20df6a724e6c2592ee6b13c53ac">More...</a><br/></td></tr>
 <tr class="separator:af290d20df6a724e6c2592ee6b13c53ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fbeca60748bb74ee1a44e006743bc28"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1vector__bufreader.html#a2fbeca60748bb74ee1a44e006743bc28">size</a> () const </td></tr>
-<tr class="memdesc:a2fbeca60748bb74ee1a44e006743bc28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return remaining size.  <a href="#a2fbeca60748bb74ee1a44e006743bc28">More...</a><br/></td></tr>
-<tr class="separator:a2fbeca60748bb74ee1a44e006743bc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b0f5e53e628868afdded4d9a82e968"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1vector__bufreader.html#ab516bf75df0f13f6b6278842dd212846">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1vector__bufreader.html#af5b0f5e53e628868afdded4d9a82e968">size</a> () const </td></tr>
+<tr class="memdesc:af5b0f5e53e628868afdded4d9a82e968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return remaining size.  <a href="#af5b0f5e53e628868afdded4d9a82e968">More...</a><br/></td></tr>
+<tr class="separator:af5b0f5e53e628868afdded4d9a82e968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -253,7 +256,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>block identifier iterator of the vector </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01924">1924</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01926">1926</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +274,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>block type used in the vector </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01918">1918</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01920">1920</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +292,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>construct output buffered stream used for overlapped reading </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01927">1927</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01929">1929</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +310,25 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>construct an iterator for <a class="el" href="classstxxl_1_1vector__bufreader.html" title="Buffered sequential reader from a vector using overlapped I/O. ">vector_bufreader</a> (for C++11 range-based for loop) </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01930">1930</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01932">1932</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab516bf75df0f13f6b6278842dd212846"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VectorIteratorType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1vector.html#a3482fa22dbaa46d74b02d3d74da9cf28">vector_type::size_type</a> <a class="el" href="classstxxl_1_1vector__bufreader.html">stxxl::vector_bufreader</a>&lt; VectorIteratorType &gt;::<a class="el" href="classstxxl_1_1vector__bufreader.html#ab516bf75df0f13f6b6278842dd212846">size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>size of remaining data </p>
+
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01935">1935</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +346,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>value type of the output vector </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01915">1915</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01917">1917</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +364,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>template parameter: the vector iterator type </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01912">1912</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01914">1914</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +382,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>type of the input vector </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01921">1921</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01923">1923</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +437,7 @@ template&lt;typename VectorIteratorType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01956">1956</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01961">1961</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -463,7 +484,7 @@ template&lt;typename VectorIteratorType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01972">1972</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01978">1978</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +513,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Finish reading and free buffered reader. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02008">2008</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02014">2014</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +543,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Return <a class="el" href="classstxxl_1_1vector__bufreader__iterator.html" title="Adapter for vector_bufreader to match iterator requirements of C++11 range-based loop construct...">vector_bufreader_iterator</a> for C++11 range-based for loop. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02063">2063</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02069">2069</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +572,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Returns true once the whole range has been read. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02057">2057</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02063">2063</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +601,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Return <a class="el" href="classstxxl_1_1vector__bufreader__iterator.html" title="Adapter for vector_bufreader to match iterator requirements of C++11 range-based loop construct...">vector_bufreader_iterator</a> for C++11 range-based for loop. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02069">2069</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02075">2075</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +630,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Return constant reference to current item. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02014">2014</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02020">2020</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -638,7 +659,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Advance to next item (asserts if !empty()). </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02026">2026</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02032">2032</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 <p>References <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
 
@@ -669,7 +690,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Return constant pointer to current item. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02020">2020</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02026">2026</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +720,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Read current item into variable and advance to next one. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02041">2041</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02047">2047</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00163">operator++()</a>.</p>
 
@@ -730,11 +751,11 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Rewind stream back to begin. Note that this recreates the buffered reader and is thus not cheap. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01987">1987</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01993">1993</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2fbeca60748bb74ee1a44e006743bc28"></a>
+<a class="anchor" id="af5b0f5e53e628868afdded4d9a82e968"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -744,7 +765,7 @@ template&lt;typename VectorIteratorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classstxxl_1_1vector__bufreader.html">stxxl::vector_bufreader</a>&lt; VectorIteratorType &gt;::size </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1vector__bufreader.html#ab516bf75df0f13f6b6278842dd212846">size_type</a> <a class="el" href="classstxxl_1_1vector__bufreader.html">stxxl::vector_bufreader</a>&lt; VectorIteratorType &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -759,7 +780,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>Return remaining size. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02050">2050</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02056">2056</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +807,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>iterator to the beginning of the range. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01934">1934</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01939">1939</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +833,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>buffered input stream used to overlapped I/O. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01943">1943</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01948">1948</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -838,7 +859,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>iterator to the end of the range. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01940">1940</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01945">1945</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -864,7 +885,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>internal "current" iterator into the vector. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01937">1937</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01942">1942</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +911,7 @@ template&lt;typename VectorIteratorType &gt; </div>
 
 <p>number of blocks to use as buffers. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01946">1946</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01951">1951</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -903,10 +924,10 @@ template&lt;typename VectorIteratorType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1vector__bufreader.html">vector_bufreader</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:04:01 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:59 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

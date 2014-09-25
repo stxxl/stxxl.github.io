@@ -21,7 +21,7 @@ var group__reqlayer =
       [ "cancel_request", "classstxxl_1_1linuxaio__queue.html#a8c57cd446b92bb2300a5f95888133232", null ],
       [ "complete_request", "classstxxl_1_1linuxaio__queue.html#a2268d6146fa9cd1963a821a8351dacd2", null ],
       [ "get_io_context", "classstxxl_1_1linuxaio__queue.html#a27d969d4495fb77ba194c30d628291bc", null ],
-      [ "handle_events", "classstxxl_1_1linuxaio__queue.html#a452c0b54d5117cf2d8679ff9a6202479", null ],
+      [ "handle_events", "classstxxl_1_1linuxaio__queue.html#ae8a5c7440d4e4cd4375f871b9fbae418", null ],
       [ "post_async", "classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000", null ],
       [ "post_requests", "classstxxl_1_1linuxaio__queue.html#a583e48c80960e7354ba9054f085eef34", null ],
       [ "suspend", "classstxxl_1_1linuxaio__queue.html#a1f619748a127a20a358eaac0dab708eb", null ],

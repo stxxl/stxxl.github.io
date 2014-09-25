@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('tutorial_vector_buf.html','');});
 <div class="line">        sum += *reader;</div>
 <div class="line">    }</div>
 </div><!-- fragment --><p> When using <a class="el" href="classstxxl_1_1vector__bufwriter.html" title="Buffered sequential writer to a vector using overlapped I/O. ">vector_bufwriter</a> the vector's size <em>should</em> be allocated in advance. However, this is not required: when reaching the end of the vector, the buffered writer will automatically double the vector's size. Thus writing will not produce segfaults; however, doubling may go wrong for huge vectors.</p>
-<p>Note that the same efficiency can be achieved using stream functions: <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html" title="A model of stream that retrieves data from an external stxxl::vector iterator. It is more efficient t...">stream::vector_iterator2stream</a> and <a class="el" href="group__streampack.html#gaf214a1fc62726c3b8e7fb31aa4bfe20e" title="Stores consecutively stream content to an output iterator. ">stream::materialize</a> also use overlapping I/O.</p>
+<p>Note that the same efficiency can be achieved using stream functions: <a class="el" href="classstxxl_1_1stream_1_1vector__iterator2stream.html" title="A model of stream that retrieves data from an external stxxl::vector iterator. It is more efficient t...">stream::vector_iterator2stream</a> and <a class="el" href="group__streampack.html#gabaafb435e850ebfdef01728414b673f8" title="Stores consecutively stream content to an output iterator. ">stream::materialize</a> also use overlapping I/O.</p>
 <p>As last method, which is currently supported by STXXL, one can iterate over the vector using C++11's <code>auto</code> <code>for</code> loop construct:</p>
 <div class="fragment"><div class="line">    <span class="comment">// now using vector_bufreader adaptor to C++11 for loop</span></div>
 <div class="line">    <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">uint64</a> sum = 0;</div>
@@ -207,10 +207,10 @@ sum: 4393751543808
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Welcome to STXXL</a></li><li class="navelem"><a class="el" href="tutorial.html">Tutorials and Examples</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:03:27 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:03:27 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -174,9 +174,9 @@ $(document).ready(function(){initNavTree('examples_2algo_2phonebills_genlog_8cpp
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">return</span> 0;</div>
 <div class="line">    }</div>
-<div class="line">    <span class="keywordtype">unsigned</span> M = atol(argv[3]) * 1024 * 1024;</div>
+<div class="line">    <a class="code" href="namespacestxxl.html#a2617329df09b282880680c99e5326b2d">stxxl::internal_size_type</a> M = atol(argv[3]) * 1024 * 1024;</div>
 <div class="line">    <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a> ncalls = <a name="a6"></a><a class="code" href="namespacestxxl.html#abe387d9749396cf4ac9d6cb4225046a3">stxxl::atouint64</a>(argv[1]);</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> av_calls = atol(argv[2]);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">long</span> av_calls = atol(argv[2]);</div>
 <div class="line">    <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a> nclients = ncalls / av_calls;</div>
 <div class="line">    <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a> calls_made = 0;</div>
 <div class="line"></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2phonebills_genlog_8cpp
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">while</span> (serv-- &gt; 0)</div>
 <div class="line">        {</div>
-<div class="line">            cur += 1 + rnd(3600 * 24);</div>
+<div class="line">            cur += (time_t)(1 + rnd(3600 * 24));</div>
 <div class="line"></div>
 <div class="line">            e.to = rnd(nclients);</div>
 <div class="line">            e.timestamp = cur;</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('examples_2algo_2phonebills_genlog_8cpp
 <div class="line">            e.event = 1;</div>
 <div class="line">            log.push_back(e);</div>
 <div class="line"></div>
-<div class="line">            cur += 1 + rnd(1800);</div>
+<div class="line">            cur += (time_t)(1 + rnd(1800));</div>
 <div class="line">            e.timestamp = cur;</div>
 <div class="line">            e.event = 2;</div>
 <div class="line"></div>
@@ -233,10 +233,10 @@ $(document).ready(function(){initNavTree('examples_2algo_2phonebills_genlog_8cpp
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6e35d1a795bb8c305c2c2c5f25e1ec7696692bed">STXXL 1.4.0-212-g6e35d1a</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b5fea38a6c6e2b5b9107cb92b7fd0af13cb06e75">STXXL 1.4.0-223-gb5fea38</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Sep 24 2014 14:02:33 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 09:02:34 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

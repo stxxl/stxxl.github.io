@@ -22,6 +22,6 @@ var classstxxl_1_1typed__block =
     [ "operator new", "classstxxl_1_1typed__block.html#a4ea657556d7045b477bc75e9bb0dff2c", null ],
     [ "operator new", "classstxxl_1_1typed__block.html#a18dc9f8604fc4a9c1f7737e4283401d4", null ],
     [ "operator new[]", "classstxxl_1_1typed__block.html#aa4d2d7aadaa575b670794036607e753c", null ],
-    [ "read", "classstxxl_1_1typed__block.html#a07fc505bc9c410b2faecf4aefc27ce96", null ],
-    [ "write", "classstxxl_1_1typed__block.html#ac56caaff994281073b0e81eeaf97af18", null ]
+    [ "read", "classstxxl_1_1typed__block.html#a549322496ba9eb0ae80b221dcddacbb6", null ],
+    [ "write", "classstxxl_1_1typed__block.html#a7d5a8e953e2d10b849bacbdefb44f97c", null ]
 ];

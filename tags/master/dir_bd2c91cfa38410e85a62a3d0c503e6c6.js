@@ -4,8 +4,7 @@ var dir_bd2c91cfa38410e85a62a3d0c503e6c6 =
     [ "completion_handler.h", "completion__handler_8h.html", [
       [ "completion_handler", "classstxxl_1_1completion__handler.html", "classstxxl_1_1completion__handler" ],
       [ "completion_handler1", "classstxxl_1_1completion__handler1.html", "classstxxl_1_1completion__handler1" ],
-      [ "completion_handler_impl", "classstxxl_1_1completion__handler__impl.html", "classstxxl_1_1completion__handler__impl" ],
-      [ "default_completion_handler", "structstxxl_1_1default__completion__handler.html", "structstxxl_1_1default__completion__handler" ]
+      [ "completion_handler_impl", "classstxxl_1_1completion__handler__impl.html", "classstxxl_1_1completion__handler__impl" ]
     ] ],
     [ "create_file.h", "create__file_8h.html", "create__file_8h" ],
     [ "disk_queued_file.h", "disk__queued__file_8h.html", null ],
