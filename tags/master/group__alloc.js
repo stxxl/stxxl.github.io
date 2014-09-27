@@ -15,14 +15,14 @@ var group__alloc =
       [ "rnd", "structstxxl_1_1FR.html#a1747d56bd8c3e818b955a43be52e41c4", null ]
     ] ],
     [ "offset_allocator", "structstxxl_1_1offset__allocator.html", [
-      [ "offset_allocator", "structstxxl_1_1offset__allocator.html#ad9b7eb63e76b7363376ea15474d372ec", null ],
-      [ "offset_allocator", "structstxxl_1_1offset__allocator.html#a6615efd7b1d1caad66463f12abdb4465", null ],
-      [ "offset_allocator", "structstxxl_1_1offset__allocator.html#a28a3420e04825f9634b9c36daf80ae03", null ],
-      [ "get_offset", "structstxxl_1_1offset__allocator.html#a3764f40ad1433bd3585f606f2b9599a1", null ],
-      [ "operator()", "structstxxl_1_1offset__allocator.html#a34b94087a0d7b6556d2d63f3104239fb", null ],
-      [ "set_offset", "structstxxl_1_1offset__allocator.html#a6085829a012dd43f63052235bd891017", null ],
-      [ "base", "structstxxl_1_1offset__allocator.html#a5413b22c5f6e0fd8dd6f14a3b777d5b7", null ],
-      [ "offset", "structstxxl_1_1offset__allocator.html#a4203217b0599b024302bfb0855378cdc", null ]
+      [ "offset_allocator", "structstxxl_1_1offset__allocator.html#ac85ee1c91c3766845bbfbb5cb3c91777", null ],
+      [ "offset_allocator", "structstxxl_1_1offset__allocator.html#ab3820f23b02aa3a96a07201745621ffc", null ],
+      [ "offset_allocator", "structstxxl_1_1offset__allocator.html#a7828a44d82f0f680031187070de5359f", null ],
+      [ "get_offset", "structstxxl_1_1offset__allocator.html#ac11bba4db28803650498016bba631551", null ],
+      [ "operator()", "structstxxl_1_1offset__allocator.html#ac7cd17cfe139947e5569905d75feab0c", null ],
+      [ "set_offset", "structstxxl_1_1offset__allocator.html#a017d1231e4753553e660a36537eb28f6", null ],
+      [ "base", "structstxxl_1_1offset__allocator.html#aed96b953f1534431418e1801b983036c", null ],
+      [ "offset", "structstxxl_1_1offset__allocator.html#aa47c65abfa02c272562beb1f37035583", null ]
     ] ],
     [ "RC", "structstxxl_1_1RC.html", [
       [ "RC", "structstxxl_1_1RC.html#ab46677816b24d2a1e6ad49459fce9f77", null ],

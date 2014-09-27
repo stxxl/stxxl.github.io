@@ -21,8 +21,8 @@ var utils_8h =
     [ "pop_front", "utils_8h.html#a8b223a5b45db8fe6ff5408fcbc6d554e", null ],
     [ "round_up_to_power_of_two", "utils_8h.html#a78e11ad4b267e4cf7285a8e4411ac9f7", null ],
     [ "split", "utils_8h.html#a662fd1004cafc334a254cb4a479f455b", null ],
-    [ "STXXL_MAX", "utils_8h.html#a12bcc0109d49084bf722af3cf5797923", null ],
-    [ "STXXL_MIN", "utils_8h.html#a0859f6ff62e9f2113fead81a55e5c8e1", null ],
-    [ "swap_1D_arrays", "utils_8h.html#afd3bad550fcb63fb35586590e8e96795", null ],
+    [ "STXXL_MAX", "utils_8h.html#a9ba1dbf90be30dfeae39cbd40dfe6340", null ],
+    [ "STXXL_MIN", "utils_8h.html#a492575364035d2cc94ee8db18e39b478", null ],
+    [ "swap_1D_arrays", "utils_8h.html#aaa2ab65067b5097af29416d45c6ea860", null ],
     [ "to_str", "utils_8h.html#a2c23e46ae8d25cc1e6fb7a61dbdd45d4", null ]
 ];

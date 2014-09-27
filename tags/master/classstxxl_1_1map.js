@@ -69,5 +69,5 @@ var classstxxl_1_1map =
     [ "operator==", "classstxxl_1_1map.html#a6cb4a6d5586169d1da9d1bda68e25aa5", null ],
     [ "operator>", "classstxxl_1_1map.html#a5ac6d7c183481bccd0f6ac9f0768d7eb", null ],
     [ "operator>=", "classstxxl_1_1map.html#a0304f0b349577fca733eac6a6964a214", null ],
-    [ "Impl", "classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2", null ]
+    [ "impl", "classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2", null ]
 ];

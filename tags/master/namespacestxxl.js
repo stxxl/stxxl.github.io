@@ -128,7 +128,7 @@ var namespacestxxl =
     [ "mutex", "classstxxl_1_1mutex.html", "classstxxl_1_1mutex" ],
     [ "new_alloc", "classstxxl_1_1new__alloc.html", "classstxxl_1_1new__alloc" ],
     [ "new_alloc_rebind", "structstxxl_1_1new__alloc__rebind.html", "structstxxl_1_1new__alloc__rebind" ],
-    [ "new_alloc_rebind< T, T >", "structstxxl_1_1new__alloc__rebind_3_01T_00_01T_01_4.html", "structstxxl_1_1new__alloc__rebind_3_01T_00_01T_01_4" ],
+    [ "new_alloc_rebind< Type, Type >", "structstxxl_1_1new__alloc__rebind_3_01Type_00_01Type_01_4.html", "structstxxl_1_1new__alloc__rebind_3_01Type_00_01Type_01_4" ],
     [ "NilCase", "structstxxl_1_1NilCase.html", null ],
     [ "noncopyable", "classstxxl_1_1noncopyable.html", "classstxxl_1_1noncopyable" ],
     [ "normal_stack", "classstxxl_1_1normal__stack.html", "classstxxl_1_1normal__stack" ],

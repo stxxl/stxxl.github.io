@@ -1,5 +1,12 @@
 var NAVTREEINDEX16 =
 {
+"classstxxl_1_1vector__bufreader__iterator.html#ac007de2ea88f1d5058f90a06971c86a4":[2,0,1,3,6,10],
+"classstxxl_1_1vector__bufreader__iterator.html#ad67854321bf4b1117f601c238b7429da":[2,0,1,3,6,5],
+"classstxxl_1_1vector__bufreader__iterator.html#adfa0bbe5ccbf4a7ddf26b84f07aef6d8":[2,0,1,3,6,9],
+"classstxxl_1_1vector__bufreader__iterator.html#af70b1cc129eb98638b3128a6ba9ab963":[2,0,1,3,6,6],
+"classstxxl_1_1vector__bufreader__reverse.html":[2,0,1,3,7],
+"classstxxl_1_1vector__bufreader__reverse.html#a04ea49cc4f6f60acfbc6e9736bcce5e8":[2,0,1,3,7,10],
+"classstxxl_1_1vector__bufreader__reverse.html#a0d285bdfae478144294170289fd48e6f":[2,0,1,3,7,5],
 "classstxxl_1_1vector__bufreader__reverse.html#a1ad172d54b10a0ec77214e823964b065":[2,0,1,3,7,13],
 "classstxxl_1_1vector__bufreader__reverse.html#a23e71858d5b852866cf35c1a09d39b8d":[2,0,1,3,7,9],
 "classstxxl_1_1vector__bufreader__reverse.html#a279531aa37b4cf468686d76ab411cedb":[2,0,1,3,7,16],
@@ -49,7 +56,6 @@ var NAVTREEINDEX16 =
 "classstxxl_1_1vector__iterator.html#a13599fbe91f74d6ecdac4067544966e1":[2,0,1,3,10,34],
 "classstxxl_1_1vector__iterator.html#a1a8ab8ccdcb4d2f48f728bd4c41ed983":[2,0,1,3,10,14],
 "classstxxl_1_1vector__iterator.html#a1d9cba7fc19feed144f91f2e1933734e":[2,0,1,3,10,9],
-"classstxxl_1_1vector__iterator.html#a1fd3c073603b9bdfb1449d9a4d56d1b7":[2,0,1,3,10,55],
 "classstxxl_1_1vector__iterator.html#a20d761ca16c6c6fbac440b60b27c0f10":[2,0,1,3,10,51],
 "classstxxl_1_1vector__iterator.html#a21f521e3e03af6de4a8080348e16ddd0":[2,0,1,3,10,33],
 "classstxxl_1_1vector__iterator.html#a25006e0220f8bd1bd5ddb5d76f1fe3ee":[2,0,1,3,10,53],
@@ -83,6 +89,7 @@ var NAVTREEINDEX16 =
 "classstxxl_1_1vector__iterator.html#a8280d57953e3d7a84e320324ba9ef18c":[2,0,1,3,10,56],
 "classstxxl_1_1vector__iterator.html#a83c3969f644f076ce0f8b0f910cbdd3c":[2,0,1,3,10,57],
 "classstxxl_1_1vector__iterator.html#a879ac6c51e93b17039cc6b29429318c7":[2,0,1,3,10,35],
+"classstxxl_1_1vector__iterator.html#a8d1c1493bcc1a4fcd669b942394b4657":[2,0,1,3,10,55],
 "classstxxl_1_1vector__iterator.html#a91f42f6a139363f77d5dab3c2a8aa3c4":[2,0,1,3,10,50],
 "classstxxl_1_1vector__iterator.html#a9c21e6b6ac184670628157ca1461a418":[2,0,1,3,10,40],
 "classstxxl_1_1vector__iterator.html#aa23c3ee94aa08e6dc7c6da3106e4b638":[2,0,1,3,10,15],
@@ -158,6 +165,7 @@ var NAVTREEINDEX16 =
 "classstxxl_1_1write__pool.html#a08dea6c37a5fe07e20c5a245df49d738":[2,2,1,8,20],
 "classstxxl_1_1write__pool.html#a49769cb175d3994545514d0fdc057219":[2,2,1,8,10],
 "classstxxl_1_1write__pool.html#a51bb19ee20715dc72c3416ad204006eb":[2,2,1,8,19],
+"classstxxl_1_1write__pool.html#a5281c170b382d6a8c191b5c5a780a0c8":[2,2,1,8,6],
 "classstxxl_1_1write__pool.html#a60f9aa81056fd3e0653b1bb32e6c9b99":[2,2,1,8,7],
 "classstxxl_1_1write__pool.html#a65b1884422907f14a2079e3a31c75c7f":[2,2,1,8,16],
 "classstxxl_1_1write__pool.html#a6f713e1c1bb3cf1879f6fbc9f16363fe":[2,2,1,8,11],
@@ -172,7 +180,6 @@ var NAVTREEINDEX16 =
 "classstxxl_1_1write__pool.html#abb1e6e743c12dbcd59f5cce6e4bdc51e":[2,2,1,8,13],
 "classstxxl_1_1write__pool.html#acc3ad21bedebb8203b8ad668d55429aa":[2,2,1,8,1],
 "classstxxl_1_1write__pool.html#adac6515ee40a2162869bdf0aeb937de3":[2,2,1,8,9],
-"classstxxl_1_1write__pool.html#aecf4b8737b2b19fb9023eac47c2e9452":[2,2,1,8,6],
 "classstxxl_1_1write__pool.html#aed8807ce674b36b098f7bbbe01f222b1":[2,2,1,8,15],
 "classstxxl_1_1write__pool.html#aee81b4a3865eb650ddde12f672a4d31c":[2,2,1,8,4],
 "cmdline.html":[5,0,0,0,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX16 =
 "config_8h.html#aca926d4e8106395b8c448d7be32946db":[5,0,0,0,0,8,21],
 "config_8h.html#ad1fb0bb39c77f0ff5deaa5544b292f10":[5,0,0,0,0,8,9],
 "config_8h.html#ae73fb43c3e4c3cdf78353b7275e9d64d":[5,0,0,0,0,8,0],
-"config_8h.html#aeeff9026d69015d87dd50846d025226e":[5,0,0,0,0,8,25],
-"config_8h.html#aefef308caccd64881a44de8f61887d1b":[5,0,0,0,0,8,8],
-"config_8h_source.html":[5,0,0,0,0,8],
-"containers_2hash__map_2hash__map_8h.html":[5,0,0,0,0,3,1,1],
-"containers_2hash__map_2hash__map_8h.html#a49513451776915c80828d344d981fdc4":[5,0,0,0,0,3,1,1,8],
-"containers_2hash__map_2hash__map_8h.html#ab31b980368521c716de945e77b06b0c5":[5,0,0,0,0,3,1,1,9],
-"containers_2hash__map_2hash__map_8h_source.html":[5,0,0,0,0,3,1,1],
-"counting__ptr_8h.html":[5,0,0,0,0,1,5]
+"config_8h.html#aeeff9026d69015d87dd50846d025226e":[5,0,0,0,0,8,25]
 };

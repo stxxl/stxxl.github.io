@@ -1,8 +1,8 @@
 var structstxxl_1_1ksort__local_1_1run__cursor2__cmp =
 [
-    [ "cursor_type", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#a327e04d885af66a7ae493f2d216c7c0a", null ],
-    [ "run_cursor2_cmp", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#ab14f19afc6f2ab515e2a4e79648fbc62", null ],
-    [ "run_cursor2_cmp", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#aa56f1a8e33e4be40fa987a99619d6775", null ],
-    [ "operator()", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#af490da947fe7c37a0deb7410a25d76a1", null ],
-    [ "keyobj", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#a4d5db21b81401218366114a66a878c4a", null ]
+    [ "cursor_type", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#a143659d1517e62932baba7a073fd446b", null ],
+    [ "run_cursor2_cmp", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#abc4c43ef7ab8e2f647c7be2db05319ae", null ],
+    [ "run_cursor2_cmp", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#a8018ab349bb82f5c7ec10199a2f67053", null ],
+    [ "operator()", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#a95578856e7f30df506120a0c82b8ed6c", null ],
+    [ "keyobj", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html#a900a651618d500f2842cc7450707152e", null ]
 ];

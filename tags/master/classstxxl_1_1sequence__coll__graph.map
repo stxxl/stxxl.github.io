@@ -15,7 +15,7 @@
 <area shape="rect" id="node16" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="5,610,211,674"/>
 <area shape="rect" id="node21" href="$classstxxl_1_1block__manager.html" title="Block manager class. " alt="" coords="1631,148,1777,178"/>
 <area shape="rect" id="node56" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="1625,311,1783,340"/>
-<area shape="rect" id="node59" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="1341,364,1475,394"/>
+<area shape="rect" id="node59" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="1343,364,1473,394"/>
 <area shape="rect" id="node44" href="$classstxxl_1_1typed__block.html" title="Block containing elements of fixed length. " alt="" coords="3921,635,4087,699"/>
 <area shape="rect" id="node46" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="stxxl::mng_local::expand\l_struct\&lt; mng_local::block\l_w_info\&lt; Type, RawSize, NRef,\l MetaInfoType \&gt;, RawSize \&gt;" alt="" coords="3657,645,3868,726"/>
 <area shape="rect" id="node48" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;, RawSize\l&#45;sizeof(mng_local::block_w_info\l\&lt; Type, RawSize, NRef, MetaInfoType \&gt;)\&gt;" alt="" coords="3181,628,3456,744"/>

@@ -158,8 +158,8 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 : <a class="el" href="classstxxl_1_1swappable__block.html#a62db447e39ef062712daa7f3061d20fd">stxxl::swappable_block&lt; ValueType, BlockSize &gt;</a>
 </li>
 <li>make_inf()
-: <a class="el" href="structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a2088df49b27bd9ddd11ba4275ae804e4">stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;::sequence_state</a>
-, <a class="el" href="structstxxl_1_1run__cursor2.html#adcb81eb4513a342eaa39b6785b4435bb">stxxl::run_cursor2&lt; block_type, prefetcher_type_ &gt;</a>
+: <a class="el" href="structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a2be5594a867df4c90d8541756aa4e02f">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::sequence_state</a>
+, <a class="el" href="structstxxl_1_1run__cursor2.html#a90a9e71d8e14ea992965ecd32bc3f61e">stxxl::run_cursor2&lt; BlockType, PrefetcherType &gt;</a>
 </li>
 <li>make_invalid()
 : <a class="el" href="classstxxl_1_1btree_1_1btree__iterator__base.html#a1d7536548366b1e6f370a205a12808e0">stxxl::btree::btree_iterator_base&lt; BTreeType &gt;</a>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1btree_1_1normal__node.html#a2f6bb5f52fef8dffbd6989c8e409d830">stxxl::btree::normal_node&lt; KeyType, KeyCmp, RawSize, BTreeType &gt;</a>
 </li>
 <li>max_size()
-: <a class="el" href="classstxxl_1_1new__alloc.html#aebee4fcfbd52a5a429510e113015e9b8">stxxl::new_alloc&lt; T &gt;</a>
+: <a class="el" href="classstxxl_1_1new__alloc.html#a14972723f40da847d1bf50f559210bb0">stxxl::new_alloc&lt; Type &gt;</a>
 , <a class="el" href="classstxxl_1_1btree_1_1btree.html#acb89af7085206860be9b4d93ae26b029">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
 , <a class="el" href="classstxxl_1_1deque.html#ae532cc41963233f06e5fcb02b5bfe507">stxxl::deque&lt; ValueType, VectorType &gt;</a>
 , <a class="el" href="classstxxl_1_1hash__map_1_1hash__map.html#a22b84f5fb706e55d06dc6bd1ce04460f">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;</a>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 , <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1Cmp.html#af00c543daaa04fa90ed0cf57769f22d2">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::Cmp</a>
 , <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01Plug_00_01Plug_00_01Plug_01_4.html#af304be48f122eb1bc4263c30884a4ed6">stxxl::tuple&lt; T1, T2, T3, Plug, Plug, Plug &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple__greater1st.html#ab9217be7416a094229cae4f172c1ca4e">stxxl::tuple_greater1st&lt; TupleType &gt;</a>
-, <a class="el" href="structstxxl_1_1ksort__defaultkey.html#a392775ea654712e053425f998e3c2093">stxxl::ksort_defaultkey&lt; record_type &gt;</a>
+, <a class="el" href="structstxxl_1_1ksort__defaultkey.html#aa72461d231c4bd32e4969f3cddfec50c">stxxl::ksort_defaultkey&lt; RecordType &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple.html#a1da0c4e9721d0e7c20706fb62fe6017f">stxxl::tuple&lt; T1, T2, T3, T4, T5, T6 &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4.html#a04c4c6af1ebbabda5d02be526de0d00e">stxxl::tuple&lt; T1, Plug, Plug, Plug, Plug &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4.html#ace69375fb324cb6aad8fe96fb29020a9">stxxl::tuple&lt; T1, T2, Plug, Plug, Plug, Plug &gt;</a>
@@ -249,8 +249,8 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 , <a class="el" href="structstxxl_1_1tuple__less1st.html#adf72708561da29bae192fd464485e698">stxxl::tuple_less1st&lt; TupleType &gt;</a>
 </li>
 <li>mem_cons()
-: <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#acd5eede26759acd2ad25df1cafce63cc">stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ad2898f7f4beec65861ea3372c2f6a3b4">stxxl::priority_queue_local::loser_tree&lt; ValTp_, Cmp_, KNKMAX &gt;</a>
+: <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#aa7eff4d52f6d8aa2b7eecc12f8da1761">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a042a62cfb1af620b521b760491a14f23">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
 , <a class="el" href="classstxxl_1_1priority__queue.html#ab1cd023d51e7b12ccc4648522a3a63eb">stxxl::priority_queue&lt; ConfigType &gt;</a>
 </li>
 <li>mem_file()
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 <li>min_value()
 : <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01Plug_00_01Plug_01_4.html#ae33814d0d81745efde6a324916d390ea">stxxl::tuple&lt; T1, T2, T3, T4, Plug, Plug &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple__less1st__less2nd.html#a4a7d2da9e25a557d7fb46669636e018d">stxxl::tuple_less1st_less2nd&lt; TupleType &gt;</a>
-, <a class="el" href="structstxxl_1_1ksort__defaultkey.html#ae1719b76200ff47a031a65d279ab5637">stxxl::ksort_defaultkey&lt; record_type &gt;</a>
+, <a class="el" href="structstxxl_1_1ksort__defaultkey.html#a255c2e5cb8e02420fdb500cdcd3ea0a3">stxxl::ksort_defaultkey&lt; RecordType &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple.html#a6ed7fd4a3c52c0d54d9d17e64457e53c">stxxl::tuple&lt; T1, T2, T3, T4, T5, T6 &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4.html#aae37fe7787b0b7d06da0ebfff13a98d3">stxxl::tuple&lt; T1, Plug, Plug, Plug, Plug &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01Plug_00_01Plug_00_01Plug_01_4.html#acd4fc6c1d7918a78a4f2b7052fc980d3">stxxl::tuple&lt; T1, T2, T3, Plug, Plug, Plug &gt;</a>
@@ -303,20 +303,20 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 : <a class="el" href="structstxxl_1_1matrix__local_1_1matrix__operations.html#a53856c7bf325c6180d09cf344db2372f">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;</a>
 </li>
 <li>multi_merge()
-: <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ae34c17d85595172f5f29f20afccef3a5">stxxl::priority_queue_local::loser_tree&lt; ValTp_, Cmp_, KNKMAX &gt;</a>
-, <a class="el" href="classstxxl_1_1loser__tree.html#a52cad7975bc2510470088a3c0a2afb4e">stxxl::loser_tree&lt; run_cursor_type, run_cursor_cmp_type &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a5047ebaeee423f4ea658c8709b27fe2e">stxxl::priority_queue_local::loser_tree&lt; ValTp_, Cmp_, KNKMAX &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#aa21939d810eaf996aad4c6a89faab560">stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;</a>
+: <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a53e0ab23b25d5e5c6c6af88129f3a954">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
+, <a class="el" href="classstxxl_1_1loser__tree.html#a4c79f616e8b423b56952b8d817fc31fb">stxxl::loser_tree&lt; RunCursorType, RunCursorCmpType &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a5a58f9194a4fa7103f81c58220ab9c91">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#a8cc1e6c039c0b5360b34702971e59b33">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;</a>
 </li>
 <li>multi_merge_k()
-: <a class="el" href="classstxxl_1_1loser__tree.html#a35c6009b26302a160e07fabed63f9f8e">stxxl::loser_tree&lt; run_cursor_type, run_cursor_cmp_type &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a73ac0775206a5e3afb3ab79492c0d71f">stxxl::priority_queue_local::loser_tree&lt; ValTp_, Cmp_, KNKMAX &gt;</a>
+: <a class="el" href="classstxxl_1_1loser__tree.html#a5cd4a8b8c3f6065a2d721324c954ac63">stxxl::loser_tree&lt; RunCursorType, RunCursorCmpType &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a76b7e7b274a551a703e5e3b7c29f6e2f">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
 </li>
 <li>multi_merge_unrolled()
-: <a class="el" href="classstxxl_1_1loser__tree.html#a02491124819d2fdc5ed5aa3cfcfad94a">stxxl::loser_tree&lt; run_cursor_type, run_cursor_cmp_type &gt;</a>
+: <a class="el" href="classstxxl_1_1loser__tree.html#a704e2492e3e48e2abf0f0d047722ee90">stxxl::loser_tree&lt; RunCursorType, RunCursorCmpType &gt;</a>
 </li>
 <li>multi_merge_unrolled_0()
-: <a class="el" href="classstxxl_1_1loser__tree.html#ac98a03412120564fb5b90fa814e2929f">stxxl::loser_tree&lt; run_cursor_type, run_cursor_cmp_type &gt;</a>
+: <a class="el" href="classstxxl_1_1loser__tree.html#ac08f5ca859d96b525afb6781f3447a8b">stxxl::loser_tree&lt; RunCursorType, RunCursorCmpType &gt;</a>
 </li>
 <li>multiply()
 : <a class="el" href="structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#a13210b2d4a57f1b140fd597699bdb2b2">stxxl::matrix_local::feedable_strassen_winograd_block_grained&lt; ValueType, BlockSideLength, 0, AExists, BExists &gt;</a>
@@ -347,10 +347,10 @@ $(document).ready(function(){initNavTree('functions_func_0x6d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:09:59 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:10:04 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

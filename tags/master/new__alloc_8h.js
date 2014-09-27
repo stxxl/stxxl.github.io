@@ -5,7 +5,7 @@ var new__alloc_8h =
     [ "rebind", "structstxxl_1_1new__alloc_1_1rebind.html", "structstxxl_1_1new__alloc_1_1rebind" ],
     [ "new_alloc_rebind", "structstxxl_1_1new__alloc__rebind.html", "structstxxl_1_1new__alloc__rebind" ],
     [ "new_alloc_rebind", "structstxxl_1_1new__alloc__rebind.html", "structstxxl_1_1new__alloc__rebind" ],
-    [ "new_alloc_rebind< T, T >", "structstxxl_1_1new__alloc__rebind_3_01T_00_01T_01_4.html", "structstxxl_1_1new__alloc__rebind_3_01T_00_01T_01_4" ],
-    [ "operator!=", "new__alloc_8h.html#a55f1efe3a927522698992d5e0c31d67a", null ],
-    [ "operator==", "new__alloc_8h.html#a6161159788233d6d17ba011b331dbe0a", null ]
+    [ "new_alloc_rebind< Type, Type >", "structstxxl_1_1new__alloc__rebind_3_01Type_00_01Type_01_4.html", "structstxxl_1_1new__alloc__rebind_3_01Type_00_01Type_01_4" ],
+    [ "operator!=", "new__alloc_8h.html#a5d719d3ce2ce70f3a903f518be742534", null ],
+    [ "operator==", "new__alloc_8h.html#a2bc12e87e75fbd453a4cb1d36ad69f7a", null ]
 ];

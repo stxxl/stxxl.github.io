@@ -18,7 +18,7 @@ var searchData=
   ['sim_5fdisk_5ffile',['sim_disk_file',['../classstxxl_1_1sim__disk__file.html',1,'stxxl']]],
   ['simdisk_5fgeometry',['simdisk_geometry',['../classstxxl_1_1simdisk__geometry.html',1,'stxxl']]],
   ['simple_5fvector',['simple_vector',['../classstxxl_1_1simple__vector.html',1,'stxxl']]],
-  ['simple_5fvector_3c_20bid_3c_20blk_5fsize_20_3e_20_3e',['simple_vector&lt; BID&lt; BLK_SIZE &gt; &gt;',['../classstxxl_1_1simple__vector.html',1,'stxxl']]],
+  ['simple_5fvector_3c_20bid_3c_20blocksize_20_3e_20_3e',['simple_vector&lt; BID&lt; BlockSize &gt; &gt;',['../classstxxl_1_1simple__vector.html',1,'stxxl']]],
   ['simple_5fvector_3c_20bid_5ftype_20_3e',['simple_vector&lt; bid_type &gt;',['../classstxxl_1_1simple__vector.html',1,'stxxl']]],
   ['simple_5fvector_3c_20int_5ftype_20_3e',['simple_vector&lt; int_type &gt;',['../classstxxl_1_1simple__vector.html',1,'stxxl']]],
   ['simple_5fvector_3c_20list_5ftype_3a_3aiterator_20_3e',['simple_vector&lt; list_type::iterator &gt;',['../classstxxl_1_1simple__vector.html',1,'stxxl']]],

@@ -1,15 +1,15 @@
 var classstxxl_1_1priority__queue__local_1_1internal__bounded__stack =
 [
-    [ "size_type", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a1d6ced4cdc263f8064f10b723b895ddd", null ],
-    [ "value_type", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a2efbbd42858c33d412c653148cdae174", null ],
-    [ "max_size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a45dde2d28c138b26d3fcb30e89306b04a842923ed0b572b0ae617a67cd3a27880", null ],
-    [ "internal_bounded_stack", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a0c9564b71d2a8e526c8520e33991af21", null ],
-    [ "clear", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#ab358d3ae2f9676126fa96dec6b2015fb", null ],
-    [ "empty", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#aba811d423ffa5598ac19157809dfb100", null ],
-    [ "pop", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a3a2a2f51bd3bb2f18d0e02e8c50d5b1a", null ],
-    [ "push", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#ac0a231b4f350fab02a9d8c8aad601536", null ],
-    [ "size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a1a9f5b104a6c009c12590a0d2d4771e2", null ],
-    [ "top", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a08b2d9efb853c80b924c4cf94187ad3c", null ],
-    [ "array", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a680157c54c2d3e1e99740264ec310878", null ],
-    [ "size_", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a10dca484adda42328cd11d8ac24c236d", null ]
+    [ "size_type", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#acd0501177ea69ae0d2f5f8b334aa26e7", null ],
+    [ "value_type", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a74fa54c28e2519ff3c7d4b27244e6a06", null ],
+    [ "max_size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a45dde2d28c138b26d3fcb30e89306b04a436c76fdd61ab9855d8fbdb4ca080d0a", null ],
+    [ "internal_bounded_stack", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#afa15e1b9cc15c9219036b39836064f26", null ],
+    [ "clear", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a0834ba49b947038c63ea97c245c18e25", null ],
+    [ "empty", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a1bfbc36cf04c1cfcccbb3d9357bc3a58", null ],
+    [ "pop", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a5bdc886c15d0e4c0c1f4b303b6a21ec9", null ],
+    [ "push", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a18f62a20614aa143053a5b99de1c0d5a", null ],
+    [ "size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a9dd7037cbfb883ed4d6508ab0a8b1ffe", null ],
+    [ "top", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a5cdd970bc263b34d55b945b6d6084ea4", null ],
+    [ "m_array", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#af60c56bd30c76d2db86dd9670058a863", null ],
+    [ "m_size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#aa831af4ec347d7e2cd688e5ef8d9e8ce", null ]
 ];

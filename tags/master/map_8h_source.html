@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ae213269cc64b223e8046a77040d7151a">   84</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classstxxl_1_1btree_1_1btree.html">btree::btree&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a> <a class="code" href="classstxxl_1_1map.html#ae213269cc64b223e8046a77040d7151a">impl_type</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">   86</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree.html">impl_type</a> <a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">   86</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree.html">impl_type</a> <a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a1964cb5eb9b416d5565c1dee1fac11ca">   89</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="classstxxl_1_1typed__block.html">impl_type::node_block_type</a> <a class="code" href="classstxxl_1_1map.html#a1964cb5eb9b416d5565c1dee1fac11ca">node_block_type</a>;</div>
@@ -221,10 +221,10 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    //! \name Iterators</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    //! \{</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a47ff830dd62c4be1e028eb414235d519">  112</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a47ff830dd62c4be1e028eb414235d519">begin</a>() { <span class="keywordflow">return</span> Impl.begin(); }</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a49ad603cc75467a2a109346a37d8520b">  113</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a49ad603cc75467a2a109346a37d8520b">end</a>() { <span class="keywordflow">return</span> Impl.end(); }</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a80dd89e69d6a7b63d0031da3d308a62d">  114</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a80dd89e69d6a7b63d0031da3d308a62d">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.begin(); }</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a872f8c74561d1eabb2289274703da29d">  115</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a872f8c74561d1eabb2289274703da29d">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.end(); }</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a47ff830dd62c4be1e028eb414235d519">  112</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a47ff830dd62c4be1e028eb414235d519">begin</a>() { <span class="keywordflow">return</span> impl.begin(); }</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a49ad603cc75467a2a109346a37d8520b">  113</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a49ad603cc75467a2a109346a37d8520b">end</a>() { <span class="keywordflow">return</span> impl.end(); }</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a80dd89e69d6a7b63d0031da3d308a62d">  114</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a80dd89e69d6a7b63d0031da3d308a62d">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.begin(); }</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a872f8c74561d1eabb2289274703da29d">  115</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a872f8c74561d1eabb2289274703da29d">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.end(); }</div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ad83cfcde2f852664d56de91d47f5236f">  116</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#ad83cfcde2f852664d56de91d47f5236f">cbegin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> begin(); }</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a7fb880d959528c04d4496c07f95e31e6">  117</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a7fb880d959528c04d4496c07f95e31e6">cend</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> end(); }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
@@ -258,17 +258,17 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">    //! \name Capacity</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">    //! \{</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#adef17496de1e987d47fd4c5c19e02f62">  149</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a9d2130d8f390d2ceaaaaf4be9b86bc41">size_type</a> <a class="code" href="classstxxl_1_1map.html#adef17496de1e987d47fd4c5c19e02f62">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.size(); }</div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#adf7ecd89778d2193fe981e28f11f4443">  150</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a9d2130d8f390d2ceaaaaf4be9b86bc41">size_type</a> <a class="code" href="classstxxl_1_1map.html#adf7ecd89778d2193fe981e28f11f4443">max_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.max_size(); }</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a2667ba6c3508f35a93a83a00273bd2a6">  151</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classstxxl_1_1map.html#a2667ba6c3508f35a93a83a00273bd2a6">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.empty(); }</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#adef17496de1e987d47fd4c5c19e02f62">  149</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a9d2130d8f390d2ceaaaaf4be9b86bc41">size_type</a> <a class="code" href="classstxxl_1_1map.html#adef17496de1e987d47fd4c5c19e02f62">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.size(); }</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#adf7ecd89778d2193fe981e28f11f4443">  150</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a9d2130d8f390d2ceaaaaf4be9b86bc41">size_type</a> <a class="code" href="classstxxl_1_1map.html#adf7ecd89778d2193fe981e28f11f4443">max_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.max_size(); }</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a2667ba6c3508f35a93a83a00273bd2a6">  151</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classstxxl_1_1map.html#a2667ba6c3508f35a93a83a00273bd2a6">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.empty(); }</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">    //! \}</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"></span><span class="comment"></span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">    //! \name Observers</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">    //! \{</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ab32993130f4336395a54356979776f25">  158</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a58567e4b8ef79a7011d0d3cc404e3ba7">key_compare</a> <a class="code" href="classstxxl_1_1map.html#ab32993130f4336395a54356979776f25">key_comp</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.key_comp(); }</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#aed60a1caacf0ad7bb3b4fc64835cf7cb">  159</a></span>&#160;    <a class="code" href="structstxxl_1_1btree_1_1normal__leaf_1_1value__compare.html">value_compare</a> <a class="code" href="classstxxl_1_1map.html#aed60a1caacf0ad7bb3b4fc64835cf7cb">value_comp</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Impl.value_comp(); }</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ab32993130f4336395a54356979776f25">  158</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a58567e4b8ef79a7011d0d3cc404e3ba7">key_compare</a> <a class="code" href="classstxxl_1_1map.html#ab32993130f4336395a54356979776f25">key_comp</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.key_comp(); }</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#aed60a1caacf0ad7bb3b4fc64835cf7cb">  159</a></span>&#160;    <a class="code" href="structstxxl_1_1btree_1_1normal__leaf_1_1value__compare.html">value_compare</a> <a class="code" href="classstxxl_1_1map.html#aed60a1caacf0ad7bb3b4fc64835cf7cb">value_comp</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl.value_comp(); }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">    //! \}</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"></span><span class="comment"></span></div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">    //! \param leaf_cache_size_in_bytes size of leaf cache in bytes (btree implementation)</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#aa2376a97ea48b3e8df88298465655e97">  169</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1map.html#aa2376a97ea48b3e8df88298465655e97">map</a>(<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> node_cache_size_in_bytes,</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> leaf_cache_size_in_bytes</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        ) : Impl(node_cache_size_in_bytes, leaf_cache_size_in_bytes)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        ) : impl(node_cache_size_in_bytes, leaf_cache_size_in_bytes)</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    { }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">    //! A constructor</span></div>
@@ -290,7 +290,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#af4667dba75d1044f29d731ee71ac9b44">  178</a></span>&#160;<span class="comment"></span>    <a class="code" href="classstxxl_1_1map.html#af4667dba75d1044f29d731ee71ac9b44">map</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#a58567e4b8ef79a7011d0d3cc404e3ba7">key_compare</a>&amp; c_,</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> node_cache_size_in_bytes,</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> leaf_cache_size_in_bytes</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        ) : Impl(c_, node_cache_size_in_bytes, leaf_cache_size_in_bytes)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        ) : impl(c_, node_cache_size_in_bytes, leaf_cache_size_in_bytes)</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    { }</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">    //! Constructs a map from a given input range</span></div>
@@ -310,7 +310,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">bool</span> range_sorted = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">double</span> node_fill_factor = 0.75,</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordtype">double</span> leaf_fill_factor = 0.6</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        ) : Impl(b, e, node_cache_size_in_bytes, leaf_cache_size_in_bytes,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        ) : impl(b, e, node_cache_size_in_bytes, leaf_cache_size_in_bytes,</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                 range_sorted, node_fill_factor, leaf_fill_factor)</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    { }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"></span></div>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordtype">bool</span> range_sorted = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordtype">double</span> node_fill_factor = 0.75,</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordtype">double</span> leaf_fill_factor = 0.6</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        ) : Impl(b, e, c_, node_cache_size_in_bytes, leaf_cache_size_in_bytes,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        ) : impl(b, e, c_, node_cache_size_in_bytes, leaf_cache_size_in_bytes,</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                 range_sorted, node_fill_factor, leaf_fill_factor)</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    { }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"></span></div>
@@ -342,35 +342,35 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">    //! \name Modifiers</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">    //! \{</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ad06e0d81e6484c9b698b8f10cb5be407">  233</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#ad06e0d81e6484c9b698b8f10cb5be407">swap</a>(<a class="code" href="classstxxl_1_1map.html">map</a>&amp; obj) { std::swap(Impl, obj.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a>); }</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#ad06e0d81e6484c9b698b8f10cb5be407">  233</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#ad06e0d81e6484c9b698b8f10cb5be407">swap</a>(<a class="code" href="classstxxl_1_1map.html">map</a>&amp; obj) { std::swap(impl, obj.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a>); }</div>
 <div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a4b94eef09fa305ebc06b4cd9d21a78d9">  234</a></span>&#160;    std::pair&lt;iterator, bool&gt; <a class="code" href="classstxxl_1_1map.html#a4b94eef09fa305ebc06b4cd9d21a78d9">insert</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#a072a231a5999604799eedd16203ec3f9">value_type</a>&amp; x)</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> Impl.insert(x);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> impl.insert(x);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
 <div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a6aae220cfeca805bd8c8a9ea8bb4ec76">  238</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a6aae220cfeca805bd8c8a9ea8bb4ec76">insert</a>(<a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> pos, <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#a072a231a5999604799eedd16203ec3f9">value_type</a>&amp; x)</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> Impl.insert(pos, x);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> impl.insert(pos, x);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> InputIterator&gt;</div>
 <div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a58fb8a0fce6e780d754ba84b8dfc1ad4">  243</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#a58fb8a0fce6e780d754ba84b8dfc1ad4">insert</a>(InputIterator b, InputIterator e)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        Impl.insert(b, e);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        impl.insert(b, e);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
 <div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#aad0d67c55a87dca56ddefff8fdc12f7b">  247</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#aad0d67c55a87dca56ddefff8fdc12f7b">erase</a>(<a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> pos)</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        Impl.erase(pos);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        impl.erase(pos);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 <div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a74382354f5507a847043933ee9756e62">  251</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a9d2130d8f390d2ceaaaaf4be9b86bc41">size_type</a> <a class="code" href="classstxxl_1_1map.html#a74382354f5507a847043933ee9756e62">erase</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">return</span> Impl.erase(k);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">return</span> impl.erase(k);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
 <div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a739815d2f331ada235ecaafcda8ddec2">  255</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#a739815d2f331ada235ecaafcda8ddec2">erase</a>(<a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> first, <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> last)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        Impl.erase(first, last);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        impl.erase(first, last);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
 <div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a9dfa637f0b2c0ce65bed15be9c722cd1">  259</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#a9dfa637f0b2c0ce65bed15be9c722cd1">clear</a>()</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        Impl.clear();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        impl.clear();</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">    //! \}</span></div>
@@ -380,39 +380,39 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a7342c1bb8fc0af0b9b748b1be444759d">  269</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a7342c1bb8fc0af0b9b748b1be444759d">find</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> Impl.find(k);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> impl.find(k);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
 <div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a589d05831d2bb481d7def389a89248ab">  273</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a589d05831d2bb481d7def389a89248ab">find</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> Impl.find(k);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> impl.find(k);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
 <div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a6636eda40ba2d5f3acca48023e9542df">  277</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#a9d2130d8f390d2ceaaaaf4be9b86bc41">size_type</a> <a class="code" href="classstxxl_1_1map.html#a6636eda40ba2d5f3acca48023e9542df">count</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> Impl.count(k);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> impl.count(k);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
 <div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a98a58c2b22fc3dfeb9183c7601113cfd">  281</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#a98a58c2b22fc3dfeb9183c7601113cfd">lower_bound</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> Impl.lower_bound(k);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> impl.lower_bound(k);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
 <div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#aebd69dbfb5b22c8e223767cda3ae7892">  285</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#aebd69dbfb5b22c8e223767cda3ae7892">lower_bound</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> Impl.lower_bound(k);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> impl.lower_bound(k);</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
 <div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#af2b5e9dc79fc87e594300afca1ffb648">  289</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__iterator.html">iterator</a> <a class="code" href="classstxxl_1_1map.html#af2b5e9dc79fc87e594300afca1ffb648">upper_bound</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> Impl.upper_bound(k);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> impl.upper_bound(k);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
 <div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a53598df66dd67f3740b06f8d3e777e9e">  293</a></span>&#160;    <a class="code" href="classstxxl_1_1btree_1_1btree__const__iterator.html">const_iterator</a> <a class="code" href="classstxxl_1_1map.html#a53598df66dd67f3740b06f8d3e777e9e">upper_bound</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">return</span> Impl.upper_bound(k);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">return</span> impl.upper_bound(k);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
 <div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a3414f4b5bee275650e5f1be7905dbbb0">  297</a></span>&#160;    std::pair&lt;iterator, iterator&gt; <a class="code" href="classstxxl_1_1map.html#a3414f4b5bee275650e5f1be7905dbbb0">equal_range</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">return</span> Impl.equal_range(k);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">return</span> impl.equal_range(k);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
 <div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a26c41e48bd7364f04aaff9b490a0a9fe">  301</a></span>&#160;    std::pair&lt;const_iterator, const_iterator&gt; <a class="code" href="classstxxl_1_1map.html#a26c41e48bd7364f04aaff9b490a0a9fe">equal_range</a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">return</span> Impl.equal_range(k);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">return</span> impl.equal_range(k);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">    //! \}</span></div>
@@ -422,7 +422,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a48686740f066b096af7a1fee6f63d3f9">  311</a></span>&#160;    <a class="code" href="classstxxl_1_1map.html#af54b277c9de7c5c3c193bcf857d23fc0">data_type</a>&amp; operator [] (<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html#aa16a8b4ef61957456770c314fbc6a678">key_type</a>&amp; k)</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    {</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">return</span> Impl[k];</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">return</span> impl[k];</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">    //! \}</span></div>
@@ -433,31 +433,31 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">    //! Enables leaf prefetching during scanning</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a816b81d7e87ef91c1d72f1dbf598c428">  322</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#a816b81d7e87ef91c1d72f1dbf598c428">enable_prefetching</a>()</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        Impl.enable_prefetching();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        impl.enable_prefetching();</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">    //! Disables leaf prefetching during scanning</span></div>
 <div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a7c98f04c56bc596ee45f2278fb66c818">  328</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#a7c98f04c56bc596ee45f2278fb66c818">disable_prefetching</a>()</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        Impl.disable_prefetching();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        impl.disable_prefetching();</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">    //! Returns the status of leaf prefetching during scanning</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a5a378a60e5774e2ffa09406548a44694">  334</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classstxxl_1_1map.html#a5a378a60e5774e2ffa09406548a44694">prefetching_enabled</a>()</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> Impl.prefetching_enabled();</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> impl.prefetching_enabled();</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">    //! Prints cache statistics</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#aaafc4a0aaaebe546a437aa632e6f65ee">  340</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#aaafc4a0aaaebe546a437aa632e6f65ee">print_statistics</a>(std::ostream&amp; o)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        Impl.print_statistics(o);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        impl.print_statistics(o);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">    //! Resets cache statistics</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="classstxxl_1_1map.html#a5982ce822e30dbbd22dd9573d3f4cbee">  346</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classstxxl_1_1map.html#a5982ce822e30dbbd22dd9573d3f4cbee">reset_statistics</a>()</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        Impl.reset_statistics();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        impl.reset_statistics();</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">    //! \}</span></div>
@@ -529,7 +529,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="group__stlcont.html#ga4cf38ce0c287e699b9af680836762f46">  417</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="uint__types_8h.html#aeeaeb80c008f27201493c2b9a0b52937">operator == </a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; a,</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; b)</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;{</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a> == b.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a>;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a> == b.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a>;</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>KeyType,</div>
@@ -542,7 +542,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="group__stlcont.html#gaf0fa5fcd4e623a620df404c1ca0662c8">  430</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &lt; (const map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;&amp; a,</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; b)</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a> &lt; b.Impl;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a> &lt; b.impl;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>KeyType,</div>
@@ -555,7 +555,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00443"></a><span class="lineno"><a class="line" href="group__stlcont.html#ga5f337bf741b39c65151ffbea067f76f9">  443</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="uint__types_8h.html#ada37e588e69ff93818b66f6cf8ab9dff">operator &gt; </a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; a,</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; b)</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a> &gt; b.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a>;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a> &gt; b.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a>;</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>KeyType,</div>
@@ -568,7 +568,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="group__stlcont.html#ga1f0019b9c1bbd414bcbdef976c57bc42">  456</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="uint__types_8h.html#a59b0aded0f8145a9cd94ecdd54e3831f">operator != </a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; a,</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; b)</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;{</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a> != b.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a>;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a> != b.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a>;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;}</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>KeyType,</div>
@@ -581,7 +581,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00469"></a><span class="lineno"><a class="line" href="group__stlcont.html#gad69fa860e63c5beee9b3e215d6e35a01">  469</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &lt;= (const map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;&amp; a,</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; b)</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;{</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a> &lt;= b.Impl;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a> &lt;= b.impl;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;}</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>KeyType,</div>
@@ -594,7 +594,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="group__stlcont.html#ga2bebdefc771afa9801b81d9964c8ff7e">  482</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="uint__types_8h.html#aac7f54315d70ac6f725f6811bda44350">operator &gt;= </a>(<span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; a,</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classstxxl_1_1map.html">map&lt;KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy&gt;</a>&amp; b)</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;{</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a> &gt;= b.<a class="code" href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">Impl</a>;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a> &gt;= b.<a class="code" href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">impl</a>;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;}</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<span class="comment">//! \}</span></div>
@@ -643,7 +643,7 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1map_html_aebd69dbfb5b22c8e223767cda3ae7892"><div class="ttname"><a href="classstxxl_1_1map.html#aebd69dbfb5b22c8e223767cda3ae7892">stxxl::map::lower_bound</a></div><div class="ttdeci">const_iterator lower_bound(const key_type &amp;k) const </div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00285">map.h:285</a></div></div>
 <div class="ttc" id="classstxxl_1_1map_html_a47ff830dd62c4be1e028eb414235d519"><div class="ttname"><a href="classstxxl_1_1map.html#a47ff830dd62c4be1e028eb414235d519">stxxl::map::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00112">map.h:112</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1btree__iterator_html"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree__iterator.html">stxxl::btree::btree_iterator&lt; self_type &gt;</a></div></div>
-<div class="ttc" id="classstxxl_1_1map_html_a41ba569835af2124b35f41625c7269c2"><div class="ttname"><a href="classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2">stxxl::map::Impl</a></div><div class="ttdeci">impl_type Impl</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00086">map.h:86</a></div></div>
+<div class="ttc" id="classstxxl_1_1map_html_ae8d6a0d8a61c4a5c0dfd627e47fb08d2"><div class="ttname"><a href="classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2">stxxl::map::impl</a></div><div class="ttdeci">impl_type impl</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00086">map.h:86</a></div></div>
 <div class="ttc" id="classstxxl_1_1map_html_aaafc4a0aaaebe546a437aa632e6f65ee"><div class="ttname"><a href="classstxxl_1_1map.html#aaafc4a0aaaebe546a437aa632e6f65ee">stxxl::map::print_statistics</a></div><div class="ttdeci">void print_statistics(std::ostream &amp;o) const </div><div class="ttdoc">Prints cache statistics. </div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00340">map.h:340</a></div></div>
 <div class="ttc" id="classstxxl_1_1map_html_a98a58c2b22fc3dfeb9183c7601113cfd"><div class="ttname"><a href="classstxxl_1_1map.html#a98a58c2b22fc3dfeb9183c7601113cfd">stxxl::map::lower_bound</a></div><div class="ttdeci">iterator lower_bound(const key_type &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00281">map.h:281</a></div></div>
 <div class="ttc" id="classstxxl_1_1btree_1_1btree_html_a1dc62115cb7120f5812f417bf89dbbf3"><div class="ttname"><a href="classstxxl_1_1btree_1_1btree.html#a1dc62115cb7120f5812f417bf89dbbf3">stxxl::btree::btree::value_type</a></div><div class="ttdeci">std::pair&lt; const key_type, data_type &gt; value_type</div><div class="ttdef"><b>Definition:</b> <a href="btree_8h_source.html#l00051">btree.h:51</a></div></div>
@@ -716,10 +716,10 @@ $(document).ready(function(){initNavTree('map_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_5a7933e30a367341f12be4470fbf844e.html">containers</a></li><li class="navelem"><a class="el" href="map_8h.html">map.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:02:54 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:03:01 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

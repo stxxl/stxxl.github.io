@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>STXXL: stxxl::priority_queue_local::internal_priority_queue&lt; _Tp, _Sequence, _Compare &gt; Class Template Reference</title>
+<title>STXXL: stxxl::priority_queue_local::internal_priority_queue&lt; ValueType, ContainerType, CompareType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -112,15 +112,14 @@ $(document).ready(function(){initNavTree('classstxxl_1_1priority__queue__local_1
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::priority_queue_local::internal_priority_queue&lt; _Tp, _Sequence, _Compare &gt; Class Template Reference</div>  </div>
+<div class="title">stxxl::priority_queue_local::internal_priority_queue&lt; ValueType, ContainerType, CompareType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt;<br/>
-class stxxl::priority_queue_local::internal_priority_queue&lt; _Tp, _Sequence, _Compare &gt;</h3>
+<div class="textblock"><h3>template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt;<br/>
+class stxxl::priority_queue_local::internal_priority_queue&lt; ValueType, ContainerType, CompareType &gt;</h3>
 
 <p>Similar to std::priority_queue, with the following differences: </p>
 <ul>
@@ -131,133 +130,91 @@ class stxxl::priority_queue_local::internal_priority_queue&lt; _Tp, _Sequence, _
 
 <p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00092">92</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::priority_queue_local::internal_priority_queue&lt; _Tp, _Sequence, _Compare &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::priority_queue_local::internal_priority_queue&lt; ValueType, ContainerType, CompareType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1priority__queue__local_1_1internal__priority__queue__inherit__graph.svg" width="632" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1priority__queue__local_1_1internal__priority__queue__inherit__graph.svg" width="691" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2c134137ad8d9d16b524ca22d1af6c98"><td class="memItemLeft" align="right" valign="top">typedef _Sequence::const_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a2c134137ad8d9d16b524ca22d1af6c98">const_reference</a></td></tr>
-<tr class="separator:a2c134137ad8d9d16b524ca22d1af6c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af336a84e170495e9fce6480bcb307b2a"><td class="memItemLeft" align="right" valign="top">typedef _Sequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af336a84e170495e9fce6480bcb307b2a">container_type</a></td></tr>
-<tr class="separator:af336a84e170495e9fce6480bcb307b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab05f1e2040a576b34773f741cd515ac6"><td class="memItemLeft" align="right" valign="top">typedef _Sequence::reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ab05f1e2040a576b34773f741cd515ac6">reference</a></td></tr>
-<tr class="separator:ab05f1e2040a576b34773f741cd515ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a346ae751928c741a9c67d49d48b35175"><td class="memItemLeft" align="right" valign="top">typedef _Sequence::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a></td></tr>
-<tr class="separator:a346ae751928c741a9c67d49d48b35175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa36d594228ed973021bfdbad318d4f02"><td class="memItemLeft" align="right" valign="top">typedef _Sequence::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa36d594228ed973021bfdbad318d4f02">value_type</a></td></tr>
-<tr class="separator:aa36d594228ed973021bfdbad318d4f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945e9043af39b234b1ac4c3a625cd0ee"><td class="memItemLeft" align="right" valign="top">typedef CompareType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a945e9043af39b234b1ac4c3a625cd0ee">compare_type</a></td></tr>
+<tr class="separator:a945e9043af39b234b1ac4c3a625cd0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c38b7660a22bb736e16923dc4f7eba"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+container_type::const_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a16c38b7660a22bb736e16923dc4f7eba">const_reference</a></td></tr>
+<tr class="separator:a16c38b7660a22bb736e16923dc4f7eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e2d84537eb5e76a5e697765baccbf7"><td class="memItemLeft" align="right" valign="top">typedef ContainerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a83e2d84537eb5e76a5e697765baccbf7">container_type</a></td></tr>
+<tr class="separator:a83e2d84537eb5e76a5e697765baccbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4bbc966a5e7418308f542811d36258"><td class="memItemLeft" align="right" valign="top">typedef container_type::reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a4c4bbc966a5e7418308f542811d36258">reference</a></td></tr>
+<tr class="separator:a4c4bbc966a5e7418308f542811d36258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42043a5d0a8a0e38a1b0fd22cc05a89d"><td class="memItemLeft" align="right" valign="top">typedef container_type::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a></td></tr>
+<tr class="separator:a42043a5d0a8a0e38a1b0fd22cc05a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eeca945b467c4b9dbb40a751a6f57ee"><td class="memItemLeft" align="right" valign="top">typedef ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a7eeca945b467c4b9dbb40a751a6f57ee">value_type</a></td></tr>
+<tr class="separator:a7eeca945b467c4b9dbb40a751a6f57ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a995a61fb745ddf09a5ceb8c30d003ad3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a995a61fb745ddf09a5ceb8c30d003ad3">internal_priority_queue</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a> capacity)</td></tr>
-<tr class="memdesc:a995a61fb745ddf09a5ceb8c30d003ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor creates no elements.  <a href="#a995a61fb745ddf09a5ceb8c30d003ad3">More...</a><br/></td></tr>
-<tr class="separator:a995a61fb745ddf09a5ceb8c30d003ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae23465c09c02cb837632f766eca7b01d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ae23465c09c02cb837632f766eca7b01d">clear</a> ()</td></tr>
-<tr class="memdesc:ae23465c09c02cb837632f766eca7b01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all contained elements.  <a href="#ae23465c09c02cb837632f766eca7b01d">More...</a><br/></td></tr>
-<tr class="separator:ae23465c09c02cb837632f766eca7b01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a38c09a81aae5600dc7e2112bdaa2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a34a38c09a81aae5600dc7e2112bdaa2f">empty</a> () const </td></tr>
-<tr class="memdesc:a34a38c09a81aae5600dc7e2112bdaa2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the queue is empty.  <a href="#a34a38c09a81aae5600dc7e2112bdaa2f">More...</a><br/></td></tr>
-<tr class="separator:a34a38c09a81aae5600dc7e2112bdaa2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c7dcafbfe163fc34f872d340694d1ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a0c7dcafbfe163fc34f872d340694d1ed">pop</a> ()</td></tr>
-<tr class="memdesc:a0c7dcafbfe163fc34f872d340694d1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes first element.  <a href="#a0c7dcafbfe163fc34f872d340694d1ed">More...</a><br/></td></tr>
-<tr class="separator:a0c7dcafbfe163fc34f872d340694d1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa469636e04043a9ec9812206b21474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#abfa469636e04043a9ec9812206b21474">push</a> (const <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa36d594228ed973021bfdbad318d4f02">value_type</a> &amp;x)</td></tr>
-<tr class="memdesc:abfa469636e04043a9ec9812206b21474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add data to the queue.  <a href="#abfa469636e04043a9ec9812206b21474">More...</a><br/></td></tr>
-<tr class="separator:abfa469636e04043a9ec9812206b21474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ad27f31c35fb2cca3e7c00a50471c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa4ad27f31c35fb2cca3e7c00a50471c8">size</a> () const </td></tr>
-<tr class="memdesc:aa4ad27f31c35fb2cca3e7c00a50471c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the queue.  <a href="#aa4ad27f31c35fb2cca3e7c00a50471c8">More...</a><br/></td></tr>
-<tr class="separator:aa4ad27f31c35fb2cca3e7c00a50471c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a943e0d93b43de577e2e0399c64a947b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a943e0d93b43de577e2e0399c64a947b9">sort_to</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa36d594228ed973021bfdbad318d4f02">value_type</a> *target)</td></tr>
-<tr class="memdesc:a943e0d93b43de577e2e0399c64a947b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort all contained elements, write result to <code>target</code>.  <a href="#a943e0d93b43de577e2e0399c64a947b9">More...</a><br/></td></tr>
-<tr class="separator:a943e0d93b43de577e2e0399c64a947b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a09414d3944512f0567217662df3c39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a2c134137ad8d9d16b524ca22d1af6c98">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a5a09414d3944512f0567217662df3c39">top</a> () const </td></tr>
-<tr class="memdesc:a5a09414d3944512f0567217662df3c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a read-only (constant) reference to the data at the first element of the queue.  <a href="#a5a09414d3944512f0567217662df3c39">More...</a><br/></td></tr>
-<tr class="separator:a5a09414d3944512f0567217662df3c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0151fbb0464c6f0501db8b61914021b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa0151fbb0464c6f0501db8b61914021b">internal_priority_queue</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a> capacity)</td></tr>
+<tr class="memdesc:aa0151fbb0464c6f0501db8b61914021b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor creates no elements.  <a href="#aa0151fbb0464c6f0501db8b61914021b">More...</a><br/></td></tr>
+<tr class="separator:aa0151fbb0464c6f0501db8b61914021b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5ef4e91a4a3b5ea6b754f3cefeb2f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#afd5ef4e91a4a3b5ea6b754f3cefeb2f1">clear</a> ()</td></tr>
+<tr class="memdesc:afd5ef4e91a4a3b5ea6b754f3cefeb2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all contained elements.  <a href="#afd5ef4e91a4a3b5ea6b754f3cefeb2f1">More...</a><br/></td></tr>
+<tr class="separator:afd5ef4e91a4a3b5ea6b754f3cefeb2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07a22fe8282fd7e0676dea0c3348d03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ab07a22fe8282fd7e0676dea0c3348d03">empty</a> () const </td></tr>
+<tr class="memdesc:ab07a22fe8282fd7e0676dea0c3348d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the queue is empty.  <a href="#ab07a22fe8282fd7e0676dea0c3348d03">More...</a><br/></td></tr>
+<tr class="separator:ab07a22fe8282fd7e0676dea0c3348d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4716cf933cc565cf79a018dd5d065bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af4716cf933cc565cf79a018dd5d065bf">pop</a> ()</td></tr>
+<tr class="memdesc:af4716cf933cc565cf79a018dd5d065bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes first element.  <a href="#af4716cf933cc565cf79a018dd5d065bf">More...</a><br/></td></tr>
+<tr class="separator:af4716cf933cc565cf79a018dd5d065bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6253cf7fbbd9564c6627c3336528f14b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a6253cf7fbbd9564c6627c3336528f14b">push</a> (const <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a7eeca945b467c4b9dbb40a751a6f57ee">value_type</a> &amp;x)</td></tr>
+<tr class="memdesc:a6253cf7fbbd9564c6627c3336528f14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add data to the queue.  <a href="#a6253cf7fbbd9564c6627c3336528f14b">More...</a><br/></td></tr>
+<tr class="separator:a6253cf7fbbd9564c6627c3336528f14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8fd78e424ffea09a495a19ff9aaf92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#abd8fd78e424ffea09a495a19ff9aaf92">size</a> () const </td></tr>
+<tr class="memdesc:abd8fd78e424ffea09a495a19ff9aaf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the queue.  <a href="#abd8fd78e424ffea09a495a19ff9aaf92">More...</a><br/></td></tr>
+<tr class="separator:abd8fd78e424ffea09a495a19ff9aaf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d983c42a88aa83fa48920cc75c07fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af8d983c42a88aa83fa48920cc75c07fc">sort_to</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a7eeca945b467c4b9dbb40a751a6f57ee">value_type</a> *target)</td></tr>
+<tr class="memdesc:af8d983c42a88aa83fa48920cc75c07fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort all contained elements, write result to <code>target</code>.  <a href="#af8d983c42a88aa83fa48920cc75c07fc">More...</a><br/></td></tr>
+<tr class="separator:af8d983c42a88aa83fa48920cc75c07fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5e3ee6b32667603298945d80230f0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a16c38b7660a22bb736e16923dc4f7eba">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a4c5e3ee6b32667603298945d80230f0f">top</a> () const </td></tr>
+<tr class="memdesc:a4c5e3ee6b32667603298945d80230f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a read-only (constant) reference to the data at the first element of the queue.  <a href="#a4c5e3ee6b32667603298945d80230f0f">More...</a><br/></td></tr>
+<tr class="separator:a4c5e3ee6b32667603298945d80230f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a780e480bafe3153e60a7aa7bfb1a2408"><td class="memItemLeft" align="right" valign="top">_Compare&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a780e480bafe3153e60a7aa7bfb1a2408">comp</a></td></tr>
-<tr class="separator:a780e480bafe3153e60a7aa7bfb1a2408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a602efc8ea3ecc681e64ee63ff706f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a9a602efc8ea3ecc681e64ee63ff706f4">current_size</a></td></tr>
-<tr class="separator:a9a602efc8ea3ecc681e64ee63ff706f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65c825f5d3ca2f8861cdca090367102"><td class="memItemLeft" align="right" valign="top">_Sequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa65c825f5d3ca2f8861cdca090367102">heap</a></td></tr>
-<tr class="separator:aa65c825f5d3ca2f8861cdca090367102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:ad27f9ba67aaffc62c89596d3b86a9c0a"><td class="memItemLeft" align="right" valign="top">typedef _Sequence::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ad27f9ba67aaffc62c89596d3b86a9c0a">_Sequence_value_type</a></td></tr>
-<tr class="separator:ad27f9ba67aaffc62c89596d3b86a9c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a3009d3c976e71d62877fc46751ba3"><td class="memItemLeft" align="right" valign="top">CompareType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af5a3009d3c976e71d62877fc46751ba3">comp</a></td></tr>
+<tr class="separator:af5a3009d3c976e71d62877fc46751ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8a1ed891580f8f3a5bda25aa06fbee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#afc8a1ed891580f8f3a5bda25aa06fbee">current_size</a></td></tr>
+<tr class="separator:afc8a1ed891580f8f3a5bda25aa06fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688bc78e9e597cb7dab429eb5d76c3b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a83e2d84537eb5e76a5e697765baccbf7">container_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a688bc78e9e597cb7dab429eb5d76c3b8">heap</a></td></tr>
+<tr class="separator:a688bc78e9e597cb7dab429eb5d76c3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ad27f9ba67aaffc62c89596d3b86a9c0a"></a>
+<a class="anchor" id="a945e9043af39b234b1ac4c3a625cd0ee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef _Sequence::value_type <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ad27f9ba67aaffc62c89596d3b86a9c0a">_Sequence_value_type</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00095">95</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2c134137ad8d9d16b524ca22d1af6c98"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef _Sequence::const_reference <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a2c134137ad8d9d16b524ca22d1af6c98">const_reference</a></td>
+          <td class="memname">typedef CompareType <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a945e9043af39b234b1ac4c3a625cd0ee">compare_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00100">100</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00097">97</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af336a84e170495e9fce6480bcb307b2a"></a>
+<a class="anchor" id="a16c38b7660a22bb736e16923dc4f7eba"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef _Sequence <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af336a84e170495e9fce6480bcb307b2a">container_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00102">102</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab05f1e2040a576b34773f741cd515ac6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef _Sequence::reference <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#ab05f1e2040a576b34773f741cd515ac6">reference</a></td>
+          <td class="memname">typedef container_type::const_reference <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a16c38b7660a22bb736e16923dc4f7eba">const_reference</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -266,30 +223,30 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 </div>
 </div>
-<a class="anchor" id="a346ae751928c741a9c67d49d48b35175"></a>
+<a class="anchor" id="a83e2d84537eb5e76a5e697765baccbf7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef _Sequence::size_type <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a></td>
+          <td class="memname">typedef ContainerType <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a83e2d84537eb5e76a5e697765baccbf7">container_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00101">101</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00096">96</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa36d594228ed973021bfdbad318d4f02"></a>
+<a class="anchor" id="a4c4bbc966a5e7418308f542811d36258"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef _Sequence::value_type <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa36d594228ed973021bfdbad318d4f02">value_type</a></td>
+          <td class="memname">typedef container_type::reference <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a4c4bbc966a5e7418308f542811d36258">reference</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,20 +255,52 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 </div>
 </div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a995a61fb745ddf09a5ceb8c30d003ad3"></a>
+<a class="anchor" id="a42043a5d0a8a0e38a1b0fd22cc05a89d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef container_type::size_type <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00100">100</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7eeca945b467c4b9dbb40a751a6f57ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ValueType <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a7eeca945b467c4b9dbb40a751a6f57ee">value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00095">95</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa0151fbb0464c6f0501db8b61914021b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">internal_priority_queue</a> </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">internal_priority_queue</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a>&#160;</td>
           <td class="paramname"><em>capacity</em></td><td>)</td>
           <td></td>
         </tr>
@@ -325,22 +314,22 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 <p>Default constructor creates no elements. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00113">113</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00111">111</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae23465c09c02cb837632f766eca7b01d"></a>
+<a class="anchor" id="afd5ef4e91a4a3b5ea6b754f3cefeb2f1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::clear </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -355,21 +344,21 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 <p>Remove all contained elements. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00181">181</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00179">179</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a34a38c09a81aae5600dc7e2112bdaa2f"></a>
+<a class="anchor" id="ab07a22fe8282fd7e0676dea0c3348d03"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::empty </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -384,21 +373,21 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 <p>Returns true if the queue is empty. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00119">119</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00117">117</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0c7dcafbfe163fc34f872d340694d1ed"></a>
+<a class="anchor" id="af4716cf933cc565cf79a018dd5d065bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::pop </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::pop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -412,26 +401,26 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 </div><div class="memdoc">
 
 <p>Removes first element. </p>
-<p>This is a typical queue operation. It shrinks the queue by one. The time complexity of the operation depends on the underlying sequence.</p>
-<p>Note that no data is returned, and if the first element's data is needed, it should be retrieved before <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a0c7dcafbfe163fc34f872d340694d1ed" title="Removes first element. ">pop()</a> is called. </p>
+<p>This is a typical queue operation. It shrinks the queue by one. The time complexity of the operation depends on the underlying container.</p>
+<p>Note that no data is returned, and if the first element's data is needed, it should be retrieved before <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#af4716cf933cc565cf79a018dd5d065bf" title="Removes first element. ">pop()</a> is called. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00165">165</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00163">163</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abfa469636e04043a9ec9812206b21474"></a>
+<a class="anchor" id="a6253cf7fbbd9564c6627c3336528f14b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::push </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::push </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa36d594228ed973021bfdbad318d4f02">value_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a7eeca945b467c4b9dbb40a751a6f57ee">value_type</a> &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -450,23 +439,23 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
   </table>
   </dd>
 </dl>
-<p>This is a typical queue operation. The time complexity of the operation depends on the underlying sequence. </p>
+<p>This is a typical queue operation. The time complexity of the operation depends on the underlying container. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00146">146</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00144">144</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa4ad27f31c35fb2cca3e7c00a50471c8"></a>
+<a class="anchor" id="abd8fd78e424ffea09a495a19ff9aaf92"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::size </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -481,23 +470,23 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 <p>Returns the number of elements in the queue. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00124">124</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00122">122</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a943e0d93b43de577e2e0399c64a947b9"></a>
+<a class="anchor" id="af8d983c42a88aa83fa48920cc75c07fc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::sort_to </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::sort_to </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa36d594228ed973021bfdbad318d4f02">value_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a7eeca945b467c4b9dbb40a751a6f57ee">value_type</a> *&#160;</td>
           <td class="paramname"><em>target</em></td><td>)</td>
           <td></td>
         </tr>
@@ -511,21 +500,21 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 <p>Sort all contained elements, write result to <code>target</code>. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00172">172</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00170">170</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5a09414d3944512f0567217662df3c39"></a>
+<a class="anchor" id="a4c5e3ee6b32667603298945d80230f0f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a2c134137ad8d9d16b524ca22d1af6c98">const_reference</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::top </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a16c38b7660a22bb736e16923dc4f7eba">const_reference</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::top </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -540,22 +529,22 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 <p>Returns a read-only (constant) reference to the data at the first element of the queue. </p>
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00132">132</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00130">130</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a780e480bafe3153e60a7aa7bfb1a2408"></a>
+<a class="anchor" id="af5a3009d3c976e71d62877fc46751ba3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">_Compare <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::comp</td>
+          <td class="memname">CompareType <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::comp</td>
         </tr>
       </table>
   </td>
@@ -565,45 +554,21 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00107">107</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00105">105</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9a602efc8ea3ecc681e64ee63ff706f4"></a>
+<a class="anchor" id="afc8a1ed891580f8f3a5bda25aa06fbee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a346ae751928c741a9c67d49d48b35175">size_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::current_size</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00108">108</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa65c825f5d3ca2f8861cdca090367102"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename _Compare = std::less&lt;typename _Sequence::value_type&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Sequence <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; _Tp, _Sequence, _Compare &gt;::heap</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a42043a5d0a8a0e38a1b0fd22cc05a89d">size_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::current_size</td>
         </tr>
       </table>
   </td>
@@ -617,6 +582,30 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 
 </div>
 </div>
+<a class="anchor" id="a688bc78e9e597cb7dab429eb5d76c3b8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType, typename ContainerType = std::vector&lt;ValueType&gt;, typename CompareType = std::less&lt;ValueType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a83e2d84537eb5e76a5e697765baccbf7">container_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue</a>&lt; ValueType, ContainerType, CompareType &gt;::heap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00104">104</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/stxxl/bits/containers/<a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a></li>
 </ul>
@@ -626,10 +615,10 @@ template&lt;typename _Tp, typename _Sequence = std::vector&lt;_Tp&gt;, typename 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1priority__queue__local.html">priority_queue_local</a></li><li class="navelem"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">internal_priority_queue</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:32 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:04:36 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

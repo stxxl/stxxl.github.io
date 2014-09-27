@@ -54,7 +54,7 @@ var classstxxl_1_1const__vector__iterator =
     [ "operator[]", "classstxxl_1_1const__vector__iterator.html#a1386f85bdc10cd02263313c6495e211b", null ],
     [ "parent_vector", "classstxxl_1_1const__vector__iterator.html#aa5bb95958de2a4b611352b6caa036cfe", null ],
     [ "vector< ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType >", "classstxxl_1_1const__vector__iterator.html#a8280d57953e3d7a84e320324ba9ef18c", null ],
-    [ "vector_iterator< ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize >", "classstxxl_1_1const__vector__iterator.html#a07dca479c78b40d7dde3aaed92793720", null ],
+    [ "vector_iterator< ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize >", "classstxxl_1_1const__vector__iterator.html#a9783acaceda215bed4801e5d6984a434", null ],
     [ "offset", "classstxxl_1_1const__vector__iterator.html#aed42f719a39710823af943049d8719a3", null ],
     [ "p_vector", "classstxxl_1_1const__vector__iterator.html#ab5d0f91730df5a02eed52f45043253cf", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>STXXL: stxxl::buffered_writer&lt; block_type &gt; Class Template Reference</title>
+<title>STXXL: stxxl::buffered_writer&lt; BlockType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -113,29 +113,30 @@ $(document).ready(function(){initNavTree('classstxxl_1_1buffered__writer.html','
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="classstxxl_1_1buffered__writer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::buffered_writer&lt; block_type &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__schedlayer.html">Block Scheduling Sublayer</a></div></div>  </div>
+<div class="title">stxxl::buffered_writer&lt; BlockType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__schedlayer.html">Block Scheduling Sublayer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename block_type&gt;<br/>
-class stxxl::buffered_writer&lt; block_type &gt;</h3>
+<div class="textblock"><h3>template&lt;typename BlockType&gt;<br/>
+class stxxl::buffered_writer&lt; BlockType &gt;</h3>
 
 <p>Encapsulates asynchronous buffered block writing engine. </p>
 <p><code><a class="el" href="classstxxl_1_1buffered__writer.html" title="Encapsulates asynchronous buffered block writing engine. ">buffered_writer</a></code> overlaps I/Os with filling of output buffer. </p>
 
 <p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00036">36</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::buffered_writer&lt; block_type &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::buffered_writer&lt; BlockType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1buffered__writer__inherit__graph.svg" width="222" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1buffered__writer__inherit__graph.svg" width="332" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::buffered_writer&lt; block_type &gt;:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::buffered_writer&lt; BlockType &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
@@ -152,50 +153,55 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac358569da33458eeb693202151c0a1bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ac358569da33458eeb693202151c0a1bd">buffered_writer</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> write_buf_size, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> write_batch_size)</td></tr>
-<tr class="memdesc:ac358569da33458eeb693202151c0a1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object.  <a href="#ac358569da33458eeb693202151c0a1bd">More...</a><br/></td></tr>
-<tr class="separator:ac358569da33458eeb693202151c0a1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e44231b6d28c39b27a2d9414a14caa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a50e44231b6d28c39b27a2d9414a14caa">~buffered_writer</a> ()</td></tr>
-<tr class="memdesc:a50e44231b6d28c39b27a2d9414a14caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes not yet written buffers and frees used memory.  <a href="#a50e44231b6d28c39b27a2d9414a14caa">More...</a><br/></td></tr>
-<tr class="separator:a50e44231b6d28c39b27a2d9414a14caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a8bcc9bb4eba871ee937b0322826630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a8a8bcc9bb4eba871ee937b0322826630">flush</a> ()</td></tr>
-<tr class="memdesc:a8a8bcc9bb4eba871ee937b0322826630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes not yet written buffers.  <a href="#a8a8bcc9bb4eba871ee937b0322826630">More...</a><br/></td></tr>
-<tr class="separator:a8a8bcc9bb4eba871ee937b0322826630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a384de3dfc0a866db65b2eff265e2c25d"><td class="memItemLeft" align="right" valign="top">block_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a384de3dfc0a866db65b2eff265e2c25d">get_free_block</a> ()</td></tr>
-<tr class="memdesc:a384de3dfc0a866db65b2eff265e2c25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns free block from the internal buffer pool.  <a href="#a384de3dfc0a866db65b2eff265e2c25d">More...</a><br/></td></tr>
-<tr class="separator:a384de3dfc0a866db65b2eff265e2c25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5960307352b44352083e3f11739a2cd"><td class="memItemLeft" align="right" valign="top">block_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ad5960307352b44352083e3f11739a2cd">write</a> (block_type *filled_block, const <a class="el" href="classstxxl_1_1buffered__writer.html#a6963140a57a4e7823d947a32423b1afb">bid_type</a> &amp;bid)</td></tr>
-<tr class="memdesc:ad5960307352b44352083e3f11739a2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits block for writing.  <a href="#ad5960307352b44352083e3f11739a2cd">More...</a><br/></td></tr>
-<tr class="separator:ad5960307352b44352083e3f11739a2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab75231fe2e749264614c495a3f4a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a7ab75231fe2e749264614c495a3f4a57">buffered_writer</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> write_buf_size, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> write_batch_size)</td></tr>
+<tr class="memdesc:a7ab75231fe2e749264614c495a3f4a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object.  <a href="#a7ab75231fe2e749264614c495a3f4a57">More...</a><br/></td></tr>
+<tr class="separator:a7ab75231fe2e749264614c495a3f4a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6916e100b357d235339b987002fbe30c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a6916e100b357d235339b987002fbe30c">~buffered_writer</a> ()</td></tr>
+<tr class="memdesc:a6916e100b357d235339b987002fbe30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes not yet written buffers and frees used memory.  <a href="#a6916e100b357d235339b987002fbe30c">More...</a><br/></td></tr>
+<tr class="separator:a6916e100b357d235339b987002fbe30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf859c6381ec658c5083f9b5e40e0f85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#aaf859c6381ec658c5083f9b5e40e0f85">flush</a> ()</td></tr>
+<tr class="memdesc:aaf859c6381ec658c5083f9b5e40e0f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes not yet written buffers.  <a href="#aaf859c6381ec658c5083f9b5e40e0f85">More...</a><br/></td></tr>
+<tr class="separator:aaf859c6381ec658c5083f9b5e40e0f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9ffac714b50b02461647dd65486879"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#adb9ffac714b50b02461647dd65486879">get_free_block</a> ()</td></tr>
+<tr class="memdesc:adb9ffac714b50b02461647dd65486879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns free block from the internal buffer pool.  <a href="#adb9ffac714b50b02461647dd65486879">More...</a><br/></td></tr>
+<tr class="separator:adb9ffac714b50b02461647dd65486879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bd7b8f19e1fd7c3b94926a27252ca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#af3bd7b8f19e1fd7c3b94926a27252ca5">write</a> (<a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a> *filled_block, const <a class="el" href="classstxxl_1_1buffered__writer.html#a6e5f559649f0e80c397310b96c63b71c">bid_type</a> &amp;bid)</td></tr>
+<tr class="memdesc:af3bd7b8f19e1fd7c3b94926a27252ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits block for writing.  <a href="#af3bd7b8f19e1fd7c3b94926a27252ca5">More...</a><br/></td></tr>
+<tr class="separator:af3bd7b8f19e1fd7c3b94926a27252ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a2fb9c0ceb405731a58892f9dfae2aa46"><td class="memItemLeft" align="right" valign="top">typedef std::priority_queue<br class="typebreak"/>
+<tr class="memitem:a7a9eca143a958f07cc566e3d4ad74d5a"><td class="memItemLeft" align="right" valign="top">typedef std::priority_queue<br class="typebreak"/>
 &lt; <a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry.html">batch_entry</a>, std::vector<br class="typebreak"/>
 &lt; <a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry.html">batch_entry</a> &gt;<br class="typebreak"/>
-, <a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry__cmp.html">batch_entry_cmp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a2fb9c0ceb405731a58892f9dfae2aa46">batch_type</a></td></tr>
-<tr class="separator:a2fb9c0ceb405731a58892f9dfae2aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6963140a57a4e7823d947a32423b1afb"><td class="memItemLeft" align="right" valign="top">typedef block_type::bid_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a6963140a57a4e7823d947a32423b1afb">bid_type</a></td></tr>
-<tr class="separator:a6963140a57a4e7823d947a32423b1afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+, <a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry__cmp.html">batch_entry_cmp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a7a9eca143a958f07cc566e3d4ad74d5a">batch_type</a></td></tr>
+<tr class="separator:a7a9eca143a958f07cc566e3d4ad74d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a060de2246b5abeaf8803e026cd3b87e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#a2fb9c0ceb405731a58892f9dfae2aa46">batch_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a060de2246b5abeaf8803e026cd3b87e1">batch_write_blocks</a></td></tr>
-<tr class="separator:a060de2246b5abeaf8803e026cd3b87e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42fb32e5663b50c256d532a1f972eaf0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a42fb32e5663b50c256d532a1f972eaf0">busy_write_blocks</a></td></tr>
-<tr class="separator:a42fb32e5663b50c256d532a1f972eaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1efe0ec0e07af7dce9c471bd5ccb298"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ab1efe0ec0e07af7dce9c471bd5ccb298">free_write_blocks</a></td></tr>
-<tr class="separator:ab1efe0ec0e07af7dce9c471bd5ccb298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82f89aa18ba81f588f6f91573a6065e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ac82f89aa18ba81f588f6f91573a6065e">nwriteblocks</a></td></tr>
-<tr class="separator:ac82f89aa18ba81f588f6f91573a6065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a28ac370f7aed5936296bc5a05856e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#a6963140a57a4e7823d947a32423b1afb">bid_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ac0a28ac370f7aed5936296bc5a05856e">write_bids</a></td></tr>
-<tr class="separator:ac0a28ac370f7aed5936296bc5a05856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f6d6ed6b45e351f475d5f20b1c1174"><td class="memItemLeft" align="right" valign="top">block_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a93f6d6ed6b45e351f475d5f20b1c1174">write_buffers</a></td></tr>
-<tr class="separator:a93f6d6ed6b45e351f475d5f20b1c1174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ba800df1f9484d0e2c741283c86546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a42ba800df1f9484d0e2c741283c86546">write_reqs</a></td></tr>
-<tr class="separator:a42ba800df1f9484d0e2c741283c86546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae545b71d2e96bf2ea2959cfd2835ef4c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ae545b71d2e96bf2ea2959cfd2835ef4c">writebatchsize</a></td></tr>
-<tr class="separator:ae545b71d2e96bf2ea2959cfd2835ef4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e53c8c35d1a042bba7fa499d7eb781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#a7a9eca143a958f07cc566e3d4ad74d5a">batch_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ac9e53c8c35d1a042bba7fa499d7eb781">batch_write_blocks</a></td></tr>
+<tr class="separator:ac9e53c8c35d1a042bba7fa499d7eb781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c34c1424bbb7a8ec24ddce72250dfb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ad6c34c1424bbb7a8ec24ddce72250dfb">busy_write_blocks</a></td></tr>
+<tr class="separator:ad6c34c1424bbb7a8ec24ddce72250dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9004394b2ae93d15368ec2cac3cd0dec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a9004394b2ae93d15368ec2cac3cd0dec">free_write_blocks</a></td></tr>
+<tr class="separator:a9004394b2ae93d15368ec2cac3cd0dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0cf2801bc6afdd56c9d771a0b9ed7b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a0a0cf2801bc6afdd56c9d771a0b9ed7b">nwriteblocks</a></td></tr>
+<tr class="separator:a0a0cf2801bc6afdd56c9d771a0b9ed7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03933dcef7a6fe2e14d7b40e58658627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#a6e5f559649f0e80c397310b96c63b71c">bid_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a03933dcef7a6fe2e14d7b40e58658627">write_bids</a></td></tr>
+<tr class="separator:a03933dcef7a6fe2e14d7b40e58658627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7358c07b93c15ad8946602c824ccec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a2e7358c07b93c15ad8946602c824ccec">write_buffers</a></td></tr>
+<tr class="separator:a2e7358c07b93c15ad8946602c824ccec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ea35a146ca8588ad3af1586c81cdbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#ad2ea35a146ca8588ad3af1586c81cdbf">write_reqs</a></td></tr>
+<tr class="separator:ad2ea35a146ca8588ad3af1586c81cdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a924af1a012a951aa9a2af3a40b6d5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a16a924af1a012a951aa9a2af3a40b6d5">writebatchsize</a></td></tr>
+<tr class="separator:a16a924af1a012a951aa9a2af3a40b6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a6e5f559649f0e80c397310b96c63b71c"><td class="memItemLeft" align="right" valign="top">typedef block_type::bid_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#a6e5f559649f0e80c397310b96c63b71c">bid_type</a></td></tr>
+<tr class="separator:a6e5f559649f0e80c397310b96c63b71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6109a1d970bd8844ed449bac7db54c"><td class="memItemLeft" align="right" valign="top">typedef BlockType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a></td></tr>
+<tr class="separator:aaa6109a1d970bd8844ed449bac7db54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -204,17 +210,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:afba442f4d1f10e972f5075b4453599fe inherit pub_methods_classstxxl_1_1noncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a2fb9c0ceb405731a58892f9dfae2aa46"></a>
+<a class="anchor" id="a7a9eca143a958f07cc566e3d4ad74d5a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::priority_queue&lt;<a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry.html">batch_entry</a>, std::vector&lt;<a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry.html">batch_entry</a>&gt;, <a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry__cmp.html">batch_entry_cmp</a>&gt; <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html#a2fb9c0ceb405731a58892f9dfae2aa46">batch_type</a></td>
+          <td class="memname">typedef std::priority_queue&lt;<a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry.html">batch_entry</a>, std::vector&lt;<a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry.html">batch_entry</a>&gt;, <a class="el" href="structstxxl_1_1buffered__writer_1_1batch__entry__cmp.html">batch_entry_cmp</a>&gt; <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html#a7a9eca143a958f07cc566e3d4ad74d5a">batch_type</a></td>
         </tr>
       </table>
   </td>
@@ -224,26 +230,26 @@ template&lt;typename block_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00065">65</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00066">66</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6963140a57a4e7823d947a32423b1afb"></a>
+<a class="anchor" id="a6e5f559649f0e80c397310b96c63b71c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef block_type::bid_type <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html#a6963140a57a4e7823d947a32423b1afb">bid_type</a></td>
+          <td class="memname">typedef block_type::bid_type <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html#a6e5f559649f0e80c397310b96c63b71c">bid_type</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -252,18 +258,42 @@ template&lt;typename block_type&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac358569da33458eeb693202151c0a1bd"></a>
+<a class="anchor" id="aaa6109a1d970bd8844ed449bac7db54c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html">buffered_writer</a> </td>
+          <td class="memname">typedef BlockType <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00038">38</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7ab75231fe2e749264614c495a3f4a57"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::<a class="el" href="classstxxl_1_1buffered__writer.html">buffered_writer</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
           <td class="paramname"><em>write_buf_size</em>, </td>
@@ -296,21 +326,21 @@ template&lt;typename block_type&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00073">73</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00074">74</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a50e44231b6d28c39b27a2d9414a14caa"></a>
+<a class="anchor" id="a6916e100b357d235339b987002fbe30c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::~<a class="el" href="classstxxl_1_1buffered__writer.html">buffered_writer</a> </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::~<a class="el" href="classstxxl_1_1buffered__writer.html">buffered_writer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -318,29 +348,29 @@ template&lt;typename block_type&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Flushes not yet written buffers and frees used memory. </p>
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00187">187</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00189">189</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8a8bcc9bb4eba871ee937b0322826630"></a>
+<a class="anchor" id="aaf859c6381ec658c5083f9b5e40e0f85"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::flush </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::flush </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -355,21 +385,21 @@ template&lt;typename block_type&gt; </div>
 
 <p>Flushes not yet written buffers. </p>
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00155">155</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00157">157</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a384de3dfc0a866db65b2eff265e2c25d"></a>
+<a class="anchor" id="adb9ffac714b50b02461647dd65486879"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">block_type* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::get_free_block </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::get_free_block </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -385,29 +415,29 @@ template&lt;typename block_type&gt; </div>
 <p>Returns free block from the internal buffer pool. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the block from the internal buffer pool </dd></dl>
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00088">88</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00090">90</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad5960307352b44352083e3f11739a2cd"></a>
+<a class="anchor" id="af3bd7b8f19e1fd7c3b94926a27252ca5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">block_type* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::write </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::write </td>
           <td>(</td>
-          <td class="paramtype">block_type *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a> *&#160;</td>
           <td class="paramname"><em>filled_block</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1buffered__writer.html#a6963140a57a4e7823d947a32423b1afb">bid_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1buffered__writer.html#a6e5f559649f0e80c397310b96c63b71c">bid_type</a> &amp;&#160;</td>
           <td class="paramname"><em>bid</em>&#160;</td>
         </tr>
         <tr>
@@ -430,7 +460,7 @@ template&lt;typename block_type&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>parameter <code>filled_block</code> must be value returned by <code><a class="el" href="classstxxl_1_1buffered__writer.html#a384de3dfc0a866db65b2eff265e2c25d" title="Returns free block from the internal buffer pool. ">get_free_block()</a></code> or <code><a class="el" href="classstxxl_1_1buffered__writer.html#ad5960307352b44352083e3f11739a2cd" title="Submits block for writing. ">write()</a></code> methods </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>parameter <code>filled_block</code> must be value returned by <code><a class="el" href="classstxxl_1_1buffered__writer.html#adb9ffac714b50b02461647dd65486879" title="Returns free block from the internal buffer pool. ">get_free_block()</a></code> or <code><a class="el" href="classstxxl_1_1buffered__writer.html#af3bd7b8f19e1fd7c3b94926a27252ca5" title="Submits block for writing. ">write()</a></code> methods </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bid</td><td>block identifier, a place to write data of the <code>filled_block</code> </td></tr>
@@ -439,22 +469,22 @@ template&lt;typename block_type&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the new free block from the pool </dd></dl>
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00128">128</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00130">130</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a060de2246b5abeaf8803e026cd3b87e1"></a>
+<a class="anchor" id="ac9e53c8c35d1a042bba7fa499d7eb781"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#a2fb9c0ceb405731a58892f9dfae2aa46">batch_type</a> <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::batch_write_blocks</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#a7a9eca143a958f07cc566e3d4ad74d5a">batch_type</a> <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::batch_write_blocks</td>
         </tr>
       </table>
   </td>
@@ -464,21 +494,45 @@ template&lt;typename block_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00066">66</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00067">67</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a42fb32e5663b50c256d532a1f972eaf0"></a>
+<a class="anchor" id="ad6c34c1424bbb7a8ec24ddce72250dfb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>&gt; <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::busy_write_blocks</td>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>&gt; <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::busy_write_blocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00049">49</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9004394b2ae93d15368ec2cac3cd0dec"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>&gt; <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::free_write_blocks</td>
         </tr>
       </table>
   </td>
@@ -492,89 +546,17 @@ template&lt;typename block_type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab1efe0ec0e07af7dce9c471bd5ccb298"></a>
+<a class="anchor" id="a0a0cf2801bc6afdd56c9d771a0b9ed7b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>&gt; <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::free_write_blocks</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00047">47</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac82f89aa18ba81f588f6f91573a6065e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename block_type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::nwriteblocks</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00041">41</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac0a28ac370f7aed5936296bc5a05856e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename block_type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#a6963140a57a4e7823d947a32423b1afb">bid_type</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::write_bids</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00043">43</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a93f6d6ed6b45e351f475d5f20b1c1174"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename block_type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">block_type* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::write_buffers</td>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::nwriteblocks</td>
         </tr>
       </table>
   </td>
@@ -588,17 +570,17 @@ template&lt;typename block_type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a42ba800df1f9484d0e2c741283c86546"></a>
+<a class="anchor" id="a03933dcef7a6fe2e14d7b40e58658627"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::write_reqs</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#a6e5f559649f0e80c397310b96c63b71c">bid_type</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::write_bids</td>
         </tr>
       </table>
   </td>
@@ -612,17 +594,41 @@ template&lt;typename block_type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae545b71d2e96bf2ea2959cfd2835ef4c"></a>
+<a class="anchor" id="a2e7358c07b93c15ad8946602c824ccec"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type&gt; </div>
+template&lt;typename BlockType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; block_type &gt;::writebatchsize</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1buffered__writer.html#aaa6109a1d970bd8844ed449bac7db54c">block_type</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::write_buffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00043">43</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2ea35a146ca8588ad3af1586c81cdbf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>* <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::write_reqs</td>
         </tr>
       </table>
   </td>
@@ -636,6 +642,30 @@ template&lt;typename block_type&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a16a924af1a012a951aa9a2af3a40b6d5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a>&lt; BlockType &gt;::writebatchsize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="buf__writer_8h_source.html#l00046">46</a> of file <a class="el" href="buf__writer_8h_source.html">buf_writer.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/stxxl/bits/mng/<a class="el" href="buf__writer_8h_source.html">buf_writer.h</a></li>
 </ul>
@@ -645,10 +675,10 @@ template&lt;typename block_type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1buffered__writer.html">buffered_writer</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:49 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:03:51 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -1,7 +1,7 @@
 <map id="stxxl::vector_bufreader&lt; VectorIteratorType &gt;" name="stxxl::vector_bufreader&lt; VectorIteratorType &gt;">
 <area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="13,115,144,144"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1buf__istream.html" title="Buffered input stream. " alt="" coords="1249,278,1457,325"/>
-<area shape="rect" id="node7" href="$classstxxl_1_1block__prefetcher.html" title="Encapsulates asynchronous prefetching engine. " alt="" coords="961,269,1129,333"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1buf__istream.html" title="Buffered input stream. " alt="" coords="1283,278,1488,325"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1block__prefetcher.html" title="Encapsulates asynchronous prefetching engine. " alt="" coords="960,278,1165,325"/>
 <area shape="rect" id="node14" href="$classstxxl_1_1onoff__switch.html" title="stxxl::onoff_switch" alt="" coords="673,173,804,203"/>
 <area shape="rect" id="node17" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="352,93,445,123"/>
 <area shape="rect" id="node20" href="$classstxxl_1_1condition__variable.html" title="stxxl::condition_variable" alt="" coords="317,147,480,176"/>

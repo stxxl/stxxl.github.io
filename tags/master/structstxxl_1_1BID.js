@@ -1,14 +1,14 @@
 var structstxxl_1_1BID =
 [
-    [ "size", "structstxxl_1_1BID.html#a923a22c3109f028807f8c8c7ced902d6ab5c553449731bdb1ad801a821a62d99c", null ],
-    [ "t_size", "structstxxl_1_1BID.html#a923a22c3109f028807f8c8c7ced902d6a7e5213d91b871bbdba954ee8277b6eaa", null ],
-    [ "BID", "structstxxl_1_1BID.html#a843914d73f94b8c1c28ac99dd87ed7da", null ],
-    [ "BID", "structstxxl_1_1BID.html#a55526e1fbd600b7239abbea08cca4a91", null ],
-    [ "BID", "structstxxl_1_1BID.html#a3c010f2acfdbd9548a4ffbbe58687916", null ],
-    [ "BID", "structstxxl_1_1BID.html#a4f08e9294caca16520455d91f33a2b31", null ],
-    [ "is_managed", "structstxxl_1_1BID.html#a0d684e17396c024fe3b8a00edb8400fe", null ],
-    [ "operator=", "structstxxl_1_1BID.html#a9026dc6036bdfb47a4290ce69dc19fd9", null ],
-    [ "valid", "structstxxl_1_1BID.html#a92a10ccc4390709e0026fa35f6ad07ae", null ],
-    [ "offset", "structstxxl_1_1BID.html#ad77cfabe7ceb3c73c4b415cb078aadc3", null ],
-    [ "storage", "structstxxl_1_1BID.html#a69ceeeacee26f7bccefa8ac3ef6690ea", null ]
+    [ "size", "structstxxl_1_1BID.html#aacd2e364fc43ee60c00bdbbbbd1802f6a6d2c6ed7ef33485ac034608d03ce3883", null ],
+    [ "t_size", "structstxxl_1_1BID.html#aacd2e364fc43ee60c00bdbbbbd1802f6a4cb310cd420450bbc829ab556016b3a3", null ],
+    [ "BID", "structstxxl_1_1BID.html#a29c8b2f6969feb08a57a304722928fca", null ],
+    [ "BID", "structstxxl_1_1BID.html#a5832b0b670a6b85b9047a005acc84fc0", null ],
+    [ "BID", "structstxxl_1_1BID.html#a05ce21fca99550cdc921ce02bb65f62a", null ],
+    [ "BID", "structstxxl_1_1BID.html#a91bc86162f8e27915293959d26ba7145", null ],
+    [ "is_managed", "structstxxl_1_1BID.html#a2239a281246cba9687a1bfd25db3b01b", null ],
+    [ "operator=", "structstxxl_1_1BID.html#a88e9955a97d7cfd64ce9e45b8c153a51", null ],
+    [ "valid", "structstxxl_1_1BID.html#a28fb4b2c4fef9f3d413f059eb6cb3652", null ],
+    [ "offset", "structstxxl_1_1BID.html#ae73689cc5ed6c948872093ff53923e6e", null ],
+    [ "storage", "structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d", null ]
 ];

@@ -1,6 +1,6 @@
-<map id="stxxl::BIDArray&lt; BLK_SIZE &gt;" name="stxxl::BIDArray&lt; BLK_SIZE &gt;">
-<area shape="rect" id="node10" href="$classstxxl_1_1BIDArray.html" title="stxxl::BIDArray\&lt; block\l_type::raw_size \&gt;" alt="" coords="5,414,160,461"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1simple__vector.html" title="stxxl::simple_vector\l\&lt; BID\&lt; BLK_SIZE \&gt; \&gt;" alt="" coords="5,201,160,247"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="31,5,161,35"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1simple__vector.html" title="Simpler non&#45;growing vector without initialization. " alt="" coords="99,86,237,133"/>
+<map id="stxxl::BIDArray&lt; BlockSize &gt;" name="stxxl::BIDArray&lt; BlockSize &gt;">
+<area shape="rect" id="node10" href="$classstxxl_1_1BIDArray.html" title="stxxl::BIDArray\&lt; block\l_type::raw_size \&gt;" alt="" coords="25,395,180,442"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1simple__vector.html" title="stxxl::simple_vector\l\&lt; BID\&lt; BlockSize \&gt; \&gt;" alt="" coords="27,201,179,247"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="51,5,181,35"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1simple__vector.html" title="Simpler non&#45;growing vector without initialization. " alt="" coords="119,86,257,133"/>
 </map>

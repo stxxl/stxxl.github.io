@@ -154,9 +154,9 @@ $(document).ready(function(){initNavTree('async__schedule_8h_source.html','');})
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(static_cast&lt;const int_type*&gt;(first), last, out_first, m, D);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> run_type&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a97750c78f2ad4d39847ef80a76fc6424">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> run_type&amp; input,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RunType&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a43253aea1283d93b6f46e9a85e8d0e1e">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> RunType&amp; input,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>* out_first,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> m,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> D)</div>
@@ -168,10 +168,10 @@ $(document).ready(function(){initNavTree('async__schedule_8h_source.html','');})
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(disks.<a class="code" href="classstxxl_1_1simple__vector.html#a3da1412a6cafab8cdd96c0c8a3163652">begin</a>(), disks.<a class="code" href="classstxxl_1_1simple__vector.html#a52c7e5384af75403c0e378941e11a316">end</a>(), out_first, m, D);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> b<span class="keywordtype">id</span>_iterator_type&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacestxxl.html#ad9c77055bc1d04adbb12295562bdca9a">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    bid_iterator_type input_begin,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    bid_iterator_type input_end,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> B<span class="keywordtype">id</span>IteratorType&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacestxxl.html#abece498298dfba76ddefc405e1633875">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    BidIteratorType input_begin,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    BidIteratorType input_end,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>* out_first,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> m,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> D)</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('async__schedule_8h_source.html','');})
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> L = input_end - input_begin;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classstxxl_1_1simple__vector.html">simple_vector&lt;int_type&gt;</a> disks(L);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> i = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (bid_iterator_type it = input_begin; it != input_end; ++it, ++i)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (BidIteratorType it = input_begin; it != input_end; ++it, ++i)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        disks[i] = it-&gt;storage-&gt;get_device_id();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">compute_prefetch_schedule</a>(disks.<a class="code" href="classstxxl_1_1simple__vector.html#a3da1412a6cafab8cdd96c0c8a3163652">begin</a>(), disks.<a class="code" href="classstxxl_1_1simple__vector.html#a52c7e5384af75403c0e378941e11a316">end</a>(), out_first, m, D);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
@@ -204,10 +204,10 @@ $(document).ready(function(){initNavTree('async__schedule_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_6dd1bce03f0b0acb6641b4504697927f.html">algo</a></li><li class="navelem"><a class="el" href="async__schedule_8h.html">async_schedule.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:02:38 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:02:45 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

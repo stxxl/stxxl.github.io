@@ -133,13 +133,13 @@ $(document).ready(function(){initNavTree('pq__helpers_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html">stxxl::priority_queue_local::internal_bounded_stack&lt; Tp_, max_size_ &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html">stxxl::priority_queue_local::internal_bounded_stack&lt; ValueType, MaxSize &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to std::stack, with the following differences:  <a href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue&lt; _Tp, _Sequence, _Compare &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html">stxxl::priority_queue_local::internal_priority_queue&lt; ValueType, ContainerType, CompareType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to std::priority_queue, with the following differences:  <a href="classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1invert__order.html">stxxl::priority_queue_local::invert_order&lt; Predicate, first_argument_type, second_argument_type &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1invert__order.html">stxxl::priority_queue_local::invert_order&lt; Predicate, FirstType, SecondType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the order of a comparison functor by swapping its arguments.  <a href="classstxxl_1_1priority__queue__local_1_1invert__order.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -205,7 +205,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pq__helpers_8h_source.html#l00071">71</a> of file <a class="el" href="pq__helpers_8h_source.html">pq_helpers.h</a>.</p>
 
-<p>Referenced by <a class="el" href="priority__queue_8h_source.html#l00728">stxxl::priority_queue&lt; ConfigType &gt;::empty_insert_heap()</a>, <a class="el" href="priority__queue_8h_source.html#l00652">stxxl::priority_queue&lt; ConfigType &gt;::make_space_available()</a>, <a class="el" href="priority__queue_8h_source.html#l00375">stxxl::priority_queue&lt; ConfigType &gt;::priority_queue()</a>, <a class="el" href="priority__queue_8h_source.html#l00509">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>, <a class="el" href="priority__queue_8h_source.html#l00450">stxxl::priority_queue&lt; ConfigType &gt;::refill_group_buffer()</a>, and <a class="el" href="priority__queue_8h_source.html#l00434">stxxl::priority_queue&lt; ConfigType &gt;::~priority_queue()</a>.</p>
+<p>Referenced by <a class="el" href="priority__queue_8h_source.html#l00730">stxxl::priority_queue&lt; ConfigType &gt;::empty_insert_heap()</a>, <a class="el" href="priority__queue_8h_source.html#l00654">stxxl::priority_queue&lt; ConfigType &gt;::make_space_available()</a>, <a class="el" href="priority__queue_8h_source.html#l00377">stxxl::priority_queue&lt; ConfigType &gt;::priority_queue()</a>, <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>, <a class="el" href="priority__queue_8h_source.html#l00452">stxxl::priority_queue&lt; ConfigType &gt;::refill_group_buffer()</a>, and <a class="el" href="priority__queue_8h_source.html#l00436">stxxl::priority_queue&lt; ConfigType &gt;::~priority_queue()</a>.</p>
 
 </div>
 </div>
@@ -215,10 +215,10 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_5a7933e30a367341f12be4470fbf844e.html">containers</a></li><li class="navelem"><a class="el" href="pq__helpers_8h.html">pq_helpers.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:25 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:03:30 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

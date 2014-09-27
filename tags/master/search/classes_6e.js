@@ -2,7 +2,7 @@ var searchData=
 [
   ['new_5falloc',['new_alloc',['../classstxxl_1_1new__alloc.html',1,'stxxl']]],
   ['new_5falloc_5frebind',['new_alloc_rebind',['../structstxxl_1_1new__alloc__rebind.html',1,'stxxl']]],
-  ['new_5falloc_5frebind_3c_20t_2c_20t_20_3e',['new_alloc_rebind&lt; T, T &gt;',['../structstxxl_1_1new__alloc__rebind_3_01T_00_01T_01_4.html',1,'stxxl']]],
+  ['new_5falloc_5frebind_3c_20type_2c_20type_20_3e',['new_alloc_rebind&lt; Type, Type &gt;',['../structstxxl_1_1new__alloc__rebind_3_01Type_00_01Type_01_4.html',1,'stxxl']]],
   ['nilcase',['NilCase',['../structstxxl_1_1NilCase.html',1,'stxxl']]],
   ['node',['node',['../structstxxl_1_1hash__map_1_1node.html',1,'stxxl::hash_map']]],
   ['node_5fcache',['node_cache',['../classstxxl_1_1btree_1_1node__cache.html',1,'stxxl::btree']]],

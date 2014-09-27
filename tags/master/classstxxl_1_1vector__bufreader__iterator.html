@@ -125,7 +125,7 @@ class stxxl::vector_bufreader_iterator&lt; VectorBufReaderType &gt;</h3>
 <p>Since <a class="el" href="classstxxl_1_1vector__bufreader.html" title="Buffered sequential reader from a vector using overlapped I/O. ">vector_bufreader</a> itself points to only one specific item, this iterator is merely a counter facade. The functions <a class="el" href="classstxxl_1_1vector__bufreader__iterator.html#ad67854321bf4b1117f601c238b7429da" title="Return constant reference to current item. ">operator*()</a> and <a class="el" href="classstxxl_1_1vector__bufreader__iterator.html#af70b1cc129eb98638b3128a6ba9ab963" title="Make bufreader advance to next item (asserts if !empty() or if iterator does not point to current)...">operator++()</a> must only be called when it is in <em>sync</em> with the bufreader object. This is generally only the case for an iterator constructed with begin() and then advanced with <a class="el" href="classstxxl_1_1vector__bufreader__iterator.html#af70b1cc129eb98638b3128a6ba9ab963" title="Make bufreader advance to next item (asserts if !empty() or if iterator does not point to current)...">operator++()</a>. The class checks this using asserts(), the operators will fail if used wrong.</p>
 <p>See <a class="el" href="tutorial_vector_buf.html">Efficient Sequential Reading and Writing to Vectors</a> </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l01891">1891</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l01901">1901</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -186,7 +186,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Value type of vector. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02104">2104</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02114">2114</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +204,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>The underlying buffered reader type. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02101">2101</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02111">2111</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +222,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Use <a class="el" href="classstxxl_1_1vector__iterator.html" title="External vector iterator, model of ext_random_access_iterator concept. ">vector_iterator</a> to reference a point in the vector. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02107">2107</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02117">2117</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Construct iterator using <a class="el" href="classstxxl_1_1vector__iterator.html" title="External vector iterator, model of ext_random_access_iterator concept. ">vector_iterator</a>. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02118">2118</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02128">2128</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Inequality comparison operator. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02154">2154</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02164">2164</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Return constant reference to current item. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02123">2123</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02133">2133</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Make bufreader advance to next item (asserts if !empty() or if iterator does not point to current). </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02138">2138</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02148">2148</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Return constant pointer to current item. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02130">2130</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02140">2140</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Equality comparison operator. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02147">2147</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02157">2157</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +438,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Buffered reader used to access elements in vector. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02111">2111</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02121">2121</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +464,7 @@ template&lt;typename VectorBufReaderType &gt; </div>
 
 <p>Use <a class="el" href="classstxxl_1_1vector__iterator.html" title="External vector iterator, model of ext_random_access_iterator concept. ">vector_iterator</a> to reference a point in the vector. </p>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l02114">2114</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l02124">2124</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
@@ -477,10 +477,10 @@ template&lt;typename VectorBufReaderType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1vector__bufreader__iterator.html">vector_bufreader_iterator</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:16 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:04:18 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

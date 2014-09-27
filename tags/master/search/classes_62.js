@@ -59,6 +59,7 @@ var searchData=
   ['buffered_5freader',['buffered_reader',['../classstxxl_1_1hash__map_1_1buffered__reader.html',1,'stxxl::hash_map']]],
   ['buffered_5fwriter',['buffered_writer',['../classstxxl_1_1hash__map_1_1buffered__writer.html',1,'stxxl::hash_map']]],
   ['buffered_5fwriter',['buffered_writer',['../classstxxl_1_1buffered__writer.html',1,'stxxl']]],
+  ['buffered_5fwriter_3c_20block_5ftype_20_3e',['buffered_writer&lt; block_type &gt;',['../classstxxl_1_1buffered__writer.html',1,'stxxl']]],
   ['buffered_5fwriter_3c_20stxxl_3a_3atyped_5fblock_20_3e',['buffered_writer&lt; stxxl::typed_block &gt;',['../classstxxl_1_1buffered__writer.html',1,'stxxl']]],
   ['busy_5fentry',['busy_entry',['../structstxxl_1_1write__pool_1_1busy__entry.html',1,'stxxl::write_pool']]]
 ];

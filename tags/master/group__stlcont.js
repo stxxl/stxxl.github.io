@@ -127,19 +127,19 @@ var group__stlcont =
       [ "operator==", "classstxxl_1_1map.html#a6cb4a6d5586169d1da9d1bda68e25aa5", null ],
       [ "operator>", "classstxxl_1_1map.html#a5ac6d7c183481bccd0f6ac9f0768d7eb", null ],
       [ "operator>=", "classstxxl_1_1map.html#a0304f0b349577fca733eac6a6964a214", null ],
-      [ "Impl", "classstxxl_1_1map.html#a41ba569835af2124b35f41625c7269c2", null ]
+      [ "impl", "classstxxl_1_1map.html#ae8d6a0d8a61c4a5c0dfd627e47fb08d2", null ]
     ] ],
     [ "PRIORITY_QUEUE_GENERATOR", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html", [
       [ "ComputeN", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a3ae8e0583e38a6804028cba9727ba641", null ],
       [ "result", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0", null ],
       [ "settings", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#abff5713164dd4b5b11323e4fe4ac46c1", null ],
-      [ "B", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#abf3aa25cab44a3d3635f5d12d5c4854baa15276d29600938a75cb2666ca836a28", null ],
-      [ "m", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#abf3aa25cab44a3d3635f5d12d5c4854ba88d23e9d7b5261b0a73e9f2cf9ec21f0", null ],
-      [ "X", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#abf3aa25cab44a3d3635f5d12d5c4854ba0286786b60a319b783b52ba888085017", null ],
-      [ "Buffer1Size", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#abf3aa25cab44a3d3635f5d12d5c4854baa189cd8bf04823d791b803bb63cabc2d", null ],
-      [ "N", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7af96f61ad42943ed8ccef98bbcde8d765", null ],
-      [ "AI", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a9f96b0abda4a536e3392d16f414305be", null ],
-      [ "AE", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7af110d3dcf98bab3b229ffa9f10aa62d6", null ],
+      [ "B", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa15276d29600938a75cb2666ca836a28", null ],
+      [ "m", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a88d23e9d7b5261b0a73e9f2cf9ec21f0", null ],
+      [ "X", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017", null ],
+      [ "Buffer1Size", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d", null ],
+      [ "N", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf96f61ad42943ed8ccef98bbcde8d765", null ],
+      [ "AI", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0bea9f96b0abda4a536e3392d16f414305be", null ],
+      [ "AE", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6", null ],
       [ "EConsumption", "classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#af8edf44f30044f24a6ac5e1b6fafa053", null ]
     ] ],
     [ "queue", "classstxxl_1_1queue.html", [
@@ -149,7 +149,7 @@ var group__stlcont =
       [ "pool_type", "classstxxl_1_1queue.html#ab7f1c2931a345daabb2a6b48713dae50", null ],
       [ "size_type", "classstxxl_1_1queue.html#aebd08eabc034fb0d5f5c306d6d2c9955", null ],
       [ "value_type", "classstxxl_1_1queue.html#ae4b87471cb2b09e0917010cb5cc69220", null ],
-      [ "block_size", "classstxxl_1_1queue.html#ab5b0313a28049c1b01d2b841ec1fe5bca5cb5b754326b8bd03dc6da6cc3a49314", null ],
+      [ "block_size", "classstxxl_1_1queue.html#ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314", null ],
       [ "queue", "classstxxl_1_1queue.html#ab09efe6be14bc82c95bae889459e1f9b", null ],
       [ "queue", "classstxxl_1_1queue.html#a279bc7c7aa419db7cb9c758849c29f00", null ],
       [ "queue", "classstxxl_1_1queue.html#a30c005057024cbd3c2d24d69597a041a", null ],
@@ -218,7 +218,7 @@ var group__stlcont =
       [ "pool_type", "classstxxl_1_1sequence.html#a14aa52f5c2081c6e1dfcbd93607d04f6", null ],
       [ "size_type", "classstxxl_1_1sequence.html#a4e8fd1637040dbcdc259d2a09d4ae365", null ],
       [ "value_type", "classstxxl_1_1sequence.html#a4b53d1a09845c1cd01a090c4b17e802f", null ],
-      [ "block_size", "classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c", null ],
+      [ "block_size", "classstxxl_1_1sequence.html#ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c", null ],
       [ "sequence", "classstxxl_1_1sequence.html#aea9d459b27326b91e4065008a0a120a3", null ],
       [ "sequence", "classstxxl_1_1sequence.html#a92d39bfff81d5e393cf64466deeb641d", null ],
       [ "sequence", "classstxxl_1_1sequence.html#aacb13b77a7eb969a23ab2bd7f16c4f06", null ],
@@ -259,9 +259,9 @@ var group__stlcont =
       [ "runs_merger_type", "classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554", null ],
       [ "size_type", "classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f", null ],
       [ "value_type", "classstxxl_1_1sorter.html#a8d3e5beb037629615607b249b4cf7552", null ],
-      [ "block_size", "classstxxl_1_1sorter.html#a154d9af945968168e2da674de23b8613a35e58c5358966ae2c67b4469067da52d", null ],
-      [ "STATE_INPUT", "classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958a7f29f7ec4243b42b665e46a9746a2c09", null ],
-      [ "STATE_OUTPUT", "classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958a61cfe92f49fe0a6f3373b702b86af817", null ],
+      [ "block_size", "classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958a35e58c5358966ae2c67b4469067da52d", null ],
+      [ "STATE_INPUT", "classstxxl_1_1sorter.html#abe09549c8ddf15f4a1e10db064e1c281a7f29f7ec4243b42b665e46a9746a2c09", null ],
+      [ "STATE_OUTPUT", "classstxxl_1_1sorter.html#abe09549c8ddf15f4a1e10db064e1c281a61cfe92f49fe0a6f3373b702b86af817", null ],
       [ "sorter", "classstxxl_1_1sorter.html#acf7315e8c36267db2af1c35f70cd5209", null ],
       [ "sorter", "classstxxl_1_1sorter.html#a929a1de3c6db997ae9686e9773d52b06", null ],
       [ "clear", "classstxxl_1_1sorter.html#adb8a337e7b510ee70af4a378921e9625", null ],
@@ -280,7 +280,7 @@ var group__stlcont =
       [ "sort_reuse", "classstxxl_1_1sorter.html#af8efba64375f43e84a428c9d41d69f3f", null ],
       [ "m_runs_creator", "classstxxl_1_1sorter.html#a9b8de4cd091d74fa1fc69e006db5b545", null ],
       [ "m_runs_merger", "classstxxl_1_1sorter.html#a3bc480b5451c63bf3025a9f824525b61", null ],
-      [ "m_state", "classstxxl_1_1sorter.html#a16b37fbff0208a4d2151b83e8ef5bd3d", null ]
+      [ "m_state", "classstxxl_1_1sorter.html#aecf505932d6b5532fe3cbf4a43862d0e", null ]
     ] ],
     [ "unordered_map", "classstxxl_1_1unordered__map.html", [
       [ "allocator_type", "classstxxl_1_1unordered__map.html#ab34e3482549f22815c3cf51495a5b204", null ],

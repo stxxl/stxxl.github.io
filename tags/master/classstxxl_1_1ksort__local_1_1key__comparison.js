@@ -1,7 +1,7 @@
 var classstxxl_1_1ksort__local_1_1key__comparison =
 [
-    [ "key_comparison", "classstxxl_1_1ksort__local_1_1key__comparison.html#acf55b19714c632587e83b3704df94dd8", null ],
-    [ "key_comparison", "classstxxl_1_1ksort__local_1_1key__comparison.html#a518121d798371dff6a4db0d6d3d9f872", null ],
-    [ "operator()", "classstxxl_1_1ksort__local_1_1key__comparison.html#aaf06e1285246e501c35aae00a8a85eb1", null ],
-    [ "ke", "classstxxl_1_1ksort__local_1_1key__comparison.html#a01f5a2c6655d69c5db8b2e1ffd39b1b0", null ]
+    [ "key_comparison", "classstxxl_1_1ksort__local_1_1key__comparison.html#a0f902a38aa02111c5b74d94a761936d3", null ],
+    [ "key_comparison", "classstxxl_1_1ksort__local_1_1key__comparison.html#a772a24783ce797ded8ce5b1e5b82855c", null ],
+    [ "operator()", "classstxxl_1_1ksort__local_1_1key__comparison.html#a8bdd1373003eac1f50cd355ef081f1d7", null ],
+    [ "ke", "classstxxl_1_1ksort__local_1_1key__comparison.html#a5f599f204608789a81379803e4c7dc57", null ]
 ];

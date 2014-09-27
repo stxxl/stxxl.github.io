@@ -1,7 +1,7 @@
 var structstxxl_1_1runs2bid__array__adaptor2 =
 [
+    [ "base_type", "structstxxl_1_1runs2bid__array__adaptor2.html#a0d2f5acf82adcfcf07ccc44cab93ac6f", null ],
     [ "data_type", "structstxxl_1_1runs2bid__array__adaptor2.html#a5f0433490824dee4ba20c98d30b560ed", null ],
-    [ "ParentClass_", "structstxxl_1_1runs2bid__array__adaptor2.html#aa3f5f75ac1b8b9627e208caaac0b0fa4", null ],
     [ "self_type", "structstxxl_1_1runs2bid__array__adaptor2.html#a6729a3cea30eb23a5c06beade5399d62", null ],
     [ "block_size", "structstxxl_1_1runs2bid__array__adaptor2.html#acba87d25babc5afad9ad8bd27fc976d3ada4298840509067c9a8d0f5788952f92", null ],
     [ "runs2bid_array_adaptor2", "structstxxl_1_1runs2bid__array__adaptor2.html#a3be89b5005dd8a323bad17d300fa120e", null ],

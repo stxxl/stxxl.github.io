@@ -19,7 +19,7 @@ var searchData=
   ['interleaved_5fstriping',['interleaved_striping',['../structstxxl_1_1interleaved__striping.html',1,'stxxl']]],
   ['internal_5fbounded_5fstack',['internal_bounded_stack',['../classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html',1,'stxxl::priority_queue_local']]],
   ['internal_5fbounded_5fstack_3c_20unsigned_5ftype_2c_20arity_20_3e',['internal_bounded_stack&lt; unsigned_type, arity &gt;',['../classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html',1,'stxxl::priority_queue_local']]],
-  ['internal_5fbounded_5fstack_3c_20unsigned_5ftype_2c_20knkmax_20_3e',['internal_bounded_stack&lt; unsigned_type, KNKMAX &gt;',['../classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html',1,'stxxl::priority_queue_local']]],
+  ['internal_5fbounded_5fstack_3c_20unsigned_5ftype_2c_20maxarity_20_3e',['internal_bounded_stack&lt; unsigned_type, MaxArity &gt;',['../classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html',1,'stxxl::priority_queue_local']]],
   ['internal_5fpriority_5fqueue',['internal_priority_queue',['../classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html',1,'stxxl::priority_queue_local']]],
   ['internal_5fpriority_5fqueue_3c_20value_5ftype_2c_20std_3a_3avector_3c_20value_5ftype_20_3e_2c_20comparator_5ftype_20_3e',['internal_priority_queue&lt; value_type, std::vector&lt; value_type &gt;, comparator_type &gt;',['../classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html',1,'stxxl::priority_queue_local']]],
   ['invert_5forder',['invert_order',['../classstxxl_1_1priority__queue__local_1_1invert__order.html',1,'stxxl::priority_queue_local']]],

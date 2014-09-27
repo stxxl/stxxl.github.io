@@ -60,7 +60,7 @@
 <a xlink:href="structstxxl_1_1random__number.html" target="_top" xlink:title="Uniform [0, N) pseudo&#45;random generator. ">
 <polygon fill="none" stroke="black" points="151.5,-197 151.5,-231 264.5,-231 264.5,-197 151.5,-197"/>
 <text text-anchor="start" x="159.5" y="-218" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::random_number</text>
-<text text-anchor="middle" x="208" y="-205" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; UniformRGen_ &gt;</text>
+<text text-anchor="middle" x="208" y="-205" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; UniformRGen &gt;</text>
 </a>
 </g>
 <!-- Node5&#45;&gt;Node2 -->

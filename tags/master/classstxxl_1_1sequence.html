@@ -166,17 +166,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a864e83dba33ed8e136e1450e25b7d35f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c">block_size</a> = BlockSize
+<tr class="memitem:ae9ec453743f04869fd4399983b6e90d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1sequence.html#ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c">block_size</a> = BlockSize
  }</td></tr>
-<tr class="separator:a864e83dba33ed8e136e1450e25b7d35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae9ec453743f04869fd4399983b6e90d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae1522eac0091455262ac2fc45f41f5"><td class="memItemLeft" align="right" valign="top">typedef AllocStr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#a1ae1522eac0091455262ac2fc45f41f5">alloc_strategy_type</a></td></tr>
 <tr class="separator:a1ae1522eac0091455262ac2fc45f41f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0185058255f34175ad69cd6f1730c2"><td class="memItemLeft" align="right" valign="top">typedef std::deque&lt; <a class="el" href="classstxxl_1_1sequence.html#a224e151172b334df889c3d649da1752d">bid_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#acd0185058255f34175ad69cd6f1730c2">bid_deque_type</a></td></tr>
 <tr class="separator:acd0185058255f34175ad69cd6f1730c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224e151172b334df889c3d649da1752d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; <a class="el" href="classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c">block_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#a224e151172b334df889c3d649da1752d">bid_type</a></td></tr>
+<tr class="memitem:a224e151172b334df889c3d649da1752d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; <a class="el" href="classstxxl_1_1sequence.html#ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c">block_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#a224e151172b334df889c3d649da1752d">bid_type</a></td></tr>
 <tr class="separator:a224e151172b334df889c3d649da1752d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01865aa4c3f997c82dffa1ea1b272cb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a><br class="typebreak"/>
-&lt; <a class="el" href="classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c">block_size</a>, <a class="el" href="classstxxl_1_1sequence.html#a4b53d1a09845c1cd01a090c4b17e802f">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#ac01865aa4c3f997c82dffa1ea1b272cb">block_type</a></td></tr>
+&lt; <a class="el" href="classstxxl_1_1sequence.html#ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c">block_size</a>, <a class="el" href="classstxxl_1_1sequence.html#a4b53d1a09845c1cd01a090c4b17e802f">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#ac01865aa4c3f997c82dffa1ea1b272cb">block_type</a></td></tr>
 <tr class="separator:ac01865aa4c3f997c82dffa1ea1b272cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8fd1637040dbcdc259d2a09d4ae365"><td class="memItemLeft" align="right" valign="top">typedef SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sequence.html#a4e8fd1637040dbcdc259d2a09d4ae365">size_type</a></td></tr>
 <tr class="separator:a4e8fd1637040dbcdc259d2a09d4ae365"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,7 +339,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStr  = STXXL_DEFAULT_ALLOC_STRATEGY, class SizeType  = stxxl::uint64&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;<a class="el" href="classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c">block_size</a>&gt; <a class="el" href="classstxxl_1_1sequence.html">stxxl::sequence</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1sequence.html#a224e151172b334df889c3d649da1752d">bid_type</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;<a class="el" href="classstxxl_1_1sequence.html#ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c">block_size</a>&gt; <a class="el" href="classstxxl_1_1sequence.html">stxxl::sequence</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1sequence.html#a224e151172b334df889c3d649da1752d">bid_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -355,7 +355,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStr  = STXXL_DEFAULT_ALLOC_STRATEGY, class SizeType  = stxxl::uint64&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a>&lt;<a class="el" href="classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c">block_size</a>, <a class="el" href="classstxxl_1_1sequence.html#a4b53d1a09845c1cd01a090c4b17e802f">value_type</a>&gt; <a class="el" href="classstxxl_1_1sequence.html">stxxl::sequence</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1sequence.html#ac01865aa4c3f997c82dffa1ea1b272cb">block_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a>&lt;<a class="el" href="classstxxl_1_1sequence.html#ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c">block_size</a>, <a class="el" href="classstxxl_1_1sequence.html#a4b53d1a09845c1cd01a090c4b17e802f">value_type</a>&gt; <a class="el" href="classstxxl_1_1sequence.html">stxxl::sequence</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1sequence.html#ac01865aa4c3f997c82dffa1ea1b272cb">block_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -421,7 +421,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a864e83dba33ed8e136e1450e25b7d35f"></a>
+<a class="anchor" id="ae9ec453743f04869fd4399983b6e90d6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -433,7 +433,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c"></a>block_size</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae9ec453743f04869fd4399983b6e90d6abef7740a51914135f863f570a33e7d9c"></a>block_size</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -1447,10 +1447,10 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1sequence.html">sequence</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:08 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:04:10 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

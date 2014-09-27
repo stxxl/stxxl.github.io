@@ -8,9 +8,9 @@ var searchData=
   ['lock_5ffile',['lock_file',['../classstxxl_1_1fileperblock__file.html#aaa87df7e9a1de1323c1507753a700817',1,'stxxl::fileperblock_file']]],
   ['lock_5ffile_5fcreated',['lock_file_created',['../classstxxl_1_1fileperblock__file.html#a7ce1e3686dd1c34e43c97cafc701d0d4',1,'stxxl::fileperblock_file']]],
   ['locked',['locked',['../classstxxl_1_1wfs__file__base.html#a31f88340e7a2f187aecd8d0a73cad565',1,'stxxl::wfs_file_base']]],
-  ['log_5fk',['log_k',['../classstxxl_1_1priority__queue__local_1_1ext__merger.html#ad5d743fdefb0ff25e63edf731e1183f4',1,'stxxl::priority_queue_local::ext_merger']]],
+  ['log_5fk',['log_k',['../classstxxl_1_1priority__queue__local_1_1ext__merger.html#a8b32050a22f74b98ffe15e2b8626504c',1,'stxxl::priority_queue_local::ext_merger']]],
   ['log_5fstream_5f',['log_stream_',['../classstxxl_1_1logger.html#a908b4602e9be349baa97e793bafa517c',1,'stxxl::logger']]],
-  ['logk',['logK',['../classstxxl_1_1loser__tree.html#a087410385701b5bd92a174e13c8f32d5',1,'stxxl::loser_tree::logK()'],['../classstxxl_1_1priority__queue__local_1_1loser__tree.html#ad6fd8693c63101a05bcf11251d1fbfdd',1,'stxxl::priority_queue_local::loser_tree::logK()']]],
+  ['logk',['logK',['../classstxxl_1_1loser__tree.html#a00d99d57fb1653e6e9fe768f74ee00e6',1,'stxxl::loser_tree::logK()'],['../classstxxl_1_1priority__queue__local_1_1loser__tree.html#a6b5f6a0a24b0deb16e1b86787ab646ab',1,'stxxl::priority_queue_local::loser_tree::logK()']]],
   ['low',['low',['../classstxxl_1_1uint__pair.html#aaf9770ba7443c77310b7124152e31cc1',1,'stxxl::uint_pair::low()'],['../uint__types_8h.html#abf3cd6b24a7b6ec284d02d3eacdf4dbd',1,'low():&#160;uint_types.h']]],
   ['low_5fbits',['low_bits',['../classstxxl_1_1uint__pair.html#af06638435d5975b111559432b48e808a',1,'stxxl::uint_pair::low_bits()'],['../uint__types_8h.html#a294e8e82ed51f078675a9201b84a7163',1,'low_bits():&#160;uint_types.h']]]
 ];

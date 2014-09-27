@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>STXXL: stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt; Class Template Reference</title>
+<title>STXXL: stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,113 +110,144 @@ $(document).ready(function(){initNavTree('classstxxl_1_1double__blocked__index.h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classstxxl_1_1double__blocked__index-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__stlcont__vector.html">vector</a></div></div>  </div>
+<div class="title">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__stlcont__vector.html">vector</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename size_type, size_type modulo2, size_type modulo1&gt;<br/>
-class stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;</h3>
+<div class="textblock"><h3>template&lt;typename SizeType, SizeType modulo2, SizeType modulo1&gt;<br/>
+class stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;</h3>
 
 
 <p>Definition at line <a class="el" href="vector_8h_source.html#l00048">48</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1double__blocked__index__coll__graph.svg" width="230" height="339"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1double__blocked__index__coll__graph.svg" width="228" height="339"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afcfefdaebc93c1f8adfa26a7aa9ea5a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#afcfefdaebc93c1f8adfa26a7aa9ea5a7">double_blocked_index</a> ()</td></tr>
-<tr class="separator:afcfefdaebc93c1f8adfa26a7aa9ea5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab31ae404222103a94e39ccc5a737b9e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ab31ae404222103a94e39ccc5a737b9e9">double_blocked_index</a> (size_type <a class="el" href="classstxxl_1_1double__blocked__index.html#a44851b6bc26bcd258f55c81c8e732abc">pos</a>)</td></tr>
-<tr class="separator:ab31ae404222103a94e39ccc5a737b9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3b7444cae0de2f327087b1fa5b0050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#acc3b7444cae0de2f327087b1fa5b0050">double_blocked_index</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#a362c3cbbbedaa884e0f62e6945dff41c">block2</a>, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#aae98a2e78227e321c51707597be2a427">block1</a>, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#a3b41c16a38b8c8bb5f0242aa5db8b58d">offset</a>)</td></tr>
-<tr class="separator:acc3b7444cae0de2f327087b1fa5b0050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e72d38d6f56576d9b0b2ef847b9a30"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a43e72d38d6f56576d9b0b2ef847b9a30">get_block1</a> () const </td></tr>
-<tr class="separator:a43e72d38d6f56576d9b0b2ef847b9a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c197e17c1d56977c16cf68dca4d53a1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a0c197e17c1d56977c16cf68dca4d53a1">get_block2</a> () const </td></tr>
-<tr class="separator:a0c197e17c1d56977c16cf68dca4d53a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d9bd6e02842cc7f5a7a9c23f350f29"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a19d9bd6e02842cc7f5a7a9c23f350f29">get_offset</a> () const </td></tr>
-<tr class="separator:a19d9bd6e02842cc7f5a7a9c23f350f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab05fa716e2edf7fa6a8acd005601d6b5"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ab05fa716e2edf7fa6a8acd005601d6b5">get_pos</a> () const </td></tr>
-<tr class="separator:ab05fa716e2edf7fa6a8acd005601d6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a041e6715c4321e17d78574f5724d73f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a041e6715c4321e17d78574f5724d73f7">operator!=</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:a041e6715c4321e17d78574f5724d73f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5122ce3079f9b0102d1993f43398a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#aa5122ce3079f9b0102d1993f43398a77">operator+</a> (size_type addend) const </td></tr>
-<tr class="separator:aa5122ce3079f9b0102d1993f43398a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5448242ccd0e9afc4296e2d24982ace"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#af5448242ccd0e9afc4296e2d24982ace">operator++</a> ()</td></tr>
-<tr class="separator:af5448242ccd0e9afc4296e2d24982ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f0c4b6ef174e701b5a5044e82dea81d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a0f0c4b6ef174e701b5a5044e82dea81d">operator++</a> (int)</td></tr>
-<tr class="separator:a0f0c4b6ef174e701b5a5044e82dea81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8071f916ba1d4d1bde6772a98546265e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a8071f916ba1d4d1bde6772a98546265e">operator+=</a> (size_type addend)</td></tr>
-<tr class="separator:a8071f916ba1d4d1bde6772a98546265e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e6e431c03d28b637ccbf941219c5bb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a2e6e431c03d28b637ccbf941219c5bb2">operator-</a> (size_type addend) const </td></tr>
-<tr class="separator:a2e6e431c03d28b637ccbf941219c5bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cdbf67a39a22d87757d2d5b706bf97d"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a7cdbf67a39a22d87757d2d5b706bf97d">operator-</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:a7cdbf67a39a22d87757d2d5b706bf97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd7bc0923aa2e61e9f52ee273aaa54c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#abd7bc0923aa2e61e9f52ee273aaa54c4">operator--</a> ()</td></tr>
-<tr class="separator:abd7bc0923aa2e61e9f52ee273aaa54c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6c222ca3fc427b27516c543e585bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#abd6c222ca3fc427b27516c543e585bcd">operator--</a> (int)</td></tr>
-<tr class="separator:abd6c222ca3fc427b27516c543e585bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b76c6db70755e67a29ee990cc8ad2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#af8b76c6db70755e67a29ee990cc8ad2e">operator-=</a> (size_type subtrahend)</td></tr>
-<tr class="separator:af8b76c6db70755e67a29ee990cc8ad2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abd614b53fa0baf53ccff7bc89afe63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a0abd614b53fa0baf53ccff7bc89afe63">operator&lt;</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:a0abd614b53fa0baf53ccff7bc89afe63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a75252cc81656311e9c698a29149925"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a6a75252cc81656311e9c698a29149925">operator&lt;=</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:a6a75252cc81656311e9c698a29149925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece295b2be0237eb0c58ce04f51e540e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#aece295b2be0237eb0c58ce04f51e540e">operator=</a> (size_type <a class="el" href="classstxxl_1_1double__blocked__index.html#a44851b6bc26bcd258f55c81c8e732abc">pos</a>)</td></tr>
-<tr class="separator:aece295b2be0237eb0c58ce04f51e540e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74243cb78afd8404eb57f7ccba8641c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a74243cb78afd8404eb57f7ccba8641c0">operator==</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:a74243cb78afd8404eb57f7ccba8641c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b57862ce7ec32f7d84df80dd9c2e331"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a1b57862ce7ec32f7d84df80dd9c2e331">operator&gt;</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:a1b57862ce7ec32f7d84df80dd9c2e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88161237df879908d2b2078c2e89324"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ad88161237df879908d2b2078c2e89324">operator&gt;=</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
-<tr class="separator:ad88161237df879908d2b2078c2e89324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5de12146542afbc18a8bbeeb42a1df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#afc5de12146542afbc18a8bbeeb42a1df">operator&gt;&gt;=</a> (size_type shift)</td></tr>
-<tr class="separator:afc5de12146542afbc18a8bbeeb42a1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e0647bb634bf877fe6c4a0ca02ba5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a28e0647bb634bf877fe6c4a0ca02ba5d">double_blocked_index</a> ()</td></tr>
+<tr class="separator:a28e0647bb634bf877fe6c4a0ca02ba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbd2d4b33d78c8982eb78db476db98e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3cbd2d4b33d78c8982eb78db476db98e">double_blocked_index</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#aa58517e87b025b21f69fec97a7c650f4">pos</a>)</td></tr>
+<tr class="separator:a3cbd2d4b33d78c8982eb78db476db98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92de86409ac1a72c890ae17e7f82acf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a92de86409ac1a72c890ae17e7f82acf7">double_blocked_index</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#a1289673b02d645f9f2e553f1feef8c59">block2</a>, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#a56cc285d55e40291af4d809dd0aeb184">block1</a>, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#a5eb1f9bf891f41fc2793c5ac542a2d43">offset</a>)</td></tr>
+<tr class="separator:a92de86409ac1a72c890ae17e7f82acf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619bd93f6a0638baf8a515ad85a721ff"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a619bd93f6a0638baf8a515ad85a721ff">get_block1</a> () const </td></tr>
+<tr class="separator:a619bd93f6a0638baf8a515ad85a721ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01703d7cc38af69665431a36fb57886"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#aa01703d7cc38af69665431a36fb57886">get_block2</a> () const </td></tr>
+<tr class="separator:aa01703d7cc38af69665431a36fb57886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017995e7e4b3dab4946931f89b08b2c8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a017995e7e4b3dab4946931f89b08b2c8">get_offset</a> () const </td></tr>
+<tr class="separator:a017995e7e4b3dab4946931f89b08b2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1b5ebc244863937b0c69d22ed5b1a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a1c1b5ebc244863937b0c69d22ed5b1a5">get_pos</a> () const </td></tr>
+<tr class="separator:a1c1b5ebc244863937b0c69d22ed5b1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074f20595d2d09b167d28aa5644e0d9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a074f20595d2d09b167d28aa5644e0d9a">operator!=</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:a074f20595d2d09b167d28aa5644e0d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556fde3b985571628ee6dcf20a5de7e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a556fde3b985571628ee6dcf20a5de7e0">operator+</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> addend) const </td></tr>
+<tr class="separator:a556fde3b985571628ee6dcf20a5de7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8168877db0e6c9724334d04d08e1071f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a8168877db0e6c9724334d04d08e1071f">operator++</a> ()</td></tr>
+<tr class="separator:a8168877db0e6c9724334d04d08e1071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13dd94eb3481fa7a7f8313a45f787aeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a13dd94eb3481fa7a7f8313a45f787aeb">operator++</a> (int)</td></tr>
+<tr class="separator:a13dd94eb3481fa7a7f8313a45f787aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479d310043d0948df621917611bdf281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a479d310043d0948df621917611bdf281">operator+=</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> addend)</td></tr>
+<tr class="separator:a479d310043d0948df621917611bdf281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ac8c3c913f4f15638077ee86deae35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ae0ac8c3c913f4f15638077ee86deae35">operator-</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> addend) const </td></tr>
+<tr class="separator:ae0ac8c3c913f4f15638077ee86deae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac819c0e90bbd2a956421b76a1af616ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ac819c0e90bbd2a956421b76a1af616ce">operator-</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:ac819c0e90bbd2a956421b76a1af616ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2eae63a742a610f7d709a511eadae4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a6a2eae63a742a610f7d709a511eadae4">operator--</a> ()</td></tr>
+<tr class="separator:a6a2eae63a742a610f7d709a511eadae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c9552ef5fd3b7ef331dded9fc80565"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a00c9552ef5fd3b7ef331dded9fc80565">operator--</a> (int)</td></tr>
+<tr class="separator:a00c9552ef5fd3b7ef331dded9fc80565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ea8338be08b552bb189fc9cbbc1085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#af1ea8338be08b552bb189fc9cbbc1085">operator-=</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> subtrahend)</td></tr>
+<tr class="separator:af1ea8338be08b552bb189fc9cbbc1085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c764bfc64482c329ae909c2cfd4c14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a22c764bfc64482c329ae909c2cfd4c14">operator&lt;</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:a22c764bfc64482c329ae909c2cfd4c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4134f3c8c3b26e6aebb68e5894ba4edf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a4134f3c8c3b26e6aebb68e5894ba4edf">operator&lt;=</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:a4134f3c8c3b26e6aebb68e5894ba4edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0db7466bef31f7bc312e48e9592aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#aca0db7466bef31f7bc312e48e9592aa0">operator=</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#aa58517e87b025b21f69fec97a7c650f4">pos</a>)</td></tr>
+<tr class="separator:aca0db7466bef31f7bc312e48e9592aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d04057cc3dbab229c723ac02db4a8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ab4d04057cc3dbab229c723ac02db4a8f">operator==</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:ab4d04057cc3dbab229c723ac02db4a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a28b70eb4c32e15889107c26dd646e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a41a28b70eb4c32e15889107c26dd646e">operator&gt;</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:a41a28b70eb4c32e15889107c26dd646e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2b167b7ce0368bee3944ee51af50c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a7e2b167b7ce0368bee3944ee51af50c7">operator&gt;=</a> (const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;dbi2) const </td></tr>
+<tr class="separator:a7e2b167b7ce0368bee3944ee51af50c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b830148dacba5dae3fd9c05cdf2b0d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3b830148dacba5dae3fd9c05cdf2b0d6">operator&gt;&gt;=</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> shift)</td></tr>
+<tr class="separator:a3b830148dacba5dae3fd9c05cdf2b0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a3d2e4fd638a79468c9a953a6845e312d"><td class="memItemLeft" align="right" valign="top">typedef SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a></td></tr>
+<tr class="separator:a3d2e4fd638a79468c9a953a6845e312d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a2a162890986ce8ddc402e4fabe77a3b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a2a162890986ce8ddc402e4fabe77a3b5">set</a> (size_type <a class="el" href="classstxxl_1_1double__blocked__index.html#a44851b6bc26bcd258f55c81c8e732abc">pos</a>)</td></tr>
-<tr class="separator:a2a162890986ce8ddc402e4fabe77a3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aaa6dead378a7bfb6d478444d6d71a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a6aaa6dead378a7bfb6d478444d6d71a7">set</a> (<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html#aa58517e87b025b21f69fec97a7c650f4">pos</a>)</td></tr>
+<tr class="separator:a6aaa6dead378a7bfb6d478444d6d71a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aae98a2e78227e321c51707597be2a427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#aae98a2e78227e321c51707597be2a427">block1</a></td></tr>
-<tr class="separator:aae98a2e78227e321c51707597be2a427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362c3cbbbedaa884e0f62e6945dff41c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a362c3cbbbedaa884e0f62e6945dff41c">block2</a></td></tr>
-<tr class="separator:a362c3cbbbedaa884e0f62e6945dff41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b41c16a38b8c8bb5f0242aa5db8b58d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3b41c16a38b8c8bb5f0242aa5db8b58d">offset</a></td></tr>
-<tr class="separator:a3b41c16a38b8c8bb5f0242aa5db8b58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44851b6bc26bcd258f55c81c8e732abc"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a44851b6bc26bcd258f55c81c8e732abc">pos</a></td></tr>
-<tr class="separator:a44851b6bc26bcd258f55c81c8e732abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56cc285d55e40291af4d809dd0aeb184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a56cc285d55e40291af4d809dd0aeb184">block1</a></td></tr>
+<tr class="separator:a56cc285d55e40291af4d809dd0aeb184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1289673b02d645f9f2e553f1feef8c59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a1289673b02d645f9f2e553f1feef8c59">block2</a></td></tr>
+<tr class="separator:a1289673b02d645f9f2e553f1feef8c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb1f9bf891f41fc2793c5ac542a2d43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#a5eb1f9bf891f41fc2793c5ac542a2d43">offset</a></td></tr>
+<tr class="separator:a5eb1f9bf891f41fc2793c5ac542a2d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58517e87b025b21f69fec97a7c650f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#aa58517e87b025b21f69fec97a7c650f4">pos</a></td></tr>
+<tr class="separator:aa58517e87b025b21f69fec97a7c650f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ae02e12522439eb3fdb25e0e57e5821ef"><td class="memItemLeft" align="right" valign="top">static const size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ae02e12522439eb3fdb25e0e57e5821ef">modulo12</a> = modulo1 * modulo2</td></tr>
-<tr class="separator:ae02e12522439eb3fdb25e0e57e5821ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a01450131fc1e0f3fd22120dfc4769"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html#ae7a01450131fc1e0f3fd22120dfc4769">modulo12</a> = modulo1 * modulo2</td></tr>
+<tr class="separator:ae7a01450131fc1e0f3fd22120dfc4769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afcfefdaebc93c1f8adfa26a7aa9ea5a7"></a>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a3d2e4fd638a79468c9a953a6845e312d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> </td>
+          <td class="memname">typedef SizeType <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00050">50</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a28e0647bb634bf877fe6c4a0ca02ba5d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -229,23 +260,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00071">71</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00073">73</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab31ae404222103a94e39ccc5a737b9e9"></a>
+<a class="anchor" id="a3cbd2d4b33d78c8982eb78db476db98e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>pos</em></td><td>)</td>
           <td></td>
         </tr>
@@ -257,21 +288,21 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00076">76</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00078">78</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acc3b7444cae0de2f327087b1fa5b0050"></a>
+<a class="anchor" id="a92de86409ac1a72c890ae17e7f82acf7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::<a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
           <td class="paramname"><em>block2</em>, </td>
@@ -301,22 +332,22 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00081">81</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00083">83</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a43e72d38d6f56576d9b0b2ef847b9a30"></a>
+<a class="anchor" id="a619bd93f6a0638baf8a515ad85a721ff"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::get_block1 </td>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::get_block1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -329,23 +360,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00233">233</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00235">235</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vector_8h_source.html#l01570">stxxl::vector&lt; ValueType &gt;::bid()</a>, <a class="el" href="vector_8h_source.html#l01721">stxxl::vector&lt; ValueType &gt;::const_element()</a>, and <a class="el" href="vector_8h_source.html#l01636">stxxl::vector&lt; ValueType &gt;::element()</a>.</p>
+<p>Referenced by <a class="el" href="vector_8h_source.html#l01580">stxxl::vector&lt; ValueType &gt;::bid()</a>, <a class="el" href="vector_8h_source.html#l01731">stxxl::vector&lt; ValueType &gt;::const_element()</a>, and <a class="el" href="vector_8h_source.html#l01646">stxxl::vector&lt; ValueType &gt;::element()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0c197e17c1d56977c16cf68dca4d53a1"></a>
+<a class="anchor" id="aa01703d7cc38af69665431a36fb57886"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::get_block2 </td>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::get_block2 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -358,23 +389,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00228">228</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00230">230</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vector_8h_source.html#l01570">stxxl::vector&lt; ValueType &gt;::bid()</a>, <a class="el" href="vector_8h_source.html#l01711">stxxl::vector&lt; ValueType &gt;::block_externally_updated()</a>, <a class="el" href="vector_8h_source.html#l01721">stxxl::vector&lt; ValueType &gt;::const_element()</a>, <a class="el" href="vector_8h_source.html#l01636">stxxl::vector&lt; ValueType &gt;::element()</a>, and <a class="el" href="vector_8h_source.html#l01762">stxxl::vector&lt; ValueType &gt;::is_page_cached()</a>.</p>
+<p>Referenced by <a class="el" href="vector_8h_source.html#l01580">stxxl::vector&lt; ValueType &gt;::bid()</a>, <a class="el" href="vector_8h_source.html#l01721">stxxl::vector&lt; ValueType &gt;::block_externally_updated()</a>, <a class="el" href="vector_8h_source.html#l01731">stxxl::vector&lt; ValueType &gt;::const_element()</a>, <a class="el" href="vector_8h_source.html#l01646">stxxl::vector&lt; ValueType &gt;::element()</a>, and <a class="el" href="vector_8h_source.html#l01772">stxxl::vector&lt; ValueType &gt;::is_page_cached()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a19d9bd6e02842cc7f5a7a9c23f350f29"></a>
+<a class="anchor" id="a017995e7e4b3dab4946931f89b08b2c8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::get_offset </td>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::get_offset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -387,23 +418,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00238">238</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00240">240</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vector_8h_source.html#l01721">stxxl::vector&lt; ValueType &gt;::const_element()</a>, and <a class="el" href="vector_8h_source.html#l01636">stxxl::vector&lt; ValueType &gt;::element()</a>.</p>
+<p>Referenced by <a class="el" href="vector_8h_source.html#l01731">stxxl::vector&lt; ValueType &gt;::const_element()</a>, and <a class="el" href="vector_8h_source.html#l01646">stxxl::vector&lt; ValueType &gt;::element()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab05fa716e2edf7fa6a8acd005601d6b5"></a>
+<a class="anchor" id="a1c1b5ebc244863937b0c69d22ed5b1a5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_type <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::get_pos </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::get_pos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -416,25 +447,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00223">223</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00225">225</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vector_8h_source.html#l01636">stxxl::vector&lt; ValueType &gt;::element()</a>.</p>
+<p>Referenced by <a class="el" href="vector_8h_source.html#l01646">stxxl::vector&lt; ValueType &gt;::element()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a041e6715c4321e17d78574f5724d73f7"></a>
+<a class="anchor" id="a074f20595d2d09b167d28aa5644e0d9a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator!= </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -446,25 +477,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00192">192</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00194">194</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa5122ce3079f9b0102d1993f43398a77"></a>
+<a class="anchor" id="a556fde3b985571628ee6dcf20a5de7e0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator+ </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator+ </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>addend</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -476,21 +507,21 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00160">160</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00162">162</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af5448242ccd0e9afc4296e2d24982ace"></a>
+<a class="anchor" id="a8168877db0e6c9724334d04d08e1071f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator++ </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator++ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -503,21 +534,21 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00099">99</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00101">101</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f0c4b6ef174e701b5a5044e82dea81d"></a>
+<a class="anchor" id="a13dd94eb3481fa7a7f8313a45f787aeb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator++ </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator++ </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -531,25 +562,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00122">122</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00124">124</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00163">operator++()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8071f916ba1d4d1bde6772a98546265e"></a>
+<a class="anchor" id="a479d310043d0948df621917611bdf281"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator+= </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator+= </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>addend</em></td><td>)</td>
           <td></td>
         </tr>
@@ -561,23 +592,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00165">165</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00167">167</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2e6e431c03d28b637ccbf941219c5bb2"></a>
+<a class="anchor" id="ae0ac8c3c913f4f15638077ee86deae35"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator- </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator- </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>addend</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -589,23 +620,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00171">171</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00173">173</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7cdbf67a39a22d87757d2d5b706bf97d"></a>
+<a class="anchor" id="ac819c0e90bbd2a956421b76a1af616ce"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_type <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator- </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -617,23 +648,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00176">176</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00178">178</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abd7bc0923aa2e61e9f52ee273aaa54c4"></a>
+<a class="anchor" id="a6a2eae63a742a610f7d709a511eadae4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator-- </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator-- </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -646,21 +677,21 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00130">130</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00132">132</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abd6c222ca3fc427b27516c543e585bcd"></a>
+<a class="anchor" id="a00c9552ef5fd3b7ef331dded9fc80565"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator-- </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator-- </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -674,25 +705,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00153">153</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00155">155</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00173">operator--()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af8b76c6db70755e67a29ee990cc8ad2e"></a>
+<a class="anchor" id="af1ea8338be08b552bb189fc9cbbc1085"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator-= </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator-= </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>subtrahend</em></td><td>)</td>
           <td></td>
         </tr>
@@ -704,23 +735,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00181">181</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00183">183</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0abd614b53fa0baf53ccff7bc89afe63"></a>
+<a class="anchor" id="a22c764bfc64482c329ae909c2cfd4c14"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator&lt; </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -732,25 +763,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00197">197</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00199">199</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6a75252cc81656311e9c698a29149925"></a>
+<a class="anchor" id="a4134f3c8c3b26e6aebb68e5894ba4edf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator&lt;= </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator&lt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -762,25 +793,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00202">202</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00204">204</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aece295b2be0237eb0c58ce04f51e540e"></a>
+<a class="anchor" id="aca0db7466bef31f7bc312e48e9592aa0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>pos</em></td><td>)</td>
           <td></td>
         </tr>
@@ -792,23 +823,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00092">92</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00094">94</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a74243cb78afd8404eb57f7ccba8641c0"></a>
+<a class="anchor" id="ab4d04057cc3dbab229c723ac02db4a8f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator== </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -820,25 +851,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00187">187</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00189">189</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1b57862ce7ec32f7d84df80dd9c2e331"></a>
+<a class="anchor" id="a41a28b70eb4c32e15889107c26dd646e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator&gt; </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -850,25 +881,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00207">207</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00209">209</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad88161237df879908d2b2078c2e89324"></a>
+<a class="anchor" id="a7e2b167b7ce0368bee3944ee51af50c7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator&gt;= </td>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>dbi2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -880,25 +911,25 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00212">212</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00214">214</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>References <a class="el" href="vector_8h_source.html#l00052">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::pos</a>.</p>
+<p>References <a class="el" href="vector_8h_source.html#l00054">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::pos</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afc5de12146542afbc18a8bbeeb42a1df"></a>
+<a class="anchor" id="a3b830148dacba5dae3fd9c05cdf2b0d6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::operator&gt;&gt;= </td>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a>&amp; <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::operator&gt;&gt;= </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>shift</em></td><td>)</td>
           <td></td>
         </tr>
@@ -910,23 +941,23 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00217">217</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00219">219</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2a162890986ce8ddc402e4fabe77a3b5"></a>
+<a class="anchor" id="a6aaa6dead378a7bfb6d478444d6d71a7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::set </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::set </td>
           <td>(</td>
-          <td class="paramtype">size_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a>&#160;</td>
           <td class="paramname"><em>pos</em></td><td>)</td>
           <td></td>
         </tr>
@@ -939,22 +970,22 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </div><div class="memdoc">
 <dl class="section invariant"><dt>Invariant</dt><dd>block2 * modulo12 + block1 * modulo1 + offset == pos &amp;&amp; 0 &lt;= block1 &lt; modulo2 &amp;&amp; 0 &lt;= offset &lt; modulo1 </dd></dl>
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00057">57</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00059">59</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aae98a2e78227e321c51707597be2a427"></a>
+<a class="anchor" id="a56cc285d55e40291af4d809dd0aeb184"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::block1</td>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::block1</td>
         </tr>
       </table>
   </td>
@@ -964,21 +995,21 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00053">53</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00055">55</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a362c3cbbbedaa884e0f62e6945dff41c"></a>
+<a class="anchor" id="a1289673b02d645f9f2e553f1feef8c59"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::block2</td>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::block2</td>
         </tr>
       </table>
   </td>
@@ -988,21 +1019,21 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00053">53</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00055">55</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae02e12522439eb3fdb25e0e57e5821ef"></a>
+<a class="anchor" id="ae7a01450131fc1e0f3fd22120dfc4769"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_type <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::modulo12 = modulo1 * modulo2</td>
+          <td class="memname">const <a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::modulo12 = modulo1 * modulo2</td>
         </tr>
       </table>
   </td>
@@ -1012,57 +1043,57 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00050">50</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3b41c16a38b8c8bb5f0242aa5db8b58d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::offset</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vector_8h_source.html#l00053">53</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a44851b6bc26bcd258f55c81c8e732abc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_type <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; size_type, modulo2, modulo1 &gt;::pos</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p>Definition at line <a class="el" href="vector_8h_source.html#l00052">52</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vector_8h_source.html#l00192">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator!=()</a>, <a class="el" href="vector_8h_source.html#l00176">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator-()</a>, <a class="el" href="vector_8h_source.html#l00197">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator&lt;()</a>, <a class="el" href="vector_8h_source.html#l00202">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator&lt;=()</a>, <a class="el" href="vector_8h_source.html#l00187">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator==()</a>, <a class="el" href="vector_8h_source.html#l00207">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator&gt;()</a>, and <a class="el" href="vector_8h_source.html#l00212">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;::operator&gt;=()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a5eb1f9bf891f41fc2793c5ac542a2d43"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00055">55</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa58517e87b025b21f69fec97a7c650f4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SizeType , SizeType modulo2, SizeType modulo1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1double__blocked__index.html#a3d2e4fd638a79468c9a953a6845e312d">size_type</a> <a class="el" href="classstxxl_1_1double__blocked__index.html">stxxl::double_blocked_index</a>&lt; SizeType, modulo2, modulo1 &gt;::pos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vector_8h_source.html#l00054">54</a> of file <a class="el" href="vector_8h_source.html">vector.h</a>.</p>
+
+<p>Referenced by <a class="el" href="vector_8h_source.html#l00194">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator!=()</a>, <a class="el" href="vector_8h_source.html#l00178">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator-()</a>, <a class="el" href="vector_8h_source.html#l00199">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator&lt;()</a>, <a class="el" href="vector_8h_source.html#l00204">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator&lt;=()</a>, <a class="el" href="vector_8h_source.html#l00189">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator==()</a>, <a class="el" href="vector_8h_source.html#l00209">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator&gt;()</a>, and <a class="el" href="vector_8h_source.html#l00214">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;::operator&gt;=()</a>.</p>
 
 </div>
 </div>
@@ -1075,10 +1106,10 @@ template&lt;typename size_type , size_type modulo2, size_type modulo1&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:56 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:03:56 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -6,7 +6,7 @@ var classstxxl_1_1write__pool =
     [ "busy_blocks_iterator", "classstxxl_1_1write__pool.html#a74bc37f73b5dd7f4a8ddfa5f9936c41e", null ],
     [ "free_blocks_iterator", "classstxxl_1_1write__pool.html#aee81b4a3865eb650ddde12f672a4d31c", null ],
     [ "write_pool", "classstxxl_1_1write__pool.html#ab972280fef76949dc4585b01f5eb19ea", null ],
-    [ "~write_pool", "classstxxl_1_1write__pool.html#aecf4b8737b2b19fb9023eac47c2e9452", null ],
+    [ "~write_pool", "classstxxl_1_1write__pool.html#a5281c170b382d6a8c191b5c5a780a0c8", null ],
     [ "add", "classstxxl_1_1write__pool.html#a60f9aa81056fd3e0653b1bb32e6c9b99", null ],
     [ "check_all_busy", "classstxxl_1_1write__pool.html#ab86758cfd483424cb7f52ea43af0af87", null ],
     [ "get", "classstxxl_1_1write__pool.html#adac6515ee40a2162869bdf0aeb937de3", null ],

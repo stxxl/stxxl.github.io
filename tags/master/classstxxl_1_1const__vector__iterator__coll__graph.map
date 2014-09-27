@@ -1,5 +1,5 @@
 <map id="stxxl::const_vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;" name="stxxl::const_vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1double__blocked__index.html" title="stxxl::double_blocked\l_index\&lt; size_type, modulo2,\l modulo1 \&gt;" alt="" coords="920,29,1109,93"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1double__blocked__index.html" title="stxxl::double_blocked\l_index\&lt; SizeType, modulo2,\l modulo1 \&gt;" alt="" coords="921,29,1108,93"/>
 <area shape="rect" id="node4" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="356,33,516,79"/>
 <area shape="rect" id="node14" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="744,155,893,202"/>
 <area shape="rect" id="node6" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,33,165,79"/>

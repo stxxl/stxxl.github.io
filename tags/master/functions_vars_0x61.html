@@ -192,28 +192,27 @@ $(document).ready(function(){initNavTree('functions_vars_0x61.html','');});
 : <a class="el" href="classstxxl_1_1queue.html#ad3441c90d0d6c8be812fa1cccb4ed5e2">stxxl::queue&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
 </li>
 <li>alloc_strategy
-: <a class="el" href="classstxxl_1_1normal__stack.html#a97def4358d5ff9b3c0506ce2a1bdd06b">stxxl::normal_stack&lt; StackConfig &gt;</a>
-, <a class="el" href="classstxxl_1_1grow__shrink__stack.html#ad74ed515859deeae99b246d384974c70">stxxl::grow_shrink_stack&lt; StackConfig &gt;</a>
+: <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01from__sorted__sequences_3_01ValueType_01_4_00_01Comparb340be1db0e84ee4fb588bc1ffe398dd.html#ad39080353cb8dd084a39c928b733da98">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
+, <a class="el" href="classstxxl_1_1normal__stack.html#a97def4358d5ff9b3c0506ce2a1bdd06b">stxxl::normal_stack&lt; StackConfig &gt;</a>
 , <a class="el" href="classstxxl_1_1grow__shrink__stack2.html#a801f65c502875f50e9d70cf0fd4a2369">stxxl::grow_shrink_stack2&lt; StackConfig &gt;</a>
-, <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01from__sorted__sequences_3_01ValueType_01_4_00_01Comparb340be1db0e84ee4fb588bc1ffe398dd.html#ad39080353cb8dd084a39c928b733da98">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
+, <a class="el" href="classstxxl_1_1grow__shrink__stack.html#ad74ed515859deeae99b246d384974c70">stxxl::grow_shrink_stack&lt; StackConfig &gt;</a>
 , <a class="el" href="classstxxl_1_1queue.html#a5a0e0b7aa96aea5f58503d6529d67781">stxxl::queue&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
 </li>
 <li>alloc_strategy_
-: <a class="el" href="classstxxl_1_1stable__ksort__local_1_1bid__sequence.html#aa3595a1b811c37e370f5ce66eabbe9e4">stxxl::stable_ksort_local::bid_sequence&lt; BIDType_, AllocStrategy_ &gt;</a>
+: <a class="el" href="classstxxl_1_1stable__ksort__local_1_1bid__sequence.html#aded0cfa2132247ef0a6d7111e9f0e5cd">stxxl::stable_ksort_local::bid_sequence&lt; BIDType, AllocStrategy &gt;</a>
 </li>
 <li>allocated
-: <a class="el" href="structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a47fa43690603e0dc15d95f03469f6db5">stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;::sequence_state</a>
+: <a class="el" href="structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a5235db01ce48b92aa05bc209f85993a1">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::sequence_state</a>
 </li>
 <li>array
-: <a class="el" href="structstxxl_1_1two2one__dim__array__adapter__base.html#ace7b3d684b3e487cfe9f7f017331563f">stxxl::two2one_dim_array_adapter_base&lt; one_dim_array_type, data_type, pos_type &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a680157c54c2d3e1e99740264ec310878">stxxl::priority_queue_local::internal_bounded_stack&lt; Tp_, max_size_ &gt;</a>
+: <a class="el" href="structstxxl_1_1two2one__dim__array__adapter__base.html#aad6d4e5e31980c343457c56ed73ccd6d">stxxl::two2one_dim_array_adapter_base&lt; OneDimArrayType, DataType, PosType &gt;</a>
 </li>
 <li>arrays
-: <a class="el" href="classstxxl_1_1array__of__sequences__iterator.html#a2e42f10559065968b047294c9843f884">stxxl::array_of_sequences_iterator&lt; array_type, value_type, modulo &gt;</a>
+: <a class="el" href="classstxxl_1_1array__of__sequences__iterator.html#ad169692eb577ff159cf54da890f6f9b1">stxxl::array_of_sequences_iterator&lt; ArrayType, ValueType, modulo &gt;</a>
 </li>
 <li>autogrow
-: <a class="el" href="classstxxl_1_1disk__config.html#a51017010c3f189947b53134378273720">stxxl::disk_config</a>
-, <a class="el" href="classstxxl_1_1disk__allocator.html#af9cfe2d5f15c778c6d6bb700c9e52464">stxxl::disk_allocator</a>
+: <a class="el" href="classstxxl_1_1disk__allocator.html#af9cfe2d5f15c778c6d6bb700c9e52464">stxxl::disk_allocator</a>
+, <a class="el" href="classstxxl_1_1disk__config.html#a51017010c3f189947b53134378273720">stxxl::disk_config</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -221,10 +220,10 @@ $(document).ready(function(){initNavTree('functions_vars_0x61.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:10:00 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:10:05 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

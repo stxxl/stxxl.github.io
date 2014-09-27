@@ -1,13 +1,13 @@
-<map id="stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;" name="stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;">
-<area shape="rect" id="node26" href="$structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html" title="stxxl::priority_queue\l_local::ext_merger\&lt; BlockType\l_, Cmp_, Arity_, AllocStr\l_ \&gt;::sequence_state" alt="" coords="1723,271,1925,353"/>
+<map id="stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;" name="stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;">
+<area shape="rect" id="node26" href="$structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html" title="stxxl::priority_queue\l_local::ext_merger\&lt; BlockType,\l Cmp, Arity, AllocStr \&gt;::sequence_state" alt="" coords="1759,280,2012,344"/>
 <area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="415,275,545,304"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1112,235,1261,282"/>
-<area shape="rect" id="node7" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="733,146,869,193"/>
-<area shape="rect" id="node18" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="739,266,864,313"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1141,235,1291,282"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="748,146,884,193"/>
+<area shape="rect" id="node18" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="753,266,879,313"/>
 <area shape="rect" id="node10" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="400,61,560,107"/>
 <area shape="rect" id="node12" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="28,61,188,107"/>
 <area shape="rect" id="node14" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; bid_type, busy\l_entry, bid_hash \&gt;" alt="" coords="405,137,555,201"/>
 <area shape="rect" id="node16" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="5,137,211,201"/>
-<area shape="rect" id="node21" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="stxxl::priority_queue\l_local::internal_bounded\l_stack\&lt; unsigned_type, arity \&gt;" alt="" coords="1085,321,1288,385"/>
-<area shape="rect" id="node23" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="Similar to std::stack, with the following differences: " alt="" coords="712,336,891,400"/>
+<area shape="rect" id="node21" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="stxxl::priority_queue\l_local::internal_bounded\l_stack\&lt; unsigned_type, arity \&gt;" alt="" coords="1115,321,1317,385"/>
+<area shape="rect" id="node23" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="Similar to std::stack, with the following differences: " alt="" coords="713,336,919,400"/>
 </map>

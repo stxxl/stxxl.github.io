@@ -1,12 +1,13 @@
 var structstxxl_1_1run__cursor2 =
 [
-    [ "_Self", "structstxxl_1_1run__cursor2.html#ad30942ba04210a04d47d4788e182e9b5", null ],
-    [ "prefetcher_type", "structstxxl_1_1run__cursor2.html#a31341f53b6979d6762c35128d44e8b52", null ],
-    [ "value_type", "structstxxl_1_1run__cursor2.html#a2671c830d713da2be890aa38004ba109", null ],
-    [ "run_cursor2", "structstxxl_1_1run__cursor2.html#ae536767d4858e5664ccfe4a6e8e7cdc4", null ],
-    [ "empty", "structstxxl_1_1run__cursor2.html#a883c7643f717d0e06198d83fd112082a", null ],
-    [ "make_inf", "structstxxl_1_1run__cursor2.html#adcb81eb4513a342eaa39b6785b4435bb", null ],
-    [ "operator++", "structstxxl_1_1run__cursor2.html#a6bc53a224af0a9188325f86b8f6ba0c8", null ],
-    [ "prefetcher", "structstxxl_1_1run__cursor2.html#a011021b2db28539032a73804520f8fe0", null ],
-    [ "prefetcher_", "structstxxl_1_1run__cursor2.html#af567ed7247c96b3c88d9bf1708e25aea", null ]
+    [ "_Self", "structstxxl_1_1run__cursor2.html#acd5de782327395087daf334e5649cf32", null ],
+    [ "block_type", "structstxxl_1_1run__cursor2.html#a75bdbda269c85d773521a3b9093ed4fd", null ],
+    [ "prefetcher_type", "structstxxl_1_1run__cursor2.html#a806f0e84d7f2a2b524615a16d73da9a8", null ],
+    [ "value_type", "structstxxl_1_1run__cursor2.html#a1d7acd295d32cc3b74f7a222efb372dd", null ],
+    [ "run_cursor2", "structstxxl_1_1run__cursor2.html#a14c88e24f4da4027c87de24a59c1f090", null ],
+    [ "empty", "structstxxl_1_1run__cursor2.html#a6c5f66c3604a7e9a6a94b728971d6f76", null ],
+    [ "make_inf", "structstxxl_1_1run__cursor2.html#a90a9e71d8e14ea992965ecd32bc3f61e", null ],
+    [ "operator++", "structstxxl_1_1run__cursor2.html#a5c197141ade109bdb9cda573ab801f8c", null ],
+    [ "prefetcher", "structstxxl_1_1run__cursor2.html#affa54e5183f2c480ea8d1531474cdd98", null ],
+    [ "prefetcher_", "structstxxl_1_1run__cursor2.html#a315112bdd55556d8e9eb1120afaeb891", null ]
 ];

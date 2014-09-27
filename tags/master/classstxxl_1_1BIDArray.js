@@ -1,5 +1,5 @@
 var classstxxl_1_1BIDArray =
 [
-    [ "BIDArray", "classstxxl_1_1BIDArray.html#a94e9add689449d9dcbd48862ef1da540", null ],
-    [ "BIDArray", "classstxxl_1_1BIDArray.html#ad19f5083f7626a470e0fbe0d3639718a", null ]
+    [ "BIDArray", "classstxxl_1_1BIDArray.html#a4205a47ba077c10174b08894411c93be", null ],
+    [ "BIDArray", "classstxxl_1_1BIDArray.html#aaa04e2a8a7bc16111bc52f37a04c3c98", null ]
 ];

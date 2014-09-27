@@ -2,7 +2,7 @@ var searchData=
 [
   ['erase',['erase',['../classstxxl_1_1hash__map_1_1hash__map__iterator__base.html#a8a84b59a3a11838f8d060082a4217518',1,'stxxl::hash_map::hash_map_iterator_base']]],
   ['h',['h',['../structstxxl_1_1runs2bid__array__adaptor2.html#a2bf81e61a6c921671b0a3238c8ea42c1',1,'stxxl::runs2bid_array_adaptor2']]],
-  ['handle',['handle',['../classstxxl_1_1addressable__fifo__queue.html#a3d1c1e0bb15f1c5eb3d041d540d84218',1,'stxxl::addressable_fifo_queue::handle()'],['../classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a',1,'stxxl::addressable_priority_queue::handle()'],['../classstxxl_1_1wfs__file__base.html#a9f948c469d1ecee26217190da2fe76d7',1,'stxxl::wfs_file_base::HANDLE()']]],
+  ['handle',['handle',['../classstxxl_1_1addressable__fifo__queue.html#ab058ba8da5cac68cc4ded0f61499591d',1,'stxxl::addressable_fifo_queue::handle()'],['../classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d',1,'stxxl::addressable_priority_queue::handle()'],['../classstxxl_1_1wfs__file__base.html#a9f948c469d1ecee26217190da2fe76d7',1,'stxxl::wfs_file_base::HANDLE()']]],
   ['handle_5fevents',['handle_events',['../classstxxl_1_1linuxaio__queue.html#ae8a5c7440d4e4cd4375f871b9fbae418',1,'stxxl::linuxaio_queue']]],
   ['has_5fexternal_5fblock',['has_external_block',['../classstxxl_1_1swappable__block.html#aaa52d0f74a6fd44024e1009303bb1fb7',1,'stxxl::swappable_block']]],
   ['has_5finfinity',['has_infinity',['../classstd_1_1numeric__limits_3_01stxxl_1_1uint__pair_3_01HighType_01_4_01_4.html#ae982b5196940a93ace52b1bd734fdeb6',1,'std::numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;']]],
@@ -33,7 +33,7 @@ var searchData=
   ['hashingstream',['HashingStream',['../structstxxl_1_1hash__map_1_1hash__map_1_1HashingStream.html',1,'stxxl::hash_map::hash_map']]],
   ['hashingstream',['HashingStream',['../structstxxl_1_1hash__map_1_1hash__map_1_1HashingStream.html#add65eeadc50512429d3482f9854d5119',1,'stxxl::hash_map::hash_map::HashingStream']]],
   ['head_5fswitch_5ftime',['head_switch_time',['../classstxxl_1_1simdisk__geometry.html#af567efdd92eb8a01678362c6fc504fbd',1,'stxxl::simdisk_geometry']]],
-  ['heap',['heap',['../classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#aa65c825f5d3ca2f8861cdca090367102',1,'stxxl::priority_queue_local::internal_priority_queue']]],
+  ['heap',['heap',['../classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html#a688bc78e9e597cb7dab429eb5d76c3b8',1,'stxxl::priority_queue_local::internal_priority_queue']]],
   ['height',['height',['../classstxxl_1_1swappable__block__matrix.html#a06476dd8702d7ad135bb1f4da6452ec0',1,'stxxl::swappable_block_matrix::height()'],['../classstxxl_1_1matrix.html#af3f7cea43e48a430dc534cc8673f989d',1,'stxxl::matrix::height()']]],
   ['height_5ffrom_5fsupermatrix',['height_from_supermatrix',['../classstxxl_1_1swappable__block__matrix.html#aa4ff2cae6fb3886b897e507017435af8',1,'stxxl::swappable_block_matrix']]],
   ['high',['high',['../classstxxl_1_1uint__pair.html#ad6a2a1eca2878fb3a7b24038d75b35e9',1,'stxxl::uint_pair::high()'],['../uint__types_8h.html#a6055cd14f4a8c0c11f7de8b6183dc441',1,'high():&#160;uint_types.h']]],

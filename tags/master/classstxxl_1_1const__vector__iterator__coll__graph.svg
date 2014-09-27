@@ -19,17 +19,17 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<a xlink:href="classstxxl_1_1double__blocked__index.html" target="_top" xlink:title="stxxl::double_blocked\l_index\&lt; size_type, modulo2,\l modulo1 \&gt;">
-<polygon fill="none" stroke="black" points="686,-346.515 686,-393.515 828,-393.515 828,-346.515 686,-346.515"/>
-<text text-anchor="start" x="694" y="-380.515" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::double_blocked</text>
-<text text-anchor="start" x="694" y="-367.515" font-family="Helvetica,sans-Serif" font-size="10.00">_index&lt; size_type, modulo2,</text>
+<a xlink:href="classstxxl_1_1double__blocked__index.html" target="_top" xlink:title="stxxl::double_blocked\l_index\&lt; SizeType, modulo2,\l modulo1 \&gt;">
+<polygon fill="none" stroke="black" points="686.5,-346.515 686.5,-393.515 827.5,-393.515 827.5,-346.515 686.5,-346.515"/>
+<text text-anchor="start" x="694.5" y="-380.515" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::double_blocked</text>
+<text text-anchor="start" x="694.5" y="-367.515" font-family="Helvetica,sans-Serif" font-size="10.00">_index&lt; SizeType, modulo2,</text>
 <text text-anchor="middle" x="757" y="-354.515" font-family="Helvetica,sans-Serif" font-size="10.00"> modulo1 &gt;</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M838.661,-364.23C869.742,-362.481 905.493,-361.015 938,-361.015 938,-361.015 938,-361.015 1508,-361.015 1563.8,-361.015 1625.3,-344.981 1669.72,-330.387"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="838.091,-360.757 828.311,-364.832 838.498,-367.745 838.091,-360.757"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M838.256,-364.253C869.431,-362.494 905.352,-361.015 938,-361.015 938,-361.015 938,-361.015 1508,-361.015 1563.8,-361.015 1625.3,-344.981 1669.72,-330.387"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="837.657,-360.782 827.877,-364.858 838.064,-367.77 837.657,-360.782"/>
 <text text-anchor="middle" x="1131" y="-365.015" font-family="Helvetica,sans-Serif" font-size="10.00"> offset</text>
 </g>
 <!-- Node3 -->
@@ -42,7 +42,7 @@
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge4" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M393.383,-373.367C473.83,-372.625 604.784,-371.418 685.638,-370.673"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M393.413,-373.366C474.109,-372.623 605.597,-371.411 686.38,-370.666"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="393.313,-369.867 383.346,-373.459 393.378,-376.867 393.313,-369.867"/>
 <text text-anchor="middle" x="474" y="-403.015" font-family="Helvetica,sans-Serif" font-size="10.00"> offset</text>
 <text text-anchor="middle" x="474" y="-390.015" font-family="Helvetica,sans-Serif" font-size="10.00">block1</text>

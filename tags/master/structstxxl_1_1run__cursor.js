@@ -1,8 +1,8 @@
 var structstxxl_1_1run__cursor =
 [
-    [ "run_cursor", "structstxxl_1_1run__cursor.html#a57d349ee34f3e52cc685356cae4b200d", null ],
-    [ "current", "structstxxl_1_1run__cursor.html#ab6aaa9282dc7a4ee293c4831f8d19d79", null ],
-    [ "operator++", "structstxxl_1_1run__cursor.html#a0f341e91bc2d17e2b909cf8267c1d138", null ],
-    [ "buffer", "structstxxl_1_1run__cursor.html#a658093bff1f14db2bd994c1a3dbfae37", null ],
-    [ "pos", "structstxxl_1_1run__cursor.html#af3f0c0076b2df7d1330133e786435b45", null ]
+    [ "run_cursor", "structstxxl_1_1run__cursor.html#aa23a11b705494cac6471dafed48d7dbe", null ],
+    [ "current", "structstxxl_1_1run__cursor.html#ab28537c37a348ac319868d4b0778208e", null ],
+    [ "operator++", "structstxxl_1_1run__cursor.html#a4b62f40ed9c42019ab1860b590dc10bf", null ],
+    [ "buffer", "structstxxl_1_1run__cursor.html#a625a059ed54c0b9102d2021e2d691cc8", null ],
+    [ "pos", "structstxxl_1_1run__cursor.html#afee608f68f882bce48f99c1e08a54085", null ]
 ];

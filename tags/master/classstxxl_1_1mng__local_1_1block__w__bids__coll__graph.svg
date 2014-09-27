@@ -57,14 +57,14 @@
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
 <a xlink:href="structstxxl_1_1BID.html" target="_top" xlink:title="Block identifier class. ">
-<polygon fill="none" stroke="black" points="224.5,-184.5 224.5,-205.5 325.5,-205.5 325.5,-184.5 224.5,-184.5"/>
-<text text-anchor="middle" x="275" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::BID&lt; SIZE &gt;</text>
+<polygon fill="none" stroke="black" points="225,-184.5 225,-205.5 323,-205.5 323,-184.5 225,-184.5"/>
+<text text-anchor="middle" x="274" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::BID&lt; Size &gt;</text>
 </a>
 </g>
 <!-- Node4&#45;&gt;Node10 -->
 <g id="edge22" class="edge"><title>Node4&#45;&gt;Node10</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M208.111,-249.728C224.871,-236.015 247.772,-217.277 261.962,-205.667"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="205.508,-247.335 199.985,-256.376 209.941,-252.753 205.508,-247.335"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M207.871,-249.728C224.441,-236.015 247.081,-217.277 261.11,-205.667"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="205.31,-247.304 199.837,-256.376 209.773,-252.697 205.31,-247.304"/>
 <text text-anchor="middle" x="256" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00"> storage</text>
 </g>
 <!-- Node5 -->
@@ -141,9 +141,9 @@
 </g>
 <!-- Node10&#45;&gt;Node3 -->
 <g id="edge20" class="edge"><title>Node10&#45;&gt;Node3</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M258.58,-176.469C244.876,-161.003 225.821,-139.498 214.515,-126.738"/>
-<polygon fill="orange" stroke="orange" points="256.308,-179.182 265.559,-184.346 261.547,-174.54 256.308,-179.182"/>
-<text text-anchor="middle" x="278.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; raw_size &gt;</text>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M257.815,-176.469C244.307,-161.003 225.523,-139.498 214.379,-126.738"/>
+<polygon fill="orange" stroke="orange" points="255.48,-179.116 264.694,-184.346 260.752,-174.512 255.48,-179.116"/>
+<text text-anchor="middle" x="277.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; raw_size &gt;</text>
 </g>
 </g>
 </svg>

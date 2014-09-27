@@ -179,10 +179,10 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 : <a class="el" href="classstxxl_1_1blocked__index.html#a5184cc7d6656d5ff812a50f0785a158b">stxxl::blocked_index&lt; modulo &gt;</a>
 </li>
 <li>get_block1()
-: <a class="el" href="classstxxl_1_1double__blocked__index.html#a43e72d38d6f56576d9b0b2ef847b9a30">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;</a>
+: <a class="el" href="classstxxl_1_1double__blocked__index.html#a619bd93f6a0638baf8a515ad85a721ff">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;</a>
 </li>
 <li>get_block2()
-: <a class="el" href="classstxxl_1_1double__blocked__index.html#a0c197e17c1d56977c16cf68dca4d53a1">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;</a>
+: <a class="el" href="classstxxl_1_1double__blocked__index.html#aa01703d7cc38af69665431a36fb57886">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;</a>
 </li>
 <li>get_buffer()
 : <a class="el" href="classstxxl_1_1request.html#a8fb42e4e41b6544308705ad46d3368bf">stxxl::request</a>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 , <a class="el" href="classstxxl_1_1request.html#a4aaa51e6fc10bf0c4ad0c9ead76fc796">stxxl::request</a>
 </li>
 <li>get_free_block()
-: <a class="el" href="classstxxl_1_1buffered__writer.html#a384de3dfc0a866db65b2eff265e2c25d">stxxl::buffered_writer&lt; block_type &gt;</a>
+: <a class="el" href="classstxxl_1_1buffered__writer.html#adb9ffac714b50b02461647dd65486879">stxxl::buffered_writer&lt; BlockType &gt;</a>
 </li>
 <li>get_free_bytes()
 : <a class="el" href="classstxxl_1_1block__manager.html#a6510b59afcd11046e4913cf1c1665610">stxxl::block_manager</a>
@@ -300,10 +300,10 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 , <a class="el" href="structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ace34657bbb0c5b056b2f91df45348781">stxxl::matrix_local::feedable_strassen_winograd_block_grained&lt; ValueType, BlockSideLength, 0, AExists, BExists &gt;</a>
 </li>
 <li>get_offset()
-: <a class="el" href="classstxxl_1_1double__blocked__index.html#a19d9bd6e02842cc7f5a7a9c23f350f29">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;</a>
+: <a class="el" href="classstxxl_1_1double__blocked__index.html#a017995e7e4b3dab4946931f89b08b2c8">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;</a>
 , <a class="el" href="classstxxl_1_1request.html#a7c19abdd9cb2f949004a945c44977bb2">stxxl::request</a>
 , <a class="el" href="classstxxl_1_1blocked__index.html#af7246379b1b966bb2fce6cf69d7cec52">stxxl::blocked_index&lt; modulo &gt;</a>
-, <a class="el" href="structstxxl_1_1offset__allocator.html#a3764f40ad1433bd3585f606f2b9599a1">stxxl::offset_allocator&lt; BaseAllocator_ &gt;</a>
+, <a class="el" href="structstxxl_1_1offset__allocator.html#ac11bba4db28803650498016bba631551">stxxl::offset_allocator&lt; BaseAllocator &gt;</a>
 </li>
 <li>get_pio_time()
 : <a class="el" href="classstxxl_1_1stats.html#abdce28e192286595ded24f1763b6dcb9">stxxl::stats</a>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 <li>get_pos()
 : <a class="el" href="classstxxl_1_1matrix__iterator.html#a802ad17cee2e3a7ce771edefa9577ba4">stxxl::matrix_iterator&lt; ValueType, BlockSideLength &gt;</a>
 , <a class="el" href="classstxxl_1_1const__matrix__iterator.html#af80cf2eb164937d7e6493494a599b72b">stxxl::const_matrix_iterator&lt; ValueType, BlockSideLength &gt;</a>
-, <a class="el" href="classstxxl_1_1double__blocked__index.html#ab05fa716e2edf7fa6a8acd005601d6b5">stxxl::double_blocked_index&lt; size_type, modulo2, modulo1 &gt;</a>
+, <a class="el" href="classstxxl_1_1double__blocked__index.html#a1c1b5ebc244863937b0c69d22ed5b1a5">stxxl::double_blocked_index&lt; SizeType, modulo2, modulo1 &gt;</a>
 </li>
 <li>get_pread_time()
 : <a class="el" href="classstxxl_1_1stats.html#a10648eb5c1db24394343bdde21581eae">stxxl::stats</a>
@@ -452,10 +452,10 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:09:59 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:10:04 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

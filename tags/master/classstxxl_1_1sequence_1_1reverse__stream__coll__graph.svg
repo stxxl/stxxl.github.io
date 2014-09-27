@@ -292,13 +292,13 @@
 <!-- Node25 -->
 <g id="node61" class="node"><title>Node25</title>
 <a xlink:href="structstxxl_1_1BID.html" target="_top" xlink:title="Block identifier class. ">
-<polygon fill="none" stroke="black" points="1001.5,-282.5 1001.5,-303.5 1102.5,-303.5 1102.5,-282.5 1001.5,-282.5"/>
-<text text-anchor="middle" x="1052" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::BID&lt; SIZE &gt;</text>
+<polygon fill="none" stroke="black" points="1003,-282.5 1003,-303.5 1101,-303.5 1101,-282.5 1003,-282.5"/>
+<text text-anchor="middle" x="1052" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::BID&lt; Size &gt;</text>
 </a>
 </g>
 <!-- Node14&#45;&gt;Node25 -->
 <g id="edge76" class="edge"><title>Node14&#45;&gt;Node25</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M907.859,-305.021C919.805,-301.001 933.305,-297.13 946,-295 963.88,-292 983.694,-291.012 1001.31,-290.933"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M907.859,-305.021C919.805,-301.001 933.305,-297.13 946,-295 964.425,-291.909 984.902,-290.954 1002.91,-290.928"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="906.518,-301.782 898.243,-308.398 908.837,-308.387 906.518,-301.782"/>
 <text text-anchor="middle" x="964" y="-299" font-family="Helvetica,sans-Serif" font-size="10.00"> storage</text>
 </g>
@@ -465,8 +465,8 @@
 </g>
 <!-- Node25&#45;&gt;Node24 -->
 <g id="edge74" class="edge"><title>Node25&#45;&gt;Node24</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M1112.5,-280.996C1137.17,-276.077 1165.96,-270.304 1192,-265 1202.11,-262.94 1212.93,-260.715 1223.27,-258.575"/>
-<polygon fill="orange" stroke="orange" points="1111.69,-277.59 1102.56,-282.977 1113.05,-284.455 1111.69,-277.59"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M1111.29,-281.237C1136.22,-276.266 1165.53,-270.391 1192,-265 1202.11,-262.94 1212.93,-260.715 1223.27,-258.575"/>
+<polygon fill="orange" stroke="orange" points="1110.38,-277.85 1101.26,-283.236 1111.75,-284.715 1110.38,-277.85"/>
 <text text-anchor="middle" x="1157" y="-282" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; raw_size &gt;</text>
 </g>
 <!-- Node26&#45;&gt;Node22 -->

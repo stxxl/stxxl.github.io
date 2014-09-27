@@ -1,6 +1,6 @@
-<map id="stxxl::buf_istream&lt; BlockType, BIDIteratorType &gt;" name="stxxl::buf_istream&lt; BlockType, BIDIteratorType &gt;">
+<map id="stxxl::buf_istream&lt; BlockType, BidIteratorType &gt;" name="stxxl::buf_istream&lt; BlockType, BidIteratorType &gt;">
 <area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="13,261,144,291"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1block__prefetcher.html" title="Encapsulates asynchronous prefetching engine. " alt="" coords="961,169,1129,233"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1block__prefetcher.html" title="Encapsulates asynchronous prefetching engine. " alt="" coords="960,178,1165,225"/>
 <area shape="rect" id="node11" href="$classstxxl_1_1onoff__switch.html" title="stxxl::onoff_switch" alt="" coords="673,289,804,319"/>
 <area shape="rect" id="node14" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="352,261,445,291"/>
 <area shape="rect" id="node17" href="$classstxxl_1_1condition__variable.html" title="stxxl::condition_variable" alt="" coords="317,315,480,344"/>

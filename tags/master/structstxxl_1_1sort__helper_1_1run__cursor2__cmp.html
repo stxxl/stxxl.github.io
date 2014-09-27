@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>STXXL: stxxl::sort_helper::run_cursor2_cmp&lt; block_type, prefetcher_type, value_cmp &gt; Struct Template Reference</title>
+<title>STXXL: stxxl::sort_helper::run_cursor2_cmp&lt; BlockType, PrefetcherType, ValueCmp &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -114,69 +114,123 @@ $(document).ready(function(){initNavTree('structstxxl_1_1sort__helper_1_1run__cu
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::sort_helper::run_cursor2_cmp&lt; block_type, prefetcher_type, value_cmp &gt; Struct Template Reference</div>  </div>
+<div class="title">stxxl::sort_helper::run_cursor2_cmp&lt; BlockType, PrefetcherType, ValueCmp &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename block_type, typename prefetcher_type, typename value_cmp&gt;<br/>
-struct stxxl::sort_helper::run_cursor2_cmp&lt; block_type, prefetcher_type, value_cmp &gt;</h3>
+<div class="textblock"><h3>template&lt;typename BlockType, typename PrefetcherType, typename ValueCmp&gt;<br/>
+struct stxxl::sort_helper::run_cursor2_cmp&lt; BlockType, PrefetcherType, ValueCmp &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00068">68</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00069">69</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
 </div>
-<p>Inherits binary_function&lt; run_cursor2&lt; block_type, prefetcher_type &gt;, run_cursor2&lt; block_type, prefetcher_type &gt;, bool &gt;.</p>
+<p>Inherits binary_function&lt; run_cursor2&lt; BlockType, PrefetcherType &gt;, run_cursor2&lt; BlockType, PrefetcherType &gt;, bool &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abb64d0f5fc7adf8d072b14262bb78c01"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1run__cursor2.html">run_cursor2</a><br class="typebreak"/>
-&lt; block_type, prefetcher_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#abb64d0f5fc7adf8d072b14262bb78c01">cursor_type</a></td></tr>
-<tr class="separator:abb64d0f5fc7adf8d072b14262bb78c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e41556d4e64faaefe57d81ae387e27"><td class="memItemLeft" align="right" valign="top">typedef BlockType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a34e41556d4e64faaefe57d81ae387e27">block_type</a></td></tr>
+<tr class="separator:a34e41556d4e64faaefe57d81ae387e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42042c990e2a64b56719ecf23bbdd68d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1run__cursor2.html">run_cursor2</a><br class="typebreak"/>
+&lt; <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a34e41556d4e64faaefe57d81ae387e27">block_type</a>, <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ac597f0ef2582519472b548938aafe5da">prefetcher_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a42042c990e2a64b56719ecf23bbdd68d">cursor_type</a></td></tr>
+<tr class="separator:a42042c990e2a64b56719ecf23bbdd68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac597f0ef2582519472b548938aafe5da"><td class="memItemLeft" align="right" valign="top">typedef PrefetcherType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ac597f0ef2582519472b548938aafe5da">prefetcher_type</a></td></tr>
+<tr class="separator:ac597f0ef2582519472b548938aafe5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b8f057bb6f0581d2667c2a108dcde2"><td class="memItemLeft" align="right" valign="top">typedef ValueCmp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ab9b8f057bb6f0581d2667c2a108dcde2">value_cmp</a></td></tr>
+<tr class="separator:ab9b8f057bb6f0581d2667c2a108dcde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3286f481f73fd0ee5c721a0ac53ad31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#aa3286f481f73fd0ee5c721a0ac53ad31">run_cursor2_cmp</a> (value_cmp c)</td></tr>
-<tr class="separator:aa3286f481f73fd0ee5c721a0ac53ad31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17a4d9f7e19617bac5b192454a3c9c51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a17a4d9f7e19617bac5b192454a3c9c51">run_cursor2_cmp</a> (const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a> &amp;a)</td></tr>
-<tr class="separator:a17a4d9f7e19617bac5b192454a3c9c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bcc9b3d767ad3343c5f6552a3b00974"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a2bcc9b3d767ad3343c5f6552a3b00974">operator()</a> (const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#abb64d0f5fc7adf8d072b14262bb78c01">cursor_type</a> &amp;a, const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#abb64d0f5fc7adf8d072b14262bb78c01">cursor_type</a> &amp;b) const </td></tr>
-<tr class="separator:a2bcc9b3d767ad3343c5f6552a3b00974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8c7460eb99858ed4b81354dcd191f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#aab8c7460eb99858ed4b81354dcd191f6">run_cursor2_cmp</a> (<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ab9b8f057bb6f0581d2667c2a108dcde2">value_cmp</a> c)</td></tr>
+<tr class="separator:aab8c7460eb99858ed4b81354dcd191f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa17a642fde82bf8dbee011b079cd37c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#afa17a642fde82bf8dbee011b079cd37c">run_cursor2_cmp</a> (const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a> &amp;a)</td></tr>
+<tr class="separator:afa17a642fde82bf8dbee011b079cd37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4c1d782bc2f88856fa31a92e2a1ae2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a7d4c1d782bc2f88856fa31a92e2a1ae2">operator()</a> (const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a42042c990e2a64b56719ecf23bbdd68d">cursor_type</a> &amp;a, const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a42042c990e2a64b56719ecf23bbdd68d">cursor_type</a> &amp;b) const </td></tr>
+<tr class="separator:a7d4c1d782bc2f88856fa31a92e2a1ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4a962924ea4d6946f5f843a4c89687e0"><td class="memItemLeft" align="right" valign="top">value_cmp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a4a962924ea4d6946f5f843a4c89687e0">cmp</a></td></tr>
-<tr class="separator:a4a962924ea4d6946f5f843a4c89687e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1200feaa585c637c0014c371308eb45e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ab9b8f057bb6f0581d2667c2a108dcde2">value_cmp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a1200feaa585c637c0014c371308eb45e">cmp</a></td></tr>
+<tr class="separator:a1200feaa585c637c0014c371308eb45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="abb64d0f5fc7adf8d072b14262bb78c01"></a>
+<a class="anchor" id="a34e41556d4e64faaefe57d81ae387e27"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type , typename prefetcher_type , typename value_cmp &gt; </div>
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1run__cursor2.html">run_cursor2</a>&lt;block_type, prefetcher_type&gt; <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; block_type, prefetcher_type, value_cmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#abb64d0f5fc7adf8d072b14262bb78c01">cursor_type</a></td>
+          <td class="memname">typedef BlockType <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a34e41556d4e64faaefe57d81ae387e27">block_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00070">70</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00076">76</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42042c990e2a64b56719ecf23bbdd68d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1run__cursor2.html">run_cursor2</a>&lt;<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a34e41556d4e64faaefe57d81ae387e27">block_type</a>, <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ac597f0ef2582519472b548938aafe5da">prefetcher_type</a>&gt; <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a42042c990e2a64b56719ecf23bbdd68d">cursor_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00080">80</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac597f0ef2582519472b548938aafe5da"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef PrefetcherType <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ac597f0ef2582519472b548938aafe5da">prefetcher_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00077">77</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9b8f057bb6f0581d2667c2a108dcde2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ValueCmp <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ab9b8f057bb6f0581d2667c2a108dcde2">value_cmp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00078">78</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa3286f481f73fd0ee5c721a0ac53ad31"></a>
+<a class="anchor" id="aab8c7460eb99858ed4b81354dcd191f6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type , typename prefetcher_type , typename value_cmp &gt; </div>
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; block_type, prefetcher_type, value_cmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a> </td>
+          <td class="memname"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a> </td>
           <td>(</td>
-          <td class="paramtype">value_cmp&#160;</td>
+          <td class="paramtype"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ab9b8f057bb6f0581d2667c2a108dcde2">value_cmp</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -188,23 +242,23 @@ template&lt;typename block_type , typename prefetcher_type , typename value_cmp 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00073">73</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00083">83</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a17a4d9f7e19617bac5b192454a3c9c51"></a>
+<a class="anchor" id="afa17a642fde82bf8dbee011b079cd37c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type , typename prefetcher_type , typename value_cmp &gt; </div>
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; block_type, prefetcher_type, value_cmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a> </td>
+          <td class="memname"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::<a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a>&lt; block_type, prefetcher_type, value_cmp &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>
@@ -216,30 +270,30 @@ template&lt;typename block_type , typename prefetcher_type , typename value_cmp 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00074">74</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00084">84</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2bcc9b3d767ad3343c5f6552a3b00974"></a>
+<a class="anchor" id="a7d4c1d782bc2f88856fa31a92e2a1ae2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type , typename prefetcher_type , typename value_cmp &gt; </div>
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; block_type, prefetcher_type, value_cmp &gt;::operator() </td>
+          <td class="memname">bool <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#abb64d0f5fc7adf8d072b14262bb78c01">cursor_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a42042c990e2a64b56719ecf23bbdd68d">cursor_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#abb64d0f5fc7adf8d072b14262bb78c01">cursor_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#a42042c990e2a64b56719ecf23bbdd68d">cursor_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -255,26 +309,26 @@ template&lt;typename block_type , typename prefetcher_type , typename value_cmp 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00075">75</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00085">85</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
 
-<p>References <a class="el" href="run__cursor_8h_source.html#l00030">stxxl::run_cursor&lt; block_type &gt;::current()</a>, <a class="el" href="run__cursor_8h_source.html#l00084">stxxl::run_cursor2&lt; block_type, prefetcher_type_ &gt;::empty()</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
+<p>References <a class="el" href="run__cursor_8h_source.html#l00030">stxxl::run_cursor&lt; BlockType &gt;::current()</a>, <a class="el" href="run__cursor_8h_source.html#l00085">stxxl::run_cursor2&lt; BlockType, PrefetcherType &gt;::empty()</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4a962924ea4d6946f5f843a4c89687e0"></a>
+<a class="anchor" id="a1200feaa585c637c0014c371308eb45e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename block_type , typename prefetcher_type , typename value_cmp &gt; </div>
+template&lt;typename BlockType , typename PrefetcherType , typename ValueCmp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">value_cmp <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; block_type, prefetcher_type, value_cmp &gt;::cmp</td>
+          <td class="memname"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html#ab9b8f057bb6f0581d2667c2a108dcde2">value_cmp</a> <a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a>&lt; BlockType, PrefetcherType, ValueCmp &gt;::cmp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00071">71</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__helper_8h_source.html#l00081">81</a> of file <a class="el" href="sort__helper_8h_source.html">sort_helper.h</a>.</p>
 
 </div>
 </div>
@@ -287,10 +341,10 @@ template&lt;typename block_type , typename prefetcher_type , typename value_cmp 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1sort__helper.html">sort_helper</a></li><li class="navelem"><a class="el" href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">run_cursor2_cmp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:32 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:04:37 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -7,7 +7,7 @@ var classstxxl_1_1mng__local_1_1element__block =
     [ "reference", "classstxxl_1_1mng__local_1_1element__block.html#a5a957bc5ec55a0d3e1f9cc6cdefb634e", null ],
     [ "type", "classstxxl_1_1mng__local_1_1element__block.html#a2e3a5abe7c6a3500db626c488af52625", null ],
     [ "value_type", "classstxxl_1_1mng__local_1_1element__block.html#a93e0c0a7f2dcf75224b3588afe3ca00d", null ],
-    [ "size", "classstxxl_1_1mng__local_1_1element__block.html#a81c18f9e2c77042121317b59f9bdb280acb96152ef27e80bd7eee418960c7221d", null ],
+    [ "size", "classstxxl_1_1mng__local_1_1element__block.html#a07064e4000701c6a0ff8992215d7cae1acb96152ef27e80bd7eee418960c7221d", null ],
     [ "element_block", "classstxxl_1_1mng__local_1_1element__block.html#a09214a09cd2e6035bbe2ff2cdd0ded8f", null ],
     [ "begin", "classstxxl_1_1mng__local_1_1element__block.html#a79c34073a8f09bc4badf45513d75296e", null ],
     [ "begin", "classstxxl_1_1mng__local_1_1element__block.html#a0f7159cebf439ca051fa1fbe1cc7149c", null ],

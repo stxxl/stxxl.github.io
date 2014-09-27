@@ -1,8 +1,8 @@
 var structstxxl_1_1stable__ksort__local_1_1type__key =
 [
-    [ "key_type", "structstxxl_1_1stable__ksort__local_1_1type__key.html#a3dd05fafc9fc075f6029b295bd35667a", null ],
-    [ "type_key", "structstxxl_1_1stable__ksort__local_1_1type__key.html#ac42e9d32ce27d3d4204e12722884fa03", null ],
-    [ "type_key", "structstxxl_1_1stable__ksort__local_1_1type__key.html#a093e38d4ab7d9f2b6864fc27fbbd36ad", null ],
-    [ "key", "structstxxl_1_1stable__ksort__local_1_1type__key.html#af6421da8353632cad9b29099bcd35b03", null ],
-    [ "ptr", "structstxxl_1_1stable__ksort__local_1_1type__key.html#a65ac327e02fa1e214464cab5788c64ec", null ]
+    [ "key_type", "structstxxl_1_1stable__ksort__local_1_1type__key.html#a113198a7ec0fd66413765c0a7978387e", null ],
+    [ "type_key", "structstxxl_1_1stable__ksort__local_1_1type__key.html#a1fb07b13652ac21ee65190bf45276255", null ],
+    [ "type_key", "structstxxl_1_1stable__ksort__local_1_1type__key.html#abad8397c52d1fa9d8b5991282a398489", null ],
+    [ "key", "structstxxl_1_1stable__ksort__local_1_1type__key.html#a16c044143945f5ff7cbe96166bf409ae", null ],
+    [ "ptr", "structstxxl_1_1stable__ksort__local_1_1type__key.html#aadda55e58f5a79ffb6f10a4e51cb4284", null ]
 ];

@@ -132,7 +132,7 @@ class stxxl::addressable_priority_queue&lt; KeyType, PriorityType, Cmp &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00108">108</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00112">112</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::addressable_priority_queue&lt; KeyType, PriorityType, Cmp &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -149,9 +149,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a58cda55c6ca82375bb188ecfe46b782a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1addressable__priority__queue.html#a2a1f2778db36d07d95a515d3b6c409d6">meta_iter_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a">handle</a></td></tr>
-<tr class="memdesc:a58cda55c6ca82375bb188ecfe46b782a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of handle to an entry. For use with insert and remove.  <a href="#a58cda55c6ca82375bb188ecfe46b782a">More...</a><br/></td></tr>
-<tr class="separator:a58cda55c6ca82375bb188ecfe46b782a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2b6c3f3f80a7e0db532faf651f9e5d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1addressable__priority__queue.html#acc6327a01dd322021e04e0ca3b6469f4">meta_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d">handle</a></td></tr>
+<tr class="memdesc:aef2b6c3f3f80a7e0db532faf651f9e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of handle to an entry. For use with insert and remove.  <a href="#aef2b6c3f3f80a7e0db532faf651f9e5d">More...</a><br/></td></tr>
+<tr class="separator:aef2b6c3f3f80a7e0db532faf651f9e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -166,10 +166,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b4284dce21eb5b263560e598be70300"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a4b4284dce21eb5b263560e598be70300">erase</a> (const KeyType &amp;e)</td></tr>
 <tr class="memdesc:a4b4284dce21eb5b263560e598be70300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase element from the queue.  <a href="#a4b4284dce21eb5b263560e598be70300">More...</a><br/></td></tr>
 <tr class="separator:a4b4284dce21eb5b263560e598be70300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736b230cf8e194328296783439351d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a736b230cf8e194328296783439351d82">erase</a> (<a class="el" href="classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a">handle</a> i)</td></tr>
+<tr class="memitem:a736b230cf8e194328296783439351d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a736b230cf8e194328296783439351d82">erase</a> (<a class="el" href="classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d">handle</a> i)</td></tr>
 <tr class="memdesc:a736b230cf8e194328296783439351d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase element from the queue.  <a href="#a736b230cf8e194328296783439351d82">More...</a><br/></td></tr>
 <tr class="separator:a736b230cf8e194328296783439351d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc4085b43ff8bb6d10024e479605102"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a">handle</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#aefc4085b43ff8bb6d10024e479605102">insert</a> (const KeyType &amp;e, const PriorityType o)</td></tr>
+<tr class="memitem:aefc4085b43ff8bb6d10024e479605102"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d">handle</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#aefc4085b43ff8bb6d10024e479605102">insert</a> (const KeyType &amp;e, const PriorityType o)</td></tr>
 <tr class="memdesc:aefc4085b43ff8bb6d10024e479605102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert new element. If the element is already in, it's priority is updated.  <a href="#aefc4085b43ff8bb6d10024e479605102">More...</a><br/></td></tr>
 <tr class="separator:aefc4085b43ff8bb6d10024e479605102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5d462919ade6a93ac58bbc207cccbf0"><td class="memItemLeft" align="right" valign="top">KeyType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#ac5d462919ade6a93ac58bbc207cccbf0">pop</a> ()</td></tr>
@@ -181,26 +181,26 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:af272577ebdd868ccc9a3d14f7eacfff1"><td class="memItemLeft" align="right" valign="top">typedef container_t::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#af272577ebdd868ccc9a3d14f7eacfff1">container_iter_t</a></td></tr>
-<tr class="separator:af272577ebdd868ccc9a3d14f7eacfff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae134cabc4e52f8ec2d0997357580b183"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; std::pair<br class="typebreak"/>
-&lt; PriorityType, KeyType &gt;, <a class="el" href="structstxxl_1_1addressable__priority__queue_1_1cmp.html">cmp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#ae134cabc4e52f8ec2d0997357580b183">container_t</a></td></tr>
-<tr class="separator:ae134cabc4e52f8ec2d0997357580b183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a1f2778db36d07d95a515d3b6c409d6"><td class="memItemLeft" align="right" valign="top">typedef meta_t::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a2a1f2778db36d07d95a515d3b6c409d6">meta_iter_t</a></td></tr>
-<tr class="separator:a2a1f2778db36d07d95a515d3b6c409d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801c9106f4c7665281e20a6157df5f47"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; KeyType, <br class="typebreak"/>
-<a class="el" href="classstxxl_1_1addressable__priority__queue.html#af272577ebdd868ccc9a3d14f7eacfff1">container_iter_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a801c9106f4c7665281e20a6157df5f47">meta_t</a></td></tr>
-<tr class="separator:a801c9106f4c7665281e20a6157df5f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec43cd2c127101236b5557a80f9a2f02"><td class="memItemLeft" align="right" valign="top">typedef container_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#aec43cd2c127101236b5557a80f9a2f02">container_iterator</a></td></tr>
+<tr class="separator:aec43cd2c127101236b5557a80f9a2f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe27e9124793158ff4418a2d7728b7c9"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; std::pair<br class="typebreak"/>
+&lt; PriorityType, KeyType &gt;, <a class="el" href="structstxxl_1_1addressable__priority__queue_1_1cmp.html">cmp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#abe27e9124793158ff4418a2d7728b7c9">container_type</a></td></tr>
+<tr class="separator:abe27e9124793158ff4418a2d7728b7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6327a01dd322021e04e0ca3b6469f4"><td class="memItemLeft" align="right" valign="top">typedef meta_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#acc6327a01dd322021e04e0ca3b6469f4">meta_iterator</a></td></tr>
+<tr class="separator:acc6327a01dd322021e04e0ca3b6469f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cab4962832d4e8f87d19e8c2e419d91"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; KeyType, <br class="typebreak"/>
+<a class="el" href="classstxxl_1_1addressable__priority__queue.html#aec43cd2c127101236b5557a80f9a2f02">container_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a9cab4962832d4e8f87d19e8c2e419d91">meta_type</a></td></tr>
+<tr class="separator:a9cab4962832d4e8f87d19e8c2e419d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9a5a2be5d7c656c302a124e243fd67fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a801c9106f4c7665281e20a6157df5f47">meta_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a9a5a2be5d7c656c302a124e243fd67fa">meta</a></td></tr>
-<tr class="separator:a9a5a2be5d7c656c302a124e243fd67fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45b590e286817a92edaa3914b134355"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#ae134cabc4e52f8ec2d0997357580b183">container_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#aa45b590e286817a92edaa3914b134355">vals</a></td></tr>
-<tr class="separator:aa45b590e286817a92edaa3914b134355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785a7d2c97697327352ad480ccbf505a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a9cab4962832d4e8f87d19e8c2e419d91">meta_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a785a7d2c97697327352ad480ccbf505a">meta</a></td></tr>
+<tr class="separator:a785a7d2c97697327352ad480ccbf505a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac654610a9e52c03438d2e7820482ff81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#abe27e9124793158ff4418a2d7728b7c9">container_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#ac654610a9e52c03438d2e7820482ff81">vals</a></td></tr>
+<tr class="separator:ac654610a9e52c03438d2e7820482ff81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="af272577ebdd868ccc9a3d14f7eacfff1"></a>
+<a class="anchor" id="aec43cd2c127101236b5557a80f9a2f02"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -210,7 +210,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef container_t::iterator <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#af272577ebdd868ccc9a3d14f7eacfff1">container_iter_t</a></td>
+          <td class="memname">typedef container_type::iterator <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#aec43cd2c127101236b5557a80f9a2f02">container_iterator</a></td>
         </tr>
       </table>
   </td>
@@ -220,11 +220,11 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00122">122</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00126">126</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae134cabc4e52f8ec2d0997357580b183"></a>
+<a class="anchor" id="abe27e9124793158ff4418a2d7728b7c9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -234,7 +234,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::set&lt;std::pair&lt;PriorityType, KeyType&gt;, <a class="el" href="structstxxl_1_1addressable__priority__queue_1_1cmp.html">cmp</a>&gt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#ae134cabc4e52f8ec2d0997357580b183">container_t</a></td>
+          <td class="memname">typedef std::set&lt;std::pair&lt;PriorityType, KeyType&gt;, <a class="el" href="structstxxl_1_1addressable__priority__queue_1_1cmp.html">cmp</a>&gt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#abe27e9124793158ff4418a2d7728b7c9">container_type</a></td>
         </tr>
       </table>
   </td>
@@ -244,29 +244,29 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00121">121</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00125">125</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a58cda55c6ca82375bb188ecfe46b782a"></a>
+<a class="anchor" id="aef2b6c3f3f80a7e0db532faf651f9e5d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;PriorityType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1addressable__priority__queue.html#a2a1f2778db36d07d95a515d3b6c409d6">meta_iter_t</a> <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a">handle</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1addressable__priority__queue.html#acc6327a01dd322021e04e0ca3b6469f4">meta_iterator</a> <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d">handle</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Type of handle to an entry. For use with insert and remove. </p>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00131">131</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00135">135</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2a1f2778db36d07d95a515d3b6c409d6"></a>
+<a class="anchor" id="acc6327a01dd322021e04e0ca3b6469f4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -276,7 +276,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef meta_t::iterator <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#a2a1f2778db36d07d95a515d3b6c409d6">meta_iter_t</a></td>
+          <td class="memname">typedef meta_type::iterator <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#acc6327a01dd322021e04e0ca3b6469f4">meta_iterator</a></td>
         </tr>
       </table>
   </td>
@@ -286,11 +286,11 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00124">124</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00128">128</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a801c9106f4c7665281e20a6157df5f47"></a>
+<a class="anchor" id="a9cab4962832d4e8f87d19e8c2e419d91"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -300,7 +300,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;KeyType, <a class="el" href="classstxxl_1_1addressable__priority__queue.html#af272577ebdd868ccc9a3d14f7eacfff1">container_iter_t</a>&gt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#a801c9106f4c7665281e20a6157df5f47">meta_t</a></td>
+          <td class="memname">typedef std::map&lt;KeyType, <a class="el" href="classstxxl_1_1addressable__priority__queue.html#aec43cd2c127101236b5557a80f9a2f02">container_iterator</a>&gt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::<a class="el" href="classstxxl_1_1addressable__priority__queue.html#a9cab4962832d4e8f87d19e8c2e419d91">meta_type</a></td>
         </tr>
       </table>
   </td>
@@ -310,7 +310,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00123">123</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00127">127</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 
 <p>Create an empty queue. </p>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00134">134</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00138">138</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00135">135</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00139">139</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +398,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 <p>Check if queue is empty. </p>
 <dl class="section return"><dt>Returns</dt><dd>If queue is empty. </dd></dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00139">139</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00143">143</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If element was in. </dd></dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00162">162</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00166">166</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
         <tr>
           <td class="memname">void <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::erase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a">handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d">handle</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -471,7 +471,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00174">174</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00178">178</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +485,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;<a class="el" href="classstxxl_1_1addressable__priority__queue.html#a58cda55c6ca82375bb188ecfe46b782a">handle</a>, bool&gt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::insert </td>
+          <td class="memname">std::pair&lt;<a class="el" href="classstxxl_1_1addressable__priority__queue.html#aef2b6c3f3f80a7e0db532faf651f9e5d">handle</a>, bool&gt; <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::insert </td>
           <td>(</td>
           <td class="paramtype">const KeyType &amp;&#160;</td>
           <td class="paramname"><em>e</em>, </td>
@@ -519,7 +519,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pair&lt;handle, bool&gt; Iterator to element; if element was newly inserted. </dd></dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00146">146</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00150">150</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +549,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 <p>Remove top (= min) element from the queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>Top element. </dd></dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00187">187</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00191">191</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -579,12 +579,12 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 <p>Access top (= min) element in the queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>Const reference to top element. </dd></dl>
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00182">182</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00186">186</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a9a5a2be5d7c656c302a124e243fd67fa"></a>
+<a class="anchor" id="a785a7d2c97697327352ad480ccbf505a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -594,7 +594,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a801c9106f4c7665281e20a6157df5f47">meta_t</a> <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::meta</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#a9cab4962832d4e8f87d19e8c2e419d91">meta_type</a> <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::meta</td>
         </tr>
       </table>
   </td>
@@ -604,11 +604,11 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00127">127</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00131">131</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa45b590e286817a92edaa3914b134355"></a>
+<a class="anchor" id="ac654610a9e52c03438d2e7820482ff81"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -618,7 +618,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#ae134cabc4e52f8ec2d0997357580b183">container_t</a> <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::vals</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1addressable__priority__queue.html#abe27e9124793158ff4418a2d7728b7c9">container_type</a> <a class="el" href="classstxxl_1_1addressable__priority__queue.html">stxxl::addressable_priority_queue</a>&lt; KeyType, PriorityType, Cmp &gt;::vals</td>
         </tr>
       </table>
   </td>
@@ -628,7 +628,7 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00126">126</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
+<p>Definition at line <a class="el" href="addressable__queues_8h_source.html#l00130">130</a> of file <a class="el" href="addressable__queues_8h_source.html">addressable_queues.h</a>.</p>
 
 </div>
 </div>
@@ -641,10 +641,10 @@ template&lt;typename KeyType, typename PriorityType, class Cmp = std::less&lt;Pr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1addressable__priority__queue.html">addressable_priority_queue</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/20bfe2b82ed20cd37655a3372c03e68da0abb829">STXXL 1.4.0-349-g20bfe2b</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:45 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 23:03:46 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

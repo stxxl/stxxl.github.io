@@ -7,7 +7,7 @@ var classstxxl_1_1read__write__pool =
     [ "write_pool_type", "classstxxl_1_1read__write__pool.html#a4ab6dc7aeed57687ab14775ed9978145", null ],
     [ "read_write_pool", "classstxxl_1_1read__write__pool.html#a1bd25e36d034ee94c7db6649979d3e4e", null ],
     [ "read_write_pool", "classstxxl_1_1read__write__pool.html#a661bad0dad0e0a17eecce1aa943c2a90", null ],
-    [ "~read_write_pool", "classstxxl_1_1read__write__pool.html#a5a4df306eeb73d56ea77cf2e9c520247", null ],
+    [ "~read_write_pool", "classstxxl_1_1read__write__pool.html#ac9508550694ad09660015d024fe6d9dd", null ],
     [ "add", "classstxxl_1_1read__write__pool.html#af935ccc65cfa698941673fc9a4c1e61b", null ],
     [ "hint", "classstxxl_1_1read__write__pool.html#a3a246252364eff94487a6d78b4d45a1f", null ],
     [ "invalidate", "classstxxl_1_1read__write__pool.html#ad88026ed2076f049a6d0b35c6c289222", null ],

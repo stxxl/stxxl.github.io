@@ -1,5 +1,12 @@
 var NAVTREEINDEX22 =
 {
+"structstxxl_1_1ksort__local_1_1write__completion__handler.html#a0dd639603919989aabd25ef5af72722e":[4,0,1,5,4,2],
+"structstxxl_1_1ksort__local_1_1write__completion__handler.html#a15c8eea6b05ff7a65d6f61845435909e":[4,0,1,5,4,0],
+"structstxxl_1_1ksort__local_1_1write__completion__handler.html#aa5d6c037fcba68465a610da8d0ea7fb0":[4,0,1,5,4,1],
+"structstxxl_1_1ksort__local_1_1write__completion__handler.html#af85882f6bbe626194f6ae57679cfc321":[4,0,1,5,4,3],
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html":[4,0,1,6,0],
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html#a0e1396f25d2fed889a8b3eb82ad9a2e2":[4,0,1,6,0,9],
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html#a15c44f0e6a9d22f3b26e2898eab0b859":[4,0,1,6,0,5],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html#a1858338a0adbf30068e13765c735089a":[4,0,1,6,0,32],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html#a18d9b7bdbcafabcba12afe829547c2c7":[4,0,1,6,0,24],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html#a1ccdb1157412133a16c5c8802cb5a925":[4,0,1,6,0,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX22 =
 "structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#a8fb63d6bfa853bb24eae5d09ab375c49":[4,0,1,6,10,0],
 "structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#a93b7f088213ac7c3889a0a1d10968c9a":[4,0,1,6,10,10],
 "structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#a95ca54d756b25cec1f2e254f2563d7ed":[4,0,1,6,10,6],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#a995b620aa57ccd74a6aebbbb149ed188":[4,0,1,6,10,17],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#ab708bced779e950e7eb5172d786c8a76":[4,0,1,6,10,4],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#adafd30d54622df1261223042bc4885e9":[4,0,1,6,10,11],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#ae32e904971d3db7e7630df04e48c9cbc":[4,0,1,6,10,14],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#af2df9947355f2c63b4e007448563990a":[4,0,1,6,10,7],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#afb4e2b28c84ca9adec5d416dcdc5732c":[4,0,1,6,10,2],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree__block__grained.html":[4,0,1,6,11],
-"structstxxl_1_1matrix__local_1_1matrix__to__quadtree__block__grained.html#a03ce42026d3d86a4f4c5863d3b230a0c":[4,0,1,6,11,2]
+"structstxxl_1_1matrix__local_1_1matrix__to__quadtree_3_01ValueType_00_01BlockSideLength_00_010_01_4.html#a995b620aa57ccd74a6aebbbb149ed188":[4,0,1,6,10,17]
 };
