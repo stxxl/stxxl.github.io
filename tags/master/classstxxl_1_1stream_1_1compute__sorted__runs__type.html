@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>STXXL: stxxl::stream::compute_sorted_runs_type&lt; ValueType_, BlockSize_ &gt; Class Template Reference</title>
+<title>STXXL: stxxl::stream::compute_sorted_runs_type&lt; ValueType, BlockSize &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -113,54 +113,54 @@ $(document).ready(function(){initNavTree('classstxxl_1_1stream_1_1compute__sorte
 <a href="#pri-types">Private Types</a> &#124;
 <a href="classstxxl_1_1stream_1_1compute__sorted__runs__type-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::stream::compute_sorted_runs_type&lt; ValueType_, BlockSize_ &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__streampack.html">Stream Package</a></div></div>  </div>
+<div class="title">stxxl::stream::compute_sorted_runs_type&lt; ValueType, BlockSize &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__streampack.html">Stream Package</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class ValueType_, unsigned BlockSize_&gt;<br/>
-class stxxl::stream::compute_sorted_runs_type&lt; ValueType_, BlockSize_ &gt;</h3>
+<div class="textblock"><h3>template&lt;class ValueType, unsigned BlockSize&gt;<br/>
+class stxxl::stream::compute_sorted_runs_type&lt; ValueType, BlockSize &gt;</h3>
 
 <p>Computes sorted runs type from value type and block size. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">ValueType_</td><td>type of values ins sorted runs </td></tr>
-    <tr><td class="paramname">BlockSize_</td><td>size of blocks where sorted runs stored </td></tr>
+    <tr><td class="paramname">ValueType</td><td>type of values ins sorted runs </td></tr>
+    <tr><td class="paramname">BlockSize</td><td>size of blocks where sorted runs stored </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01566">1566</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01607">1607</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae522e19d6383fe95ad7bc88b473aee4f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1stream_1_1sorted__runs.html">sorted_runs</a><br class="typebreak"/>
-&lt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a00db1939d7fdf86b58e049eafa8626bf">trigger_entry_type</a>, <br class="typebreak"/>
-std::less&lt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#afba3bc65a159d537759d0a234812629b">value_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#ae522e19d6383fe95ad7bc88b473aee4f">result</a></td></tr>
-<tr class="separator:ae522e19d6383fe95ad7bc88b473aee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f6079f240c210a8c17bc9f74bbe364"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1stream_1_1sorted__runs.html">sorted_runs</a><br class="typebreak"/>
+&lt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#aea6c7f8ff3e5cd41f862622bef79aab5">trigger_entry_type</a>, <br class="typebreak"/>
+std::less&lt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a845c89f268c7203a59e87008261c96bf">value_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a42f6079f240c210a8c17bc9f74bbe364">result</a></td></tr>
+<tr class="separator:a42f6079f240c210a8c17bc9f74bbe364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a7b02a4a7270ac40b4c4ac62b30baa40a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; BlockSize_ &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a7b02a4a7270ac40b4c4ac62b30baa40a">bid_type</a></td></tr>
-<tr class="separator:a7b02a4a7270ac40b4c4ac62b30baa40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00db1939d7fdf86b58e049eafa8626bf"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<tr class="memitem:a80672a21401be78bf3a035063490a39b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; BlockSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a80672a21401be78bf3a035063490a39b">bid_type</a></td></tr>
+<tr class="separator:a80672a21401be78bf3a035063490a39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6c7f8ff3e5cd41f862622bef79aab5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="structstxxl_1_1sort__helper_1_1trigger__entry.html">sort_helper::trigger_entry</a><br class="typebreak"/>
-&lt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a7b02a4a7270ac40b4c4ac62b30baa40a">bid_type</a>, <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#afba3bc65a159d537759d0a234812629b">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a00db1939d7fdf86b58e049eafa8626bf">trigger_entry_type</a></td></tr>
-<tr class="separator:a00db1939d7fdf86b58e049eafa8626bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afba3bc65a159d537759d0a234812629b"><td class="memItemLeft" align="right" valign="top">typedef ValueType_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#afba3bc65a159d537759d0a234812629b">value_type</a></td></tr>
-<tr class="separator:afba3bc65a159d537759d0a234812629b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a80672a21401be78bf3a035063490a39b">bid_type</a>, <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a845c89f268c7203a59e87008261c96bf">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#aea6c7f8ff3e5cd41f862622bef79aab5">trigger_entry_type</a></td></tr>
+<tr class="separator:aea6c7f8ff3e5cd41f862622bef79aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845c89f268c7203a59e87008261c96bf"><td class="memItemLeft" align="right" valign="top">typedef ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a845c89f268c7203a59e87008261c96bf">value_type</a></td></tr>
+<tr class="separator:a845c89f268c7203a59e87008261c96bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a7b02a4a7270ac40b4c4ac62b30baa40a"></a>
+<a class="anchor" id="a80672a21401be78bf3a035063490a39b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
+template&lt;class ValueType , unsigned BlockSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;BlockSize_&gt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType_, BlockSize_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a7b02a4a7270ac40b4c4ac62b30baa40a">bid_type</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;BlockSize&gt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType, BlockSize &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a80672a21401be78bf3a035063490a39b">bid_type</a></td>
         </tr>
       </table>
   </td>
@@ -170,37 +170,37 @@ template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01569">1569</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01610">1610</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae522e19d6383fe95ad7bc88b473aee4f"></a>
+<a class="anchor" id="a42f6079f240c210a8c17bc9f74bbe364"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
+template&lt;class ValueType , unsigned BlockSize&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1stream_1_1sorted__runs.html">sorted_runs</a>&lt;<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a00db1939d7fdf86b58e049eafa8626bf">trigger_entry_type</a>, std::less&lt;<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#afba3bc65a159d537759d0a234812629b">value_type</a>&gt; &gt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType_, BlockSize_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#ae522e19d6383fe95ad7bc88b473aee4f">result</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1stream_1_1sorted__runs.html">sorted_runs</a>&lt;<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#aea6c7f8ff3e5cd41f862622bef79aab5">trigger_entry_type</a>, std::less&lt;<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a845c89f268c7203a59e87008261c96bf">value_type</a>&gt; &gt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType, BlockSize &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a42f6079f240c210a8c17bc9f74bbe364">result</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01573">1573</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01614">1614</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a00db1939d7fdf86b58e049eafa8626bf"></a>
+<a class="anchor" id="aea6c7f8ff3e5cd41f862622bef79aab5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
+template&lt;class ValueType , unsigned BlockSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1sort__helper_1_1trigger__entry.html">sort_helper::trigger_entry</a>&lt;<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a7b02a4a7270ac40b4c4ac62b30baa40a">bid_type</a>, <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#afba3bc65a159d537759d0a234812629b">value_type</a>&gt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType_, BlockSize_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a00db1939d7fdf86b58e049eafa8626bf">trigger_entry_type</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1sort__helper_1_1trigger__entry.html">sort_helper::trigger_entry</a>&lt;<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a80672a21401be78bf3a035063490a39b">bid_type</a>, <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a845c89f268c7203a59e87008261c96bf">value_type</a>&gt; <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType, BlockSize &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#aea6c7f8ff3e5cd41f862622bef79aab5">trigger_entry_type</a></td>
         </tr>
       </table>
   </td>
@@ -210,21 +210,21 @@ template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01570">1570</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01611">1611</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afba3bc65a159d537759d0a234812629b"></a>
+<a class="anchor" id="a845c89f268c7203a59e87008261c96bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
+template&lt;class ValueType , unsigned BlockSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef ValueType_ <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType_, BlockSize_ &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#afba3bc65a159d537759d0a234812629b">value_type</a></td>
+          <td class="memname">typedef ValueType <a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">stxxl::stream::compute_sorted_runs_type</a>&lt; ValueType, BlockSize &gt;::<a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html#a845c89f268c7203a59e87008261c96bf">value_type</a></td>
         </tr>
       </table>
   </td>
@@ -234,7 +234,7 @@ template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01568">1568</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01609">1609</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
 </div>
 </div>
@@ -247,10 +247,10 @@ template&lt;class ValueType_ , unsigned BlockSize_&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1stream.html">stream</a></li><li class="navelem"><a class="el" href="classstxxl_1_1stream_1_1compute__sorted__runs__type.html">compute_sorted_runs_type</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:04:09 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:35 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

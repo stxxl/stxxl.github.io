@@ -22,9 +22,9 @@ var classstxxl_1_1vector =
     [ "reverse_iterator", "classstxxl_1_1vector.html#a9a58b596db3d5d3e2928d08a35f20c48", null ],
     [ "size_type", "classstxxl_1_1vector.html#a3482fa22dbaa46d74b02d3d74da9cf28", null ],
     [ "value_type", "classstxxl_1_1vector.html#a590e6a215e6a89c11706304482eb3c63", null ],
-    [ "valid_on_disk", "classstxxl_1_1vector.html#aaab9a7580f09aba5b60f43bb033afd4eac3289e7cf5be7d63878b93df459f4525", null ],
-    [ "uninitialized", "classstxxl_1_1vector.html#aaab9a7580f09aba5b60f43bb033afd4ea643b4de426a8ff066aa8085242e5dd02", null ],
-    [ "dirty", "classstxxl_1_1vector.html#aaab9a7580f09aba5b60f43bb033afd4ea0e607a9f6bbf6708f75f19417b2005f3", null ],
+    [ "valid_on_disk", "classstxxl_1_1vector.html#a37bfd920dab968652c6c33f28e433379ac3289e7cf5be7d63878b93df459f4525", null ],
+    [ "uninitialized", "classstxxl_1_1vector.html#a37bfd920dab968652c6c33f28e433379a643b4de426a8ff066aa8085242e5dd02", null ],
+    [ "dirty", "classstxxl_1_1vector.html#a37bfd920dab968652c6c33f28e433379a0e607a9f6bbf6708f75f19417b2005f3", null ],
     [ "constants", "classstxxl_1_1vector.html#aa4c379b5d2bd26fdd36a45e02971486d", [
       [ "block_size", "classstxxl_1_1vector.html#aa4c379b5d2bd26fdd36a45e02971486da15afebf46977edf8bce8a2a44bdd74ce", null ],
       [ "page_size", "classstxxl_1_1vector.html#aa4c379b5d2bd26fdd36a45e02971486da34a0913b0292e09c9d9048ab2e094b6a", null ],

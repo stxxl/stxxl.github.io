@@ -1,6 +1,7 @@
 var dir_5a7933e30a367341f12be4470fbf844e =
 [
     [ "btree", "dir_eac0ba65acf79d7954208118b5464492.html", "dir_eac0ba65acf79d7954208118b5464492" ],
+    [ "hash_map", "dir_21a77c7b6e5d6985a17421d26101bb1e.html", "dir_21a77c7b6e5d6985a17421d26101bb1e" ],
     [ "deque.h", "deque_8h.html", "deque_8h" ],
     [ "map.h", "map_8h.html", "map_8h" ],
     [ "matrix.h", "matrix_8h.html", null ],
@@ -22,5 +23,6 @@ var dir_5a7933e30a367341f12be4470fbf844e =
     [ "sequence.h", "sequence_8h.html", "sequence_8h" ],
     [ "sorter.h", "sorter_8h.html", "sorter_8h" ],
     [ "stack.h", "stack_8h.html", "stack_8h" ],
+    [ "unordered_map.h", "unordered__map_8h.html", "unordered__map_8h" ],
     [ "vector.h", "vector_8h.html", "vector_8h" ]
 ];

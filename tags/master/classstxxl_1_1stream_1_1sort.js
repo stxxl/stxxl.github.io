@@ -1,14 +1,15 @@
 var classstxxl_1_1stream_1_1sort =
 [
-    [ "runs_merger_type", "classstxxl_1_1stream_1_1sort.html#a5d15ec25fa48fc60559581288dfa4078", null ],
-    [ "sorted_runs_type", "classstxxl_1_1stream_1_1sort.html#ae1f80d37cfefd614b5870f2e97d676f7", null ],
-    [ "value_type", "classstxxl_1_1stream_1_1sort.html#ae15d719fa80504f8d2b78f32f5449d53", null ],
-    [ "sort", "classstxxl_1_1stream_1_1sort.html#ae53b3668e064a49f0cd1371b6be1a1f3", null ],
-    [ "sort", "classstxxl_1_1stream_1_1sort.html#a561cf20128e8e18f657f1b4fc002a135", null ],
-    [ "empty", "classstxxl_1_1stream_1_1sort.html#ab7e16b7571268b1804d62776b406d072", null ],
-    [ "operator*", "classstxxl_1_1stream_1_1sort.html#aa5455caca818f7344446f847c9692aae", null ],
-    [ "operator++", "classstxxl_1_1stream_1_1sort.html#a421a90cc34727acacd1b49d8f4c29bef", null ],
-    [ "operator->", "classstxxl_1_1stream_1_1sort.html#a4c69eee7c19ef452b5718452adabbf8b", null ],
-    [ "creator", "classstxxl_1_1stream_1_1sort.html#a0e62d2fe65ae031a6190b2d34a74de6d", null ],
-    [ "merger", "classstxxl_1_1stream_1_1sort.html#a4e03ab4c3c8d0bbb778f9e69d42267f9", null ]
+    [ "runs_creator_type", "classstxxl_1_1stream_1_1sort.html#adf6dce2541bd7efd981afe970450cc30", null ],
+    [ "runs_merger_type", "classstxxl_1_1stream_1_1sort.html#ad7a29e231fb1b282b97ec44f246beed7", null ],
+    [ "sorted_runs_type", "classstxxl_1_1stream_1_1sort.html#af216bc4db1b09902a390bb8972b087a8", null ],
+    [ "value_type", "classstxxl_1_1stream_1_1sort.html#a5b9c7eb31a46cff6e755d7e082fce94b", null ],
+    [ "sort", "classstxxl_1_1stream_1_1sort.html#a45e342aa39d7313a40ee09675eadfe04", null ],
+    [ "sort", "classstxxl_1_1stream_1_1sort.html#a0d55975ef0dd8c77bf83bf92f3c7545a", null ],
+    [ "empty", "classstxxl_1_1stream_1_1sort.html#a314e4c0bf48a7752e20a0bf2f7abfffc", null ],
+    [ "operator*", "classstxxl_1_1stream_1_1sort.html#a2e9ddf06281c15b4a661577017122094", null ],
+    [ "operator++", "classstxxl_1_1stream_1_1sort.html#ad4088157874679833acd02998d551f30", null ],
+    [ "operator->", "classstxxl_1_1stream_1_1sort.html#a3d2858fe49a0ef4d1842ddea93e9890d", null ],
+    [ "creator", "classstxxl_1_1stream_1_1sort.html#a0650c8d119ac1f714e74994db05ff968", null ],
+    [ "merger", "classstxxl_1_1stream_1_1sort.html#a2895e5258aaeae3f587640d688093a45", null ]
 ];

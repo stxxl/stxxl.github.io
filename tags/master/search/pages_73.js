@@ -23,5 +23,6 @@ var searchData=
   ['stxxl_20sequence',['STXXL Sequence',['../tutorial_sequence.html',1,'tutorial']]],
   ['stxxl_20sorter',['STXXL Sorter',['../tutorial_sorter.html',1,'tutorial']]],
   ['stxxl_20stack',['STXXL Stack',['../tutorial_stack.html',1,'tutorial']]],
+  ['stxxl_20unordered_20map_20_28hash_20map_29',['STXXL Unordered Map (Hash Map)',['../tutorial_unordered_map.html',1,'tutorial']]],
   ['stxxl_20vector',['STXXL Vector',['../tutorial_vector.html',1,'tutorial']]]
 ];

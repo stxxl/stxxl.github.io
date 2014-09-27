@@ -82,3 +82,4 @@
 \form#81:$\mathcal{O}(1)$
 \form#82:$ 7N/DB $
 \form#83:$ 3N/DB $
+\form#84:$ bucket_num = (hash/max_hash)*n_buckets $

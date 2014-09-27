@@ -7,6 +7,7 @@ var tutorial =
     [ "STXXL Queue", "tutorial_queue.html", null ],
     [ "STXXL Deque", "tutorial_deque.html", null ],
     [ "STXXL Map (B+-tree)", "tutorial_map.html", null ],
+    [ "STXXL Unordered Map (Hash Map)", "tutorial_unordered_map.html", null ],
     [ "STXXL Priority Queue", "tutorial_pqueue.html", null ],
     [ "STXXL Matrix", "tutorial_matrix.html", null ],
     [ "STXXL Sorter", "tutorial_sorter.html", null ],

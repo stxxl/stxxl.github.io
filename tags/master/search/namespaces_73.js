@@ -3,6 +3,7 @@ var searchData=
   ['async_5fschedule_5flocal',['async_schedule_local',['../namespacestxxl_1_1async__schedule__local.html',1,'stxxl']]],
   ['btree',['btree',['../namespacestxxl_1_1btree.html',1,'stxxl']]],
   ['compat',['compat',['../namespacestxxl_1_1compat.html',1,'stxxl']]],
+  ['hash_5fmap',['hash_map',['../namespacestxxl_1_1hash__map.html',1,'stxxl']]],
   ['helper',['helper',['../namespacestxxl_1_1helper.html',1,'stxxl']]],
   ['ksort_5flocal',['ksort_local',['../namespacestxxl_1_1ksort__local.html',1,'stxxl']]],
   ['matrix_5flocal',['matrix_local',['../namespacestxxl_1_1matrix__local.html',1,'stxxl']]],

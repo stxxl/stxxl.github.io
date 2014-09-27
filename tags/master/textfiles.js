@@ -5,5 +5,5 @@ var textfiles =
     [ "AUTHORS", "authors.html", null ],
     [ "INSTALL", "textfiles_install.html", null ],
     [ "LICENSE_1_0.txt", "license.html", null ],
-    [ "TODO", "todo.html", null ]
+    [ "TODO", "textfiles_todo.html", null ]
 ];

@@ -174,32 +174,32 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad1541dba42cc0abe22b347fcf45b03df"><td class="memTemplParams" colspan="2">template&lt;class request_iterator_ &gt; </td></tr>
-<tr class="memitem:gad1541dba42cc0abe22b347fcf45b03df"><td class="memTemplItemLeft" align="right" valign="top">std::iterator_traits<br class="typebreak"/>
-&lt; request_iterator_ &gt;<br class="typebreak"/>
-::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#gad1541dba42cc0abe22b347fcf45b03df">stxxl::cancel_all</a> (request_iterator_ reqs_begin, request_iterator_ reqs_end)</td></tr>
-<tr class="memdesc:gad1541dba42cc0abe22b347fcf45b03df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel requests. The specified requests are canceled unless already being processed. However, cancelation cannot be guaranteed. Cancelled requests must still be waited for in order to ensure correct operation.  <a href="#gad1541dba42cc0abe22b347fcf45b03df">More...</a><br/></td></tr>
-<tr class="separator:gad1541dba42cc0abe22b347fcf45b03df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e792106585678431a6f85d8a1bf2732"><td class="memTemplParams" colspan="2">template&lt;class RequestIterator &gt; </td></tr>
+<tr class="memitem:ga8e792106585678431a6f85d8a1bf2732"><td class="memTemplItemLeft" align="right" valign="top">std::iterator_traits<br class="typebreak"/>
+&lt; RequestIterator &gt;<br class="typebreak"/>
+::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#ga8e792106585678431a6f85d8a1bf2732">stxxl::cancel_all</a> (RequestIterator reqs_begin, RequestIterator reqs_end)</td></tr>
+<tr class="memdesc:ga8e792106585678431a6f85d8a1bf2732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel requests. The specified requests are canceled unless already being processed. However, cancelation cannot be guaranteed. Cancelled requests must still be waited for in order to ensure correct operation.  <a href="#ga8e792106585678431a6f85d8a1bf2732">More...</a><br/></td></tr>
+<tr class="separator:ga8e792106585678431a6f85d8a1bf2732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4554eed0391563081ef1f3efbd22ba1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#gac4554eed0391563081ef1f3efbd22ba1">stxxl::operator&lt;&lt;</a> (std::ostream &amp;out, const request &amp;req)</td></tr>
 <tr class="separator:gac4554eed0391563081ef1f3efbd22ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9243d8a2ce2109fadd2ad8fa423ed1c3"><td class="memTemplParams" colspan="2">template&lt;class request_iterator_ &gt; </td></tr>
-<tr class="memitem:ga9243d8a2ce2109fadd2ad8fa423ed1c3"><td class="memTemplItemLeft" align="right" valign="top">request_iterator_&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#ga9243d8a2ce2109fadd2ad8fa423ed1c3">stxxl::poll_any</a> (request_iterator_ reqs_begin, request_iterator_ reqs_end)</td></tr>
-<tr class="memdesc:ga9243d8a2ce2109fadd2ad8fa423ed1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls requests.  <a href="#ga9243d8a2ce2109fadd2ad8fa423ed1c3">More...</a><br/></td></tr>
-<tr class="separator:ga9243d8a2ce2109fadd2ad8fa423ed1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaca32bd3cecaa3edb11c46c670c1567e"><td class="memTemplParams" colspan="2">template&lt;class RequestIterator &gt; </td></tr>
+<tr class="memitem:gaaca32bd3cecaa3edb11c46c670c1567e"><td class="memTemplItemLeft" align="right" valign="top">RequestIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#gaaca32bd3cecaa3edb11c46c670c1567e">stxxl::poll_any</a> (RequestIterator reqs_begin, RequestIterator reqs_end)</td></tr>
+<tr class="memdesc:gaaca32bd3cecaa3edb11c46c670c1567e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls requests.  <a href="#gaaca32bd3cecaa3edb11c46c670c1567e">More...</a><br/></td></tr>
+<tr class="separator:gaaca32bd3cecaa3edb11c46c670c1567e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga29b6abfa7d948c0bc3464bbd3feed222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#ga29b6abfa7d948c0bc3464bbd3feed222">stxxl::poll_any</a> (request_ptr req_array[], size_t count, size_t &amp;index)</td></tr>
 <tr class="memdesc:ga29b6abfa7d948c0bc3464bbd3feed222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls requests.  <a href="#ga29b6abfa7d948c0bc3464bbd3feed222">More...</a><br/></td></tr>
 <tr class="separator:ga29b6abfa7d948c0bc3464bbd3feed222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc535a096b5d4c8f84deb03c786ec807"><td class="memTemplParams" colspan="2">template&lt;class request_iterator_ &gt; </td></tr>
-<tr class="memitem:gadc535a096b5d4c8f84deb03c786ec807"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">stxxl::wait_all</a> (request_iterator_ reqs_begin, request_iterator_ reqs_end)</td></tr>
-<tr class="memdesc:gadc535a096b5d4c8f84deb03c786ec807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of functions to track statuses of a number of requests.  <a href="#gadc535a096b5d4c8f84deb03c786ec807">More...</a><br/></td></tr>
-<tr class="separator:gadc535a096b5d4c8f84deb03c786ec807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga016f4e02b691aa4818ad3305de3f47bd"><td class="memTemplParams" colspan="2">template&lt;class RequestIterator &gt; </td></tr>
+<tr class="memitem:ga016f4e02b691aa4818ad3305de3f47bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">stxxl::wait_all</a> (RequestIterator reqs_begin, RequestIterator reqs_end)</td></tr>
+<tr class="memdesc:ga016f4e02b691aa4818ad3305de3f47bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of functions to track statuses of a number of requests.  <a href="#ga016f4e02b691aa4818ad3305de3f47bd">More...</a><br/></td></tr>
+<tr class="separator:ga016f4e02b691aa4818ad3305de3f47bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6132970b59078db7c5b7c3b155191694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#ga6132970b59078db7c5b7c3b155191694">stxxl::wait_all</a> (request_ptr req_array[], size_t count)</td></tr>
 <tr class="memdesc:ga6132970b59078db7c5b7c3b155191694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends calling thread until <b>all</b> given requests are completed.  <a href="#ga6132970b59078db7c5b7c3b155191694">More...</a><br/></td></tr>
 <tr class="separator:ga6132970b59078db7c5b7c3b155191694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaacd3b47a3a84f19c8c4f5f1db3cda269"><td class="memTemplParams" colspan="2">template&lt;class request_iterator_ &gt; </td></tr>
-<tr class="memitem:gaacd3b47a3a84f19c8c4f5f1db3cda269"><td class="memTemplItemLeft" align="right" valign="top">request_iterator_&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#gaacd3b47a3a84f19c8c4f5f1db3cda269">stxxl::wait_any</a> (request_iterator_ reqs_begin, request_iterator_ reqs_end)</td></tr>
-<tr class="memdesc:gaacd3b47a3a84f19c8c4f5f1db3cda269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends calling thread until <b>any</b> of requests is completed.  <a href="#gaacd3b47a3a84f19c8c4f5f1db3cda269">More...</a><br/></td></tr>
-<tr class="separator:gaacd3b47a3a84f19c8c4f5f1db3cda269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ff876fd05de0ef6217826a6b5459410"><td class="memTemplParams" colspan="2">template&lt;class RequestIterator &gt; </td></tr>
+<tr class="memitem:ga3ff876fd05de0ef6217826a6b5459410"><td class="memTemplItemLeft" align="right" valign="top">RequestIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#ga3ff876fd05de0ef6217826a6b5459410">stxxl::wait_any</a> (RequestIterator reqs_begin, RequestIterator reqs_end)</td></tr>
+<tr class="memdesc:ga3ff876fd05de0ef6217826a6b5459410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends calling thread until <b>any</b> of requests is completed.  <a href="#ga3ff876fd05de0ef6217826a6b5459410">More...</a><br/></td></tr>
+<tr class="separator:ga3ff876fd05de0ef6217826a6b5459410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf182a24551c459b6e2070fc4869add4d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reqlayer.html#gaf182a24551c459b6e2070fc4869add4d">stxxl::wait_any</a> (request_ptr req_array[], size_t count)</td></tr>
 <tr class="memdesc:gaf182a24551c459b6e2070fc4869add4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends calling thread until <b>any</b> of requests is completed.  <a href="#gaf182a24551c459b6e2070fc4869add4d">More...</a><br/></td></tr>
 <tr class="separator:gaf182a24551c459b6e2070fc4869add4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,22 +241,22 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gad1541dba42cc0abe22b347fcf45b03df"></a>
+<a class="anchor" id="ga8e792106585678431a6f85d8a1bf2732"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class request_iterator_ &gt; </div>
+template&lt;class RequestIterator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::iterator_traits&lt;request_iterator_&gt;::difference_type stxxl::cancel_all </td>
+          <td class="memname">std::iterator_traits&lt;RequestIterator&gt;::difference_type stxxl::cancel_all </td>
           <td>(</td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_end</em>&#160;</td>
         </tr>
         <tr>
@@ -277,7 +277,7 @@ template&lt;class request_iterator_ &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of request canceled </dd></dl>
 
-<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00057">57</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
+<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00058">58</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
 
 </div>
 </div>
@@ -319,22 +319,22 @@ template&lt;class request_iterator_ &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga9243d8a2ce2109fadd2ad8fa423ed1c3"></a>
+<a class="anchor" id="gaaca32bd3cecaa3edb11c46c670c1567e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class request_iterator_ &gt; </div>
+template&lt;class RequestIterator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">request_iterator_ stxxl::poll_any </td>
+          <td class="memname">RequestIterator stxxl::poll_any </td>
           <td>(</td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_end</em>&#160;</td>
         </tr>
         <tr>
@@ -355,9 +355,9 @@ template&lt;class request_iterator_ &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if any of requests is completed, then index contains valid value, otherwise <code>false</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00074">74</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
+<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00075">75</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
 
-<p>Referenced by <a class="el" href="request__operations_8h_source.html#l00091">stxxl::poll_any()</a>.</p>
+<p>Referenced by <a class="el" href="request__operations_8h_source.html#l00092">stxxl::poll_any()</a>.</p>
 
 </div>
 </div>
@@ -410,28 +410,28 @@ template&lt;class request_iterator_ &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if any of requests is completed, then index contains valid value, otherwise <code>false</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00091">91</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
+<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00092">92</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
 
-<p>References <a class="el" href="intksort_8h_source.html#l00026">stxxl::count()</a>, and <a class="el" href="request__operations_8h_source.html#l00074">stxxl::poll_any()</a>.</p>
+<p>References <a class="el" href="intksort_8h_source.html#l00026">stxxl::count()</a>, and <a class="el" href="request__operations_8h_source.html#l00075">stxxl::poll_any()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gadc535a096b5d4c8f84deb03c786ec807"></a>
+<a class="anchor" id="ga016f4e02b691aa4818ad3305de3f47bd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class request_iterator_ &gt; </div>
+template&lt;class RequestIterator &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void stxxl::wait_all </td>
           <td>(</td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_end</em>&#160;</td>
         </tr>
         <tr>
@@ -454,7 +454,7 @@ template&lt;class request_iterator_ &gt; </div>
 
 <p>Definition at line <a class="el" href="request__operations_8h_source.html#l00034">34</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00342">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00205">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00848">stxxl::stream::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00157">stxxl::stream::basic_runs_creator&lt; Input_, CompareType_, BlockSize_, AllocStr_ &gt;::compute_result()</a>, <a class="el" href="sort_8h_source.html#l00069">stxxl::sort_local::create_runs()</a>, <a class="el" href="ksort_8h_source.html#l00182">stxxl::ksort_local::create_runs()</a>, <a class="el" href="ksort_8h_source.html#l00721">stxxl::ksort()</a>, <a class="el" href="stack_8h_source.html#l00244">stxxl::normal_stack&lt; StackConfig &gt;::pop()</a>, <a class="el" href="stack_8h_source.html#l00496">stxxl::grow_shrink_stack&lt; StackConfig &gt;::pop()</a>, <a class="el" href="stack_8h_source.html#l00201">stxxl::normal_stack&lt; StackConfig &gt;::push()</a>, <a class="el" href="vector_8h_source.html#l01589">stxxl::vector&lt; ValueType &gt;::read_page()</a>, <a class="el" href="inmemsort_8h_source.html#l00029">stxxl::stl_in_memory_sort()</a>, <a class="el" href="request__operations_8h_source.html#l00043">stxxl::wait_all()</a>, <a class="el" href="vector_8h_source.html#l01607">stxxl::vector&lt; ValueType &gt;::write_page()</a>, and <a class="el" href="stack_8h_source.html#l00402">stxxl::grow_shrink_stack&lt; StackConfig &gt;::~grow_shrink_stack()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00341">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00205">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00873">stxxl::stream::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00168">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sort_8h_source.html#l00069">stxxl::sort_local::create_runs()</a>, <a class="el" href="ksort_8h_source.html#l00181">stxxl::ksort_local::create_runs()</a>, <a class="el" href="ksort_8h_source.html#l00719">stxxl::ksort()</a>, <a class="el" href="stack_8h_source.html#l00244">stxxl::normal_stack&lt; StackConfig &gt;::pop()</a>, <a class="el" href="stack_8h_source.html#l00496">stxxl::grow_shrink_stack&lt; StackConfig &gt;::pop()</a>, <a class="el" href="stack_8h_source.html#l00201">stxxl::normal_stack&lt; StackConfig &gt;::push()</a>, <a class="el" href="vector_8h_source.html#l01589">stxxl::vector&lt; ValueType &gt;::read_page()</a>, <a class="el" href="inmemsort_8h_source.html#l00029">stxxl::stl_in_memory_sort()</a>, <a class="el" href="request__operations_8h_source.html#l00043">stxxl::wait_all()</a>, <a class="el" href="vector_8h_source.html#l01607">stxxl::vector&lt; ValueType &gt;::write_page()</a>, and <a class="el" href="stack_8h_source.html#l00402">stxxl::grow_shrink_stack&lt; StackConfig &gt;::~grow_shrink_stack()</a>.</p>
 
 </div>
 </div>
@@ -505,22 +505,22 @@ template&lt;class request_iterator_ &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaacd3b47a3a84f19c8c4f5f1db3cda269"></a>
+<a class="anchor" id="ga3ff876fd05de0ef6217826a6b5459410"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class request_iterator_ &gt; </div>
+template&lt;class RequestIterator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">request_iterator_ stxxl::wait_any </td>
+          <td class="memname">RequestIterator stxxl::wait_any </td>
           <td>(</td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">request_iterator_&#160;</td>
+          <td class="paramtype">RequestIterator&#160;</td>
           <td class="paramname"><em>reqs_end</em>&#160;</td>
         </tr>
         <tr>
@@ -541,11 +541,11 @@ template&lt;class request_iterator_ &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index in req_array pointing to the <b>first</b> completed request </dd></dl>
 
-<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00103">103</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
+<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00104">104</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
 
 <p>References <a class="el" href="onoff__switch_8h_source.html#l00061">stxxl::onoff_switch::wait_for_on()</a>.</p>
 
-<p>Referenced by <a class="el" href="buf__writer_8h_source.html#l00088">stxxl::buffered_writer&lt; stxxl::typed_block &gt;::get_free_block()</a>, <a class="el" href="write__pool_8h_source.html#l00139">stxxl::write_pool&lt; BlockType &gt;::steal()</a>, and <a class="el" href="request__operations_8h_source.html#l00148">stxxl::wait_any()</a>.</p>
+<p>Referenced by <a class="el" href="buf__writer_8h_source.html#l00088">stxxl::buffered_writer&lt; stxxl::typed_block &gt;::get_free_block()</a>, <a class="el" href="write__pool_8h_source.html#l00139">stxxl::write_pool&lt; BlockType &gt;::steal()</a>, and <a class="el" href="request__operations_8h_source.html#l00149">stxxl::wait_any()</a>.</p>
 
 </div>
 </div>
@@ -591,9 +591,9 @@ template&lt;class request_iterator_ &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>index in req_array pointing to the <b>first</b> completed request </dd></dl>
 
-<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00148">148</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
+<p>Definition at line <a class="el" href="request__operations_8h_source.html#l00149">149</a> of file <a class="el" href="request__operations_8h_source.html">request_operations.h</a>.</p>
 
-<p>References <a class="el" href="request__operations_8h_source.html#l00103">stxxl::wait_any()</a>.</p>
+<p>References <a class="el" href="request__operations_8h_source.html#l00104">stxxl::wait_any()</a>.</p>
 
 </div>
 </div>
@@ -602,10 +602,10 @@ template&lt;class request_iterator_ &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:03:24 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:43 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

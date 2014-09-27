@@ -151,28 +151,30 @@ $(document).ready(function(){initNavTree('functions_type_0x6d.html','');});
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>mapped_type
-: <a class="el" href="classstxxl_1_1map.html#a6bc9ffc2ae737c22da27248b4b9a9e9e">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+: <a class="el" href="classstxxl_1_1hash__map_1_1hash__map.html#a1807b9872bdf295b500d9dee80c79497">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;</a>
+, <a class="el" href="classstxxl_1_1map.html#a6bc9ffc2ae737c22da27248b4b9a9e9e">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+, <a class="el" href="classstxxl_1_1unordered__map.html#ab6ee85c15b15f62a8c6f4a1a97558df1">stxxl::unordered_map&lt; KeyType, MappedType, HashType, CompareType, SubBlockSize, SubBlocksPerBlock, AllocType &gt;</a>
 </li>
 <li>matrix_iterator_type
 : <a class="el" href="classstxxl_1_1matrix__row__major__iterator.html#abd8a66e98cc4be17f5f77a945bf0095c">stxxl::matrix_row_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
 , <a class="el" href="classstxxl_1_1matrix__col__major__iterator.html#af845296f63b570347eaa8f166d1f4ab6">stxxl::matrix_col_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
 </li>
 <li>matrix_type
-: <a class="el" href="classstxxl_1_1matrix__iterator.html#a385a9d13b3ccd8f365552cba05499ccc">stxxl::matrix_iterator&lt; ValueType, BlockSideLength &gt;</a>
+: <a class="el" href="classstxxl_1_1matrix__col__major__iterator.html#aacd0e7d72d22c6a1a4fd0c2c289ed20f">stxxl::matrix_col_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
+, <a class="el" href="classstxxl_1_1const__matrix__iterator.html#ae4e63ca6ff32d7f112ac2b95f14d3b05">stxxl::const_matrix_iterator&lt; ValueType, BlockSideLength &gt;</a>
 , <a class="el" href="classstxxl_1_1const__matrix__row__major__iterator.html#a17f08bd6ff567a66d057fb55d91162b5">stxxl::const_matrix_row_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
 , <a class="el" href="classstxxl_1_1const__matrix__col__major__iterator.html#af108d20ea7cb610e65252db2b16ad355">stxxl::const_matrix_col_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
-, <a class="el" href="classstxxl_1_1matrix__row__major__iterator.html#a97a7447ada67387db8898e676b0be442">stxxl::matrix_row_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
+, <a class="el" href="classstxxl_1_1matrix__iterator.html#a385a9d13b3ccd8f365552cba05499ccc">stxxl::matrix_iterator&lt; ValueType, BlockSideLength &gt;</a>
 , <a class="el" href="classstxxl_1_1matrix.html#a1569d19f2ca35056cec054dc94cffd1e">stxxl::matrix&lt; ValueType, BlockSideLength &gt;</a>
-, <a class="el" href="classstxxl_1_1matrix__col__major__iterator.html#aacd0e7d72d22c6a1a4fd0c2c289ed20f">stxxl::matrix_col_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
-, <a class="el" href="classstxxl_1_1const__matrix__iterator.html#ae4e63ca6ff32d7f112ac2b95f14d3b05">stxxl::const_matrix_iterator&lt; ValueType, BlockSideLength &gt;</a>
+, <a class="el" href="classstxxl_1_1matrix__row__major__iterator.html#a97a7447ada67387db8898e676b0be442">stxxl::matrix_row_major_iterator&lt; ValueType, BlockSideLength &gt;</a>
 </li>
 <li>meta_iter_t
 : <a class="el" href="classstxxl_1_1addressable__fifo__queue.html#a2297a2e1e9d45d731f64b6256c6a4aaf">stxxl::addressable_fifo_queue&lt; KeyType &gt;</a>
 , <a class="el" href="classstxxl_1_1addressable__priority__queue.html#a2a1f2778db36d07d95a515d3b6c409d6">stxxl::addressable_priority_queue&lt; KeyType, PriorityType, Cmp &gt;</a>
 </li>
 <li>meta_t
-: <a class="el" href="classstxxl_1_1addressable__fifo__queue.html#ab2fd842d47788150eda2c357cb32cc60">stxxl::addressable_fifo_queue&lt; KeyType &gt;</a>
-, <a class="el" href="classstxxl_1_1addressable__priority__queue.html#a801c9106f4c7665281e20a6157df5f47">stxxl::addressable_priority_queue&lt; KeyType, PriorityType, Cmp &gt;</a>
+: <a class="el" href="classstxxl_1_1addressable__priority__queue.html#a801c9106f4c7665281e20a6157df5f47">stxxl::addressable_priority_queue&lt; KeyType, PriorityType, Cmp &gt;</a>
+, <a class="el" href="classstxxl_1_1addressable__fifo__queue.html#ab2fd842d47788150eda2c357cb32cc60">stxxl::addressable_fifo_queue&lt; KeyType &gt;</a>
 </li>
 <li>MigrOrNotStackType
 : <a class="el" href="classstxxl_1_1STACK__GENERATOR.html#a030f17c0a638a1149f53656e09e6a69f">stxxl::STACK_GENERATOR&lt; ValueType, Externality, Behaviour, BlocksPerPage, BlockSize, IntStackType, MigrCritSize, AllocStr, SizeType &gt;</a>
@@ -182,9 +184,11 @@ $(document).ready(function(){initNavTree('functions_type_0x6d.html','');});
 </li>
 <li>mmiterator_type
 : <a class="el" href="classstxxl_1_1btree_1_1iterator__map.html#a2fffdcf99072e8c43f73940254dd75cd">stxxl::btree::iterator_map&lt; BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1iterator__map.html#ab8db6df55c131de79cb27e7fb8dbd48a">stxxl::hash_map::iterator_map&lt; HashMap &gt;</a>
 </li>
 <li>multimap_type
 : <a class="el" href="classstxxl_1_1btree_1_1iterator__map.html#a2e7bf6eb753363179e4d4b5cd2d1432e">stxxl::btree::iterator_map&lt; BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1iterator__map.html#a9bebd51bc41fd62adee4111c11570751">stxxl::hash_map::iterator_map&lt; HashMap &gt;</a>
 </li>
 <li>mutable_self_type
 : <a class="el" href="classstxxl_1_1const__vector__iterator.html#abf721cde910f2e4ed531ce1982a88639">stxxl::const_vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;</a>
@@ -195,10 +199,10 @@ $(document).ready(function(){initNavTree('functions_type_0x6d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:09:28 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:10:01 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

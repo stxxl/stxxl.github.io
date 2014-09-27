@@ -146,16 +146,16 @@ class stxxl::normal_stack&lt; StackConfig &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa6536dbf328e0289fa5918b5379fb5c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a9e849f023220d4891f5beb1035383b4e">blocks_per_page</a> = cfg::blocks_per_page, 
-<a class="el" href="classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4">block_size</a> = cfg::block_size
+<tr class="memitem:a0f8614b6fc34ac096af9c2dffa929c2a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1normal__stack.html#a0f8614b6fc34ac096af9c2dffa929c2aa9e849f023220d4891f5beb1035383b4e">blocks_per_page</a> = cfg::blocks_per_page, 
+<a class="el" href="classstxxl_1_1normal__stack.html#a0f8614b6fc34ac096af9c2dffa929c2aa93c5cb62414a3c16b36198bc5b632fd4">block_size</a> = cfg::block_size
  }</td></tr>
-<tr class="separator:aa6536dbf328e0289fa5918b5379fb5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0f8614b6fc34ac096af9c2dffa929c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1278d284d13eb405707655ae789d9c8"><td class="memItemLeft" align="right" valign="top">typedef cfg::alloc_strategy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1normal__stack.html#ac1278d284d13eb405707655ae789d9c8">alloc_strategy_type</a></td></tr>
 <tr class="separator:ac1278d284d13eb405707655ae789d9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18be075607be1c8bba2f54a36ee1ad15"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; <a class="el" href="classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4">block_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1normal__stack.html#a18be075607be1c8bba2f54a36ee1ad15">bid_type</a></td></tr>
+<tr class="memitem:a18be075607be1c8bba2f54a36ee1ad15"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; <a class="el" href="classstxxl_1_1normal__stack.html#a0f8614b6fc34ac096af9c2dffa929c2aa93c5cb62414a3c16b36198bc5b632fd4">block_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1normal__stack.html#a18be075607be1c8bba2f54a36ee1ad15">bid_type</a></td></tr>
 <tr class="separator:a18be075607be1c8bba2f54a36ee1ad15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a934fe83bf225ccc02ae6eac24bb72621"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a><br class="typebreak"/>
-&lt; <a class="el" href="classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4">block_size</a>, <a class="el" href="classstxxl_1_1normal__stack.html#a6387c047ea6b04a8aa533472944d7a55">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1normal__stack.html#a934fe83bf225ccc02ae6eac24bb72621">block_type</a></td></tr>
+&lt; <a class="el" href="classstxxl_1_1normal__stack.html#a0f8614b6fc34ac096af9c2dffa929c2aa93c5cb62414a3c16b36198bc5b632fd4">block_size</a>, <a class="el" href="classstxxl_1_1normal__stack.html#a6387c047ea6b04a8aa533472944d7a55">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1normal__stack.html#a934fe83bf225ccc02ae6eac24bb72621">block_type</a></td></tr>
 <tr class="memdesc:a934fe83bf225ccc02ae6eac24bb72621"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of block used in disk-memory transfers  <a href="#a934fe83bf225ccc02ae6eac24bb72621">More...</a><br/></td></tr>
 <tr class="separator:a934fe83bf225ccc02ae6eac24bb72621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ffa688c15de1e69e7385c4c789aa17"><td class="memItemLeft" align="right" valign="top">typedef StackConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1normal__stack.html#a56ffa688c15de1e69e7385c4c789aa17">cfg</a></td></tr>
@@ -255,7 +255,7 @@ template&lt;class StackConfig&gt; </div>
 template&lt;class StackConfig&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;<a class="el" href="classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4">block_size</a>&gt; <a class="el" href="classstxxl_1_1normal__stack.html">stxxl::normal_stack</a>&lt; StackConfig &gt;::<a class="el" href="classstxxl_1_1normal__stack.html#a18be075607be1c8bba2f54a36ee1ad15">bid_type</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;<a class="el" href="classstxxl_1_1normal__stack.html#a0f8614b6fc34ac096af9c2dffa929c2aa93c5cb62414a3c16b36198bc5b632fd4">block_size</a>&gt; <a class="el" href="classstxxl_1_1normal__stack.html">stxxl::normal_stack</a>&lt; StackConfig &gt;::<a class="el" href="classstxxl_1_1normal__stack.html#a18be075607be1c8bba2f54a36ee1ad15">bid_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -271,7 +271,7 @@ template&lt;class StackConfig&gt; </div>
 template&lt;class StackConfig&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a>&lt;<a class="el" href="classstxxl_1_1normal__stack.html#aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4">block_size</a>, <a class="el" href="classstxxl_1_1normal__stack.html#a6387c047ea6b04a8aa533472944d7a55">value_type</a>&gt; <a class="el" href="classstxxl_1_1normal__stack.html">stxxl::normal_stack</a>&lt; StackConfig &gt;::<a class="el" href="classstxxl_1_1normal__stack.html#a934fe83bf225ccc02ae6eac24bb72621">block_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a>&lt;<a class="el" href="classstxxl_1_1normal__stack.html#a0f8614b6fc34ac096af9c2dffa929c2aa93c5cb62414a3c16b36198bc5b632fd4">block_size</a>, <a class="el" href="classstxxl_1_1normal__stack.html#a6387c047ea6b04a8aa533472944d7a55">value_type</a>&gt; <a class="el" href="classstxxl_1_1normal__stack.html">stxxl::normal_stack</a>&lt; StackConfig &gt;::<a class="el" href="classstxxl_1_1normal__stack.html#a934fe83bf225ccc02ae6eac24bb72621">block_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,7 +335,7 @@ template&lt;class StackConfig&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aa6536dbf328e0289fa5918b5379fb5c4"></a>
+<a class="anchor" id="a0f8614b6fc34ac096af9c2dffa929c2a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -347,9 +347,9 @@ template&lt;class StackConfig&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aa6536dbf328e0289fa5918b5379fb5c4a9e849f023220d4891f5beb1035383b4e"></a>blocks_per_page</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a0f8614b6fc34ac096af9c2dffa929c2aa9e849f023220d4891f5beb1035383b4e"></a>blocks_per_page</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="aa6536dbf328e0289fa5918b5379fb5c4a93c5cb62414a3c16b36198bc5b632fd4"></a>block_size</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a0f8614b6fc34ac096af9c2dffa929c2aa93c5cb62414a3c16b36198bc5b632fd4"></a>block_size</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -539,7 +539,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Definition at line <a class="el" href="stack_8h_source.html#l00244">244</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>References <a class="el" href="simple__vector_8h_source.html#l00091">stxxl::simple_vector&lt; ValueType &gt;::begin()</a>, <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
+<p>References <a class="el" href="simple__vector_8h_source.html#l00094">stxxl::simple_vector&lt; ValueType &gt;::begin()</a>, <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
 
 </div>
 </div>
@@ -571,7 +571,7 @@ template&lt;class StackConfig&gt; </div>
 
 <p>Definition at line <a class="el" href="stack_8h_source.html#l00201">201</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
 
-<p>References <a class="el" href="simple__vector_8h_source.html#l00091">stxxl::simple_vector&lt; ValueType &gt;::begin()</a>, <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
+<p>References <a class="el" href="simple__vector_8h_source.html#l00094">stxxl::simple_vector&lt; ValueType &gt;::begin()</a>, <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
 
 </div>
 </div>
@@ -910,10 +910,10 @@ template&lt;class StackConfig&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1normal__stack.html">normal_stack</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:03:42 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:03 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -1,4 +1,4 @@
-<map id="stxxl::stream::basic_runs_merger&lt; RunsType_, CompareType_, AllocStr_ &gt;" name="stxxl::stream::basic_runs_merger&lt; RunsType_, CompareType_, AllocStr_ &gt;">
+<map id="stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;" name="stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;">
 <area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="13,244,144,273"/>
 <area shape="rect" id="node4" href="$classstxxl_1_1block__prefetcher.html" title="Encapsulates asynchronous prefetching engine. " alt="" coords="961,251,1129,315"/>
 <area shape="rect" id="node11" href="$classstxxl_1_1onoff__switch.html" title="stxxl::onoff_switch" alt="" coords="673,348,804,377"/>

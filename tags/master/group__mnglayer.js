@@ -39,8 +39,8 @@ var group__mnglayer =
       [ "pos", "classstxxl_1_1array__of__sequences__iterator.html#aaed4cc72465159f044d045b85b8cb3e3", null ]
     ] ],
     [ "BID", "structstxxl_1_1BID.html", [
-      [ "size", "structstxxl_1_1BID.html#a182ac0a80cd2a0e2da1dad6859e3938aab5c553449731bdb1ad801a821a62d99c", null ],
-      [ "t_size", "structstxxl_1_1BID.html#a182ac0a80cd2a0e2da1dad6859e3938aa7e5213d91b871bbdba954ee8277b6eaa", null ],
+      [ "size", "structstxxl_1_1BID.html#a923a22c3109f028807f8c8c7ced902d6ab5c553449731bdb1ad801a821a62d99c", null ],
+      [ "t_size", "structstxxl_1_1BID.html#a923a22c3109f028807f8c8c7ced902d6a7e5213d91b871bbdba954ee8277b6eaa", null ],
       [ "BID", "structstxxl_1_1BID.html#a843914d73f94b8c1c28ac99dd87ed7da", null ],
       [ "BID", "structstxxl_1_1BID.html#a55526e1fbd600b7239abbea08cca4a91", null ],
       [ "BID", "structstxxl_1_1BID.html#a3c010f2acfdbd9548a4ffbbe58687916", null ],
@@ -52,7 +52,7 @@ var group__mnglayer =
       [ "storage", "structstxxl_1_1BID.html#a69ceeeacee26f7bccefa8ac3ef6690ea", null ]
     ] ],
     [ "BID< 0 >", "structstxxl_1_1BID_3_010_01_4.html", [
-      [ "t_size", "structstxxl_1_1BID_3_010_01_4.html#a047b0df59f9316b75d1dd8e3846a59c4af8fad625ef0b49c68628cad54c7f1fd3", null ],
+      [ "t_size", "structstxxl_1_1BID_3_010_01_4.html#acdaaadf2992db21823b13b45b2b94558af8fad625ef0b49c68628cad54c7f1fd3", null ],
       [ "BID", "structstxxl_1_1BID_3_010_01_4.html#a5f33d177ff7aa9635005c5dff25ccb20", null ],
       [ "BID", "structstxxl_1_1BID_3_010_01_4.html#afa93369f8a64884031c84ee010f95a21", null ],
       [ "valid", "structstxxl_1_1BID_3_010_01_4.html#ab0c62da024f349ee09772f4c805297ba", null ],

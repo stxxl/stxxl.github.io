@@ -16,17 +16,17 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classstxxl_1_1btree_1_1btree__iterator.html" target="_top" xlink:title="stxxl::btree::btree\l_iterator\&lt; SelfType \&gt;">
-<polygon fill="none" stroke="black" points="17.5,-1 17.5,-35 126.5,-35 126.5,-1 17.5,-1"/>
-<text text-anchor="start" x="25.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::btree::btree</text>
-<text text-anchor="middle" x="72" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">_iterator&lt; SelfType &gt;</text>
+<a xlink:href="classstxxl_1_1btree_1_1btree__iterator.html" target="_top" xlink:title="stxxl::btree::btree\l_iterator\&lt; self_type \&gt;">
+<polygon fill="none" stroke="black" points="17,-1 17,-35 127,-35 127,-1 17,-1"/>
+<text text-anchor="start" x="25" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">stxxl::btree::btree</text>
+<text text-anchor="middle" x="72" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">_iterator&lt; self_type &gt;</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node3</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M72,-76.342C72,-62.7741 72,-46.8607 72,-35.084"/>
 <polygon fill="orange" stroke="orange" points="68.5001,-76.5966 72,-86.5966 75.5001,-76.5967 68.5001,-76.5966"/>
-<text text-anchor="middle" x="102.5" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; SelfType &gt;</text>
+<text text-anchor="middle" x="102.5" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; self_type &gt;</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>

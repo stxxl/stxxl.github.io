@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classstxxl_1_1atomic__counted__object.
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classstxxl_1_1atomic__counted__object-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stxxl::atomic_counted_object Class Reference</div>  </div>
+<div class="title">stxxl::atomic_counted_object Class Reference<div class="ingroups"><a class="el" href="group__support.html">Common Utilities and Support Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('classstxxl_1_1atomic__counted__object.
 <p>Use as superclass of the actual object, this adds a reference_count value. Then either use <a class="el" href="classstxxl_1_1counting__ptr.html" title="High-performance smart pointer used as a wrapping reference counting pointer. ">counting_ptr</a> as pointer to manage references and deletion, or just do normal new and delete.</p>
 <p>This class does thread-safe increment and decrement using scoped locks. A faster version of this class is available using atomic operations. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00458">458</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00461">461</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::atomic_counted_object:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
 
 <p>new objects have zero reference count </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00470">470</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00473">473</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Private Attributes</h2></td></tr>
 
 <p>coping still creates a new object with zero reference count </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00474">474</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00477">477</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +251,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00481">481</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00484">484</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +280,7 @@ Private Attributes</h2></td></tr>
 <p>Call whenever resetting (i.e. overwriting) a pointer to the object. IMPORTANT: In case of self-assignment, call AFTER <a class="el" href="classstxxl_1_1atomic__counted__object.html#a80f0bf93d806f5900c5b4ee28a1d9f8b" title="Call whenever setting a pointer to the object. ">inc_reference()</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>if the object has to be deleted (i.e. if it's reference count dropped to zero) </dd></dl>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00495">495</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00498">498</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Private Attributes</h2></td></tr>
 
 <p>Return the number of references to this object (for debugging) </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00509">509</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00512">512</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 <p>Referenced by <a class="el" href="request_8cpp_source.html#l00060">stxxl::request::check_nref_failed()</a>, <a class="el" href="request_8cpp_source.html#l00021">stxxl::request::request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00142">stxxl::request_queue_impl_qwqr::worker()</a>, and <a class="el" href="request_8cpp_source.html#l00039">stxxl::request::~request()</a>.</p>
 
@@ -336,7 +336,7 @@ Private Attributes</h2></td></tr>
 
 <p>Call whenever setting a pointer to the object. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00486">486</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00489">489</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ Private Attributes</h2></td></tr>
 
 <p>assignment operator, leaves pointers unchanged </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00478">478</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00481">481</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ Private Attributes</h2></td></tr>
 
 <p>Test if the <a class="el" href="classstxxl_1_1counted__object.html" title="Provides reference counting abilities for use with counting_ptr. ">counted_object</a> is referenced by only one <a class="el" href="classstxxl_1_1counting__ptr.html" title="High-performance smart pointer used as a wrapping reference counting pointer. ">counting_ptr</a>. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00502">502</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00505">505</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Private Attributes</h2></td></tr>
 
 <p>the reference count is kept mutable to all const_counting_ptr() to change the reference count. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00463">463</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00466">466</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Private Attributes</h2></td></tr>
 
 <p>the mutex used to synchronize access to the reference counter. </p>
 
-<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00466">466</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
+<p>Definition at line <a class="el" href="counting__ptr_8h_source.html#l00469">469</a> of file <a class="el" href="counting__ptr_8h_source.html">counting_ptr.h</a>.</p>
 
 </div>
 </div>
@@ -453,10 +453,10 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1atomic__counted__object.html">atomic_counted_object</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:03:26 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:45 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -273,7 +273,7 @@ $(document).ready(function(){initNavTree('simdisk__file_8cpp_source.html','');})
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    scoped_mutex_lock fd_lock(fd_mutex);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">double</span> op_start = <a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">double</span> op_start = <a class="code" href="group__support.html#gae389752543aaf71fb020ad8e33b78854">timestamp</a>();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    stats::scoped_read_write_timer read_write_timer(bytes, type == request::WRITE);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('simdisk__file_8cpp_source.html','');})
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">double</span> delay = get_delay(offset, bytes);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    delay = delay - <a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>() + op_start;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    delay = delay - <a class="code" href="group__support.html#gae389752543aaf71fb020ad8e33b78854">timestamp</a>() + op_start;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    assert(delay &gt; 0.0);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
@@ -342,13 +342,13 @@ $(document).ready(function(){initNavTree('simdisk__file_8cpp_source.html','');})
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="error__handling_8h_html_ad5017c4c6b29f3889b0478cfd9559799"><div class="ttname"><a href="error__handling_8h.html#ad5017c4c6b29f3889b0478cfd9559799">STXXL_THROW_ERRNO_NE_0</a></div><div class="ttdeci">#define STXXL_THROW_ERRNO_NE_0(expr, exception_type, error_message)</div><div class="ttdoc">Throws exception_type if (expr != 0) with &amp;quot;Error in [function] : [error_message] : [errno message]&amp;quot;...</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8h_source.html#l00108">error_handling.h:108</a></div></div>
 <div class="ttc" id="ufs__platform_8h_html_a160e48b6f44d4559f0859360a340cf23"><div class="ttname"><a href="ufs__platform_8h.html#a160e48b6f44d4559f0859360a340cf23">lseek</a></div><div class="ttdeci">#define lseek</div><div class="ttdef"><b>Definition:</b> <a href="ufs__platform_8h_source.html#l00072">ufs_platform.h:72</a></div></div>
-<div class="ttc" id="namespacestxxl_html_ae389752543aaf71fb020ad8e33b78854"><div class="ttname"><a href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">stxxl::timestamp</a></div><div class="ttdeci">double timestamp()</div><div class="ttdoc">Returns number of seconds since the epoch, high resolution. </div><div class="ttdef"><b>Definition:</b> <a href="timer_8h_source.html#l00041">timer.h:41</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="namespacestxxl_html_aee76e3394484f31af296aa8d2226d18e"><div class="ttname"><a href="namespacestxxl.html#aee76e3394484f31af296aa8d2226d18e">stxxl::STXXL_UNUSED</a></div><div class="ttdeci">void STXXL_UNUSED(const U &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="unused_8h_source.html#l00022">unused.h:22</a></div></div>
 <div class="ttc" id="error__handling_8h_html"><div class="ttname"><a href="error__handling_8h.html">error_handling.h</a></div></div>
 <div class="ttc" id="error__handling_8h_html_ad6153abf8360892dc105647b9705cfd4"><div class="ttname"><a href="error__handling_8h.html#ad6153abf8360892dc105647b9705cfd4">STXXL_THROW_ERRNO_LT_0</a></div><div class="ttdeci">#define STXXL_THROW_ERRNO_LT_0(expr, exception_type, error_message)</div><div class="ttdoc">Throws exception_type if (expr &amp;lt; 0) with &amp;quot;Error in [function] : [error_message] : [errno message]&amp;quot;...</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8h_source.html#l00116">error_handling.h:116</a></div></div>
 <div class="ttc" id="error__handling_8h_html_afc42e173421c4d0efdbe4bb19554bf49"><div class="ttname"><a href="error__handling_8h.html#afc42e173421c4d0efdbe4bb19554bf49">STXXL_THROW_ERRNO</a></div><div class="ttdeci">#define STXXL_THROW_ERRNO(exception_type, error_message)</div><div class="ttdoc">Throws exception_type with &amp;quot;Error in [function] : [error_message] : [errno message]&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8h_source.html#l00060">error_handling.h:60</a></div></div>
 <div class="ttc" id="uint__types_8h_html_ab09b9b43d1b1783c78e39783e382b3dd"><div class="ttname"><a href="uint__types_8h.html#ab09b9b43d1b1783c78e39783e382b3dd">bytes</a></div><div class="ttdeci">static const size_t bytes</div><div class="ttdoc">number of bytes in uint_pair </div><div class="ttdef"><b>Definition:</b> <a href="uint__types_8h_source.html#l00096">uint_types.h:96</a></div></div>
+<div class="ttc" id="group__support_html_gae389752543aaf71fb020ad8e33b78854"><div class="ttname"><a href="group__support.html#gae389752543aaf71fb020ad8e33b78854">stxxl::timestamp</a></div><div class="ttdeci">double timestamp()</div><div class="ttdoc">Returns number of seconds since the epoch, high resolution. </div><div class="ttdef"><b>Definition:</b> <a href="timer_8h_source.html#l00044">timer.h:44</a></div></div>
 <div class="ttc" id="simdisk__file_8h_html"><div class="ttname"><a href="simdisk__file_8h.html">simdisk_file.h</a></div></div>
 <div class="ttc" id="iostats_8h_html"><div class="ttname"><a href="iostats_8h.html">iostats.h</a></div></div>
 <div class="ttc" id="ufs__platform_8h_html"><div class="ttname"><a href="ufs__platform_8h.html">ufs_platform.h</a></div></div>
@@ -359,10 +359,10 @@ $(document).ready(function(){initNavTree('simdisk__file_8cpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="simdisk__file_8cpp.html">simdisk_file.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:03:06 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:03:21 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

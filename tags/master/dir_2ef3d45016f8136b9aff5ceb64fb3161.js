@@ -26,6 +26,7 @@ var dir_2ef3d45016f8136b9aff5ceb64fb3161 =
     [ "stream", "stream.html", null ],
     [ "timer", "timer.html", null ],
     [ "types", "types.html", null ],
+    [ "unordered_map", "unordered__map.html", null ],
     [ "vector", "vector.html", null ],
     [ "version.h", "version_8h.html", null ]
 ];

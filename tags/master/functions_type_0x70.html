@@ -152,6 +152,7 @@ $(document).ready(function(){initNavTree('functions_type_0x70.html','');});
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>pager_type
 : <a class="el" href="classstxxl_1_1btree_1_1node__cache.html#a6db91174000749090aea54e58c754693">stxxl::btree::node_cache&lt; NodeType, BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1block__cache.html#a76bf2bc59c509f27ea5160b7ca3b42e3">stxxl::hash_map::block_cache&lt; BlockType &gt;</a>
 , <a class="el" href="classstxxl_1_1vector.html#a6facdd0777c54dcda7a891742b84a773">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
 </li>
 <li>PagerType
@@ -162,6 +163,7 @@ $(document).ready(function(){initNavTree('functions_type_0x70.html','');});
 </li>
 <li>pair_type
 : <a class="el" href="classstxxl_1_1btree_1_1iterator__map.html#aec59383c10c50221885d68503dc6ae1a">stxxl::btree::iterator_map&lt; BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1iterator__map.html#a18913511995f2e06b9027b4668cfb7a9">stxxl::hash_map::iterator_map&lt; HashMap &gt;</a>
 </li>
 <li>parent_type
 : <a class="el" href="structstxxl_1_1runs2bid__array__adaptor.html#ac9844bf1554e230dc7b89a763897e2b0">stxxl::runs2bid_array_adaptor&lt; BlockSize, RunType, PosType &gt;</a>
@@ -177,46 +179,50 @@ $(document).ready(function(){initNavTree('functions_type_0x70.html','');});
 : <a class="el" href="classstxxl_1_1wbtl__file.html#a6b861218e1c5749f2aa9356c8c3b071d">stxxl::wbtl_file</a>
 </li>
 <li>pointer
-: <a class="el" href="classstxxl_1_1deque__iterator.html#a481cc7a8b7c155978940758a3c19d516">stxxl::deque_iterator&lt; DequeType &gt;</a>
+: <a class="el" href="classstxxl_1_1btree_1_1btree__iterator.html#acfd7cf45b6be7c25c1a8394b149a92fe">stxxl::btree::btree_iterator&lt; BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1btree_1_1btree__const__iterator.html#a723f16f9245859a8983e600bdc9a2fad">stxxl::btree::btree_const_iterator&lt; BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1deque__iterator.html#a481cc7a8b7c155978940758a3c19d516">stxxl::deque_iterator&lt; DequeType &gt;</a>
 , <a class="el" href="classstxxl_1_1const__deque__iterator.html#a92055d74967fc5e9bcaeadc09151c8da">stxxl::const_deque_iterator&lt; DequeType &gt;</a>
 , <a class="el" href="classstxxl_1_1deque.html#ab1961fb6f5bfa4250b38044980e352f9">stxxl::deque&lt; ValueType, VectorType &gt;</a>
-, <a class="el" href="classstxxl_1_1map.html#a11748631d4a0c95702f3134bc13ddc6e">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
-, <a class="el" href="classstxxl_1_1vector__iterator.html#aa83f9dbc176570b85c526df3aa1c7c06">stxxl::vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;</a>
-, <a class="el" href="classstxxl_1_1const__vector__iterator.html#a741a88fd5d97ea171a951a53e5651293">stxxl::const_vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;</a>
-, <a class="el" href="structstxxl_1_1trigger__entry__iterator.html#a3cd4ba24b181ab83d12eb03c3c580e2e">stxxl::trigger_entry_iterator&lt; trigger_iterator_type &gt;</a>
-, <a class="el" href="classstxxl_1_1vector.html#a05e31910c9b4093a5cefa00f17c78852">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
-, <a class="el" href="classstxxl_1_1mng__local_1_1element__block.html#a3b0fb38a151ea971197754b4617c7d51">stxxl::mng_local::element_block&lt; Type, Size &gt;</a>
-, <a class="el" href="classstxxl_1_1new__alloc.html#a921735c947f0b17baeb60dac5c3f52a8">stxxl::new_alloc&lt; T &gt;</a>
 , <a class="el" href="classstxxl_1_1typed__block.html#ab9fed047c502f7553ef6966d743bb7de">stxxl::typed_block&lt; RawSize, Type, NRef, MetaInfoType &gt;</a>
+, <a class="el" href="classstxxl_1_1mng__local_1_1element__block.html#a3b0fb38a151ea971197754b4617c7d51">stxxl::mng_local::element_block&lt; Type, Size &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1hash__map.html#a81aa28e6c4a84137bcd36a933b0000aa">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;</a>
+, <a class="el" href="classstxxl_1_1const__vector__iterator.html#a741a88fd5d97ea171a951a53e5651293">stxxl::const_vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;</a>
+, <a class="el" href="classstxxl_1_1vector__iterator.html#aa83f9dbc176570b85c526df3aa1c7c06">stxxl::vector_iterator&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1hash__map__iterator.html#a3354f98292af02830a3843e6ff41bcc0">stxxl::hash_map::hash_map_iterator&lt; HashMap &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1hash__map__const__iterator.html#a7a47c4440a8d93ee5282a7a8b5db9de9">stxxl::hash_map::hash_map_const_iterator&lt; HashMap &gt;</a>
+, <a class="el" href="classstxxl_1_1map.html#a11748631d4a0c95702f3134bc13ddc6e">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+, <a class="el" href="classstxxl_1_1unordered__map.html#a77f2afa44ef807a30a0740e970e54e1a">stxxl::unordered_map&lt; KeyType, MappedType, HashType, CompareType, SubBlockSize, SubBlocksPerBlock, AllocType &gt;</a>
+, <a class="el" href="structstxxl_1_1trigger__entry__iterator.html#a3cd4ba24b181ab83d12eb03c3c580e2e">stxxl::trigger_entry_iterator&lt; trigger_iterator_type &gt;</a>
+, <a class="el" href="classstxxl_1_1new__alloc.html#a921735c947f0b17baeb60dac5c3f52a8">stxxl::new_alloc&lt; T &gt;</a>
+, <a class="el" href="classstxxl_1_1vector.html#a05e31910c9b4093a5cefa00f17c78852">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
 , <a class="el" href="classstxxl_1_1btree_1_1btree.html#a5ac24a58c46426d44e683fb5336f22cf">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
-, <a class="el" href="classstxxl_1_1btree_1_1btree__iterator.html#acfd7cf45b6be7c25c1a8394b149a92fe">stxxl::btree::btree_iterator&lt; BTreeType &gt;</a>
-, <a class="el" href="classstxxl_1_1btree_1_1btree__const__iterator.html#a723f16f9245859a8983e600bdc9a2fad">stxxl::btree::btree_const_iterator&lt; BTreeType &gt;</a>
 </li>
 <li>pool_type
-: <a class="el" href="classstxxl_1_1grow__shrink__stack2.html#a8f271a8ed88185420f65084eff7006f5">stxxl::grow_shrink_stack2&lt; StackConfig &gt;</a>
+: <a class="el" href="classstxxl_1_1priority__queue.html#a2601f4d123465395a32805f86870ac39">stxxl::priority_queue&lt; ConfigType &gt;</a>
 , <a class="el" href="classstxxl_1_1queue.html#ab7f1c2931a345daabb2a6b48713dae50">stxxl::queue&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue.html#a2601f4d123465395a32805f86870ac39">stxxl::priority_queue&lt; ConfigType &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#a6d8c818a2e3b4dfaa81ad77490f5af1c">stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;</a>
 , <a class="el" href="classstxxl_1_1sequence.html#a14aa52f5c2081c6e1dfcbd93607d04f6">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
+, <a class="el" href="classstxxl_1_1grow__shrink__stack2.html#a8f271a8ed88185420f65084eff7006f5">stxxl::grow_shrink_stack2&lt; StackConfig &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#a6d8c818a2e3b4dfaa81ad77490f5af1c">stxxl::priority_queue_local::ext_merger&lt; BlockType_, Cmp_, Arity_, AllocStr_ &gt;</a>
 </li>
 <li>prediction_sequence_element_type
 : <a class="el" href="classstxxl_1_1block__scheduler__algorithm__simulation.html#ac78e67c44fe70392c3d1cc56fd316302">stxxl::block_scheduler_algorithm_simulation&lt; SwappableBlockType &gt;</a>
 </li>
 <li>prediction_sequence_type
-: <a class="el" href="classstxxl_1_1block__scheduler__algorithm__offline__lru__prefetching.html#a55d5c4ef712a2c31716a84d0e2ee069e">stxxl::block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;</a>
-, <a class="el" href="classstxxl_1_1block__scheduler__algorithm.html#a117098214cb91f41f8eb6854bcc898d0">stxxl::block_scheduler_algorithm&lt; SwappableBlockType &gt;</a>
+: <a class="el" href="classstxxl_1_1block__scheduler__algorithm__offline__lfd.html#ab884d9e51c35597533d82762ba4184f2">stxxl::block_scheduler_algorithm_offline_lfd&lt; SwappableBlockType &gt;</a>
 , <a class="el" href="classstxxl_1_1block__scheduler.html#aee8707ea1adcda8469cb66e3340499e6">stxxl::block_scheduler&lt; SwappableBlockType &gt;</a>
-, <a class="el" href="classstxxl_1_1block__scheduler__algorithm__offline__lfd.html#ab884d9e51c35597533d82762ba4184f2">stxxl::block_scheduler_algorithm_offline_lfd&lt; SwappableBlockType &gt;</a>
+, <a class="el" href="classstxxl_1_1block__scheduler__algorithm__offline__lru__prefetching.html#a55d5c4ef712a2c31716a84d0e2ee069e">stxxl::block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;</a>
+, <a class="el" href="classstxxl_1_1block__scheduler__algorithm.html#a117098214cb91f41f8eb6854bcc898d0">stxxl::block_scheduler_algorithm&lt; SwappableBlockType &gt;</a>
 </li>
 <li>prefetch_pool_type
 : <a class="el" href="classstxxl_1_1read__write__pool.html#a45dd2fdf94a6da1e640a9e435c735271">stxxl::read_write_pool&lt; BlockType &gt;</a>
 </li>
 <li>prefetcher_type
-: <a class="el" href="structstxxl_1_1run__cursor2.html#a31341f53b6979d6762c35128d44e8b52">stxxl::run_cursor2&lt; block_type, prefetcher_type_ &gt;</a>
-, <a class="el" href="classstxxl_1_1loser__tree.html#ad154656893ff71200883b58b2aea4bac">stxxl::loser_tree&lt; run_cursor_type, run_cursor_cmp_type &gt;</a>
-, <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#abee071ae87eca0e8f597a857f39ab2ac">stxxl::stream::basic_runs_merger&lt; RunsType_, CompareType_, AllocStr_ &gt;</a>
-, <a class="el" href="classstxxl_1_1buf__istream__reverse.html#afc4b7608af1243d443c976d583b86a63">stxxl::buf_istream_reverse&lt; BlockType, BIDIteratorType &gt;</a>
+: <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#a2dd0a2e5c4ac4cfd772b88a297ff2849">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;</a>
 , <a class="el" href="classstxxl_1_1buf__istream.html#a58ba246d2456d0fe22f9e30d9566ec3f">stxxl::buf_istream&lt; BlockType, BIDIteratorType &gt;</a>
+, <a class="el" href="classstxxl_1_1loser__tree.html#ad154656893ff71200883b58b2aea4bac">stxxl::loser_tree&lt; run_cursor_type, run_cursor_cmp_type &gt;</a>
+, <a class="el" href="structstxxl_1_1run__cursor2.html#a31341f53b6979d6762c35128d44e8b52">stxxl::run_cursor2&lt; block_type, prefetcher_type_ &gt;</a>
+, <a class="el" href="classstxxl_1_1buf__istream__reverse.html#afc4b7608af1243d443c976d583b86a63">stxxl::buf_istream_reverse&lt; BlockType, BIDIteratorType &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -224,10 +230,10 @@ $(document).ready(function(){initNavTree('functions_type_0x70.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:09:28 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:10:01 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

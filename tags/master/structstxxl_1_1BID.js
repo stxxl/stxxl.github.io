@@ -1,7 +1,7 @@
 var structstxxl_1_1BID =
 [
-    [ "size", "structstxxl_1_1BID.html#a182ac0a80cd2a0e2da1dad6859e3938aab5c553449731bdb1ad801a821a62d99c", null ],
-    [ "t_size", "structstxxl_1_1BID.html#a182ac0a80cd2a0e2da1dad6859e3938aa7e5213d91b871bbdba954ee8277b6eaa", null ],
+    [ "size", "structstxxl_1_1BID.html#a923a22c3109f028807f8c8c7ced902d6ab5c553449731bdb1ad801a821a62d99c", null ],
+    [ "t_size", "structstxxl_1_1BID.html#a923a22c3109f028807f8c8c7ced902d6a7e5213d91b871bbdba954ee8277b6eaa", null ],
     [ "BID", "structstxxl_1_1BID.html#a843914d73f94b8c1c28ac99dd87ed7da", null ],
     [ "BID", "structstxxl_1_1BID.html#a55526e1fbd600b7239abbea08cca4a91", null ],
     [ "BID", "structstxxl_1_1BID.html#a3c010f2acfdbd9548a4ffbbe58687916", null ],

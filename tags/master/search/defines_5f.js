@@ -13,5 +13,6 @@ var searchData=
   ['_5fstxxl_5fprnt_5flog',['_STXXL_PRNT_LOG',['../verbose_8h.html#a482029713ae2a270f4212b7af1c7b5b9',1,'verbose.h']]],
   ['_5fstxxl_5fprnt_5fthread_5fid',['_STXXL_PRNT_THREAD_ID',['../verbose_8h.html#a909556660da4b1a85529314015bf25af',1,'verbose.h']]],
   ['_5fstxxl_5fprnt_5ftimestamp',['_STXXL_PRNT_TIMESTAMP',['../verbose_8h.html#a3f8b885e5f96328336ab0b14cfe2589f',1,'verbose.h']]],
-  ['_5fstxxl_5fsort_5ftrigger_5fforce_5fsequential',['_STXXL_SORT_TRIGGER_FORCE_SEQUENTIAL',['../parallel_8h.html#a86a7a3d9ff17c356bee2471812b7626a',1,'parallel.h']]]
+  ['_5fstxxl_5fsort_5ftrigger_5fforce_5fsequential',['_STXXL_SORT_TRIGGER_FORCE_SEQUENTIAL',['../parallel_8h.html#a86a7a3d9ff17c356bee2471812b7626a',1,'parallel.h']]],
+  ['_5fstxxl_5ftuning_5fh_5f',['_STXXL_TUNING_H_',['../tuning_8h.html#a5409414ee077d1b36f103beb7e62ab30',1,'tuning.h']]]
 ];

@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span>        assert((next_run_size == m2) || (next_run_size &lt;= m2 &amp;&amp; k == nruns - 2));</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs start waiting read_reqs1&quot;</span>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">wait_all</a>(read_reqs1, run_size);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">wait_all</a>(read_reqs1, run_size);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs finish waiting read_reqs1&quot;</span>);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; run_size; ++i)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            bm-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>(bids1[i]);</div>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs start waiting write_reqs&quot;</span>);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">if</span> (k &gt; 0)</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">wait_all</a>(write_reqs, m2);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">wait_all</a>(write_reqs, m2);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs finish waiting write_reqs&quot;</span>);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> runplus2size = (k &lt; nruns - 2) ? runs[k + 2]-&gt;size() : 0;</div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    run_type* run = runs[nruns - 1];</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    run_size = run-&gt;size();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs start waiting read_reqs1&quot;</span>);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">wait_all</a>(read_reqs1, run_size);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">wait_all</a>(read_reqs1, run_size);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs finish waiting read_reqs1&quot;</span>);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; run_size; ++i)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        bm-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>(bids1[i]);</div>
@@ -289,7 +289,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;         cmp);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs start waiting write_reqs&quot;</span>);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">wait_all</a>(write_reqs, m2);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">wait_all</a>(write_reqs, m2);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs finish waiting write_reqs&quot;</span>);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; run_size; ++i)</div>
@@ -300,7 +300,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs start waiting write_reqs&quot;</span>);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">wait_all</a>(write_reqs, run_size);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">wait_all</a>(write_reqs, run_size);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;stxxl::create_runs finish waiting write_reqs&quot;</span>);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">delete</span>[] Blocks1;</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                reqs[j] = blocks[j].read((*runs[irun])[j + off].bid);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <a class="code" href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">wait_all</a>(reqs, reqs + nblocks);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <a class="code" href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">wait_all</a>(reqs, reqs + nblocks);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">if</span> (off &amp;&amp; cmp(blocks[0][0], last))</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            {</div>
@@ -427,7 +427,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keyword">typename</span> run_type::iterator copy_start = consume_seq.begin();</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> i = 0; i &lt; nruns; i++)</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="comment">// TODO: try to avoid copy</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="comment">// \todo: try to avoid copy</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        copy_start = std::copy(</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            in_runs[i]-&gt;begin(),</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            in_runs[i]-&gt;end(),</div>
@@ -636,7 +636,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="comment">//STXXL_VERBOSE (&quot;n=&quot; &lt;&lt; _n &lt;&lt; &quot; nruns=&quot; &lt;&lt; nruns &lt;&lt; &quot;=&quot; &lt;&lt; full_runs &lt;&lt; &quot;+&quot; &lt;&lt; partial_runs);</span></div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keywordtype">double</span> begin = <a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>(), after_runs_creation, end;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keywordtype">double</span> begin = <a class="code" href="group__support.html#gae389752543aaf71fb020ad8e33b78854">timestamp</a>(), after_runs_creation, end;</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    run_type** runs = <span class="keyword">new</span> run_type*[nruns];</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
@@ -654,7 +654,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                            input_bid_iterator,</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                            value_cmp&gt;(input_bids, runs, nruns, _m, cmp);</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    after_runs_creation = <a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>();</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    after_runs_creation = <a class="code" href="group__support.html#gae389752543aaf71fb020ad8e33b78854">timestamp</a>();</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordtype">double</span> io_wait_after_rf = stats::get_instance()-&gt;get_io_wait_time();</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
@@ -741,389 +741,387 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    run_type* result = *runs;</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keyword">delete</span>[] runs;</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    end = <a class="code" href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">timestamp</a>();</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    end = <a class="code" href="group__support.html#gae389752543aaf71fb020ad8e33b78854">timestamp</a>();</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <a class="code" href="verbose_8h.html#ace60f963c7c29ed31c677d8677c9a13d">STXXL_VERBOSE</a>(<span class="stringliteral">&quot;Elapsed time        : &quot;</span> &lt;&lt; end - begin &lt;&lt; <span class="stringliteral">&quot; s. Run creation time: &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                  after_runs_creation - begin &lt;&lt; <span class="stringliteral">&quot; s&quot;</span>);</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <a class="code" href="verbose_8h.html#ace60f963c7c29ed31c677d8677c9a13d">STXXL_VERBOSE</a>(<span class="stringliteral">&quot;Time in I/O wait(rf): &quot;</span> &lt;&lt; io_wait_after_rf &lt;&lt; <span class="stringliteral">&quot; s&quot;</span>);</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <a class="code" href="verbose_8h.html#ace60f963c7c29ed31c677d8677c9a13d">STXXL_VERBOSE</a>(*stats::get_instance());</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <a class="code" href="namespacestxxl.html#aee76e3394484f31af296aa8d2226d18e">STXXL_UNUSED</a>(begin + after_runs_creation + end + io_wait_after_rf);</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;}</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;} <span class="comment">// namespace sort_local</span></div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="comment"> * Sort records comparison-based, see \ref design_algo_sort.</span></div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment"> * stxxl::sort sorts the elements in [first, last) into ascending order,</span></div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment"> * meaning that if \c i and \c j are any two valid iterators in [first, last)</span></div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="comment"> * such that \c i precedes \c j, then \c *j is not less than \c *i. Note: as</span></div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment"> * std::sort, stxxl::sort is not guaranteed to be stable. That is, suppose that</span></div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment"> * \c *i and \c *j are equivalent: neither one is less than the other. It is</span></div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="comment"> * not guaranteed that the relative order of these two elements will be</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment"> * preserved by stxxl::sort.</span></div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment"> * The order is defined by the \c cmp parameter. The sorter&#39;s internal memory</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment"> * consumption is bounded by \a M bytes.</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment"> * \param first object of model of \c ext_random_access_iterator concept</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="comment"> * \param last object of model of \c ext_random_access_iterator concept</span></div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"> * \param cmp comparison object of \ref StrictWeakOrdering</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment"> * \param M amount of memory for internal use (in bytes)</span></div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExtIterator, <span class="keyword">typename</span> StrictWeakOrdering&gt;</div>
-<div class="line"><a name="l00665"></a><span class="lineno"><a class="line" href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">  665</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">sort</a>(ExtIterator first, ExtIterator last, StrictWeakOrdering cmp, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M)</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;{</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <a class="code" href="namespacestxxl_1_1sort__helper.html#a1af21f97aead9b8cc6d459543da4d8b2">sort_helper::verify_sentinel_strict_weak_ordering</a>(cmp);</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classstxxl_1_1simple__vector.html">simple_vector&lt;sort_helper::trigger_entry&lt;typename ExtIterator::block_type&gt;</a> &gt; run_type;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> ExtIterator::vector_type::value_type value_type;</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> ExtIterator::block_type block_type;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> n = 0;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>* mng = block_manager::get_instance();</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    first.flush();</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <span class="keywordflow">if</span> ((last - first) * <span class="keyword">sizeof</span>(value_type) * <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() &lt; M)</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    {</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <a class="code" href="namespacestxxl.html#ab79eadbfe93db179c741b775e5cd6734">stl_in_memory_sort</a>(first, last, cmp);</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    }</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    {</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="keywordflow">if</span> (!(2 * block_type::raw_size * (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>)<a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() &lt;= M)) {</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="classstxxl_1_1bad__parameter.html">bad_parameter</a>(<span class="stringliteral">&quot;stxxl::sort(): INSUFFICIENT MEMORY provided, please increase parameter &#39;M&#39;&quot;</span>);</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        }</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <span class="keywordflow">if</span> (first.block_offset())</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        {</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            <span class="keywordflow">if</span> (last.block_offset())              <span class="comment">// first and last element are</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            <span class="comment">// not the first elements of their block</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            {</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                <span class="keyword">typename</span> ExtIterator::bid_type first_bid, last_bid;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a> req;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                req = first_block-&gt;read(*first.bid());</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), first_bid);                <span class="comment">// try to overlap</span></div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), last_bid);</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                req = last_block-&gt;read(*last.bid());</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                <span class="keywordflow">for</span> ( ; i &lt; first.block_offset(); ++i)</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                {</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                    first_block-&gt;elem[i] = cmp.min_value();</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;                }</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                req = first_block-&gt;write(first_bid);</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                <span class="keywordflow">for</span> (i = last.block_offset(); i &lt; block_type::size; ++i)</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                {</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                    last_block-&gt;elem[i] = cmp.max_value();</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                }</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                req = last_block-&gt;write(last_bid);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                n = last.bid() - first.bid() + 1;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                std::swap(first_bid, *first.bid());</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                std::swap(last_bid, *last.bid());</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                <span class="keyword">delete</span> first_block;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                <span class="keyword">delete</span> last_block;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                run_type* out =</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                        <span class="keyword">typename</span> ExtIterator::block_type,</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                        <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                        <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>* reqs = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>[2];</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                reqs[0] = first_block-&gt;read(first_bid);</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                reqs[1] = sorted_first_block-&gt;read((*(out-&gt;begin())).bid);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                reqs[0]-&gt;wait();</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                reqs[1]-&gt;wait();</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                reqs[0] = last_block-&gt;read(last_bid);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                reqs[1] = sorted_last_block-&gt;read(((*out)[out-&gt;size() - 1]).bid);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                <span class="keywordflow">for</span> (i = first.block_offset(); i &lt; block_type::size; i++)</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                {</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                    first_block-&gt;elem[i] = sorted_first_block-&gt;elem[i];</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                }</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                reqs[0]-&gt;wait();</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                reqs[1]-&gt;wait();</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                req = first_block-&gt;write(first_bid);</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; last.block_offset(); ++i)</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                {</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                    last_block-&gt;elem[i] = sorted_last_block-&gt;elem[i];</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                }</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                req = last_block-&gt;write(last_bid);</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>(out-&gt;begin()-&gt;bid);</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>((*out)[out-&gt;size() - 1].bid);</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;                *first.bid() = first_bid;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;                *last.bid() = last_bid;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;                ++it;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;                ++cur_bid;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;                {</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                    *cur_bid = (*it).bid;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;                }</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                <span class="keyword">delete</span> first_block;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                <span class="keyword">delete</span> sorted_first_block;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;                <span class="keyword">delete</span> sorted_last_block;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                <span class="keyword">delete</span>[] reqs;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                <span class="keyword">delete</span> out;</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;                <span class="keyword">delete</span> last_block;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            }</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            {</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                <span class="comment">// first element is</span></div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;                <span class="comment">// not the first element of its block</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;                <span class="keyword">typename</span> ExtIterator::bid_type first_bid;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a> req;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                req = first_block-&gt;read(*first.bid());</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), first_bid);                <span class="comment">// try to overlap</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                <span class="keywordflow">for</span> ( ; i &lt; first.block_offset(); ++i)</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                {</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                    first_block-&gt;elem[i] = cmp.min_value();</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                }</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                req = first_block-&gt;write(first_bid);</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                n = last.bid() - first.bid();</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                std::swap(first_bid, *first.bid());</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                <span class="keyword">delete</span> first_block;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                run_type* out =</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                        <span class="keyword">typename</span> ExtIterator::block_type,</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                        <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                        <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>* reqs = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>[2];</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                reqs[0] = first_block-&gt;read(first_bid);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                reqs[1] = sorted_first_block-&gt;read((*(out-&gt;begin())).bid);</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                reqs[0]-&gt;wait();</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                reqs[1]-&gt;wait();</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                <span class="keywordflow">for</span> (i = first.block_offset(); i &lt; block_type::size; ++i)</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                {</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                    first_block-&gt;elem[i] = sorted_first_block-&gt;elem[i];</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                }</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                req = first_block-&gt;write(first_bid);</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>(out-&gt;begin()-&gt;bid);</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                *first.bid() = first_bid;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                ++it;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                ++cur_bid;</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                {</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                    *cur_bid = (*it).bid;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                }</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                *cur_bid = (*it).bid;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                <span class="keyword">delete</span> sorted_first_block;</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                <span class="keyword">delete</span>[] reqs;</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                <span class="keyword">delete</span> out;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                <span class="keyword">delete</span> first_block;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            }</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        }</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        {</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            <span class="keywordflow">if</span> (last.block_offset())            <span class="comment">// last is</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            <span class="comment">// not the first element of its block</span></div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            {</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                <span class="keyword">typename</span> ExtIterator::bid_type last_bid;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a> req;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i;</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                req = last_block-&gt;read(*last.bid());</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), last_bid);</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                <span class="keywordflow">for</span> (i = last.block_offset(); i &lt; block_type::size; ++i)</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                {</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                    last_block-&gt;elem[i] = cmp.max_value();</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                }</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                req = last_block-&gt;write(last_bid);</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                n = last.bid() - first.bid() + 1;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                std::swap(last_bid, *last.bid());</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                <span class="keyword">delete</span> last_block;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                run_type* out =</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                        <span class="keyword">typename</span> ExtIterator::block_type,</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                        <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                        <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>* reqs = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>[2];</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                reqs[0] = last_block-&gt;read(last_bid);</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;                reqs[1] = sorted_last_block-&gt;read(((*out)[out-&gt;size() - 1]).bid);</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                reqs[0]-&gt;wait();</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                reqs[1]-&gt;wait();</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; last.block_offset(); ++i)</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                {</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                    last_block-&gt;elem[i] = sorted_last_block-&gt;elem[i];</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                }</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                req = last_block-&gt;write(last_bid);</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>((*out)[out-&gt;size() - 1].bid);</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                *last.bid() = last_bid;</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                {</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                    *cur_bid = (*it).bid;</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                }</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                <span class="keyword">delete</span> sorted_last_block;</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;                <span class="keyword">delete</span>[] reqs;</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;                <span class="keyword">delete</span> out;</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;                req-&gt;wait();</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                <span class="keyword">delete</span> last_block;</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;            }</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;            {</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                <span class="comment">// first and last element are first elements of their of blocks</span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;                n = last.bid() - first.bid();</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                run_type* out =</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;<span class="keyword">typename</span> ExtIterator::block_type,</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                                            <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                                            <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;                {</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                    *cur_bid = (*it).bid;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;                }</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                <span class="keyword">delete</span> out;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;            }</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;        }</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    }</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="preprocessor">#if STXXL_CHECK_ORDER_IN_SORTS</span></div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;<span class="preprocessor"></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> ExtIterator::const_iterator const_iterator;</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    assert(<a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(const_iterator(first), const_iterator(last), cmp));</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="preprocessor">#endif // !STXXL_ALGO_SORT_HEADER</span></div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;}</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;} <span class="comment">// namespace sort_local</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="comment"> * Sort records comparison-based, see \ref design_algo_sort.</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="comment"> * stxxl::sort sorts the elements in [first, last) into ascending order,</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment"> * meaning that if \c i and \c j are any two valid iterators in [first, last)</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment"> * such that \c i precedes \c j, then \c *j is not less than \c *i. Note: as</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="comment"> * std::sort, stxxl::sort is not guaranteed to be stable. That is, suppose that</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment"> * \c *i and \c *j are equivalent: neither one is less than the other. It is</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment"> * not guaranteed that the relative order of these two elements will be</span></div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="comment"> * preserved by stxxl::sort.</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="comment"> * The order is defined by the \c cmp parameter. The sorter&#39;s internal memory</span></div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment"> * consumption is bounded by \a M bytes.</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment"> * \param first object of model of \c ext_random_access_iterator concept</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment"> * \param last object of model of \c ext_random_access_iterator concept</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="comment"> * \param cmp comparison object of \ref StrictWeakOrdering</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"> * \param M amount of memory for internal use (in bytes)</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExtIterator, <span class="keyword">typename</span> StrictWeakOrdering&gt;</div>
+<div class="line"><a name="l00664"></a><span class="lineno"><a class="line" href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">  664</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">sort</a>(ExtIterator first, ExtIterator last, StrictWeakOrdering cmp, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M)</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;{</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <a class="code" href="namespacestxxl_1_1sort__helper.html#a1af21f97aead9b8cc6d459543da4d8b2">sort_helper::verify_sentinel_strict_weak_ordering</a>(cmp);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classstxxl_1_1simple__vector.html">simple_vector&lt;sort_helper::trigger_entry&lt;typename ExtIterator::block_type&gt;</a> &gt; run_type;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> ExtIterator::vector_type::value_type value_type;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> ExtIterator::block_type block_type;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> n = 0;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <a class="code" href="classstxxl_1_1block__manager.html">block_manager</a>* mng = block_manager::get_instance();</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    first.flush();</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordflow">if</span> ((last - first) * <span class="keyword">sizeof</span>(value_type) * <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() &lt; M)</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    {</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <a class="code" href="namespacestxxl.html#ab79eadbfe93db179c741b775e5cd6734">stl_in_memory_sort</a>(first, last, cmp);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    }</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    {</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        <span class="keywordflow">if</span> (!(2 * block_type::raw_size * (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>)<a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() &lt;= M)) {</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="classstxxl_1_1bad__parameter.html">bad_parameter</a>(<span class="stringliteral">&quot;stxxl::sort(): INSUFFICIENT MEMORY provided, please increase parameter &#39;M&#39;&quot;</span>);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        }</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keywordflow">if</span> (first.block_offset())</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        {</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            <span class="keywordflow">if</span> (last.block_offset())              <span class="comment">// first and last element are</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            <span class="comment">// not the first elements of their block</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                <span class="keyword">typename</span> ExtIterator::bid_type first_bid, last_bid;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a> req;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                req = first_block-&gt;read(*first.bid());</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), first_bid);                <span class="comment">// try to overlap</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), last_bid);</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                req = last_block-&gt;read(*last.bid());</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                <span class="keywordflow">for</span> ( ; i &lt; first.block_offset(); ++i)</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                {</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                    first_block-&gt;elem[i] = cmp.min_value();</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                }</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                req = first_block-&gt;write(first_bid);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                <span class="keywordflow">for</span> (i = last.block_offset(); i &lt; block_type::size; ++i)</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                {</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                    last_block-&gt;elem[i] = cmp.max_value();</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                }</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                req = last_block-&gt;write(last_bid);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                n = last.bid() - first.bid() + 1;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                std::swap(first_bid, *first.bid());</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                std::swap(last_bid, *last.bid());</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                <span class="keyword">delete</span> first_block;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                <span class="keyword">delete</span> last_block;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                run_type* out =</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                        <span class="keyword">typename</span> ExtIterator::block_type,</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                        <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                        <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>* reqs = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>[2];</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                reqs[0] = first_block-&gt;read(first_bid);</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                reqs[1] = sorted_first_block-&gt;read((*(out-&gt;begin())).bid);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                reqs[0]-&gt;wait();</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                reqs[1]-&gt;wait();</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                reqs[0] = last_block-&gt;read(last_bid);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                reqs[1] = sorted_last_block-&gt;read(((*out)[out-&gt;size() - 1]).bid);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                <span class="keywordflow">for</span> (i = first.block_offset(); i &lt; block_type::size; i++)</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                {</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                    first_block-&gt;elem[i] = sorted_first_block-&gt;elem[i];</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                }</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                reqs[0]-&gt;wait();</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                reqs[1]-&gt;wait();</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                req = first_block-&gt;write(first_bid);</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; last.block_offset(); ++i)</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                {</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                    last_block-&gt;elem[i] = sorted_last_block-&gt;elem[i];</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                }</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                req = last_block-&gt;write(last_bid);</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>(out-&gt;begin()-&gt;bid);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>((*out)[out-&gt;size() - 1].bid);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;                *first.bid() = first_bid;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;                *last.bid() = last_bid;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;                ++it;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                ++cur_bid;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;                {</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;                    *cur_bid = (*it).bid;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                }</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;                <span class="keyword">delete</span> first_block;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                <span class="keyword">delete</span> sorted_first_block;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                <span class="keyword">delete</span> sorted_last_block;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;                <span class="keyword">delete</span>[] reqs;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                <span class="keyword">delete</span> out;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                <span class="keyword">delete</span> last_block;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            }</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            {</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;                <span class="comment">// first element is</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                <span class="comment">// not the first element of its block</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                <span class="keyword">typename</span> ExtIterator::bid_type first_bid;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a> req;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                req = first_block-&gt;read(*first.bid());</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), first_bid);                <span class="comment">// try to overlap</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                <span class="keywordflow">for</span> ( ; i &lt; first.block_offset(); ++i)</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                {</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                    first_block-&gt;elem[i] = cmp.min_value();</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                }</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                req = first_block-&gt;write(first_bid);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                n = last.bid() - first.bid();</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                std::swap(first_bid, *first.bid());</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                <span class="keyword">delete</span> first_block;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                run_type* out =</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                        <span class="keyword">typename</span> ExtIterator::block_type,</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                        <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                        <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_first_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>* reqs = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>[2];</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                reqs[0] = first_block-&gt;read(first_bid);</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                reqs[1] = sorted_first_block-&gt;read((*(out-&gt;begin())).bid);</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                reqs[0]-&gt;wait();</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                reqs[1]-&gt;wait();</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                <span class="keywordflow">for</span> (i = first.block_offset(); i &lt; block_type::size; ++i)</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                {</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                    first_block-&gt;elem[i] = sorted_first_block-&gt;elem[i];</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                }</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                req = first_block-&gt;write(first_bid);</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>(out-&gt;begin()-&gt;bid);</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                *first.bid() = first_bid;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                ++it;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                ++cur_bid;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                {</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                    *cur_bid = (*it).bid;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                }</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                *cur_bid = (*it).bid;</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                <span class="keyword">delete</span> sorted_first_block;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                <span class="keyword">delete</span>[] reqs;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                <span class="keyword">delete</span> out;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                <span class="keyword">delete</span> first_block;</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            }</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        }</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        {</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keywordflow">if</span> (last.block_offset())            <span class="comment">// last is</span></div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            <span class="comment">// not the first element of its block</span></div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            {</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                <span class="keyword">typename</span> ExtIterator::bid_type last_bid;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a> req;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                req = last_block-&gt;read(*last.bid());</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                mng-&gt;<a class="code" href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">new_block</a>(<a class="code" href="structstxxl_1_1FR.html">FR</a>(), last_bid);</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                <span class="keywordflow">for</span> (i = last.block_offset(); i &lt; block_type::size; ++i)</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                {</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                    last_block-&gt;elem[i] = cmp.max_value();</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                }</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                req = last_block-&gt;write(last_bid);</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                n = last.bid() - first.bid() + 1;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                std::swap(last_bid, *last.bid());</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;                <span class="keyword">delete</span> last_block;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                run_type* out =</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                        <span class="keyword">typename</span> ExtIterator::block_type,</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                        <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                        <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                <span class="keyword">typename</span> ExtIterator::block_type * sorted_last_block = <span class="keyword">new</span> <span class="keyword">typename</span> ExtIterator::block_type;</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>* reqs = <span class="keyword">new</span> <a class="code" href="classstxxl_1_1counting__ptr.html">request_ptr</a>[2];</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                reqs[0] = last_block-&gt;read(last_bid);</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                reqs[1] = sorted_last_block-&gt;read(((*out)[out-&gt;size() - 1]).bid);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;                reqs[0]-&gt;wait();</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                reqs[1]-&gt;wait();</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; last.block_offset(); ++i)</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                {</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                    last_block-&gt;elem[i] = sorted_last_block-&gt;elem[i];</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                }</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                req = last_block-&gt;write(last_bid);</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                mng-&gt;<a class="code" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">delete_block</a>((*out)[out-&gt;size() - 1].bid);</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                *last.bid() = last_bid;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                {</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                    *cur_bid = (*it).bid;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                }</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                <span class="keyword">delete</span> sorted_last_block;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                <span class="keyword">delete</span>[] reqs;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;                <span class="keyword">delete</span> out;</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;                req-&gt;wait();</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                <span class="keyword">delete</span> last_block;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;            }</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;            {</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                <span class="comment">// first and last element are first elements of their of blocks</span></div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                n = last.bid() - first.bid();</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;                run_type* out =</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                    <a class="code" href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">sort_local::sort_blocks</a>&lt;<span class="keyword">typename</span> ExtIterator::block_type,</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                                            <span class="keyword">typename</span> ExtIterator::vector_type::alloc_strategy_type,</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                                            <span class="keyword">typename</span> ExtIterator::bids_container_iterator&gt;</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                        (first.bid(), n, M / <a class="code" href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">sort_memory_usage_factor</a>() / block_type::raw_size, cmp);</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;                <span class="keyword">typename</span> run_type::iterator it = out-&gt;begin();</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                <span class="keyword">typename</span> ExtIterator::bids_container_iterator cur_bid = first.bid();</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;                <span class="keywordflow">for</span> ( ; cur_bid != last.bid(); ++cur_bid, ++it)</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                {</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;                    *cur_bid = (*it).bid;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                }</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;                <span class="keyword">delete</span> out;</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;            }</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        }</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    }</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;<span class="preprocessor">#if STXXL_CHECK_ORDER_IN_SORTS</span></div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="preprocessor"></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> ExtIterator::const_iterator const_iterator;</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    assert(<a class="code" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a>(const_iterator(first), const_iterator(last), cmp));</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="preprocessor">#endif // !STXXL_ALGO_SORT_HEADER</span></div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="verbose_8h_html_ace60f963c7c29ed31c677d8677c9a13d"><div class="ttname"><a href="verbose_8h.html#ace60f963c7c29ed31c677d8677c9a13d">STXXL_VERBOSE</a></div><div class="ttdeci">#define STXXL_VERBOSE(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00102">verbose.h:102</a></div></div>
 <div class="ttc" id="sort__helper_8h_html"><div class="ttname"><a href="sort__helper_8h.html">sort_helper.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a0859f6ff62e9f2113fead81a55e5c8e1"><div class="ttname"><a href="namespacestxxl.html#a0859f6ff62e9f2113fead81a55e5c8e1">stxxl::STXXL_MIN</a></div><div class="ttdeci">const Tp &amp; STXXL_MIN(const Tp &amp;a, const Tp &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00146">utils.h:146</a></div></div>
 <div class="ttc" id="error__handling_8h_html_af950894c24a9c27f2047652205ee923f"><div class="ttname"><a href="error__handling_8h.html#af950894c24a9c27f2047652205ee923f">STXXL_THROW_UNREACHABLE</a></div><div class="ttdeci">#define STXXL_THROW_UNREACHABLE()</div><div class="ttdoc">Throws stxxl::unreachable with &amp;quot;Error in file [file], line [line] : this code should never be reachab...</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8h_source.html#l00070">error_handling.h:70</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a13269a96a32504fec831ef023fdac7b6"><div class="ttname"><a href="namespacestxxl.html#a13269a96a32504fec831ef023fdac7b6">stxxl::div_ceil</a></div><div class="ttdeci">compat::remove_const&lt; Integral &gt;::type div_ceil(Integral n, Integral2 d)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00199">utils.h:199</a></div></div>
-<div class="ttc" id="group__reqlayer_html_gadc535a096b5d4c8f84deb03c786ec807"><div class="ttname"><a href="group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807">stxxl::wait_all</a></div><div class="ttdeci">void wait_all(request_iterator_ reqs_begin, request_iterator_ reqs_end)</div><div class="ttdoc">Collection of functions to track statuses of a number of requests. </div><div class="ttdef"><b>Definition:</b> <a href="request__operations_8h_source.html#l00034">request_operations.h:34</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a20823d9598f0abda6a3c61834d8a108f"><div class="ttname"><a href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">stxxl::is_sorted</a></div><div class="ttdeci">bool is_sorted(ForwardIterator first, ForwardIterator last)</div><div class="ttdef"><b>Definition:</b> <a href="is__sorted_8h_source.html#l00053">is_sorted.h:53</a></div></div>
 <div class="ttc" id="structstxxl_1_1FR_html"><div class="ttname"><a href="structstxxl_1_1FR.html">stxxl::FR</a></div><div class="ttdoc">Fully randomized disk allocation scheme functor. </div><div class="ttdef"><b>Definition:</b> <a href="block__alloc_8h_source.html#l00067">block_alloc.h:67</a></div></div>
 <div class="ttc" id="namespacestxxl_html_aa246d1337037f541ce441ab757c90abc"><div class="ttname"><a href="namespacestxxl.html#aa246d1337037f541ce441ab757c90abc">stxxl::sort_memory_usage_factor</a></div><div class="ttdeci">unsigned sort_memory_usage_factor()</div><div class="ttdef"><b>Definition:</b> <a href="parallel_8h_source.html#l00087">parallel.h:87</a></div></div>
-<div class="ttc" id="classstxxl_1_1block__manager_html"><div class="ttname"><a href="classstxxl_1_1block__manager.html">stxxl::block_manager</a></div><div class="ttdoc">Block manager class. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00063">block_manager.h:63</a></div></div>
+<div class="ttc" id="classstxxl_1_1block__manager_html"><div class="ttname"><a href="classstxxl_1_1block__manager.html">stxxl::block_manager</a></div><div class="ttdoc">Block manager class. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00061">block_manager.h:61</a></div></div>
 <div class="ttc" id="namespacestxxl_1_1sort__local_html_af37f3d01793a983e1a91674354c491c3"><div class="ttname"><a href="namespacestxxl_1_1sort__local.html#af37f3d01793a983e1a91674354c491c3">stxxl::sort_local::sort_blocks</a></div><div class="ttdeci">simple_vector&lt; sort_helper::trigger_entry&lt; block_type &gt; &gt; * sort_blocks(input_bid_iterator input_bids, unsigned_type _n, unsigned_type _m, value_cmp cmp)</div><div class="ttdef"><b>Definition:</b> <a href="sort_8h_source.html#l00506">sort.h:506</a></div></div>
 <div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00038">types.h:38</a></div></div>
 <div class="ttc" id="namespacestxxl_html_ab79eadbfe93db179c741b775e5cd6734"><div class="ttname"><a href="namespacestxxl.html#ab79eadbfe93db179c741b775e5cd6734">stxxl::stl_in_memory_sort</a></div><div class="ttdeci">void stl_in_memory_sort(ExtIterator_ first, ExtIterator_ last, StrictWeakOrdering_ cmp)</div><div class="ttdef"><b>Definition:</b> <a href="inmemsort_8h_source.html#l00029">inmemsort.h:29</a></div></div>
-<div class="ttc" id="group__stlalgo_html_ga5fcb89548cf48f273e140e973af6df33"><div class="ttname"><a href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">stxxl::sort</a></div><div class="ttdeci">void sort(ExtIterator first, ExtIterator last, StrictWeakOrdering cmp, unsigned_type M)</div><div class="ttdoc">Sort records comparison-based, see stxxl::sort -- Sorting Comparison-Based. </div><div class="ttdef"><b>Definition:</b> <a href="sort_8h_source.html#l00665">sort.h:665</a></div></div>
+<div class="ttc" id="group__stlalgo_html_ga5fcb89548cf48f273e140e973af6df33"><div class="ttname"><a href="group__stlalgo.html#ga5fcb89548cf48f273e140e973af6df33">stxxl::sort</a></div><div class="ttdeci">void sort(ExtIterator first, ExtIterator last, StrictWeakOrdering cmp, unsigned_type M)</div><div class="ttdoc">Sort records comparison-based, see stxxl::sort -- Sorting Comparison-Based. </div><div class="ttdef"><b>Definition:</b> <a href="sort_8h_source.html#l00664">sort.h:664</a></div></div>
 <div class="ttc" id="namespacestxxl_html_ac383fe5e761b01845f0431df344c353d"><div class="ttname"><a href="namespacestxxl.html#ac383fe5e761b01845f0431df344c353d">stxxl::make_bid_iterator</a></div><div class="ttdeci">trigger_entry_iterator&lt; Iterator &gt; make_bid_iterator(Iterator iter)</div><div class="ttdef"><b>Definition:</b> <a href="algo_2adaptor_8h_source.html#l00236">adaptor.h:236</a></div></div>
-<div class="ttc" id="namespacestxxl_1_1sort__helper_html_a4fbabc355b205b4bf7bd327fd1bbbd44"><div class="ttname"><a href="namespacestxxl_1_1sort__helper.html#a4fbabc355b205b4bf7bd327fd1bbbd44">stxxl::sort_helper::count_elements_less_equal</a></div><div class="ttdeci">unsigned_type count_elements_less_equal(const SequenceVector &amp;seqs, const ValueType &amp;bound, Comparator cmp)</div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00092">sort_helper.h:92</a></div></div>
+<div class="ttc" id="namespacestxxl_1_1sort__helper_html_a4fbabc355b205b4bf7bd327fd1bbbd44"><div class="ttname"><a href="namespacestxxl_1_1sort__helper.html#a4fbabc355b205b4bf7bd327fd1bbbd44">stxxl::sort_helper::count_elements_less_equal</a></div><div class="ttdeci">unsigned_type count_elements_less_equal(const SequenceVector &amp;seqs, const ValueType &amp;bound, Comparator cmp)</div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00091">sort_helper.h:91</a></div></div>
 <div class="ttc" id="structstxxl_1_1runs2bid__array__adaptor2_html"><div class="ttname"><a href="structstxxl_1_1runs2bid__array__adaptor2.html">stxxl::runs2bid_array_adaptor2</a></div><div class="ttdef"><b>Definition:</b> <a href="algo_2adaptor_8h_source.html#l00075">adaptor.h:75</a></div></div>
 <div class="ttc" id="namespacestxxl_1_1sort__helper_html_a1af21f97aead9b8cc6d459543da4d8b2"><div class="ttname"><a href="namespacestxxl_1_1sort__helper.html#a1af21f97aead9b8cc6d459543da4d8b2">stxxl::sort_helper::verify_sentinel_strict_weak_ordering</a></div><div class="ttdeci">void verify_sentinel_strict_weak_ordering(StrictWeakOrdering cmp)</div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00028">sort_helper.h:28</a></div></div>
-<div class="ttc" id="structstxxl_1_1sort__helper_1_1run__cursor2__cmp_html"><div class="ttname"><a href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a></div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00069">sort_helper.h:69</a></div></div>
+<div class="ttc" id="structstxxl_1_1sort__helper_1_1run__cursor2__cmp_html"><div class="ttname"><a href="structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html">stxxl::sort_helper::run_cursor2_cmp</a></div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00068">sort_helper.h:68</a></div></div>
 <div class="ttc" id="classstxxl_1_1counting__ptr_html"><div class="ttname"><a href="classstxxl_1_1counting__ptr.html">stxxl::counting_ptr&lt; request &gt;</a></div></div>
-<div class="ttc" id="namespacestxxl_1_1sort__helper_html_ad2f71ff4f5af6f91d11ceb3497986605"><div class="ttname"><a href="namespacestxxl_1_1sort__helper.html#ad2f71ff4f5af6f91d11ceb3497986605">stxxl::sort_helper::refill_or_remove_empty_sequences</a></div><div class="ttdeci">void refill_or_remove_empty_sequences(SequenceVector &amp;seqs, BufferPtrVector &amp;buffers, Prefetcher &amp;prefetcher)</div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00111">sort_helper.h:111</a></div></div>
-<div class="ttc" id="group__mnglayer_html_gabbd5a927be337358785fb7cace9ef95f"><div class="ttname"><a href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">stxxl::block_manager::delete_block</a></div><div class="ttdeci">void delete_block(const BID&lt; BLK_SIZE &gt; &amp;bid)</div><div class="ttdoc">Deallocates a block. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00238">block_manager.h:238</a></div></div>
+<div class="ttc" id="namespacestxxl_1_1sort__helper_html_ad2f71ff4f5af6f91d11ceb3497986605"><div class="ttname"><a href="namespacestxxl_1_1sort__helper.html#ad2f71ff4f5af6f91d11ceb3497986605">stxxl::sort_helper::refill_or_remove_empty_sequences</a></div><div class="ttdeci">void refill_or_remove_empty_sequences(SequenceVector &amp;seqs, BufferPtrVector &amp;buffers, Prefetcher &amp;prefetcher)</div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00110">sort_helper.h:110</a></div></div>
+<div class="ttc" id="group__mnglayer_html_gabbd5a927be337358785fb7cace9ef95f"><div class="ttname"><a href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">stxxl::block_manager::delete_block</a></div><div class="ttdeci">void delete_block(const BID&lt; BLK_SIZE &gt; &amp;bid)</div><div class="ttdoc">Deallocates a block. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00236">block_manager.h:236</a></div></div>
 <div class="ttc" id="block__manager_8h_html"><div class="ttname"><a href="block__manager_8h.html">block_manager.h</a></div></div>
 <div class="ttc" id="structstxxl_1_1sort__local_1_1read__next__after__write__completed_html_a9c90236b7b59ed2bbea7a6cc2fbcce43"><div class="ttname"><a href="structstxxl_1_1sort__local_1_1read__next__after__write__completed.html#a9c90236b7b59ed2bbea7a6cc2fbcce43">stxxl::sort_local::read_next_after_write_completed::bid</a></div><div class="ttdeci">bid_type bid</div><div class="ttdef"><b>Definition:</b> <a href="sort_8h_source.html#l00055">sort.h:55</a></div></div>
-<div class="ttc" id="structstxxl_1_1sort__helper_1_1trigger__entry__cmp_html"><div class="ttname"><a href="structstxxl_1_1sort__helper_1_1trigger__entry__cmp.html">stxxl::sort_helper::trigger_entry_cmp</a></div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00054">sort_helper.h:54</a></div></div>
+<div class="ttc" id="structstxxl_1_1sort__helper_1_1trigger__entry__cmp_html"><div class="ttname"><a href="structstxxl_1_1sort__helper_1_1trigger__entry__cmp.html">stxxl::sort_helper::trigger_entry_cmp</a></div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00053">sort_helper.h:53</a></div></div>
 <div class="ttc" id="rand_8h_html"><div class="ttname"><a href="rand_8h.html">rand.h</a></div></div>
 <div class="ttc" id="run__cursor_8h_html"><div class="ttname"><a href="run__cursor_8h.html">run_cursor.h</a></div></div>
 <div class="ttc" id="losertree_8h_html"><div class="ttname"><a href="losertree_8h.html">losertree.h</a></div></div>
@@ -1134,7 +1132,6 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1sequence_html"><div class="ttname"><a href="classstxxl_1_1sequence.html">stxxl::sequence</a></div><div class="ttdoc">External sequence or deque container without random access.   Introduction  to sequence container: se...</div><div class="ttdef"><b>Definition:</b> <a href="sequence_8h_source.html#l00062">sequence.h:62</a></div></div>
 <div class="ttc" id="mng_2adaptor_8h_html"><div class="ttname"><a href="mng_2adaptor_8h.html">adaptor.h</a></div></div>
 <div class="ttc" id="async__schedule_8h_html"><div class="ttname"><a href="async__schedule_8h.html">async_schedule.h</a></div></div>
-<div class="ttc" id="namespacestxxl_html_ae389752543aaf71fb020ad8e33b78854"><div class="ttname"><a href="namespacestxxl.html#ae389752543aaf71fb020ad8e33b78854">stxxl::timestamp</a></div><div class="ttdeci">double timestamp()</div><div class="ttdoc">Returns number of seconds since the epoch, high resolution. </div><div class="ttdef"><b>Definition:</b> <a href="timer_8h_source.html#l00041">timer.h:41</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a12bcc0109d49084bf722af3cf5797923"><div class="ttname"><a href="namespacestxxl.html#a12bcc0109d49084bf722af3cf5797923">stxxl::STXXL_MAX</a></div><div class="ttdeci">const Tp &amp; STXXL_MAX(const Tp &amp;a, const Tp &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00153">utils.h:153</a></div></div>
 <div class="ttc" id="parallel_8h_html_a86a7a3d9ff17c356bee2471812b7626a"><div class="ttname"><a href="parallel_8h.html#a86a7a3d9ff17c356bee2471812b7626a">_STXXL_SORT_TRIGGER_FORCE_SEQUENTIAL</a></div><div class="ttdeci">#define _STXXL_SORT_TRIGGER_FORCE_SEQUENTIAL</div><div class="ttdef"><b>Definition:</b> <a href="parallel_8h_source.html#l00058">parallel.h:58</a></div></div>
 <div class="ttc" id="namespacestxxl_html_add6239ebaf3d1e03a054aee6f1fd52d2"><div class="ttname"><a href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">stxxl::int_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::int_type int_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00063">types.h:63</a></div></div>
@@ -1142,27 +1139,28 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="ttc" id="simple__vector_8h_html"><div class="ttname"><a href="simple__vector_8h.html">simple_vector.h</a></div></div>
 <div class="ttc" id="algo_2adaptor_8h_html"><div class="ttname"><a href="algo_2adaptor_8h.html">adaptor.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
-<div class="ttc" id="namespacestxxl_html_aee76e3394484f31af296aa8d2226d18e"><div class="ttname"><a href="namespacestxxl.html#aee76e3394484f31af296aa8d2226d18e">stxxl::STXXL_UNUSED</a></div><div class="ttdeci">void STXXL_UNUSED(const U &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="unused_8h_source.html#l00022">unused.h:22</a></div></div>
 <div class="ttc" id="verbose_8h_html_a2116dc5eaca1f8d0d5a67794f7233dc6"><div class="ttname"><a href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a></div><div class="ttdeci">#define STXXL_VERBOSE1(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00099">verbose.h:99</a></div></div>
 <div class="ttc" id="sort__base_8h_html"><div class="ttname"><a href="sort__base_8h.html">sort_base.h</a></div></div>
 <div class="ttc" id="block__alloc__interleaved_8h_html"><div class="ttname"><a href="block__alloc__interleaved_8h.html">block_alloc_interleaved.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1block__manager_html_aea0e86b68cc69d43def85bd5b1f60935"><div class="ttname"><a href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">stxxl::block_manager::new_block</a></div><div class="ttdeci">void new_block(const DiskAssignFunctor &amp;functor, BID&lt; BLK_SIZE &gt; &amp;bid, unsigned_type offset=0)</div><div class="ttdoc">Allocates a new block according to the strategy given by functor and stores the block identifier to b...</div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00152">block_manager.h:152</a></div></div>
-<div class="ttc" id="classstxxl_1_1block__manager_html_a5d1ba172819d3bf2969f3a1e35efabb5"><div class="ttname"><a href="classstxxl_1_1block__manager.html#a5d1ba172819d3bf2969f3a1e35efabb5">stxxl::block_manager::new_blocks</a></div><div class="ttdeci">void new_blocks(const DiskAssignFunctor &amp;functor, BIDIteratorClass bidbegin, BIDIteratorClass bidend, unsigned_type offset=0)</div><div class="ttdoc">Allocates new blocks. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00111">block_manager.h:111</a></div></div>
+<div class="ttc" id="classstxxl_1_1block__manager_html_aea0e86b68cc69d43def85bd5b1f60935"><div class="ttname"><a href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">stxxl::block_manager::new_block</a></div><div class="ttdeci">void new_block(const DiskAssignFunctor &amp;functor, BID&lt; BLK_SIZE &gt; &amp;bid, unsigned_type offset=0)</div><div class="ttdoc">Allocates a new block according to the strategy given by functor and stores the block identifier to b...</div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00150">block_manager.h:150</a></div></div>
+<div class="ttc" id="classstxxl_1_1block__manager_html_a5d1ba172819d3bf2969f3a1e35efabb5"><div class="ttname"><a href="classstxxl_1_1block__manager.html#a5d1ba172819d3bf2969f3a1e35efabb5">stxxl::block_manager::new_blocks</a></div><div class="ttdeci">void new_blocks(const DiskAssignFunctor &amp;functor, BIDIteratorClass bidbegin, BIDIteratorClass bidend, unsigned_type offset=0)</div><div class="ttdoc">Allocates new blocks. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00109">block_manager.h:109</a></div></div>
 <div class="ttc" id="settings_8h_html"><div class="ttname"><a href="settings_8h.html">settings.h</a></div><div class="ttdoc">Provides a static class to store runtime tuning parameters. </div></div>
 <div class="ttc" id="error__handling_8h_html"><div class="ttname"><a href="error__handling_8h.html">error_handling.h</a></div></div>
 <div class="ttc" id="group__mnglayer_html_gadb729b29e299075dd737124571519a1b"><div class="ttname"><a href="group__mnglayer.html#gadb729b29e299075dd737124571519a1b">stxxl::make_element_iterator</a></div><div class="ttdeci">element_iterator_traits&lt; BlockType, SizeType &gt;::element_iterator make_element_iterator(BlockType *blocks, SizeType offset)</div><div class="ttdef"><b>Definition:</b> <a href="mng_2adaptor_8h_source.html#l00631">adaptor.h:631</a></div></div>
 <div class="ttc" id="intksort_8h_html"><div class="ttname"><a href="intksort_8h.html">intksort.h</a></div></div>
 <div class="ttc" id="classstxxl_1_1loser__tree_html_a52cad7975bc2510470088a3c0a2afb4e"><div class="ttname"><a href="classstxxl_1_1loser__tree.html#a52cad7975bc2510470088a3c0a2afb4e">stxxl::loser_tree::multi_merge</a></div><div class="ttdeci">void multi_merge(value_type *out_first, value_type *out_last)</div><div class="ttdef"><b>Definition:</b> <a href="losertree_8h_source.html#l00199">losertree.h:199</a></div></div>
 <div class="ttc" id="is__sorted_8h_html"><div class="ttname"><a href="is__sorted_8h.html">is_sorted.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1simple__vector_html"><div class="ttname"><a href="classstxxl_1_1simple__vector.html">stxxl::simple_vector</a></div><div class="ttdoc">Simpler non-growing vector without initialization. </div><div class="ttdef"><b>Definition:</b> <a href="simple__vector_8h_source.html#l00036">simple_vector.h:36</a></div></div>
-<div class="ttc" id="namespacestxxl_1_1ksort__local_html_a2e5b9853563c9488a4080461a65c95e5"><div class="ttname"><a href="namespacestxxl_1_1ksort__local.html#a2e5b9853563c9488a4080461a65c95e5">stxxl::ksort_local::create_runs</a></div><div class="ttdeci">void create_runs(input_bid_iterator it, run_type **runs, const unsigned_type nruns, const unsigned_type m2, key_extractor keyobj)</div><div class="ttdef"><b>Definition:</b> <a href="ksort_8h_source.html#l00182">ksort.h:182</a></div></div>
+<div class="ttc" id="classstxxl_1_1simple__vector_html"><div class="ttname"><a href="classstxxl_1_1simple__vector.html">stxxl::simple_vector</a></div><div class="ttdoc">Simpler non-growing vector without initialization. </div><div class="ttdef"><b>Definition:</b> <a href="simple__vector_8h_source.html#l00039">simple_vector.h:39</a></div></div>
+<div class="ttc" id="group__reqlayer_html_ga016f4e02b691aa4818ad3305de3f47bd"><div class="ttname"><a href="group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd">stxxl::wait_all</a></div><div class="ttdeci">void wait_all(RequestIterator reqs_begin, RequestIterator reqs_end)</div><div class="ttdoc">Collection of functions to track statuses of a number of requests. </div><div class="ttdef"><b>Definition:</b> <a href="request__operations_8h_source.html#l00034">request_operations.h:34</a></div></div>
+<div class="ttc" id="namespacestxxl_1_1ksort__local_html_a2e5b9853563c9488a4080461a65c95e5"><div class="ttname"><a href="namespacestxxl_1_1ksort__local.html#a2e5b9853563c9488a4080461a65c95e5">stxxl::ksort_local::create_runs</a></div><div class="ttdeci">void create_runs(input_bid_iterator it, run_type **runs, const unsigned_type nruns, const unsigned_type m2, key_extractor keyobj)</div><div class="ttdef"><b>Definition:</b> <a href="ksort_8h_source.html#l00181">ksort.h:181</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00064">types.h:64</a></div></div>
 <div class="ttc" id="inmemsort_8h_html"><div class="ttname"><a href="inmemsort_8h.html">inmemsort.h</a></div></div>
 <div class="ttc" id="namespacestxxl_1_1sort__local_html_a38fe0686a9962f6a1ed8a7349937f83c"><div class="ttname"><a href="namespacestxxl_1_1sort__local.html#a38fe0686a9962f6a1ed8a7349937f83c">stxxl::sort_local::check_sorted_runs</a></div><div class="ttdeci">bool check_sorted_runs(run_type **runs, unsigned_type nruns, unsigned_type m, value_cmp cmp)</div><div class="ttdef"><b>Definition:</b> <a href="sort_8h_source.html#l00205">sort.h:205</a></div></div>
+<div class="ttc" id="group__support_html_gae389752543aaf71fb020ad8e33b78854"><div class="ttname"><a href="group__support.html#gae389752543aaf71fb020ad8e33b78854">stxxl::timestamp</a></div><div class="ttdeci">double timestamp()</div><div class="ttdoc">Returns number of seconds since the epoch, high resolution. </div><div class="ttdef"><b>Definition:</b> <a href="timer_8h_source.html#l00044">timer.h:44</a></div></div>
 <div class="ttc" id="namespacestxxl_html_abd302015cef4bd6b19eb24aabd59fff3"><div class="ttname"><a href="namespacestxxl.html#abd302015cef4bd6b19eb24aabd59fff3">stxxl::compute_prefetch_schedule</a></div><div class="ttdeci">void compute_prefetch_schedule(const int_type *first, const int_type *last, int_type *out_first, int_type m, int_type D)</div><div class="ttdef"><b>Definition:</b> <a href="async__schedule_8cpp_source.html#l00168">async_schedule.cpp:168</a></div></div>
 <div class="ttc" id="verbose_8h_html_afec876b95f7d6cc4b0f0bd4c0d7d89a0"><div class="ttname"><a href="verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0">STXXL_MSG</a></div><div class="ttdeci">#define STXXL_MSG(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00073">verbose.h:73</a></div></div>
 <div class="ttc" id="namespacestxxl_html_ae0eac40a860d125e436c10c890e1a693"><div class="ttname"><a href="namespacestxxl.html#ae0eac40a860d125e436c10c890e1a693">stxxl::optimal_merge_factor</a></div><div class="ttdeci">unsigned_type optimal_merge_factor(unsigned_type num_runs, unsigned_type max_concurrent_runs)</div><div class="ttdef"><b>Definition:</b> <a href="sort__base_8h_source.html#l00040">sort_base.h:40</a></div></div>
-<div class="ttc" id="structstxxl_1_1sort__helper_1_1trigger__entry_html"><div class="ttname"><a href="structstxxl_1_1sort__helper_1_1trigger__entry.html">stxxl::sort_helper::trigger_entry</a></div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00038">sort_helper.h:38</a></div></div>
+<div class="ttc" id="structstxxl_1_1sort__helper_1_1trigger__entry_html"><div class="ttname"><a href="structstxxl_1_1sort__helper_1_1trigger__entry.html">stxxl::sort_helper::trigger_entry</a></div><div class="ttdef"><b>Definition:</b> <a href="sort__helper_8h_source.html#l00037">sort_helper.h:37</a></div></div>
 <div class="ttc" id="request__operations_8h_html"><div class="ttname"><a href="request__operations_8h.html">request_operations.h</a></div></div>
 <div class="ttc" id="structstxxl_1_1sort__local_1_1read__next__after__write__completed_html"><div class="ttname"><a href="structstxxl_1_1sort__local_1_1read__next__after__write__completed.html">stxxl::sort_local::read_next_after_write_completed</a></div><div class="ttdef"><b>Definition:</b> <a href="sort_8h_source.html#l00052">sort.h:52</a></div></div>
 <div class="ttc" id="classstxxl_1_1buffered__writer_html"><div class="ttname"><a href="classstxxl_1_1buffered__writer.html">stxxl::buffered_writer</a></div><div class="ttdoc">Encapsulates asynchronous buffered block writing engine. </div><div class="ttdef"><b>Definition:</b> <a href="buf__writer_8h_source.html#l00036">buf_writer.h:36</a></div></div>
@@ -1174,7 +1172,7 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1bad__parameter_html"><div class="ttname"><a href="classstxxl_1_1bad__parameter.html">stxxl::bad_parameter</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00061">exceptions.h:61</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 <div class="ttc" id="classstxxl_1_1loser__tree_html"><div class="ttname"><a href="classstxxl_1_1loser__tree.html">stxxl::loser_tree</a></div><div class="ttdef"><b>Definition:</b> <a href="losertree_8h_source.html#l00027">losertree.h:27</a></div></div>
-<div class="ttc" id="namespacestxxl_1_1ksort__local_html_aa258fcf8b3058f0076fb258de4e41e61"><div class="ttname"><a href="namespacestxxl_1_1ksort__local.html#aa258fcf8b3058f0076fb258de4e41e61">stxxl::ksort_local::merge_runs</a></div><div class="ttdeci">void merge_runs(run_type **in_runs, unsigned_type nruns, run_type *out_run, unsigned_type _m, key_extractor keyobj)</div><div class="ttdef"><b>Definition:</b> <a href="ksort_8h_source.html#l00440">ksort.h:440</a></div></div>
+<div class="ttc" id="namespacestxxl_1_1ksort__local_html_aa258fcf8b3058f0076fb258de4e41e61"><div class="ttname"><a href="namespacestxxl_1_1ksort__local.html#aa258fcf8b3058f0076fb258de4e41e61">stxxl::ksort_local::merge_runs</a></div><div class="ttdeci">void merge_runs(run_type **in_runs, unsigned_type nruns, run_type *out_run, unsigned_type _m, key_extractor keyobj)</div><div class="ttdef"><b>Definition:</b> <a href="ksort_8h_source.html#l00439">ksort.h:439</a></div></div>
 <div class="ttc" id="block__prefetcher_8h_html"><div class="ttname"><a href="block__prefetcher_8h.html">block_prefetcher.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -1182,10 +1180,10 @@ $(document).ready(function(){initNavTree('sort_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_6dd1bce03f0b0acb6641b4504697927f.html">algo</a></li><li class="navelem"><a class="el" href="sort_8h.html">sort.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:02:35 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:02:40 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

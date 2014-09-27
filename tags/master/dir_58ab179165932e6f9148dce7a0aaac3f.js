@@ -13,8 +13,8 @@ var dir_58ab179165932e6f9148dce7a0aaac3f =
     [ "sorted_runs.h", "sorted__runs_8h.html", null ],
     [ "stream.h", "stream_8h.html", "stream_8h" ],
     [ "unique.h", "unique_8h.html", [
-      [ "dummy_cmp_unique_", "structstxxl_1_1stream_1_1dummy__cmp__unique__.html", null ],
+      [ "dummy_cmp_unique", "structstxxl_1_1stream_1_1dummy__cmp__unique.html", null ],
       [ "unique", "classstxxl_1_1stream_1_1unique.html", "classstxxl_1_1stream_1_1unique" ],
-      [ "unique< Input, dummy_cmp_unique_ >", "classstxxl_1_1stream_1_1unique_3_01Input_00_01dummy__cmp__unique___01_4.html", "classstxxl_1_1stream_1_1unique_3_01Input_00_01dummy__cmp__unique___01_4" ]
+      [ "unique< Input, dummy_cmp_unique >", "classstxxl_1_1stream_1_1unique_3_01Input_00_01dummy__cmp__unique_01_4.html", "classstxxl_1_1stream_1_1unique_3_01Input_00_01dummy__cmp__unique_01_4" ]
     ] ]
 ];

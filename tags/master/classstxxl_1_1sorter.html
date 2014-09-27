@@ -157,32 +157,32 @@ class stxxl::sorter&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;</h
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1sorter__coll__graph.svg" width="3099" height="1110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1sorter__coll__graph.svg" width="2806" height="892"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6cf8247a886c42350d329b57df99f037"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1sorter.html#a6cf8247a886c42350d329b57df99f037a35e58c5358966ae2c67b4469067da52d">block_size</a> = BlockSize
+<tr class="memitem:a154d9af945968168e2da674de23b8613"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1sorter.html#a154d9af945968168e2da674de23b8613a35e58c5358966ae2c67b4469067da52d">block_size</a> = BlockSize
  }</td></tr>
-<tr class="separator:a6cf8247a886c42350d329b57df99f037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a154d9af945968168e2da674de23b8613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959f09bf11a6b022e108c8e0b17236f1"><td class="memItemLeft" align="right" valign="top">typedef AllocStrategy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a></td></tr>
 <tr class="separator:a959f09bf11a6b022e108c8e0b17236f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5e830d21d6d2f48f07ba2d874a1ad2"><td class="memItemLeft" align="right" valign="top">typedef CompareType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a></td></tr>
 <tr class="separator:acc5e830d21d6d2f48f07ba2d874a1ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f1408c8397ae7b9ad47f7ae8a7a493b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1runs__creator.html">stream::runs_creator</a><br class="typebreak"/>
 &lt; <a class="el" href="structstxxl_1_1stream_1_1use__push.html">stream::use_push</a>&lt; ValueType &gt;<br class="typebreak"/>
-, <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a6cf8247a886c42350d329b57df99f037a35e58c5358966ae2c67b4469067da52d">block_size</a>, <br class="typebreak"/>
+, <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a154d9af945968168e2da674de23b8613a35e58c5358966ae2c67b4469067da52d">block_size</a>, <br class="typebreak"/>
 <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a3f1408c8397ae7b9ad47f7ae8a7a493b">runs_creator_type</a></td></tr>
 <tr class="memdesc:a3f1408c8397ae7b9ad47f7ae8a7a493b"><td class="mdescLeft">&#160;</td><td class="mdescRight">runs creator type with <a class="el" href="classstxxl_1_1sorter.html#a92bf91c355039acda23759ef1ae839e3" title="Push another item (only callable during input state). ">push()</a> method  <a href="#a3f1408c8397ae7b9ad47f7ae8a7a493b">More...</a><br/></td></tr>
 <tr class="separator:a3f1408c8397ae7b9ad47f7ae8a7a493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0df183b20c18c63dac7cc61a253554"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1runs__merger.html">stream::runs_merger</a><br class="typebreak"/>
 &lt; typename <br class="typebreak"/>
-<a class="el" href="classstxxl_1_1stream_1_1runs__creator.html#a1bbd4c3669dd4ffb3d54991e9611702e">runs_creator_type::sorted_runs_type</a>, <br class="typebreak"/>
+<a class="el" href="classstxxl_1_1stream_1_1runs__creator.html#a29b48797da175020ea2c1d4b5c0a1d30">runs_creator_type::sorted_runs_type</a>, <br class="typebreak"/>
 <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554">runs_merger_type</a></td></tr>
 <tr class="memdesc:ace0df183b20c18c63dac7cc61a253554"><td class="mdescLeft">&#160;</td><td class="mdescRight">corresponding runs merger type  <a href="#ace0df183b20c18c63dac7cc61a253554">More...</a><br/></td></tr>
 <tr class="separator:ace0df183b20c18c63dac7cc61a253554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad08b54e783589d95e9e60f47ef4cd65f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#aa57b5f51520090c594730fce444f2265">runs_merger_type::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a></td></tr>
+<tr class="memitem:ad08b54e783589d95e9e60f47ef4cd65f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#add61917e1d4629f26bad8e55e8f0d3f7">runs_merger_type::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a></td></tr>
 <tr class="memdesc:ad08b54e783589d95e9e60f47ef4cd65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">size type  <a href="#ad08b54e783589d95e9e60f47ef4cd65f">More...</a><br/></td></tr>
 <tr class="separator:ad08b54e783589d95e9e60f47ef4cd65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d3e5beb037629615607b249b4cf7552"><td class="memItemLeft" align="right" valign="top">typedef ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a8d3e5beb037629615607b249b4cf7552">value_type</a></td></tr>
@@ -246,11 +246,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:ab2973f95ac9101f8754b8d47127f32b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1sorter.html#ab2973f95ac9101f8754b8d47127f32b1a7f29f7ec4243b42b665e46a9746a2c09">STATE_INPUT</a>, 
-<a class="el" href="classstxxl_1_1sorter.html#ab2973f95ac9101f8754b8d47127f32b1a61cfe92f49fe0a6f3373b702b86af817">STATE_OUTPUT</a>
+<tr class="memitem:a8fe6b90842b098e4b14fd06d1cdf5958"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958a7f29f7ec4243b42b665e46a9746a2c09">STATE_INPUT</a>, 
+<a class="el" href="classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958a61cfe92f49fe0a6f3373b702b86af817">STATE_OUTPUT</a>
  }</td></tr>
-<tr class="memdesc:ab2973f95ac9101f8754b8d47127f32b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">current state of sorter  <a href="classstxxl_1_1sorter.html#ab2973f95ac9101f8754b8d47127f32b1">More...</a><br/></td></tr>
-<tr class="separator:ab2973f95ac9101f8754b8d47127f32b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a8fe6b90842b098e4b14fd06d1cdf5958"><td class="mdescLeft">&#160;</td><td class="mdescRight">current state of sorter  <a href="classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958">More...</a><br/></td></tr>
+<tr class="separator:a8fe6b90842b098e4b14fd06d1cdf5958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -260,9 +260,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a3bc480b5451c63bf3025a9f824525b61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554">runs_merger_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a3bc480b5451c63bf3025a9f824525b61">m_runs_merger</a></td></tr>
 <tr class="memdesc:a3bc480b5451c63bf3025a9f824525b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">runs merger reading items when in STATE_OUTPUT  <a href="#a3bc480b5451c63bf3025a9f824525b61">More...</a><br/></td></tr>
 <tr class="separator:a3bc480b5451c63bf3025a9f824525b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da7921170d3f87ec3e464127a88f7e6"><td class="memItemLeft" align="right" valign="top">enum stxxl::sorter:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a0da7921170d3f87ec3e464127a88f7e6">m_state</a></td></tr>
-<tr class="memdesc:a0da7921170d3f87ec3e464127a88f7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">current state of sorter  <a href="#a0da7921170d3f87ec3e464127a88f7e6">More...</a><br/></td></tr>
-<tr class="separator:a0da7921170d3f87ec3e464127a88f7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b37fbff0208a4d2151b83e8ef5bd3d"><td class="memItemLeft" align="right" valign="top">enum stxxl::sorter:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1sorter.html#a16b37fbff0208a4d2151b83e8ef5bd3d">m_state</a></td></tr>
+<tr class="memdesc:a16b37fbff0208a4d2151b83e8ef5bd3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">current state of sorter  <a href="#a16b37fbff0208a4d2151b83e8ef5bd3d">More...</a><br/></td></tr>
+<tr class="separator:a16b37fbff0208a4d2151b83e8ef5bd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -310,7 +310,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1runs__creator.html">stream::runs_creator</a>&lt;<a class="el" href="structstxxl_1_1stream_1_1use__push.html">stream::use_push</a>&lt;ValueType&gt;, <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a6cf8247a886c42350d329b57df99f037a35e58c5358966ae2c67b4469067da52d">block_size</a>, <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a>&gt; <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#a3f1408c8397ae7b9ad47f7ae8a7a493b">runs_creator_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1runs__creator.html">stream::runs_creator</a>&lt;<a class="el" href="structstxxl_1_1stream_1_1use__push.html">stream::use_push</a>&lt;ValueType&gt;, <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a154d9af945968168e2da674de23b8613a35e58c5358966ae2c67b4469067da52d">block_size</a>, <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a>&gt; <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#a3f1408c8397ae7b9ad47f7ae8a7a493b">runs_creator_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -328,7 +328,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1runs__merger.html">stream::runs_merger</a>&lt;typename <a class="el" href="classstxxl_1_1stream_1_1runs__creator.html#a1bbd4c3669dd4ffb3d54991e9611702e">runs_creator_type::sorted_runs_type</a>, <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a>&gt; <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554">runs_merger_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1runs__merger.html">stream::runs_merger</a>&lt;typename <a class="el" href="classstxxl_1_1stream_1_1runs__creator.html#a29b48797da175020ea2c1d4b5c0a1d30">runs_creator_type::sorted_runs_type</a>, <a class="el" href="classstxxl_1_1sorter.html#acc5e830d21d6d2f48f07ba2d874a1ad2">cmp_type</a>, <a class="el" href="classstxxl_1_1sorter.html#a959f09bf11a6b022e108c8e0b17236f1">alloc_strategy_type</a>&gt; <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554">runs_merger_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -346,7 +346,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#aa57b5f51520090c594730fce444f2265">runs_merger_type::size_type</a> <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#add61917e1d4629f26bad8e55e8f0d3f7">runs_merger_type::size_type</a> <a class="el" href="classstxxl_1_1sorter.html">stxxl::sorter</a>&lt; ValueType, CompareType, BlockSize, AllocStrategy &gt;::<a class="el" href="classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f">size_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -374,7 +374,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a6cf8247a886c42350d329b57df99f037"></a>
+<a class="anchor" id="a154d9af945968168e2da674de23b8613"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -386,7 +386,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a6cf8247a886c42350d329b57df99f037a35e58c5358966ae2c67b4469067da52d"></a>block_size</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a154d9af945968168e2da674de23b8613a35e58c5358966ae2c67b4469067da52d"></a>block_size</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -394,7 +394,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 </div>
 </div>
-<a class="anchor" id="ab2973f95ac9101f8754b8d47127f32b1"></a>
+<a class="anchor" id="a8fe6b90842b098e4b14fd06d1cdf5958"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -416,9 +416,9 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>current state of sorter </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab2973f95ac9101f8754b8d47127f32b1a7f29f7ec4243b42b665e46a9746a2c09"></a>STATE_INPUT</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a8fe6b90842b098e4b14fd06d1cdf5958a7f29f7ec4243b42b665e46a9746a2c09"></a>STATE_INPUT</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab2973f95ac9101f8754b8d47127f32b1a61cfe92f49fe0a6f3373b702b86af817"></a>STATE_OUTPUT</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a8fe6b90842b098e4b14fd06d1cdf5958a61cfe92f49fe0a6f3373b702b86af817"></a>STATE_OUTPUT</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -774,7 +774,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Definition at line <a class="el" href="sorter_8h_source.html#l00210">210</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
-<p>References <a class="el" href="sort_8h_source.html#l00665">stxxl::sort()</a>.</p>
+<p>References <a class="el" href="sort_8h_source.html#l00664">stxxl::sort()</a>.</p>
 
 </div>
 </div>
@@ -894,7 +894,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 <p>Definition at line <a class="el" href="sorter_8h_source.html#l00189">189</a> of file <a class="el" href="sorter_8h_source.html">sorter.h</a>.</p>
 
-<p>References <a class="el" href="sort_8h_source.html#l00665">stxxl::sort()</a>.</p>
+<p>References <a class="el" href="sort_8h_source.html#l00664">stxxl::sort()</a>.</p>
 
 </div>
 </div>
@@ -980,7 +980,7 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 
 </div>
 </div>
-<a class="anchor" id="a0da7921170d3f87ec3e464127a88f7e6"></a>
+<a class="anchor" id="a16b37fbff0208a4d2151b83e8ef5bd3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1003,10 +1003,10 @@ template&lt;typename ValueType , typename CompareType , unsigned BlockSize = STX
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1sorter.html">sorter</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/4c14bb7e6cb4e2242bd1697189b6947507913efb">STXXL 1.4.0-224-g4c14bb7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/ea6c77d976c7e83dd3b6d233e1f50826d6a054a9">STXXL 1.4.0-345-gea6c77d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Sep 25 2014 11:03:49 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Sep 27 2014 13:04:10 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

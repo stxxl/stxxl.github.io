@@ -1,5 +1,6 @@
 var classstxxl_1_1btree_1_1btree__iterator =
 [
+    [ "base_type", "classstxxl_1_1btree_1_1btree__iterator.html#a8b6e3b7543ff7d1ba241f0ab6dc6a77e", null ],
     [ "bid_type", "classstxxl_1_1btree_1_1btree__iterator.html#abaa895a0fc9916db59f23ec960f3f24b", null ],
     [ "btree_type", "classstxxl_1_1btree_1_1btree__iterator.html#a48a7c49644ac26e3fc1f0eb81375cddc", null ],
     [ "const_reference", "classstxxl_1_1btree_1_1btree__iterator.html#a5edf0a38fb540e8c5ee6594fdadf2cad", null ],
@@ -8,7 +9,7 @@ var classstxxl_1_1btree_1_1btree__iterator =
     [ "value_type", "classstxxl_1_1btree_1_1btree__iterator.html#a3d8c142eefc4eb04b31c6c1c6aeec528", null ],
     [ "btree_iterator", "classstxxl_1_1btree_1_1btree__iterator.html#ac89b36ccb19c9672e7fcc07b61ef233f", null ],
     [ "btree_iterator", "classstxxl_1_1btree_1_1btree__iterator.html#a8b24b470285142b07e89005709c6c341", null ],
-    [ "btree_iterator", "classstxxl_1_1btree_1_1btree__iterator.html#ae76d79b8441800456a0e639fe3218334", null ],
+    [ "btree_iterator", "classstxxl_1_1btree_1_1btree__iterator.html#a431acb93ad011cc232e550dfa6eb85dd", null ],
     [ "operator!=", "classstxxl_1_1btree_1_1btree__iterator.html#aa37e4020ddc3474d9aa4d6f7b2302dcf", null ],
     [ "operator*", "classstxxl_1_1btree_1_1btree__iterator.html#a5686b6611a059837e1e8bc4a06408cf3", null ],
     [ "operator++", "classstxxl_1_1btree_1_1btree__iterator.html#a9d10c091d2b0a6a30ab76f312becaaa0", null ],

@@ -6,7 +6,7 @@ var classstxxl_1_1queue =
     [ "pool_type", "classstxxl_1_1queue.html#ab7f1c2931a345daabb2a6b48713dae50", null ],
     [ "size_type", "classstxxl_1_1queue.html#aebd08eabc034fb0d5f5c306d6d2c9955", null ],
     [ "value_type", "classstxxl_1_1queue.html#ae4b87471cb2b09e0917010cb5cc69220", null ],
-    [ "block_size", "classstxxl_1_1queue.html#aa830ee29fd13b37cf4db2d04c10a33faa5cb5b754326b8bd03dc6da6cc3a49314", null ],
+    [ "block_size", "classstxxl_1_1queue.html#ab5b0313a28049c1b01d2b841ec1fe5bca5cb5b754326b8bd03dc6da6cc3a49314", null ],
     [ "queue", "classstxxl_1_1queue.html#ab09efe6be14bc82c95bae889459e1f9b", null ],
     [ "queue", "classstxxl_1_1queue.html#a279bc7c7aa419db7cb9c758849c29f00", null ],
     [ "queue", "classstxxl_1_1queue.html#a30c005057024cbd3c2d24d69597a041a", null ],

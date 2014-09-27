@@ -4,6 +4,7 @@ var searchData=
   ['add_5ffiller_3c_20basetype_2c_200_20_3e',['add_filler&lt; BaseType, 0 &gt;',['../classstxxl_1_1mng__local_1_1add__filler_3_01BaseType_00_010_01_4.html',1,'stxxl::mng_local']]],
   ['add_5ffiller_3c_20mng_5flocal_3a_3ablock_5fw_5finfo_3c_20type_2c_20rawsize_2c_20nref_2c_20metainfotype_20_3e_2c_20rawsize_2dsizeof_28mng_5flocal_3a_3ablock_5fw_5finfo_3c_20type_2c_20rawsize_2c_20nref_2c_20metainfotype_20_3e_29_3e',['add_filler&lt; mng_local::block_w_info&lt; Type, RawSize, NRef, MetaInfoType &gt;, RawSize-sizeof(mng_local::block_w_info&lt; Type, RawSize, NRef, MetaInfoType &gt;)&gt;',['../classstxxl_1_1mng__local_1_1add__filler.html',1,'stxxl::mng_local']]],
   ['add_5ffiller_3c_20type_2c_20rawsize_2dsizeof_28type_29_3e',['add_filler&lt; Type, RawSize-sizeof(Type)&gt;',['../classstxxl_1_1mng__local_1_1add__filler.html',1,'stxxl::mng_local']]],
+  ['addhashstream',['AddHashStream',['../structstxxl_1_1hash__map_1_1hash__map_1_1AddHashStream.html',1,'stxxl::hash_map::hash_map']]],
   ['addition',['addition',['../structstxxl_1_1matrix__local_1_1matrix__operations_1_1addition.html',1,'stxxl::matrix_local::matrix_operations']]],
   ['addressable_5ffifo_5fqueue',['addressable_fifo_queue',['../classstxxl_1_1addressable__fifo__queue.html',1,'stxxl']]],
   ['addressable_5ffifo_5fqueue_3c_20swappable_5fblock_5fidentifier_5ftype_20_3e',['addressable_fifo_queue&lt; swappable_block_identifier_type &gt;',['../classstxxl_1_1addressable__fifo__queue.html',1,'stxxl']]],

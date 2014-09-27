@@ -5,8 +5,6 @@ var searchData=
   ['if_3c_20false_2c_20type1_2c_20type2_20_3e',['IF&lt; false, Type1, Type2 &gt;',['../structstxxl_1_1IF_3_01false_00_01Type1_00_01Type2_01_4.html',1,'stxxl']]],
   ['if_5fn',['IF_N',['../structstxxl_1_1IF__N.html',1,'stxxl']]],
   ['if_5fn_3c_20false_2c_20num1_2c_20num2_20_3e',['IF_N&lt; false, Num1, Num2 &gt;',['../structstxxl_1_1IF__N_3_01false_00_01Num1_00_01Num2_01_4.html',1,'stxxl']]],
-  ['infotype',['InfoType',['../structstxxl_1_1btree_1_1normal__leaf_1_1InfoType.html',1,'stxxl::btree::normal_leaf']]],
-  ['infotype',['InfoType',['../structstxxl_1_1btree_1_1normal__node_1_1InfoType.html',1,'stxxl::btree::normal_node']]],
   ['interleaved_5falloc_5ftraits',['interleaved_alloc_traits',['../structstxxl_1_1interleaved__alloc__traits.html',1,'stxxl']]],
   ['interleaved_5falloc_5ftraits_3c_20fr_20_3e',['interleaved_alloc_traits&lt; FR &gt;',['../structstxxl_1_1interleaved__alloc__traits_3_01FR_01_4.html',1,'stxxl']]],
   ['interleaved_5falloc_5ftraits_3c_20rc_20_3e',['interleaved_alloc_traits&lt; RC &gt;',['../structstxxl_1_1interleaved__alloc__traits_3_01RC_01_4.html',1,'stxxl']]],
@@ -27,13 +25,14 @@ var searchData=
   ['invert_5forder',['invert_order',['../classstxxl_1_1priority__queue__local_1_1invert__order.html',1,'stxxl::priority_queue_local']]],
   ['io_5ferror',['io_error',['../classstxxl_1_1io__error.html',1,'stxxl']]],
   ['item_5ftype',['item_type',['../structstxxl_1_1tuple__base_1_1item__type.html',1,'stxxl::tuple_base']]],
-  ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, Plug, Plug, Plug, Plug &gt;']]],
-  ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, T2, Plug, Plug, Plug, Plug &gt;']]],
-  ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01Plug_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, T2, T3, Plug, Plug, Plug &gt;']]],
   ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, T2, T3, T4, T5, Plug &gt;']]],
+  ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01Plug_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, T2, T3, Plug, Plug, Plug &gt;']]],
+  ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, T2, Plug, Plug, Plug, Plug &gt;']]],
   ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, T2, T3, T4, Plug, Plug &gt;']]],
   ['item_5ftype',['item_type',['../structstxxl_1_1tuple_1_1item__type.html',1,'stxxl::tuple']]],
+  ['item_5ftype',['item_type',['../structstxxl_1_1tuple_3_01T1_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4_1_1item__type.html',1,'stxxl::tuple&lt; T1, Plug, Plug, Plug, Plug &gt;']]],
   ['iterator2stream',['iterator2stream',['../classstxxl_1_1stream_1_1iterator2stream.html',1,'stxxl::stream']]],
+  ['iterator_5fmap',['iterator_map',['../classstxxl_1_1hash__map_1_1iterator__map.html',1,'stxxl::hash_map']]],
   ['iterator_5fmap',['iterator_map',['../classstxxl_1_1btree_1_1iterator__map.html',1,'stxxl::btree']]],
-  ['iterator_5fmap_3c_20selftype_20_3e',['iterator_map&lt; SelfType &gt;',['../classstxxl_1_1btree_1_1iterator__map.html',1,'stxxl::btree']]]
+  ['iterator_5fmap_3c_20self_5ftype_20_3e',['iterator_map&lt; self_type &gt;',['../classstxxl_1_1hash__map_1_1iterator__map.html',1,'stxxl::hash_map::iterator_map&lt; self_type &gt;'],['../classstxxl_1_1btree_1_1iterator__map.html',1,'stxxl::btree::iterator_map&lt; self_type &gt;']]]
 ];

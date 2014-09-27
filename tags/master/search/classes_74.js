@@ -11,6 +11,7 @@ var searchData=
   ['trigger_5fentry',['trigger_entry',['../structstxxl_1_1ksort__local_1_1trigger__entry.html',1,'stxxl::ksort_local']]],
   ['trigger_5fentry_5fcmp',['trigger_entry_cmp',['../structstxxl_1_1sort__helper_1_1trigger__entry__cmp.html',1,'stxxl::sort_helper']]],
   ['trigger_5fentry_5fiterator',['trigger_entry_iterator',['../structstxxl_1_1trigger__entry__iterator.html',1,'stxxl']]],
+  ['tuning',['tuning',['../classstxxl_1_1hash__map_1_1tuning.html',1,'stxxl::hash_map']]],
   ['tuple',['tuple',['../structstxxl_1_1tuple.html',1,'stxxl']]],
   ['tuple_3c_20t1_2c_20plug_2c_20plug_2c_20plug_2c_20plug_20_3e',['tuple&lt; T1, Plug, Plug, Plug, Plug &gt;',['../structstxxl_1_1tuple_3_01T1_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4.html',1,'stxxl']]],
   ['tuple_3c_20t1_2c_20t2_2c_20plug_2c_20plug_2c_20plug_2c_20plug_20_3e',['tuple&lt; T1, T2, Plug, Plug, Plug, Plug &gt;',['../structstxxl_1_1tuple_3_01T1_00_01T2_00_01Plug_00_01Plug_00_01Plug_00_01Plug_01_4.html',1,'stxxl']]],
@@ -29,7 +30,7 @@ var searchData=
   ['tuple_5fless2nd',['tuple_less2nd',['../structstxxl_1_1tuple__less2nd.html',1,'stxxl']]],
   ['two2one_5fdim_5farray_5fadapter_5fbase',['two2one_dim_array_adapter_base',['../structstxxl_1_1two2one__dim__array__adapter__base.html',1,'stxxl']]],
   ['two2one_5fdim_5farray_5fadapter_5fbase_3c_20runtype_20_2a_2c_20bid_3c_20blocksize_20_3e_2c_20postype_20_3e',['two2one_dim_array_adapter_base&lt; RunType *, BID&lt; BlockSize &gt;, PosType &gt;',['../structstxxl_1_1two2one__dim__array__adapter__base.html',1,'stxxl']]],
-  ['type_5fkey',['type_key',['../structstxxl_1_1stable__ksort__local_1_1type__key.html',1,'stxxl::stable_ksort_local']]],
   ['type_5fkey',['type_key',['../structstxxl_1_1ksort__local_1_1type__key.html',1,'stxxl::ksort_local']]],
+  ['type_5fkey',['type_key',['../structstxxl_1_1stable__ksort__local_1_1type__key.html',1,'stxxl::stable_ksort_local']]],
   ['typed_5fblock',['typed_block',['../classstxxl_1_1typed__block.html',1,'stxxl']]]
 ];

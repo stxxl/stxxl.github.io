@@ -186,12 +186,12 @@ var group__reqlayer =
     ] ],
     [ "STXXL_BLOCK_ALIGN", "group__reqlayer.html#ga1e47be54a59c2a0a375fc1b90512f8d6", null ],
     [ "request_ptr", "group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e", null ],
-    [ "cancel_all", "group__reqlayer.html#gad1541dba42cc0abe22b347fcf45b03df", null ],
+    [ "cancel_all", "group__reqlayer.html#ga8e792106585678431a6f85d8a1bf2732", null ],
     [ "operator<<", "group__reqlayer.html#gac4554eed0391563081ef1f3efbd22ba1", null ],
-    [ "poll_any", "group__reqlayer.html#ga9243d8a2ce2109fadd2ad8fa423ed1c3", null ],
+    [ "poll_any", "group__reqlayer.html#gaaca32bd3cecaa3edb11c46c670c1567e", null ],
     [ "poll_any", "group__reqlayer.html#ga29b6abfa7d948c0bc3464bbd3feed222", null ],
-    [ "wait_all", "group__reqlayer.html#gadc535a096b5d4c8f84deb03c786ec807", null ],
+    [ "wait_all", "group__reqlayer.html#ga016f4e02b691aa4818ad3305de3f47bd", null ],
     [ "wait_all", "group__reqlayer.html#ga6132970b59078db7c5b7c3b155191694", null ],
-    [ "wait_any", "group__reqlayer.html#gaacd3b47a3a84f19c8c4f5f1db3cda269", null ],
+    [ "wait_any", "group__reqlayer.html#ga3ff876fd05de0ef6217826a6b5459410", null ],
     [ "wait_any", "group__reqlayer.html#gaf182a24551c459b6e2070fc4869add4d", null ]
 ];

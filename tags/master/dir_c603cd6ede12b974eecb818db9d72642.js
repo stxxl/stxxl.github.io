@@ -6,13 +6,8 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
       [ "cmp", "structstxxl_1_1addressable__priority__queue_1_1cmp.html", "structstxxl_1_1addressable__priority__queue_1_1cmp" ]
     ] ],
     [ "aligned_alloc.h", "aligned__alloc_8h.html", "aligned__alloc_8h" ],
-    [ "binary_buffer.h", "binary__buffer_8h.html", [
-      [ "binary_buffer", "classstxxl_1_1binary__buffer.html", "classstxxl_1_1binary__buffer" ],
-      [ "binary_buffer_ref", "classstxxl_1_1binary__buffer__ref.html", "classstxxl_1_1binary__buffer__ref" ],
-      [ "binary_reader", "classstxxl_1_1binary__reader.html", "classstxxl_1_1binary__reader" ]
-    ] ],
+    [ "binary_buffer.h", "binary__buffer_8h.html", null ],
     [ "cmdline.h", "cmdline_8h.html", [
-      [ "cmdline_parser", "classstxxl_1_1cmdline__parser.html", "classstxxl_1_1cmdline__parser" ],
       [ "argument", "structstxxl_1_1cmdline__parser_1_1argument.html", "structstxxl_1_1cmdline__parser_1_1argument" ],
       [ "argument_bytes32", "structstxxl_1_1cmdline__parser_1_1argument__bytes32.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes32" ],
       [ "argument_bytes64", "structstxxl_1_1cmdline__parser_1_1argument__bytes64.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes64" ],
@@ -35,6 +30,7 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
       [ "unreachable", "classstxxl_1_1unreachable.html", "classstxxl_1_1unreachable" ]
     ] ],
     [ "exithandler.h", "exithandler_8h.html", "exithandler_8h" ],
+    [ "external_shared_ptr.h", "external__shared__ptr_8h.html", null ],
     [ "is_sorted.h", "is__sorted_8h.html", "is__sorted_8h" ],
     [ "log.h", "log_8h.html", [
       [ "logger", "classstxxl_1_1logger.html", "classstxxl_1_1logger" ]

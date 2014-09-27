@@ -8,5 +8,5 @@ var searchData=
   ['disk_5fqueues',['disk_queues',['../classstxxl_1_1disk__queues.html',1,'stxxl']]],
   ['double_5fblocked_5findex',['double_blocked_index',['../classstxxl_1_1double__blocked__index.html',1,'stxxl']]],
   ['dummy',['dummy',['../structstxxl_1_1priority__queue__local_1_1dummy.html',1,'stxxl::priority_queue_local']]],
-  ['dummy_5fcmp_5funique_5f',['dummy_cmp_unique_',['../structstxxl_1_1stream_1_1dummy__cmp__unique__.html',1,'stxxl::stream']]]
+  ['dummy_5fcmp_5funique',['dummy_cmp_unique',['../structstxxl_1_1stream_1_1dummy__cmp__unique.html',1,'stxxl::stream']]]
 ];

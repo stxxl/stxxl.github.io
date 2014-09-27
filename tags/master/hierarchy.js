@@ -4,11 +4,13 @@ var hierarchy =
     [ "stxxl::addressable_priority_queue< swappable_block_identifier_type, stxxl::block_scheduler_algorithm_offline_lfd::priority >", "classstxxl_1_1addressable__priority__queue.html", null ],
     [ "stxxl::BID< block_size >", "structstxxl_1_1BID.html", null ],
     [ "stxxl::BID< raw_size >", "structstxxl_1_1BID.html", null ],
-    [ "stxxl::btree::btree_iterator_base< SelfType >", "classstxxl_1_1btree_1_1btree__iterator__base.html", [
-      [ "stxxl::btree::btree_iterator< SelfType >", "classstxxl_1_1btree_1_1btree__iterator.html", null ]
+    [ "stxxl::btree::btree_iterator_base< self_type >", "classstxxl_1_1btree_1_1btree__iterator__base.html", [
+      [ "stxxl::btree::btree_iterator< self_type >", "classstxxl_1_1btree_1_1btree__iterator.html", null ]
     ] ],
     [ "stxxl::choose_int_types< my_pointer_size >", "structstxxl_1_1choose__int__types.html", null ],
     [ "stxxl::compat_hash_map< bid_type, busy_entry, bid_hash >", "structstxxl_1_1compat__hash__map.html", null ],
+    [ "stxxl::compat_hash_map< bid_type, unsigned_type, bid_hash >", "structstxxl_1_1compat__hash__map.html", null ],
+    [ "stxxl::compat_hash_multimap< internal_size_type, iterator_base *, hasher >", "structstxxl_1_1compat__hash__multimap.html", null ],
     [ "stxxl::compat_unique_ptr< buf_istream_type >", "structstxxl_1_1compat__unique__ptr.html", null ],
     [ "stxxl::compat_unique_ptr< stxxl::completion_handler_impl >", "structstxxl_1_1compat__unique__ptr.html", null ],
     [ "stxxl::compat_unique_ptr< stxxl::stxxl::io_error >", "structstxxl_1_1compat__unique__ptr.html", null ],
@@ -22,9 +24,11 @@ var hierarchy =
     [ "stxxl::random_number< random_uniform_fast >", "structstxxl_1_1random__number.html", null ],
     [ "stxxl::random_number< stxxl::random_uniform_fast >", "structstxxl_1_1random__number.html", null ],
     [ "binary_function", null, [
-      [ "stxxl::btree::normal_leaf< KeyType_, DataType_, KeyCmp_, LogNElem_, BTreeType >::value_compare", "structstxxl_1_1btree_1_1normal__leaf_1_1value__compare.html", null ],
-      [ "stxxl::btree::normal_node< KeyType_, KeyCmp_, RawSize_, BTreeType >::value_compare", "structstxxl_1_1btree_1_1normal__node_1_1value__compare.html", null ],
+      [ "stxxl::btree::normal_leaf< KeyType, DataType, KeyCmp, LogNElem, BTreeType >::value_compare", "structstxxl_1_1btree_1_1normal__leaf_1_1value__compare.html", null ],
+      [ "stxxl::btree::normal_node< KeyType, KeyCmp, RawSize, BTreeType >::value_compare", "structstxxl_1_1btree_1_1normal__node_1_1value__compare.html", null ],
       [ "stxxl::disk_allocator::first_fit", "structstxxl_1_1disk__allocator_1_1first__fit.html", null ],
+      [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::Cmp", "structstxxl_1_1hash__map_1_1hash__map_1_1Cmp.html", null ],
+      [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::equal_to", "structstxxl_1_1hash__map_1_1hash__map_1_1equal__to.html", null ],
       [ "stxxl::ksort_local::key_comparison< record_type, key_extractor >", "classstxxl_1_1ksort__local_1_1key__comparison.html", null ],
       [ "stxxl::ksort_local::run_cursor2_cmp< block_type, prefetcher_type, key_extractor >", "structstxxl_1_1ksort__local_1_1run__cursor2__cmp.html", null ],
       [ "stxxl::sort_helper::run_cursor2_cmp< block_type, prefetcher_type, value_cmp >", "structstxxl_1_1sort__helper_1_1run__cursor2__cmp.html", null ],
@@ -93,8 +97,8 @@ var hierarchy =
     [ "stxxl::btree::iterator_map< BTreeType >::Key", "structstxxl_1_1btree_1_1iterator__map_1_1Key.html", null ],
     [ "stxxl::btree::iterator_map< BTreeType >::KeyCmp", "structstxxl_1_1btree_1_1iterator__map_1_1KeyCmp.html", null ],
     [ "stxxl::btree::node_cache< NodeType, BTreeType >::bid_hash", "structstxxl_1_1btree_1_1node__cache_1_1bid__hash.html", null ],
-    [ "stxxl::btree::normal_leaf< KeyType_, DataType_, KeyCmp_, LogNElem_, BTreeType >::InfoType", "structstxxl_1_1btree_1_1normal__leaf_1_1InfoType.html", null ],
-    [ "stxxl::btree::normal_node< KeyType_, KeyCmp_, RawSize_, BTreeType >::InfoType", "structstxxl_1_1btree_1_1normal__node_1_1InfoType.html", null ],
+    [ "stxxl::btree::normal_leaf< KeyType, DataType, KeyCmp, LogNElem, BTreeType >::metainfo_type", "structstxxl_1_1btree_1_1normal__leaf_1_1metainfo__type.html", null ],
+    [ "stxxl::btree::normal_node< KeyType, KeyCmp, RawSize, BTreeType >::metainfo_type", "structstxxl_1_1btree_1_1normal__node_1_1metainfo__type.html", null ],
     [ "stxxl::btree::root_node< KeyType, BIDType >", "classstxxl_1_1btree_1_1root__node.html", null ],
     [ "stxxl::buffered_writer< block_type >::batch_entry", "structstxxl_1_1buffered__writer_1_1batch__entry.html", null ],
     [ "stxxl::buffered_writer< block_type >::batch_entry_cmp", "structstxxl_1_1buffered__writer_1_1batch__entry__cmp.html", null ],
@@ -113,8 +117,9 @@ var hierarchy =
     ] ],
     [ "stxxl::compat::remove_const< Type >", "structstxxl_1_1compat_1_1remove__const.html", null ],
     [ "stxxl::compat::remove_const< Type const  >", "structstxxl_1_1compat_1_1remove__const_3_01Type_01const_01_01_4.html", null ],
-    [ "stxxl::compat_hash< _Tp >", "structstxxl_1_1compat__hash.html", null ],
-    [ "stxxl::compat_hash_map< _Key, _Tp, _Hash >", "structstxxl_1_1compat__hash__map.html", null ],
+    [ "stxxl::compat_hash< KeyType >", "structstxxl_1_1compat__hash.html", null ],
+    [ "stxxl::compat_hash_map< KeyType, MappedType, HashType >", "structstxxl_1_1compat__hash__map.html", null ],
+    [ "stxxl::compat_hash_multimap< KeyType, MappedType, HashType >", "structstxxl_1_1compat__hash__multimap.html", null ],
     [ "stxxl::compat_unique_ptr< Type >", "structstxxl_1_1compat__unique__ptr.html", null ],
     [ "stxxl::completion_handler", "classstxxl_1_1completion__handler.html", null ],
     [ "stxxl::completion_handler_impl", "classstxxl_1_1completion__handler__impl.html", [
@@ -135,6 +140,23 @@ var hierarchy =
     [ "stxxl::disk_config", "classstxxl_1_1disk__config.html", null ],
     [ "stxxl::double_blocked_index< size_type, modulo2, modulo1 >", "classstxxl_1_1double__blocked__index.html", null ],
     [ "stxxl::element_iterator_traits< BlockType, SizeType >", "structstxxl_1_1element__iterator__traits.html", null ],
+    [ "stxxl::external_shared_ptr< P >", "classstxxl_1_1external__shared__ptr.html", null ],
+    [ "stxxl::hash_map::block_cache< BlockType >::bid_eq", "structstxxl_1_1hash__map_1_1block__cache_1_1bid__eq.html", null ],
+    [ "stxxl::hash_map::block_cache< BlockType >::bid_hash", "structstxxl_1_1hash__map_1_1block__cache_1_1bid__hash.html", null ],
+    [ "stxxl::hash_map::bucket< NodeType >", "structstxxl_1_1hash__map_1_1bucket.html", null ],
+    [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::AddHashStream< InputStream >", "structstxxl_1_1hash__map_1_1hash__map_1_1AddHashStream.html", null ],
+    [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::HashedValueExtractor", "structstxxl_1_1hash__map_1_1hash__map_1_1HashedValueExtractor.html", null ],
+    [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::HashingStream< InputStream, ValueExtractor >", "structstxxl_1_1hash__map_1_1hash__map_1_1HashingStream.html", null ],
+    [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::StripHashFunctor", "structstxxl_1_1hash__map_1_1hash__map_1_1StripHashFunctor.html", null ],
+    [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >::UniqueValueStream< InputStream >", "structstxxl_1_1hash__map_1_1hash__map_1_1UniqueValueStream.html", null ],
+    [ "stxxl::hash_map::hash_map_iterator_base< HashMap >", "classstxxl_1_1hash__map_1_1hash__map__iterator__base.html", [
+      [ "stxxl::hash_map::hash_map_const_iterator< HashMap >", "classstxxl_1_1hash__map_1_1hash__map__const__iterator.html", null ],
+      [ "stxxl::hash_map::hash_map_iterator< HashMap >", "classstxxl_1_1hash__map_1_1hash__map__iterator.html", null ]
+    ] ],
+    [ "stxxl::hash_map::HashedValue< HashMap >", "structstxxl_1_1hash__map_1_1HashedValue.html", null ],
+    [ "stxxl::hash_map::HashedValuesStream< HashMap, Reader >", "structstxxl_1_1hash__map_1_1HashedValuesStream.html", null ],
+    [ "stxxl::hash_map::iterator_map< HashMap >::hasher", "structstxxl_1_1hash__map_1_1iterator__map_1_1hasher.html", null ],
+    [ "stxxl::hash_map::node< ValueType >", "structstxxl_1_1hash__map_1_1node.html", null ],
     [ "stxxl::helper::element_iterator_generator< BlockType, SizeType, can_use_trivial_pointer >", "classstxxl_1_1helper_1_1element__iterator__generator.html", null ],
     [ "stxxl::helper::element_iterator_generator< BlockType, SizeType, false >", "classstxxl_1_1helper_1_1element__iterator__generator_3_01BlockType_00_01SizeType_00_01false_01_4.html", null ],
     [ "stxxl::helper::element_iterator_generator< BlockType, SizeType, true >", "classstxxl_1_1helper_1_1element__iterator__generator_3_01BlockType_00_01SizeType_00_01true_01_4.html", null ],
@@ -226,20 +248,24 @@ var hierarchy =
     [ "stxxl::new_alloc_rebind< T, T >", "structstxxl_1_1new__alloc__rebind_3_01T_00_01T_01_4.html", null ],
     [ "stxxl::NilCase", "structstxxl_1_1NilCase.html", null ],
     [ "stxxl::noncopyable", "classstxxl_1_1noncopyable.html", [
-      [ "stxxl::stream::basic_runs_creator< stream::use_push< ValueType >, cmp_type, BlockSize_, alloc_strategy_type >", "classstxxl_1_1stream_1_1basic__runs__creator.html", [
+      [ "stxxl::stream::basic_runs_creator< stream::use_push< ValueType >, cmp_type, BlockSize, alloc_strategy_type >", "classstxxl_1_1stream_1_1basic__runs__creator.html", [
         [ "stxxl::stream::runs_creator< stream::use_push< ValueType >, cmp_type, block_size, alloc_strategy_type >", "classstxxl_1_1stream_1_1runs__creator.html", null ]
       ] ],
-      [ "stxxl::stream::basic_runs_merger< sorted_runs_type, CompareType_, AllocStr_ >", "classstxxl_1_1stream_1_1basic__runs__merger.html", [
-        [ "stxxl::stream::runs_merger< sorted_runs_type, CompareType_, AllocStr_ >", "classstxxl_1_1stream_1_1runs__merger.html", null ]
+      [ "stxxl::stream::basic_runs_merger< sorted_runs_type, CompareType, AllocStr >", "classstxxl_1_1stream_1_1basic__runs__merger.html", [
+        [ "stxxl::stream::runs_merger< sorted_runs_type, CompareType, AllocStr >", "classstxxl_1_1stream_1_1runs__merger.html", null ]
       ] ],
       [ "stxxl::stream::basic_runs_merger< typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type >", "classstxxl_1_1stream_1_1basic__runs__merger.html", [
         [ "stxxl::stream::runs_merger< typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type >", "classstxxl_1_1stream_1_1runs__merger.html", null ]
       ] ],
+      [ "stxxl::hash_map::block_cache< block_type >", "classstxxl_1_1hash__map_1_1block__cache.html", null ],
+      [ "stxxl::hash_map::block_cache_write_buffer< block_type >", "classstxxl_1_1hash__map_1_1block__cache__write__buffer.html", null ],
       [ "stxxl::buffered_writer< stxxl::typed_block >", "classstxxl_1_1buffered__writer.html", null ],
-      [ "stxxl::btree::iterator_map< SelfType >", "classstxxl_1_1btree_1_1iterator__map.html", null ],
+      [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, CompareType, SubBlockSize, SubBlocksPerBlock, AllocType >", "classstxxl_1_1hash__map_1_1hash__map.html", null ],
+      [ "stxxl::hash_map::iterator_map< self_type >", "classstxxl_1_1hash__map_1_1iterator__map.html", null ],
+      [ "stxxl::btree::iterator_map< self_type >", "classstxxl_1_1btree_1_1iterator__map.html", null ],
       [ "stxxl::priority_queue_local::loser_tree< value_type, comparator_type, IntKMAX >", "classstxxl_1_1priority__queue__local_1_1loser__tree.html", null ],
-      [ "stxxl::btree::node_cache< leaf_type, SelfType >", "classstxxl_1_1btree_1_1node__cache.html", null ],
-      [ "stxxl::btree::node_cache< node_type, SelfType >", "classstxxl_1_1btree_1_1node__cache.html", null ],
+      [ "stxxl::btree::node_cache< leaf_type, self_type >", "classstxxl_1_1btree_1_1node__cache.html", null ],
+      [ "stxxl::btree::node_cache< node_type, self_type >", "classstxxl_1_1btree_1_1node__cache.html", null ],
       [ "stxxl::simple_vector< BID< BLK_SIZE > >", "classstxxl_1_1simple__vector.html", [
         [ "stxxl::BIDArray< block_type::raw_size >", "classstxxl_1_1BIDArray.html", null ],
         [ "stxxl::BIDArray< BLK_SIZE >", "classstxxl_1_1BIDArray.html", null ]
@@ -267,6 +293,9 @@ var hierarchy =
       [ "stxxl::singleton< stats >", "classstxxl_1_1singleton.html", [
         [ "stxxl::stats", "classstxxl_1_1stats.html", null ]
       ] ],
+      [ "stxxl::singleton< tuning >", "classstxxl_1_1singleton.html", [
+        [ "stxxl::hash_map::tuning", "classstxxl_1_1hash__map_1_1tuning.html", null ]
+      ] ],
       [ "stxxl::state< request_state >", "classstxxl_1_1state.html", null ],
       [ "stxxl::state< thread_state >", "classstxxl_1_1state.html", null ],
       [ "stxxl::block_prefetcher< block_type, bid_iterator_type >", "classstxxl_1_1block__prefetcher.html", null ],
@@ -280,8 +309,8 @@ var hierarchy =
       [ "stxxl::btree::btree< KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy >", "classstxxl_1_1btree_1_1btree.html", null ],
       [ "stxxl::btree::iterator_map< BTreeType >", "classstxxl_1_1btree_1_1iterator__map.html", null ],
       [ "stxxl::btree::node_cache< NodeType, BTreeType >", "classstxxl_1_1btree_1_1node__cache.html", null ],
-      [ "stxxl::btree::normal_leaf< KeyType_, DataType_, KeyCmp_, LogNElem_, BTreeType >", "classstxxl_1_1btree_1_1normal__leaf.html", null ],
-      [ "stxxl::btree::normal_node< KeyType_, KeyCmp_, RawSize_, BTreeType >", "classstxxl_1_1btree_1_1normal__node.html", null ],
+      [ "stxxl::btree::normal_leaf< KeyType, DataType, KeyCmp, LogNElem, BTreeType >", "classstxxl_1_1btree_1_1normal__leaf.html", null ],
+      [ "stxxl::btree::normal_node< KeyType, KeyCmp, RawSize, BTreeType >", "classstxxl_1_1btree_1_1normal__node.html", null ],
       [ "stxxl::buf_istream< BlockType, BIDIteratorType >", "classstxxl_1_1buf__istream.html", null ],
       [ "stxxl::buf_istream_reverse< BlockType, BIDIteratorType >", "classstxxl_1_1buf__istream__reverse.html", null ],
       [ "stxxl::buf_ostream< BlockType, BIDIteratorType >", "classstxxl_1_1buf__ostream.html", null ],
@@ -313,6 +342,12 @@ var hierarchy =
       ] ],
       [ "stxxl::grow_shrink_stack< StackConfig >", "classstxxl_1_1grow__shrink__stack.html", null ],
       [ "stxxl::grow_shrink_stack2< StackConfig >", "classstxxl_1_1grow__shrink__stack2.html", null ],
+      [ "stxxl::hash_map::block_cache< BlockType >", "classstxxl_1_1hash__map_1_1block__cache.html", null ],
+      [ "stxxl::hash_map::block_cache_write_buffer< BlockType >", "classstxxl_1_1hash__map_1_1block__cache__write__buffer.html", null ],
+      [ "stxxl::hash_map::buffered_reader< CacheType, BidIterator >", "classstxxl_1_1hash__map_1_1buffered__reader.html", null ],
+      [ "stxxl::hash_map::buffered_writer< BlockType, BidContainer >", "classstxxl_1_1hash__map_1_1buffered__writer.html", null ],
+      [ "stxxl::hash_map::hash_map< KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType >", "classstxxl_1_1hash__map_1_1hash__map.html", null ],
+      [ "stxxl::hash_map::iterator_map< HashMap >", "classstxxl_1_1hash__map_1_1iterator__map.html", null ],
       [ "stxxl::loser_tree< run_cursor_type, run_cursor_cmp_type >", "classstxxl_1_1loser__tree.html", null ],
       [ "stxxl::lru_pager< npages_ >", "classstxxl_1_1lru__pager.html", null ],
       [ "stxxl::map< KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy >", "classstxxl_1_1map.html", null ],
@@ -348,16 +383,17 @@ var hierarchy =
       [ "stxxl::singleton< INSTANCE, destroy_on_exit >", "classstxxl_1_1singleton.html", null ],
       [ "stxxl::sorter< ValueType, CompareType, BlockSize, AllocStrategy >", "classstxxl_1_1sorter.html", null ],
       [ "stxxl::state< ValueType >", "classstxxl_1_1state.html", null ],
-      [ "stxxl::stream::basic_runs_creator< Input_, CompareType_, BlockSize_, AllocStr_ >", "classstxxl_1_1stream_1_1basic__runs__creator.html", [
-        [ "stxxl::stream::runs_creator< Input_, CompareType_, BlockSize_, AllocStr_ >", "classstxxl_1_1stream_1_1runs__creator.html", null ]
+      [ "stxxl::stream::basic_runs_creator< Input, CompareType, BlockSize, AllocStr >", "classstxxl_1_1stream_1_1basic__runs__creator.html", [
+        [ "stxxl::stream::runs_creator< Input, CompareType, BlockSize, AllocStr >", "classstxxl_1_1stream_1_1runs__creator.html", null ]
       ] ],
-      [ "stxxl::stream::basic_runs_merger< RunsType_, CompareType_, AllocStr_ >", "classstxxl_1_1stream_1_1basic__runs__merger.html", [
-        [ "stxxl::stream::runs_merger< RunsType_, CompareType_, AllocStr_ >", "classstxxl_1_1stream_1_1runs__merger.html", null ]
+      [ "stxxl::stream::basic_runs_merger< RunsType, CompareType, AllocStr >", "classstxxl_1_1stream_1_1basic__runs__merger.html", [
+        [ "stxxl::stream::runs_merger< RunsType, CompareType, AllocStr >", "classstxxl_1_1stream_1_1runs__merger.html", null ]
       ] ],
-      [ "stxxl::stream::runs_creator< from_sorted_sequences< ValueType_ >, CompareType_, BlockSize_, AllocStr_ >", "classstxxl_1_1stream_1_1runs__creator_3_01from__sorted__sequences_3_01ValueType___01_4_00_01Comp6a492d5ce81cd4160a75947a7ab191f1.html", null ],
-      [ "stxxl::stream::runs_creator< use_push< ValueType_ >, CompareType_, BlockSize_, AllocStr_ >", "classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType___01_4_00_01CompareType___00_00e1ade3e4c4d1a74b80eab4504588daa.html", null ],
-      [ "stxxl::stream::sort< Input_, CompareType_, BlockSize_, AllocStr_, runs_creator_type >", "classstxxl_1_1stream_1_1sort.html", null ],
+      [ "stxxl::stream::runs_creator< from_sorted_sequences< ValueType >, CompareType, BlockSize, AllocStr >", "classstxxl_1_1stream_1_1runs__creator_3_01from__sorted__sequences_3_01ValueType_01_4_00_01Comparb340be1db0e84ee4fb588bc1ffe398dd.html", null ],
+      [ "stxxl::stream::runs_creator< use_push< ValueType >, CompareType, BlockSize, AllocStr >", "classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType_01_4_00_01CompareType_00_01BlockSize_00_01AllocStr_01_4.html", null ],
+      [ "stxxl::stream::sort< Input, CompareType, BlockSize, AllocStr, RunsCreatorType >", "classstxxl_1_1stream_1_1sort.html", null ],
       [ "stxxl::stream::sorted_runs< TriggerEntryType, CompareType >", "structstxxl_1_1stream_1_1sorted__runs.html", null ],
+      [ "stxxl::unordered_map< KeyType, MappedType, HashType, CompareType, SubBlockSize, SubBlocksPerBlock, AllocType >", "classstxxl_1_1unordered__map.html", null ],
       [ "stxxl::vector_bufreader< VectorIteratorType >", "classstxxl_1_1vector__bufreader.html", null ],
       [ "stxxl::vector_bufreader_reverse< VectorIteratorType >", "classstxxl_1_1vector__bufreader__reverse.html", null ],
       [ "stxxl::vector_bufwriter< VectorIteratorType >", "classstxxl_1_1vector__bufwriter.html", null ],
@@ -418,11 +454,11 @@ var hierarchy =
     [ "stxxl::stream::choose< Input, 4 >", "classstxxl_1_1stream_1_1choose_3_01Input_00_014_01_4.html", null ],
     [ "stxxl::stream::choose< Input, 5 >", "classstxxl_1_1stream_1_1choose_3_01Input_00_015_01_4.html", null ],
     [ "stxxl::stream::choose< Input, 6 >", "classstxxl_1_1stream_1_1choose_3_01Input_00_016_01_4.html", null ],
-    [ "stxxl::stream::compute_sorted_runs_type< ValueType_, BlockSize_ >", "classstxxl_1_1stream_1_1compute__sorted__runs__type.html", null ],
+    [ "stxxl::stream::compute_sorted_runs_type< ValueType, BlockSize >", "classstxxl_1_1stream_1_1compute__sorted__runs__type.html", null ],
     [ "stxxl::stream::concatenate< StreamA, StreamB >", "classstxxl_1_1stream_1_1concatenate.html", null ],
     [ "stxxl::stream::counter< ValueType >", "structstxxl_1_1stream_1_1counter.html", null ],
-    [ "stxxl::stream::dummy_cmp_unique_", "structstxxl_1_1stream_1_1dummy__cmp__unique__.html", null ],
-    [ "stxxl::stream::from_sorted_sequences< ValueType_ >", "structstxxl_1_1stream_1_1from__sorted__sequences.html", null ],
+    [ "stxxl::stream::dummy_cmp_unique", "structstxxl_1_1stream_1_1dummy__cmp__unique.html", null ],
+    [ "stxxl::stream::from_sorted_sequences< ValueType >", "structstxxl_1_1stream_1_1from__sorted__sequences.html", null ],
     [ "stxxl::stream::generator2stream< Generator, T >", "classstxxl_1_1stream_1_1generator2stream.html", null ],
     [ "stxxl::stream::iterator2stream< InputIterator >", "classstxxl_1_1stream_1_1iterator2stream.html", null ],
     [ "stxxl::stream::make_tuple< Input1, Input2, Input3, Input4, Input5, Input6 >", "classstxxl_1_1stream_1_1make__tuple.html", null ],
@@ -441,8 +477,8 @@ var hierarchy =
     [ "stxxl::stream::transform< Operation, Input1, Input2, Stopper, Stopper, Stopper, Stopper >", "classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Input2_00_01Stopper_00_01Stoppe1bf347eabb485724c445c21c356425f5.html", null ],
     [ "stxxl::stream::transform< Operation, Input1, Stopper, Stopper, Stopper, Stopper, Stopper >", "classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Stopper_00_01Stopper_00_01Stopp7fafe73abb50d635658522a2a9994eea.html", null ],
     [ "stxxl::stream::unique< Input, BinaryPredicate >", "classstxxl_1_1stream_1_1unique.html", null ],
-    [ "stxxl::stream::unique< Input, dummy_cmp_unique_ >", "classstxxl_1_1stream_1_1unique_3_01Input_00_01dummy__cmp__unique___01_4.html", null ],
-    [ "stxxl::stream::use_push< ValueType_ >", "structstxxl_1_1stream_1_1use__push.html", null ],
+    [ "stxxl::stream::unique< Input, dummy_cmp_unique >", "classstxxl_1_1stream_1_1unique_3_01Input_00_01dummy__cmp__unique_01_4.html", null ],
+    [ "stxxl::stream::use_push< ValueType >", "structstxxl_1_1stream_1_1use__push.html", null ],
     [ "stxxl::stream::vector_iterator2stream< InputIterator >", "classstxxl_1_1stream_1_1vector__iterator2stream.html", null ],
     [ "stxxl::stream::vector_iterator2stream_sr< InputIterator >", "classstxxl_1_1stream_1_1vector__iterator2stream__sr.html", null ],
     [ "stxxl::striping", "structstxxl_1_1striping.html", [
@@ -490,7 +526,6 @@ var hierarchy =
     [ "stxxl::tuple< typename Input1::value_type, typename Input2::value_type, typename Input3::value_type, typename Input4::value_type >", "structstxxl_1_1tuple.html", null ],
     [ "stxxl::tuple< typename Input1::value_type, typename Input2::value_type, typename Input3::value_type, typename Input4::value_type, typename Input5::value_type >", "structstxxl_1_1tuple.html", null ],
     [ "stxxl::tuple< typename Input1::value_type, typename Input2::value_type, typename Input3::value_type, typename Input4::value_type, typename Input5::value_type, typename Input6::value_type >", "structstxxl_1_1tuple.html", null ],
-    [ "stxxl::stream::use_push< ValueType >", "structstxxl_1_1stream_1_1use__push.html", null ],
     [ "stxxl::vector< ValueType >", "classstxxl_1_1vector.html", [
       [ "stxxl::column_vector< ValueType >", "classstxxl_1_1column__vector.html", null ],
       [ "stxxl::row_vector< ValueType >", "classstxxl_1_1row__vector.html", null ]

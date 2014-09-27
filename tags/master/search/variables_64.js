@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data',['data',['../classstxxl_1_1matrix.html#a3045cf4666b79880c93dde396c2f65d7',1,'stxxl::matrix']]],
+  ['data',['data',['../classstxxl_1_1external__shared__ptr.html#adb36410599154516ce0b1d74245d363a',1,'stxxl::external_shared_ptr::data()'],['../classstxxl_1_1matrix.html#a3045cf4666b79880c93dde396c2f65d7',1,'stxxl::matrix::data()']]],
   ['default',['DEFAULT',['../namespacestxxl.html#a089ff9a0054b16c74da063f8bcb929bd',1,'stxxl']]],
   ['default_5fdevice_5fid',['DEFAULT_DEVICE_ID',['../classstxxl_1_1file.html#a13aa0e3319d9874b584f611339546ee0',1,'stxxl::file']]],
   ['default_5flinuxaio_5fqueue',['DEFAULT_LINUXAIO_QUEUE',['../classstxxl_1_1file.html#a2648b3f0c5a7cc429d5a2d0f475465a7',1,'stxxl::file']]],
@@ -18,7 +18,7 @@ var searchData=
   ['dim_5fsize',['dim_size',['../structstxxl_1_1runs2bid__array__adaptor.html#ad3bb5c214c2aa1775ed75faf48633508',1,'stxxl::runs2bid_array_adaptor']]],
   ['direct',['direct',['../classstxxl_1_1disk__config.html#a544810ce21899dcd08b7617b388298f9',1,'stxxl::disk_config']]],
   ['dirty',['dirty',['../classstxxl_1_1swappable__block.html#a02622af166af4b0de17a6a7f0dc039d1',1,'stxxl::swappable_block']]],
-  ['dirty_5f',['dirty_',['../classstxxl_1_1btree_1_1node__cache.html#a6666ae073ba8ab0fe3468b6e82f50885',1,'stxxl::btree::node_cache']]],
+  ['dirty_5f',['dirty_',['../classstxxl_1_1hash__map_1_1block__cache.html#aee413bdfc2df60fc3c9c41e0840d5fed',1,'stxxl::hash_map::block_cache::dirty_()'],['../classstxxl_1_1hash__map_1_1buffered__reader.html#a7fcb92a17d9805f7540f8c16867c28ad',1,'stxxl::hash_map::buffered_reader::dirty_()']]],
   ['disk',['disk',['../structstxxl_1_1single__disk.html#af6d92621bc62b6c28f3208ba710ac1b7',1,'stxxl::single_disk']]],
   ['disk_5fallocation_5foffset',['disk_allocation_offset',['../classstxxl_1_1swappable__block.html#a79357521ac451edf13f492c1b584bf38',1,'stxxl::swappable_block']]],
   ['disk_5fallocators',['disk_allocators',['../classstxxl_1_1block__manager.html#afc17ac0a3025efc4823fee7ca3312368',1,'stxxl::block_manager']]],

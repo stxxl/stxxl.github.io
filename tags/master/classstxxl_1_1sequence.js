@@ -9,7 +9,7 @@ var classstxxl_1_1sequence =
     [ "pool_type", "classstxxl_1_1sequence.html#a14aa52f5c2081c6e1dfcbd93607d04f6", null ],
     [ "size_type", "classstxxl_1_1sequence.html#a4e8fd1637040dbcdc259d2a09d4ae365", null ],
     [ "value_type", "classstxxl_1_1sequence.html#a4b53d1a09845c1cd01a090c4b17e802f", null ],
-    [ "block_size", "classstxxl_1_1sequence.html#adf0ce317a8e85220a843d6684bb3ddc0abef7740a51914135f863f570a33e7d9c", null ],
+    [ "block_size", "classstxxl_1_1sequence.html#a864e83dba33ed8e136e1450e25b7d35fabef7740a51914135f863f570a33e7d9c", null ],
     [ "sequence", "classstxxl_1_1sequence.html#aea9d459b27326b91e4065008a0a120a3", null ],
     [ "sequence", "classstxxl_1_1sequence.html#a92d39bfff81d5e393cf64466deeb641d", null ],
     [ "sequence", "classstxxl_1_1sequence.html#aacb13b77a7eb969a23ab2bd7f16c4f06", null ],

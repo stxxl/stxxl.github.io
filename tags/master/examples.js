@@ -20,6 +20,7 @@ var examples =
     [ "examples/containers/sorter2.cpp", "examples_2containers_2sorter2_8cpp-example.html", null ],
     [ "examples/containers/stack1.cpp", "examples_2containers_2stack1_8cpp-example.html", null ],
     [ "examples/containers/stack2.cpp", "examples_2containers_2stack2_8cpp-example.html", null ],
+    [ "examples/containers/unordered_map1.cpp", "examples_2containers_2unordered_map1_8cpp-example.html", null ],
     [ "examples/containers/vector1.cpp", "examples_2containers_2vector1_8cpp-example.html", null ],
     [ "examples/containers/vector2.cpp", "examples_2containers_2vector2_8cpp-example.html", null ],
     [ "examples/containers/vector_buf.cpp", "examples_2containers_2vector_buf_8cpp-example.html", null ],
