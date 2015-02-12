@@ -119,15 +119,18 @@ $(document).ready(function(){initNavTree('common_cmdline.html','');});
 <div class="line"></div>
 <div class="line">    <span class="comment">// add an unsigned integer option --rounds &lt;N&gt;</span></div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rounds = 0;</div>
-<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#afdd88ad7e5e0769bc196414f5e12b316">add_uint</a>(<span class="charliteral">&#39;r&#39;</span>, <span class="stringliteral">&quot;rounds&quot;</span>, <span class="stringliteral">&quot;N&quot;</span>, <span class="stringliteral">&quot;Run N rounds of the experiment.&quot;</span>, rounds);</div>
+<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#a38e87f3494a0b84332e6db251c457856">add_uint</a>(<span class="charliteral">&#39;r&#39;</span>, <span class="stringliteral">&quot;rounds&quot;</span>, <span class="stringliteral">&quot;N&quot;</span>, rounds,</div>
+<div class="line">                <span class="stringliteral">&quot;Run N rounds of the experiment.&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// add a byte size argument which the user can enter like &#39;1gi&#39;</span></div>
 <div class="line">    <a class="code" href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a> a_size = 0;</div>
-<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#adf2df88abbd896b842a569f96b96c887">add_bytes</a>(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, <span class="stringliteral">&quot;Number of bytes to process.&quot;</span>, a_size);</div>
+<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#aba0d1d554952debf8a27371f139c4a5c">add_bytes</a>(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, a_size,</div>
+<div class="line">                 <span class="stringliteral">&quot;Number of bytes to process.&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// add a required parameter</span></div>
 <div class="line">    std::string a_filename;</div>
-<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#a68747ba66ff3ac1dbd5130e1782391ff">add_param_string</a>(<span class="stringliteral">&quot;filename&quot;</span>, <span class="stringliteral">&quot;A filename to process&quot;</span>, a_filename);</div>
+<div class="line">    cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#a5f85a1a7ebdd48df96a1000336afcf37">add_param_string</a>(<span class="stringliteral">&quot;filename&quot;</span>, a_filename,</div>
+<div class="line">                        <span class="stringliteral">&quot;A filename to process&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// process command line</span></div>
 <div class="line">    <span class="keywordflow">if</span> (!cp.<a class="code" href="classstxxl_1_1cmdline__parser.html#a7a9015e157a687e67fade0694b08f744">process</a>(argc, argv))</div>
@@ -169,17 +172,17 @@ Options:
   -r, --rounds N  (unsigned integer)  42
   -s, --size      (bytes)             2147483648
 </pre><p> The output shows pretty much what happens. The command line parser is by default in a verbose mode outputting all arguments and values parsed. The debug summary shows to have values the corresponding variables were set.</p>
-<p>One feature worth naming is that the parser also supports lists of strings, i.e. <code>std::vector&lt;std::string&gt;</code> via <a class="el" href="classstxxl_1_1cmdline__parser.html#a581cd003d960fae072d4a599057d95b2">cmdline_parser::add_param_stringlist()</a> and similar. </p>
+<p>One feature worth naming is that the parser also supports lists of strings, i.e. <code>std::vector&lt;std::string&gt;</code> via <a class="el" href="classstxxl_1_1cmdline__parser.html#a12d27c46eee9c86871d9317006ad9e64">cmdline_parser::add_param_stringlist()</a> and similar. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Welcome to STXXL</a></li><li class="navelem"><a class="el" href="common.html">Common Utilities and Helpers</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:17 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:26:54 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -11,6 +11,7 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
       [ "argument", "structstxxl_1_1cmdline__parser_1_1argument.html", "structstxxl_1_1cmdline__parser_1_1argument" ],
       [ "argument_bytes32", "structstxxl_1_1cmdline__parser_1_1argument__bytes32.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes32" ],
       [ "argument_bytes64", "structstxxl_1_1cmdline__parser_1_1argument__bytes64.html", "structstxxl_1_1cmdline__parser_1_1argument__bytes64" ],
+      [ "argument_double", "structstxxl_1_1cmdline__parser_1_1argument__double.html", "structstxxl_1_1cmdline__parser_1_1argument__double" ],
       [ "argument_flag", "structstxxl_1_1cmdline__parser_1_1argument__flag.html", "structstxxl_1_1cmdline__parser_1_1argument__flag" ],
       [ "argument_int", "structstxxl_1_1cmdline__parser_1_1argument__int.html", "structstxxl_1_1cmdline__parser_1_1argument__int" ],
       [ "argument_string", "structstxxl_1_1cmdline__parser_1_1argument__string.html", "structstxxl_1_1cmdline__parser_1_1argument__string" ],
@@ -21,6 +22,10 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
       [ "condition_variable", "classstxxl_1_1condition__variable.html", "classstxxl_1_1condition__variable" ]
     ] ],
     [ "counting_ptr.h", "counting__ptr_8h.html", "counting__ptr_8h" ],
+    [ "custom_stats.h", "custom__stats_8h.html", [
+      [ "custom_stats_counter", "classstxxl_1_1custom__stats__counter.html", "classstxxl_1_1custom__stats__counter" ],
+      [ "dummy_custom_stats_counter", "classstxxl_1_1dummy__custom__stats__counter.html", "classstxxl_1_1dummy__custom__stats__counter" ]
+    ] ],
     [ "error_handling.h", "error__handling_8h.html", "error__handling_8h" ],
     [ "exceptions.h", "exceptions_8h.html", [
       [ "bad_ext_alloc", "classstxxl_1_1bad__ext__alloc.html", "classstxxl_1_1bad__ext__alloc" ],
@@ -31,6 +36,7 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
     ] ],
     [ "exithandler.h", "exithandler_8h.html", "exithandler_8h" ],
     [ "external_shared_ptr.h", "external__shared__ptr_8h.html", null ],
+    [ "is_heap.h", "is__heap_8h.html", "is__heap_8h" ],
     [ "is_sorted.h", "is__sorted_8h.html", "is__sorted_8h" ],
     [ "log.h", "log_8h.html", [
       [ "logger", "classstxxl_1_1logger.html", "classstxxl_1_1logger" ]
@@ -48,11 +54,12 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
     [ "semaphore.h", "semaphore_8h.html", [
       [ "semaphore", "classstxxl_1_1semaphore.html", "classstxxl_1_1semaphore" ]
     ] ],
-    [ "settings.h", "settings_8h.html", "settings_8h" ],
+    [ "settings.h", "common_2settings_8h.html", "common_2settings_8h" ],
     [ "simple_vector.h", "simple__vector_8h.html", "simple__vector_8h" ],
     [ "state.h", "state_8h.html", [
       [ "state", "classstxxl_1_1state.html", "classstxxl_1_1state" ]
     ] ],
+    [ "swap_vector.h", "swap__vector_8h.html", "swap__vector_8h" ],
     [ "timer.h", "timer_8h.html", "timer_8h" ],
     [ "tmeta.h", "tmeta_8h.html", "tmeta_8h" ],
     [ "tuple.h", "tuple_8h.html", [
@@ -78,7 +85,11 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
       [ "tuple_less1st_less2nd", "structstxxl_1_1tuple__less1st__less2nd.html", "structstxxl_1_1tuple__less1st__less2nd" ],
       [ "tuple_less2nd", "structstxxl_1_1tuple__less2nd.html", "structstxxl_1_1tuple__less2nd" ]
     ] ],
-    [ "types.h", "types_8h.html", "types_8h" ],
+    [ "types.h", "common_2types_8h.html", "common_2types_8h" ],
     [ "uint_types.h", "uint__types_8h.html", "uint__types_8h" ],
-    [ "utils.h", "utils_8h.html", "utils_8h" ]
+    [ "utils.h", "utils_8h.html", "utils_8h" ],
+    [ "winner_tree.h", "winner__tree_8h.html", [
+      [ "winner_tree", "classstxxl_1_1winner__tree.html", "classstxxl_1_1winner__tree" ],
+      [ "stats_type", "structstxxl_1_1winner__tree_1_1stats__type.html", "structstxxl_1_1winner__tree_1_1stats__type" ]
+    ] ]
 ];

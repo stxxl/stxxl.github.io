@@ -133,6 +133,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1priority__queue__local_1_1find__settings.html">find_settings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1int__merger.html">int_merger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html">internal_bounded_stack</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to std::stack, with the following differences:  <a href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,23 +156,73 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a14fb6e6fcc1b35f18f869782e456a7db"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class OutputIterator , class CompareType , typename SizeType &gt; </td></tr>
-<tr class="memitem:a14fb6e6fcc1b35f18f869782e456a7db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html#a14fb6e6fcc1b35f18f869782e456a7db">merge3_iterator</a> (InputIterator &amp;source0, InputIterator &amp;source1, InputIterator &amp;source2, OutputIterator target, SizeType length, CompareType &amp;cmp)</td></tr>
-<tr class="separator:a14fb6e6fcc1b35f18f869782e456a7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358b1b6767a9a762db50ab50c33ed8de"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class OutputIterator , class CompareType , typename SizeType &gt; </td></tr>
-<tr class="memitem:a358b1b6767a9a762db50ab50c33ed8de"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html#a358b1b6767a9a762db50ab50c33ed8de">merge4_iterator</a> (InputIterator &amp;source0, InputIterator &amp;source1, InputIterator &amp;source2, InputIterator &amp;source3, OutputIterator target, SizeType length, CompareType &amp;cmp)</td></tr>
-<tr class="separator:a358b1b6767a9a762db50ab50c33ed8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffa8d040e2f02538781d38952322a16"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class OutputIterator , class CompareType , typename SizeType &gt; </td></tr>
-<tr class="memitem:adffa8d040e2f02538781d38952322a16"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html#adffa8d040e2f02538781d38952322a16">merge_iterator</a> (InputIterator &amp;source0, InputIterator &amp;source1, OutputIterator target, SizeType length, CompareType &amp;cmp)</td></tr>
-<tr class="separator:adffa8d040e2f02538781d38952322a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91e3a6d97946013c1ca5bbd33b62051"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class OutputIterator , class CompareType &gt; </td></tr>
+<tr class="memitem:ac91e3a6d97946013c1ca5bbd33b62051"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html#ac91e3a6d97946013c1ca5bbd33b62051">merge2_iterator</a> (InputIterator &amp;source0, InputIterator &amp;source1, OutputIterator target, OutputIterator end, CompareType &amp;cmp)</td></tr>
+<tr class="separator:ac91e3a6d97946013c1ca5bbd33b62051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d2773237d837cb721383a975b79d86"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class OutputIterator , class CompareType &gt; </td></tr>
+<tr class="memitem:aa1d2773237d837cb721383a975b79d86"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html#aa1d2773237d837cb721383a975b79d86">merge3_iterator</a> (InputIterator &amp;source0, InputIterator &amp;source1, InputIterator &amp;source2, OutputIterator target, OutputIterator end, CompareType &amp;cmp)</td></tr>
+<tr class="separator:aa1d2773237d837cb721383a975b79d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e05cab4eff034a384606827c45fb72"><td class="memTemplParams" colspan="2">template&lt;class InputIterator , class OutputIterator , class CompareType &gt; </td></tr>
+<tr class="memitem:ab1e05cab4eff034a384606827c45fb72"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html#ab1e05cab4eff034a384606827c45fb72">merge4_iterator</a> (InputIterator &amp;source0, InputIterator &amp;source1, InputIterator &amp;source2, InputIterator &amp;source3, OutputIterator target, OutputIterator end, CompareType &amp;cmp)</td></tr>
+<tr class="separator:ab1e05cab4eff034a384606827c45fb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"></div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a14fb6e6fcc1b35f18f869782e456a7db"></a>
+<a class="anchor" id="ac91e3a6d97946013c1ca5bbd33b62051"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator , class OutputIterator , class CompareType , typename SizeType &gt; </div>
+template&lt;class InputIterator , class OutputIterator , class CompareType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void stxxl::priority_queue_local::merge2_iterator </td>
+          <td>(</td>
+          <td class="paramtype">InputIterator &amp;&#160;</td>
+          <td class="paramname"><em>source0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIterator &amp;&#160;</td>
+          <td class="paramname"><em>source1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CompareType &amp;&#160;</td>
+          <td class="paramname"><em>cmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00041">41</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+<p>Referenced by <a class="el" href="priority__queue_8h_source.html#l00742">stxxl::priority_queue&lt; ConfigType &gt;::empty_insert_heap()</a>, <a class="el" href="pq__mergers_8h_source.html#l00667">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1d2773237d837cb721383a975b79d86"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator , class OutputIterator , class CompareType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void stxxl::priority_queue_local::merge3_iterator </td>
@@ -199,8 +251,8 @@ template&lt;class InputIterator , class OutputIterator , class CompareType , typ
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SizeType&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -216,19 +268,19 @@ template&lt;class InputIterator , class OutputIterator , class CompareType , typ
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00075">75</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00071">71</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 <p>References <a class="el" href="pq__mergers_8h.html#a381451d76cfe157037bfca82fa99ac7d">Merge3Case</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00505">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::multi_merge()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00510">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::multi_merge()</a>, <a class="el" href="pq__mergers_8h_source.html#l00667">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a358b1b6767a9a762db50ab50c33ed8de"></a>
+<a class="anchor" id="ab1e05cab4eff034a384606827c45fb72"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputIterator , class OutputIterator , class CompareType , typename SizeType &gt; </div>
+template&lt;class InputIterator , class OutputIterator , class CompareType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void stxxl::priority_queue_local::merge4_iterator </td>
@@ -263,8 +315,8 @@ template&lt;class InputIterator , class OutputIterator , class CompareType , typ
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SizeType&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -280,61 +332,11 @@ template&lt;class InputIterator , class OutputIterator , class CompareType , typ
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00143">143</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00138">138</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 <p>References <a class="el" href="pq__mergers_8h.html#af2fc936bc9aaab18fcdec792848022a7">Merge4Case</a>, and <a class="el" href="pq__mergers_8h.html#a88f2628acc37b0b382cd6b61214df8c6">StartMerge4</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00505">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::multi_merge()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adffa8d040e2f02538781d38952322a16"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator , class OutputIterator , class CompareType , typename SizeType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void stxxl::priority_queue_local::merge_iterator </td>
-          <td>(</td>
-          <td class="paramtype">InputIterator &amp;&#160;</td>
-          <td class="paramname"><em>source0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIterator &amp;&#160;</td>
-          <td class="paramname"><em>source1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OutputIterator&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SizeType&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CompareType &amp;&#160;</td>
-          <td class="paramname"><em>cmp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00042">42</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
-
-<p>Referenced by <a class="el" href="priority__queue_8h_source.html#l00730">stxxl::priority_queue&lt; ConfigType &gt;::empty_insert_heap()</a>, <a class="el" href="pq__losertree_8h_source.html#l00505">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::multi_merge()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00510">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::multi_merge()</a>, <a class="el" href="pq__mergers_8h_source.html#l00667">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
 
 </div>
 </div>
@@ -344,10 +346,10 @@ template&lt;class InputIterator , class OutputIterator , class CompareType , typ
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1priority__queue__local.html">priority_queue_local</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:05:16 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:28:04 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['active_5ftag',['active_tag',['../classstxxl_1_1parallel_1_1active__tag.html',1,'stxxl::parallel']]],
   ['add_5ffiller',['add_filler',['../classstxxl_1_1mng__local_1_1add__filler.html',1,'stxxl::mng_local']]],
   ['add_5ffiller_3c_20basetype_2c_200_20_3e',['add_filler&lt; BaseType, 0 &gt;',['../classstxxl_1_1mng__local_1_1add__filler_3_01BaseType_00_010_01_4.html',1,'stxxl::mng_local']]],
   ['add_5ffiller_3c_20mng_5flocal_3a_3ablock_5fw_5finfo_3c_20type_2c_20rawsize_2c_20nref_2c_20metainfotype_20_3e_2c_20rawsize_2dsizeof_28mng_5flocal_3a_3ablock_5fw_5finfo_3c_20type_2c_20rawsize_2c_20nref_2c_20metainfotype_20_3e_29_3e',['add_filler&lt; mng_local::block_w_info&lt; Type, RawSize, NRef, MetaInfoType &gt;, RawSize-sizeof(mng_local::block_w_info&lt; Type, RawSize, NRef, MetaInfoType &gt;)&gt;',['../classstxxl_1_1mng__local_1_1add__filler.html',1,'stxxl::mng_local']]],
@@ -14,6 +15,7 @@ var searchData=
   ['argument',['argument',['../structstxxl_1_1cmdline__parser_1_1argument.html',1,'stxxl::cmdline_parser']]],
   ['argument_5fbytes32',['argument_bytes32',['../structstxxl_1_1cmdline__parser_1_1argument__bytes32.html',1,'stxxl::cmdline_parser']]],
   ['argument_5fbytes64',['argument_bytes64',['../structstxxl_1_1cmdline__parser_1_1argument__bytes64.html',1,'stxxl::cmdline_parser']]],
+  ['argument_5fdouble',['argument_double',['../structstxxl_1_1cmdline__parser_1_1argument__double.html',1,'stxxl::cmdline_parser']]],
   ['argument_5fflag',['argument_flag',['../structstxxl_1_1cmdline__parser_1_1argument__flag.html',1,'stxxl::cmdline_parser']]],
   ['argument_5fint',['argument_int',['../structstxxl_1_1cmdline__parser_1_1argument__int.html',1,'stxxl::cmdline_parser']]],
   ['argument_5fstring',['argument_string',['../structstxxl_1_1cmdline__parser_1_1argument__string.html',1,'stxxl::cmdline_parser']]],

@@ -10,6 +10,7 @@ var searchData=
   ['mng_5flocal',['mng_local',['../namespacestxxl_1_1mng__local.html',1,'stxxl']]],
   ['parallel',['parallel',['../namespacestxxl_1_1parallel.html',1,'stxxl']]],
   ['potentially_5fparallel',['potentially_parallel',['../namespacestxxl_1_1potentially__parallel.html',1,'stxxl']]],
+  ['ppq_5flocal',['ppq_local',['../namespacestxxl_1_1ppq__local.html',1,'stxxl']]],
   ['priority_5fqueue_5flocal',['priority_queue_local',['../namespacestxxl_1_1priority__queue__local.html',1,'stxxl']]],
   ['sort_5fhelper',['sort_helper',['../namespacestxxl_1_1sort__helper.html',1,'stxxl']]],
   ['sort_5flocal',['sort_local',['../namespacestxxl_1_1sort__local.html',1,'stxxl']]],

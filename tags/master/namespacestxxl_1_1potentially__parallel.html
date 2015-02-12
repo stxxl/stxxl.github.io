@@ -106,20 +106,298 @@ $(document).ready(function(){initNavTree('namespacestxxl_1_1potentially__paralle
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">stxxl::potentially_parallel Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>this namespace provides parallel or sequential algorithms depending on the compilation settings. it should be used by all components, where parallelism is optional.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a91128a51552d9769de40d4e2ee56eb5d"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </td></tr>
+<tr class="memitem:a91128a51552d9769de40d4e2ee56eb5d"><td class="memTemplItemLeft" align="right" valign="top">RandomAccessIterator3&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1potentially__parallel.html#a91128a51552d9769de40d4e2ee56eb5d">multiway_merge</a> (RandomAccessIteratorPairIterator seqs_begin, RandomAccessIteratorPairIterator seqs_end, RandomAccessIterator3 target, DiffType length, Comparator comp)</td></tr>
+<tr class="memdesc:a91128a51552d9769de40d4e2ee56eb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi-way merging dispatcher.  <a href="#a91128a51552d9769de40d4e2ee56eb5d">More...</a><br/></td></tr>
+<tr class="separator:a91128a51552d9769de40d4e2ee56eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca7ebedb12e1696c4d47a9be17047b0"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </td></tr>
+<tr class="memitem:a6ca7ebedb12e1696c4d47a9be17047b0"><td class="memTemplItemLeft" align="right" valign="top">RandomAccessIterator3&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1potentially__parallel.html#a6ca7ebedb12e1696c4d47a9be17047b0">multiway_merge_sentinels</a> (RandomAccessIteratorPairIterator seqs_begin, RandomAccessIteratorPairIterator seqs_end, RandomAccessIterator3 target, DiffType length, Comparator comp)</td></tr>
+<tr class="memdesc:a6ca7ebedb12e1696c4d47a9be17047b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi-way merging front-end.  <a href="#a6ca7ebedb12e1696c4d47a9be17047b0">More...</a><br/></td></tr>
+<tr class="separator:a6ca7ebedb12e1696c4d47a9be17047b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd74e85c538ba5e12ef5eed4a151c45"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </td></tr>
+<tr class="memitem:a9bd74e85c538ba5e12ef5eed4a151c45"><td class="memTemplItemLeft" align="right" valign="top">RandomAccessIterator3&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1potentially__parallel.html#a9bd74e85c538ba5e12ef5eed4a151c45">multiway_merge_stable</a> (RandomAccessIteratorPairIterator seqs_begin, RandomAccessIteratorPairIterator seqs_end, RandomAccessIterator3 target, DiffType length, Comparator comp)</td></tr>
+<tr class="memdesc:a9bd74e85c538ba5e12ef5eed4a151c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi-way merging dispatcher.  <a href="#a9bd74e85c538ba5e12ef5eed4a151c45">More...</a><br/></td></tr>
+<tr class="separator:a9bd74e85c538ba5e12ef5eed4a151c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6bf6e01e32748a0613f40acafa167e"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </td></tr>
+<tr class="memitem:afc6bf6e01e32748a0613f40acafa167e"><td class="memTemplItemLeft" align="right" valign="top">RandomAccessIterator3&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1potentially__parallel.html#afc6bf6e01e32748a0613f40acafa167e">multiway_merge_stable_sentinels</a> (RandomAccessIteratorPairIterator seqs_begin, RandomAccessIteratorPairIterator seqs_end, RandomAccessIterator3 target, DiffType length, Comparator comp)</td></tr>
+<tr class="memdesc:afc6bf6e01e32748a0613f40acafa167e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi-way merging front-end.  <a href="#afc6bf6e01e32748a0613f40acafa167e">More...</a><br/></td></tr>
+<tr class="separator:afc6bf6e01e32748a0613f40acafa167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>this namespace provides parallel or sequential algorithms depending on the compilation settings. it should be used by all components, where parallelism is optional. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a91128a51552d9769de40d4e2ee56eb5d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">RandomAccessIterator3 stxxl::potentially_parallel::multiway_merge </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator3&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiffType&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multi-way merging dispatcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seqs_begin</td><td>Begin iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">seqs_end</td><td>End iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">target</td><td>Begin iterator out output sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">length</td><td>Maximum length to merge. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
+
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00144">144</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l04189">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::add_as_internal_array()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l02797">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::bulk_pop_limit()</a>, <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l04027">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::flush_insertion_heaps()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l04110">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::flush_internal_arrays()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l03312">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::merge_external_arrays()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l03813">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::refill_extract_buffer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ca7ebedb12e1696c4d47a9be17047b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">RandomAccessIterator3 stxxl::potentially_parallel::multiway_merge_sentinels </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator3&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiffType&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multi-way merging front-end. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seqs_begin</td><td>Begin iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">seqs_end</td><td>End iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">target</td><td>Begin iterator out output sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">length</td><td>Maximum length to merge. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>For each <code>i</code>, <code>seqs_begin</code>[i].second must be the end marker of the sequence, but also reference the one more sentinel element. </dd></dl>
+
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00195">195</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00510">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::multi_merge()</a>, and <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bd74e85c538ba5e12ef5eed4a151c45"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">RandomAccessIterator3 stxxl::potentially_parallel::multiway_merge_stable </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator3&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiffType&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multi-way merging dispatcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seqs_begin</td><td>Begin iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">seqs_end</td><td>End iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">target</td><td>Begin iterator out output sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">length</td><td>Maximum length to merge. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
+
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00169">169</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc6bf6e01e32748a0613f40acafa167e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandomAccessIteratorPairIterator , typename RandomAccessIterator3 , typename DiffType , typename Comparator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">RandomAccessIterator3 stxxl::potentially_parallel::multiway_merge_stable_sentinels </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIteratorPairIterator&#160;</td>
+          <td class="paramname"><em>seqs_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator3&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiffType&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multi-way merging front-end. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seqs_begin</td><td>Begin iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">seqs_end</td><td>End iterator of iterator pair input sequence. </td></tr>
+    <tr><td class="paramname">target</td><td>Begin iterator out output sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">length</td><td>Maximum length to merge. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>For each <code>i</code>, <code>seqs_begin</code>[i].second must be the end marker of the sequence, but also reference the one more sentinel element. </dd></dl>
+
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00221">221</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1potentially__parallel.html">potentially_parallel</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:05:16 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:28:02 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

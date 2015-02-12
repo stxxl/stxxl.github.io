@@ -1,7 +1,9 @@
 var searchData=
 [
+  ['tags_2eh',['tags.h',['../tags_8h.html',1,'']]],
   ['timer',['timer',['../timer.html',1,'']]],
   ['timer_2eh',['timer.h',['../timer_8h.html',1,'']]],
+  ['timing_2eh',['timing.h',['../timing_8h.html',1,'']]],
   ['tmeta_2eh',['tmeta.h',['../tmeta_8h.html',1,'']]],
   ['tuning_2eh',['tuning.h',['../tuning_8h.html',1,'']]],
   ['tuple_2eh',['tuple.h',['../tuple_8h.html',1,'']]],
@@ -22,5 +24,6 @@ var searchData=
   ['type_5ftraits_2eh',['type_traits.h',['../type__traits_8h.html',1,'']]],
   ['typed_5fblock_2eh',['typed_block.h',['../typed__block_8h.html',1,'']]],
   ['types',['types',['../types.html',1,'']]],
-  ['types_2eh',['types.h',['../types_8h.html',1,'']]]
+  ['types_2eh',['types.h',['../parallel_2types_8h.html',1,'']]],
+  ['types_2eh',['types.h',['../common_2types_8h.html',1,'']]]
 ];

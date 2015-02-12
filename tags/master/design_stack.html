@@ -194,20 +194,20 @@ stxxl::STACK_GENERATOR</h1>
 <div class="line"></div>
 <div class="line"><a class="code" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a> p_pool(10); <span class="comment">// 10 read buffers</span></div>
 <div class="line"><a class="code" href="classstxxl_1_1write__pool.html">stxxl::write_pool</a> w_pool(6);     <span class="comment">// 6 write buffers</span></div>
-<div class="line">stack_type S(p_pool,w_pool,0);   <span class="comment">// no read buffers used</span></div>
+<div class="line">stack_type <a class="code" href="multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780">S</a>(p_pool,w_pool,0);   <span class="comment">// no read buffers used</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> i = 0; i &lt; max_value; ++i)</div>
-<div class="line">    S.push(i);</div>
+<div class="line">    <a class="code" href="multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780">S</a>.push(i);</div>
 <div class="line"></div>
-<div class="line">S.set_prefetch_aggressiveness(5);</div>
+<div class="line"><a class="code" href="multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780">S</a>.set_prefetch_aggressiveness(5);</div>
 <div class="line"></div>
 <div class="line"><span class="comment">/* give a hint that we are going to shrink the stack from now on,</span></div>
 <div class="line"><span class="comment">always prefetch 5 buffers beforehand */</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> i = 0; i &lt; max_value; ++i)</div>
-<div class="line">    S.pop();</div>
+<div class="line">    <a class="code" href="multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780">S</a>.pop();</div>
 <div class="line"></div>
-<div class="line">S.set_prefetch_aggressiveness(0);</div>
+<div class="line"><a class="code" href="multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780">S</a>.set_prefetch_aggressiveness(0);</div>
 <div class="line"><span class="comment">// stop prefetching</span></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -215,10 +215,10 @@ stxxl::STACK_GENERATOR</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Welcome to STXXL</a></li><li class="navelem"><a class="el" href="design.html">Design of STXXL</a></li><li class="navelem"><a class="el" href="design_stl.html">The STL-User Layer</a></li><li class="navelem"><a class="el" href="design_stl_containers.html">STXXL Containers</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:19 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:26:56 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

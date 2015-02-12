@@ -19,6 +19,7 @@ var utils_8h =
     [ "pop_back", "utils_8h.html#a87b330bead216a9f6cf7b243ae3b6f62", null ],
     [ "pop_begin", "utils_8h.html#a37feb00474dd76f7dfc8fc5352123a34", null ],
     [ "pop_front", "utils_8h.html#a8b223a5b45db8fe6ff5408fcbc6d554e", null ],
+    [ "round_up_to_power_of_two", "utils_8h.html#aa3c03ae958321bf55f340838ff630e40", null ],
     [ "round_up_to_power_of_two", "utils_8h.html#a78e11ad4b267e4cf7285a8e4411ac9f7", null ],
     [ "split", "utils_8h.html#a662fd1004cafc334a254cb4a479f455b", null ],
     [ "STXXL_MAX", "utils_8h.html#a9ba1dbf90be30dfeae39cbd40dfe6340", null ],

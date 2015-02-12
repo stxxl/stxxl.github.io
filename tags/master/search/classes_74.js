@@ -1,14 +1,16 @@
 var searchData=
 [
   ['timer',['timer',['../classstxxl_1_1timer.html',1,'stxxl']]],
+  ['timing',['Timing',['../classstxxl_1_1parallel_1_1Timing.html',1,'stxxl::parallel']]],
+  ['timing_3c_20inactive_5ftag_2c_20must_5fbe_5fint_20_3e',['Timing&lt; inactive_tag, must_be_int &gt;',['../classstxxl_1_1parallel_1_1Timing_3_01inactive__tag_00_01must__be__int_01_4.html',1,'stxxl::parallel']]],
   ['transform',['transform',['../classstxxl_1_1stream_1_1transform.html',1,'stxxl::stream']]],
   ['transform_3c_20operation_2c_20input1_2c_20input2_2c_20input3_2c_20input4_2c_20input5_2c_20stopper_20_3e',['transform&lt; Operation, Input1, Input2, Input3, Input4, Input5, Stopper &gt;',['../classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Input2_00_01Input3_00_01Input4_00_01Input5_00_01Stopper_01_4.html',1,'stxxl::stream']]],
   ['transform_3c_20operation_2c_20input1_2c_20input2_2c_20input3_2c_20input4_2c_20stopper_2c_20stopper_20_3e',['transform&lt; Operation, Input1, Input2, Input3, Input4, Stopper, Stopper &gt;',['../classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Input2_00_01Input3_00_01Input4_00_01Stopper_00_01Stopper_01_4.html',1,'stxxl::stream']]],
   ['transform_3c_20operation_2c_20input1_2c_20input2_2c_20input3_2c_20stopper_2c_20stopper_2c_20stopper_20_3e',['transform&lt; Operation, Input1, Input2, Input3, Stopper, Stopper, Stopper &gt;',['../classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Input2_00_01Input3_00_01Stopper_00_01Stopper_00_01Stopper_01_4.html',1,'stxxl::stream']]],
   ['transform_3c_20operation_2c_20input1_2c_20input2_2c_20stopper_2c_20stopper_2c_20stopper_2c_20stopper_20_3e',['transform&lt; Operation, Input1, Input2, Stopper, Stopper, Stopper, Stopper &gt;',['../classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Input2_00_01Stopper_00_01Stoppe1bf347eabb485724c445c21c356425f5.html',1,'stxxl::stream']]],
   ['transform_3c_20operation_2c_20input1_2c_20stopper_2c_20stopper_2c_20stopper_2c_20stopper_2c_20stopper_20_3e',['transform&lt; Operation, Input1, Stopper, Stopper, Stopper, Stopper, Stopper &gt;',['../classstxxl_1_1stream_1_1transform_3_01Operation_00_01Input1_00_01Stopper_00_01Stopper_00_01Stopp7fafe73abb50d635658522a2a9994eea.html',1,'stxxl::stream']]],
-  ['trigger_5fentry',['trigger_entry',['../structstxxl_1_1sort__helper_1_1trigger__entry.html',1,'stxxl::sort_helper']]],
   ['trigger_5fentry',['trigger_entry',['../structstxxl_1_1ksort__local_1_1trigger__entry.html',1,'stxxl::ksort_local']]],
+  ['trigger_5fentry',['trigger_entry',['../structstxxl_1_1sort__helper_1_1trigger__entry.html',1,'stxxl::sort_helper']]],
   ['trigger_5fentry_5fcmp',['trigger_entry_cmp',['../structstxxl_1_1sort__helper_1_1trigger__entry__cmp.html',1,'stxxl::sort_helper']]],
   ['trigger_5fentry_5fiterator',['trigger_entry_iterator',['../structstxxl_1_1trigger__entry__iterator.html',1,'stxxl']]],
   ['tuning',['tuning',['../classstxxl_1_1hash__map_1_1tuning.html',1,'stxxl::hash_map']]],

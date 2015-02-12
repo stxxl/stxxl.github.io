@@ -187,6 +187,9 @@ $(document).ready(function(){initNavTree('functions_vars_0x66.html','');});
 <li>first_flash
 : <a class="el" href="classstxxl_1_1config.html#a9384a54f1d9c37d8770058b2f99b3091">stxxl::config</a>
 </li>
+<li>first_insert
+: <a class="el" href="classstxxl_1_1parallel_1_1LoserTreeCopyBase.html#a6a3ab09ad753f3c878022bb3fcf26fe6">stxxl::parallel::LoserTreeCopyBase&lt; ValueType, Comparator &gt;</a>
+</li>
 <li>first_sector
 : <a class="el" href="structstxxl_1_1simdisk__geometry_1_1Zone.html#a1d95aedfaa9343044f1d9fd108471b1c">stxxl::simdisk_geometry::Zone</a>
 </li>
@@ -196,18 +199,24 @@ $(document).ready(function(){initNavTree('functions_vars_0x66.html','');});
 <li>flash
 : <a class="el" href="classstxxl_1_1disk__config.html#a32ed2d9ed73e65fc5a7afc2142762bd4">stxxl::disk_config</a>
 </li>
+<li>force_parallel
+: <a class="el" href="structstxxl_1_1parallel_1_1Settings.html#a5e5ed1ed7d32c554d9c4440e297d04a7">stxxl::parallel::Settings&lt; must_be_int &gt;</a>
+</li>
+<li>force_sequential
+: <a class="el" href="structstxxl_1_1parallel_1_1Settings.html#a6026a83d851253c3970d95bac3959489">stxxl::parallel::Settings&lt; must_be_int &gt;</a>
+</li>
 <li>fourth
-: <a class="el" href="structstxxl_1_1tuple.html#ae5006a18c0316af2bb8428e6ed220161">stxxl::tuple&lt; T1, T2, T3, T4, T5, T6 &gt;</a>
+: <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a84f06998f290481572163ccfb387b96e">stxxl::tuple&lt; T1, T2, T3, T4, T5, Plug &gt;</a>
+, <a class="el" href="structstxxl_1_1tuple.html#ae5006a18c0316af2bb8428e6ed220161">stxxl::tuple&lt; T1, T2, T3, T4, T5, T6 &gt;</a>
 , <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01Plug_00_01Plug_01_4.html#ac469b766b472e2626dde90851f052895">stxxl::tuple&lt; T1, T2, T3, T4, Plug, Plug &gt;</a>
-, <a class="el" href="structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a84f06998f290481572163ccfb387b96e">stxxl::tuple&lt; T1, T2, T3, T4, T5, Plug &gt;</a>
 </li>
 <li>free_blocks
 : <a class="el" href="classstxxl_1_1prefetch__pool.html#a7b09cb34d8bb2610d3d65c0f05146893">stxxl::prefetch_pool&lt; BlockType &gt;</a>
 , <a class="el" href="classstxxl_1_1write__pool.html#a08dea6c37a5fe07e20c5a245df49d738">stxxl::write_pool&lt; BlockType &gt;</a>
 </li>
 <li>free_blocks_
-: <a class="el" href="classstxxl_1_1hash__map_1_1block__cache__write__buffer.html#a66e46b4e2e36188d82b7b23f7fd6f54a">stxxl::hash_map::block_cache_write_buffer&lt; BlockType &gt;</a>
-, <a class="el" href="classstxxl_1_1hash__map_1_1block__cache.html#abe91e3797d760bdddaac628d4360ba98">stxxl::hash_map::block_cache&lt; BlockType &gt;</a>
+: <a class="el" href="classstxxl_1_1hash__map_1_1block__cache.html#abe91e3797d760bdddaac628d4360ba98">stxxl::hash_map::block_cache&lt; BlockType &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1block__cache__write__buffer.html#a66e46b4e2e36188d82b7b23f7fd6f54a">stxxl::hash_map::block_cache_write_buffer&lt; BlockType &gt;</a>
 </li>
 <li>free_blocks_size
 : <a class="el" href="classstxxl_1_1prefetch__pool.html#a0d3f251a8d5043df8b3713b441156dec">stxxl::prefetch_pool&lt; BlockType &gt;</a>
@@ -222,15 +231,12 @@ $(document).ready(function(){initNavTree('functions_vars_0x66.html','');});
 <li>free_internal_blocks
 : <a class="el" href="classstxxl_1_1block__scheduler.html#ac02adcabf478f5b923a23fd5fa1528b2">stxxl::block_scheduler&lt; SwappableBlockType &gt;</a>
 </li>
-<li>free_segments
-: <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#a2d4d350cd12ab71651f6c442485ab224">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;</a>
-</li>
 <li>free_slots
 : <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a4439bf349cf6da21887632cdffc8d94b">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
 </li>
 <li>free_space
-: <a class="el" href="classstxxl_1_1wbtl__file.html#a4d9deb7bc37ca8748fa8f6763f65ae69">stxxl::wbtl_file</a>
-, <a class="el" href="classstxxl_1_1disk__allocator.html#a8a5d9722a9311937cca14cc50fd20d51">stxxl::disk_allocator</a>
+: <a class="el" href="classstxxl_1_1disk__allocator.html#a8a5d9722a9311937cca14cc50fd20d51">stxxl::disk_allocator</a>
+, <a class="el" href="classstxxl_1_1wbtl__file.html#a4d9deb7bc37ca8748fa8f6763f65ae69">stxxl::wbtl_file</a>
 </li>
 <li>free_swappable_blocks
 : <a class="el" href="classstxxl_1_1block__scheduler.html#a97b8770056b82dd74e229274f98dac6d">stxxl::block_scheduler&lt; SwappableBlockType &gt;</a>
@@ -253,10 +259,10 @@ $(document).ready(function(){initNavTree('functions_vars_0x66.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:11:02 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:33:42 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

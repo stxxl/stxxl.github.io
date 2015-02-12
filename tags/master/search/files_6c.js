@@ -10,5 +10,6 @@ var searchData=
   ['linuxaio_5frequest_2eh',['linuxaio_request.h',['../linuxaio__request_8h.html',1,'']]],
   ['log_2ecpp',['log.cpp',['../log_8cpp.html',1,'']]],
   ['log_2eh',['log.h',['../log_8h.html',1,'']]],
-  ['losertree_2eh',['losertree.h',['../losertree_8h.html',1,'']]]
+  ['losertree_2eh',['losertree.h',['../parallel_2losertree_8h.html',1,'']]],
+  ['losertree_2eh',['losertree.h',['../algo_2losertree_8h.html',1,'']]]
 ];

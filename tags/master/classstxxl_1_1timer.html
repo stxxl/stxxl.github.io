@@ -110,40 +110,54 @@ $(document).ready(function(){initNavTree('classstxxl_1_1timer.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classstxxl_1_1timer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">stxxl::timer Class Reference<div class="ingroups"><a class="el" href="group__support.html">Common Utilities and Support Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2copy_file_8cpp-example.html#_a1">examples/containers/copy_file.cpp</a>, and <a class="el" href="examples_2containers_2sorter2_8cpp-example.html#_a4">examples/containers/sorter2.cpp</a>.</dd>
+<div class="textblock"><p>Class timer is a simple stop watch timer. </p>
+<p>It uses the <a class="el" href="classstxxl_1_1timer.html#a61e67b41f2c374429799c68d6db0822c" title="return current timestamp ">timestamp()</a> function to get the current time when <a class="el" href="classstxxl_1_1timer.html#a0ae0e789f391f05c9ad232af88a823ce" title="start timer ">start()</a> is called. Then, after some processing, the function <a class="el" href="classstxxl_1_1timer.html#ae0e47067a50b26bd88dd891f486d6961" title="stop timer ">stop()</a> functions can be called, or <a class="el" href="classstxxl_1_1timer.html#aeafc49156432267a59c61f8704588606" title="return currently accumulated time in seconds (as double) ">seconds()</a> and other accessors can be called directly. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2copy_file_8cpp-example.html#_a1">examples/containers/copy_file.cpp</a>, and <a class="el" href="examples_2containers_2sorter2_8cpp-example.html#_a4">examples/containers/sorter2.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00064">64</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00070">70</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6105c24f75cc1af250e355d34aab745f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a6105c24f75cc1af250e355d34aab745f">timer</a> (bool start_immediately=false)</td></tr>
+<tr class="memdesc:a6105c24f75cc1af250e355d34aab745f"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize and optionally immediately start the timer  <a href="#a6105c24f75cc1af250e355d34aab745f">More...</a><br/></td></tr>
 <tr class="separator:a6105c24f75cc1af250e355d34aab745f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4321c5541a83782e34b4bfac9b0402a9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a4321c5541a83782e34b4bfac9b0402a9">mseconds</a> ()</td></tr>
-<tr class="memdesc:a4321c5541a83782e34b4bfac9b0402a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">return currently accumulated time in milliseconds  <a href="#a4321c5541a83782e34b4bfac9b0402a9">More...</a><br/></td></tr>
-<tr class="separator:a4321c5541a83782e34b4bfac9b0402a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768ee90365be5ba50d8164ea6d51d0a5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a768ee90365be5ba50d8164ea6d51d0a5">mseconds</a> () const </td></tr>
+<tr class="memdesc:a768ee90365be5ba50d8164ea6d51d0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">return currently accumulated time in milliseconds  <a href="#a768ee90365be5ba50d8164ea6d51d0a5">More...</a><br/></td></tr>
+<tr class="separator:a768ee90365be5ba50d8164ea6d51d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c6a3440def6a28ece88312ca52a19d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1timer.html">timer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#ad5c6a3440def6a28ece88312ca52a19d">operator+=</a> (const <a class="el" href="classstxxl_1_1timer.html">timer</a> &amp;tm)</td></tr>
+<tr class="memdesc:ad5c6a3440def6a28ece88312ca52a19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">accumulate elapsed time from another timer  <a href="#ad5c6a3440def6a28ece88312ca52a19d">More...</a><br/></td></tr>
+<tr class="separator:ad5c6a3440def6a28ece88312ca52a19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f69d7d5d9a3dc863da5cf8fda5eea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#af2f69d7d5d9a3dc863da5cf8fda5eea0">reset</a> ()</td></tr>
 <tr class="memdesc:af2f69d7d5d9a3dc863da5cf8fda5eea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">return accumulated time  <a href="#af2f69d7d5d9a3dc863da5cf8fda5eea0">More...</a><br/></td></tr>
 <tr class="separator:af2f69d7d5d9a3dc863da5cf8fda5eea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248cf6879ba8adba5791feea26a1f538"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a248cf6879ba8adba5791feea26a1f538">seconds</a> ()</td></tr>
-<tr class="memdesc:a248cf6879ba8adba5791feea26a1f538"><td class="mdescLeft">&#160;</td><td class="mdescRight">return currently accumulated time in seconds (as double)  <a href="#a248cf6879ba8adba5791feea26a1f538">More...</a><br/></td></tr>
-<tr class="separator:a248cf6879ba8adba5791feea26a1f538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafc49156432267a59c61f8704588606"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#aeafc49156432267a59c61f8704588606">seconds</a> () const </td></tr>
+<tr class="memdesc:aeafc49156432267a59c61f8704588606"><td class="mdescLeft">&#160;</td><td class="mdescRight">return currently accumulated time in seconds (as double)  <a href="#aeafc49156432267a59c61f8704588606">More...</a><br/></td></tr>
+<tr class="separator:aeafc49156432267a59c61f8704588606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ae0e789f391f05c9ad232af88a823ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a0ae0e789f391f05c9ad232af88a823ce">start</a> ()</td></tr>
 <tr class="memdesc:a0ae0e789f391f05c9ad232af88a823ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">start timer  <a href="#a0ae0e789f391f05c9ad232af88a823ce">More...</a><br/></td></tr>
 <tr class="separator:a0ae0e789f391f05c9ad232af88a823ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e47067a50b26bd88dd891f486d6961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#ae0e47067a50b26bd88dd891f486d6961">stop</a> ()</td></tr>
 <tr class="memdesc:ae0e47067a50b26bd88dd891f486d6961"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop timer  <a href="#ae0e47067a50b26bd88dd891f486d6961">More...</a><br/></td></tr>
 <tr class="separator:ae0e47067a50b26bd88dd891f486d6961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29c6b48e16d913d0ac58efb36bb23df4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a29c6b48e16d913d0ac58efb36bb23df4">useconds</a> ()</td></tr>
-<tr class="memdesc:a29c6b48e16d913d0ac58efb36bb23df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">return currently accumulated time in microseconds  <a href="#a29c6b48e16d913d0ac58efb36bb23df4">More...</a><br/></td></tr>
-<tr class="separator:a29c6b48e16d913d0ac58efb36bb23df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf933941013f2f90a48435c88fc3595"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#adbf933941013f2f90a48435c88fc3595">useconds</a> () const </td></tr>
+<tr class="memdesc:adbf933941013f2f90a48435c88fc3595"><td class="mdescLeft">&#160;</td><td class="mdescRight">return currently accumulated time in microseconds  <a href="#adbf933941013f2f90a48435c88fc3595">More...</a><br/></td></tr>
+<tr class="separator:adbf933941013f2f90a48435c88fc3595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac4d94e2b2ac643cb43a1a811c4b410bd"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#ac4d94e2b2ac643cb43a1a811c4b410bd">is_real</a> = true</td></tr>
+<tr class="memdesc:ac4d94e2b2ac643cb43a1a811c4b410bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean indicating that this class does real timing  <a href="#ac4d94e2b2ac643cb43a1a811c4b410bd">More...</a><br/></td></tr>
+<tr class="separator:ac4d94e2b2ac643cb43a1a811c4b410bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -154,11 +168,20 @@ Static Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a07675a2458bdb3a1feb0dc67cd27ac4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a07675a2458bdb3a1feb0dc67cd27ac4b">accumulated</a></td></tr>
+<tr class="memdesc:a07675a2458bdb3a1feb0dc67cd27ac4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">total accumulated time in seconds.  <a href="#a07675a2458bdb3a1feb0dc67cd27ac4b">More...</a><br/></td></tr>
 <tr class="separator:a07675a2458bdb3a1feb0dc67cd27ac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a394c33e3a7fdd2a3431e026eec4ab1d5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a394c33e3a7fdd2a3431e026eec4ab1d5">last_clock</a></td></tr>
+<tr class="memdesc:a394c33e3a7fdd2a3431e026eec4ab1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">last start time of the stopwatch  <a href="#a394c33e3a7fdd2a3431e026eec4ab1d5">More...</a><br/></td></tr>
 <tr class="separator:a394c33e3a7fdd2a3431e026eec4ab1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a72768594efe336356a3fb4210be09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a62a72768594efe336356a3fb4210be09">running</a></td></tr>
+<tr class="memdesc:a62a72768594efe336356a3fb4210be09"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean whether the stopwatch timer is currently running  <a href="#a62a72768594efe336356a3fb4210be09">More...</a><br/></td></tr>
 <tr class="separator:a62a72768594efe336356a3fb4210be09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a1e04048410c6ab335be41035fae4968c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html#a1e04048410c6ab335be41035fae4968c">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classstxxl_1_1timer.html">timer</a> &amp;t)</td></tr>
+<tr class="memdesc:a1e04048410c6ab335be41035fae4968c"><td class="mdescLeft">&#160;</td><td class="mdescRight">direct &lt;&lt;-operator for ostream. Can be used for printing with std::cout.  <a href="#a1e04048410c6ab335be41035fae4968c">More...</a><br/></td></tr>
+<tr class="separator:a1e04048410c6ab335be41035fae4968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6105c24f75cc1af250e355d34aab745f"></a>
@@ -183,12 +206,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00077">77</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>initialize and optionally immediately start the timer </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00092">92</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4321c5541a83782e34b4bfac9b0402a9"></a>
+<a class="anchor" id="a768ee90365be5ba50d8164ea6d51d0a5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -199,7 +224,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">double stxxl::timer::mseconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -212,9 +237,39 @@ Private Attributes</h2></td></tr>
 <p>return currently accumulated time in milliseconds </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2sorter2_8cpp-example.html#a8">examples/containers/sorter2.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00105">105</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00120">120</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5c6a3440def6a28ece88312ca52a19d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1timer.html">timer</a>&amp; stxxl::timer::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1timer.html">timer</a> &amp;&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>accumulate elapsed time from another timer </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00147">147</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+<p>References <a class="el" href="timer_8h_source.html#l00138">seconds()</a>.</p>
 
 </div>
 </div>
@@ -241,13 +296,13 @@ Private Attributes</h2></td></tr>
 
 <p>return accumulated time </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00098">98</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00113">113</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a248cf6879ba8adba5791feea26a1f538"></a>
+<a class="anchor" id="aeafc49156432267a59c61f8704588606"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,7 +313,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">double stxxl::timer::seconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -271,9 +326,11 @@ Private Attributes</h2></td></tr>
 <p>return currently accumulated time in seconds (as double) </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2copy_file_8cpp-example.html#a6">examples/containers/copy_file.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00123">123</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00138">138</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
+
+<p>Referenced by <a class="el" href="timer_8h_source.html#l00147">operator+=()</a>.</p>
 
 </div>
 </div>
@@ -301,7 +358,7 @@ Private Attributes</h2></td></tr>
 <p>start timer </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2sorter2_8cpp-example.html#a5">examples/containers/sorter2.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00084">84</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00099">99</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
 
@@ -331,7 +388,7 @@ Private Attributes</h2></td></tr>
 <p>stop timer </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2sorter2_8cpp-example.html#a6">examples/containers/sorter2.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00091">91</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00106">106</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
 
@@ -360,13 +417,13 @@ Private Attributes</h2></td></tr>
 
 <p>return current timestamp </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00071">71</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00082">82</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a29c6b48e16d913d0ac58efb36bb23df4"></a>
+<a class="anchor" id="adbf933941013f2f90a48435c88fc3595"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -377,7 +434,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">double stxxl::timer::useconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -389,9 +446,48 @@ Private Attributes</h2></td></tr>
 
 <p>return currently accumulated time in microseconds </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00114">114</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00129">129</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="timer_8h_source.html#l00044">stxxl::timestamp()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a1e04048410c6ab335be41035fae4968c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1timer.html">timer</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>direct &lt;&lt;-operator for ostream. Can be used for printing with std::cout. </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00157">157</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +510,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00067">67</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>total accumulated time in seconds. </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00076">76</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4d94e2b2ac643cb43a1a811c4b410bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool stxxl::timer::is_real = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>boolean indicating that this class does real timing </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00089">89</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +558,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00068">68</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>last start time of the stopwatch </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00079">79</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +582,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00066">66</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>boolean whether the stopwatch timer is currently running </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00073">73</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -471,10 +597,10 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1timer.html">timer</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:56 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:36 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

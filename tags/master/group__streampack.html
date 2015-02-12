@@ -332,7 +332,7 @@ template&lt;class RunsType , class CompareType &gt; </div>
 
 <p>Definition at line <a class="el" href="sort__stream_8h_source.html#l00873">873</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
-<p>References <a class="el" href="is__sorted_8h_source.html#l00053">stxxl::is_sorted()</a>, <a class="el" href="mng_2adaptor_8h_source.html#l00646">stxxl::make_element_iterator()</a>, <a class="el" href="verbose_8h_source.html#l00080">STXXL_ERRMSG</a>, <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>, <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, <a class="el" href="sort__helper_8h_source.html#l00028">stxxl::sort_helper::verify_sentinel_strict_weak_ordering()</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
+<p>References <a class="el" href="is__sorted_8h_source.html#l00024">stxxl::is_sorted()</a>, <a class="el" href="mng_2adaptor_8h_source.html#l00646">stxxl::make_element_iterator()</a>, <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>, <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>, <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>, <a class="el" href="sort__helper_8h_source.html#l00028">stxxl::sort_helper::verify_sentinel_strict_weak_ordering()</a>, and <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>.</p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ template&lt;class Input , class CompareType , unsigned BlockSize, class AllocStr
 
 <p>Definition at line <a class="el" href="sort__stream_8h_source.html#l00168">168</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
-<p>References <a class="el" href="typed__block_8h_source.html#l00092">stxxl::mng_local::element_block&lt; Type, Size &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00096">stxxl::check_sort_settings()</a>, <a class="el" href="block__manager_8h_source.html#l00253">stxxl::block_manager::delete_blocks()</a>, <a class="el" href="utils_8h_source.html#l00199">stxxl::div_ceil()</a>, <a class="el" href="algo_2adaptor_8h_source.html#l00239">stxxl::make_bid_iterator()</a>, <a class="el" href="block__manager_8h_source.html#l00109">stxxl::block_manager::new_blocks()</a>, <a class="el" href="sort_8h_source.html#l00674">stxxl::sort()</a>, <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>, <a class="el" href="classstxxl_1_1request__interface.html#ac740c3dd58d02842bed4a4e86fe42b22">stxxl::request_interface::wait()</a>, <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>, and <a class="el" href="typed__block_8h_source.html#l00283">stxxl::typed_block&lt; RawSize, Type, NRef, MetaInfoType &gt;::write()</a>.</p>
+<p>References <a class="el" href="typed__block_8h_source.html#l00092">stxxl::mng_local::element_block&lt; Type, Size &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00082">stxxl::check_sort_settings()</a>, <a class="el" href="block__manager_8h_source.html#l00253">stxxl::block_manager::delete_blocks()</a>, <a class="el" href="utils_8h_source.html#l00199">stxxl::div_ceil()</a>, <a class="el" href="algo_2adaptor_8h_source.html#l00239">stxxl::make_bid_iterator()</a>, <a class="el" href="block__manager_8h_source.html#l00109">stxxl::block_manager::new_blocks()</a>, <a class="el" href="sort_8h_source.html#l00676">stxxl::sort()</a>, <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>, <a class="el" href="classstxxl_1_1request__interface.html#ac740c3dd58d02842bed4a4e86fe42b22">stxxl::request_interface::wait()</a>, <a class="el" href="request__operations_8h_source.html#l00034">stxxl::wait_all()</a>, and <a class="el" href="typed__block_8h_source.html#l00283">stxxl::typed_block&lt; RawSize, Type, NRef, MetaInfoType &gt;::write()</a>.</p>
 
 </div>
 </div>
@@ -432,13 +432,13 @@ template&lt;class OutputIterator , class StreamAlgorithm &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value of the output iterator after all increments, i.e. points to the first unwritten value </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Output (range) is large enough to hold the all elements in the input stream </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2algo_2copy_and_sort_file_8cpp-example.html#a14">examples/algo/copy_and_sort_file.cpp</a>, <a class="el" href="examples_2applications_2skew3_8cpp-example.html#a22">examples/applications/skew3.cpp</a>, <a class="el" href="examples_2containers_2copy_file_8cpp-example.html#a5">examples/containers/copy_file.cpp</a>, and <a class="el" href="examples_2stream_2stream1_8cpp-example.html#a6">examples/stream/stream1.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2algo_2copy_and_sort_file_8cpp-example.html#a14">examples/algo/copy_and_sort_file.cpp</a>, <a class="el" href="examples_2applications_2skew3_8cpp-example.html#a24">examples/applications/skew3.cpp</a>, <a class="el" href="examples_2containers_2copy_file_8cpp-example.html#a5">examples/containers/copy_file.cpp</a>, and <a class="el" href="examples_2stream_2stream1_8cpp-example.html#a6">examples/stream/stream1.cpp</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="stream_8h_source.html#l00428">428</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 <p>References <a class="el" href="error__handling_8h_source.html#l00034">STXXL_PRETTY_FUNCTION_NAME</a>, and <a class="el" href="stream_8h_source.html#l00027">STXXL_VERBOSE_MATERIALIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l01640">stxxl::sort()</a>.</p>
+<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l01642">stxxl::sort()</a>.</p>
 
 </div>
 </div>
@@ -624,9 +624,9 @@ template&lt;class RunsType , class CompareType , class AllocStr &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01334">1334</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
+<p>Definition at line <a class="el" href="sort__stream_8h_source.html#l01336">1336</a> of file <a class="el" href="sort__stream_8h_source.html">sort_stream.h</a>.</p>
 
-<p>References <a class="el" href="utils_8h_source.html#l00199">stxxl::div_ceil()</a>, <a class="el" href="sort__stream_8h_source.html#l01270">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::empty()</a>, <a class="el" href="sort__stream_8h_source.html#l01125">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::initialize()</a>, <a class="el" href="algo_2adaptor_8h_source.html#l00239">stxxl::make_bid_iterator()</a>, <a class="el" href="block__manager_8h_source.html#l00109">stxxl::block_manager::new_blocks()</a>, <a class="el" href="sort__base_8h_source.html#l00040">stxxl::optimal_merge_factor()</a>, <a class="el" href="utils_8h_source.html#l00146">stxxl::STXXL_MIN()</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
+<p>References <a class="el" href="utils_8h_source.html#l00199">stxxl::div_ceil()</a>, <a class="el" href="sort__stream_8h_source.html#l01272">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::empty()</a>, <a class="el" href="sort__stream_8h_source.html#l01127">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::initialize()</a>, <a class="el" href="algo_2adaptor_8h_source.html#l00239">stxxl::make_bid_iterator()</a>, <a class="el" href="block__manager_8h_source.html#l00109">stxxl::block_manager::new_blocks()</a>, <a class="el" href="sort__base_8h_source.html#l00040">stxxl::optimal_merge_factor()</a>, <a class="el" href="utils_8h_source.html#l00146">stxxl::STXXL_MIN()</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
 
 </div>
 </div>
@@ -669,7 +669,7 @@ template&lt;class InputIterator &gt; </div>
 </dl>
 <p>Definition at line <a class="el" href="stream_8h_source.html#l00093">93</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
-<p>Referenced by <a class="el" href="containers_2hash__map_2hash__map_8h_source.html#l01298">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, CompareType, SubBlockSize, SubBlocksPerBlock, AllocType &gt;::insert()</a>, and <a class="el" href="random__shuffle_8h_source.html#l00045">stxxl::random_shuffle()</a>.</p>
+<p>Referenced by <a class="el" href="containers_2hash__map_2hash__map_8h_source.html#l01297">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, CompareType, SubBlockSize, SubBlocksPerBlock, AllocType &gt;::insert()</a>, and <a class="el" href="random__shuffle_8h_source.html#l00045">stxxl::random_shuffle()</a>.</p>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ template&lt;typename ValueType , typename AllocStr , typename SizeType , typenam
 
 <p>Definition at line <a class="el" href="stream_8h_source.html#l00212">212</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
 </div>
 </div>
@@ -767,7 +767,7 @@ template&lt;typename ValueType , typename AllocStr , typename SizeType , typenam
 
 <p>Definition at line <a class="el" href="stream_8h_source.html#l00255">255</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
 </div>
 </div>
@@ -836,7 +836,7 @@ template&lt;typename ValueType , typename AllocStr , typename SizeType , typenam
 
 <p>Definition at line <a class="el" href="stream_8h_source.html#l00380">380</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
 </div>
 </div>
@@ -876,7 +876,7 @@ template&lt;typename ValueType , typename AllocStr , typename SizeType , typenam
 
 <p>Definition at line <a class="el" href="stream_8h_source.html#l00403">403</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
 </div>
 </div>
@@ -885,10 +885,10 @@ template&lt;typename ValueType , typename AllocStr , typename SizeType , typenam
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:26 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:03 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

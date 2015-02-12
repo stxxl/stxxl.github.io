@@ -12,5 +12,6 @@ var searchData=
   ['normal_5fleaf',['normal_leaf',['../classstxxl_1_1btree_1_1normal__leaf.html',1,'stxxl::btree']]],
   ['normal_5fnode',['normal_node',['../classstxxl_1_1btree_1_1normal__node.html',1,'stxxl::btree']]],
   ['normal_5fstack',['normal_stack',['../classstxxl_1_1normal__stack.html',1,'stxxl']]],
+  ['numberofthreads',['NumberOfThreads',['../classstxxl_1_1parallel_1_1NumberOfThreads.html',1,'stxxl::parallel']]],
   ['numeric_5flimits_3c_20stxxl_3a_3auint_5fpair_3c_20hightype_20_3e_20_3e',['numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;',['../classstd_1_1numeric__limits_3_01stxxl_1_1uint__pair_3_01HighType_01_4_01_4.html',1,'std']]]
 ];

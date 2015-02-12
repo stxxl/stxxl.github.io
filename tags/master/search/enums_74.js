@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['thread_5fstate',['thread_state',['../classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92',1,'stxxl::request_queue_impl_worker']]]
+  ['thread_5fstate',['thread_state',['../classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92',1,'stxxl::request_queue_impl_worker']]],
+  ['types',['Types',['../classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79c',1,'stxxl::ppq_local::minima_tree']]]
 ];

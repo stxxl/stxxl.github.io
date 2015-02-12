@@ -136,30 +136,30 @@ class stxxl::PRIORITY_QUEUE_GENERATOR&lt; ValueType, CompareType, IntMemory, Max
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l00988">988</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01005">1005</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a33c111b37112a88ab04ab719669d63a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa15276d29600938a75cb2666ca836a28">B</a> = settings::B, 
-<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a88d23e9d7b5261b0a73e9f2cf9ec21f0">m</a> = settings::m, 
-<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a> = B * (settings::k - m) / settings::element_size, 
-<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a> = 32
+<tr class="memitem:ac61b29b12f36d2bf678c877983dc5f36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa15276d29600938a75cb2666ca836a28">B</a> = settings::B, 
+<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a88d23e9d7b5261b0a73e9f2cf9ec21f0">m</a> = settings::m, 
+<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a> = B * (settings::k - m) / settings::element_size, 
+<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a> = 32
  }</td></tr>
-<tr class="separator:a33c111b37112a88ab04ab719669d63a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9eba00b7f7543e6b3745a67f385b0be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf96f61ad42943ed8ccef98bbcde8d765">N</a> = ComputeN::N, 
-<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0bea9f96b0abda4a536e3392d16f414305be">AI</a> = ComputeN::AI, 
-<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a> = (m / 2 &lt; 2) ? 2 : (m / 2)
+<tr class="separator:ac61b29b12f36d2bf678c877983dc5f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291090c13305aaaa526e54f63e2633da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf96f61ad42943ed8ccef98bbcde8d765">N</a> = ComputeN::N, 
+<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daa9f96b0abda4a536e3392d16f414305be">AI</a> = ComputeN::AI, 
+<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a> = (m / 2 &lt; 2) ? 2 : (m / 2)
  }</td></tr>
-<tr class="separator:ad9eba00b7f7543e6b3745a67f385b0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a291090c13305aaaa526e54f63e2633da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae8e0583e38a6804028cba9727ba641"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="structstxxl_1_1priority__queue__local_1_1compute__N.html">priority_queue_local::compute_N</a><br class="typebreak"/>
-&lt;(1&lt;&lt; Tune), <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a>, 4 *<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a> &gt;<br class="typebreak"/>
+&lt;(1&lt;&lt; Tune), <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a>, 4 *<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a> &gt;<br class="typebreak"/>
 ::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a3ae8e0583e38a6804028cba9727ba641">ComputeN</a></td></tr>
 <tr class="separator:a3ae8e0583e38a6804028cba9727ba641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0184d24343b89921850be2fa40d8c0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1priority__queue.html">priority_queue</a><br class="typebreak"/>
 &lt; <a class="el" href="structstxxl_1_1priority__queue__config.html">priority_queue_config</a><br class="typebreak"/>
 &lt; ValueType, CompareType, <br class="typebreak"/>
-<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf96f61ad42943ed8ccef98bbcde8d765">N</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0bea9f96b0abda4a536e3392d16f414305be">AI</a>, 2, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa15276d29600938a75cb2666ca836a28">B</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a></td></tr>
+<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf96f61ad42943ed8ccef98bbcde8d765">N</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daa9f96b0abda4a536e3392d16f414305be">AI</a>, 2, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa15276d29600938a75cb2666ca836a28">B</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a></td></tr>
 <tr class="separator:a8f0184d24343b89921850be2fa40d8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff5713164dd4b5b11323e4fe4ac46c1"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="structstxxl_1_1priority__queue__local_1_1find__settings.html">priority_queue_local::find_settings</a><br class="typebreak"/>
@@ -169,7 +169,7 @@ MaxItems &gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af8edf44f30044f24a6ac5e1b6fafa053"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#af8edf44f30044f24a6ac5e1b6fafa053">EConsumption</a> = <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a> * settings::element_size + settings::B * <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a> + ((MaxItems / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a>) / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>) * settings::B * 1024</td></tr>
+<tr class="memitem:af8edf44f30044f24a6ac5e1b6fafa053"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#af8edf44f30044f24a6ac5e1b6fafa053">EConsumption</a> = <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a> * settings::element_size + settings::B * <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a> + ((MaxItems / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a>) / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>) * settings::B * 1024</td></tr>
 <tr class="separator:af8edf44f30044f24a6ac5e1b6fafa053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -180,12 +180,12 @@ Static Public Attributes</h2></td></tr>
 template&lt;class ValueType, class CompareType, internal_size_type IntMemory, external_size_type MaxItems, unsigned Tune = 6&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1priority__queue__local_1_1compute__N.html">priority_queue_local::compute_N</a>&lt;(1 &lt;&lt; Tune), <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a>, 4* <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a>&gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a> <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">stxxl::PRIORITY_QUEUE_GENERATOR</a>&lt; ValueType, CompareType, IntMemory, MaxItems, Tune &gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a3ae8e0583e38a6804028cba9727ba641">ComputeN</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1priority__queue__local_1_1compute__N.html">priority_queue_local::compute_N</a>&lt;(1 &lt;&lt; Tune), <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a>, 4* <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a>&gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a> <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">stxxl::PRIORITY_QUEUE_GENERATOR</a>&lt; ValueType, CompareType, IntMemory, MaxItems, Tune &gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a3ae8e0583e38a6804028cba9727ba641">ComputeN</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01000">1000</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01017">1017</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -196,12 +196,12 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
 template&lt;class ValueType, class CompareType, internal_size_type IntMemory, external_size_type MaxItems, unsigned Tune = 6&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1priority__queue.html">priority_queue</a>&lt;<a class="el" href="structstxxl_1_1priority__queue__config.html">priority_queue_config</a>&lt;ValueType, CompareType, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf96f61ad42943ed8ccef98bbcde8d765">N</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0bea9f96b0abda4a536e3392d16f414305be">AI</a>, 2, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7aa15276d29600938a75cb2666ca836a28">B</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>, 2&gt; &gt; <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">stxxl::PRIORITY_QUEUE_GENERATOR</a>&lt; ValueType, CompareType, IntMemory, MaxItems, Tune &gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1priority__queue.html">priority_queue</a>&lt;<a class="el" href="structstxxl_1_1priority__queue__config.html">priority_queue_config</a>&lt;ValueType, CompareType, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa189cd8bf04823d791b803bb63cabc2d">Buffer1Size</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf96f61ad42943ed8ccef98bbcde8d765">N</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daa9f96b0abda4a536e3392d16f414305be">AI</a>, 2, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36aa15276d29600938a75cb2666ca836a28">B</a>, <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>, 2&gt; &gt; <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">stxxl::PRIORITY_QUEUE_GENERATOR</a>&lt; ValueType, CompareType, IntMemory, MaxItems, Tune &gt;::<a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a8f0184d24343b89921850be2fa40d8c0">result</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01020">1020</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01037">1037</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -217,12 +217,12 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l00992">992</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01009">1009</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a33c111b37112a88ab04ab719669d63a7"></a>
+<a class="anchor" id="ac61b29b12f36d2bf678c877983dc5f36"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -234,21 +234,21 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a33c111b37112a88ab04ab719669d63a7aa15276d29600938a75cb2666ca836a28"></a>B</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac61b29b12f36d2bf678c877983dc5f36aa15276d29600938a75cb2666ca836a28"></a>B</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a33c111b37112a88ab04ab719669d63a7a88d23e9d7b5261b0a73e9f2cf9ec21f0"></a>m</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac61b29b12f36d2bf678c877983dc5f36a88d23e9d7b5261b0a73e9f2cf9ec21f0"></a>m</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017"></a>X</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017"></a>X</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a33c111b37112a88ab04ab719669d63a7aa189cd8bf04823d791b803bb63cabc2d"></a>Buffer1Size</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac61b29b12f36d2bf678c877983dc5f36aa189cd8bf04823d791b803bb63cabc2d"></a>Buffer1Size</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l00993">993</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01010">1010</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad9eba00b7f7543e6b3745a67f385b0be"></a>
+<a class="anchor" id="a291090c13305aaaa526e54f63e2633da"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -260,15 +260,15 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ad9eba00b7f7543e6b3745a67f385b0beaf96f61ad42943ed8ccef98bbcde8d765"></a>N</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a291090c13305aaaa526e54f63e2633daaf96f61ad42943ed8ccef98bbcde8d765"></a>N</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ad9eba00b7f7543e6b3745a67f385b0bea9f96b0abda4a536e3392d16f414305be"></a>AI</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a291090c13305aaaa526e54f63e2633daa9f96b0abda4a536e3392d16f414305be"></a>AI</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6"></a>AE</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6"></a>AE</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01001">1001</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01018">1018</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">stxxl::PRIORITY_QUEUE_GENERATOR</a>&lt; ValueType, CompareType, IntMemory, MaxItems, Tune &gt;::EConsumption = <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a> * settings::element_size + settings::B * <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a> + ((MaxItems / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a33c111b37112a88ab04ab719669d63a7a0286786b60a319b783b52ba888085017">X</a>) / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ad9eba00b7f7543e6b3745a67f385b0beaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>) * settings::B * 1024</td>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">stxxl::PRIORITY_QUEUE_GENERATOR</a>&lt; ValueType, CompareType, IntMemory, MaxItems, Tune &gt;::EConsumption = <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a> * settings::element_size + settings::B * <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a> + ((MaxItems / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#ac61b29b12f36d2bf678c877983dc5f36a0286786b60a319b783b52ba888085017">X</a>) / <a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html#a291090c13305aaaa526e54f63e2633daaf110d3dcf98bab3b229ffa9f10aa62d6">AE</a>) * settings::B * 1024</td>
         </tr>
       </table>
   </td>
@@ -293,7 +293,7 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01009">1009</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="priority__queue_8h_source.html#l01026">1026</a> of file <a class="el" href="priority__queue_8h_source.html">priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -306,10 +306,10 @@ template&lt;class ValueType, class CompareType, internal_size_type IntMemory, ex
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1PRIORITY__QUEUE__GENERATOR.html">PRIORITY_QUEUE_GENERATOR</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:48 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:27 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

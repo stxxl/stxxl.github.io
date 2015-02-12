@@ -418,85 +418,86 @@ $(document).ready(function(){initNavTree('random__shuffle_8h_source.html','');})
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="comment">// free memory</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keyword">delete</span>[] temp_array;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;random_shuffle: recursion&quot;</span>);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="comment">// copy bucket into temp. stxxl::vector</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            temp_vector = <span class="keyword">new</span> temp_vector_type(size);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">for</span> (j = 0; j &lt; size; j++) {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                (*temp_vector)[j] = buckets[i]-&gt;top();</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                buckets[i]-&gt;pop();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            pool.<a class="code" href="classstxxl_1_1read__write__pool.html#aca40aa5082868d3b6d86aa18ce20e7d8">resize_prefetch</a>(0);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            space_left += PageSize * BlockSize;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;random_shuffle: Space left: &quot;</span> &lt;&lt; space_left);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="comment">// recursive shuffle</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <a class="code" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">stxxl::random_shuffle</a>(temp_vector-&gt;begin(),</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                  temp_vector-&gt;end(), rand, space_left);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            pool.<a class="code" href="classstxxl_1_1read__write__pool.html#aca40aa5082868d3b6d86aa18ce20e7d8">resize_prefetch</a>(PageSize);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="comment">// write back</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">for</span> (j = 0; j &lt; size; j++) {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <span class="keyword">typename</span> ExtIterator::value_type tmp;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                tmp = (*temp_vector)[j];</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                out &lt;&lt; tmp;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="comment">// free memory</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keyword">delete</span> temp_vector;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// free bucket</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keyword">delete</span> buckets[i];</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        space_left += BlockSize;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keyword">delete</span>[] buckets;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="comment">// leave part of the block after _end untouched</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">if</span> (last.block_offset())</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    {</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        ExtIterator last_block_end = last + (block_type::size - last.block_offset());</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">for</span> ( ; _cur != last_block_end; ++_cur)</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keyword">typename</span> ExtIterator::value_type tmp;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            in &gt;&gt; tmp;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            out &lt;&lt; tmp;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">//! External equivalent of std::random_shuffle (specialization for stxxl::vector)</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">//! \param first begin of the range to shuffle</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//! \param last end of the range to shuffle</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">//! \param M number of bytes for internal use</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> AllocStrategy, <span class="keyword">typename</span> SizeType, <span class="keyword">typename</span> DiffType,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;          <span class="keywordtype">unsigned</span> BlockSize, <span class="keyword">typename</span> PageType, <span class="keywordtype">unsigned</span> PageSize&gt;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword">inline</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="group__stlalgo.html#ga3bfd90f2ebc938e009ca654d4c444e1a">  368</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">random_shuffle</a>(</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt;Type, AllocStrategy, SizeType, DiffType,</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                           BlockSize, PageType, PageSize&gt; first,</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="code" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt;Type, AllocStrategy, SizeType, DiffType,</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                           BlockSize, PageType, PageSize&gt; last,</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M)</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;{</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="structstxxl_1_1random__number.html">stxxl::random_number&lt;&gt;</a> rand;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">stxxl::random_shuffle</a>(first, last, rand, M);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#endif // !STXXL_ALGO_RANDOM_SHUFFLE_HEADER</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;random_shuffle: recursion&quot;</span>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="comment">// copy bucket into temp. stxxl::vector</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            temp_vector = <span class="keyword">new</span> temp_vector_type(size);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">for</span> (j = 0; j &lt; size; j++) {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                (*temp_vector)[j] = buckets[i]-&gt;top();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                buckets[i]-&gt;pop();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            pool.<a class="code" href="classstxxl_1_1read__write__pool.html#aca40aa5082868d3b6d86aa18ce20e7d8">resize_prefetch</a>(0);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            space_left += PageSize * BlockSize;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <a class="code" href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a>(<span class="stringliteral">&quot;random_shuffle: Space left: &quot;</span> &lt;&lt; space_left);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="comment">// recursive shuffle</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <a class="code" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">stxxl::random_shuffle</a>(temp_vector-&gt;begin(),</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                  temp_vector-&gt;end(), rand, space_left);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            pool.<a class="code" href="classstxxl_1_1read__write__pool.html#aca40aa5082868d3b6d86aa18ce20e7d8">resize_prefetch</a>(PageSize);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="comment">// write back</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">for</span> (j = 0; j &lt; size; j++) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keyword">typename</span> ExtIterator::value_type tmp;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                tmp = (*temp_vector)[j];</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                out &lt;&lt; tmp;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="comment">// free memory</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keyword">delete</span> temp_vector;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// free bucket</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keyword">delete</span> buckets[i];</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        space_left += BlockSize;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">delete</span>[] buckets;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">// leave part of the block after _end untouched</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> (last.block_offset())</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        ExtIterator last_block_end = last + (block_type::size - last.block_offset());</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">for</span> ( ; _cur != last_block_end; ++_cur)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keyword">typename</span> ExtIterator::value_type tmp;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            in &gt;&gt; tmp;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            out &lt;&lt; tmp;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">//! External equivalent of std::random_shuffle (specialization for stxxl::vector)</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//! \param first begin of the range to shuffle</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">//! \param last end of the range to shuffle</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">//! \param M number of bytes for internal use</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> AllocStrategy, <span class="keyword">typename</span> SizeType, <span class="keyword">typename</span> DiffType,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;          <span class="keywordtype">unsigned</span> BlockSize, <span class="keyword">typename</span> PageType, <span class="keywordtype">unsigned</span> PageSize&gt;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="group__stlalgo.html#ga3bfd90f2ebc938e009ca654d4c444e1a">  369</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">random_shuffle</a>(</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="code" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt;Type, AllocStrategy, SizeType, DiffType,</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                           BlockSize, PageType, PageSize&gt; first,</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt;Type, AllocStrategy, SizeType, DiffType,</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                           BlockSize, PageType, PageSize&gt; last,</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="structstxxl_1_1random__number.html">stxxl::random_number&lt;&gt;</a> rand;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">stxxl::random_shuffle</a>(first, last, rand, M);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#endif // !STXXL_ALGO_RANDOM_SHUFFLE_HEADER</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="group__streampack_html_gac77a17eb336aaef37623e644c3b9a7cb"><div class="ttname"><a href="group__streampack.html#gac77a17eb336aaef37623e644c3b9a7cb">stxxl::stream::streamify</a></div><div class="ttdeci">iterator2stream&lt; InputIterator &gt; streamify(InputIterator begin, InputIterator end)</div><div class="ttdoc">Input iterator range to stream converter. </div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00093">stream.h:93</a></div></div>
-<div class="ttc" id="structstxxl_1_1random__number_html"><div class="ttname"><a href="structstxxl_1_1random__number.html">stxxl::random_number</a></div><div class="ttdoc">Uniform [0, N) pseudo-random generator. </div><div class="ttdef"><b>Definition:</b> <a href="rand_8h_source.html#l00247">rand.h:247</a></div></div>
-<div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00038">types.h:38</a></div></div>
+<div class="ttc" id="structstxxl_1_1random__number_html"><div class="ttname"><a href="structstxxl_1_1random__number.html">stxxl::random_number</a></div><div class="ttdoc">Uniform [0, N) pseudo-random generator. </div><div class="ttdef"><b>Definition:</b> <a href="rand_8h_source.html#l00245">rand.h:245</a></div></div>
+<div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00038">types.h:38</a></div></div>
 <div class="ttc" id="classstxxl_1_1stream_1_1iterator2stream_html"><div class="ttname"><a href="classstxxl_1_1stream_1_1iterator2stream.html">stxxl::stream::iterator2stream</a></div><div class="ttdoc">A model of stream that retrieves the data from an input iterator. For convenience use streamify funct...</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00046">stream.h:46</a></div></div>
 <div class="ttc" id="group__alloc_html_ga7156e0a94c76f1be7aa15af04cee9580"><div class="ttname"><a href="group__alloc.html#ga7156e0a94c76f1be7aa15af04cee9580">STXXL_DEFAULT_ALLOC_STRATEGY</a></div><div class="ttdeci">#define STXXL_DEFAULT_ALLOC_STRATEGY</div><div class="ttdef"><b>Definition:</b> <a href="block__alloc_8h_source.html#l00258">block_alloc.h:258</a></div></div>
 <div class="ttc" id="classstxxl_1_1buf__ostream_html"><div class="ttname"><a href="classstxxl_1_1buf__ostream.html">stxxl::buf_ostream</a></div><div class="ttdoc">Buffered output stream. </div><div class="ttdef"><b>Definition:</b> <a href="buf__ostream_8h_source.html#l00029">buf_ostream.h:29</a></div></div>
@@ -504,19 +505,19 @@ $(document).ready(function(){initNavTree('random__shuffle_8h_source.html','');})
 <div class="ttc" id="stream_8h_html"><div class="ttname"><a href="stream_8h.html">stream.h</a></div></div>
 <div class="ttc" id="group__stlcont__stack_html_gga8915cf6dd5ad4199511d708b2e1bd707a185a3b5c6f11c94dcd3605ebc422c6c3"><div class="ttname"><a href="group__stlcont__stack.html#gga8915cf6dd5ad4199511d708b2e1bd707a185a3b5c6f11c94dcd3605ebc422c6c3">stxxl::external</a></div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l00961">stack.h:961</a></div></div>
 <div class="ttc" id="stack_html"><div class="ttname"><a href="stack.html">stack</a></div></div>
-<div class="ttc" id="classstxxl_1_1read__write__pool_html"><div class="ttname"><a href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a></div><div class="ttdoc">Implements dynamically resizable buffered writing and prefetched reading pool. </div><div class="ttdef"><b>Definition:</b> <a href="read__write__pool_8h_source.html#l00026">read_write_pool.h:26</a></div></div>
-<div class="ttc" id="namespacestxxl_html_add6239ebaf3d1e03a054aee6f1fd52d2"><div class="ttname"><a href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">stxxl::int_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::int_type int_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00063">types.h:63</a></div></div>
+<div class="ttc" id="classstxxl_1_1read__write__pool_html"><div class="ttname"><a href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool&lt; block_type &gt;</a></div></div>
+<div class="ttc" id="namespacestxxl_html_add6239ebaf3d1e03a054aee6f1fd52d2"><div class="ttname"><a href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">stxxl::int_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::int_type int_type</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00063">types.h:63</a></div></div>
 <div class="ttc" id="group__stlalgo_html_ga7bc11399d75f409abdcaa3c7c070f248"><div class="ttname"><a href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">stxxl::random_shuffle</a></div><div class="ttdeci">void random_shuffle(ExtIterator first, ExtIterator last, RandomNumberGenerator &amp;rand, unsigned_type M, AllocStrategy AS=STXXL_DEFAULT_ALLOC_STRATEGY())</div><div class="ttdoc">External equivalent of std::random_shuffle. </div><div class="ttdef"><b>Definition:</b> <a href="random__shuffle_8h_source.html#l00045">random_shuffle.h:45</a></div></div>
 <div class="ttc" id="classstxxl_1_1read__write__pool_html_aca40aa5082868d3b6d86aa18ce20e7d8"><div class="ttname"><a href="classstxxl_1_1read__write__pool.html#aca40aa5082868d3b6d86aa18ce20e7d8">stxxl::read_write_pool::resize_prefetch</a></div><div class="ttdeci">void resize_prefetch(size_type new_size)</div><div class="ttdoc">Resizes size of the pool. </div><div class="ttdef"><b>Definition:</b> <a href="read__write__pool_8h_source.html#l00087">read_write_pool.h:87</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="namespacestxxl_html_aee76e3394484f31af296aa8d2226d18e"><div class="ttname"><a href="namespacestxxl.html#aee76e3394484f31af296aa8d2226d18e">stxxl::STXXL_UNUSED</a></div><div class="ttdeci">void STXXL_UNUSED(const U &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="unused_8h_source.html#l00022">unused.h:22</a></div></div>
 <div class="ttc" id="classstxxl_1_1buf__istream_html"><div class="ttname"><a href="classstxxl_1_1buf__istream.html">stxxl::buf_istream</a></div><div class="ttdoc">Buffered input stream. </div><div class="ttdef"><b>Definition:</b> <a href="buf__istream_8h_source.html#l00034">buf_istream.h:34</a></div></div>
-<div class="ttc" id="verbose_8h_html_a2116dc5eaca1f8d0d5a67794f7233dc6"><div class="ttname"><a href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a></div><div class="ttdeci">#define STXXL_VERBOSE1(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00099">verbose.h:99</a></div></div>
+<div class="ttc" id="verbose_8h_html_a2116dc5eaca1f8d0d5a67794f7233dc6"><div class="ttname"><a href="verbose_8h.html#a2116dc5eaca1f8d0d5a67794f7233dc6">STXXL_VERBOSE1</a></div><div class="ttdeci">#define STXXL_VERBOSE1(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00113">verbose.h:113</a></div></div>
 <div class="ttc" id="classstxxl_1_1vector__iterator_html"><div class="ttname"><a href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a></div><div class="ttdoc">External vector iterator, model of ext_random_access_iterator concept. </div><div class="ttdef"><b>Definition:</b> <a href="vector_8h_source.html#l00275">vector.h:275</a></div></div>
 <div class="ttc" id="scan_html"><div class="ttname"><a href="scan.html">scan</a></div></div>
 <div class="ttc" id="utils_8h_html_a89f2c81f0191886c582af3bab649f667"><div class="ttname"><a href="utils_8h.html#a89f2c81f0191886c582af3bab649f667">STXXL_STATIC_ASSERT</a></div><div class="ttdeci">#define STXXL_STATIC_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00048">utils.h:48</a></div></div>
-<div class="ttc" id="verbose_8h_html_a5c9c9a313fce566f1125def71e512cd8"><div class="ttname"><a href="verbose_8h.html#a5c9c9a313fce566f1125def71e512cd8">STXXL_ERRMSG</a></div><div class="ttdeci">#define STXXL_ERRMSG(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00080">verbose.h:80</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00064">types.h:64</a></div></div>
+<div class="ttc" id="verbose_8h_html_a5c9c9a313fce566f1125def71e512cd8"><div class="ttname"><a href="verbose_8h.html#a5c9c9a313fce566f1125def71e512cd8">STXXL_ERRMSG</a></div><div class="ttdeci">#define STXXL_ERRMSG(x)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8h_source.html#l00094">verbose.h:94</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00064">types.h:64</a></div></div>
 <div class="ttc" id="classstxxl_1_1STACK__GENERATOR_html"><div class="ttname"><a href="classstxxl_1_1STACK__GENERATOR.html">stxxl::STACK_GENERATOR</a></div><div class="ttdoc">Stack type generator   Introduction  to stack container: see STXXL Stack tutorial.   Design and Internals  of stack container: see Stack. </div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l01011">stack.h:1011</a></div></div>
 <div class="ttc" id="group__stlcont__stack_html_ggaaea04c2b2dc30f34716e332164d76fb6a1ca0807cfaf63c1b5768604380f654cf"><div class="ttname"><a href="group__stlcont__stack.html#ggaaea04c2b2dc30f34716e332164d76fb6a1ca0807cfaf63c1b5768604380f654cf">stxxl::grow_shrink2</a></div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l00962">stack.h:962</a></div></div>
 <div class="ttc" id="classstxxl_1_1read__write__pool_html_aeab9ae275b65aa66737039fa48b5bacc"><div class="ttname"><a href="classstxxl_1_1read__write__pool.html#aeab9ae275b65aa66737039fa48b5bacc">stxxl::read_write_pool::resize_write</a></div><div class="ttdeci">void resize_write(size_type new_size)</div><div class="ttdoc">Resizes size of the pool. </div><div class="ttdef"><b>Definition:</b> <a href="read__write__pool_8h_source.html#l00080">read_write_pool.h:80</a></div></div>
@@ -528,10 +529,10 @@ $(document).ready(function(){initNavTree('random__shuffle_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_6dd1bce03f0b0acb6641b4504697927f.html">algo</a></li><li class="navelem"><a class="el" href="random__shuffle_8h.html">random_shuffle.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:03:26 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:25:55 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

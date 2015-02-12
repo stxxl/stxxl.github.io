@@ -190,6 +190,9 @@ $(document).ready(function(){initNavTree('functions_func_0x6e.html','');});
 <li>new_blocks_int()
 : <a class="el" href="classstxxl_1_1block__manager.html#aefac19014e46efe57ab64ca8189bf037">stxxl::block_manager</a>
 </li>
+<li>new_player()
+: <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7d3d105b4e1b948ae8057fb60ca839b1">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
+</li>
 <li>next()
 : <a class="el" href="structstxxl_1_1hash__map_1_1node.html#ae05c209e6fbf3e51175141be6c04a065">stxxl::hash_map::node&lt; ValueType &gt;</a>
 </li>
@@ -218,12 +221,14 @@ $(document).ready(function(){initNavTree('functions_func_0x6e.html','');});
 : <a class="el" href="classstxxl_1_1normal__stack.html#ad6b51214a04c748e2fc6224dcd4ca913">stxxl::normal_stack&lt; StackConfig &gt;</a>
 </li>
 <li>not_sentinel()
-: <a class="el" href="structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a175c0fc2c8e632689ff9d4b81890d6e3">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::sequence_state</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7c62aa47ec63dd46c7e5c16098f253f9">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#a637fdb10118b7a56b5fcab24c9376e06">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;</a>
+: <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7c62aa47ec63dd46c7e5c16098f253f9">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
+, <a class="el" href="structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a0af79ccebf0c42a212b95cfcaa510537">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::sequence_state</a>
 </li>
 <li>notify_all()
 : <a class="el" href="classstxxl_1_1condition__variable.html#a7e83873729f95d010c22ec43bc9d211c">stxxl::condition_variable</a>
+</li>
+<li>notify_change()
+: <a class="el" href="classstxxl_1_1winner__tree.html#a02c7778f54116729cc3a523163d170a3">stxxl::winner_tree&lt; Comparator &gt;</a>
 </li>
 <li>notify_one()
 : <a class="el" href="classstxxl_1_1condition__variable.html#abd7d52a29a74c3646b830eea7523de47">stxxl::condition_variable</a>
@@ -232,8 +237,23 @@ $(document).ready(function(){initNavTree('functions_func_0x6e.html','');});
 : <a class="el" href="classstxxl_1_1request__with__waiters.html#a5552a19a8169029341e9dfa48b47f97f">stxxl::request_with_waiters</a>
 , <a class="el" href="classstxxl_1_1request__interface.html#aa305e70190a4c491d649ff7b9a9d56bc">stxxl::request_interface</a>
 </li>
+<li>num_blocks()
+: <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a7491964281b8d38178b010e29622f0f6">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
+</li>
+<li>num_hinted_blocks()
+: <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a0f046f4c85f57601694aa07fc4cb6fab">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
+</li>
+<li>num_slots()
+: <a class="el" href="classstxxl_1_1winner__tree.html#a0acfd9d45881273db3e3001eda664156">stxxl::winner_tree&lt; Comparator &gt;</a>
+</li>
+<li>num_used_blocks()
+: <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#ae87b0565dda7568d98141fa509d5fa62">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
+</li>
 <li>num_waiters()
 : <a class="el" href="classstxxl_1_1request__with__waiters.html#aad7501e87b6ec9bf2f52a5c2896be82d">stxxl::request_with_waiters</a>
+</li>
+<li>NumberOfThreads()
+: <a class="el" href="classstxxl_1_1parallel_1_1NumberOfThreads.html#aa3f02439994d40a989ae873ffe8b679b">stxxl::parallel::NumberOfThreads</a>
 </li>
 <li>numpages()
 : <a class="el" href="classstxxl_1_1vector.html#ad8e16020cd35faebe756504df61169c8">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
@@ -244,10 +264,10 @@ $(document).ready(function(){initNavTree('functions_func_0x6e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:11:01 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:33:42 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

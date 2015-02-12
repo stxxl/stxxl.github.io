@@ -6,6 +6,7 @@ var dir_3d4857524531d475c56368c3068e9332 =
     [ "containers", "dir_5a7933e30a367341f12be4470fbf844e.html", "dir_5a7933e30a367341f12be4470fbf844e" ],
     [ "io", "dir_bd2c91cfa38410e85a62a3d0c503e6c6.html", "dir_bd2c91cfa38410e85a62a3d0c503e6c6" ],
     [ "mng", "dir_bc6b0a06bb04e35383e101a5ba9a3f9d.html", "dir_bc6b0a06bb04e35383e101a5ba9a3f9d" ],
+    [ "parallel", "dir_dc0451420f71dcd9954e27d797fc7f2e.html", "dir_dc0451420f71dcd9954e27d797fc7f2e" ],
     [ "stream", "dir_58ab179165932e6f9148dce7a0aaac3f.html", "dir_58ab179165932e6f9148dce7a0aaac3f" ],
     [ "utils", "dir_326d30ceb217735f3f00e233f8a0626f.html", "dir_326d30ceb217735f3f00e233f8a0626f" ],
     [ "config.h", "config_8h.html", "config_8h" ],

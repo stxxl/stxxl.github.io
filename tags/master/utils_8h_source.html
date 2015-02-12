@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="config_8h.html">stxxl/bits/config.h</a>&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="namespace_8h.html">stxxl/bits/namespace.h</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">stxxl/bits/common/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_2types_8h.html">stxxl/bits/common/types.h</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="type__traits_8h.html">stxxl/bits/compat/type_traits.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="msvc__compatibility_8h.html">stxxl/bits/msvc_compatibility.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
@@ -362,76 +362,86 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"></span><span class="comment"></span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">//! round n up to next larger multiple of 2^power. example: (48,4) = 64, (48,3) = 48.</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Integral&gt;</div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a78e11ad4b267e4cf7285a8e4411ac9f7">  256</a></span>&#160;<span class="keyword">inline</span> Integral <a class="code" href="namespacestxxl.html#a78e11ad4b267e4cf7285a8e4411ac9f7">round_up_to_power_of_two</a>(Integral n, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> power)</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    Integral pot = Integral(1) &lt;&lt; power, <span class="comment">// = 0..0 1 0^power</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        mask = pot - 1;                  <span class="comment">// = 0..0 0 1^power</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (n &amp; mask)                        <span class="comment">// n not divisible by pot</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> (n &amp; ~mask) + pot;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">return</span> n;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46">  269</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46">pop</a>(Container&amp; c)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">typename</span> Container::value_type r = c.top();</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    c.pop();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Integral&gt;</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="namespacestxxl.html#aa3c03ae958321bf55f340838ff630e40">  255</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> Integral <a class="code" href="namespacestxxl.html#aa3c03ae958321bf55f340838ff630e40">round_up_to_power_of_two</a>(Integral n)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    --n;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; !(k &amp; (2 &lt;&lt; <span class="keyword">sizeof</span>(n))); k &lt;&lt;= 1)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        n |= n &gt;&gt; k;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    ++n;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">//! round n up to next larger multiple of 2^power. example: (48,4) = 64, (48,3) = 48.</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Integral&gt;</div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a78e11ad4b267e4cf7285a8e4411ac9f7">  266</a></span>&#160;<span class="keyword">inline</span> Integral <a class="code" href="namespacestxxl.html#aa3c03ae958321bf55f340838ff630e40">round_up_to_power_of_two</a>(Integral n, <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> power)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    Integral pot = Integral(1) &lt;&lt; power, <span class="comment">// = 0..0 1 0^power</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        mask = pot - 1;                  <span class="comment">// = 0..0 0 1^power</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (n &amp; mask)                        <span class="comment">// n not divisible by pot</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> (n &amp; ~mask) + pot;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> n;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">  277</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">pop_front</a>(Container&amp; c)</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">typename</span> Container::value_type r = c.front();</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    c.pop_front();</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> r;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a87b330bead216a9f6cf7b243ae3b6f62">  285</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a87b330bead216a9f6cf7b243ae3b6f62">pop_back</a>(Container&amp; c)</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">typename</span> Container::value_type r = c.back();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    c.pop_back();</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> r;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
-<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">  293</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">pop_begin</a>(Container&amp; c)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">typename</span> Container::value_type r = *c.begin();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    c.erase(c.begin());</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> r;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_UTILS_HEADER</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46">  279</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46">pop</a>(Container&amp; c)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;{</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">typename</span> Container::value_type r = c.top();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    c.pop();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">  287</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">pop_front</a>(Container&amp; c)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">typename</span> Container::value_type r = c.front();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    c.pop_front();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a87b330bead216a9f6cf7b243ae3b6f62">  295</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a87b330bead216a9f6cf7b243ae3b6f62">pop_back</a>(Container&amp; c)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">typename</span> Container::value_type r = c.back();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    c.pop_back();</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Container&gt;</div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">  303</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">typename</span> Container::value_type <a class="code" href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">pop_begin</a>(Container&amp; c)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">typename</span> Container::value_type r = *c.begin();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    c.erase(c.begin());</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif // !STXXL_COMMON_UTILS_HEADER</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="namespacestxxl_html_a13269a96a32504fec831ef023fdac7b6"><div class="ttname"><a href="namespacestxxl.html#a13269a96a32504fec831ef023fdac7b6">stxxl::div_ceil</a></div><div class="ttdeci">compat::remove_const&lt; Integral &gt;::type div_ceil(Integral n, Integral2 d)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00199">utils.h:199</a></div></div>
-<div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a251367916f703bddce55e3dbbb00fdf7"><div class="ttname"><a href="namespacestxxl.html#a251367916f703bddce55e3dbbb00fdf7">stxxl::log2_floor</a></div><div class="ttdeci">Integral log2_floor(Integral i)</div><div class="ttdoc">calculate the log2 ceiling of an integral type using math.h </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00169">utils.h:169</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a492575364035d2cc94ee8db18e39b478"><div class="ttname"><a href="namespacestxxl.html#a492575364035d2cc94ee8db18e39b478">stxxl::STXXL_MIN</a></div><div class="ttdeci">const Type &amp; STXXL_MIN(const Type &amp;a, const Type &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00146">utils.h:146</a></div></div>
-<div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00038">types.h:38</a></div></div>
+<div class="ttc" id="namespacestxxl_html_ad7f9125156ce2d31af5283aa66568f0d"><div class="ttname"><a href="namespacestxxl.html#ad7f9125156ce2d31af5283aa66568f0d">stxxl::int64</a></div><div class="ttdeci">long long int int64</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00038">types.h:38</a></div></div>
 <div class="ttc" id="namespacestxxl_html_af75bc8070f3dffa1a02a65aa58d78e5a"><div class="ttname"><a href="namespacestxxl.html#af75bc8070f3dffa1a02a65aa58d78e5a">stxxl::longhash1</a></div><div class="ttdeci">size_t longhash1(uint64 key_)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00230">utils.h:230</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a82128fed22a58d0bc7b0eb3670def436"><div class="ttname"><a href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a></div><div class="ttdeci">unsigned long long int uint64</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00039">types.h:39</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a82128fed22a58d0bc7b0eb3670def436"><div class="ttname"><a href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a></div><div class="ttdeci">unsigned long long int uint64</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00039">types.h:39</a></div></div>
 <div class="ttc" id="namespacestxxl_html_aad1f0319504f525b8683deed27498d61"><div class="ttname"><a href="namespacestxxl.html#aad1f0319504f525b8683deed27498d61">stxxl::format_SI_size</a></div><div class="ttdeci">std::string format_SI_size(uint64 number)</div><div class="ttdoc">Format a byte size using SI (K, M, G, T) suffixes (powers of ten). Returns &amp;quot;123 M&amp;quot; or similar...</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cpp_source.html#l00094">utils.cpp:94</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a37feb00474dd76f7dfc8fc5352123a34"><div class="ttname"><a href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">stxxl::pop_begin</a></div><div class="ttdeci">Container::value_type pop_begin(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00293">utils.h:293</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a37feb00474dd76f7dfc8fc5352123a34"><div class="ttname"><a href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">stxxl::pop_begin</a></div><div class="ttdeci">Container::value_type pop_begin(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00303">utils.h:303</a></div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_aaa2ab65067b5097af29416d45c6ea860"><div class="ttname"><a href="namespacestxxl.html#aaa2ab65067b5097af29416d45c6ea860">stxxl::swap_1D_arrays</a></div><div class="ttdeci">void swap_1D_arrays(Type *a, Type *b, unsigned_type size)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00246">utils.h:246</a></div></div>
 <div class="ttc" id="namespacestxxl_html_abe387d9749396cf4ac9d6cb4225046a3"><div class="ttname"><a href="namespacestxxl.html#abe387d9749396cf4ac9d6cb4225046a3">stxxl::atouint64</a></div><div class="ttdeci">stxxl::uint64 atouint64(const char *s)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00133">utils.h:133</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a536e4320f733f1d17c454ce720a57e83"><div class="ttname"><a href="namespacestxxl.html#a536e4320f733f1d17c454ce720a57e83">stxxl::atoi64</a></div><div class="ttdeci">stxxl::int64 atoi64(const char *s)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00122">utils.h:122</a></div></div>
 <div class="ttc" id="namespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a97f9f5dbd22c9d61cbf3f3cf660364d6"><div class="ttname"><a href="namespacestxxl.html#a97f9f5dbd22c9d61cbf3f3cf660364d6">stxxl::log2_ceil</a></div><div class="ttdeci">Integral log2_ceil(Integral i)</div><div class="ttdoc">calculate the log2 floor of an integral type using math.h </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00162">utils.h:162</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a87b330bead216a9f6cf7b243ae3b6f62"><div class="ttname"><a href="namespacestxxl.html#a87b330bead216a9f6cf7b243ae3b6f62">stxxl::pop_back</a></div><div class="ttdeci">Container::value_type pop_back(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00285">utils.h:285</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a9af38b0acb1d1b4b50c5a4f3a3db8c46"><div class="ttname"><a href="namespacestxxl.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46">stxxl::pop</a></div><div class="ttdeci">Container::value_type pop(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00269">utils.h:269</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a87b330bead216a9f6cf7b243ae3b6f62"><div class="ttname"><a href="namespacestxxl.html#a87b330bead216a9f6cf7b243ae3b6f62">stxxl::pop_back</a></div><div class="ttdeci">Container::value_type pop_back(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00295">utils.h:295</a></div></div>
+<div class="ttc" id="common_2types_8h_html"><div class="ttname"><a href="common_2types_8h.html">types.h</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a9af38b0acb1d1b4b50c5a4f3a3db8c46"><div class="ttname"><a href="namespacestxxl.html#a9af38b0acb1d1b4b50c5a4f3a3db8c46">stxxl::pop</a></div><div class="ttdeci">Container::value_type pop(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00279">utils.h:279</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a662fd1004cafc334a254cb4a479f455b"><div class="ttname"><a href="namespacestxxl.html#a662fd1004cafc334a254cb4a479f455b">stxxl::split</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; split(const std::string &amp;str, const std::string &amp;sep, unsigned int min_fields=0, unsigned int limit_fields=std::numeric_limits&lt; unsigned int &gt;::max())</div><div class="ttdoc">Split a string by given separator string. Returns a vector of strings with at least min_fields and at...</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00056">utils.h:56</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a9ba1dbf90be30dfeae39cbd40dfe6340"><div class="ttname"><a href="namespacestxxl.html#a9ba1dbf90be30dfeae39cbd40dfe6340">stxxl::STXXL_MAX</a></div><div class="ttdeci">const Type &amp; STXXL_MAX(const Type &amp;a, const Type &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00153">utils.h:153</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a2c23e46ae8d25cc1e6fb7a61dbdd45d4"><div class="ttname"><a href="namespacestxxl.html#a2c23e46ae8d25cc1e6fb7a61dbdd45d4">stxxl::to_str</a></div><div class="ttdeci">std::string to_str(const Type &amp;t)</div><div class="ttdoc">Format any ostream-able type into a string. </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00097">utils.h:97</a></div></div>
@@ -442,11 +452,11 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div class="ttc" id="namespacestxxl_html_aa4d8573183deec84a1f525b93aa79bc4"><div class="ttname"><a href="namespacestxxl.html#aa4d8573183deec84a1f525b93aa79bc4">stxxl::ilog2_floor</a></div><div class="ttdeci">unsigned int ilog2_floor(IntegerType i)</div><div class="ttdoc">calculate the log2 floor of an integer type (by repeated bit shifts) </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00178">utils.h:178</a></div></div>
 <div class="ttc" id="namespacestxxl_html_aacd70e773a27c3e00bd70f59ef731d47"><div class="ttname"><a href="namespacestxxl.html#aacd70e773a27c3e00bd70f59ef731d47">stxxl::format_IEC_size</a></div><div class="ttdeci">std::string format_IEC_size(uint64 number)</div><div class="ttdoc">Format a byte size using IEC (Ki, Mi, Gi, Ti) suffixes (powers of two). Returns &amp;quot;123 Ki&amp;quot; or similar...</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cpp_source.html#l00111">utils.cpp:111</a></div></div>
 <div class="ttc" id="algorithm_html"><div class="ttname"><a href="algorithm.html">algorithm</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a8b223a5b45db8fe6ff5408fcbc6d554e"><div class="ttname"><a href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">stxxl::pop_front</a></div><div class="ttdeci">Container::value_type pop_front(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00277">utils.h:277</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00064">types.h:64</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a8b223a5b45db8fe6ff5408fcbc6d554e"><div class="ttname"><a href="namespacestxxl.html#a8b223a5b45db8fe6ff5408fcbc6d554e">stxxl::pop_front</a></div><div class="ttdeci">Container::value_type pop_front(Container &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00287">utils.h:287</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a7501995ff616f0144a8bda727c266d1b"><div class="ttname"><a href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a></div><div class="ttdeci">choose_int_types&lt; my_pointer_size &gt;::unsigned_type unsigned_type</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00064">types.h:64</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a84d74056e2251f83ae5aa8a526d632e1"><div class="ttname"><a href="namespacestxxl.html#a84d74056e2251f83ae5aa8a526d632e1">stxxl::ilog2_ceil</a></div><div class="ttdeci">unsigned int ilog2_ceil(const IntegerType &amp;i)</div><div class="ttdoc">calculate the log2 ceiling of an integer type (by repeated bit shifts) </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00188">utils.h:188</a></div></div>
 <div class="ttc" id="msvc__compatibility_8h_html"><div class="ttname"><a href="msvc__compatibility_8h.html">msvc_compatibility.h</a></div></div>
-<div class="ttc" id="namespacestxxl_html_a78e11ad4b267e4cf7285a8e4411ac9f7"><div class="ttname"><a href="namespacestxxl.html#a78e11ad4b267e4cf7285a8e4411ac9f7">stxxl::round_up_to_power_of_two</a></div><div class="ttdeci">Integral round_up_to_power_of_two(Integral n, unsigned_type power)</div><div class="ttdoc">round n up to next larger multiple of 2^power. example: (48,4) = 64, (48,3) = 48. ...</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00256">utils.h:256</a></div></div>
+<div class="ttc" id="namespacestxxl_html_aa3c03ae958321bf55f340838ff630e40"><div class="ttname"><a href="namespacestxxl.html#aa3c03ae958321bf55f340838ff630e40">stxxl::round_up_to_power_of_two</a></div><div class="ttdeci">static Integral round_up_to_power_of_two(Integral n)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00255">utils.h:255</a></div></div>
 <div class="ttc" id="type__traits_8h_html"><div class="ttname"><a href="type__traits_8h.html">type_traits.h</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -455,10 +465,10 @@ $(document).ready(function(){initNavTree('utils_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_c603cd6ede12b974eecb818db9d72642.html">common</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:03:31 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:26:00 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

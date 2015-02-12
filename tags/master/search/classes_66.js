@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['fake_5ftimer',['fake_timer',['../classstxxl_1_1fake__timer.html',1,'stxxl']]],
   ['feedable_5fstrassen_5fwinograd',['feedable_strassen_winograd',['../structstxxl_1_1matrix__local_1_1feedable__strassen__winograd.html',1,'stxxl::matrix_local']]],
   ['feedable_5fstrassen_5fwinograd_3c_20valuetype_2c_20blocksidelength_2c_200_2c_20aexists_2c_20bexists_20_3e',['feedable_strassen_winograd&lt; ValueType, BlockSideLength, 0, AExists, BExists &gt;',['../structstxxl_1_1matrix__local_1_1feedable__strassen__winograd_3_01ValueType_00_01BlockSideLength_c528c1254d907e2a1b7391504d94ef67.html',1,'stxxl::matrix_local']]],
   ['feedable_5fstrassen_5fwinograd_5fblock_5fgrained',['feedable_strassen_winograd_block_grained',['../structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained.html',1,'stxxl::matrix_local']]],

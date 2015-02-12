@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('structstxxl_1_1random__number32__r.htm
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fast uniform [0, 2^32) pseudo-random generator with period 2^32, random bits: 32. Reentrant variant of <a class="el" href="structstxxl_1_1random__number32.html" title="Fast uniform [0, 2^32) pseudo-random generator with period 2^32, random bits: 32. ...">random_number32</a> that keeps it's private state. </p>
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00076">76</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00074">74</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -129,11 +129,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a154cb4cb03704a0871063f06babf999a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__number32__r.html#a154cb4cb03704a0871063f06babf999a">random_number32_r</a> (unsigned seed=0)</td></tr>
-<tr class="separator:a154cb4cb03704a0871063f06babf999a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9783e1c68ce65399f476eac54a4fe8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstxxl_1_1random__number32__r.html#a94dc96a7f34804fca70f494d3c7d52bb">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__number32__r.html#ab9783e1c68ce65399f476eac54a4fe8a">operator()</a> () const </td></tr>
 <tr class="memdesc:ab9783e1c68ce65399f476eac54a4fe8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random number from [0, 2^32)  <a href="#ab9783e1c68ce65399f476eac54a4fe8a">More...</a><br/></td></tr>
 <tr class="separator:ab9783e1c68ce65399f476eac54a4fe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b03d946b9b33f45d24506bf116eac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__number32__r.html#ad9b03d946b9b33f45d24506bf116eac9">set_seed</a> (unsigned seed)</td></tr>
+<tr class="memdesc:ad9b03d946b9b33f45d24506bf116eac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current seed.  <a href="#ad9b03d946b9b33f45d24506bf116eac9">More...</a><br/></td></tr>
+<tr class="separator:ad9b03d946b9b33f45d24506bf116eac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -151,36 +152,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00078">78</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a154cb4cb03704a0871063f06babf999a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">stxxl::random_number32_r::random_number32_r </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00081">81</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
-
-<p>References <a class="el" href="seed_8cpp_source.html#l00073">stxxl::get_next_seed()</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00076">76</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +180,35 @@ Public Attributes</h2></td></tr>
 
 <p>Returns a random number from [0, 2^32) </p>
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00089">89</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00091">91</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9b03d946b9b33f45d24506bf116eac9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stxxl::random_number32_r::set_seed </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the current seed. </p>
+
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00085">85</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00079">79</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00077">77</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 
 </div>
 </div>
@@ -244,10 +244,10 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="structstxxl_1_1random__number32__r.html">random_number32_r</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:49 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:28 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -5,7 +5,7 @@ var dir_6dd1bce03f0b0acb6641b4504697927f =
     [ "inmemsort.h", "inmemsort_8h.html", "inmemsort_8h" ],
     [ "intksort.h", "intksort_8h.html", "intksort_8h" ],
     [ "ksort.h", "ksort_8h.html", "ksort_8h" ],
-    [ "losertree.h", "losertree_8h.html", "losertree_8h" ],
+    [ "losertree.h", "algo_2losertree_8h.html", "algo_2losertree_8h" ],
     [ "random_shuffle.h", "random__shuffle_8h.html", "random__shuffle_8h" ],
     [ "run_cursor.h", "run__cursor_8h.html", [
       [ "run_cursor", "structstxxl_1_1run__cursor.html", "structstxxl_1_1run__cursor" ],

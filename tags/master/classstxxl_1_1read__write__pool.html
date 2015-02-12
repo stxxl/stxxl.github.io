@@ -123,15 +123,14 @@ $(document).ready(function(){initNavTree('classstxxl_1_1read__write__pool.html',
 class stxxl::read_write_pool&lt; BlockType &gt;</h3>
 
 <p>Implements dynamically resizable buffered writing and prefetched reading pool. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2pqueue1_8cpp-example.html#_a2">examples/containers/pqueue1.cpp</a>, and <a class="el" href="examples_2containers_2pqueue2_8cpp-example.html#_a2">examples/containers/pqueue2.cpp</a>.</dd>
-</dl>
+
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00026">26</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::read_write_pool&lt; BlockType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1read__write__pool__inherit__graph.svg" width="160" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1read__write__pool__inherit__graph.svg" width="178" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -163,14 +162,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac9508550694ad09660015d024fe6d9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for completion of all ongoing requests and frees memory.  <a href="#ac9508550694ad09660015d024fe6d9dd">More...</a><br/></td></tr>
 <tr class="separator:ac9508550694ad09660015d024fe6d9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af935ccc65cfa698941673fc9a4c1e61b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#af935ccc65cfa698941673fc9a4c1e61b">add</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&amp;block)</td></tr>
+<tr class="memdesc:af935ccc65cfa698941673fc9a4c1e61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add block to write pool.  <a href="#af935ccc65cfa698941673fc9a4c1e61b">More...</a><br/></td></tr>
 <tr class="separator:af935ccc65cfa698941673fc9a4c1e61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8b14ff1f7d1fc4b99acbec1e083154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#afc8b14ff1f7d1fc4b99acbec1e083154">add_prefetch</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&amp;block)</td></tr>
+<tr class="memdesc:afc8b14ff1f7d1fc4b99acbec1e083154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add block to prefetch pool.  <a href="#afc8b14ff1f7d1fc4b99acbec1e083154">More...</a><br/></td></tr>
+<tr class="separator:afc8b14ff1f7d1fc4b99acbec1e083154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e8ecf5f2235662f3ddf392c293753e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a41e8ecf5f2235662f3ddf392c293753e">busy_size_prefetch</a> () const </td></tr>
+<tr class="memdesc:a41e8ecf5f2235662f3ddf392c293753e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of busy prefetching blocks.  <a href="#a41e8ecf5f2235662f3ddf392c293753e">More...</a><br/></td></tr>
+<tr class="separator:a41e8ecf5f2235662f3ddf392c293753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a47e1cd66f46fb8bbedc743a7bd826b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a4a47e1cd66f46fb8bbedc743a7bd826b">find_hint</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
+<tr class="memdesc:a4a47e1cd66f46fb8bbedc743a7bd826b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the request pointer for a hinted block, or an invalid NULL request in case it was not requested due to lack of prefetch buffers.  <a href="#a4a47e1cd66f46fb8bbedc743a7bd826b">More...</a><br/></td></tr>
+<tr class="separator:a4a47e1cd66f46fb8bbedc743a7bd826b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70299c63b7d111339cc9aa984d1f9c29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a70299c63b7d111339cc9aa984d1f9c29">free_size_prefetch</a> () const </td></tr>
+<tr class="memdesc:a70299c63b7d111339cc9aa984d1f9c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of free prefetching blocks.  <a href="#a70299c63b7d111339cc9aa984d1f9c29">More...</a><br/></td></tr>
+<tr class="separator:a70299c63b7d111339cc9aa984d1f9c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a246252364eff94487a6d78b4d45a1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a3a246252364eff94487a6d78b4d45a1f">hint</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
 <tr class="memdesc:a3a246252364eff94487a6d78b4d45a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a hint for prefetching a block.  <a href="#a3a246252364eff94487a6d78b4d45a1f">More...</a><br/></td></tr>
 <tr class="separator:a3a246252364eff94487a6d78b4d45a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0b7ae501061cc8a6b9f362f67bb744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a3b0b7ae501061cc8a6b9f362f67bb744">in_prefetching</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
+<tr class="memdesc:a3b0b7ae501061cc8a6b9f362f67bb744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a block is in the hinted block set.  <a href="#a3b0b7ae501061cc8a6b9f362f67bb744">More...</a><br/></td></tr>
+<tr class="separator:a3b0b7ae501061cc8a6b9f362f67bb744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88026ed2076f049a6d0b35c6c289222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#ad88026ed2076f049a6d0b35c6c289222">invalidate</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
+<tr class="memdesc:ad88026ed2076f049a6d0b35c6c289222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a hint request in case the block is no longer desired.  <a href="#ad88026ed2076f049a6d0b35c6c289222">More...</a><br/></td></tr>
 <tr class="separator:ad88026ed2076f049a6d0b35c6c289222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581176a54f6e377a7c5eb92662d4ed83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a581176a54f6e377a7c5eb92662d4ed83">poll_hint</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
+<tr class="memdesc:a581176a54f6e377a7c5eb92662d4ed83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the blocks was hinted and the request is finished.  <a href="#a581176a54f6e377a7c5eb92662d4ed83">More...</a><br/></td></tr>
+<tr class="separator:a581176a54f6e377a7c5eb92662d4ed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc64448092fd9e07b258d2dcc338da6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#afc64448092fd9e07b258d2dcc338da6e">read</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&amp;block, <a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
-<tr class="memdesc:afc64448092fd9e07b258d2dcc338da6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads block. If this block is cached block is not read but passed from the cache.  <a href="#afc64448092fd9e07b258d2dcc338da6e">More...</a><br/></td></tr>
+<tr class="memdesc:afc64448092fd9e07b258d2dcc338da6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads block.  <a href="#afc64448092fd9e07b258d2dcc338da6e">More...</a><br/></td></tr>
 <tr class="separator:afc64448092fd9e07b258d2dcc338da6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca40aa5082868d3b6d86aa18ce20e7d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#aca40aa5082868d3b6d86aa18ce20e7d8">resize_prefetch</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#ac0216e21334901ea6a2b64dfb119ffbe">size_type</a> new_size)</td></tr>
 <tr class="memdesc:aca40aa5082868d3b6d86aa18ce20e7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes size of the pool.  <a href="#aca40aa5082868d3b6d86aa18ce20e7d8">More...</a><br/></td></tr>
@@ -187,6 +206,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a61274fe63e9cf9671da26ba35d25644e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a61274fe63e9cf9671da26ba35d25644e">steal</a> ()</td></tr>
 <tr class="memdesc:a61274fe63e9cf9671da26ba35d25644e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take out a block from the pool.  <a href="#a61274fe63e9cf9671da26ba35d25644e">More...</a><br/></td></tr>
 <tr class="separator:a61274fe63e9cf9671da26ba35d25644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7c338a7e3fddf5846b8ac5438798b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a6e7c338a7e3fddf5846b8ac5438798b8">steal_prefetch</a> ()</td></tr>
+<tr class="memdesc:a6e7c338a7e3fddf5846b8ac5438798b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take out a block from the prefetch pool, one unhinted free block must be available.  <a href="#a6e7c338a7e3fddf5846b8ac5438798b8">More...</a><br/></td></tr>
+<tr class="separator:a6e7c338a7e3fddf5846b8ac5438798b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cffed02588fe3a0c00f8b8c39f3f5ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a9cffed02588fe3a0c00f8b8c39f3f5ca">swap</a> (<a class="el" href="classstxxl_1_1read__write__pool.html">read_write_pool</a> &amp;obj)</td></tr>
 <tr class="separator:a9cffed02588fe3a0c00f8b8c39f3f5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055c0f5382f1bd46bb910799ee9152cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1read__write__pool.html#a055c0f5382f1bd46bb910799ee9152cd">write</a> (<a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&amp;block, <a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a> bid)</td></tr>
@@ -452,7 +474,129 @@ template&lt;typename BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00119">119</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+<p>Add block to write pool. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00120">120</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc8b14ff1f7d1fc4b99acbec1e083154"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::add_prefetch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a> *&amp;&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add block to prefetch pool. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00176">176</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l00980">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::rebuild_hints_cancel()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l01069">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::remove_items()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l00616">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::~external_array()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41e8ecf5f2235662f3ddf392c293753e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::busy_size_prefetch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of busy prefetching blocks. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00202">202</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a47e1cd66f46fb8bbedc743a7bd826b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a> <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::find_hint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a>&#160;</td>
+          <td class="paramname"><em>bid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the request pointer for a hinted block, or an invalid NULL request in case it was not requested due to lack of prefetch buffers. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00164">164</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70299c63b7d111339cc9aa984d1f9c29"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::free_size_prefetch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of free prefetching blocks. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00196">196</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
 </div>
 </div>
@@ -490,9 +634,39 @@ template&lt;typename BlockType&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if there was a free block to do prefetch and prefetching was scheduled, <code>false</code> otherwise </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If there are no free blocks available (all blocks are already in reading or read but not retrieved by user calling <code>read</code> method) calling <code>hint</code> function has no effect </dd></dl>
 
-<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00133">133</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00134">134</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>.</p>
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00265">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::prefetch_arrays()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b0b7ae501061cc8a6b9f362f67bb744"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::in_prefetching </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a>&#160;</td>
+          <td class="paramname"><em>bid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a block is in the hinted block set. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00190">190</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +694,39 @@ template&lt;typename BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00138">138</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+<p>Cancel a hint request in case the block is no longer desired. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00140">140</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a581176a54f6e377a7c5eb92662d4ed83"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::poll_hint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1read__write__pool.html#a962c6b7b0d09d10601f793308ce1e83d">bid_type</a>&#160;</td>
+          <td class="paramname"><em>bid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the blocks was hinted and the request is finished. </p>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00170">170</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
 </div>
 </div>
@@ -558,10 +764,11 @@ template&lt;typename BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reads block. If this block is cached block is not read but passed from the cache. </p>
+<p>Reads block. </p>
+<p>If this block is cached block is not read but passed from the cache.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">block</td><td>block object, where data to be read to. If block was cached <code>block</code> 's ownership goes to the pool and block from cache is returned in <code>block</code> value. </td></tr>
+    <tr><td class="paramname">block</td><td>block object, where data to be read to. If block was cached <code>block</code> 's ownership goes to the pool and block from cache is returned in <code>block</code> value.</td></tr>
     <tr><td class="paramname">bid</td><td>address of the block </td></tr>
   </table>
   </dd>
@@ -569,9 +776,9 @@ template&lt;typename BlockType&gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd><code>block</code> parameter must be allocated dynamically using <code>new</code> . </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>request pointer object of read operation </dd></dl>
 
-<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00149">149</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00157">157</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>.</p>
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l00912">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::hint_next_block()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l00841">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::read_block()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l00997">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::rebuild_hints_finish()</a>.</p>
 
 </div>
 </div>
@@ -647,7 +854,7 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00080">80</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="random__shuffle_8h_source.html#l00045">stxxl::random_shuffle()</a>.</p>
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l00787">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::prepare_write_pool()</a>, and <a class="el" href="random__shuffle_8h_source.html#l00045">stxxl::random_shuffle()</a>.</p>
 
 </div>
 </div>
@@ -707,7 +914,7 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00073">73</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00971">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::insert_segment()</a>.</p>
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l00912">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::hint_next_block()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l00787">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::prepare_write_pool()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l00997">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::rebuild_hints_finish()</a>.</p>
 
 </div>
 </div>
@@ -739,7 +946,39 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00114">114</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00971">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::insert_segment()</a>.</p>
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l00841">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::read_block()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e7c338a7e3fddf5846b8ac5438798b8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1read__write__pool.html#aed68c3b833b76f89aa71c4e69872aa02">block_type</a>* <a class="el" href="classstxxl_1_1read__write__pool.html">stxxl::read_write_pool</a>&lt; BlockType &gt;::steal_prefetch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Take out a block from the prefetch pool, one unhinted free block must be available. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the block. Ownership of the block goes to the caller. </dd></dl>
+
+<p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00184">184</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
+
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l00912">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::hint_next_block()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l00997">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::rebuild_hints_finish()</a>.</p>
 
 </div>
 </div>
@@ -768,8 +1007,6 @@ template&lt;typename BlockType&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00056">56</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
-
-<p>References <a class="el" href="read__write__pool_8h_source.html#l00039">stxxl::read_write_pool&lt; BlockType &gt;::delete_pools</a>, <a class="el" href="read__write__pool_8h_source.html#l00038">stxxl::read_write_pool&lt; BlockType &gt;::p_pool</a>, and <a class="el" href="read__write__pool_8h_source.html#l00037">stxxl::read_write_pool&lt; BlockType &gt;::w_pool</a>.</p>
 
 </div>
 </div>
@@ -820,7 +1057,7 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00100">100</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00971">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::insert_segment()</a>.</p>
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l00882">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::write_block()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +1084,7 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00039">39</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="read__write__pool_8h_source.html#l00056">stxxl::read_write_pool&lt; BlockType &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="read__write__pool_8h_source.html#l00056">stxxl::read_write_pool&lt; block_type &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -873,7 +1110,7 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00038">38</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="read__write__pool_8h_source.html#l00056">stxxl::read_write_pool&lt; BlockType &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="read__write__pool_8h_source.html#l00056">stxxl::read_write_pool&lt; block_type &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -899,7 +1136,7 @@ template&lt;typename BlockType&gt; </div>
 
 <p>Definition at line <a class="el" href="read__write__pool_8h_source.html#l00037">37</a> of file <a class="el" href="read__write__pool_8h_source.html">read_write_pool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="read__write__pool_8h_source.html#l00056">stxxl::read_write_pool&lt; BlockType &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="read__write__pool_8h_source.html#l00056">stxxl::read_write_pool&lt; block_type &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -912,10 +1149,10 @@ template&lt;typename BlockType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1read__write__pool.html">read_write_pool</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:50 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:29 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

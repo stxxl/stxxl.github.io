@@ -8,6 +8,7 @@ var namespacestxxl_1_1priority__queue__local =
     [ "find_B_m< ElementSize, IntMem, MaxItems, 2048, 1, stop >", "structstxxl_1_1priority__queue__local_1_1find__B__m_3_01ElementSize_00_01IntMem_00_01MaxItems_00_012048_00_011_00_01stop_01_4.html", "structstxxl_1_1priority__queue__local_1_1find__B__m_3_01ElementSize_00_01IntMem_00_01MaxItems_00_012048_00_011_00_01stop_01_4" ],
     [ "find_B_m< ElementSize, IntMem, MaxItems, BlockSize, m_, true >", "structstxxl_1_1priority__queue__local_1_1find__B__m_3_01ElementSize_00_01IntMem_00_01MaxItems_00c58ecd8b2f93eff1a4c34773cd59893c.html", "structstxxl_1_1priority__queue__local_1_1find__B__m_3_01ElementSize_00_01IntMem_00_01MaxItems_00c58ecd8b2f93eff1a4c34773cd59893c" ],
     [ "find_settings", "structstxxl_1_1priority__queue__local_1_1find__settings.html", "structstxxl_1_1priority__queue__local_1_1find__settings" ],
+    [ "int_merger", "classstxxl_1_1priority__queue__local_1_1int__merger.html", "classstxxl_1_1priority__queue__local_1_1int__merger" ],
     [ "internal_bounded_stack", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack" ],
     [ "internal_priority_queue", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html", "classstxxl_1_1priority__queue__local_1_1internal__priority__queue" ],
     [ "invert_order", "classstxxl_1_1priority__queue__local_1_1invert__order.html", "classstxxl_1_1priority__queue__local_1_1invert__order" ],

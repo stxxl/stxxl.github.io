@@ -1,0 +1,4 @@
+var structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01long_00_01Comparator_01_4 =
+[
+    [ "LT", "structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01long_00_01Comparator_01_4.html#af9c46cd53af5d10a9801763794b81ad9", null ]
+];

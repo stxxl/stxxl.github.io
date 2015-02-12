@@ -16,6 +16,7 @@ var searchData=
   ['read_5fafter_5fwrite',['read_after_write',['../structstxxl_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1read__after__write.html',1,'stxxl::block_scheduler_algorithm_offline_lru_prefetching']]],
   ['read_5fnext_5fafter_5fwrite_5fcompleted',['read_next_after_write_completed',['../structstxxl_1_1sort__local_1_1read__next__after__write__completed.html',1,'stxxl::sort_local']]],
   ['read_5fwrite_5fpool',['read_write_pool',['../classstxxl_1_1read__write__pool.html',1,'stxxl']]],
+  ['read_5fwrite_5fpool_3c_20block_5ftype_20_3e',['read_write_pool&lt; block_type &gt;',['../classstxxl_1_1read__write__pool.html',1,'stxxl']]],
   ['rebind',['rebind',['../structstxxl_1_1new__alloc_1_1rebind.html',1,'stxxl::new_alloc']]],
   ['remove_5fconst',['remove_const',['../structstxxl_1_1compat_1_1remove__const.html',1,'stxxl::compat']]],
   ['remove_5fconst_3c_20type_20const_20_20_3e',['remove_const&lt; Type const  &gt;',['../structstxxl_1_1compat_1_1remove__const_3_01Type_01const_01_01_4.html',1,'stxxl::compat']]],

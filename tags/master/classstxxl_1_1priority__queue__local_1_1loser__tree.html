@@ -109,8 +109,11 @@ $(document).ready(function(){initNavTree('classstxxl_1_1priority__queue__local_1
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classstxxl_1_1priority__queue__local_1_1loser__tree-members.html">List of all members</a>  </div>
@@ -125,7 +128,13 @@ class stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxAri
 <p>Loser tree from Knuth, "Sorting and Searching", Section 5.4.1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">MaxArity</td><td>maximum arity of loser tree, has to be a power of two </td></tr>
+    <tr><td class="paramname">MaxArity</td><td>maximum arity of loser tree, has to be a power of two</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Arity</td><td>maximum arity of merger, does not need to be a power of 2 </td></tr>
   </table>
   </dd>
 </dl>
@@ -136,7 +145,7 @@ class stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxAri
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1priority__queue__local_1_1loser__tree__inherit__graph.svg" width="263" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1priority__queue__local_1_1loser__tree__inherit__graph.svg" width="822" height="267"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -144,49 +153,139 @@ class stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxAri
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1priority__queue__local_1_1loser__tree__coll__graph.svg" width="1003" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1priority__queue__local_1_1loser__tree__coll__graph.svg" width="1312" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1priority__queue__local_1_1loser__tree_1_1Entry.html">Entry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of nodes in the loser tree  <a href="structstxxl_1_1priority__queue__local_1_1loser__tree_1_1Entry.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5aaf4523c934d34b6d2f26d661db548d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a5aaf4523c934d34b6d2f26d661db548da9503513d788108d8c688185a30e43875">max_arity</a> = MaxArity
+<tr class="memitem:a5cb896e6446074a6cf924091c4ead727"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8cab6c8d4f171b62d588c8e18e7ed626cad">max_arity</a> = MaxArity
  }</td></tr>
-<tr class="separator:a5aaf4523c934d34b6d2f26d661db548d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5cb896e6446074a6cf924091c4ead727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3269f6b1e6585513b6c98455f58da8c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8ca0856aa778d1c089850af75eb80762f33">arity</a> = Arity, 
+<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8cab6c8d4f171b62d588c8e18e7ed626cad">max_arity</a> = MaxArity
+ }</td></tr>
+<tr class="separator:af3269f6b1e6585513b6c98455f58da8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ce46365751b868e2dfc47c3e49d725"><td class="memItemLeft" align="right" valign="top">typedef ArraysType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ab9ce46365751b868e2dfc47c3e49d725">arrays_type</a></td></tr>
+<tr class="memdesc:ab9ce46365751b868e2dfc47c3e49d725"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of arrays container linked with loser tree  <a href="#ab9ce46365751b868e2dfc47c3e49d725">More...</a><br/></td></tr>
+<tr class="separator:ab9ce46365751b868e2dfc47c3e49d725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067c9a390c03ecaa5965ffb74475daa8"><td class="memItemLeft" align="right" valign="top">typedef CompareType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a067c9a390c03ecaa5965ffb74475daa8">comparator_type</a></td></tr>
 <tr class="separator:a067c9a390c03ecaa5965ffb74475daa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48800cab488f447cc20dc86c3d4e956b"><td class="memItemLeft" align="right" valign="top">typedef CompareType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a48800cab488f447cc20dc86c3d4e956b">compare_type</a></td></tr>
+<tr class="memdesc:a48800cab488f447cc20dc86c3d4e956b"><td class="mdescLeft">&#160;</td><td class="mdescRight">comparator object type  <a href="#a48800cab488f447cc20dc86c3d4e956b">More...</a><br/></td></tr>
+<tr class="separator:a48800cab488f447cc20dc86c3d4e956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c83a4ca2f4ef97fcfa67aba8d4bbc7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a></td></tr>
 <tr class="separator:a40c83a4ca2f4ef97fcfa67aba8d4bbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa562225dbff5837612f1a5484c9f2f4d"><td class="memItemLeft" align="right" valign="top">typedef arrays_type::sequence_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#aa562225dbff5837612f1a5484c9f2f4d">sequence_type</a></td></tr>
+<tr class="memdesc:aa562225dbff5837612f1a5484c9f2f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the ordered sequences in the arrays container  <a href="#aa562225dbff5837612f1a5484c9f2f4d">More...</a><br/></td></tr>
+<tr class="separator:aa562225dbff5837612f1a5484c9f2f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a547c3750ab4ef9063cb2cc1bffd79269"><td class="memItemLeft" align="right" valign="top">typedef ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a></td></tr>
 <tr class="separator:a547c3750ab4ef9063cb2cc1bffd79269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe90a42041ef825f68afa4f49475f374"><td class="memItemLeft" align="right" valign="top">typedef arrays_type::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#abe90a42041ef825f68afa4f49475f374">value_type</a></td></tr>
+<tr class="memdesc:abe90a42041ef825f68afa4f49475f374"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of values stored in the arrays container  <a href="#abe90a42041ef825f68afa4f49475f374">More...</a><br/></td></tr>
+<tr class="separator:abe90a42041ef825f68afa4f49475f374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acd8523d000fd31e2179b2c72f72009ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#acd8523d000fd31e2179b2c72f72009ad">loser_tree</a> ()</td></tr>
 <tr class="separator:acd8523d000fd31e2179b2c72f72009ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade14cdb759a27cb21083ec15985cef7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#aade14cdb759a27cb21083ec15985cef7">loser_tree</a> (const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a48800cab488f447cc20dc86c3d4e956b">compare_type</a> &amp;c, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ab9ce46365751b868e2dfc47c3e49d725">arrays_type</a> &amp;a)</td></tr>
+<tr class="separator:aade14cdb759a27cb21083ec15985cef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e8124ee8a43f4168ca28e20761daba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ae2e8124ee8a43f4168ca28e20761daba">~loser_tree</a> ()</td></tr>
 <tr class="separator:ae2e8124ee8a43f4168ca28e20761daba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256781e59669d9dca1a5b18159a46cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a256781e59669d9dca1a5b18159a46cb3">compact_tree</a> ()</td></tr>
+<tr class="memdesc:a256781e59669d9dca1a5b18159a46cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">compact nonempty segments in the left half of the tree  <a href="#a256781e59669d9dca1a5b18159a46cb3">More...</a><br/></td></tr>
+<tr class="separator:a256781e59669d9dca1a5b18159a46cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc070cf565eb49248fec9a077ed8a52b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#adc070cf565eb49248fec9a077ed8a52b">double_k</a> ()</td></tr>
+<tr class="memdesc:adc070cf565eb49248fec9a077ed8a52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">make the tree twice as wide  <a href="#adc070cf565eb49248fec9a077ed8a52b">More...</a><br/></td></tr>
+<tr class="separator:adc070cf565eb49248fec9a077ed8a52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d59e3ef5a31e365c24aef753151e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ac4d59e3ef5a31e365c24aef753151e75">free_player</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> slot)</td></tr>
+<tr class="memdesc:ac4d59e3ef5a31e365c24aef753151e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a finished player's slot.  <a href="#ac4d59e3ef5a31e365c24aef753151e75">More...</a><br/></td></tr>
+<tr class="separator:ac4d59e3ef5a31e365c24aef753151e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944798b245a33a34ac3f039a6b44bf67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a944798b245a33a34ac3f039a6b44bf67">init</a> ()</td></tr>
 <tr class="separator:a944798b245a33a34ac3f039a6b44bf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc14e831b9ed436a24d624a0a920ee95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#afc14e831b9ed436a24d624a0a920ee95">init_winner</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> root)</td></tr>
+<tr class="separator:afc14e831b9ed436a24d624a0a920ee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb4926c47b175b329d67c05400fe2a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#afcb4926c47b175b329d67c05400fe2a1">initialize</a> ()</td></tr>
+<tr class="separator:afcb4926c47b175b329d67c05400fe2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05bfbc12342f5f0acd3ffc280075f6c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a05bfbc12342f5f0acd3ffc280075f6c6">insert_segment</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a> *target, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> length)</td></tr>
 <tr class="memdesc:a05bfbc12342f5f0acd3ffc280075f6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert segment beginning at target  <a href="#a05bfbc12342f5f0acd3ffc280075f6c6">More...</a><br/></td></tr>
 <tr class="separator:a05bfbc12342f5f0acd3ffc280075f6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbdee0ae508403b338020285fcb51226"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#acbdee0ae508403b338020285fcb51226">is_sentinel</a> (const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a> &amp;a)</td></tr>
 <tr class="separator:acbdee0ae508403b338020285fcb51226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ab2d5b0dbe6e01472b51e8d64bdf3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a85ab2d5b0dbe6e01472b51e8d64bdf3c">is_sentinel</a> (const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> &amp;a) const </td></tr>
+<tr class="memdesc:a85ab2d5b0dbe6e01472b51e8d64bdf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a is the sentinel value.  <a href="#a85ab2d5b0dbe6e01472b51e8d64bdf3c">More...</a><br/></td></tr>
+<tr class="separator:a85ab2d5b0dbe6e01472b51e8d64bdf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10dfddd6022caaec2c83bf9b758603eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a10dfddd6022caaec2c83bf9b758603eb">is_space_available</a> () const </td></tr>
 <tr class="separator:a10dfddd6022caaec2c83bf9b758603eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dfddd6022caaec2c83bf9b758603eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a10dfddd6022caaec2c83bf9b758603eb">is_space_available</a> () const </td></tr>
+<tr class="memdesc:a10dfddd6022caaec2c83bf9b758603eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there is still space for new array.  <a href="#a10dfddd6022caaec2c83bf9b758603eb">More...</a><br/></td></tr>
+<tr class="separator:a10dfddd6022caaec2c83bf9b758603eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4224613739863439cb4a76c04b850a25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a4224613739863439cb4a76c04b850a25">maybe_compact</a> ()</td></tr>
+<tr class="memdesc:a4224613739863439cb4a76c04b850a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">compact tree if it got considerably smaller  <a href="#a4224613739863439cb4a76c04b850a25">More...</a><br/></td></tr>
+<tr class="separator:a4224613739863439cb4a76c04b850a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042a62cfb1af620b521b760491a14f23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a042a62cfb1af620b521b760491a14f23">mem_cons</a> () const </td></tr>
 <tr class="separator:a042a62cfb1af620b521b760491a14f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53e0ab23b25d5e5c6c6af88129f3a954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a53e0ab23b25d5e5c6c6af88129f3a954">multi_merge</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a> *begin, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a> *end)</td></tr>
 <tr class="separator:a53e0ab23b25d5e5c6c6af88129f3a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a58f9194a4fa7103f81c58220ab9c91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a5a58f9194a4fa7103f81c58220ab9c91">multi_merge</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a> *, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> length)</td></tr>
 <tr class="separator:a5a58f9194a4fa7103f81c58220ab9c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc7d35bedf551d0745ed1e136f8a41b"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator &gt; </td></tr>
+<tr class="memitem:a4fc7d35bedf551d0745ed1e136f8a41b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a4fc7d35bedf551d0745ed1e136f8a41b">multi_merge</a> (OutputIterator begin, OutputIterator end)</td></tr>
+<tr class="memdesc:a4fc7d35bedf551d0745ed1e136f8a41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract the (length = end - begin) smallest elements and write them to [begin..end) empty segments are deallocated. Requires: there are at least length elements and segments are ended by sentinels.  <a href="#a4fc7d35bedf551d0745ed1e136f8a41b">More...</a><br/></td></tr>
+<tr class="separator:a4fc7d35bedf551d0745ed1e136f8a41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadd16112792055154055dbb74f80d4c"><td class="memTemplParams" colspan="2">template&lt;int LogK, typename OutputIterator &gt; </td></tr>
+<tr class="memitem:aaadd16112792055154055dbb74f80d4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#aaadd16112792055154055dbb74f80d4c">multi_merge_f</a> (OutputIterator begin, OutputIterator end)</td></tr>
+<tr class="separator:aaadd16112792055154055dbb74f80d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff6b12b6df6e8c84832ed838954e269"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator &gt; </td></tr>
+<tr class="memitem:a7ff6b12b6df6e8c84832ed838954e269"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7ff6b12b6df6e8c84832ed838954e269">multi_merge_k</a> (OutputIterator begin, OutputIterator end)</td></tr>
+<tr class="memdesc:a7ff6b12b6df6e8c84832ed838954e269"><td class="mdescLeft">&#160;</td><td class="mdescRight">multi-merge for arbitrary K  <a href="#a7ff6b12b6df6e8c84832ed838954e269">More...</a><br/></td></tr>
+<tr class="separator:a7ff6b12b6df6e8c84832ed838954e269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3d105b4e1b948ae8057fb60ca839b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7d3d105b4e1b948ae8057fb60ca839b1">new_player</a> ()</td></tr>
+<tr class="memdesc:a7d3d105b4e1b948ae8057fb60ca839b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a free slot for a new player.  <a href="#a7d3d105b4e1b948ae8057fb60ca839b1">More...</a><br/></td></tr>
+<tr class="separator:a7d3d105b4e1b948ae8057fb60ca839b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c62aa47ec63dd46c7e5c16098f253f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7c62aa47ec63dd46c7e5c16098f253f9">not_sentinel</a> (const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a40c83a4ca2f4ef97fcfa67aba8d4bbc7">Element</a> &amp;a)</td></tr>
 <tr class="separator:a7c62aa47ec63dd46c7e5c16098f253f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4605c89f0d0c9a07ec2d99354970deaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a4605c89f0d0c9a07ec2d99354970deaa">rebuild_loser_tree</a> ()</td></tr>
+<tr class="memdesc:a4605c89f0d0c9a07ec2d99354970deaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">rebuild loser tree information from the values in current  <a href="#a4605c89f0d0c9a07ec2d99354970deaa">More...</a><br/></td></tr>
+<tr class="separator:a4605c89f0d0c9a07ec2d99354970deaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c951e7a274404677b48744509f50340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7c951e7a274404677b48744509f50340">size</a> () const </td></tr>
 <tr class="separator:a7c951e7a274404677b48744509f50340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc33d7b8a8f42a40336fc8eeda518ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a9cc33d7b8a8f42a40336fc8eeda518ad">swap</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">loser_tree</a> &amp;obj)</td></tr>
 <tr class="separator:a9cc33d7b8a8f42a40336fc8eeda518ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc33d7b8a8f42a40336fc8eeda518ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a9cc33d7b8a8f42a40336fc8eeda518ad">swap</a> (<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">loser_tree</a> &amp;obj)</td></tr>
+<tr class="separator:a9cc33d7b8a8f42a40336fc8eeda518ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86e746bbc084c181a9aae93e4276575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ae86e746bbc084c181a9aae93e4276575">update_on_insert</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> node, const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> &amp;newKey, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> newIndex, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> *winner_key, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> *winner_index, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> *mask)</td></tr>
+<tr class="memdesc:ae86e746bbc084c181a9aae93e4276575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update loser tree on insert or decrement of player index first go up the tree all the way to the root hand down old winner for the respective subtree based on new value, and old winner and loser update each node on the path to the root top down.  <a href="#ae86e746bbc084c181a9aae93e4276575">More...</a><br/></td></tr>
+<tr class="separator:ae86e746bbc084c181a9aae93e4276575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c452e80193de7f1d75f7c1032aec180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a8c452e80193de7f1d75f7c1032aec180">update_on_insert</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> node, const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> &amp;newKey, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> newIndex)</td></tr>
+<tr class="memdesc:a8c452e80193de7f1d75f7c1032aec180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial call to recursive update_on_insert.  <a href="#a8c452e80193de7f1d75f7c1032aec180">More...</a><br/></td></tr>
+<tr class="separator:a8c452e80193de7f1d75f7c1032aec180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a22043459c2414ad2935d80b7ff103a03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a48800cab488f447cc20dc86c3d4e956b">compare_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a22043459c2414ad2935d80b7ff103a03">cmp</a></td></tr>
+<tr class="memdesc:a22043459c2414ad2935d80b7ff103a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">the comparator object  <a href="#a22043459c2414ad2935d80b7ff103a03">More...</a><br/></td></tr>
+<tr class="separator:a22043459c2414ad2935d80b7ff103a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a3bd5493035b90449afaf9a8af5819395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ab9ce46365751b868e2dfc47c3e49d725">arrays_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a3bd5493035b90449afaf9a8af5819395">arrays</a></td></tr>
+<tr class="memdesc:a3bd5493035b90449afaf9a8af5819395"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the linked arrays  <a href="#a3bd5493035b90449afaf9a8af5819395">More...</a><br/></td></tr>
+<tr class="separator:a3bd5493035b90449afaf9a8af5819395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f3a385bf4128094c904f458e088552"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structstxxl_1_1priority__queue__local_1_1loser__tree_1_1Entry.html">Entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a79f3a385bf4128094c904f458e088552">entry</a> [<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8cab6c8d4f171b62d588c8e18e7ed626cad">max_arity</a>]</td></tr>
+<tr class="memdesc:a79f3a385bf4128094c904f458e088552"><td class="mdescLeft">&#160;</td><td class="mdescRight">levels of loser tree: entry[0] contains the winner info  <a href="#a79f3a385bf4128094c904f458e088552">More...</a><br/></td></tr>
+<tr class="separator:a79f3a385bf4128094c904f458e088552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7da38ee784a1f1c4c6d526fbcb7f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html">internal_bounded_stack</a><br class="typebreak"/>
+&lt; <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8ca0856aa778d1c089850af75eb80762f33">arity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7c7da38ee784a1f1c4c6d526fbcb7f15">free_slots</a></td></tr>
+<tr class="memdesc:a7c7da38ee784a1f1c4c6d526fbcb7f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack of free player indices  <a href="#a7c7da38ee784a1f1c4c6d526fbcb7f15">More...</a><br/></td></tr>
+<tr class="separator:a7c7da38ee784a1f1c4c6d526fbcb7f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -222,8 +321,10 @@ Private Attributes</h2></td></tr>
 &lt; <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>, MaxArity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a4439bf349cf6da21887632cdffc8d94b">free_slots</a></td></tr>
 <tr class="separator:a4439bf349cf6da21887632cdffc8d94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7821c7db991d7b07d871d6ef698c5302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7821c7db991d7b07d871d6ef698c5302">k</a></td></tr>
+<tr class="memdesc:a7821c7db991d7b07d871d6ef698c5302"><td class="mdescLeft">&#160;</td><td class="mdescRight">current tree size, invariant (k == 1 &lt;&lt; logK), always a power of two  <a href="#a7821c7db991d7b07d871d6ef698c5302">More...</a><br/></td></tr>
 <tr class="separator:a7821c7db991d7b07d871d6ef698c5302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5f6a0a24b0deb16e1b86787ab646ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a6b5f6a0a24b0deb16e1b86787ab646ab">logK</a></td></tr>
+<tr class="memdesc:a6b5f6a0a24b0deb16e1b86787ab646ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">log of current tree size  <a href="#a6b5f6a0a24b0deb16e1b86787ab646ab">More...</a><br/></td></tr>
 <tr class="separator:a6b5f6a0a24b0deb16e1b86787ab646ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51a65b4ddad3512d8921fbef19fd13dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a51a65b4ddad3512d8921fbef19fd13dc">mem_cons_</a></td></tr>
 <tr class="separator:a51a65b4ddad3512d8921fbef19fd13dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +338,24 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1567e6eb33310b6e891ade6bba61aaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ab9ce46365751b868e2dfc47c3e49d725"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ArraysType <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ab9ce46365751b868e2dfc47c3e49d725">arrays_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type of arrays container linked with loser tree </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00255">255</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a067c9a390c03ecaa5965ffb74475daa8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,6 +369,24 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00042">42</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48800cab488f447cc20dc86c3d4e956b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CompareType <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a48800cab488f447cc20dc86c3d4e956b">compare_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>comparator object type </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00257">257</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -269,6 +406,24 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aa562225dbff5837612f1a5484c9f2f4d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef arrays_type::sequence_type <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#aa562225dbff5837612f1a5484c9f2f4d">sequence_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type of the ordered sequences in the arrays container </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00265">265</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a547c3750ab4ef9063cb2cc1bffd79269"></a>
 <div class="memitem">
 <div class="memproto">
@@ -285,8 +440,26 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="abe90a42041ef825f68afa4f49475f374"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef arrays_type::value_type <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type of values stored in the arrays container </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00263">263</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a5aaf4523c934d34b6d2f26d661db548d"></a>
+<a class="anchor" id="a5cb896e6446074a6cf924091c4ead727"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -298,11 +471,33 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a5aaf4523c934d34b6d2f26d661db548da9503513d788108d8c688185a30e43875"></a>max_arity</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af3269f6b1e6585513b6c98455f58da8cab6c8d4f171b62d588c8e18e7ed626cad"></a>max_arity</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00044">44</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3269f6b1e6585513b6c98455f58da8c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af3269f6b1e6585513b6c98455f58da8ca0856aa778d1c089850af75eb80762f33"></a>arity</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="af3269f6b1e6585513b6c98455f58da8cab6c8d4f171b62d588c8e18e7ed626cad"></a>max_arity</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00260">260</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -343,13 +538,80 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00461">461</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00466">466</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>, and <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>, and <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aade14cdb759a27cb21083ec15985cef7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">loser_tree</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a48800cab488f447cc20dc86c3d4e956b">compare_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ab9ce46365751b868e2dfc47c3e49d725">arrays_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00298">298</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a256781e59669d9dca1a5b18159a46cb3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::compact_tree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compact nonempty segments in the left half of the tree </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00489">489</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac4c975fe7ed0769a9a6c9aaef804918a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -373,9 +635,9 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00359">359</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00363">363</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE3</a>.</p>
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00052">sentinel</a>, and <a class="el" href="verbose_8h_source.html#l00127">STXXL_VERBOSE3</a>.</p>
 
 </div>
 </div>
@@ -403,9 +665,38 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00480">480</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00485">485</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>.</p>
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00052">sentinel</a>, and <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc070cf565eb49248fec9a077ed8a52b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::double_k </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>make the tree twice as wide </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00461">461</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -432,9 +723,41 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00329">329</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00333">333</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE3</a>.</p>
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00052">sentinel</a>, and <a class="el" href="verbose_8h_source.html#l00127">STXXL_VERBOSE3</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4d59e3ef5a31e365c24aef753151e75"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::free_player </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>slot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Free a finished player's slot. </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00338">338</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00252">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::free_array()</a>.</p>
 
 </div>
 </div>
@@ -455,7 +778,66 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00224">224</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00052">sentinel</a>.</p>
+
 <p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc14e831b9ed436a24d624a0a920ee95"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::init_winner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00363">363</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcb4926c47b175b329d67c05400fe2a1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00305">305</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00191">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::ext_merger()</a>.</p>
 
 </div>
 </div>
@@ -513,9 +895,9 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
 
 <p>insert segment beginning at target </p>
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00416">416</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00420">420</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>.</p>
 
 </div>
 </div>
@@ -543,7 +925,9 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00681">681</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00689">689</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00052">sentinel</a>.</p>
 
 </div>
 </div>
@@ -573,6 +957,38 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00158">158</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00331">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::is_sentinel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85ab2d5b0dbe6e01472b51e8d64bdf3c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::is_sentinel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if a is the sentinel value. </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00316">316</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a10dfddd6022caaec2c83bf9b758603eb"></a>
@@ -599,6 +1015,66 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00198">198</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00325">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::is_space_available()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10dfddd6022caaec2c83bf9b758603eb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::is_space_available </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether there is still space for new array. </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00345">345</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4224613739863439cb4a76c04b850a25"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::maybe_compact </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compact tree if it got considerably smaller </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00546">546</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -665,6 +1141,8 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00190">190</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00439">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::multi_merge()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5a58f9194a4fa7103f81c58220ab9c91"></a>
@@ -693,9 +1171,91 @@ template&lt;class ValueType , class CompareType , unsigned MaxArity&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00505">505</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+<p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00510">510</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>References <a class="el" href="pq__mergers_8h_source.html#l00075">stxxl::priority_queue_local::merge3_iterator()</a>, <a class="el" href="pq__mergers_8h_source.html#l00143">stxxl::priority_queue_local::merge4_iterator()</a>, <a class="el" href="pq__mergers_8h_source.html#l00042">stxxl::priority_queue_local::merge_iterator()</a>, and <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE3</a>.</p>
+<p>References <a class="el" href="pq__mergers_8h_source.html#l00071">stxxl::priority_queue_local::merge3_iterator()</a>, <a class="el" href="pq__mergers_8h_source.html#l00138">stxxl::priority_queue_local::merge4_iterator()</a>, <a class="el" href="parallel_8h_source.html#l00195">stxxl::potentially_parallel::multiway_merge_sentinels()</a>, and <a class="el" href="verbose_8h_source.html#l00127">STXXL_VERBOSE3</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fc7d35bedf551d0745ed1e136f8a41b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<div class="memtemplate">
+template&lt;class OutputIterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::multi_merge </td>
+          <td>(</td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>extract the (length = end - begin) smallest elements and write them to [begin..end) empty segments are deallocated. Requires: there are at least length elements and segments are ended by sentinels. </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00667">667</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaadd16112792055154055dbb74f80d4c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<div class="memtemplate">
+template&lt;int LogK, typename OutputIterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::multi_merge_f </td>
+          <td>(</td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00613">613</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -735,6 +1295,79 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a7ff6b12b6df6e8c84832ed838954e269"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<div class="memtemplate">
+template&lt;class OutputIterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::multi_merge_k </td>
+          <td>(</td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIterator&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>multi-merge for arbitrary K </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00571">571</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d3d105b4e1b948ae8057fb60ca839b1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::new_player </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocate a free slot for a new player. </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00322">322</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7c62aa47ec63dd46c7e5c16098f253f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -760,6 +1393,35 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00162">162</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4605c89f0d0c9a07ec2d99354970deaa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::rebuild_loser_tree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>rebuild loser tree information from the values in current </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00351">351</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -845,6 +1507,34 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a9cc33d7b8a8f42a40336fc8eeda518ad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00765">765</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad6226642ffae4f25c38b594ab9e80bf5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -903,9 +1593,148 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae86e746bbc084c181a9aae93e4276575"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::update_on_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>newKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>newIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> *&#160;</td>
+          <td class="paramname"><em>winner_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> *&#160;</td>
+          <td class="paramname"><em>winner_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> *&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update loser tree on insert or decrement of player index first go up the tree all the way to the root hand down old winner for the respective subtree based on new value, and old winner and loser update each node on the path to the root top down. </p>
+<p>This is implemented recursively </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00399">399</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c452e80193de7f1d75f7c1032aec180"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::update_on_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a547c3750ab4ef9063cb2cc1bffd79269">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>newKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>newIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initial call to recursive update_on_insert. </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00451">451</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3bd5493035b90449afaf9a8af5819395"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#ab9ce46365751b868e2dfc47c3e49d725">arrays_type</a>&amp; <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::arrays</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference to the linked arrays </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00282">282</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0c40cbc2fe5c98a7d7600c6b2d5ba2d1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -928,7 +1757,25 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00055">55</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00277">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::init()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22043459c2414ad2935d80b7ff103a03"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a48800cab488f447cc20dc86c3d4e956b">compare_type</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::cmp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the comparator object </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00269">269</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1801,7 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00074">74</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1827,35 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00075">75</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79f3a385bf4128094c904f458e088552"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structstxxl_1_1priority__queue__local_1_1loser__tree_1_1Entry.html">Entry</a> <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::entry[<a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8cab6c8d4f171b62d588c8e18e7ed626cad">max_arity</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>levels of loser tree: entry[0] contains the winner info </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00292">292</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
+
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1881,33 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00057">57</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c7da38ee784a1f1c4c6d526fbcb7f15"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html">internal_bounded_stack</a>&lt;<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#af3269f6b1e6585513b6c98455f58da8ca0856aa778d1c089850af75eb80762f33">arity</a>&gt; <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">stxxl::priority_queue_local::loser_tree</a>&lt; ValueType, CompareType, MaxArity &gt;::free_slots</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>stack of free player indices </p>
+
+<p>Definition at line <a class="el" href="pq__mergers_8h_source.html#l00295">295</a> of file <a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a>.</p>
 
 </div>
 </div>
@@ -1030,9 +1931,11 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>current tree size, invariant (k == 1 &lt;&lt; logK), always a power of two </p>
+
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00061">61</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__ext__merger_8h_source.html#l00367">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::append_merger()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00265">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;::prefetch_arrays()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1056,9 +1959,11 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>log of current tree size </p>
+
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00060">60</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1989,7 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00079">79</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +2015,7 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00076">76</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +2041,7 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00077">77</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1162,7 +2067,7 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00063">63</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00211">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;::loser_tree()</a>, and <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -1188,12 +2093,13 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 
 <p>Definition at line <a class="el" href="pq__losertree_8h_source.html#l00059">59</a> of file <a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/stxxl/bits/containers/<a class="el" href="pq__losertree_8h_source.html">pq_losertree.h</a></li>
+<li>include/stxxl/bits/containers/<a class="el" href="pq__mergers_8h_source.html">pq_mergers.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1201,10 +2107,10 @@ template&lt;class ValueType, class CompareType, unsigned MaxArity&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1priority__queue__local.html">priority_queue_local</a></li><li class="navelem"><a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html">loser_tree</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:05:18 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:28:07 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

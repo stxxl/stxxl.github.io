@@ -1,0 +1,5 @@
+<map id="stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::stats_type" name="stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::stats_type">
+<area shape="rect" id="node2" href="$classstxxl_1_1dummy__custom__stats__counter.html" title="stxxl::dummy_custom\l_stats_counter\&lt; uint64 \&gt;" alt="" coords="20,121,185,167"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1dummy__custom__stats__counter.html" title="Dummy class for custom_stats_counter. " alt="" coords="5,6,200,53"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1fake__timer.html" title="Class fake_timer is a drop&#45;in replacement for timer, which does nothing. " alt="" coords="260,129,377,159"/>
+</map>

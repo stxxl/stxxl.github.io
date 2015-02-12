@@ -22,9 +22,11 @@ var searchData=
   ['matrix_5fto_5fquadtree_5fblock_5fgrained',['matrix_to_quadtree_block_grained',['../structstxxl_1_1matrix__local_1_1matrix__to__quadtree__block__grained.html',1,'stxxl::matrix_local']]],
   ['matrix_5fto_5fquadtree_5fblock_5fgrained_3c_20valuetype_2c_20blocksidelength_2c_200_2c_20granularity_20_3e',['matrix_to_quadtree_block_grained&lt; ValueType, BlockSideLength, 0, Granularity &gt;',['../structstxxl_1_1matrix__local_1_1matrix__to__quadtree__block__grained_3_01ValueType_00_01BlockSid93a32f9b3b54afe56b0caefb5882ca8d.html',1,'stxxl::matrix_local']]],
   ['mem_5ffile',['mem_file',['../classstxxl_1_1mem__file.html',1,'stxxl']]],
-  ['metainfo_5ftype',['metainfo_type',['../structstxxl_1_1btree_1_1normal__node_1_1metainfo__type.html',1,'stxxl::btree::normal_node']]],
   ['metainfo_5ftype',['metainfo_type',['../structstxxl_1_1btree_1_1normal__leaf_1_1metainfo__type.html',1,'stxxl::btree::normal_leaf']]],
+  ['metainfo_5ftype',['metainfo_type',['../structstxxl_1_1btree_1_1normal__node_1_1metainfo__type.html',1,'stxxl::btree::normal_node']]],
   ['migrating_5fstack',['migrating_stack',['../classstxxl_1_1migrating__stack.html',1,'stxxl']]],
+  ['minima_5ftree',['minima_tree',['../classstxxl_1_1ppq__local_1_1minima__tree.html',1,'stxxl::ppq_local']]],
+  ['minima_5ftree_3c_20parallel_5fpriority_5fqueue_3c_20value_5ftype_2c_20compare_5ftype_2c_20alloc_5fstrategy_2c_20block_5fsize_2c_20defaultmemsize_2c_20maxitems_20_3e_20_3e',['minima_tree&lt; parallel_priority_queue&lt; value_type, compare_type, alloc_strategy, block_size, DefaultMemSize, MaxItems &gt; &gt;',['../classstxxl_1_1ppq__local_1_1minima__tree.html',1,'stxxl::ppq_local']]],
   ['mmap_5ffile',['mmap_file',['../classstxxl_1_1mmap__file.html',1,'stxxl']]],
   ['mutex',['mutex',['../classstxxl_1_1mutex.html',1,'stxxl']]]
 ];

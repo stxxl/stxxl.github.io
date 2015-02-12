@@ -6,9 +6,9 @@ var classstxxl_1_1sorter =
     [ "runs_merger_type", "classstxxl_1_1sorter.html#ace0df183b20c18c63dac7cc61a253554", null ],
     [ "size_type", "classstxxl_1_1sorter.html#ad08b54e783589d95e9e60f47ef4cd65f", null ],
     [ "value_type", "classstxxl_1_1sorter.html#a8d3e5beb037629615607b249b4cf7552", null ],
-    [ "block_size", "classstxxl_1_1sorter.html#a8fe6b90842b098e4b14fd06d1cdf5958a35e58c5358966ae2c67b4469067da52d", null ],
-    [ "STATE_INPUT", "classstxxl_1_1sorter.html#abe09549c8ddf15f4a1e10db064e1c281a7f29f7ec4243b42b665e46a9746a2c09", null ],
-    [ "STATE_OUTPUT", "classstxxl_1_1sorter.html#abe09549c8ddf15f4a1e10db064e1c281a61cfe92f49fe0a6f3373b702b86af817", null ],
+    [ "block_size", "classstxxl_1_1sorter.html#abeb56f48a772fef372f0e9b90ba55c95a35e58c5358966ae2c67b4469067da52d", null ],
+    [ "STATE_INPUT", "classstxxl_1_1sorter.html#a21ecbb067fe2c186aeaa2314c241b5e7a7f29f7ec4243b42b665e46a9746a2c09", null ],
+    [ "STATE_OUTPUT", "classstxxl_1_1sorter.html#a21ecbb067fe2c186aeaa2314c241b5e7a61cfe92f49fe0a6f3373b702b86af817", null ],
     [ "sorter", "classstxxl_1_1sorter.html#acf7315e8c36267db2af1c35f70cd5209", null ],
     [ "sorter", "classstxxl_1_1sorter.html#a929a1de3c6db997ae9686e9773d52b06", null ],
     [ "clear", "classstxxl_1_1sorter.html#adb8a337e7b510ee70af4a378921e9625", null ],
@@ -27,5 +27,5 @@ var classstxxl_1_1sorter =
     [ "sort_reuse", "classstxxl_1_1sorter.html#af8efba64375f43e84a428c9d41d69f3f", null ],
     [ "m_runs_creator", "classstxxl_1_1sorter.html#a9b8de4cd091d74fa1fc69e006db5b545", null ],
     [ "m_runs_merger", "classstxxl_1_1sorter.html#a3bc480b5451c63bf3025a9f824525b61", null ],
-    [ "m_state", "classstxxl_1_1sorter.html#aecf505932d6b5532fe3cbf4a43862d0e", null ]
+    [ "m_state", "classstxxl_1_1sorter.html#a844b0c3c4902d2c39af09084de662f56", null ]
 ];

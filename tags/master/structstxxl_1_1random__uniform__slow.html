@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('structstxxl_1_1random__uniform__slow.h
 <div class="textblock"><p>Slow and precise uniform [0.0, 1.0) pseudo-random generator period: at least 2^48, random bits: at least 31. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Seed is not the same as in the fast generator <code><a class="el" href="structstxxl_1_1random__uniform__fast.html" title="Fast uniform [0.0, 1.0) pseudo-random generator. ">random_uniform_fast</a></code> </dd></dl>
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00147">147</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00149">149</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -131,8 +131,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae00c2c4ce255cc0d0d0614aaf57354d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__uniform__slow.html#ae00c2c4ce255cc0d0d0614aaf57354d3">random_uniform_slow</a> (unsigned seed=0)</td></tr>
-<tr class="separator:ae00c2c4ce255cc0d0d0614aaf57354d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4153167a519882f7ef4d637a49bffd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__uniform__slow.html#af4153167a519882f7ef4d637a49bffd5">_dorand48</a> (<a class="el" href="structstxxl_1_1random__uniform__slow.html#a94ef83291d302cc62c2f3488f1a1d8db">state48</a>)</td></tr>
+<tr class="separator:af4153167a519882f7ef4d637a49bffd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae405738b9aa68dbbc9594b325c8f727f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstxxl_1_1random__uniform__slow.html#a1ee58041d2be62128c4b97e3eda19350">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__uniform__slow.html#ae405738b9aa68dbbc9594b325c8f727f">operator()</a> () const </td></tr>
 <tr class="memdesc:ae405738b9aa68dbbc9594b325c8f727f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random number from [0.0, 1.0)  <a href="#ae405738b9aa68dbbc9594b325c8f727f">More...</a><br/></td></tr>
 <tr class="separator:ae405738b9aa68dbbc9594b325c8f727f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +148,8 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a94ef83291d302cc62c2f3488f1a1d8db"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__uniform__slow.html#a94ef83291d302cc62c2f3488f1a1d8db">state48</a> [3]</td></tr>
 <tr class="separator:a94ef83291d302cc62c2f3488f1a1d8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0cf078c94dfbe458a0ce4a0597f303"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1random__uniform__slow.html#a1f0cf078c94dfbe458a0ce4a0597f303">state48</a> [1] = (unsigned short)(seed &gt;&gt; 16)</td></tr>
+<tr class="separator:a1f0cf078c94dfbe458a0ce4a0597f303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a1ee58041d2be62128c4b97e3eda19350"></a>
@@ -160,36 +162,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00149">149</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae00c2c4ce255cc0d0d0614aaf57354d3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">stxxl::random_uniform_slow::random_uniform_slow </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00221">221</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
-
-<p>References <a class="el" href="seed_8cpp_source.html#l00073">stxxl::get_next_seed()</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00151">151</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 
 </div>
 </div>
@@ -217,6 +190,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="rand_8h_source.html#l00189">189</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4153167a519882f7ef4d637a49bffd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stxxl::random_uniform_slow::_dorand48 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstxxl_1_1random__uniform__slow.html#a94ef83291d302cc62c2f3488f1a1d8db">state48</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -269,7 +258,7 @@ Public Attributes</h2></td></tr>
 
 <p>Returns a random number from [0.0, 1.0) </p>
 
-<p>Definition at line <a class="el" href="rand_8h_source.html#l00233">233</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00231">231</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
 
 </div>
 </div>
@@ -296,6 +285,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1f0cf078c94dfbe458a0ce4a0597f303"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stxxl::random_uniform_slow::state48[2] = (unsigned short)(seed &gt;&gt; 16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rand_8h_source.html#l00224">224</a> of file <a class="el" href="rand_8h_source.html">rand.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/stxxl/bits/common/<a class="el" href="rand_8h_source.html">rand.h</a></li>
 </ul>
@@ -305,10 +308,10 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="structstxxl_1_1random__uniform__slow.html">random_uniform_slow</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:50 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:28 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

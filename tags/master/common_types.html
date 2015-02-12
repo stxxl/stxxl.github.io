@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('common_types.html','');});
 <div class="contents">
 <div class="textblock"><p>STXXL provides two very important types: <a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">stxxl::int_type</a> and <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">stxxl::unsigned_type</a>. These should be used for general counting and indexing types, as they are defined to be the size of a register on the machines: on 32-bit machines the two types are 4 bytes size, while on a 64-bit machine the two types are 8 bytes in size!</p>
 <p>The previous types are for general purpose counting. For real 64-bit integers, also on 32-bit machines, STXXL also provides a stxx::uint64 type (independent of other headers).</p>
-<p>See the file <a class="el" href="types_8h.html">common/types.h</a></p>
+<p>See the file <a class="el" href="common_2types_8h.html">common/types.h</a></p>
 <h1><a class="anchor" id="common_types_uint"></a>
 uint40 and uint48 Unsigned Integer Types</h1>
 <p>When storing file offsets in external memory, one often does not require full 64-bit indexes. Mostly, 40-bit or 48-bit are sufficient, if only &lt; 1 TiB or &lt; 16 TiB of data are processed. If one stores theses integers in five or six bytes, the total I/O volume can be reduced significantly.</p>
@@ -118,10 +118,10 @@ uint40 and uint48 Unsigned Integer Types</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Welcome to STXXL</a></li><li class="navelem"><a class="el" href="common.html">Common Utilities and Helpers</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:17 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:26:55 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

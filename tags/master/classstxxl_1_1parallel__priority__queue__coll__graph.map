@@ -1,0 +1,26 @@
+<map id="stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;" name="stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;">
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="415,295,545,324"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1swap__vector.html" title="stxxl::swap_vector\l\&lt; internal_array_type \&gt;" alt="" coords="1088,382,1243,429"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1swap__vector.html" title="Vector that avoids copying of ValueType objects in push_back() (here: swap_back()) and resize() opera..." alt="" coords="715,442,845,489"/>
+<area shape="rect" id="node17" href="$classstxxl_1_1swap__vector.html" title="stxxl::swap_vector\l\&lt; external_array_type \&gt;" alt="" coords="1085,571,1245,618"/>
+<area shape="rect" id="node50" href="$classstxxl_1_1read__write__pool.html" title="stxxl::read_write_pool\l\&lt; block_type \&gt;" alt="" coords="1561,259,1711,306"/>
+<area shape="rect" id="node53" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="712,139,848,186"/>
+<area shape="rect" id="node61" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="717,209,843,255"/>
+<area shape="rect" id="node64" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1091,259,1240,306"/>
+<area shape="rect" id="node10" href="$structstxxl_1_1parallel__priority__queue_1_1inv__compare__type.html" title="Inverse comparison functor. " alt="" coords="1040,722,1291,803"/>
+<area shape="rect" id="node14" href="$structstxxl_1_1parallel__priority__queue_1_1hint__comparator.html" title="Compares the largest value of the block hinted the latest of two external arrays. ..." alt="" coords="1511,722,1761,803"/>
+<area shape="rect" id="node40" href="$structstxxl_1_1parallel__priority__queue_1_1external__min__comparator.html" title="Compares the largest accessible value of two external arrays. " alt="" coords="1496,618,1776,699"/>
+<area shape="rect" id="node12" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::parallel_priority\l_queue::hint_comparator \&gt;" alt="" coords="2072,995,2248,1059"/>
+<area shape="rect" id="node21" href="$structstxxl_1_1winner__tree_1_1stats__type.html" title="Collection of stats from the winner_tree. " alt="" coords="1075,1051,1256,1098"/>
+<area shape="rect" id="node25" href="$classstxxl_1_1winner__tree.html" title="The class winner_tree is a binary tournament tree. " alt="" coords="1573,1017,1699,1063"/>
+<area shape="rect" id="node37" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::parallel_priority\l_queue::external_min_comparator \&gt;" alt="" coords="2045,848,2275,912"/>
+<area shape="rect" id="node23" href="$classstxxl_1_1fake__timer.html" title="Class fake_timer is a drop&#45;in replacement for timer, which does nothing. " alt="" coords="721,1277,839,1307"/>
+<area shape="rect" id="node28" href="$structstxxl_1_1parallel__priority__queue_1_1stats__type.html" title="Struct of all statistical counters and timers. Turn on/off statistics using the stats_counter and sta..." alt="" coords="2035,1218,2285,1299"/>
+<area shape="rect" id="node30" href="$classstxxl_1_1dummy__custom__stats__counter.html" title="stxxl::dummy_custom\l_stats_counter\&lt; uint64 \&gt;" alt="" coords="1553,1566,1719,1613"/>
+<area shape="rect" id="node32" href="$classstxxl_1_1dummy__custom__stats__counter.html" title="Dummy class for custom_stats_counter. " alt="" coords="1068,1566,1263,1613"/>
+<area shape="rect" id="node45" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="400,421,560,467"/>
+<area shape="rect" id="node47" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="28,421,188,467"/>
+<area shape="rect" id="node57" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; bid_type, busy\l_entry, bid_hash \&gt;" alt="" coords="405,8,555,72"/>
+<area shape="rect" id="node59" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="5,8,211,72"/>
+<area shape="rect" id="node69" href="$structstxxl_1_1random__number32__r.html" title="Fast uniform [0, 2^32) pseudo&#45;random generator with period 2^32, random bits: 32. Reentrant variant o..." alt="" coords="2072,1323,2248,1352"/>
+</map>

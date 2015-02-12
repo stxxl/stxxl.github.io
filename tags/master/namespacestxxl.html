@@ -145,6 +145,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacestxxl_1_1parallel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1parallel.html">parallel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacestxxl_1_1potentially__parallel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1potentially__parallel.html">potentially_parallel</a></td></tr>
+<tr class="memdesc:namespacestxxl_1_1potentially__parallel"><td class="mdescLeft">&#160;</td><td class="mdescRight">this namespace provides parallel or sequential algorithms depending on the compilation settings. it should be used by all components, where parallelism is optional. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacestxxl_1_1ppq__local"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1ppq__local.html">ppq_local</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacestxxl_1_1priority__queue__local"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl_1_1priority__queue__local.html">priority_queue_local</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,6 +294,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1counting__ptr.html">counting_ptr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-performance smart pointer used as a wrapping reference counting pointer.  <a href="classstxxl_1_1counting__ptr.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1custom__stats__counter.html">custom_stats_counter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provides a statistical counter that can easily be deactivated using a typedef to <a class="el" href="classstxxl_1_1dummy__custom__stats__counter.html" title="Dummy class for custom_stats_counter. ">dummy_custom_stats_counter</a>.  <a href="classstxxl_1_1custom__stats__counter.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1deque.html">deque</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A deque container. <br/>
 <b> Introduction </b> to deque container: see <a class="el" href="tutorial_deque.html">STXXL Deque</a> tutorial. <br/>
@@ -311,10 +317,16 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1double__blocked__index.html">double_blocked_index</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1dummy__custom__stats__counter.html">dummy_custom_stats_counter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy class for <a class="el" href="classstxxl_1_1custom__stats__counter.html" title="This class provides a statistical counter that can easily be deactivated using a typedef to dummy_cus...">custom_stats_counter</a>.  <a href="classstxxl_1_1dummy__custom__stats__counter.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1element__iterator__traits.html">element_iterator_traits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1external__shared__ptr.html">external_shared_ptr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class takes a shared pointer, increments its reference count and wraps it in a way that the resulting object can be copied, dumped to disk, and destroyed without affecting the refcount.  <a href="classstxxl_1_1external__shared__ptr.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1fake__timer.html">fake_timer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class <a class="el" href="classstxxl_1_1fake__timer.html" title="Class fake_timer is a drop-in replacement for timer, which does nothing. ">fake_timer</a> is a drop-in replacement for timer, which does nothing.  <a href="classstxxl_1_1fake__timer.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1file.html">file</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines interface of file.  <a href="classstxxl_1_1file.html#details">More...</a><br/></td></tr>
@@ -465,6 +477,9 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator functor adaptor.  <a href="structstxxl_1_1offset__allocator.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1onoff__switch.html">onoff_switch</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html">parallel_priority_queue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallelized External Memory Priority Queue.  <a href="classstxxl_1_1parallel__priority__queue.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1Plug.html">Plug</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -617,6 +632,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1striping.html">striping</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Striping disk allocation scheme functor.  <a href="structstxxl_1_1striping.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1swap__vector.html">swap_vector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector that avoids copying of ValueType objects in push_back() (here: <a class="el" href="classstxxl_1_1swap__vector.html#a293b2cd4e94315a5dc7269da3ddd46dd" title="Create a new value_type object at the end of the vector and then swap it with val. ">swap_back()</a>) and <a class="el" href="classstxxl_1_1swap__vector.html#a5d089305339d361f98c4ad18d5de160c" title="Resize the vector to contain at least newsize items. ">resize()</a> operations.  <a href="classstxxl_1_1swap__vector.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1swappable__block.html">swappable_block</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtualization of a block of data. Holds information for allocating and swapping. To use in cooperation with <a class="el" href="classstxxl_1_1block__scheduler.html" title="Schedules swapping of blocks and provides blocks for temporary storage. ">block_scheduler</a>.  <a href="classstxxl_1_1swappable__block.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -631,6 +649,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of file based on UNIX syscalls.  <a href="classstxxl_1_1syscall__file.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1timer.html">timer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class timer is a simple stop watch timer.  <a href="classstxxl_1_1timer.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstxxl_1_1trigger__entry__iterator.html">trigger_entry_iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -709,6 +728,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1wincall__file.html">wincall_file</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of file based on Windows native I/O calls.  <a href="classstxxl_1_1wincall__file.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1winner__tree.html">winner_tree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class <a class="el" href="classstxxl_1_1winner__tree.html" title="The class winner_tree is a binary tournament tree. ">winner_tree</a> is a binary tournament tree.  <a href="classstxxl_1_1winner__tree.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1write__pool.html">write_pool</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements dynamically resizable buffered writing pool.  <a href="classstxxl_1_1write__pool.html#details">More...</a><br/></td></tr>
@@ -898,24 +920,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a1736e8c39576d18595dc8bce187a8279"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
 <tr class="memitem:a1736e8c39576d18595dc8bce187a8279"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a1736e8c39576d18595dc8bce187a8279">insertion_sort</a> (Type *a, Type *aEnd)</td></tr>
 <tr class="separator:a1736e8c39576d18595dc8bce187a8279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20823d9598f0abda6a3c61834d8a108f"><td class="memTemplParams" colspan="2">template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:a20823d9598f0abda6a3c61834d8a108f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">is_sorted</a> (ForwardIterator first, ForwardIterator last)</td></tr>
-<tr class="separator:a20823d9598f0abda6a3c61834d8a108f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73071f0e82468c092441792d4feaccd4"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIterator , typename StrictWeakOrdering &gt; </td></tr>
+<tr class="memitem:a73071f0e82468c092441792d4feaccd4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a73071f0e82468c092441792d4feaccd4">is_heap</a> (RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp=std::less&lt; typename std::iterator_traits&lt; RandomAccessIterator &gt;::value_type &gt;())</td></tr>
+<tr class="separator:a73071f0e82468c092441792d4feaccd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7870b6bc46bebb827e1ff6bd724ac64e"><td class="memTemplParams" colspan="2">template&lt;class ForwardIterator , class StrictWeakOrdering &gt; </td></tr>
 <tr class="memitem:a7870b6bc46bebb827e1ff6bd724ac64e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a7870b6bc46bebb827e1ff6bd724ac64e">is_sorted</a> (ForwardIterator first, ForwardIterator last, StrictWeakOrdering comp)</td></tr>
 <tr class="separator:a7870b6bc46bebb827e1ff6bd724ac64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20823d9598f0abda6a3c61834d8a108f"><td class="memTemplParams" colspan="2">template&lt;class ForwardIterator &gt; </td></tr>
+<tr class="memitem:a20823d9598f0abda6a3c61834d8a108f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a20823d9598f0abda6a3c61834d8a108f">is_sorted</a> (ForwardIterator first, ForwardIterator last)</td></tr>
+<tr class="separator:a20823d9598f0abda6a3c61834d8a108f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga753a7428dcca564738d812649ac3b10f"><td class="memTemplParams" colspan="2">template&lt;typename ValueType , typename AllocStr , typename SizeType , typename DiffType , unsigned BlockSize, typename PagerType , unsigned PageSize&gt; </td></tr>
 <tr class="memitem:ga753a7428dcca564738d812649ac3b10f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stlcont__vector.html#ga753a7428dcca564738d812649ac3b10f">is_sorted</a> (<a class="el" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt; first, <a class="el" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt; last)</td></tr>
 <tr class="separator:ga753a7428dcca564738d812649ac3b10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c6dcd30d30f164dbd99ab83996652e0"><td class="memTemplParams" colspan="2">template&lt;typename ValueType , typename AllocStr , typename SizeType , typename DiffType , unsigned BlockSize, typename PagerType , unsigned PageSize, typename StrictWeakOrdering &gt; </td></tr>
 <tr class="memitem:ga7c6dcd30d30f164dbd99ab83996652e0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stlcont__vector.html#ga7c6dcd30d30f164dbd99ab83996652e0">is_sorted</a> (<a class="el" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt; first, <a class="el" href="classstxxl_1_1vector__iterator.html">stxxl::vector_iterator</a>&lt; ValueType, AllocStr, SizeType, DiffType, BlockSize, PagerType, PageSize &gt; last, StrictWeakOrdering comp)</td></tr>
 <tr class="separator:ga7c6dcd30d30f164dbd99ab83996652e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e2a578238518c1bdd918e4e21facf0"><td class="memTemplParams" colspan="2">template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:ab2e2a578238518c1bdd918e4e21facf0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#ab2e2a578238518c1bdd918e4e21facf0">is_sorted_helper</a> (ForwardIterator first, ForwardIterator last)</td></tr>
-<tr class="separator:ab2e2a578238518c1bdd918e4e21facf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718fffc5f42ca792c7107ed7c7d88197"><td class="memTemplParams" colspan="2">template&lt;class ForwardIterator , class StrictWeakOrdering &gt; </td></tr>
-<tr class="memitem:a718fffc5f42ca792c7107ed7c7d88197"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a718fffc5f42ca792c7107ed7c7d88197">is_sorted_helper</a> (ForwardIterator first, ForwardIterator last, StrictWeakOrdering comp)</td></tr>
-<tr class="separator:a718fffc5f42ca792c7107ed7c7d88197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf9b40c5c99c17e08bd8fd59b979b84b5"><td class="memTemplParams" colspan="2">template&lt;typename ExtIterator , typename KeyExtractor &gt; </td></tr>
 <tr class="memitem:gaf9b40c5c99c17e08bd8fd59b979b84b5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stlalgo.html#gaf9b40c5c99c17e08bd8fd59b979b84b5">ksort</a> (ExtIterator first, ExtIterator last, KeyExtractor keyobj, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M)</td></tr>
 <tr class="memdesc:gaf9b40c5c99c17e08bd8fd59b979b84b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort records with integer keys, see <a class="el" href="design_algo_ksort.html">stxxl::ksort -- Sorting Integer Keys</a>.  <a href="group__stlalgo.html#gaf9b40c5c99c17e08bd8fd59b979b84b5">More...</a><br/></td></tr>
@@ -1044,6 +1063,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae6f8a8ce6a86762e25a75ac0b3d162f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5980d3f5e0e1a999f8cd3cbe843e3c03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a5980d3f5e0e1a999f8cd3cbe843e3c03">print_msg</a> (const char *label, const std::string &amp;msg, unsigned flags)</td></tr>
 <tr class="separator:a5980d3f5e0e1a999f8cd3cbe843e3c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa826495b0fb0b7ee22ac59425cb2731a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#aa826495b0fb0b7ee22ac59425cb2731a">print_stacktrace</a> (FILE *out=stderr, unsigned int max_frames=64)</td></tr>
+<tr class="separator:aa826495b0fb0b7ee22ac59425cb2731a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7bc11399d75f409abdcaa3c7c070f248"><td class="memTemplParams" colspan="2">template&lt;typename ExtIterator , typename RandomNumberGenerator , unsigned BlockSize, unsigned PageSize, typename AllocStrategy &gt; </td></tr>
 <tr class="memitem:ga7bc11399d75f409abdcaa3c7c070f248"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">random_shuffle</a> (ExtIterator first, ExtIterator last, RandomNumberGenerator &amp;rand, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M, AllocStrategy AS=<a class="el" href="group__alloc.html#ga7156e0a94c76f1be7aa15af04cee9580">STXXL_DEFAULT_ALLOC_STRATEGY</a>())</td></tr>
 <tr class="memdesc:ga7bc11399d75f409abdcaa3c7c070f248"><td class="mdescLeft">&#160;</td><td class="mdescRight">External equivalent of std::random_shuffle.  <a href="group__stlalgo.html#ga7bc11399d75f409abdcaa3c7c070f248">More...</a><br/></td></tr>
@@ -1058,6 +1079,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga3bfd90f2ebc938e009ca654d4c444e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc0c55b6dbe5dfb475dd0916401f472"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#abfc0c55b6dbe5dfb475dd0916401f472">register_exit_handler</a> (void(*function)(void))</td></tr>
 <tr class="separator:abfc0c55b6dbe5dfb475dd0916401f472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c03ae958321bf55f340838ff630e40"><td class="memTemplParams" colspan="2">template&lt;typename Integral &gt; </td></tr>
+<tr class="memitem:aa3c03ae958321bf55f340838ff630e40"><td class="memTemplItemLeft" align="right" valign="top">static Integral&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#aa3c03ae958321bf55f340838ff630e40">round_up_to_power_of_two</a> (Integral n)</td></tr>
+<tr class="separator:aa3c03ae958321bf55f340838ff630e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e11ad4b267e4cf7285a8e4411ac9f7"><td class="memTemplParams" colspan="2">template&lt;typename Integral &gt; </td></tr>
 <tr class="memitem:a78e11ad4b267e4cf7285a8e4411ac9f7"><td class="memTemplItemLeft" align="right" valign="top">Integral&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a78e11ad4b267e4cf7285a8e4411ac9f7">round_up_to_power_of_two</a> (Integral n, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> power)</td></tr>
 <tr class="memdesc:a78e11ad4b267e4cf7285a8e4411ac9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">round n up to next larger multiple of 2^power. example: (48,4) = 64, (48,3) = 48.  <a href="#a78e11ad4b267e4cf7285a8e4411ac9f7">More...</a><br/></td></tr>
@@ -1094,9 +1118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a662fd1004cafc334a254cb4a479f455b"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#a662fd1004cafc334a254cb4a479f455b">split</a> (const std::string &amp;str, const std::string &amp;sep, unsigned int min_fields=0, unsigned int limit_fields=std::numeric_limits&lt; unsigned int &gt;::<a class="el" href="uint__types_8h.html#a0cfacbbf6e846521326f5de5ba3ecd05">max</a>())</td></tr>
 <tr class="memdesc:a662fd1004cafc334a254cb4a479f455b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a string by given separator string. Returns a vector of strings with at least min_fields and at most limit_fields.  <a href="#a662fd1004cafc334a254cb4a479f455b">More...</a><br/></td></tr>
 <tr class="separator:a662fd1004cafc334a254cb4a479f455b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3171c17eb76148e2b53ddcc4d0dd55c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__support.html#ga3171c17eb76148e2b53ddcc4d0dd55c5">srandom_number32</a> (unsigned seed=0)</td></tr>
-<tr class="memdesc:ga3171c17eb76148e2b53ddcc4d0dd55c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a seed value for <code><a class="el" href="structstxxl_1_1random__number32.html" title="Fast uniform [0, 2^32) pseudo-random generator with period 2^32, random bits: 32. ...">random_number32</a></code>.  <a href="group__support.html#ga3171c17eb76148e2b53ddcc4d0dd55c5">More...</a><br/></td></tr>
-<tr class="separator:ga3171c17eb76148e2b53ddcc4d0dd55c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga441c8002485af561d532eba369cee93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__support.html#ga441c8002485af561d532eba369cee93c">srandom_number32</a> (unsigned seed=<a class="el" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">get_next_seed</a>())</td></tr>
+<tr class="memdesc:ga441c8002485af561d532eba369cee93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a seed value for <code><a class="el" href="structstxxl_1_1random__number32.html" title="Fast uniform [0, 2^32) pseudo-random generator with period 2^32, random bits: 32. ...">random_number32</a></code>.  <a href="group__support.html#ga441c8002485af561d532eba369cee93c">More...</a><br/></td></tr>
+<tr class="separator:ga441c8002485af561d532eba369cee93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb4e1661f7596f1926f52b380692eac3"><td class="memTemplParams" colspan="2">template&lt;typename ExtIterator &gt; </td></tr>
 <tr class="memitem:gafb4e1661f7596f1926f52b380692eac3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stlalgo.html#gafb4e1661f7596f1926f52b380692eac3">stable_ksort</a> (ExtIterator first, ExtIterator last, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> M)</td></tr>
 <tr class="memdesc:gafb4e1661f7596f1926f52b380692eac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort records with integer keys.  <a href="group__stlalgo.html#gafb4e1661f7596f1926f52b380692eac3">More...</a><br/></td></tr>
@@ -1124,6 +1148,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa2ab65067b5097af29416d45c6ea860"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
 <tr class="memitem:aaa2ab65067b5097af29416d45c6ea860"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestxxl.html#aaa2ab65067b5097af29416d45c6ea860">swap_1D_arrays</a> (Type *a, Type *b, <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> size)</td></tr>
 <tr class="separator:aaa2ab65067b5097af29416d45c6ea860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade0f470d501b99a998f6b2d113e8a3a1"><td class="memTemplParams" colspan="2">template&lt;class ForwardIterator , class UnaryPredicate &gt; </td></tr>
+<tr class="memitem:gade0f470d501b99a998f6b2d113e8a3a1"><td class="memTemplItemLeft" align="right" valign="top">ForwardIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__support.html#gade0f470d501b99a998f6b2d113e8a3a1">swap_remove_if</a> (ForwardIterator first, ForwardIterator last, UnaryPredicate pred)</td></tr>
+<tr class="memdesc:gade0f470d501b99a998f6b2d113e8a3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the range [first,last) into a range with all the elements for which pred returns true removed, and returns an iterator to the new end of that range.  <a href="group__support.html#gade0f470d501b99a998f6b2d113e8a3a1">More...</a><br/></td></tr>
+<tr class="separator:gade0f470d501b99a998f6b2d113e8a3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae389752543aaf71fb020ad8e33b78854"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__support.html#gae389752543aaf71fb020ad8e33b78854">timestamp</a> ()</td></tr>
 <tr class="memdesc:gae389752543aaf71fb020ad8e33b78854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of seconds since the epoch, high resolution.  <a href="group__support.html#gae389752543aaf71fb020ad8e33b78854">More...</a><br/></td></tr>
 <tr class="separator:gae389752543aaf71fb020ad8e33b78854"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1181,7 +1209,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a2">examples/applications/skew3.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="types_8h_source.html#l00067">67</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00067">67</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1223,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00034">34</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00034">34</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1237,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00036">36</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00036">36</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1251,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00038">38</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00038">38</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00032">32</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00032">32</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1279,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00063">63</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00063">63</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1266,7 +1294,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a1">examples/applications/skew3.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="types_8h_source.html#l00066">66</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00066">66</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1308,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="settings_8h_source.html#l00035">35</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2settings_8h_source.html#l00035">35</a> of file <a class="el" href="common_2settings_8h_source.html">settings.h</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1322,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00035">35</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00035">35</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1336,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00037">37</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00037">37</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1323,7 +1351,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a0">examples/applications/skew3.cpp</a>, and <a class="el" href="examples_2containers_2vector_buf_8cpp-example.html#a0">examples/containers/vector_buf.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="types_8h_source.html#l00039">39</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00039">39</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1337,7 +1365,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00033">33</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00033">33</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1379,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00064">64</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00064">64</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1398,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00043">43</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="common_2types_8h_source.html#l00043">43</a> of file <a class="el" href="common_2types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1457,7 @@ template&lt;size_t Alignment&gt; </div>
 
 <p>Definition at line <a class="el" href="aligned__alloc_8h_source.html#l00048">48</a> of file <a class="el" href="aligned__alloc_8h_source.html">aligned_alloc.h</a>.</p>
 
-<p>References <a class="el" href="utils_8h_source.html#l00199">div_ceil()</a>, <a class="el" href="verbose_8h_source.html#l00080">STXXL_ERRMSG</a>, <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>, and <a class="el" href="aligned__alloc_8h_source.html#l00023">STXXL_VERBOSE_ALIGNED_ALLOC</a>.</p>
+<p>References <a class="el" href="utils_8h_source.html#l00199">div_ceil()</a>, <a class="el" href="malloc__count_8cpp_source.html#l00184">free()</a>, <a class="el" href="malloc__count_8cpp_source.html#l00137">malloc()</a>, <a class="el" href="malloc__count_8cpp_source.html#l00236">realloc()</a>, <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>, <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>, and <a class="el" href="aligned__alloc_8h_source.html#l00023">STXXL_VERBOSE_ALIGNED_ALLOC</a>.</p>
 
 </div>
 </div>
@@ -1459,7 +1487,7 @@ template&lt;size_t Alignment&gt; </div>
 
 <p>Definition at line <a class="el" href="aligned__alloc_8h_source.html#l00117">117</a> of file <a class="el" href="aligned__alloc_8h_source.html">aligned_alloc.h</a>.</p>
 
-<p>References <a class="el" href="aligned__alloc_8h_source.html#l00023">STXXL_VERBOSE_ALIGNED_ALLOC</a>.</p>
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00184">free()</a>, and <a class="el" href="aligned__alloc_8h_source.html#l00023">STXXL_VERBOSE_ALIGNED_ALLOC</a>.</p>
 
 </div>
 </div>
@@ -1568,9 +1596,9 @@ template&lt;size_t Alignment&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel_8h_source.html#l00096">96</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00082">82</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00080">STXXL_ERRMSG</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
 
 <p>Referenced by <a class="el" href="intksort_8h_source.html#l00261">cleanup()</a>, <a class="el" href="sort__stream_8h_source.html#l00168">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sort_8h_source.html#l00070">stxxl::sort_local::create_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00114">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize, alloc_strategy_type &gt;::sort_run()</a>, <a class="el" href="sort__stream_8h_source.html#l00489">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::sort_run()</a>, <a class="el" href="pq__helpers_8h_source.html#l00170">stxxl::priority_queue_local::internal_priority_queue&lt; value_type, std::vector&lt; value_type &gt;, comparator_type &gt;::sort_to()</a>, and <a class="el" href="inmemsort_8h_source.html#l00029">stl_in_memory_sort()</a>.</p>
 
@@ -1812,7 +1840,7 @@ template&lt;class Type &gt; </div>
 
 <p>Definition at line <a class="el" href="intksort_8h_source.html#l00261">261</a> of file <a class="el" href="intksort_8h_source.html">intksort.h</a>.</p>
 
-<p>References <a class="el" href="parallel_8h_source.html#l00096">check_sort_settings()</a>, <a class="el" href="intksort_8h_source.html#l00228">insertion_sort()</a>, <a class="el" href="sort_8h_source.html#l00674">sort()</a>, <a class="el" href="intksort_8h_source.html#l00076">sort2()</a>, <a class="el" href="intksort_8h_source.html#l00084">sort3()</a>, <a class="el" href="intksort_8h_source.html#l00130">sort4()</a>, and <a class="el" href="intksort_8h_source.html#l00182">sort5()</a>.</p>
+<p>References <a class="el" href="parallel_8h_source.html#l00082">check_sort_settings()</a>, <a class="el" href="intksort_8h_source.html#l00228">insertion_sort()</a>, <a class="el" href="sort_8h_source.html#l00676">sort()</a>, <a class="el" href="intksort_8h_source.html#l00076">sort2()</a>, <a class="el" href="intksort_8h_source.html#l00084">sort3()</a>, <a class="el" href="intksort_8h_source.html#l00130">sort4()</a>, and <a class="el" href="intksort_8h_source.html#l00182">sort5()</a>.</p>
 
 <p>Referenced by <a class="el" href="intksort_8h_source.html#l00317">l1sort()</a>.</p>
 
@@ -1862,9 +1890,9 @@ template&lt;class Type &gt; </div>
 
 <p>Definition at line <a class="el" href="async__schedule_8cpp_source.html#l00168">168</a> of file <a class="el" href="async__schedule_8cpp_source.html">async_schedule.cpp</a>.</p>
 
-<p>References <a class="el" href="parallel_8h_source.html#l00050">_STXXL_FORCE_SEQUENTIAL</a>, <a class="el" href="async__schedule_8cpp_source.html#l00073">stxxl::async_schedule_local::simulate_async_write()</a>, <a class="el" href="unused_8h_source.html#l00022">STXXL_UNUSED()</a>, and <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="parallel_8h_source.html#l00034">_STXXL_FORCE_SEQUENTIAL</a>, <a class="el" href="async__schedule_8cpp_source.html#l00073">stxxl::async_schedule_local::simulate_async_write()</a>, <a class="el" href="unused_8h_source.html#l00022">STXXL_UNUSED()</a>, and <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
-<p>Referenced by <a class="el" href="buf__istream_8h_source.html#l00061">stxxl::buf_istream&lt; BlockType, BidIteratorType &gt;::buf_istream()</a>, <a class="el" href="buf__istream__reverse_8h_source.html#l00068">stxxl::buf_istream_reverse&lt; BlockType, BidIteratorType &gt;::buf_istream_reverse()</a>, <a class="el" href="async__schedule_8h_source.html#l00035">compute_prefetch_schedule()</a>, <a class="el" href="sort__stream_8h_source.html#l01125">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, and <a class="el" href="ksort_8h_source.html#l00443">stxxl::ksort_local::merge_runs()</a>.</p>
+<p>Referenced by <a class="el" href="buf__istream_8h_source.html#l00061">stxxl::buf_istream&lt; BlockType, BidIteratorType &gt;::buf_istream()</a>, <a class="el" href="buf__istream__reverse_8h_source.html#l00068">stxxl::buf_istream_reverse&lt; BlockType, BidIteratorType &gt;::buf_istream_reverse()</a>, <a class="el" href="async__schedule_8h_source.html#l00035">compute_prefetch_schedule()</a>, <a class="el" href="sort__stream_8h_source.html#l01127">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, and <a class="el" href="ksort_8h_source.html#l00443">stxxl::ksort_local::merge_runs()</a>.</p>
 
 </div>
 </div>
@@ -2075,7 +2103,7 @@ template&lt;typename TypeKey &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a13">examples/applications/skew3.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2applications_2skew3_8cpp-example.html#a15">examples/applications/skew3.cpp</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="intksort_8h_source.html#l00026">26</a> of file <a class="el" href="intksort_8h_source.html">intksort.h</a>.</p>
 
@@ -2209,7 +2237,7 @@ template&lt;typename Integral , typename Integral2 &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8h_source.html#l00199">199</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vector_8h_source.html#l01112">stxxl::vector&lt; ValueType &gt;::_resize()</a>, <a class="el" href="vector_8h_source.html#l01130">stxxl::vector&lt; ValueType &gt;::_resize_shrink_capacity()</a>, <a class="el" href="aligned__alloc_8h_source.html#l00048">aligned_alloc()</a>, <a class="el" href="btree_8h_source.html#l00263">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;::bulk_construction()</a>, <a class="el" href="sort__stream_8h_source.html#l00168">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sort__stream_8h_source.html#l00497">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01334">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, <a class="el" href="sort__stream_8h_source.html#l00620">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::push()</a>, <a class="el" href="vector_8h_source.html#l01057">stxxl::vector&lt; ValueType &gt;::reserve()</a>, <a class="el" href="vector_8h_source.html#l01554">stxxl::vector&lt; ValueType &gt;::set_content()</a>, <a class="el" href="matrix_8h_source.html#l01154">stxxl::matrix&lt; ValueType, BlockSideLength &gt;::set_zero()</a>, <a class="el" href="sort_8h_source.html#l00513">stxxl::sort_local::sort_blocks()</a>, and <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>.</p>
+<p>Referenced by <a class="el" href="vector_8h_source.html#l01112">stxxl::vector&lt; ValueType &gt;::_resize()</a>, <a class="el" href="vector_8h_source.html#l01130">stxxl::vector&lt; ValueType &gt;::_resize_shrink_capacity()</a>, <a class="el" href="aligned__alloc_8h_source.html#l00048">aligned_alloc()</a>, <a class="el" href="btree_8h_source.html#l00263">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;::bulk_construction()</a>, <a class="el" href="sort__stream_8h_source.html#l00168">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sort__stream_8h_source.html#l00497">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l00681">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;::int_memory()</a>, <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01336">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, <a class="el" href="sort__stream_8h_source.html#l00620">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::push()</a>, <a class="el" href="vector_8h_source.html#l01057">stxxl::vector&lt; ValueType &gt;::reserve()</a>, <a class="el" href="vector_8h_source.html#l01554">stxxl::vector&lt; ValueType &gt;::set_content()</a>, <a class="el" href="matrix_8h_source.html#l01154">stxxl::matrix&lt; ValueType, BlockSideLength &gt;::set_zero()</a>, <a class="el" href="sort_8h_source.html#l00515">stxxl::sort_local::sort_blocks()</a>, and <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>.</p>
 
 </div>
 </div>
@@ -2234,11 +2262,11 @@ template&lt;typename Integral , typename Integral2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel_8h_source.html#l00115">115</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00102">102</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
 
-<p>References <a class="el" href="settings_8h_source.html#l00029">stxxl::settings&lt; MustBeInt &gt;::native_merge</a>.</p>
+<p>References <a class="el" href="common_2settings_8h_source.html#l00029">stxxl::settings&lt; MustBeInt &gt;::native_merge</a>.</p>
 
-<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="sort__stream_8h_source.html#l01125">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, and <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>.</p>
+<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="sort__stream_8h_source.html#l01127">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, and <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>.</p>
 
 </div>
 </div>
@@ -2326,7 +2354,7 @@ template&lt;typename Integral , typename Integral2 &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8cpp_source.html#l00111">111</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="timer_8h_source.html#l00159">stxxl::scoped_print_timer::~scoped_print_timer()</a>.</p>
+<p>Referenced by <a class="el" href="custom__stats_8h_source.html#l00092">stxxl::custom_stats_counter&lt; ValueType &gt;::as_memory_amount()</a>, and <a class="el" href="timer_8h_source.html#l00250">stxxl::scoped_print_timer::~scoped_print_timer()</a>.</p>
 
 </div>
 </div>
@@ -2412,8 +2440,6 @@ template&lt;typename Integral , typename Integral2 &gt; </div>
 <p>Definition at line <a class="el" href="seed_8cpp_source.html#l00073">73</a> of file <a class="el" href="seed_8cpp_source.html">seed.cpp</a>.</p>
 
 <p>References <a class="el" href="seed_8cpp_source.html#l00042">seed_generator()</a>.</p>
-
-<p>Referenced by <a class="el" href="rand_8h_source.html#l00081">stxxl::random_number32_r::random_number32_r()</a>, <a class="el" href="rand_8h_source.html#l00221">stxxl::random_uniform_slow::random_uniform_slow()</a>, and <a class="el" href="rand_8h_source.html#l00066">srandom_number32()</a>.</p>
 
 </div>
 </div>
@@ -2501,7 +2527,7 @@ template&lt;typename IntegerType &gt; </div>
 
 <p>References <a class="el" href="utils_8h_source.html#l00178">ilog2_floor()</a>.</p>
 
-<p>Referenced by <a class="el" href="matrix__arithmetic_8h_source.html#l01531">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::choose_level_for_feedable_sw()</a>, <a class="el" href="ksort_8h_source.html#l00181">stxxl::ksort_local::create_runs()</a>, <a class="el" href="losertree_8h_source.html#l00062">stxxl::loser_tree&lt; RunCursorType, RunCursorCmpType &gt;::loser_tree()</a>, <a class="el" href="matrix__arithmetic_8h_source.html#l01514">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add()</a>, <a class="el" href="matrix__arithmetic_8h_source.html#l01425">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add_block_grained()</a>, and <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>.</p>
+<p>Referenced by <a class="el" href="matrix__arithmetic_8h_source.html#l01531">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::choose_level_for_feedable_sw()</a>, <a class="el" href="ksort_8h_source.html#l00181">stxxl::ksort_local::create_runs()</a>, <a class="el" href="algo_2losertree_8h_source.html#l00062">stxxl::loser_tree&lt; RunCursorType, RunCursorCmpType &gt;::loser_tree()</a>, <a class="el" href="matrix__arithmetic_8h_source.html#l01514">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add()</a>, <a class="el" href="matrix__arithmetic_8h_source.html#l01425">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add_block_grained()</a>, <a class="el" href="winner__tree_8h_source.html#l00271">stxxl::winner_tree&lt; stxxl::parallel_priority_queue::external_min_comparator &gt;::resize()</a>, <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>, and <a class="el" href="winner__tree_8h_source.html#l00087">stxxl::winner_tree&lt; stxxl::parallel_priority_queue::external_min_comparator &gt;::winner_tree()</a>.</p>
 
 </div>
 </div>
@@ -2525,7 +2551,7 @@ template&lt;typename IntegerType &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8h_source.html#l00178">178</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00181">stxxl::ksort_local::create_runs()</a>, <a class="el" href="utils_8h_source.html#l00188">ilog2_ceil()</a>, and <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00181">stxxl::ksort_local::create_runs()</a>, <a class="el" href="winner__tree_8h_source.html#l00234">stxxl::winner_tree&lt; stxxl::parallel_priority_queue::external_min_comparator &gt;::double_num_slots()</a>, <a class="el" href="utils_8h_source.html#l00188">ilog2_ceil()</a>, and <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>.</p>
 
 </div>
 </div>
@@ -2596,23 +2622,29 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a20823d9598f0abda6a3c61834d8a108f"></a>
+<a class="anchor" id="a73071f0e82468c092441792d4feaccd4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ForwardIterator &gt; </div>
+template&lt;typename RandomAccessIterator , typename StrictWeakOrdering &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool stxxl::is_sorted </td>
+          <td class="memname">bool stxxl::is_heap </td>
           <td>(</td>
-          <td class="paramtype">ForwardIterator&#160;</td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
           <td class="paramname"><em>first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ForwardIterator&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StrictWeakOrdering&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>std::less&lt;typename&#160;std::iterator_traits&lt;RandomAccessIterator&gt;&#160;::value_type&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2621,13 +2653,10 @@ template&lt;class ForwardIterator &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2algo_2copy_and_sort_file_8cpp-example.html#a17">examples/algo/copy_and_sort_file.cpp</a>, and <a class="el" href="examples_2algo_2sort_file_8cpp-example.html#a13">examples/algo/sort_file.cpp</a>.</dd>
-</dl>
-<p>Definition at line <a class="el" href="is__sorted_8h_source.html#l00053">53</a> of file <a class="el" href="is__sorted_8h_source.html">is_sorted.h</a>.</p>
 
-<p>References <a class="el" href="is__sorted_8h_source.html#l00022">is_sorted_helper()</a>.</p>
+<p>Definition at line <a class="el" href="is__heap_8h_source.html#l00023">23</a> of file <a class="el" href="is__heap_8h_source.html">is_heap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00344">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00207">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00873">stxxl::stream::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="ksort_8h_source.html#l00725">ksort()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>, <a class="el" href="sort__stream_8h_source.html#l01295">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::operator++()</a>, <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>, <a class="el" href="priority__queue_8h_source.html#l00452">stxxl::priority_queue&lt; ConfigType &gt;::refill_group_buffer()</a>, and <a class="el" href="sort_8h_source.html#l00674">sort()</a>.</p>
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l02419">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::check_invariants()</a>.</p>
 
 </div>
 </div>
@@ -2662,21 +2691,22 @@ template&lt;class ForwardIterator , class StrictWeakOrdering &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2algo_2copy_and_sort_file_8cpp-example.html#a17">examples/algo/copy_and_sort_file.cpp</a>, and <a class="el" href="examples_2algo_2sort_file_8cpp-example.html#a13">examples/algo/sort_file.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="is__sorted_8h_source.html#l00024">24</a> of file <a class="el" href="is__sorted_8h_source.html">is_sorted.h</a>.</p>
 
-<p>Definition at line <a class="el" href="is__sorted_8h_source.html#l00059">59</a> of file <a class="el" href="is__sorted_8h_source.html">is_sorted.h</a>.</p>
-
-<p>References <a class="el" href="is__sorted_8h_source.html#l00022">is_sorted_helper()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00344">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00207">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l00873">stxxl::stream::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="is__sorted_8h_source.html#l00040">is_sorted()</a>, <a class="el" href="ksort_8h_source.html#l00725">ksort()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, <a class="el" href="multiway__merge_8h_source.html#l00465">stxxl::parallel::multiway_merge_3_combined()</a>, <a class="el" href="multiway__merge_8h_source.html#l00674">stxxl::parallel::multiway_merge_4_combined()</a>, <a class="el" href="multiway__merge_8h_source.html#l01126">stxxl::parallel::multiway_merge_loser_tree_combined()</a>, <a class="el" href="multiway__merge_8h_source.html#l01180">stxxl::parallel::multiway_merge_loser_tree_sentinel()</a>, <a class="el" href="sort__stream_8h_source.html#l01297">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::operator++()</a>, <a class="el" href="priority__queue_8h_source.html#l00511">stxxl::priority_queue&lt; ConfigType &gt;::refill_delete_buffer()</a>, <a class="el" href="priority__queue_8h_source.html#l00452">stxxl::priority_queue&lt; ConfigType &gt;::refill_group_buffer()</a>, <a class="el" href="multiway__merge_8h_source.html#l01231">stxxl::parallel::sequential_multiway_merge()</a>, and <a class="el" href="sort_8h_source.html#l00676">sort()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab2e2a578238518c1bdd918e4e21facf0"></a>
+<a class="anchor" id="a20823d9598f0abda6a3c61834d8a108f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ForwardIterator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool stxxl::is_sorted_helper </td>
+          <td class="memname">bool stxxl::is_sorted </td>
           <td>(</td>
           <td class="paramtype">ForwardIterator&#160;</td>
           <td class="paramname"><em>first</em>, </td>
@@ -2695,45 +2725,9 @@ template&lt;class ForwardIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="is__sorted_8h_source.html#l00022">22</a> of file <a class="el" href="is__sorted_8h_source.html">is_sorted.h</a>.</p>
+<p>Definition at line <a class="el" href="is__sorted_8h_source.html#l00040">40</a> of file <a class="el" href="is__sorted_8h_source.html">is_sorted.h</a>.</p>
 
-<p>Referenced by <a class="el" href="is__sorted_8h_source.html#l00053">is_sorted()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a718fffc5f42ca792c7107ed7c7d88197"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ForwardIterator , class StrictWeakOrdering &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool stxxl::is_sorted_helper </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIterator&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIterator&#160;</td>
-          <td class="paramname"><em>last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">StrictWeakOrdering&#160;</td>
-          <td class="paramname"><em>comp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="is__sorted_8h_source.html#l00037">37</a> of file <a class="el" href="is__sorted_8h_source.html">is_sorted.h</a>.</p>
+<p>References <a class="el" href="is__sorted_8h_source.html#l00024">is_sorted()</a>.</p>
 
 </div>
 </div>
@@ -2915,7 +2909,7 @@ template&lt;typename Iterator &gt; </div>
 
 <p>Definition at line <a class="el" href="algo_2adaptor_8h_source.html#l00239">239</a> of file <a class="el" href="algo_2adaptor_8h_source.html">adaptor.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l00168">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sort__stream_8h_source.html#l00497">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sorted__runs_8h_source.html#l00110">stxxl::stream::sorted_runs&lt; TriggerEntryType, CompareType &gt;::deallocate_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l00817">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::finish()</a>, <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01334">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, <a class="el" href="sort__stream_8h_source.html#l00620">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::push()</a>, <a class="el" href="sort__stream_8h_source.html#l00784">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::push()</a>, and <a class="el" href="sort_8h_source.html#l00513">stxxl::sort_local::sort_blocks()</a>.</p>
+<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l00168">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sort__stream_8h_source.html#l00497">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::compute_result()</a>, <a class="el" href="sorted__runs_8h_source.html#l00110">stxxl::stream::sorted_runs&lt; TriggerEntryType, CompareType &gt;::deallocate_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l00817">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::finish()</a>, <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01336">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, <a class="el" href="sort__stream_8h_source.html#l00620">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::push()</a>, <a class="el" href="sort__stream_8h_source.html#l00784">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::push()</a>, and <a class="el" href="sort_8h_source.html#l00515">stxxl::sort_local::sort_blocks()</a>.</p>
 
 </div>
 </div>
@@ -2953,7 +2947,7 @@ template&lt;typename Iterator &gt; </div>
 
 <p>Definition at line <a class="el" href="wfs__file__base_8cpp_source.html#l00032">32</a> of file <a class="el" href="wfs__file__base_8cpp_source.html">wfs_file_base.cpp</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00080">STXXL_ERRMSG</a>, <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>, and <a class="el" href="error__handling_8h_source.html#l00135">STXXL_THROW_WIN_LASTERROR</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>, <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>, and <a class="el" href="error__handling_8h_source.html#l00135">STXXL_THROW_WIN_LASTERROR</a>.</p>
 
 <p>Referenced by <a class="el" href="wfs__file__base_8cpp_source.html#l00191">stxxl::wfs_file_base::set_size()</a>, and <a class="el" href="wfs__file__base_8cpp_source.html#l00114">stxxl::wfs_file_base::wfs_file_base()</a>.</p>
 
@@ -3121,7 +3115,7 @@ template&lt;class Type1 , class Type2 &gt; </div>
 
 <p>Definition at line <a class="el" href="sort__base_8h_source.html#l00040">40</a> of file <a class="el" href="sort__base_8h_source.html">sort_base.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01334">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, and <a class="el" href="sort_8h_source.html#l00513">stxxl::sort_local::sort_blocks()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01336">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, and <a class="el" href="sort_8h_source.html#l00515">stxxl::sort_local::sort_blocks()</a>.</p>
 
 </div>
 </div>
@@ -3160,7 +3154,7 @@ template&lt;class Type1 , class Type2 &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8cpp_source.html#l00024">24</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="config_8cpp_source.html#l00259">stxxl::disk_config::parse_line()</a>, <a class="el" href="cmdline_8h_source.html#l00218">stxxl::cmdline_parser::argument_bytes32::process()</a>, and <a class="el" href="cmdline_8h_source.html#l00251">stxxl::cmdline_parser::argument_bytes64::process()</a>.</p>
+<p>Referenced by <a class="el" href="config_8cpp_source.html#l00259">stxxl::disk_config::parse_line()</a>, <a class="el" href="cmdline_8h_source.html#l00262">stxxl::cmdline_parser::argument_bytes32::process()</a>, and <a class="el" href="cmdline_8h_source.html#l00298">stxxl::cmdline_parser::argument_bytes64::process()</a>.</p>
 
 </div>
 </div>
@@ -3188,7 +3182,7 @@ template&lt;class Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utils_8h_source.html#l00269">269</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="utils_8h_source.html#l00279">279</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -3216,7 +3210,7 @@ template&lt;class Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utils_8h_source.html#l00285">285</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="utils_8h_source.html#l00295">295</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 <p>Referenced by <a class="el" href="deque_8h_source.html#l00664">stxxl::deque&lt; ValueType, VectorType &gt;::resize()</a>.</p>
 
@@ -3246,7 +3240,7 @@ template&lt;class Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utils_8h_source.html#l00293">293</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="utils_8h_source.html#l00303">303</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 <p>Referenced by <a class="el" href="block__scheduler_8h_source.html#l01657">stxxl::block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::evictable_blocks_pop()</a>, <a class="el" href="block__scheduler_8h_source.html#l01503">stxxl::block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::schedule_next_operations()</a>, and <a class="el" href="block__scheduler_8h_source.html#l01638">stxxl::block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::~block_scheduler_algorithm_offline_lru_prefetching()</a>.</p>
 
@@ -3276,7 +3270,7 @@ template&lt;class Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utils_8h_source.html#l00277">277</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p>Definition at line <a class="el" href="utils_8h_source.html#l00287">287</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -3305,7 +3299,7 @@ template&lt;class Container &gt; </div>
 
 <p>Definition at line <a class="el" href="bits_2version_8h_source.html#l00088">88</a> of file <a class="el" href="bits_2version_8h_source.html">version.h</a>.</p>
 
-<p>References <a class="el" href="bits_2version_8h_source.html#l00076">check_library_version()</a>, <a class="el" href="version_8cpp_source.html#l00040">get_library_version_string()</a>, <a class="el" href="verbose_8h_source.html#l00080">STXXL_ERRMSG</a>, and <a class="el" href="config_8h_source.html#l00024">STXXL_VERSION_STRING</a>.</p>
+<p>References <a class="el" href="bits_2version_8h_source.html#l00076">check_library_version()</a>, <a class="el" href="version_8cpp_source.html#l00040">get_library_version_string()</a>, <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>, and <a class="el" href="config_8h_source.html#l00024">STXXL_VERSION_STRING</a>.</p>
 
 <p>Referenced by <a class="el" href="mng_2config_8h_source.html#l00130">stxxl::config::config()</a>.</p>
 
@@ -3347,6 +3341,45 @@ template&lt;class Container &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aa826495b0fb0b7ee22ac59425cb2731a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void stxxl::print_stacktrace </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>out</em> = <code>stderr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_frames</em> = <code>64</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Print a demangled stack backtrace of the caller function to FILE* out. </p>
+
+<p>Definition at line <a class="el" href="stacktrace_8h_source.html#l00027">27</a> of file <a class="el" href="stacktrace_8h_source.html">stacktrace.h</a>.</p>
+
+<p>References <a class="el" href="malloc__count_8cpp_source.html#l00184">free()</a>, and <a class="el" href="malloc__count_8cpp_source.html#l00137">malloc()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abfc0c55b6dbe5dfb475dd0916401f472"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3364,6 +3397,36 @@ template&lt;class Container &gt; </div>
 <p>Definition at line <a class="el" href="exithandler_8cpp_source.html#l00028">28</a> of file <a class="el" href="exithandler_8cpp_source.html">exithandler.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="singleton_8h_source.html#l00049">stxxl::singleton&lt; INSTANCE, destroy_on_exit &gt;::create_instance()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3c03ae958321bf55f340838ff630e40"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Integral &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Integral stxxl::round_up_to_power_of_two </td>
+          <td>(</td>
+          <td class="paramtype">Integral&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="utils_8h_source.html#l00255">255</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+
+<p>Referenced by <a class="el" href="parallel_2losertree_8h_source.html#l00321">stxxl::parallel::LoserTreeReference&lt; T, Comparator &gt;::LoserTreeReference()</a>, <a class="el" href="matrix__arithmetic_8h_source.html#l01514">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add()</a>, <a class="el" href="matrix__arithmetic_8h_source.html#l01425">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add_block_grained()</a>, <a class="el" href="multiseq__selection_8h_source.html#l00102">stxxl::parallel::multiseq_partition()</a>, and <a class="el" href="multiseq__selection_8h_source.html#l00347">stxxl::parallel::multiseq_selection()</a>.</p>
 
 </div>
 </div>
@@ -3403,9 +3466,7 @@ template&lt;typename Integral &gt; </div>
 
 <p>round n up to next larger multiple of 2^power. example: (48,4) = 64, (48,3) = 48. </p>
 
-<p>Definition at line <a class="el" href="utils_8h_source.html#l00256">256</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
-
-<p>Referenced by <a class="el" href="matrix__arithmetic_8h_source.html#l01514">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add()</a>, and <a class="el" href="matrix__arithmetic_8h_source.html#l01425">stxxl::matrix_local::matrix_operations&lt; ValueType, BlockSideLength &gt;::multi_level_strassen_winograd_multiply_and_add_block_grained()</a>.</p>
+<p>Definition at line <a class="el" href="utils_8h_source.html#l00266">266</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -3690,9 +3751,9 @@ template&lt;class Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel_8h_source.html#l00087">87</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel_8h_source.html#l00073">73</a> of file <a class="el" href="parallel_8h_source.html">parallel.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l00130">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize, alloc_strategy_type &gt;::basic_runs_creator()</a>, <a class="el" href="sort__stream_8h_source.html#l00545">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::runs_creator()</a>, <a class="el" href="sort__stream_8h_source.html#l00763">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::runs_creator()</a>, and <a class="el" href="sort_8h_source.html#l00674">sort()</a>.</p>
+<p>Referenced by <a class="el" href="sort__stream_8h_source.html#l00130">stxxl::stream::basic_runs_creator&lt; stream::use_push&lt; ValueType &gt;, cmp_type, BlockSize, alloc_strategy_type &gt;::basic_runs_creator()</a>, <a class="el" href="sort__stream_8h_source.html#l00545">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::runs_creator()</a>, <a class="el" href="sort__stream_8h_source.html#l00763">stxxl::stream::runs_creator&lt; from_sorted_sequences&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;::runs_creator()</a>, and <a class="el" href="sort_8h_source.html#l00676">sort()</a>.</p>
 
 </div>
 </div>
@@ -3744,7 +3805,7 @@ template&lt;class Type &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8h_source.html#l00056">56</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
-<p>Referenced by <a class="el" href="leaf_8h_source.html#l00302">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;::insert()</a>, <a class="el" href="config_8cpp_source.html#l00322">stxxl::disk_config::parse_fileio()</a>, and <a class="el" href="config_8cpp_source.html#l00259">stxxl::disk_config::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="equally__split_8h_source.html#l00041">stxxl::parallel::equally_split()</a>, <a class="el" href="leaf_8h_source.html#l00302">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;::insert()</a>, <a class="el" href="config_8cpp_source.html#l00322">stxxl::disk_config::parse_fileio()</a>, <a class="el" href="config_8cpp_source.html#l00259">stxxl::disk_config::parse_line()</a>, <a class="el" href="multiway__merge_8h_source.html#l00238">stxxl::parallel::prepare_unguarded()</a>, and <a class="el" href="multiway__merge_8h_source.html#l00316">stxxl::parallel::prepare_unguarded_sentinel()</a>.</p>
 
 </div>
 </div>
@@ -3782,9 +3843,9 @@ template&lt;typename ExtIterator , typename StrictWeakOrdering &gt; </div>
 
 <p>Definition at line <a class="el" href="inmemsort_8h_source.html#l00029">29</a> of file <a class="el" href="inmemsort_8h_source.html">inmemsort.h</a>.</p>
 
-<p>References <a class="el" href="simple__vector_8h_source.html#l00094">stxxl::simple_vector&lt; ValueType &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00096">check_sort_settings()</a>, <a class="el" href="mng_2adaptor_8h_source.html#l00646">make_element_iterator()</a>, <a class="el" href="sort_8h_source.html#l00674">sort()</a>, <a class="el" href="verbose_8h_source.html#l00102">STXXL_VERBOSE</a>, and <a class="el" href="request__operations_8h_source.html#l00034">wait_all()</a>.</p>
+<p>References <a class="el" href="simple__vector_8h_source.html#l00094">stxxl::simple_vector&lt; ValueType &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00082">check_sort_settings()</a>, <a class="el" href="mng_2adaptor_8h_source.html#l00646">make_element_iterator()</a>, <a class="el" href="sort_8h_source.html#l00676">sort()</a>, <a class="el" href="verbose_8h_source.html#l00116">STXXL_VERBOSE</a>, and <a class="el" href="request__operations_8h_source.html#l00034">wait_all()</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00725">ksort()</a>, and <a class="el" href="sort_8h_source.html#l00674">sort()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00725">ksort()</a>, and <a class="el" href="sort_8h_source.html#l00676">sort()</a>.</p>
 
 </div>
 </div>
@@ -3824,7 +3885,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8h_source.html#l00153">153</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
-<p>Referenced by <a class="el" href="buf__istream_8h_source.html#l00061">stxxl::buf_istream&lt; BlockType, BidIteratorType &gt;::buf_istream()</a>, <a class="el" href="buf__istream__reverse_8h_source.html#l00068">stxxl::buf_istream_reverse&lt; BlockType, BidIteratorType &gt;::buf_istream_reverse()</a>, <a class="el" href="cmdline_8h_source.html#l00365">stxxl::cmdline_parser::calc_opt_max()</a>, <a class="el" href="cmdline_8h_source.html#l00372">stxxl::cmdline_parser::calc_param_max()</a>, <a class="el" href="sort__stream_8h_source.html#l01125">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, <a class="el" href="ksort_8h_source.html#l00443">stxxl::ksort_local::merge_runs()</a>, <a class="el" href="block__manager_8h_source.html#l00186">stxxl::block_manager::new_blocks_int()</a>, <a class="el" href="cmdline_8cpp_source.html#l00306">stxxl::cmdline_parser::print_result()</a>, <a class="el" href="stack_8h_source.html#l00691">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::push()</a>, <a class="el" href="stack_8h_source.html#l00800">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::rehint()</a>, <a class="el" href="stack_8h_source.html#l00774">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::set_prefetch_aggr()</a>, <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>, and <a class="el" href="stack_8h_source.html#l00635">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::~grow_shrink_stack2()</a>.</p>
+<p>Referenced by <a class="el" href="buf__istream_8h_source.html#l00061">stxxl::buf_istream&lt; BlockType, BidIteratorType &gt;::buf_istream()</a>, <a class="el" href="buf__istream__reverse_8h_source.html#l00068">stxxl::buf_istream_reverse&lt; BlockType, BidIteratorType &gt;::buf_istream_reverse()</a>, <a class="el" href="cmdline_8h_source.html#l00417">stxxl::cmdline_parser::calc_opt_max()</a>, <a class="el" href="cmdline_8h_source.html#l00424">stxxl::cmdline_parser::calc_param_max()</a>, <a class="el" href="sort__stream_8h_source.html#l01127">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, <a class="el" href="ksort_8h_source.html#l00443">stxxl::ksort_local::merge_runs()</a>, <a class="el" href="block__manager_8h_source.html#l00186">stxxl::block_manager::new_blocks_int()</a>, <a class="el" href="cmdline_8cpp_source.html#l00306">stxxl::cmdline_parser::print_result()</a>, <a class="el" href="stack_8h_source.html#l00691">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::push()</a>, <a class="el" href="stack_8h_source.html#l00800">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::rehint()</a>, <a class="el" href="stack_8h_source.html#l00774">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::set_prefetch_aggr()</a>, <a class="el" href="stable__ksort_8h_source.html#l00221">stable_ksort()</a>, and <a class="el" href="stack_8h_source.html#l00635">stxxl::grow_shrink_stack2&lt; StackConfig &gt;::~grow_shrink_stack2()</a>.</p>
 
 </div>
 </div>
@@ -3864,7 +3925,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8h_source.html#l00146">146</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ksort_8h_source.html#l00344">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00207">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="sort__stream_8h_source.html#l01125">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01334">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, <a class="el" href="pq__ext__merger_8h_source.html#l00562">stxxl::priority_queue_local::ext_merger&lt; BlockType, Cmp, Arity, AllocStr &gt;::multi_merge()</a>, <a class="el" href="vector_8h_source.html#l01599">stxxl::vector&lt; ValueType &gt;::read_page()</a>, <a class="el" href="simple__vector_8h_source.html#l00141">stxxl::simple_vector&lt; BID&lt; BlockSize &gt; &gt;::resize()</a>, <a class="el" href="sort_8h_source.html#l00513">stxxl::sort_local::sort_blocks()</a>, and <a class="el" href="vector_8h_source.html#l01617">stxxl::vector&lt; ValueType &gt;::write_page()</a>.</p>
+<p>Referenced by <a class="el" href="ksort_8h_source.html#l00344">stxxl::ksort_local::check_ksorted_runs()</a>, <a class="el" href="sort_8h_source.html#l00207">stxxl::sort_local::check_sorted_runs()</a>, <a class="el" href="sort__stream_8h_source.html#l01023">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::fill_buffer_block()</a>, <a class="el" href="sort__stream_8h_source.html#l01127">stxxl::stream::basic_runs_merger&lt; typename runs_creator_type::sorted_runs_type, cmp_type, alloc_strategy_type &gt;::initialize()</a>, <a class="el" href="ksort_8h_source.html#l00535">stxxl::ksort_local::ksort_blocks()</a>, <a class="el" href="sort__stream_8h_source.html#l01336">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;::merge_recursively()</a>, <a class="el" href="sort_8h_source.html#l00307">stxxl::sort_local::merge_runs()</a>, <a class="el" href="vector_8h_source.html#l01599">stxxl::vector&lt; ValueType &gt;::read_page()</a>, <a class="el" href="simple__vector_8h_source.html#l00141">stxxl::simple_vector&lt; BID&lt; BlockSize &gt; &gt;::resize()</a>, <a class="el" href="sort_8h_source.html#l00515">stxxl::sort_local::sort_blocks()</a>, and <a class="el" href="vector_8h_source.html#l01617">stxxl::vector&lt; ValueType &gt;::write_page()</a>.</p>
 
 </div>
 </div>
@@ -3894,7 +3955,7 @@ template&lt;typename U &gt; </div>
 
 <p>Definition at line <a class="el" href="unused_8h_source.html#l00022">22</a> of file <a class="el" href="unused_8h_source.html">unused.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intksort_8h_source.html#l00343">classify_block()</a>, <a class="el" href="async__schedule_8cpp_source.html#l00168">compute_prefetch_schedule()</a>, <a class="el" href="mem__file_8cpp_source.html#l00070">stxxl::mem_file::discard()</a>, <a class="el" href="fileperblock__file_8cpp_source.html#l00109">stxxl::fileperblock_file&lt; base_file_type &gt;::discard()</a>, <a class="el" href="file_8h_source.html#l00137">stxxl::file::discard()</a>, <a class="el" href="fileperblock__file_8cpp_source.html#l00124">stxxl::fileperblock_file&lt; base_file_type &gt;::export_files()</a>, <a class="el" href="file_8h_source.html#l00143">stxxl::file::export_files()</a>, <a class="el" href="malloc_8h_source.html#l00119">operator&lt;&lt;()</a>, <a class="el" href="random__shuffle_8h_source.html#l00045">random_shuffle()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00046">stxxl::request_queue_impl_1q::request_queue_impl_1q()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00045">stxxl::request_queue_impl_qwqr::request_queue_impl_qwqr()</a>, <a class="el" href="request__queue_8h_source.html#l00035">stxxl::request_queue::set_priority_op()</a>, <a class="el" href="request__queue__impl__1q_8h_source.html#l00055">stxxl::request_queue_impl_1q::set_priority_op()</a>, <a class="el" href="request__queue__impl__qwqr_8h_source.html#l00059">stxxl::request_queue_impl_qwqr::set_priority_op()</a>, <a class="el" href="sort__stream_8h_source.html#l01640">sort()</a>, <a class="el" href="iostats_8h_source.html#l00101">stxxl::stats::scoped_read_write_timer::start()</a>, <a class="el" href="iostats_8h_source.html#l00152">stxxl::stats::scoped_write_timer::start()</a>, and <a class="el" href="iostats_8h_source.html#l00197">stxxl::stats::scoped_read_timer::start()</a>.</p>
+<p>Referenced by <a class="el" href="intksort_8h_source.html#l00343">classify_block()</a>, <a class="el" href="async__schedule_8cpp_source.html#l00168">compute_prefetch_schedule()</a>, <a class="el" href="mem__file_8cpp_source.html#l00070">stxxl::mem_file::discard()</a>, <a class="el" href="fileperblock__file_8cpp_source.html#l00109">stxxl::fileperblock_file&lt; base_file_type &gt;::discard()</a>, <a class="el" href="file_8h_source.html#l00137">stxxl::file::discard()</a>, <a class="el" href="fileperblock__file_8cpp_source.html#l00124">stxxl::fileperblock_file&lt; base_file_type &gt;::export_files()</a>, <a class="el" href="file_8h_source.html#l00143">stxxl::file::export_files()</a>, <a class="el" href="malloc_8h_source.html#l00119">operator&lt;&lt;()</a>, <a class="el" href="random__shuffle_8h_source.html#l00045">random_shuffle()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00046">stxxl::request_queue_impl_1q::request_queue_impl_1q()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00045">stxxl::request_queue_impl_qwqr::request_queue_impl_qwqr()</a>, <a class="el" href="request__queue_8h_source.html#l00035">stxxl::request_queue::set_priority_op()</a>, <a class="el" href="request__queue__impl__1q_8h_source.html#l00055">stxxl::request_queue_impl_1q::set_priority_op()</a>, <a class="el" href="request__queue__impl__qwqr_8h_source.html#l00059">stxxl::request_queue_impl_qwqr::set_priority_op()</a>, <a class="el" href="sort__stream_8h_source.html#l01642">sort()</a>, <a class="el" href="iostats_8h_source.html#l00101">stxxl::stats::scoped_read_write_timer::start()</a>, <a class="el" href="iostats_8h_source.html#l00152">stxxl::stats::scoped_write_timer::start()</a>, and <a class="el" href="iostats_8h_source.html#l00197">stxxl::stats::scoped_read_timer::start()</a>.</p>
 
 </div>
 </div>
@@ -3940,7 +4001,7 @@ template&lt;class Type &gt; </div>
 
 <p>Definition at line <a class="el" href="utils_8h_source.html#l00246">246</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
+<p>Referenced by <a class="el" href="pq__losertree_8h_source.html#l00172">stxxl::priority_queue_local::loser_tree&lt; self_type, CompareType, MaxArity &gt;::swap()</a>, and <a class="el" href="pq__int__merger_8h_source.html#l00181">stxxl::priority_queue_local::int_merger&lt; value_type, comparator_type, IntKMAX &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -4119,10 +4180,10 @@ template&lt;typename Type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:29 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:06 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

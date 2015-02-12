@@ -13,8 +13,8 @@ var searchData=
   ['choose_5fint_5ftypes_3c_208_20_3e',['choose_int_types&lt; 8 &gt;',['../structstxxl_1_1choose__int__types_3_018_01_4.html',1,'stxxl']]],
   ['choose_5fint_5ftypes_3c_20my_5fpointer_5fsize_20_3e',['choose_int_types&lt; my_pointer_size &gt;',['../structstxxl_1_1choose__int__types.html',1,'stxxl']]],
   ['cmdline_5fparser',['cmdline_parser',['../classstxxl_1_1cmdline__parser.html',1,'stxxl']]],
-  ['cmp',['Cmp',['../structstxxl_1_1hash__map_1_1hash__map_1_1Cmp.html',1,'stxxl::hash_map::hash_map']]],
   ['cmp',['cmp',['../structstxxl_1_1addressable__priority__queue_1_1cmp.html',1,'stxxl::addressable_priority_queue']]],
+  ['cmp',['Cmp',['../structstxxl_1_1hash__map_1_1hash__map_1_1Cmp.html',1,'stxxl::hash_map::hash_map']]],
   ['column_5fvector',['column_vector',['../classstxxl_1_1column__vector.html',1,'stxxl']]],
   ['compat_5fhash',['compat_hash',['../structstxxl_1_1compat__hash.html',1,'stxxl']]],
   ['compat_5fhash_5fmap',['compat_hash_map',['../structstxxl_1_1compat__hash__map.html',1,'stxxl']]],
@@ -46,5 +46,6 @@ var searchData=
   ['counting_5fptr',['counting_ptr',['../classstxxl_1_1counting__ptr.html',1,'stxxl']]],
   ['counting_5fptr_3c_20request_20_3e',['counting_ptr&lt; request &gt;',['../classstxxl_1_1counting__ptr.html',1,'stxxl']]],
   ['counting_5fptr_3c_20sorted_5fruns_5fdata_5ftype_20_3e',['counting_ptr&lt; sorted_runs_data_type &gt;',['../classstxxl_1_1counting__ptr.html',1,'stxxl']]],
-  ['counting_5fptr_3c_20swappable_5fblock_5fmatrix_5ftype_20_3e',['counting_ptr&lt; swappable_block_matrix_type &gt;',['../classstxxl_1_1counting__ptr.html',1,'stxxl']]]
+  ['counting_5fptr_3c_20swappable_5fblock_5fmatrix_5ftype_20_3e',['counting_ptr&lt; swappable_block_matrix_type &gt;',['../classstxxl_1_1counting__ptr.html',1,'stxxl']]],
+  ['custom_5fstats_5fcounter',['custom_stats_counter',['../classstxxl_1_1custom__stats__counter.html',1,'stxxl']]]
 ];

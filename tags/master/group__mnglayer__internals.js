@@ -9,16 +9,16 @@ var group__mnglayer__internals =
     ] ],
     [ "block_w_bids", "classstxxl_1_1mng__local_1_1block__w__bids.html", [
       [ "bid_type", "classstxxl_1_1mng__local_1_1block__w__bids.html#aa89e1b0c049e7e11cbc448f596d74618", null ],
-      [ "raw_size", "classstxxl_1_1mng__local_1_1block__w__bids.html#ad4d1eeffff81b695b1014ed6a754c0b6a43013cbf93cdb173586dc09ad70aa76d", null ],
-      [ "nbids", "classstxxl_1_1mng__local_1_1block__w__bids.html#ad4d1eeffff81b695b1014ed6a754c0b6afce69a67bbf873791f47b30e65f906bf", null ],
+      [ "raw_size", "classstxxl_1_1mng__local_1_1block__w__bids.html#a62a06541b637ca66df69451ed5977a60a43013cbf93cdb173586dc09ad70aa76d", null ],
+      [ "nbids", "classstxxl_1_1mng__local_1_1block__w__bids.html#a62a06541b637ca66df69451ed5977a60afce69a67bbf873791f47b30e65f906bf", null ],
       [ "block_w_bids", "classstxxl_1_1mng__local_1_1block__w__bids.html#a555eb29f954b132f39d614564277c245", null ],
       [ "operator()", "classstxxl_1_1mng__local_1_1block__w__bids.html#aab35a0af4c067185bb1500985a64e081", null ],
       [ "ref", "classstxxl_1_1mng__local_1_1block__w__bids.html#a9e973fd1e8a143a8ce990ad7543328b3", null ]
     ] ],
     [ "block_w_bids< Type, Size, RawSize, 0 >", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html", [
       [ "bid_type", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html#a03ea735b756a62449b1d979471c25118", null ],
-      [ "raw_size", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html#a1e1b5fc8fd330d0989d33559e5782185a636f648c3f4d298f52dd211c9eb09df6", null ],
-      [ "nbids", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html#a1e1b5fc8fd330d0989d33559e5782185acc38bf3af53403dcc2d737d7c090825d", null ],
+      [ "raw_size", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html#a378462f75f972e79766142fa2f69960fa636f648c3f4d298f52dd211c9eb09df6", null ],
+      [ "nbids", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html#a378462f75f972e79766142fa2f69960facc38bf3af53403dcc2d737d7c090825d", null ],
       [ "block_w_bids", "classstxxl_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html#aa079841f4f7e4e4a84d24fc5d542915e", null ]
     ] ],
     [ "block_w_info", "classstxxl_1_1mng__local_1_1block__w__info.html", [
@@ -38,7 +38,7 @@ var group__mnglayer__internals =
       [ "reference", "classstxxl_1_1mng__local_1_1element__block.html#a5a957bc5ec55a0d3e1f9cc6cdefb634e", null ],
       [ "type", "classstxxl_1_1mng__local_1_1element__block.html#a2e3a5abe7c6a3500db626c488af52625", null ],
       [ "value_type", "classstxxl_1_1mng__local_1_1element__block.html#a93e0c0a7f2dcf75224b3588afe3ca00d", null ],
-      [ "size", "classstxxl_1_1mng__local_1_1element__block.html#a07064e4000701c6a0ff8992215d7cae1acb96152ef27e80bd7eee418960c7221d", null ],
+      [ "size", "classstxxl_1_1mng__local_1_1element__block.html#a95736dce15489e549329300b6e9b577facb96152ef27e80bd7eee418960c7221d", null ],
       [ "element_block", "classstxxl_1_1mng__local_1_1element__block.html#a09214a09cd2e6035bbe2ff2cdd0ded8f", null ],
       [ "begin", "classstxxl_1_1mng__local_1_1element__block.html#a79c34073a8f09bc4badf45513d75296e", null ],
       [ "begin", "classstxxl_1_1mng__local_1_1element__block.html#a0f7159cebf439ca051fa1fbe1cc7149c", null ],

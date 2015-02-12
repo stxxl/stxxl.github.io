@@ -163,17 +163,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e0d56012bed2340ad65e788d600201c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a2e0d56012bed2340ad65e788d600201c">~prefetch_pool</a> ()</td></tr>
 <tr class="memdesc:a2e0d56012bed2340ad65e788d600201c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for completion of all ongoing read requests and frees memory.  <a href="#a2e0d56012bed2340ad65e788d600201c">More...</a><br/></td></tr>
 <tr class="separator:a2e0d56012bed2340ad65e788d600201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e57e2bd5d50a732c26857ca41861dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a89e57e2bd5d50a732c26857ca41861dc">add</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> *&amp;block)</td></tr>
+<tr class="memdesc:a89e57e2bd5d50a732c26857ca41861dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new block to prefetch pool, enlarges size of pool.  <a href="#a89e57e2bd5d50a732c26857ca41861dc">More...</a><br/></td></tr>
+<tr class="separator:a89e57e2bd5d50a732c26857ca41861dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4538498e8ddeb22908717cafa9c2fae5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a4538498e8ddeb22908717cafa9c2fae5">busy_size</a> () const </td></tr>
+<tr class="memdesc:a4538498e8ddeb22908717cafa9c2fae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of busy prefetching blocks.  <a href="#a4538498e8ddeb22908717cafa9c2fae5">More...</a><br/></td></tr>
+<tr class="separator:a4538498e8ddeb22908717cafa9c2fae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd133074088c1ba38ffbc409d0c3850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a7bd133074088c1ba38ffbc409d0c3850">find</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid)</td></tr>
+<tr class="memdesc:a7bd133074088c1ba38ffbc409d0c3850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the request pointer for a hinted block, or an invalid NULL request in case it was not requested due to lack of prefetch buffers.  <a href="#a7bd133074088c1ba38ffbc409d0c3850">More...</a><br/></td></tr>
+<tr class="separator:a7bd133074088c1ba38ffbc409d0c3850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6c9d29f066888386a67b5d69fb99c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#afe6c9d29f066888386a67b5d69fb99c9">free_size</a> () const </td></tr>
+<tr class="memdesc:afe6c9d29f066888386a67b5d69fb99c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of free prefetching blocks.  <a href="#afe6c9d29f066888386a67b5d69fb99c9">More...</a><br/></td></tr>
+<tr class="separator:afe6c9d29f066888386a67b5d69fb99c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc04417a813ae1951127b8a2394b588"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#aafc04417a813ae1951127b8a2394b588">hint</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid)</td></tr>
-<tr class="memdesc:aafc04417a813ae1951127b8a2394b588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a hint for prefetching a block.  <a href="#aafc04417a813ae1951127b8a2394b588">More...</a><br/></td></tr>
+<tr class="memdesc:aafc04417a813ae1951127b8a2394b588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a hint for prefetching a block, the block may or may not be read into a prefetch buffer.  <a href="#aafc04417a813ae1951127b8a2394b588">More...</a><br/></td></tr>
 <tr class="separator:aafc04417a813ae1951127b8a2394b588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b8c085ef81ff824d4e339efe4e2a43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a67b8c085ef81ff824d4e339efe4e2a43">hint</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid, <a class="el" href="classstxxl_1_1write__pool.html">write_pool</a>&lt; <a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> &gt; &amp;w_pool)</td></tr>
+<tr class="memdesc:a67b8c085ef81ff824d4e339efe4e2a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a hint for prefetching a block, the block may or may not be read into a prefetch buffer.  <a href="#a67b8c085ef81ff824d4e339efe4e2a43">More...</a><br/></td></tr>
 <tr class="separator:a67b8c085ef81ff824d4e339efe4e2a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1a1eb7abec08a96437109593083d8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a1a1a1eb7abec08a96437109593083d8a">in_prefetching</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid)</td></tr>
+<tr class="memdesc:a1a1a1eb7abec08a96437109593083d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a block is in the hinted block set.  <a href="#a1a1a1eb7abec08a96437109593083d8a">More...</a><br/></td></tr>
 <tr class="separator:a1a1a1eb7abec08a96437109593083d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff8e6ba7ac46f4a5be269783561a3013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#aff8e6ba7ac46f4a5be269783561a3013">invalidate</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid)</td></tr>
+<tr class="memdesc:aff8e6ba7ac46f4a5be269783561a3013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a hint request in case the block is no longer desired.  <a href="#aff8e6ba7ac46f4a5be269783561a3013">More...</a><br/></td></tr>
 <tr class="separator:aff8e6ba7ac46f4a5be269783561a3013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d202f6c75ae1ae2680ec60f9d001187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a3d202f6c75ae1ae2680ec60f9d001187">poll</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid)</td></tr>
+<tr class="memdesc:a3d202f6c75ae1ae2680ec60f9d001187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the blocks was hinted and the request is finished.  <a href="#a3d202f6c75ae1ae2680ec60f9d001187">More...</a><br/></td></tr>
+<tr class="separator:a3d202f6c75ae1ae2680ec60f9d001187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b05e3ed487a94a9d97abd79bf98d54a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a7b05e3ed487a94a9d97abd79bf98d54a">read</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> *&amp;block, <a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid)</td></tr>
-<tr class="memdesc:a7b05e3ed487a94a9d97abd79bf98d54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads block. If this block is cached block is not read but passed from the cache.  <a href="#a7b05e3ed487a94a9d97abd79bf98d54a">More...</a><br/></td></tr>
+<tr class="memdesc:a7b05e3ed487a94a9d97abd79bf98d54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads block.  <a href="#a7b05e3ed487a94a9d97abd79bf98d54a">More...</a><br/></td></tr>
 <tr class="separator:a7b05e3ed487a94a9d97abd79bf98d54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931ebf943cda3de52d4de3e48a278b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a931ebf943cda3de52d4de3e48a278b6d">read</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> *&amp;block, <a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a> bid, <a class="el" href="classstxxl_1_1write__pool.html">write_pool</a>&lt; <a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> &gt; &amp;w_pool)</td></tr>
 <tr class="separator:a931ebf943cda3de52d4de3e48a278b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +201,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a844aab2ffe164f5d4906f7f69843106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a844aab2ffe164f5d4906f7f69843106c">size</a> () const </td></tr>
 <tr class="memdesc:a844aab2ffe164f5d4906f7f69843106c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of owned blocks.  <a href="#a844aab2ffe164f5d4906f7f69843106c">More...</a><br/></td></tr>
 <tr class="separator:a844aab2ffe164f5d4906f7f69843106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5008c336462747da4c88f6bfbc74cbda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a5008c336462747da4c88f6bfbc74cbda">steal</a> ()</td></tr>
+<tr class="memdesc:a5008c336462747da4c88f6bfbc74cbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take out a block from the pool, one unhinted free block must be available.  <a href="#a5008c336462747da4c88f6bfbc74cbda">More...</a><br/></td></tr>
+<tr class="separator:a5008c336462747da4c88f6bfbc74cbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a44691ee6c1e995487276630e028620"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a4a44691ee6c1e995487276630e028620">swap</a> (<a class="el" href="classstxxl_1_1prefetch__pool.html">prefetch_pool</a> &amp;obj)</td></tr>
 <tr class="separator:a4a44691ee6c1e995487276630e028620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -204,10 +225,13 @@ Protected Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a67044c473693541a6074d523923d1f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1prefetch__pool.html#abe2d093d020e17328b0d4008bf779d3f">hash_map_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a67044c473693541a6074d523923d1f90">busy_blocks</a></td></tr>
+<tr class="memdesc:a67044c473693541a6074d523923d1f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">blocks that are in reading or already read but not retrieved by user  <a href="#a67044c473693541a6074d523923d1f90">More...</a><br/></td></tr>
 <tr class="separator:a67044c473693541a6074d523923d1f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b09cb34d8bb2610d3d65c0f05146893"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a7b09cb34d8bb2610d3d65c0f05146893">free_blocks</a></td></tr>
+<tr class="memdesc:a7b09cb34d8bb2610d3d65c0f05146893"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains free prefetch blocks  <a href="#a7b09cb34d8bb2610d3d65c0f05146893">More...</a><br/></td></tr>
 <tr class="separator:a7b09cb34d8bb2610d3d65c0f05146893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d3f251a8d5043df8b3713b441156dec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1prefetch__pool.html#a0d3f251a8d5043df8b3713b441156dec">free_blocks_size</a></td></tr>
+<tr class="memdesc:a0d3f251a8d5043df8b3713b441156dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">count number of free blocks, since traversing the std::list is slow.  <a href="#a0d3f251a8d5043df8b3713b441156dec">More...</a><br/></td></tr>
 <tr class="separator:a0d3f251a8d5043df8b3713b441156dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -269,7 +293,7 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00059">59</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00060">60</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +317,7 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00056">56</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00057">57</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +341,7 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00058">58</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00059">59</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +365,7 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00057">57</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00058">58</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +402,7 @@ template&lt;class BlockType&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00071">71</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00074">74</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -407,11 +431,129 @@ template&lt;class BlockType&gt; </div>
 
 <p>Waits for completion of all ongoing read requests and frees memory. </p>
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00086">86</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00090">90</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a89e57e2bd5d50a732c26857ca41861dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a>&lt; BlockType &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a> *&amp;&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a new block to prefetch pool, enlarges size of pool. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00130">130</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4538498e8ddeb22908717cafa9c2fae5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a>&lt; BlockType &gt;::busy_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of busy prefetching blocks. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00124">124</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bd133074088c1ba38ffbc409d0c3850"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__reqlayer.html#ga7f6ac626252081b4d28528770f32a19e">request_ptr</a> <a class="el" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a>&lt; BlockType &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a>&#160;</td>
+          <td class="paramname"><em>bid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the request pointer for a hinted block, or an invalid NULL request in case it was not requested due to lack of prefetch buffers. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00255">255</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe6c9d29f066888386a67b5d69fb99c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a>&lt; BlockType &gt;::free_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of free prefetching blocks. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00118">118</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aafc04417a813ae1951127b8a2394b588"></a>
 <div class="memitem">
 <div class="memproto">
@@ -436,19 +578,19 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gives a hint for prefetching a block. </p>
+<p>Gives a hint for prefetching a block, the block may or may not be read into a prefetch buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bid</td><td>address of a block to be prefetched </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there was a free block to do prefetch and prefetching was scheduled, <code>false</code> otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there was a free block to do prefetch and prefetching was scheduled, <code>false</code> otherwise</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If there are no free blocks available (all blocks are already in reading or read but not retrieved by user calling <code>read</code> method) calling <code>hint</code> function has no effect </dd></dl>
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00118">118</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00162">162</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>.</p>
 
 </div>
 </div>
@@ -486,9 +628,20 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00140">140</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Gives a hint for prefetching a block, the block may or may not be read into a prefetch buffer. </p>
+<p>This variant checks if the write pool is currently writing said block.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bid</td><td>address of a block to be prefetched </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there was a free block to do prefetch and prefetching was scheduled, <code>false</code> otherwise</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If there are no free blocks available (all blocks are already in reading or read but not retrieved by user calling <code>read</code> method) calling <code>hint</code> function has no effect </dd></dl>
 
-<p>References <a class="el" href="write__pool_8h_source.html#l00245">stxxl::write_pool&lt; BlockType &gt;::add()</a>, <a class="el" href="write__pool_8h_source.html#l00197">stxxl::write_pool&lt; BlockType &gt;::has_request()</a>, <a class="el" href="write__pool_8h_source.html#l00224">stxxl::write_pool&lt; BlockType &gt;::steal_request()</a>, <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>, and <a class="el" href="verbose_8h_source.html#l00107">STXXL_VERBOSE2</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00197">197</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+<p>References <a class="el" href="write__pool_8h_source.html#l00245">stxxl::write_pool&lt; BlockType &gt;::add()</a>, <a class="el" href="write__pool_8h_source.html#l00197">stxxl::write_pool&lt; BlockType &gt;::has_request()</a>, <a class="el" href="write__pool_8h_source.html#l00224">stxxl::write_pool&lt; BlockType &gt;::steal_request()</a>, <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>, and <a class="el" href="verbose_8h_source.html#l00121">STXXL_VERBOSE2</a>.</p>
 
 </div>
 </div>
@@ -516,7 +669,9 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00189">189</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Checks if a block is in the hinted block set. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00248">248</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +699,41 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00171">171</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Cancel a hint request in case the block is no longer desired. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00229">229</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d202f6c75ae1ae2680ec60f9d001187"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a>&lt; BlockType &gt;::poll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstxxl_1_1prefetch__pool.html#a167e2c7c322a43b2809ae3cd38eb78d6">bid_type</a>&#160;</td>
+          <td class="paramname"><em>bid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the blocks was hinted and the request is finished. </p>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00266">266</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+<p>References <a class="el" href="scan_8h_source.html#l00289">stxxl::find()</a>, <a class="el" href="classstxxl_1_1request__interface.html#a574bbbbd9c355a0a36d9e5789a21efad">stxxl::request_interface::poll()</a>, and <a class="el" href="counting__ptr_8h_source.html#l00138">stxxl::counting_ptr&lt; Type &gt;::valid()</a>.</p>
 
 </div>
 </div>
@@ -582,20 +771,21 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reads block. If this block is cached block is not read but passed from the cache. </p>
+<p>Reads block. </p>
+<p>If this block is cached block is not read but passed from the cache.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">block</td><td>block object, where data to be read to. If block was cached <code>block</code> 's ownership goes to the pool and block from cache is returned in <code>block</code> value. </td></tr>
-    <tr><td class="paramname">bid</td><td>address of the block </td></tr>
+    <tr><td class="paramname">block</td><td>block object, where data to be read to. If block was cached <code>block</code> 's ownership goes to the pool and block from cache is returned in <code>block</code> value.</td></tr>
+    <tr><td class="paramname">bid</td><td>address of the block</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd><code>block</code> parameter must be allocated dynamically using <code>new</code> . </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><code>block</code> parameter must be allocated dynamically using <code>new</code> .</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>request pointer object of read operation </dd></dl>
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00200">200</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00286">286</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
 </div>
 </div>
@@ -639,9 +829,9 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00220">220</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00306">306</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
-<p>References <a class="el" href="write__pool_8h_source.html#l00245">stxxl::write_pool&lt; BlockType &gt;::add()</a>, <a class="el" href="write__pool_8h_source.html#l00197">stxxl::write_pool&lt; BlockType &gt;::has_request()</a>, <a class="el" href="write__pool_8h_source.html#l00224">stxxl::write_pool&lt; BlockType &gt;::steal_request()</a>, and <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>.</p>
+<p>References <a class="el" href="write__pool_8h_source.html#l00245">stxxl::write_pool&lt; BlockType &gt;::add()</a>, <a class="el" href="write__pool_8h_source.html#l00197">stxxl::write_pool&lt; BlockType &gt;::has_request()</a>, <a class="el" href="write__pool_8h_source.html#l00224">stxxl::write_pool&lt; BlockType &gt;::steal_request()</a>, and <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>.</p>
 
 </div>
 </div>
@@ -678,7 +868,7 @@ template&lt;class BlockType&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new size of the pool </dd></dl>
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00258">258</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00344">344</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +897,39 @@ template&lt;class BlockType&gt; </div>
 
 <p>Returns number of owned blocks. </p>
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00108">108</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00112">112</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5008c336462747da4c88f6bfbc74cbda"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class BlockType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstxxl_1_1prefetch__pool.html#a0c2a0fca4afcab768059b43c46ac7ae5">block_type</a>* <a class="el" href="classstxxl_1_1prefetch__pool.html">stxxl::prefetch_pool</a>&lt; BlockType &gt;::steal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Take out a block from the pool, one unhinted free block must be available. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the block. Ownership of the block goes to the caller. </dd></dl>
+
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00140">140</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+<p>References <a class="el" href="verbose_8h_source.html#l00170">STXXL_CHECK</a>.</p>
 
 </div>
 </div>
@@ -735,9 +957,9 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00078">78</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00082">82</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
 
-<p>References <a class="el" href="prefetch__pool_8h_source.html#l00064">stxxl::prefetch_pool&lt; BlockType &gt;::busy_blocks</a>, <a class="el" href="prefetch__pool_8h_source.html#l00062">stxxl::prefetch_pool&lt; BlockType &gt;::free_blocks</a>, and <a class="el" href="prefetch__pool_8h_source.html#l00066">stxxl::prefetch_pool&lt; BlockType &gt;::free_blocks_size</a>.</p>
+<p>References <a class="el" href="prefetch__pool_8h_source.html#l00066">stxxl::prefetch_pool&lt; BlockType &gt;::busy_blocks</a>, <a class="el" href="prefetch__pool_8h_source.html#l00063">stxxl::prefetch_pool&lt; BlockType &gt;::free_blocks</a>, and <a class="el" href="prefetch__pool_8h_source.html#l00069">stxxl::prefetch_pool&lt; BlockType &gt;::free_blocks_size</a>.</p>
 
 </div>
 </div>
@@ -762,9 +984,11 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00064">64</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>blocks that are in reading or already read but not retrieved by user </p>
 
-<p>Referenced by <a class="el" href="prefetch__pool_8h_source.html#l00078">stxxl::prefetch_pool&lt; BlockType &gt;::swap()</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00066">66</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+<p>Referenced by <a class="el" href="prefetch__pool_8h_source.html#l00082">stxxl::prefetch_pool&lt; BlockType &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +1012,11 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00062">62</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>contains free prefetch blocks </p>
 
-<p>Referenced by <a class="el" href="prefetch__pool_8h_source.html#l00078">stxxl::prefetch_pool&lt; BlockType &gt;::swap()</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00063">63</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+<p>Referenced by <a class="el" href="prefetch__pool_8h_source.html#l00082">stxxl::prefetch_pool&lt; BlockType &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -814,9 +1040,11 @@ template&lt;class BlockType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00066">66</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+<p>count number of free blocks, since traversing the std::list is slow. </p>
 
-<p>Referenced by <a class="el" href="prefetch__pool_8h_source.html#l00078">stxxl::prefetch_pool&lt; BlockType &gt;::swap()</a>.</p>
+<p>Definition at line <a class="el" href="prefetch__pool_8h_source.html#l00069">69</a> of file <a class="el" href="prefetch__pool_8h_source.html">prefetch_pool.h</a>.</p>
+
+<p>Referenced by <a class="el" href="prefetch__pool_8h_source.html#l00082">stxxl::prefetch_pool&lt; BlockType &gt;::swap()</a>.</p>
 
 </div>
 </div>
@@ -829,10 +1057,10 @@ template&lt;class BlockType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1prefetch__pool.html">prefetch_pool</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:48 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:27 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -12,6 +12,6 @@ var priority__queue_8h =
     [ "Parameters_for_priority_queue_not_found_Increase_IntMem", "structstxxl_1_1priority__queue__local_1_1Parameters__for__priority__queue__not__found__Increase__IntMem.html", "structstxxl_1_1priority__queue__local_1_1Parameters__for__priority__queue__not__found__Increase__IntMem" ],
     [ "Parameters_not_found_Try_to_change_the_Tune_parameter", "structstxxl_1_1priority__queue__local_1_1Parameters__not__found__Try__to__change__the__Tune__parameter.html", "structstxxl_1_1priority__queue__local_1_1Parameters__not__found__Try__to__change__the__Tune__parameter" ],
     [ "swap", "priority__queue_8h.html#a03f19119e6865fe2f9fe8561e814f777", null ],
-    [ "swap", "priority__queue_8h.html#a591941b4f75ed1fa4b7b565559487054", null ],
+    [ "swap", "priority__queue_8h.html#a03e1fd8f29512bc915758bc001e04d1e", null ],
     [ "swap", "priority__queue_8h.html#a2b284e59ddeef0b1deecb388a55214c8", null ]
 ];

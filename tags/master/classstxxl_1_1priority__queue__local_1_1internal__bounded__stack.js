@@ -2,7 +2,7 @@ var classstxxl_1_1priority__queue__local_1_1internal__bounded__stack =
 [
     [ "size_type", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#acd0501177ea69ae0d2f5f8b334aa26e7", null ],
     [ "value_type", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a74fa54c28e2519ff3c7d4b27244e6a06", null ],
-    [ "max_size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a45dde2d28c138b26d3fcb30e89306b04a436c76fdd61ab9855d8fbdb4ca080d0a", null ],
+    [ "max_size", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#af58cc399a51ffd8f55b61591f8df9bfba436c76fdd61ab9855d8fbdb4ca080d0a", null ],
     [ "internal_bounded_stack", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#afa15e1b9cc15c9219036b39836064f26", null ],
     [ "clear", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a0834ba49b947038c63ea97c245c18e25", null ],
     [ "empty", "classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#a1bfbc36cf04c1cfcccbb3d9357bc3a58", null ],

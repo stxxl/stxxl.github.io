@@ -150,21 +150,21 @@ class stxxl::queue&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</h3>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1queue__coll__graph.svg" width="4382" height="916"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1queue__coll__graph.svg" width="4699" height="750"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab23854ed33267ac2782736225e05ddce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1queue.html#ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314">block_size</a> = BlockSize
+<tr class="memitem:a55325bf44590cec4219e02624736a3e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classstxxl_1_1queue.html#a55325bf44590cec4219e02624736a3e7a5cb5b754326b8bd03dc6da6cc3a49314">block_size</a> = BlockSize
  }</td></tr>
-<tr class="separator:ab23854ed33267ac2782736225e05ddce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a55325bf44590cec4219e02624736a3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8bbbb2c19a05cff07d8f744b768439c"><td class="memItemLeft" align="right" valign="top">typedef AllocStr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1queue.html#ad8bbbb2c19a05cff07d8f744b768439c">alloc_strategy_type</a></td></tr>
 <tr class="separator:ad8bbbb2c19a05cff07d8f744b768439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97546e3785406e83952d3a58c92e8cdb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; <a class="el" href="classstxxl_1_1queue.html#ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314">block_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1queue.html#a97546e3785406e83952d3a58c92e8cdb">bid_type</a></td></tr>
+<tr class="memitem:a97546e3785406e83952d3a58c92e8cdb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt; <a class="el" href="classstxxl_1_1queue.html#a55325bf44590cec4219e02624736a3e7a5cb5b754326b8bd03dc6da6cc3a49314">block_size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1queue.html#a97546e3785406e83952d3a58c92e8cdb">bid_type</a></td></tr>
 <tr class="separator:a97546e3785406e83952d3a58c92e8cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5641d79ab186420bbab65d34237f117"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a><br class="typebreak"/>
-&lt; <a class="el" href="classstxxl_1_1queue.html#ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314">block_size</a>, <a class="el" href="classstxxl_1_1queue.html#ae4b87471cb2b09e0917010cb5cc69220">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1queue.html#af5641d79ab186420bbab65d34237f117">block_type</a></td></tr>
+&lt; <a class="el" href="classstxxl_1_1queue.html#a55325bf44590cec4219e02624736a3e7a5cb5b754326b8bd03dc6da6cc3a49314">block_size</a>, <a class="el" href="classstxxl_1_1queue.html#ae4b87471cb2b09e0917010cb5cc69220">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1queue.html#af5641d79ab186420bbab65d34237f117">block_type</a></td></tr>
 <tr class="separator:af5641d79ab186420bbab65d34237f117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd08eabc034fb0d5f5c306d6d2c9955"><td class="memItemLeft" align="right" valign="top">typedef SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1queue.html#aebd08eabc034fb0d5f5c306d6d2c9955">size_type</a></td></tr>
 <tr class="separator:aebd08eabc034fb0d5f5c306d6d2c9955"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +290,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStr  = STXXL_DEFAULT_ALLOC_STRATEGY, class SizeType  = stxxl::uint64&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;<a class="el" href="classstxxl_1_1queue.html#ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314">block_size</a>&gt; <a class="el" href="classstxxl_1_1queue.html">stxxl::queue</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1queue.html#a97546e3785406e83952d3a58c92e8cdb">bid_type</a></td>
+          <td class="memname">typedef <a class="el" href="structstxxl_1_1BID.html">BID</a>&lt;<a class="el" href="classstxxl_1_1queue.html#a55325bf44590cec4219e02624736a3e7a5cb5b754326b8bd03dc6da6cc3a49314">block_size</a>&gt; <a class="el" href="classstxxl_1_1queue.html">stxxl::queue</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1queue.html#a97546e3785406e83952d3a58c92e8cdb">bid_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -306,7 +306,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), class AllocStr  = STXXL_DEFAULT_ALLOC_STRATEGY, class SizeType  = stxxl::uint64&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a>&lt;<a class="el" href="classstxxl_1_1queue.html#ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314">block_size</a>, <a class="el" href="classstxxl_1_1queue.html#ae4b87471cb2b09e0917010cb5cc69220">value_type</a>&gt; <a class="el" href="classstxxl_1_1queue.html">stxxl::queue</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1queue.html#af5641d79ab186420bbab65d34237f117">block_type</a></td>
+          <td class="memname">typedef <a class="el" href="classstxxl_1_1typed__block.html">typed_block</a>&lt;<a class="el" href="classstxxl_1_1queue.html#a55325bf44590cec4219e02624736a3e7a5cb5b754326b8bd03dc6da6cc3a49314">block_size</a>, <a class="el" href="classstxxl_1_1queue.html#ae4b87471cb2b09e0917010cb5cc69220">value_type</a>&gt; <a class="el" href="classstxxl_1_1queue.html">stxxl::queue</a>&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::<a class="el" href="classstxxl_1_1queue.html#af5641d79ab186420bbab65d34237f117">block_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -372,7 +372,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ab23854ed33267ac2782736225e05ddce"></a>
+<a class="anchor" id="a55325bf44590cec4219e02624736a3e7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -384,7 +384,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab23854ed33267ac2782736225e05ddcea5cb5b754326b8bd03dc6da6cc3a49314"></a>block_size</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a55325bf44590cec4219e02624736a3e7a5cb5b754326b8bd03dc6da6cc3a49314"></a>block_size</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -826,7 +826,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 
 <p>Definition at line <a class="el" href="queue_8h_source.html#l00181">181</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
 
-<p>References <a class="el" href="verbose_8h_source.html#l00080">STXXL_ERRMSG</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 
 <p>Definition at line <a class="el" href="queue_8h_source.html#l00288">288</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
 
-<p>References <a class="el" href="bid_8h_source.html#l00030">FMT_BID</a>, <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>, <a class="el" href="queue_8h_source.html#l00033">STXXL_VERBOSE_QUEUE</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
+<p>References <a class="el" href="bid_8h_source.html#l00030">FMT_BID</a>, <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>, <a class="el" href="queue_8h_source.html#l00033">STXXL_VERBOSE_QUEUE</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
 
 </div>
 </div>
@@ -890,7 +890,7 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 </dl>
 <p>Definition at line <a class="el" href="queue_8h_source.html#l00230">230</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
 
-<p>References <a class="el" href="bid_8h_source.html#l00030">FMT_BID</a>, <a class="el" href="verbose_8h_source.html#l00099">STXXL_VERBOSE1</a>, <a class="el" href="queue_8h_source.html#l00033">STXXL_VERBOSE_QUEUE</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
+<p>References <a class="el" href="bid_8h_source.html#l00030">FMT_BID</a>, <a class="el" href="verbose_8h_source.html#l00113">STXXL_VERBOSE1</a>, <a class="el" href="queue_8h_source.html#l00033">STXXL_VERBOSE_QUEUE</a>, and <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
 
 </div>
 </div>
@@ -1311,10 +1311,10 @@ template&lt;class ValueType , unsigned BlockSize = STXXL_DEFAULT_BLOCK_SIZE(Valu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1queue.html">queue</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:49 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:28 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

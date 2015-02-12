@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('classstxxl_1_1scoped__print__timer.htm
 <div class="textblock"><p>Simple scoped timer, which takes a text message and prints the duration until the scope is destroyed. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2containers_2vector_buf_8cpp-example.html#_a1">examples/containers/vector_buf.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00136">136</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00227">227</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for stxxl::scoped_print_timer:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -138,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ee32183e76b4be91ef09b9a9dbd442c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1scoped__print__timer.html#a0ee32183e76b4be91ef09b9a9dbd442c">~scoped_print_timer</a> ()</td></tr>
 <tr class="memdesc:a0ee32183e76b4be91ef09b9a9dbd442c"><td class="mdescLeft">&#160;</td><td class="mdescRight">on destruction: tell the time  <a href="#a0ee32183e76b4be91ef09b9a9dbd442c">More...</a><br/></td></tr>
 <tr class="separator:a0ee32183e76b4be91ef09b9a9dbd442c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5db4790c870f03c8b08b0f417fdb92f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classstxxl_1_1timer.html">stxxl::timer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1scoped__print__timer.html#ac5db4790c870f03c8b08b0f417fdb92f">timer</a> () const </td></tr>
+<tr class="memdesc:ac5db4790c870f03c8b08b0f417fdb92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant access to enclosed timer  <a href="#ac5db4790c870f03c8b08b0f417fdb92f">More...</a><br/></td></tr>
+<tr class="separator:ac5db4790c870f03c8b08b0f417fdb92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -147,9 +150,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:af713d7c6291af7b8f5cc9f2374e72e77"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1scoped__print__timer.html#af713d7c6291af7b8f5cc9f2374e72e77">m_message</a></td></tr>
 <tr class="memdesc:af713d7c6291af7b8f5cc9f2374e72e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">message  <a href="#af713d7c6291af7b8f5cc9f2374e72e77">More...</a><br/></td></tr>
 <tr class="separator:af713d7c6291af7b8f5cc9f2374e72e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc877a3229ff64775420bf93f143f52"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classstxxl_1_1timer.html">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1scoped__print__timer.html#a2fc877a3229ff64775420bf93f143f52">m_timer</a></td></tr>
-<tr class="memdesc:a2fc877a3229ff64775420bf93f143f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer  <a href="#a2fc877a3229ff64775420bf93f143f52">More...</a><br/></td></tr>
-<tr class="separator:a2fc877a3229ff64775420bf93f143f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed329540c6d9faf02694b5503aaf613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1timer.html">stxxl::timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1scoped__print__timer.html#a4ed329540c6d9faf02694b5503aaf613">m_timer</a></td></tr>
+<tr class="memdesc:a4ed329540c6d9faf02694b5503aaf613"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer  <a href="#a4ed329540c6d9faf02694b5503aaf613">More...</a><br/></td></tr>
+<tr class="separator:a4ed329540c6d9faf02694b5503aaf613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1dcbe307611753dbac262f08aeb4fd0b"></a>
@@ -186,7 +189,7 @@ Protected Attributes</h2></td></tr>
 
 <p>save message and start timer </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00150">150</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00241">241</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
 
@@ -215,9 +218,37 @@ Protected Attributes</h2></td></tr>
 
 <p>on destruction: tell the time </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00159">159</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00250">250</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 <p>References <a class="el" href="utils_8cpp_source.html#l00111">stxxl::format_IEC_size()</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac5db4790c870f03c8b08b0f417fdb92f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classstxxl_1_1timer.html">stxxl::timer</a>&amp; stxxl::scoped_print_timer::timer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>constant access to enclosed timer </p>
+
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00269">269</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +273,7 @@ Protected Attributes</h2></td></tr>
 
 <p>bytes processed </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00143">143</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00234">234</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -266,11 +297,11 @@ Protected Attributes</h2></td></tr>
 
 <p>message </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00140">140</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00231">231</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2fc877a3229ff64775420bf93f143f52"></a>
+<a class="anchor" id="a4ed329540c6d9faf02694b5503aaf613"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -278,7 +309,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">class <a class="el" href="classstxxl_1_1timer.html">timer</a> stxxl::scoped_print_timer::m_timer</td>
+          <td class="memname"><a class="el" href="classstxxl_1_1timer.html">stxxl::timer</a> stxxl::scoped_print_timer::m_timer</td>
         </tr>
       </table>
   </td>
@@ -290,7 +321,7 @@ Protected Attributes</h2></td></tr>
 
 <p>timer </p>
 
-<p>Definition at line <a class="el" href="timer_8h_source.html#l00146">146</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p>Definition at line <a class="el" href="timer_8h_source.html#l00237">237</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -303,10 +334,10 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1scoped__print__timer.html">scoped_print_timer</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/6a79cafb8d284403fa330048091d8deba3449c15">STXXL 1.4.1-2-g6a79caf</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/edd868e6097b57c60a17d5550539f81fcbbed72c">STXXL 1.4.1-313-gedd868e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Oct 29 2014 11:04:52 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Thu Feb 12 2015 12:27:31 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
