@@ -308,87 +308,92 @@ $(document).ready(function(){initNavTree('block__manager_8h_source.html','');});
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="classstxxl_1_1simple__vector.html">simple_vector&lt;bid_array_type&gt;</a> disk_bids(ndisks);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classstxxl_1_1simple__vector.html">simple_vector&lt;file*&gt;</a> disk_ptrs(nblocks);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    bl.<a class="code" href="classstxxl_1_1simple__vector.html#a6057f6aaa190a16af8b90f14d7163725">memzero</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// choose disks by calling DiskAssignFunctor</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0; i &lt; nblocks; ++i)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> disk = functor(offset + i);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        disk_ptrs[i] = disk_files[disk];</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        bl[disk]++;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0; i &lt; ndisks; ++i)</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (bl[i])</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            disk_bids[i].<a class="code" href="classstxxl_1_1simple__vector.html#aa433c2e40a30ee6546390a84998c4d6f">resize</a>(bl[i]);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            disk_allocators[i]-&gt;new_blocks(disk_bids[i]);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    bl.<a class="code" href="classstxxl_1_1simple__vector.html#a6057f6aaa190a16af8b90f14d7163725">memzero</a>();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    OutputIterator it = out;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0; i != nblocks; ++it, ++i)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> disk = disk_ptrs[i]-&gt;get_allocator_id();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        bid_type bid(disk_ptrs[i], disk_bids[disk][bl[disk]++].offset);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        *it = bid;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="bid_8h.html#a1708b290ad83af343446fbcf4e02eb50">STXXL_VERBOSE_BLOCK_LIFE_CYCLE</a>(<span class="stringliteral">&quot;BLC:new    &quot;</span> &lt;&lt; <a class="code" href="bid_8h.html#a07ee829510d1406d6d74e418202fd481">FMT_BID</a>(bid));</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#if STXXL_MNG_COUNT_ALLOCATION</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor"></span>    m_total_allocation += nblocks * BIDType::size;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    m_current_allocation += nblocks * BIDType::size;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    m_maximum_allocation = <a class="code" href="namespacestxxl.html#a9ba1dbf90be30dfeae39cbd40dfe6340">STXXL_MAX</a>(m_maximum_allocation, m_current_allocation);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif // STXXL_MNG_COUNT_ALLOCATION</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> BlockSize&gt;</div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">  236</a></span>&#160;<span class="keywordtype">void</span> block_manager::delete_block(<span class="keyword">const</span> <a class="code" href="structstxxl_1_1BID.html">BID&lt;BlockSize&gt;</a>&amp; bid)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">// do not uncomment it</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">//assert(bid.storage-&gt;get_allocator_id() &lt; config::get_instance()-&gt;disks_number());</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">if</span> (!bid.<a class="code" href="structstxxl_1_1BID.html#a2239a281246cba9687a1bfd25db3b01b">is_managed</a>())</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span>;  <span class="comment">// self managed disk</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="bid_8h.html#a1708b290ad83af343446fbcf4e02eb50">STXXL_VERBOSE_BLOCK_LIFE_CYCLE</a>(<span class="stringliteral">&quot;BLC:delete &quot;</span> &lt;&lt; <a class="code" href="bid_8h.html#a07ee829510d1406d6d74e418202fd481">FMT_BID</a>(bid));</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    assert(bid.<a class="code" href="structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d">storage</a>-&gt;<a class="code" href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">get_allocator_id</a>() &gt;= 0);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    disk_allocators[bid.<a class="code" href="structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d">storage</a>-&gt;<a class="code" href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">get_allocator_id</a>()]-&gt;delete_block(bid);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    disk_files[bid.<a class="code" href="structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d">storage</a>-&gt;<a class="code" href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">get_allocator_id</a>()]-&gt;discard(bid.<a class="code" href="structstxxl_1_1BID.html#ae73689cc5ed6c948872093ff53923e6e">offset</a>, bid.<a class="code" href="structstxxl_1_1BID.html#aca1fd8311c4f584925de8d4e48d29ddea6d2c6ed7ef33485ac034608d03ce3883">size</a>);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#if STXXL_MNG_COUNT_ALLOCATION</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span>    m_current_allocation -= BlockSize;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#endif // STXXL_MNG_COUNT_ALLOCATION</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    bl.<a class="code" href="classstxxl_1_1simple__vector.html#a6057f6aaa190a16af8b90f14d7163725">memzero</a>();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0; i &lt; nblocks; ++i)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> disk = functor(offset + i);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        disk_ptrs[i] = disk_files[disk];</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        bl[disk]++;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// allocate blocks on disks</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0; i &lt; ndisks; ++i)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">if</span> (bl[i])</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            disk_bids[i].<a class="code" href="classstxxl_1_1simple__vector.html#aa433c2e40a30ee6546390a84998c4d6f">resize</a>(bl[i]);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            disk_allocators[i]-&gt;new_blocks(disk_bids[i]);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    bl.<a class="code" href="classstxxl_1_1simple__vector.html#a6057f6aaa190a16af8b90f14d7163725">memzero</a>();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    OutputIterator it = out;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> i = 0; i != nblocks; ++it, ++i)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> disk = disk_ptrs[i]-&gt;get_allocator_id();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        bid_type bid(disk_ptrs[i], disk_bids[disk][bl[disk]++].offset);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        *it = bid;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="bid_8h.html#a1708b290ad83af343446fbcf4e02eb50">STXXL_VERBOSE_BLOCK_LIFE_CYCLE</a>(<span class="stringliteral">&quot;BLC:new    &quot;</span> &lt;&lt; <a class="code" href="bid_8h.html#a07ee829510d1406d6d74e418202fd481">FMT_BID</a>(bid));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#if STXXL_MNG_COUNT_ALLOCATION</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span>    m_total_allocation += nblocks * BIDType::size;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    m_current_allocation += nblocks * BIDType::size;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    m_maximum_allocation = <a class="code" href="namespacestxxl.html#a9ba1dbf90be30dfeae39cbd40dfe6340">STXXL_MAX</a>(m_maximum_allocation, m_current_allocation);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif // STXXL_MNG_COUNT_ALLOCATION</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> BlockSize&gt;</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="group__mnglayer.html#gabbd5a927be337358785fb7cace9ef95f">  239</a></span>&#160;<span class="keywordtype">void</span> block_manager::delete_block(<span class="keyword">const</span> <a class="code" href="structstxxl_1_1BID.html">BID&lt;BlockSize&gt;</a>&amp; bid)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (!bid.<a class="code" href="structstxxl_1_1BID.html#a28fb4b2c4fef9f3d413f059eb6cb3652">valid</a>()) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">//STXXL_MSG(&quot;Warning: invalid block to be deleted.&quot;);</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">if</span> (!bid.<a class="code" href="structstxxl_1_1BID.html#a2239a281246cba9687a1bfd25db3b01b">is_managed</a>())</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span>;  <span class="comment">// self managed disk</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="bid_8h.html#a1708b290ad83af343446fbcf4e02eb50">STXXL_VERBOSE_BLOCK_LIFE_CYCLE</a>(<span class="stringliteral">&quot;BLC:delete &quot;</span> &lt;&lt; <a class="code" href="bid_8h.html#a07ee829510d1406d6d74e418202fd481">FMT_BID</a>(bid));</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    assert(bid.<a class="code" href="structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d">storage</a>-&gt;<a class="code" href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">get_allocator_id</a>() &gt;= 0);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    disk_allocators[bid.<a class="code" href="structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d">storage</a>-&gt;<a class="code" href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">get_allocator_id</a>()]-&gt;delete_block(bid);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    disk_files[bid.<a class="code" href="structstxxl_1_1BID.html#afedc211fd1c1d3803d21856c40a4f99d">storage</a>-&gt;<a class="code" href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">get_allocator_id</a>()]-&gt;discard(bid.<a class="code" href="structstxxl_1_1BID.html#ae73689cc5ed6c948872093ff53923e6e">offset</a>, bid.<a class="code" href="structstxxl_1_1BID.html#aca1fd8311c4f584925de8d4e48d29ddea6d2c6ed7ef33485ac034608d03ce3883">size</a>);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> BIDIteratorClass&gt;</div>
-<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="group__mnglayer.html#ga1e37cfadb2eb22b38529bc2e85448fbc">  253</a></span>&#160;<span class="keywordtype">void</span> block_manager::delete_blocks(</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">const</span> BIDIteratorClass&amp; bidbegin,</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">const</span> BIDIteratorClass&amp; bidend)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">for</span> (BIDIteratorClass it = bidbegin; it != bidend; it++)</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        delete_block(*it);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">// in bytes</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#ifndef STXXL_DEFAULT_BLOCK_SIZE</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="group__mnglayer.html#ga3c3f065b2005cecc00e52f1e397be532">  265</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #define STXXL_DEFAULT_BLOCK_SIZE(type) (2 * 1024 * 1024) // use traits</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif // !STXXL_MNG_BLOCK_MANAGER_HEADER</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#if STXXL_MNG_COUNT_ALLOCATION</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span>    m_current_allocation -= BlockSize;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif // STXXL_MNG_COUNT_ALLOCATION</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> BIDIteratorClass&gt;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="group__mnglayer.html#ga1e37cfadb2eb22b38529bc2e85448fbc">  258</a></span>&#160;<span class="keywordtype">void</span> block_manager::delete_blocks(</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">const</span> BIDIteratorClass&amp; bidbegin,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">const</span> BIDIteratorClass&amp; bidend)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">for</span> (BIDIteratorClass it = bidbegin; it != bidend; it++)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        delete_block(*it);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">// in bytes</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#ifndef STXXL_DEFAULT_BLOCK_SIZE</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="group__mnglayer.html#ga3c3f065b2005cecc00e52f1e397be532">  270</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #define STXXL_DEFAULT_BLOCK_SIZE(type) (2 * 1024 * 1024) // use traits</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#endif // !STXXL_MNG_BLOCK_MANAGER_HEADER</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="mng_2config_8h_html"><div class="ttname"><a href="mng_2config_8h.html">config.h</a></div></div>
 <div class="ttc" id="classstxxl_1_1block__manager_html_a291393239c5a16440fda2e5d0c54795e"><div class="ttname"><a href="classstxxl_1_1block__manager.html#a291393239c5a16440fda2e5d0c54795e">stxxl::block_manager::get_maximum_allocation</a></div><div class="ttdeci">uint64 get_maximum_allocation() const </div><div class="ttdoc">return maximum number of bytes allocated during program run. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00180">block_manager.h:180</a></div></div>
 <div class="ttc" id="block__alloc_8h_html"><div class="ttname"><a href="block__alloc_8h.html">block_alloc.h</a></div></div>
 <div class="ttc" id="singleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div></div>
 <div class="ttc" id="classstxxl_1_1block__manager_html_a3884a20c115e13ddd18a0e7e3c1b74ab"><div class="ttname"><a href="classstxxl_1_1block__manager.html#a3884a20c115e13ddd18a0e7e3c1b74ab">stxxl::block_manager::m_current_allocation</a></div><div class="ttdeci">uint64 m_current_allocation</div><div class="ttdoc">currently allocated bytes </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00076">block_manager.h:76</a></div></div>
-<div class="ttc" id="classstxxl_1_1disk__allocator_html"><div class="ttname"><a href="classstxxl_1_1disk__allocator.html">stxxl::disk_allocator</a></div><div class="ttdef"><b>Definition:</b> <a href="disk__allocator_8h_source.html#l00041">disk_allocator.h:41</a></div></div>
+<div class="ttc" id="classstxxl_1_1disk__allocator_html"><div class="ttname"><a href="classstxxl_1_1disk__allocator.html">stxxl::disk_allocator</a></div><div class="ttdef"><b>Definition:</b> <a href="disk__allocator_8h_source.html#l00043">disk_allocator.h:43</a></div></div>
 <div class="ttc" id="classstxxl_1_1block__manager_html"><div class="ttname"><a href="classstxxl_1_1block__manager.html">stxxl::block_manager</a></div><div class="ttdoc">Block manager class. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00061">block_manager.h:61</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a82128fed22a58d0bc7b0eb3670def436"><div class="ttname"><a href="namespacestxxl.html#a82128fed22a58d0bc7b0eb3670def436">stxxl::uint64</a></div><div class="ttdeci">unsigned long long int uint64</div><div class="ttdef"><b>Definition:</b> <a href="common_2types_8h_source.html#l00039">types.h:39</a></div></div>
 <div class="ttc" id="classstxxl_1_1BIDArray_html"><div class="ttname"><a href="classstxxl_1_1BIDArray.html">stxxl::BIDArray</a></div><div class="ttdef"><b>Definition:</b> <a href="bid_8h_source.html#l00145">bid.h:145</a></div></div>
@@ -416,6 +421,7 @@ $(document).ready(function(){initNavTree('block__manager_8h_source.html','');});
 <div class="ttc" id="classstxxl_1_1singleton_html"><div class="ttname"><a href="classstxxl_1_1singleton.html">stxxl::singleton</a></div><div class="ttdef"><b>Definition:</b> <a href="singleton_8h_source.html#l00026">singleton.h:26</a></div></div>
 <div class="ttc" id="classstxxl_1_1block__manager_html_aea0e86b68cc69d43def85bd5b1f60935"><div class="ttname"><a href="classstxxl_1_1block__manager.html#aea0e86b68cc69d43def85bd5b1f60935">stxxl::block_manager::new_block</a></div><div class="ttdeci">void new_block(const DiskAssignFunctor &amp;functor, BID&lt; BLK_SIZE &gt; &amp;bid, unsigned_type offset=0)</div><div class="ttdoc">Allocates a new block according to the strategy given by functor and stores the block identifier to b...</div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00150">block_manager.h:150</a></div></div>
 <div class="ttc" id="vector_html"><div class="ttname"><a href="vector.html">vector</a></div></div>
+<div class="ttc" id="structstxxl_1_1BID_html_a28fb4b2c4fef9f3d413f059eb6cb3652"><div class="ttname"><a href="structstxxl_1_1BID.html#a28fb4b2c4fef9f3d413f059eb6cb3652">stxxl::BID::valid</a></div><div class="ttdeci">bool valid() const </div><div class="ttdef"><b>Definition:</b> <a href="bid_8h_source.html#l00055">bid.h:55</a></div></div>
 <div class="ttc" id="classstxxl_1_1block__manager_html_a5d1ba172819d3bf2969f3a1e35efabb5"><div class="ttname"><a href="classstxxl_1_1block__manager.html#a5d1ba172819d3bf2969f3a1e35efabb5">stxxl::block_manager::new_blocks</a></div><div class="ttdeci">void new_blocks(const DiskAssignFunctor &amp;functor, BIDIteratorClass bidbegin, BIDIteratorClass bidend, unsigned_type offset=0)</div><div class="ttdoc">Allocates new blocks. </div><div class="ttdef"><b>Definition:</b> <a href="block__manager_8h_source.html#l00109">block_manager.h:109</a></div></div>
 <div class="ttc" id="classstxxl_1_1file_html_ac1dde4250ab7493f935125d80d45faa0"><div class="ttname"><a href="classstxxl_1_1file.html#ac1dde4250ab7493f935125d80d45faa0">stxxl::file::get_allocator_id</a></div><div class="ttdeci">virtual int get_allocator_id() const =0</div><div class="ttdoc">Returns the file&amp;#39;s disk allocator number. </div></div>
 <div class="ttc" id="algorithm_html"><div class="ttname"><a href="algorithm.html">algorithm</a></div></div>
@@ -439,10 +445,10 @@ $(document).ready(function(){initNavTree('block__manager_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_bc6b0a06bb04e35383e101a5ba9a3f9d.html">mng</a></li><li class="navelem"><a class="el" href="block__manager_8h.html">block_manager.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b50a2b7f3b469d90b34116b91ded452f2777b6d9">STXXL 1.4.1-316-gb50a2b7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b1fb9ce960fd76f4682cced0b10f4166245fd3ef">STXXL 1.4.1-319-gb1fb9ce</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Feb 13 2015 00:26:26 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Feb 15 2015 18:26:21 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
