@@ -41,10 +41,7 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
     [ "log.h", "log_8h.html", [
       [ "logger", "classstxxl_1_1logger.html", "classstxxl_1_1logger" ]
     ] ],
-    [ "mutex.h", "mutex_8h.html", [
-      [ "mutex", "classstxxl_1_1mutex.html", "classstxxl_1_1mutex" ],
-      [ "scoped_mutex_lock", "classstxxl_1_1scoped__mutex__lock.html", "classstxxl_1_1scoped__mutex__lock" ]
-    ] ],
+    [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "new_alloc.h", "new__alloc_8h.html", "new__alloc_8h" ],
     [ "onoff_switch.h", "onoff__switch_8h.html", [
       [ "onoff_switch", "classstxxl_1_1onoff__switch.html", "classstxxl_1_1onoff__switch" ]

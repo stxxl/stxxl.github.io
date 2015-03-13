@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a8a1b843d24f9cf62de140105097ccfa3":[4,0,1,6,4,2],
+"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#ae204a21ac7366269beb900f27b15547b":[4,0,1,6,4,1],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__multiply__and__add.html":[4,0,1,6,5],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__multiply__and__add.html#a664250ac0cdefe3790c1da91843cfbfb":[4,0,1,6,5,0],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__unary__ass__op.html":[4,0,1,6,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structstxxl_1_1parallel_1_1Settings.html#a5e5ed1ed7d32c554d9c4440e297d04a7":[4,0,1,8,45,4],
 "structstxxl_1_1parallel_1_1Settings.html#a6026a83d851253c3970d95bac3959489":[4,0,1,8,45,5],
 "structstxxl_1_1parallel_1_1Settings.html#a6ef23e41a7569450666277c58e7cf03c":[4,0,1,8,45,12],
-"structstxxl_1_1parallel_1_1Settings.html#a6f75b2b585e5ff11a618afefb4ad5c94":[4,0,1,8,45,6],
-"structstxxl_1_1parallel_1_1Settings.html#a79728a3b9bba5ecc3de56232190b279d":[4,0,1,8,45,7],
-"structstxxl_1_1parallel_1_1Settings.html#a7ee90da4321da5798677d539777fa2ae":[4,0,1,8,45,11]
+"structstxxl_1_1parallel_1_1Settings.html#a6f75b2b585e5ff11a618afefb4ad5c94":[4,0,1,8,45,6]
 };

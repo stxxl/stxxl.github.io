@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae1cfa0b5057fc2dbfbca665725d0bdcf":[4,0,1,3,10,8],
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae891e444f3bd40ec8e405b8c8b0c8e9d":[4,0,1,3,10,13],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae9b9ca051f5db11c1f896fc68a8f0f3a":[4,0,1,3,10,6],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#af7920a50082f616a361a1173d46f6ffc":[4,0,1,3,10,16],
 "structstxxl_1_1hash__map_1_1block__cache_1_1bid__eq.html":[4,0,1,3,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af189e12a61266a191f6ee3bc2fb2f6a2":[4,0,1,6,3,2],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af6362f61687539d32308f475381d4ac5":[4,0,1,6,3,0],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html":[4,0,1,6,4],
-"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a29a9e7316c8a30c05a3d079f90b63786":[4,0,1,6,4,0],
-"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a8a1b843d24f9cf62de140105097ccfa3":[4,0,1,6,4,2],
-"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#ae204a21ac7366269beb900f27b15547b":[4,0,1,6,4,1]
+"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a29a9e7316c8a30c05a3d079f90b63786":[4,0,1,6,4,0]
 };

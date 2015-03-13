@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('seed_8cpp_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span>seed_generator_t {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">unsigned</span> seed;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    mutex mtx;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="namespacestxxl.html#a56c4984b3d471fbb81a9b4a2497330f7">fastmutex</a> mtx;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    seed_generator_t(<span class="keywordtype">unsigned</span> s) : seed(s)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    { }</div>
@@ -178,13 +178,13 @@ $(document).ready(function(){initNavTree('seed_8cpp_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">set_seed</a>(<span class="keywordtype">unsigned</span> seed)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_fast_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().seed = seed;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">   73</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="namespacestxxl.html#af098af72067a476bc5fccb2efe6074ab">get_next_seed</a>()</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classstxxl_1_1scoped__mutex__lock.html">scoped_fast_mutex_lock</a> Lock(<a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().mtx);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">seed_generator</a>().seed++;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
@@ -195,9 +195,10 @@ $(document).ready(function(){initNavTree('seed_8cpp_source.html','');});
 <div class="ttc" id="io_8h_html"><div class="ttname"><a href="io_8h.html">io.h</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a3f36e770886eb318aae9b68bcb40dbee"><div class="ttname"><a href="namespacestxxl.html#a3f36e770886eb318aae9b68bcb40dbee">stxxl::seed_generator</a></div><div class="ttdeci">seed_generator_t &amp; seed_generator()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00042">seed.cpp:42</a></div></div>
 <div class="ttc" id="namespace_8h_html"><div class="ttname"><a href="namespace_8h.html">namespace.h</a></div></div>
-<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00106">mutex.h:106</a></div></div>
+<div class="ttc" id="classstxxl_1_1scoped__mutex__lock_html"><div class="ttname"><a href="classstxxl_1_1scoped__mutex__lock.html">stxxl::scoped_mutex_lock</a></div><div class="ttdoc">Aquire a lock that&amp;#39;s valid until the end of scope. </div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00123">mutex.h:123</a></div></div>
 <div class="ttc" id="namespace_8h_html_a3a0db882bf107866ded135ce72af6a5f"><div class="ttname"><a href="namespace_8h.html#a3a0db882bf107866ded135ce72af6a5f">STXXL_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define STXXL_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00016">namespace.h:16</a></div></div>
 <div class="ttc" id="mutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
+<div class="ttc" id="namespacestxxl_html_a56c4984b3d471fbb81a9b4a2497330f7"><div class="ttname"><a href="namespacestxxl.html#a56c4984b3d471fbb81a9b4a2497330f7">stxxl::fastmutex</a></div><div class="ttdeci">mutex fastmutex</div><div class="ttdef"><b>Definition:</b> <a href="mutex_8h_source.html#l00106">mutex.h:106</a></div></div>
 <div class="ttc" id="namespacestxxl_html_a9a9ece6a4be90cf836b0a3ec3e8d2565"><div class="ttname"><a href="namespacestxxl.html#a9a9ece6a4be90cf836b0a3ec3e8d2565">stxxl::set_seed</a></div><div class="ttdeci">void set_seed(unsigned seed)</div><div class="ttdoc">set the global stxxl seed value </div><div class="ttdef"><b>Definition:</b> <a href="seed_8cpp_source.html#l00067">seed.cpp:67</a></div></div>
 <div class="ttc" id="namespace_8h_html_abf690e046efa58c85da1f450bb098392"><div class="ttname"><a href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div><div class="ttdeci">#define STXXL_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="namespace_8h_source.html#l00017">namespace.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -206,10 +207,10 @@ $(document).ready(function(){initNavTree('seed_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1ea122f7b94457c2332c194612c8b8fe.html">common</a></li><li class="navelem"><a class="el" href="seed_8cpp.html">seed.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/b1fb9ce960fd76f4682cced0b10f4166245fd3ef">STXXL 1.4.1-319-gb1fb9ce</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/069ca9d0489ff764f7d99a00c977fd923bcdcee2">STXXL 1.4.1-326-g069ca9d</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Feb 15 2015 18:26:32 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Mar 13 2015 18:25:53 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

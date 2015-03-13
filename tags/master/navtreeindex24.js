@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"structstxxl_1_1BID.html#a28fb4b2c4fef9f3d413f059eb6cb3652":[2,2,6,8],
+"structstxxl_1_1BID.html#a29c8b2f6969feb08a57a304722928fca":[2,2,6,2],
 "structstxxl_1_1BID.html#a5832b0b670a6b85b9047a005acc84fc0":[2,2,6,3],
 "structstxxl_1_1BID.html#a88e9955a97d7cfd64ce9e45b8c153a51":[2,2,6,7],
 "structstxxl_1_1BID.html#a91bc86162f8e27915293959d26ba7145":[2,2,6,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#a9b9d23538cdacd82e724389a2c25b506":[4,0,1,3,10,17],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#aa4743abafcaf4f17988d7c36143e140a":[4,0,1,3,10,1],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#aa8f361b0bc18aa18ebd37c44dc53dc8f":[4,0,1,3,10,18],
-"structstxxl_1_1hash__map_1_1HashedValuesStream.html#abf0ddb714d8bc5844fb114283b6dacb3":[4,0,1,3,10,9],
-"structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae1cfa0b5057fc2dbfbca665725d0bdcf":[4,0,1,3,10,8],
-"structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae891e444f3bd40ec8e405b8c8b0c8e9d":[4,0,1,3,10,13]
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#abf0ddb714d8bc5844fb114283b6dacb3":[4,0,1,3,10,9]
 };

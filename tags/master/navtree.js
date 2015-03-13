@@ -68,14 +68,14 @@ var NAVTREEINDEX =
 "deque_8h.html#ga07f905889c4d8d9ba57defc7d5322a1a",
 "functions_vars_0x6b.html",
 "linuxaio__request_8h.html#a28f3574021fcb44b576233aa5f72ea60",
-"parallel_2types_8h.html",
-"structstxxl_1_1BID.html#a5832b0b670a6b85b9047a005acc84fc0",
-"structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae9b9ca051f5db11c1f896fc68a8f0f3a",
-"structstxxl_1_1matrix__local_1_1low__level__matrix__multiply__and__add.html",
-"structstxxl_1_1parallel_1_1Settings.html#a83029e271c2b03108452fe67c0add01f",
-"structstxxl_1_1run__cursor2.html#acd5de782327395087daf334e5649cf32",
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#aed0c16c431e8c2532006dbec299d0c41",
-"verbose_8h.html"
+"parallel_2settings_8h.html#ad5b7f14ee43851e5904b3f567d60ad2e",
+"structstxxl_1_1BID.html#a28fb4b2c4fef9f3d413f059eb6cb3652",
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae1cfa0b5057fc2dbfbca665725d0bdcf",
+"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a8a1b843d24f9cf62de140105097ccfa3",
+"structstxxl_1_1parallel_1_1Settings.html#a79728a3b9bba5ecc3de56232190b279d",
+"structstxxl_1_1run__cursor2.html#a806f0e84d7f2a2b524615a16d73da9a8",
+"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#acb9372ed3bf83e4f366e6c75d9c4177f",
+"verbose_8cpp.html#a5980d3f5e0e1a999f8cd3cbe843e3c03"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
