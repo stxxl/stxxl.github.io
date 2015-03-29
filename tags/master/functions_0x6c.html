@@ -194,6 +194,7 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 </li>
 <li>level()
 : <a class="el" href="classstxxl_1_1ppq__local_1_1internal__array.html#a5407fb5565a8543eb2c7439200968656">stxxl::ppq_local::internal_array&lt; ValueType &gt;</a>
+, <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a2f0fbd599465976c164a8817db5d33f8">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
 </li>
 <li>lexicographic()
 : <a class="el" href="classstxxl_1_1parallel_1_1lexicographic.html#ae0b5fcdfdaf26bf8062987415c776a29">stxxl::parallel::lexicographic&lt; T1, T2, Comparator &gt;</a>
@@ -293,11 +294,11 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 : <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#a53339a7a39b70ba89b1e204601dbe9c7">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;</a>
 </li>
 <li>losers
-: <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguardedBase.html#a8c612c07012db4b92224505934d9906b">stxxl::parallel::LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;</a>
-, <a class="el" href="classstxxl_1_1parallel_1_1LoserTreeCopyUnguardedBase.html#a658f6356ee816c14fb7a2c29cb8fd744">stxxl::parallel::LoserTreeCopyUnguardedBase&lt; ValueType, Comparator &gt;</a>
+: <a class="el" href="classstxxl_1_1parallel_1_1LoserTreeCopyUnguardedBase.html#a658f6356ee816c14fb7a2c29cb8fd744">stxxl::parallel::LoserTreeCopyUnguardedBase&lt; ValueType, Comparator &gt;</a>
+, <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguardedBase.html#a8c612c07012db4b92224505934d9906b">stxxl::parallel::LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;</a>
+, <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerBase.html#a72ba5a31cde10aa8902798b792e5aeb7">stxxl::parallel::LoserTreePointerBase&lt; ValueType, Comparator &gt;</a>
 , <a class="el" href="classstxxl_1_1parallel_1_1LoserTreeCopyBase.html#acb1b42a461f4dafd3857009534de9558">stxxl::parallel::LoserTreeCopyBase&lt; ValueType, Comparator &gt;</a>
 , <a class="el" href="classstxxl_1_1parallel_1_1LoserTreeReference.html#a1cdabbd0e1aa944c7061b31c092cc24f">stxxl::parallel::LoserTreeReference&lt; T, Comparator &gt;</a>
-, <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerBase.html#a72ba5a31cde10aa8902798b792e5aeb7">stxxl::parallel::LoserTreePointerBase&lt; ValueType, Comparator &gt;</a>
 </li>
 <li>LoserTreeCopyBase()
 : <a class="el" href="classstxxl_1_1parallel_1_1LoserTreeCopyBase.html#a44fcfb2632ec8f4cabe770cef017e136">stxxl::parallel::LoserTreeCopyBase&lt; ValueType, Comparator &gt;</a>
@@ -313,8 +314,8 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 : <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerBase.html#a318afa44d76f3b8c3c6acf696696ceaa">stxxl::parallel::LoserTreePointerBase&lt; ValueType, Comparator &gt;</a>
 </li>
 <li>LoserTreePointerUnguarded()
-: <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguarded.html#ac37cc5bac25d7b19c862bf6954dd1730">stxxl::parallel::LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;</a>
-, <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#ae0ac975794f261d3a7a7bbef8814cf6e">stxxl::parallel::LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;</a>
+: <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#ae0ac975794f261d3a7a7bbef8814cf6e">stxxl::parallel::LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;</a>
+, <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguarded.html#ac37cc5bac25d7b19c862bf6954dd1730">stxxl::parallel::LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;</a>
 </li>
 <li>LoserTreePointerUnguardedBase()
 : <a class="el" href="classstxxl_1_1parallel_1_1LoserTreePointerUnguardedBase.html#aa9fff803b7f6d7510088802593315085">stxxl::parallel::LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;</a>
@@ -338,14 +339,13 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 : <a class="el" href="classstxxl_1_1uint__pair.html#a8297604a322ebc1d174f1a913ae7816b">stxxl::uint_pair&lt; HighType &gt;</a>
 </li>
 <li>lower_bound()
-: <a class="el" href="classstxxl_1_1btree_1_1btree.html#a588432d352900bd7bf1f500e86837a7d">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
-, <a class="el" href="classstxxl_1_1btree_1_1normal__leaf.html#a87668c1a677feaf31c87667b816976e0">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;</a>
-, <a class="el" href="classstxxl_1_1btree_1_1btree.html#a9c1117c5c725e95d625ef6ab6c365a23">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
-, <a class="el" href="classstxxl_1_1btree_1_1normal__leaf.html#ac452562cf729f6608a937a6dddb1f366">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;</a>
-, <a class="el" href="classstxxl_1_1btree_1_1normal__node.html#af273a747a981fd814af4dcc33b4ce3d3">stxxl::btree::normal_node&lt; KeyType, KeyCmp, RawSize, BTreeType &gt;</a>
-, <a class="el" href="classstxxl_1_1map.html#aebd69dbfb5b22c8e223767cda3ae7892">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+: <a class="el" href="classstxxl_1_1btree_1_1normal__leaf.html#ac452562cf729f6608a937a6dddb1f366">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1btree_1_1btree.html#a588432d352900bd7bf1f500e86837a7d">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
 , <a class="el" href="classstxxl_1_1btree_1_1normal__node.html#a419ed149eb8d9a23ba85f184938b2da1">stxxl::btree::normal_node&lt; KeyType, KeyCmp, RawSize, BTreeType &gt;</a>
+, <a class="el" href="classstxxl_1_1map.html#aebd69dbfb5b22c8e223767cda3ae7892">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+, <a class="el" href="classstxxl_1_1btree_1_1normal__node.html#af273a747a981fd814af4dcc33b4ce3d3">stxxl::btree::normal_node&lt; KeyType, KeyCmp, RawSize, BTreeType &gt;</a>
 , <a class="el" href="classstxxl_1_1map.html#a98a58c2b22fc3dfeb9183c7601113cfd">stxxl::map&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+, <a class="el" href="classstxxl_1_1btree_1_1normal__leaf.html#a87668c1a677feaf31c87667b816976e0">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;</a>
 </li>
 <li>lowest()
 : <a class="el" href="classstd_1_1numeric__limits_3_01stxxl_1_1uint__pair_3_01HighType_01_4_01_4.html#a50504f14ad25ee4889b9cd263c588c5d">std::numeric_limits&lt; stxxl::uint_pair&lt; HighType &gt; &gt;</a>
@@ -354,28 +354,28 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 : <a class="el" href="classstxxl_1_1lru__pager.html#ac64df5dffed0d6b237076e89e2edaf8f">stxxl::lru_pager&lt; npages_ &gt;</a>
 </li>
 <li>LT
-: <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01short_00_01Comparator_01_4.html#ae7441f797920e7efbf992ae0d4059af1">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, short, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01int_00_01Comparator_01_4.html#a8f4afcd77c64baac859cd13fe2ee01dd">stxxl::parallel::loser_tree_traits&lt; Stable, int, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01int_00_01Comparator_01_4.html#ae18de734ed4534db1297db56910bda3f">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned int, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01short_00_01Comparator_01_4.html#a48e0dfc8978a021bceaf023296fad3c7">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned short, Comparator &gt;</a>
+: <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01char_00_01Comparator_01_4.html#ab59d6851f9ed799b737fca1ee8ac5981">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned char, Comparator &gt;</a>
 , <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01long_00_01Comparator_01_4.html#ae9de0fefcefac66c94350272373b2c2f">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned long, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01char_00_01Comparator_01_4.html#a85605b1669af7d906dc3b7efb0850100">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned char, Comparator &gt;</a>
 , <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01long_00_01Comparator_01_4.html#ae6a0a43f2f1e6532e2c577ce631c69ad">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned long, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01char_00_01Comparator_01_4.html#adcd639364adb183f7afce617ceab8a60">stxxl::parallel::loser_tree_traits&lt; Stable, char, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits.html#a8334f31c5e8fbb2dc1df00ce16453d62">stxxl::parallel::loser_tree_traits&lt; Stable, ValueType, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01int_00_01Comparator_01_4.html#a8f4afcd77c64baac859cd13fe2ee01dd">stxxl::parallel::loser_tree_traits&lt; Stable, int, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01short_00_01Comparator_01_4.html#ae7441f797920e7efbf992ae0d4059af1">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, short, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01short_00_01Comparator_01_4.html#a48e0dfc8978a021bceaf023296fad3c7">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned short, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01int_00_01Comparator_01_4.html#ae18de734ed4534db1297db56910bda3f">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned int, Comparator &gt;</a>
 , <a class="el" href="classstxxl_1_1parallel_1_1loser__tree__traits__unguarded.html#acffb649bbf7c25a12760a904cdd1c5cf">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, ValueType, Comparator &gt;</a>
 , <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01long_00_01Comparator_01_4.html#ac18e7e823245a3d6bbba6f1cfa7a1e9e">stxxl::parallel::loser_tree_traits&lt; Stable, long, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01int_00_01Comparator_01_4.html#ab3faabf7fbdcb2acbff0fe967cd398a0">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, int, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01char_00_01Comparator_01_4.html#ab08d0b22dfbbfa70822cb71804761f18">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, char, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01long_01long_00_01Comparator_01_4.html#a7224e16cc41a5afc16622cf0b20fbba5">stxxl::parallel::loser_tree_traits&lt; Stable, long long, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01char_00_01Comparator_01_4.html#ab59d6851f9ed799b737fca1ee8ac5981">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned char, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01long_00_01Comparator_01_4.html#af9c46cd53af5d10a9801763794b81ad9">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, long, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01char_00_01Comparator_01_4.html#a85605b1669af7d906dc3b7efb0850100">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned char, Comparator &gt;</a>
 , <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01long_01long_00_01Comparator_01_4.html#a4af7858f1829fa7b99e50a0c7d1c47f8">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned long long, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01long_01long_00_01Comparator_01_4.html#ae989a9bd322cac0f9305968cde18d741">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned long long, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01short_00_01Comparator_01_4.html#afe168235c76897e73761304c757713a1">stxxl::parallel::loser_tree_traits&lt; Stable, short, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01int_00_01Comparator_01_4.html#a804ddc55c4a6588bfb2230304b059cd3">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned int, Comparator &gt;</a>
-, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01long_01long_00_01Comparator_01_4.html#a85c699292c146a1ee211144e1bb8fba1">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, long long, Comparator &gt;</a>
 , <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01short_00_01Comparator_01_4.html#ae2fa762cbae168f318312b225af2f9b1">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned short, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01char_00_01Comparator_01_4.html#ab08d0b22dfbbfa70822cb71804761f18">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, char, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01long_00_01Comparator_01_4.html#af9c46cd53af5d10a9801763794b81ad9">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, long, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits.html#a8334f31c5e8fbb2dc1df00ce16453d62">stxxl::parallel::loser_tree_traits&lt; Stable, ValueType, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01char_00_01Comparator_01_4.html#adcd639364adb183f7afce617ceab8a60">stxxl::parallel::loser_tree_traits&lt; Stable, char, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01unsigned_01long_01long_00_01Comparator_01_4.html#ae989a9bd322cac0f9305968cde18d741">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, unsigned long long, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01long_01long_00_01Comparator_01_4.html#a7224e16cc41a5afc16622cf0b20fbba5">stxxl::parallel::loser_tree_traits&lt; Stable, long long, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01int_00_01Comparator_01_4.html#ab3faabf7fbdcb2acbff0fe967cd398a0">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, int, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01short_00_01Comparator_01_4.html#afe168235c76897e73761304c757713a1">stxxl::parallel::loser_tree_traits&lt; Stable, short, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits__unguarded_3_01Stable_00_01long_01long_00_01Comparator_01_4.html#a85c699292c146a1ee211144e1bb8fba1">stxxl::parallel::loser_tree_traits_unguarded&lt; Stable, long long, Comparator &gt;</a>
+, <a class="el" href="structstxxl_1_1parallel_1_1loser__tree__traits_3_01Stable_00_01unsigned_01int_00_01Comparator_01_4.html#a804ddc55c4a6588bfb2230304b059cd3">stxxl::parallel::loser_tree_traits&lt; Stable, unsigned int, Comparator &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -383,10 +383,10 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/069ca9d0489ff764f7d99a00c977fd923bcdcee2">STXXL 1.4.1-326-g069ca9d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/2340046a42efb960eacbe45d46152dc7725b0dcd">STXXL 1.4.1-339-g2340046</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Mar 13 2015 18:29:56 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Mar 29 2015 12:30:20 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -4,6 +4,8 @@ var searchData=
   ['c_5fdefault_5fextract_5fbuffer_5fram_5fpart',['c_default_extract_buffer_ram_part',['../classstxxl_1_1parallel__priority__queue.html#a13981d5c99f5e10b1a52b6934d752622',1,'stxxl::parallel_priority_queue']]],
   ['c_5fdefault_5fsingle_5fheap_5fram',['c_default_single_heap_ram',['../classstxxl_1_1parallel__priority__queue.html#a9b2fb66dc41ef6c635ae9b0329affe47',1,'stxxl::parallel_priority_queue']]],
   ['c_5flimit_5fextract_5fbuffer',['c_limit_extract_buffer',['../classstxxl_1_1parallel__priority__queue.html#a7d9469d7cdbba5a37da0f6242e4b6a76',1,'stxxl::parallel_priority_queue']]],
+  ['c_5fmax_5fexternal_5flevel_5fsize',['c_max_external_level_size',['../classstxxl_1_1parallel__priority__queue.html#a43f054d0b7bce0512aad374df498e010',1,'stxxl::parallel_priority_queue']]],
+  ['c_5fmax_5fexternal_5flevels',['c_max_external_levels',['../classstxxl_1_1parallel__priority__queue.html#a1ff2b8cef12e768995a0222d223ec4bd',1,'stxxl::parallel_priority_queue']]],
   ['c_5fmax_5finternal_5flevel_5fsize',['c_max_internal_level_size',['../classstxxl_1_1parallel__priority__queue.html#aa56f5bc24c18c250d79003ce8e3db209',1,'stxxl::parallel_priority_queue']]],
   ['c_5fmax_5finternal_5flevels',['c_max_internal_levels',['../classstxxl_1_1parallel__priority__queue.html#a8222369951a2470806214f56e25b8ac9',1,'stxxl::parallel_priority_queue']]],
   ['c_5fmerge_5fsorted_5fheaps',['c_merge_sorted_heaps',['../classstxxl_1_1parallel__priority__queue.html#a7404b98d5d8efe1e57a3380f8a142174',1,'stxxl::parallel_priority_queue']]],

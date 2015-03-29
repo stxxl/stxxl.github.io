@@ -38,7 +38,7 @@ var searchData=
   ['parallel_5fmultiway_5fmerge_5fexact_5fsplitting',['parallel_multiway_merge_exact_splitting',['../namespacestxxl_1_1parallel.html#a4b00bde7b45003ddd8c1bf2921398fd3',1,'stxxl::parallel']]],
   ['parallel_5fmultiway_5fmerge_5fsampling_5fsplitting',['parallel_multiway_merge_sampling_splitting',['../namespacestxxl_1_1parallel.html#a78520de33ba8216acaa5f8f8e373361c',1,'stxxl::parallel']]],
   ['parallel_5fpriority_5fqueue',['parallel_priority_queue',['../classstxxl_1_1parallel__priority__queue.html',1,'stxxl']]],
-  ['parallel_5fpriority_5fqueue',['parallel_priority_queue',['../classstxxl_1_1parallel__priority__queue.html#af75ed38b33bac907ff13238ca6cba8f3',1,'stxxl::parallel_priority_queue']]],
+  ['parallel_5fpriority_5fqueue',['parallel_priority_queue',['../classstxxl_1_1parallel__priority__queue.html#ad0b38a8cc13283e79cc631118bdef784',1,'stxxl::parallel_priority_queue']]],
   ['parallel_5fpriority_5fqueue_2eh',['parallel_priority_queue.h',['../parallel__priority__queue_8h.html',1,'']]],
   ['param_5ftext',['param_text',['../structstxxl_1_1cmdline__parser_1_1argument.html#aab77b425ad6bd08c5c78bef9e977f2ea',1,'stxxl::cmdline_parser::argument']]],
   ['parameters_5ffor_5fpriority_5fqueue_5fnot_5ffound_5fincrease_5fintmem',['Parameters_for_priority_queue_not_found_Increase_IntMem',['../structstxxl_1_1priority__queue__local_1_1Parameters__for__priority__queue__not__found__Increase__IntMem.html',1,'stxxl::priority_queue_local']]],

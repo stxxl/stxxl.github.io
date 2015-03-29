@@ -2,7 +2,7 @@ var searchData=
 [
   ['l1sort',['l1sort',['../namespacestxxl.html#ab2e8ea374e5f0b161dc8c4b9ab1b0e8c',1,'stxxl']]],
   ['last_5fblock_5fitems',['last_block_items',['../classstxxl_1_1ppq__local_1_1external__array.html#a70572aa5cecca1b8afa9c4f97baac1b4',1,'stxxl::ppq_local::external_array']]],
-  ['level',['level',['../classstxxl_1_1ppq__local_1_1internal__array.html#a5407fb5565a8543eb2c7439200968656',1,'stxxl::ppq_local::internal_array']]],
+  ['level',['level',['../classstxxl_1_1ppq__local_1_1internal__array.html#a5407fb5565a8543eb2c7439200968656',1,'stxxl::ppq_local::internal_array::level()'],['../classstxxl_1_1ppq__local_1_1external__array.html#a2f0fbd599465976c164a8817db5d33f8',1,'stxxl::ppq_local::external_array::level()']]],
   ['lexicographic',['lexicographic',['../classstxxl_1_1parallel_1_1lexicographic.html#ae0b5fcdfdaf26bf8062987415c776a29',1,'stxxl::parallel::lexicographic']]],
   ['lexicographic_5frev',['lexicographic_rev',['../classstxxl_1_1parallel_1_1lexicographic__rev.html#aca2e47f697c37467193eaca4f067f8bd',1,'stxxl::parallel::lexicographic_rev']]],
   ['limit_5fbegin',['limit_begin',['../classstxxl_1_1parallel__priority__queue.html#acbc92a0496406a09284cfd9d80d1fd31',1,'stxxl::parallel_priority_queue']]],

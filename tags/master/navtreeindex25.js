@@ -1,5 +1,10 @@
 var NAVTREEINDEX25 =
 {
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#a7c6e1606c21381efe283efb5d85353ed":[4,0,1,3,10,12],
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#a9b9d23538cdacd82e724389a2c25b506":[4,0,1,3,10,17],
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#aa4743abafcaf4f17988d7c36143e140a":[4,0,1,3,10,1],
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#aa8f361b0bc18aa18ebd37c44dc53dc8f":[4,0,1,3,10,18],
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#abf0ddb714d8bc5844fb114283b6dacb3":[4,0,1,3,10,9],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae1cfa0b5057fc2dbfbca665725d0bdcf":[4,0,1,3,10,8],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae891e444f3bd40ec8e405b8c8b0c8e9d":[4,0,1,3,10,13],
 "structstxxl_1_1hash__map_1_1HashedValuesStream.html#ae9b9ca051f5db11c1f896fc68a8f0f3a":[4,0,1,3,10,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX25 =
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#a9561c6ca85d9e5700fe41fa453ad4a38":[4,0,1,6,3,16],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#aa0f9d211dfc47dbc05d3a49a07168c05":[4,0,1,6,3,11],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#aac469c10e327419d81ea51d0dfcb308a":[4,0,1,6,3,9],
-"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ace34657bbb0c5b056b2f91df45348781":[4,0,1,6,3,12],
-"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ad056f31d97ff5537b5b4c394226f9c44":[4,0,1,6,3,7],
-"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af189e12a61266a191f6ee3bc2fb2f6a2":[4,0,1,6,3,2],
-"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af6362f61687539d32308f475381d4ac5":[4,0,1,6,3,0],
-"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html":[4,0,1,6,4],
-"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a29a9e7316c8a30c05a3d079f90b63786":[4,0,1,6,4,0]
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ace34657bbb0c5b056b2f91df45348781":[4,0,1,6,3,12]
 };

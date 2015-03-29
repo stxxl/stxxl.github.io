@@ -18,7 +18,7 @@ var searchData=
   ['leaf_5fcache_5ftype',['leaf_cache_type',['../classstxxl_1_1btree_1_1btree.html#a25a002828acd10743f0f6fc6a6736122',1,'stxxl::btree::btree::leaf_cache_type()'],['../classstxxl_1_1btree_1_1normal__leaf.html#aac7401379eef7235faacaf20aca8402e',1,'stxxl::btree::normal_leaf::leaf_cache_type()']]],
   ['leaf_5ftype',['leaf_type',['../classstxxl_1_1btree_1_1btree.html#a429d334ce574c4743aab4b27a00b926c',1,'stxxl::btree::btree::leaf_type()'],['../classstxxl_1_1btree_1_1btree__iterator__base.html#a747e5ee19bdd2495b13a5ab7b5adc911',1,'stxxl::btree::btree_iterator_base::leaf_type()'],['../classstxxl_1_1btree_1_1normal__node.html#a4b7926d6c05a384e972cdf3bb9a5edc0',1,'stxxl::btree::normal_node::leaf_type()']]],
   ['less',['less',['../structstxxl_1_1parallel_1_1less.html',1,'stxxl::parallel']]],
-  ['level',['level',['../classstxxl_1_1ppq__local_1_1internal__array.html#a5407fb5565a8543eb2c7439200968656',1,'stxxl::ppq_local::internal_array']]],
+  ['level',['level',['../classstxxl_1_1ppq__local_1_1internal__array.html#a5407fb5565a8543eb2c7439200968656',1,'stxxl::ppq_local::internal_array::level()'],['../classstxxl_1_1ppq__local_1_1external__array.html#a2f0fbd599465976c164a8817db5d33f8',1,'stxxl::ppq_local::external_array::level()']]],
   ['lexicographic',['lexicographic',['../classstxxl_1_1parallel_1_1lexicographic.html',1,'stxxl::parallel']]],
   ['lexicographic',['lexicographic',['../classstxxl_1_1parallel_1_1lexicographic.html#ae0b5fcdfdaf26bf8062987415c776a29',1,'stxxl::parallel::lexicographic']]],
   ['lexicographic_5frev',['lexicographic_rev',['../classstxxl_1_1parallel_1_1lexicographic__rev.html',1,'stxxl::parallel']]],

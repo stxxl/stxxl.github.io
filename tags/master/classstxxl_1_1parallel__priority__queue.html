@@ -136,7 +136,7 @@ class stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01826">1826</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01857">1857</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -150,7 +150,7 @@ class stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, 
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1parallel__priority__queue__coll__graph.svg" width="2715" height="1644"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1parallel__priority__queue__coll__graph.svg" width="2715" height="1678"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -201,12 +201,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59331e843d5346f42339e18b49f8e05d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a59331e843d5346f42339e18b49f8e05d">update_external_min_tree</a> (size_t ea_index)</td></tr>
 <tr class="memdesc:a59331e843d5346f42339e18b49f8e05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the external min tree afer a remove() or a wait_next_blocks() call.  <a href="#a59331e843d5346f42339e18b49f8e05d">More...</a><br/></td></tr>
 <tr class="separator:a59331e843d5346f42339e18b49f8e05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf69b583ba70f974cc16b098926c12fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#adf69b583ba70f974cc16b098926c12fd">update_hint_trees</a> (size_t ea_index)</td></tr>
-<tr class="memdesc:adf69b583ba70f974cc16b098926c12fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the prefetch prediction tree afer a remove_items(), which frees up blocks.  <a href="#adf69b583ba70f974cc16b098926c12fd">More...</a><br/></td></tr>
-<tr class="separator:adf69b583ba70f974cc16b098926c12fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9befa5c3b0be03d09d1a36b0db5ee354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a9befa5c3b0be03d09d1a36b0db5ee354">update_trees_after_ea_creation</a> (const size_t ea_index)</td></tr>
-<tr class="memdesc:a9befa5c3b0be03d09d1a36b0db5ee354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate player in fetch prediction tree afer a remove() or a request_further_block() call. Rebuild hint tree completely as the hint sequence may have changed.  <a href="#a9befa5c3b0be03d09d1a36b0db5ee354">More...</a><br/></td></tr>
-<tr class="separator:a9befa5c3b0be03d09d1a36b0db5ee354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc3651bef86e5c1f8afce8555f0f7ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#abbc3651bef86e5c1f8afce8555f0f7ac">update_hint_tree</a> (size_t ea_index)</td></tr>
+<tr class="memdesc:abbc3651bef86e5c1f8afce8555f0f7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the prefetch prediction tree afer a remove_items(), which frees up blocks.  <a href="#abbc3651bef86e5c1f8afce8555f0f7ac">More...</a><br/></td></tr>
+<tr class="separator:abbc3651bef86e5c1f8afce8555f0f7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Bulk Operations</div></td></tr>
 <tr class="memitem:a957ecc6bb0214d9c883e7792d54b87b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a957ecc6bb0214d9c883e7792d54b87b5">bulk_push_begin</a> (<a class="el" href="classstxxl_1_1parallel__priority__queue.html#ae2c85f63a7e51133bf6c0852524e74f8">size_type</a> bulk_size)</td></tr>
 <tr class="memdesc:a957ecc6bb0214d9c883e7792d54b87b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a sequence of push operations.  <a href="#a957ecc6bb0214d9c883e7792d54b87b5">More...</a><br/></td></tr>
@@ -251,6 +248,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4c7578ebd85f20f4f72dd760b084a697"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a4c7578ebd85f20f4f72dd760b084a697">calculate_merge_sequences</a> (std::vector&lt; <a class="el" href="classstxxl_1_1parallel__priority__queue.html#ae2c85f63a7e51133bf6c0852524e74f8">size_type</a> &gt; &amp;sizes, std::vector&lt; <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a9d5ef32f76a7702449d667162acbfa9b">iterator_pair_type</a> &gt; &amp;sequences, bool reuse_previous_lower_bounds=false)</td></tr>
 <tr class="memdesc:a4c7578ebd85f20f4f72dd760b084a697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sequences vector needed by the multiway merger, considering inaccessible data from external arrays. The sizes vector stores the size of each sequence.  <a href="#a4c7578ebd85f20f4f72dd760b084a697">More...</a><br/></td></tr>
 <tr class="separator:a4c7578ebd85f20f4f72dd760b084a697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af685b8fd02bdf85188ef3b8c3987ca47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#af685b8fd02bdf85188ef3b8c3987ca47">check_external_level</a> (<a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> level, bool force_merge_all=false)</td></tr>
+<tr class="memdesc:af685b8fd02bdf85188ef3b8c3987ca47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges external arrays if there are too many external arrays on the same level.  <a href="#af685b8fd02bdf85188ef3b8c3987ca47">More...</a><br/></td></tr>
+<tr class="separator:af685b8fd02bdf85188ef3b8c3987ca47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac77ca9d9542ebb3fe9a2c2f37492150c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#ac77ca9d9542ebb3fe9a2c2f37492150c">cleanup_external_arrays</a> ()</td></tr>
 <tr class="memdesc:ac77ca9d9542ebb3fe9a2c2f37492150c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up empty external arrays, free their memory and capacity.  <a href="#ac77ca9d9542ebb3fe9a2c2f37492150c">More...</a><br/></td></tr>
 <tr class="separator:ac77ca9d9542ebb3fe9a2c2f37492150c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -419,6 +419,9 @@ DefaultMemSize, MaxItems &gt; &gt;&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:aa56f5bc24c18c250d79003ce8e3db209"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#aa56f5bc24c18c250d79003ce8e3db209">c_max_internal_level_size</a></td></tr>
 <tr class="memdesc:aa56f5bc24c18c250d79003ce8e3db209"><td class="mdescLeft">&#160;</td><td class="mdescRight">currently global public tuning parameter:  <a href="#aa56f5bc24c18c250d79003ce8e3db209">More...</a><br/></td></tr>
 <tr class="separator:aa56f5bc24c18c250d79003ce8e3db209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f054d0b7bce0512aad374df498e010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a43f054d0b7bce0512aad374df498e010">c_max_external_level_size</a></td></tr>
+<tr class="memdesc:a43f054d0b7bce0512aad374df498e010"><td class="mdescLeft">&#160;</td><td class="mdescRight">currently global public tuning parameter:  <a href="#a43f054d0b7bce0512aad374df498e010">More...</a><br/></td></tr>
+<tr class="separator:a43f054d0b7bce0512aad374df498e010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac033c3847e65c8aa619755d5b544de8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a0136fa010d17ec3daa18a769ce51a99a">compare_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#ac033c3847e65c8aa619755d5b544de8f">m_compare</a></td></tr>
 <tr class="memdesc:ac033c3847e65c8aa619755d5b544de8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt;-Comparator for value_type  <a href="#ac033c3847e65c8aa619755d5b544de8f">More...</a><br/></td></tr>
 <tr class="separator:ac033c3847e65c8aa619755d5b544de8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,6 +491,9 @@ Data Holding Structures</h2></td></tr>
 <tr class="memitem:a89af0bac5574bcecec5e0ddf7ff43f04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a89af0bac5574bcecec5e0ddf7ff43f04">m_internal_levels</a> [<a class="el" href="classstxxl_1_1parallel__priority__queue.html#a8222369951a2470806214f56e25b8ac9">c_max_internal_levels</a>]</td></tr>
 <tr class="memdesc:a89af0bac5574bcecec5e0ddf7ff43f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of internal arrays on each level, we use plain array.  <a href="#a89af0bac5574bcecec5e0ddf7ff43f04">More...</a><br/></td></tr>
 <tr class="separator:a89af0bac5574bcecec5e0ddf7ff43f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c47cfb0dcfbb5c766f25ba01d39dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a07c47cfb0dcfbb5c766f25ba01d39dc0">m_external_levels</a> [<a class="el" href="classstxxl_1_1parallel__priority__queue.html#a1ff2b8cef12e768995a0222d223ec4bd">c_max_external_levels</a>]</td></tr>
+<tr class="memdesc:a07c47cfb0dcfbb5c766f25ba01d39dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of external arrays on each level, we use plain array.  <a href="#a07c47cfb0dcfbb5c766f25ba01d39dc0">More...</a><br/></td></tr>
+<tr class="separator:a07c47cfb0dcfbb5c766f25ba01d39dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65711b0635d336a1d9b8874dc5610d3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a088cc57831205f6e91ad62f9554ebb5d">minima_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a65711b0635d336a1d9b8874dc5610d3e">m_minima</a></td></tr>
 <tr class="memdesc:a65711b0635d336a1d9b8874dc5610d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The winner tree containing the smallest values of all sources where the globally smallest element could come from.  <a href="#a65711b0635d336a1d9b8874dc5610d3e">More...</a><br/></td></tr>
 <tr class="separator:a65711b0635d336a1d9b8874dc5610d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -510,18 +516,18 @@ Data Holding Structures</h2></td></tr>
 <tr class="memitem:a8222369951a2470806214f56e25b8ac9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a8222369951a2470806214f56e25b8ac9">c_max_internal_levels</a> = 8</td></tr>
 <tr class="memdesc:a8222369951a2470806214f56e25b8ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of internal array levels.  <a href="#a8222369951a2470806214f56e25b8ac9">More...</a><br/></td></tr>
 <tr class="separator:a8222369951a2470806214f56e25b8ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff2b8cef12e768995a0222d223ec4bd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a1ff2b8cef12e768995a0222d223ec4bd">c_max_external_levels</a> = 8</td></tr>
+<tr class="memdesc:a1ff2b8cef12e768995a0222d223ec4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of external array levels.  <a href="#a1ff2b8cef12e768995a0222d223ec4bd">More...</a><br/></td></tr>
+<tr class="separator:a1ff2b8cef12e768995a0222d223ec4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Initialization</h2></td></tr>
-<tr class="memitem:a4efaa13453c402d0b24e1eb1c5ba151d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a4efaa13453c402d0b24e1eb1c5ba151d">init_memmanagement</a> ()</td></tr>
-<tr class="memdesc:a4efaa13453c402d0b24e1eb1c5ba151d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes member variables concerning the memory management.  <a href="#a4efaa13453c402d0b24e1eb1c5ba151d">More...</a><br/></td></tr>
-<tr class="separator:a4efaa13453c402d0b24e1eb1c5ba151d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a199849d76f726d36bfdc68ae7ac45c9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a199849d76f726d36bfdc68ae7ac45c9a">check_invariants</a> () const </td></tr>
 <tr class="memdesc:a199849d76f726d36bfdc68ae7ac45c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert many invariants of the data structures.  <a href="#a199849d76f726d36bfdc68ae7ac45c9a">More...</a><br/></td></tr>
 <tr class="separator:a199849d76f726d36bfdc68ae7ac45c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af75ed38b33bac907ff13238ca6cba8f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#af75ed38b33bac907ff13238ca6cba8f3">parallel_priority_queue</a> (const <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a0136fa010d17ec3daa18a769ce51a99a">compare_type</a> &amp;compare=<a class="el" href="classstxxl_1_1parallel__priority__queue.html#a0136fa010d17ec3daa18a769ce51a99a">compare_type</a>(), <a class="el" href="classstxxl_1_1parallel__priority__queue.html#ae2c85f63a7e51133bf6c0852524e74f8">size_type</a> total_ram=DefaultMemSize, float num_read_buffer_blocks=1.5f, unsigned_type num_write_buffer_blocks=c_num_write_buffer_blocks, unsigned_type num_insertion_heaps=0, size_type single_heap_ram=c_default_single_heap_ram, size_type extract_buffer_ram=0)</td></tr>
-<tr class="memdesc:af75ed38b33bac907ff13238ca6cba8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#af75ed38b33bac907ff13238ca6cba8f3">More...</a><br/></td></tr>
-<tr class="separator:af75ed38b33bac907ff13238ca6cba8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b38a8cc13283e79cc631118bdef784"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#ad0b38a8cc13283e79cc631118bdef784">parallel_priority_queue</a> (const <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a0136fa010d17ec3daa18a769ce51a99a">compare_type</a> &amp;compare=<a class="el" href="classstxxl_1_1parallel__priority__queue.html#a0136fa010d17ec3daa18a769ce51a99a">compare_type</a>(), <a class="el" href="classstxxl_1_1parallel__priority__queue.html#ae2c85f63a7e51133bf6c0852524e74f8">size_type</a> total_ram=DefaultMemSize, float num_read_blocks_per_ea=1.5f, unsigned_type num_write_buffer_blocks=c_num_write_buffer_blocks, unsigned_type num_insertion_heaps=0, size_type single_heap_ram=c_default_single_heap_ram, size_type extract_buffer_ram=0)</td></tr>
+<tr class="memdesc:ad0b38a8cc13283e79cc631118bdef784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad0b38a8cc13283e79cc631118bdef784">More...</a><br/></td></tr>
+<tr class="separator:ad0b38a8cc13283e79cc631118bdef784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ede048cba3eabcb511238daa4d51597"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1parallel__priority__queue.html#a5ede048cba3eabcb511238daa4d51597">~parallel_priority_queue</a> ()</td></tr>
 <tr class="memdesc:a5ede048cba3eabcb511238daa4d51597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5ede048cba3eabcb511238daa4d51597">More...</a><br/></td></tr>
 <tr class="separator:a5ede048cba3eabcb511238daa4d51597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,7 +593,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01834">1834</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01865">1865</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +609,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01839">1839</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01870">1870</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +625,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01840">1840</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01871">1871</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +641,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01838">1838</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01869">1869</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +657,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01833">1833</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01864">1864</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -667,7 +673,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01843">1843</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01874">1874</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -683,7 +689,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01844">1844</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01875">1875</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +715,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>type of external arrays vector </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01861">1861</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01895">1895</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -735,7 +741,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>type of insertion heap itself </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01856">1856</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01890">1890</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +757,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01842">1842</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01873">1873</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +783,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>type of internal arrays vector </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01859">1859</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01893">1893</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +799,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01846">1846</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01877">1877</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +815,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01847">1847</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01878">1878</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +841,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>type of minima tree combining the structures </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01865">1865</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01899">1899</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +857,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01841">1841</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01872">1872</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -875,7 +881,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02035">2035</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02069">2069</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -891,7 +897,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01836">1836</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01867">1867</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -917,7 +923,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Defines if statistics are gathered: <a class="el" href="classstxxl_1_1dummy__custom__stats__counter.html" title="Dummy class for custom_stats_counter. ">dummy_custom_stats_counter</a> or <a class="el" href="classstxxl_1_1custom__stats__counter.html" title="This class provides a statistical counter that can easily be deactivated using a typedef to dummy_cus...">custom_stats_counter</a>. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01894">1894</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01928">1928</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -943,7 +949,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Defines if statistics are gathered: <a class="el" href="classstxxl_1_1fake__timer.html" title="Class fake_timer is a drop-in replacement for timer, which does nothing. ">fake_timer</a> or timer. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01897">1897</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01931">1931</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +965,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01845">1845</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01876">1876</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -975,12 +981,12 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01832">1832</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01863">1863</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af75ed38b33bac907ff13238ca6cba8f3"></a>
+<a class="anchor" id="ad0b38a8cc13283e79cc631118bdef784"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1005,7 +1011,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>num_read_buffer_blocks</em> = <code>1.5f</code>, </td>
+          <td class="paramname"><em>num_read_blocks_per_ea</em> = <code>1.5f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1048,19 +1054,19 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">compare</td><td>Comparator for priority queue, which is a Max-PQ.</td></tr>
-    <tr><td class="paramname">total_ram</td><td>Maximum RAM usage. 0 = Default = Use the template value Ram.</td></tr>
-    <tr><td class="paramname">num_prefetch_buffer_blocks</td><td>Number of prefetch blocks per external array. Default = c_num_prefetch_buffer_blocks</td></tr>
+    <tr><td class="paramname">total_ram</td><td>Maximum RAM usage. 0 = Default = Use the template value DefaultMemSize.</td></tr>
+    <tr><td class="paramname">num_read_blocks_per_ea</td><td>Number of read blocks per external array. Default = 1.5f</td></tr>
     <tr><td class="paramname">num_write_buffer_blocks</td><td>Number of write buffer blocks for a new external array being filled. 0 = Default = c_num_write_buffer_blocks</td></tr>
-    <tr><td class="paramname">num_insertion_heaps</td><td>Number of insertion heaps. 0 = Determine by omp_get_max_threads(). Default = Determine by omp_get_max_threads().</td></tr>
-    <tr><td class="paramname">single_heap_ram</td><td>Memory usage for a single insertion heap. 0 = Default = c_single_heap_ram.</td></tr>
+    <tr><td class="paramname">num_insertion_heaps</td><td>Number of insertion heaps. 0 = Default = Determine by omp_get_max_threads().</td></tr>
+    <tr><td class="paramname">single_heap_ram</td><td>Memory usage for a single insertion heap. Default = c_single_heap_ram.</td></tr>
     <tr><td class="paramname">extract_buffer_ram</td><td>Memory usage for the extract buffer. Only relevant if c_limit_extract_buffer==true. 0 = Default = total_ram * c_default_extract_buffer_ram_part. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02271">2271</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02315">2315</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
-<p>References <a class="el" href="parallel__priority__queue_8h_source.html#l02028">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::ProcessorData::insertion_heap</a>, and <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
+<p>References <a class="el" href="parallel__priority__queue_8h_source.html#l02062">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::ProcessorData::insertion_heap</a>, and <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1095,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02386">2386</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02437">2437</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +1142,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Add new internal array, which requires that values are sorted! automatically decreases m_mem_left! also merges internal arrays if there are too many internal arrays on the same level. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04190">4190</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04405">4405</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="parallel__priority__queue_8h_source.html#l00389">stxxl::ppq_local::internal_array&lt; ValueType &gt;::int_memory()</a>, <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, <a class="el" href="verbose_8h_source.html#l00220">STXXL_ASSERT</a>, <a class="el" href="verbose_8h_source.html#l00170">STXXL_CHECK</a>, and <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1188,7 +1194,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03931">3931</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03859">3859</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1231,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02940">2940</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02975">2975</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1271,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Extract up to max_size values at once. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02768">2768</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02803">2803</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1322,7 +1328,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the buffer contains all items &lt; limit, false it was too small. </dd></dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02798">2798</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02833">2833</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, <a class="el" href="verbose_8h_source.html#l00220">STXXL_ASSERT</a>, and <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1372,7 +1378,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02590">2590</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02625">2625</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="utils_8h_source.html#l00225">UNLIKELY</a>.</p>
 
@@ -1411,7 +1417,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02664">2664</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02699">2699</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1447,7 +1453,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02555">2555</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02590">2590</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1477,7 +1483,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 <p>Ends a sequence of push operations. </p>
 <p>Run <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a957ecc6bb0214d9c883e7792d54b87b5" title="Start a sequence of push operations. ">bulk_push_begin()</a> and some <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a5782e1693a657e510887949b139c1212" title="Push an element inside a sequence of pushes. ">bulk_push()</a> before this. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02678">2678</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02713">2713</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1532,9 +1538,51 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the external array which is limiting factor or m_external_arrays.size() if not limited. </dd></dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03661">3661</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03589">3589</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00220">STXXL_ASSERT</a>, and <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af685b8fd02bdf85188ef3b8c3987ca47"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY, uint64 BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), uint64 DefaultMemSize = 1* 1024L* 1024L* 1024L, uint64 MaxItems = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::check_external_level </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force_merge_all</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merges external arrays if there are too many external arrays on the same level. </p>
+
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04141">4141</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+
+<p>References <a class="el" href="winner__tree_8h_source.html#l00106">stxxl::winner_tree&lt; Comparator &gt;::activate_without_replay()</a>, <a class="el" href="parallel__priority__queue_8h_source.html#l01552">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;::begin()</a>, <a class="el" href="winner__tree_8h_source.html#l00121">stxxl::winner_tree&lt; Comparator &gt;::deactivate_player()</a>, <a class="el" href="winner__tree_8h_source.html#l00114">stxxl::winner_tree&lt; Comparator &gt;::deactivate_without_replay()</a>, <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, <a class="el" href="winner__tree_8h_source.html#l00297">stxxl::winner_tree&lt; Comparator &gt;::rebuild()</a>, <a class="el" href="winner__tree_8h_source.html#l00197">stxxl::winner_tree&lt; Comparator &gt;::replay_on_change()</a>, <a class="el" href="verbose_8h_source.html#l00220">STXXL_ASSERT</a>, <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>, <a class="el" href="verbose_8h_source.html#l00160">STXXL_DEBUG0</a>, and <a class="el" href="winner__tree_8h_source.html#l00164">stxxl::winner_tree&lt; Comparator &gt;::top()</a>.</p>
 
 </div>
 </div>
@@ -1563,7 +1611,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Assert many invariants of the data structures. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02420">2420</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02450">2450</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="is__heap_8h_source.html#l00023">stxxl::is_heap()</a>, <a class="el" href="verbose_8h_source.html#l00170">STXXL_CHECK</a>, and <a class="el" href="verbose_8h_source.html#l00192">STXXL_CHECK_EQUAL</a>.</p>
 
@@ -1594,7 +1642,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Clean up empty external arrays, free their memory and capacity. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02157">2157</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02197">2197</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1625,7 +1673,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Clean up empty internal arrays, free their memory and capacity. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02134">2134</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02174">2174</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00160">STXXL_DEBUG0</a>, and <a class="el" href="swap__vector_8h_source.html#l00267">stxxl::swap_remove_if()</a>.</p>
 
@@ -1657,7 +1705,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Convert extract buffer into a new internal array. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03779">3779</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03707">3707</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1688,7 +1736,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Returns if the queue is empty. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02526">2526</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02561">2561</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1765,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Returns if the extract buffer is empty. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02540">2540</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02575">2575</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1754,7 +1802,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04384">4384</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04500">4500</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="sort_8h_source.html#l00676">stxxl::sort()</a>.</p>
 
@@ -1786,7 +1834,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Free up memory by flushing internal arrays and combining external arrays until enough bytes are free. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03416">3416</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03368">3368</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1816,7 +1864,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Flushes the insertions heap p into an internal array. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03977">3977</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03905">3905</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="sort_8h_source.html#l00676">stxxl::sort()</a>, and <a class="el" href="verbose_8h_source.html#l00160">STXXL_DEBUG0</a>.</p>
 
@@ -1847,7 +1895,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Flushes all insertions heaps into an internal array. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04028">4028</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03956">3956</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, and <a class="el" href="sort_8h_source.html#l00676">stxxl::sort()</a>.</p>
 
@@ -1885,7 +1933,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03235">3235</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03270">3270</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="sort_8h_source.html#l00676">stxxl::sort()</a>, and <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -1916,9 +1964,9 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Flushes the internal arrays into an external array. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04111">4111</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04039">4039</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
-<p>References <a class="el" href="parallel__priority__queue_8h_source.html#l01521">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, and <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
+<p>References <a class="el" href="parallel__priority__queue_8h_source.html#l01552">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, and <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
 </div>
 </div>
@@ -1947,38 +1995,9 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Hints EA blocks which will be needed soon. Hints at most m_num_prefetchers blocks globally. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03597">3597</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03525">3525</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4efaa13453c402d0b24e1eb1c5ba151d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY, uint64 BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), uint64 DefaultMemSize = 1* 1024L* 1024L* 1024L, uint64 MaxItems = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::init_memmanagement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes member variables concerning the memory management. </p>
-
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02398">2398</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2007,7 +2026,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Return size of insertion heap reservation in bytes. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01959">1959</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01993">1993</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2047,7 +2066,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Begin bulk-limit extraction session with limit element. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03131">3131</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03166">3166</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2076,7 +2095,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Finish bulk-limit extraction session. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03220">3220</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03255">3255</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2105,7 +2124,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Remove the minimum element, only works correctly while elements &lt; L. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03192">3192</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03227">3227</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2145,7 +2164,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Push new item &gt;= bulk-limit element into insertion heap p. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03152">3152</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03187">3187</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2174,7 +2193,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Access the minimum element, which can only be in the extract buffer. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03161">3161</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03196">3196</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2203,7 +2222,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The memory consumption in Bytes. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02532">2532</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02567">2567</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2233,9 +2252,9 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 <p>Merges all external arrays and all internal arrays into one external array. </p>
 <p>Public for benchmark purposes. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03313">3313</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03348">3348</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
-<p>References <a class="el" href="parallel__priority__queue_8h_source.html#l01521">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;::begin()</a>, <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
+<p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>, and <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
 
 </div>
 </div>
@@ -2264,7 +2283,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Remove the minimum element. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03040">3040</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03075">3075</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00234">min()</a>, and <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
 
@@ -2295,7 +2314,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Print statistics. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03626">3626</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03554">3554</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00088">STXXL_MEMDUMP</a>, <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>, and <a class="el" href="verbose_8h_source.html#l00081">STXXL_VARDUMP</a>.</p>
 
@@ -2344,7 +2363,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02981">2981</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03016">3016</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2393,7 +2412,7 @@ template&lt;typename RandomAccessIterator , typename HeapCompareType &gt; </div>
 <p>SiftUp a new element from the last position in the heap, reestablishing the heap invariant. </p>
 <p>This is identical to std::push_heap, except that it returns the last element modified by siftUp. Thus we can identify if the minimum may have changed. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02221">2221</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02265">2265</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2422,7 +2441,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Rebuild hint tree completely as the hint sequence may have changed, and re-hint the correct block sequence. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03508">3508</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03436">3436</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -2471,7 +2490,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03814">3814</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03742">3742</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="parallel_8h_source.html#l00144">stxxl::potentially_parallel::multiway_merge()</a>, <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>, and <a class="el" href="verbose_8h_source.html#l00073">STXXL_MSG</a>.</p>
 
@@ -2502,7 +2521,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Automatically resize the read/prefetch buffer pool depending on number of external arrays. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03432">3432</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03384">3384</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00220">STXXL_ASSERT</a>, <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>, and <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
 
@@ -2533,7 +2552,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The number of elements in the queue. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02520">2520</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02555">2555</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2562,7 +2581,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Access the minimum element. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03002">3002</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03037">3037</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="uint__types_8h_source.html#l00234">min()</a>, <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>, and <a class="el" href="verbose_8h_source.html#l00094">STXXL_ERRMSG</a>.</p>
 
@@ -2600,11 +2619,11 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03585">3585</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03513">3513</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adf69b583ba70f974cc16b098926c12fd"></a>
+<a class="anchor" id="abbc3651bef86e5c1f8afce8555f0f7ac"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2614,7 +2633,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::update_hint_trees </td>
+          <td class="memname">void <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::update_hint_tree </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>ea_index</em></td><td>)</td>
@@ -2636,45 +2655,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03570">3570</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9befa5c3b0be03d09d1a36b0db5ee354"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY, uint64 BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), uint64 DefaultMemSize = 1* 1024L* 1024L* 1024L, uint64 MaxItems = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::update_trees_after_ea_creation </td>
-          <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>ea_index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Activate player in fetch prediction tree afer a remove() or a request_further_block() call. Rebuild hint tree completely as the hint sequence may have changed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ea_index</td><td>index of the external array in question </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03486">3486</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
-
-<p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03498">3498</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2704,7 +2685,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Requests more EM data from a given EA and updates the winner trees and hints accordingly. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03919">3919</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03847">3847</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2729,7 +2710,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01835">1835</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01866">1866</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2755,7 +2736,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Default limit of the extract buffer ram consumption as share of total ram. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01926">1926</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01960">1960</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2781,7 +2762,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Size of a single insertion heap in Byte, if not defined otherwise in the constructor. Default: 1 MiB. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01919">1919</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01953">1953</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2809,7 +2790,51 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 <p>The actual size can be set using the extract_buffer_ram parameter of the constructor. If this parameter is not set, the value is calculated by (total_ram*c_default_extract_buffer_ram_part)</p>
 <p>If c_limit_extract_buffer==false, the memory consumption of the extract buffer is only limited by the number of external and internal arrays. This is considered in memory management using the ram_per_external_array and ram_per_internal_array values. Attention: Each internal array reserves space for the extract buffer in the size of all heaps together. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01942">1942</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01976">1976</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43f054d0b7bce0512aad374df498e010"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY, uint64 BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), uint64 DefaultMemSize = 1* 1024L* 1024L* 1024L, uint64 MaxItems = 0&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::c_max_external_level_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>currently global public tuning parameter: </p>
+
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01886">1886</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ff2b8cef12e768995a0222d223ec4bd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY, uint64 BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), uint64 DefaultMemSize = 1* 1024L* 1024L* 1024L, uint64 MaxItems = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::c_max_external_levels = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum number of external array levels. </p>
+
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02098">2098</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2827,7 +2852,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>currently global public tuning parameter: </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01852">1852</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01883">1883</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2853,7 +2878,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The maximum number of internal array levels. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02058">2058</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02092">2092</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2879,7 +2904,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Merge sorted heaps when flushing into an internal array. Pro: Reduces the risk of a large winner tree Con: Flush insertion heaps becomes slower. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01907">1907</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01941">1941</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2905,7 +2930,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Defines for how much external arrays memory should be reserved in the constructor. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01915">1915</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01949">1949</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2931,7 +2956,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Default number of write buffer block for a new external array being filled. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01911">1911</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01945">1945</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2957,7 +2982,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>For bulks of size up to c_single_insert_limit sequential single insert is faster than bulk_push. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01946">1946</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01980">1980</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -2981,7 +3006,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01849">1849</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01880">1880</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3007,7 +3032,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The aggregated pushes. They cannot be extracted yet. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02055">2055</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02089">2089</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3033,7 +3058,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>First index in m_external_arrays that was not re-hinted during a bulk_push sequence. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01998">1998</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02032">2032</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3059,7 +3084,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>&lt;-Comparator for value_type </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01887">1887</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01921">1921</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3085,7 +3110,33 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The sorted arrays in external memory. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02052">2052</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02086">2086</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07c47cfb0dcfbb5c766f25ba01d39dc0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, class AllocStrategy  = STXXL_DEFAULT_ALLOC_STRATEGY, uint64 BlockSize = STXXL_DEFAULT_BLOCK_SIZE(ValueType), uint64 DefaultMemSize = 1* 1024L* 1024L* 1024L, uint64 MaxItems = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestxxl.html#a7501995ff616f0144a8bda727c266d1b">unsigned_type</a> <a class="el" href="classstxxl_1_1parallel__priority__queue.html">stxxl::parallel_priority_queue</a>&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::m_external_levels[<a class="el" href="classstxxl_1_1parallel__priority__queue.html#a1ff2b8cef12e768995a0222d223ec4bd">c_max_external_levels</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of external arrays on each level, we use plain array. </p>
+
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02101">2101</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3133,7 +3184,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Tracks the largest accessible values of the external arrays if there is unaccessible data in EM. The winning array is the first one that needs to fetch further data from EM. Used in calculate_merge_sequences. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02086">2086</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02126">2126</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3159,7 +3210,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Number of elements in the external arrays. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02016">2016</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02050">2050</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3185,7 +3236,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The extract buffer where external (and internal) arrays are merged into for extracting. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02046">2046</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02080">2080</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3211,7 +3262,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Index of the currently smallest element in the extract buffer. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02001">2001</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02035">2035</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3237,7 +3288,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Maximum size of extract buffer in number of elements Only relevant if c_limit_extract_buffer==true. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01969">1969</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02003">2003</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3263,7 +3314,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Number of elements in the extract buffer. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02010">2010</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02044">2044</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3289,7 +3340,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Number of elements int the insertion heaps. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02007">2007</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02041">2041</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3337,7 +3388,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Tracks the largest values of the block hinted the latest of the external arrays if there is unaccessible data in EM. The winning array is the first one that needs to fetch further data from EM. Used for prefetch hints. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02109">2109</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02149">2149</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3363,7 +3414,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Flag if inside a bulk_push sequence. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01990">1990</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02024">2024</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3389,7 +3440,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Capacity of one inserion heap. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01956">1956</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01990">1990</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3415,7 +3466,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The sorted arrays in internal memory. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02049">2049</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02083">2083</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3441,7 +3492,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The number of internal arrays on each level, we use plain array. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02061">2061</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02095">2095</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3467,7 +3518,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Number of elements in the internal arrays. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02013">2013</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02047">2047</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3493,7 +3544,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>&gt;-Comparator for value_type </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01890">1890</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01924">1924</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3519,7 +3570,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>If the bulk currently being inserted is very large, this boolean is set and bulk_push just accumulate the elements for eventual sorting. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01994">1994</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02028">2028</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3545,7 +3596,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>current limit element </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03121">3121</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03156">3156</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3571,7 +3622,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>flag if inside a bulk limit extract session </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03124">3124</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03159">3159</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3597,7 +3648,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>flag if the extract buffer contains the full limit range </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03127">3127</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l03162">3162</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3623,7 +3674,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Size of all insertion heaps together in bytes. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01972">1972</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02006">2006</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3649,7 +3700,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Free memory in bytes. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01985">1985</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02019">2019</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3675,7 +3726,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Total amount of internal memory. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01965">1965</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01999">1999</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3701,7 +3752,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>The winner tree containing the smallest values of all sources where the globally smallest element could come from. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02065">2065</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02105">2105</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3727,7 +3778,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>number of currently hinted prefetch blocks </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01980">1980</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02014">2014</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3753,7 +3804,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Number of insertion heaps. Usually equal to the number of CPUs. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01953">1953</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01987">1987</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3779,7 +3830,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Total number of read/prefetch buffer blocks. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01978">1978</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02012">2012</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3805,7 +3856,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Number of read/prefetch blocks per external array. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01975">1975</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02009">2009</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3831,7 +3882,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>number of currently loaded blocks </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01982">1982</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02016">2016</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3857,7 +3908,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Prefetch and write buffer pool for external arrays (has to be in front of m_external_arrays) </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02042">2042</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02076">2076</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3883,7 +3934,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Array of processor local data structures, including the insertion heaps. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02038">2038</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02072">2072</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3909,7 +3960,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 
 <p>Random number generator for randomly selecting a heap in sequential <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a2eb4bef9f02e10b9056bd7f7b3baa79e" title="Insert new element. ">push()</a> </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02113">2113</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l02153">2153</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3933,7 +3984,7 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04582">4582</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l04660">4660</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -3946,10 +3997,10 @@ template&lt;class ValueType , class CompareType  = std::less&lt;ValueType&gt;, c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="classstxxl_1_1parallel__priority__queue.html">parallel_priority_queue</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/069ca9d0489ff764f7d99a00c977fd923bcdcee2">STXXL 1.4.1-326-g069ca9d</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/2340046a42efb960eacbe45d46152dc7725b0dcd">STXXL 1.4.1-339-g2340046</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Mar 13 2015 18:26:16 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Mar 29 2015 12:26:28 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

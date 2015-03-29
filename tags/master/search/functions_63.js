@@ -19,6 +19,7 @@ var searchData=
   ['check_5favailable',['check_available',['../classstxxl_1_1binary__reader.html#a2ecb6f5e7b978a8100c2c25df12f6da1',1,'stxxl::binary_reader']]],
   ['check_5fcorruption',['check_corruption',['../classstxxl_1_1wbtl__file.html#a0b992a0f57967617efa8d40dbd4232be',1,'stxxl::wbtl_file']]],
   ['check_5ferrors',['check_errors',['../classstxxl_1_1request.html#aa166e648300d441d7f7f24c4eabe9b97',1,'stxxl::request']]],
+  ['check_5fexternal_5flevel',['check_external_level',['../classstxxl_1_1parallel__priority__queue.html#af685b8fd02bdf85188ef3b8c3987ca47',1,'stxxl::parallel_priority_queue']]],
   ['check_5finitialized',['check_initialized',['../classstxxl_1_1config.html#a2f73445019c99c696cc790a44650ffb8',1,'stxxl::config']]],
   ['check_5finvariants',['check_invariants',['../classstxxl_1_1parallel__priority__queue.html#a199849d76f726d36bfdc68ae7ac45c9a',1,'stxxl::parallel_priority_queue']]],
   ['check_5fksorted_5fruns',['check_ksorted_runs',['../namespacestxxl_1_1ksort__local.html#a74628273d92957addf034fbeee9cbf9f',1,'stxxl::ksort_local']]],

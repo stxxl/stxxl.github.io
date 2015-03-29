@@ -1,5 +1,10 @@
 var NAVTREEINDEX26 =
 {
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ad056f31d97ff5537b5b4c394226f9c44":[4,0,1,6,3,7],
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af189e12a61266a191f6ee3bc2fb2f6a2":[4,0,1,6,3,2],
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af6362f61687539d32308f475381d4ac5":[4,0,1,6,3,0],
+"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html":[4,0,1,6,4],
+"structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a29a9e7316c8a30c05a3d079f90b63786":[4,0,1,6,4,0],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#a8a1b843d24f9cf62de140105097ccfa3":[4,0,1,6,4,2],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__binary__ass__op.html#ae204a21ac7366269beb900f27b15547b":[4,0,1,6,4,1],
 "structstxxl_1_1matrix__local_1_1low__level__matrix__multiply__and__add.html":[4,0,1,6,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX26 =
 "structstxxl_1_1parallel_1_1Settings.html#a05d908de83b316b16588b33f52f2e003":[4,0,1,8,45,16],
 "structstxxl_1_1parallel_1_1Settings.html#a078a08f8287d371369906ac9a538b5d8":[4,0,1,8,45,10],
 "structstxxl_1_1parallel_1_1Settings.html#a2b372a9e57f436b1ce47580ca24ef02f":[4,0,1,8,45,8],
-"structstxxl_1_1parallel_1_1Settings.html#a32868d4c80c77730db7bc78f156f471c":[4,0,1,8,45,18],
-"structstxxl_1_1parallel_1_1Settings.html#a40dc0f4cb2f75d2d13dce74c3633af3e":[4,0,1,8,45,19],
-"structstxxl_1_1parallel_1_1Settings.html#a5e5ed1ed7d32c554d9c4440e297d04a7":[4,0,1,8,45,4],
-"structstxxl_1_1parallel_1_1Settings.html#a6026a83d851253c3970d95bac3959489":[4,0,1,8,45,5],
-"structstxxl_1_1parallel_1_1Settings.html#a6ef23e41a7569450666277c58e7cf03c":[4,0,1,8,45,12],
-"structstxxl_1_1parallel_1_1Settings.html#a6f75b2b585e5ff11a618afefb4ad5c94":[4,0,1,8,45,6]
+"structstxxl_1_1parallel_1_1Settings.html#a32868d4c80c77730db7bc78f156f471c":[4,0,1,8,45,18]
 };
