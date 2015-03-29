@@ -298,6 +298,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1parallel__priority__queue.html#ac033c3847e65c8aa619755d5b544de8f">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;</a>
 , <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1external__min__comparator.html#a7c858d3bc8ce2669d061d2c56e183ebf">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::external_min_comparator</a>
 , <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1hint__comparator.html#aa77df868d4cf9c7f2664cbfee0905cff">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::hint_comparator</a>
+, <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html#ac5dc83f5fd68602152779855f046ff5f">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::s_min_tree_comparator</a>
 </li>
 <li>m_cond
 : <a class="el" href="classstxxl_1_1onoff__switch.html#addce228ec498ecf42827b2a240fa9b9c">stxxl::onoff_switch</a>
@@ -376,6 +377,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 <li>m_eas
 : <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1external__min__comparator.html#a1a4ebe920c00a83ef56237724e09f112">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::external_min_comparator</a>
 , <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1hint__comparator.html#aca4f413daabdc01666f968001b27f6d5">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::hint_comparator</a>
+, <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html#a43631417ca92b92a3f3f1d0706370cd5">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::s_min_tree_comparator</a>
 </li>
 <li>m_el_in_run
 : <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType_01_4_00_01CompareType_00_01BlockSize_00_01AllocStr_01_4.html#a07d26e2933be045f8148e9c947638a9c">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
@@ -502,6 +504,9 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a154e565d9baff4bc89a85b51242f5db9">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
 , <a class="el" href="classstxxl_1_1ppq__local_1_1external__array__writer_1_1iterator.html#a4800439898f32c85bb409488b5fd6813">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;::iterator</a>
 </li>
+<li>m_indices
+: <a class="el" href="structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html#a067fb428e06cc274ca3f70db1153cdee">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::s_min_tree_comparator</a>
+</li>
 <li>m_input
 : <a class="el" href="classstxxl_1_1stream_1_1basic__runs__creator.html#a65cf973b60b9e293d785536461a220f7">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;</a>
 </li>
@@ -610,8 +615,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1stream_1_1basic__runs__merger.html#a5dc9b4583ba67259264846910f5f33ba">stxxl::stream::basic_runs_merger&lt; RunsType, CompareType, AllocStr &gt;</a>
 </li>
 <li>m_memsize
-: <a class="el" href="classstxxl_1_1stream_1_1basic__runs__creator.html#acb9f42bb4538ce108b15ef83961b0396">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;</a>
-, <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType_01_4_00_01CompareType_00_01BlockSize_00_01AllocStr_01_4.html#a1cd15e2eaa08a50c17494b09d5a0f16b">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
+: <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType_01_4_00_01CompareType_00_01BlockSize_00_01AllocStr_01_4.html#a1cd15e2eaa08a50c17494b09d5a0f16b">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
+, <a class="el" href="classstxxl_1_1stream_1_1basic__runs__creator.html#acb9f42bb4538ce108b15ef83961b0396">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;</a>
 </li>
 <li>m_message
 : <a class="el" href="classstxxl_1_1scoped__print__timer.html#af713d7c6291af7b8f5cc9f2374e72e77">stxxl::scoped_print_timer</a>
@@ -627,18 +632,18 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 : <a class="el" href="classstxxl_1_1ufs__file__base.html#a3151b8ec316dba999f960e17efb97edd">stxxl::ufs_file_base</a>
 </li>
 <li>m_mutex
-: <a class="el" href="classstxxl_1_1ppq__local_1_1external__array__writer.html#a4d5126adde60181e87297b85b79bf957">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;</a>
+: <a class="el" href="classstxxl_1_1mem__file.html#a729a2fd6157e827862bb0a3e9be8e00c">stxxl::mem_file</a>
+, <a class="el" href="classstxxl_1_1onoff__switch.html#a0c67a2e9df959c4b7663aaffded537f7">stxxl::onoff_switch</a>
 , <a class="el" href="classstxxl_1_1mutex.html#a59f4c1d625be7097d4243996afab44d0">stxxl::mutex</a>
 , <a class="el" href="classstxxl_1_1scoped__mutex__lock.html#a264ce4052dd5b608ccc5e7134d2d4948">stxxl::scoped_mutex_lock</a>
-, <a class="el" href="classstxxl_1_1onoff__switch.html#a0c67a2e9df959c4b7663aaffded537f7">stxxl::onoff_switch</a>
 , <a class="el" href="classstxxl_1_1semaphore.html#a2e04416c5e40fef2b0c9277b3f2c43f8">stxxl::semaphore</a>
 , <a class="el" href="classstxxl_1_1state.html#a637831bbadfb599c230ab30fd24df98a">stxxl::state&lt; ValueType &gt;</a>
-, <a class="el" href="classstxxl_1_1mem__file.html#a729a2fd6157e827862bb0a3e9be8e00c">stxxl::mem_file</a>
+, <a class="el" href="classstxxl_1_1ppq__local_1_1external__array__writer.html#a4d5126adde60181e87297b85b79bf957">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;</a>
 </li>
 <li>m_nbuffers
-: <a class="el" href="classstxxl_1_1vector__bufwriter.html#a242ebe714d6fc73c4d2ac35a26862d6c">stxxl::vector_bufwriter&lt; VectorIteratorType &gt;</a>
-, <a class="el" href="classstxxl_1_1vector__bufreader.html#ab27381c8797e7e7e44c9bde3cd1b177f">stxxl::vector_bufreader&lt; VectorIteratorType &gt;</a>
+: <a class="el" href="classstxxl_1_1vector__bufreader.html#ab27381c8797e7e7e44c9bde3cd1b177f">stxxl::vector_bufreader&lt; VectorIteratorType &gt;</a>
 , <a class="el" href="classstxxl_1_1vector__bufreader__reverse.html#a42b14909072cab7d46ddb83181dc1a4d">stxxl::vector_bufreader_reverse&lt; VectorIteratorType &gt;</a>
+, <a class="el" href="classstxxl_1_1vector__bufwriter.html#a242ebe714d6fc73c4d2ac35a26862d6c">stxxl::vector_bufwriter&lt; VectorIteratorType &gt;</a>
 </li>
 <li>m_next_bid
 : <a class="el" href="classstxxl_1_1sequence_1_1stream.html#ab08c2d2366200706f819a11cec2b85d8">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::stream</a>
@@ -672,8 +677,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 : <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a6a19b0319abcab20f35ef7987bb9d336">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;</a>
 </li>
 <li>m_offset
-: <a class="el" href="classstxxl_1_1deque__iterator.html#acc6fe9b28720dbd2cff1b8e05c4f84e7">stxxl::deque_iterator&lt; DequeType &gt;</a>
-, <a class="el" href="classstxxl_1_1const__deque__iterator.html#a51dfe4b2a3c93577a239fbf03ad42f3e">stxxl::const_deque_iterator&lt; DequeType &gt;</a>
+: <a class="el" href="classstxxl_1_1const__deque__iterator.html#a51dfe4b2a3c93577a239fbf03ad42f3e">stxxl::const_deque_iterator&lt; DequeType &gt;</a>
+, <a class="el" href="classstxxl_1_1deque__iterator.html#acc6fe9b28720dbd2cff1b8e05c4f84e7">stxxl::deque_iterator&lt; DequeType &gt;</a>
 , <a class="el" href="classstxxl_1_1request.html#a7b721951bb436dc3fd2d68342a103aa3">stxxl::request</a>
 </li>
 <li>m_old_unhinted_block
@@ -704,8 +709,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 : <a class="el" href="classstxxl_1_1vector.html#a50eb0bbaaec6e06379a727802128e06b">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
 </li>
 <li>m_pager
-: <a class="el" href="classstxxl_1_1btree_1_1node__cache.html#af8b47dee14141f0b1aa813279ceda912">stxxl::btree::node_cache&lt; NodeType, BTreeType &gt;</a>
-, <a class="el" href="classstxxl_1_1vector.html#ade0333f35d5ed0b52d210755f9ef1039">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
+: <a class="el" href="classstxxl_1_1vector.html#ade0333f35d5ed0b52d210755f9ef1039">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
+, <a class="el" href="classstxxl_1_1btree_1_1node__cache.html#af8b47dee14141f0b1aa813279ceda912">stxxl::btree::node_cache&lt; NodeType, BTreeType &gt;</a>
 </li>
 <li>m_param_maxlong
 : <a class="el" href="classstxxl_1_1cmdline__parser.html#a559a6751cd7489d6482735047d869125">stxxl::cmdline_parser</a>
@@ -714,13 +719,13 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 : <a class="el" href="classstxxl_1_1cmdline__parser.html#ae54036493a7b927ac8bd00c315676156">stxxl::cmdline_parser</a>
 </li>
 <li>m_parent
-: <a class="el" href="structstxxl_1_1ppq__local_1_1minima__tree_1_1head__comp.html#ad3a2c94d9ed8e8cc6bf37b1cf54e896b">stxxl::ppq_local::minima_tree&lt; ParentType &gt;::head_comp</a>
-, <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#ab97d8c6ad2868b5979fe798f4883e6e9">stxxl::ppq_local::minima_tree&lt; ParentType &gt;</a>
+: <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#ab97d8c6ad2868b5979fe798f4883e6e9">stxxl::ppq_local::minima_tree&lt; ParentType &gt;</a>
+, <a class="el" href="structstxxl_1_1ppq__local_1_1minima__tree_1_1head__comp.html#ad3a2c94d9ed8e8cc6bf37b1cf54e896b">stxxl::ppq_local::minima_tree&lt; ParentType &gt;::head_comp</a>
 </li>
 <li>m_pool
-: <a class="el" href="classstxxl_1_1sequence.html#ab399692926071328cc28a72af790653d">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
-, <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a40265ad58df7a3e25c52012e65829f20">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
+: <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a40265ad58df7a3e25c52012e65829f20">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
 , <a class="el" href="classstxxl_1_1parallel__priority__queue.html#af421fb2823ecc9b5bc6eb43e5dd9de73">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;</a>
+, <a class="el" href="classstxxl_1_1sequence.html#ab399692926071328cc28a72af790653d">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
 </li>
 <li>m_pos
 : <a class="el" href="classstxxl_1_1random__number8__r.html#ad7b1e8fbbc78bef8d72508fef655393d">stxxl::random_number8_r</a>
@@ -742,18 +747,18 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1request__queue__impl__qwqr.html#ae67e369cfbb556a8b1d4d8216cc5556e">stxxl::request_queue_impl_qwqr</a>
 </li>
 <li>m_proc
-: <a class="el" href="structstxxl_1_1ppq__local_1_1minima__tree_1_1heaps__comp.html#a9bce2bedfcfc49b26c186bc2391bbd8d">stxxl::ppq_local::minima_tree&lt; ParentType &gt;::heaps_comp</a>
+: <a class="el" href="structstxxl_1_1ppq__local_1_1minima__tree_1_1head__comp.html#abc3f88c45f30b5879fd42d54dad2adf2">stxxl::ppq_local::minima_tree&lt; ParentType &gt;::head_comp</a>
 , <a class="el" href="classstxxl_1_1parallel__priority__queue.html#a779fa4c7a22ad4252c8f030797d54c62">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;</a>
-, <a class="el" href="structstxxl_1_1ppq__local_1_1minima__tree_1_1head__comp.html#abc3f88c45f30b5879fd42d54dad2adf2">stxxl::ppq_local::minima_tree&lt; ParentType &gt;::head_comp</a>
+, <a class="el" href="structstxxl_1_1ppq__local_1_1minima__tree_1_1heaps__comp.html#a9bce2bedfcfc49b26c186bc2391bbd8d">stxxl::ppq_local::minima_tree&lt; ParentType &gt;::heaps_comp</a>
 </li>
 <li>m_progname
 : <a class="el" href="classstxxl_1_1cmdline__parser.html#a4734ef171ecbff29adc6e55fc36c8366">stxxl::cmdline_parser</a>
 </li>
 <li>m_ptr
-: <a class="el" href="classstxxl_1_1const__counting__ptr.html#a9f3c93e6c8e8cf3b8fd831e0132796c5">stxxl::const_counting_ptr&lt; Type &gt;</a>
+: <a class="el" href="classstxxl_1_1counting__ptr.html#a1ccce78d442eeece5f50d4aafcf10f29">stxxl::counting_ptr&lt; Type &gt;</a>
 , <a class="el" href="classstxxl_1_1completion__handler.html#ae5745be254feb4f15adebeb8d3fc169b">stxxl::completion_handler</a>
+, <a class="el" href="classstxxl_1_1const__counting__ptr.html#a9f3c93e6c8e8cf3b8fd831e0132796c5">stxxl::const_counting_ptr&lt; Type &gt;</a>
 , <a class="el" href="classstxxl_1_1mem__file.html#ae3760aac559c9f0d2e2287e3982ce336">stxxl::mem_file</a>
-, <a class="el" href="classstxxl_1_1counting__ptr.html#a1ccce78d442eeece5f50d4aafcf10f29">stxxl::counting_ptr&lt; Type &gt;</a>
 </li>
 <li>m_queue
 : <a class="el" href="classstxxl_1_1request__queue__impl__1q.html#a41c4c6bb74fb8c581295c99ee0176c16">stxxl::request_queue_impl_1q</a>
@@ -803,8 +808,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1stream_1_1basic__runs__creator.html#a1a7c9e8b7923bcd69c81e5a0bdb71a02">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;</a>
 </li>
 <li>m_result_computed
-: <a class="el" href="classstxxl_1_1stream_1_1basic__runs__creator.html#acee4c2b6168cc59a22d5601d98657fa5">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;</a>
-, <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType_01_4_00_01CompareType_00_01BlockSize_00_01AllocStr_01_4.html#a978e386aea09c20b32e2533377ecb177">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
+: <a class="el" href="classstxxl_1_1stream_1_1runs__creator_3_01use__push_3_01ValueType_01_4_00_01CompareType_00_01BlockSize_00_01AllocStr_01_4.html#a978e386aea09c20b32e2533377ecb177">stxxl::stream::runs_creator&lt; use_push&lt; ValueType &gt;, CompareType, BlockSize, AllocStr &gt;</a>
+, <a class="el" href="classstxxl_1_1stream_1_1basic__runs__creator.html#acee4c2b6168cc59a22d5601d98657fa5">stxxl::stream::basic_runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;</a>
 </li>
 <li>m_rnd32
 : <a class="el" href="classstxxl_1_1random__number8__r.html#a76b591704a09c393e7877a5681d1078b">stxxl::random_number8_r</a>
@@ -830,25 +835,25 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1sequence_1_1reverse__stream.html#a1b3a56f333e19a893c1889049a1cd578">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::reverse_stream</a>
 </li>
 <li>m_size
-: <a class="el" href="classstxxl_1_1binary__buffer__ref.html#a896365665470c6a96ef32e9d6e3ff407">stxxl::binary_buffer_ref</a>
-, <a class="el" href="classstxxl_1_1swap__vector.html#a61951d7c6f153c4219730f32e4ed5092">stxxl::swap_vector&lt; ValueType &gt;</a>
-, <a class="el" href="classstxxl_1_1deque.html#a8cd84d91b3de610226c152f6df00fc5a">stxxl::deque&lt; ValueType, VectorType &gt;</a>
+: <a class="el" href="classstxxl_1_1binary__buffer.html#a55087cede6aef4b7080679e21384dbd0">stxxl::binary_buffer</a>
+, <a class="el" href="classstxxl_1_1simple__vector.html#a3faef0efc546f6d1f561c0c8a996c1d8">stxxl::simple_vector&lt; ValueType &gt;</a>
 , <a class="el" href="classstxxl_1_1grow__shrink__stack2.html#a87e19644f54ec78ddce542fa1f97e23f">stxxl::grow_shrink_stack2&lt; StackConfig &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1int__merger.html#afb3d0e1c001228fd3fedfa9f7f9a974f">stxxl::priority_queue_local::int_merger&lt; ValueType, CompareType, MaxArity &gt;</a>
-, <a class="el" href="classstxxl_1_1sequence.html#a63ec8f1ea26262f23c05489a3bcb6210">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
-, <a class="el" href="classstxxl_1_1sequence_1_1reverse__stream.html#afa025fd6805664eb68c2b822ad000f3a">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::reverse_stream</a>
+, <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a1047fc2d043de6d49370586eb2e9d134">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
+, <a class="el" href="classstxxl_1_1queue.html#aefa949c2741f6a5416ed6050342816b9">stxxl::queue&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
+, <a class="el" href="classstxxl_1_1normal__stack.html#a46dfde33c297431a27fba94fdf4e1ff2">stxxl::normal_stack&lt; StackConfig &gt;</a>
 , <a class="el" href="classstxxl_1_1vector.html#ab4481c2b4b40ca25d2d4f8639116157e">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
 , <a class="el" href="classstxxl_1_1mem__file.html#a4f72f6333e0f806d26f6f0240100d858">stxxl::mem_file</a>
 , <a class="el" href="classstxxl_1_1sequence_1_1stream.html#a62733af6c821fdfb87f255846515bc75">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::stream</a>
 , <a class="el" href="classstxxl_1_1priority__queue__local_1_1ext__merger.html#a0a60c7fc9b41fdbd63e6b09cd12a579b">stxxl::priority_queue_local::ext_merger&lt; BlockType, CompareType, Arity, AllocStr &gt;</a>
-, <a class="el" href="classstxxl_1_1normal__stack.html#a46dfde33c297431a27fba94fdf4e1ff2">stxxl::normal_stack&lt; StackConfig &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#aa831af4ec347d7e2cd688e5ef8d9e8ce">stxxl::priority_queue_local::internal_bounded_stack&lt; ValueType, MaxSize &gt;</a>
-, <a class="el" href="classstxxl_1_1queue.html#aefa949c2741f6a5416ed6050342816b9">stxxl::queue&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
+, <a class="el" href="classstxxl_1_1sequence_1_1reverse__stream.html#afa025fd6805664eb68c2b822ad000f3a">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;::reverse_stream</a>
+, <a class="el" href="classstxxl_1_1sequence.html#a63ec8f1ea26262f23c05489a3bcb6210">stxxl::sequence&lt; ValueType, BlockSize, AllocStr, SizeType &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1int__merger.html#afb3d0e1c001228fd3fedfa9f7f9a974f">stxxl::priority_queue_local::int_merger&lt; ValueType, CompareType, MaxArity &gt;</a>
 , <a class="el" href="classstxxl_1_1btree_1_1btree.html#a7996e2ecd33aa476e77f9891f3149685">stxxl::btree::btree&lt; KeyType, DataType, CompareType, RawNodeSize, RawLeafSize, PDAllocStrategy &gt;</a>
+, <a class="el" href="classstxxl_1_1deque.html#a8cd84d91b3de610226c152f6df00fc5a">stxxl::deque&lt; ValueType, VectorType &gt;</a>
+, <a class="el" href="classstxxl_1_1swap__vector.html#a61951d7c6f153c4219730f32e4ed5092">stxxl::swap_vector&lt; ValueType &gt;</a>
+, <a class="el" href="classstxxl_1_1binary__buffer__ref.html#a896365665470c6a96ef32e9d6e3ff407">stxxl::binary_buffer_ref</a>
 , <a class="el" href="classstxxl_1_1grow__shrink__stack.html#a57a73d7b8309a8661ab883806f5a6c7c">stxxl::grow_shrink_stack&lt; StackConfig &gt;</a>
-, <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html#a1047fc2d043de6d49370586eb2e9d134">stxxl::ppq_local::external_array&lt; ValueType, BlockSize, AllocStrategy &gt;</a>
-, <a class="el" href="classstxxl_1_1binary__buffer.html#a55087cede6aef4b7080679e21384dbd0">stxxl::binary_buffer</a>
-, <a class="el" href="classstxxl_1_1simple__vector.html#a3faef0efc546f6d1f561c0c8a996c1d8">stxxl::simple_vector&lt; ValueType &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html#aa831af4ec347d7e2cd688e5ef8d9e8ce">stxxl::priority_queue_local::internal_bounded_stack&lt; ValueType, MaxSize &gt;</a>
 </li>
 <li>m_slot_to_page
 : <a class="el" href="classstxxl_1_1vector.html#ad32fbbb079a427c8e636ad7cdccd742b">stxxl::vector&lt; ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType &gt;</a>
@@ -870,8 +875,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 , <a class="el" href="classstxxl_1_1request__queue__impl__qwqr.html#a8407e9a21ce397f3723af65a30ca0346">stxxl::request_queue_impl_qwqr</a>
 </li>
 <li>m_thread_state
-: <a class="el" href="classstxxl_1_1request__queue__impl__1q.html#aad4f43b02a5a2df1e316bd736abc1619">stxxl::request_queue_impl_1q</a>
-, <a class="el" href="classstxxl_1_1request__queue__impl__qwqr.html#aad2066a33de970f23fd1b1fa9ab8b6f2">stxxl::request_queue_impl_qwqr</a>
+: <a class="el" href="classstxxl_1_1request__queue__impl__qwqr.html#aad2066a33de970f23fd1b1fa9ab8b6f2">stxxl::request_queue_impl_qwqr</a>
+, <a class="el" href="classstxxl_1_1request__queue__impl__1q.html#aad4f43b02a5a2df1e316bd736abc1619">stxxl::request_queue_impl_1q</a>
 </li>
 <li>m_timer
 : <a class="el" href="classstxxl_1_1scoped__print__timer.html#a4ed329540c6d9faf02694b5503aaf613">stxxl::scoped_print_timer</a>
@@ -927,13 +932,13 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 : <a class="el" href="classstxxl_1_1ppq__local_1_1external__array__writer_1_1iterator.html#a50efcaaf498a36bd9fc419d64781158b">stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;::iterator</a>
 </li>
 <li>map_
-: <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1Cmp.html#a9d63915e5fe163da7b004425473d191d">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::Cmp</a>
-, <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1HashingStream.html#ad596015d5fbee7ca62a35a20d3e5e0e7">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::HashingStream&lt; InputStream, ValueExtractor &gt;</a>
-, <a class="el" href="classstxxl_1_1hash__map_1_1hash__map__iterator__base.html#a86201525927742bd72f94a5922bab123">stxxl::hash_map::hash_map_iterator_base&lt; HashMap &gt;</a>
-, <a class="el" href="structstxxl_1_1hash__map_1_1HashedValuesStream.html#a9b9d23538cdacd82e724389a2c25b506">stxxl::hash_map::HashedValuesStream&lt; HashMap, Reader &gt;</a>
-, <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1UniqueValueStream.html#a7beeace153cac07bff5e8acfd6c54bd3">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::UniqueValueStream&lt; InputStream &gt;</a>
-, <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1AddHashStream.html#a2dfae95b69cef5c78041da9b13ca952f">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::AddHashStream&lt; InputStream &gt;</a>
+: <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1UniqueValueStream.html#a7beeace153cac07bff5e8acfd6c54bd3">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::UniqueValueStream&lt; InputStream &gt;</a>
 , <a class="el" href="classstxxl_1_1hash__map_1_1iterator__map.html#a2b8e19c246d08d36714ce9b3a5bb85f8">stxxl::hash_map::iterator_map&lt; HashMap &gt;</a>
+, <a class="el" href="classstxxl_1_1hash__map_1_1hash__map__iterator__base.html#a86201525927742bd72f94a5922bab123">stxxl::hash_map::hash_map_iterator_base&lt; HashMap &gt;</a>
+, <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1HashingStream.html#ad596015d5fbee7ca62a35a20d3e5e0e7">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::HashingStream&lt; InputStream, ValueExtractor &gt;</a>
+, <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1Cmp.html#a9d63915e5fe163da7b004425473d191d">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::Cmp</a>
+, <a class="el" href="structstxxl_1_1hash__map_1_1HashedValuesStream.html#a9b9d23538cdacd82e724389a2c25b506">stxxl::hash_map::HashedValuesStream&lt; HashMap, Reader &gt;</a>
+, <a class="el" href="structstxxl_1_1hash__map_1_1hash__map_1_1AddHashStream.html#a2dfae95b69cef5c78041da9b13ca952f">stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::AddHashStream&lt; InputStream &gt;</a>
 </li>
 <li>mapping_mutex
 : <a class="el" href="classstxxl_1_1wbtl__file.html#a07a9c5ac20ce54bb663a7ca7109afc35">stxxl::wbtl_file</a>
@@ -978,12 +983,12 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 : <a class="el" href="structstxxl_1_1aligned__alloc__settings.html#a4d4d268d78ddd47259837139911d90c4">stxxl::aligned_alloc_settings&lt; MustBeInt &gt;</a>
 </li>
 <li>me
-: <a class="el" href="structstxxl_1_1btree_1_1normal__node_1_1metainfo__type.html#aecc3da4c79c2c17ecd034cde335516c2">stxxl::btree::normal_node&lt; KeyType, KeyCmp, RawSize, BTreeType &gt;::metainfo_type</a>
-, <a class="el" href="structstxxl_1_1btree_1_1normal__leaf_1_1metainfo__type.html#aad3d5d3bd69e18c9976cc95273f77fdb">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;::metainfo_type</a>
+: <a class="el" href="structstxxl_1_1btree_1_1normal__leaf_1_1metainfo__type.html#aad3d5d3bd69e18c9976cc95273f77fdb">stxxl::btree::normal_leaf&lt; KeyType, DataType, KeyCmp, LogNElem, BTreeType &gt;::metainfo_type</a>
+, <a class="el" href="structstxxl_1_1btree_1_1normal__node_1_1metainfo__type.html#aecc3da4c79c2c17ecd034cde335516c2">stxxl::btree::normal_node&lt; KeyType, KeyCmp, RawSize, BTreeType &gt;::metainfo_type</a>
 </li>
 <li>mem_cons_
-: <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a51a65b4ddad3512d8921fbef19fd13dc">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
-, <a class="el" href="classstxxl_1_1priority__queue__local_1_1int__merger.html#a3f895eace27459250df6a5445c24b665">stxxl::priority_queue_local::int_merger&lt; ValueType, CompareType, MaxArity &gt;</a>
+: <a class="el" href="classstxxl_1_1priority__queue__local_1_1int__merger.html#a3f895eace27459250df6a5445c24b665">stxxl::priority_queue_local::int_merger&lt; ValueType, CompareType, MaxArity &gt;</a>
+, <a class="el" href="classstxxl_1_1priority__queue__local_1_1loser__tree.html#a51a65b4ddad3512d8921fbef19fd13dc">stxxl::priority_queue_local::loser_tree&lt; ValueType, CompareType, MaxArity &gt;</a>
 </li>
 <li>merge_oversampling
 : <a class="el" href="structstxxl_1_1parallel_1_1Settings.html#a2b372a9e57f436b1ce47580ca24ef02f">stxxl::parallel::Settings&lt; must_be_int &gt;</a>
@@ -1038,10 +1043,10 @@ $(document).ready(function(){initNavTree('functions_vars_0x6d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/2340046a42efb960eacbe45d46152dc7725b0dcd">STXXL 1.4.1-339-g2340046</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/8eef2efd763bcab3cde8cd32b49e5df5d1009597">STXXL 1.4.1-341-g8eef2ef</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Mar 29 2015 12:30:21 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sun Mar 29 2015 18:31:37 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

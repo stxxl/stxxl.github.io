@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s_5fmin_5ftree_5fcomparator',['s_min_tree_comparator',['../structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html',1,'stxxl::parallel_priority_queue']]],
   ['scalar_5fmultiplication',['scalar_multiplication',['../structstxxl_1_1matrix__local_1_1matrix__operations_1_1scalar__multiplication.html',1,'stxxl::matrix_local::matrix_operations']]],
   ['scheduled_5fblock_5fmeta',['scheduled_block_meta',['../structstxxl_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1scheduled__block__meta.html',1,'stxxl::block_scheduler_algorithm_offline_lru_prefetching']]],
   ['scoped_5fmutex_5flock',['scoped_mutex_lock',['../classstxxl_1_1scoped__mutex__lock.html',1,'stxxl']]],

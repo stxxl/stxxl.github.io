@@ -1,5 +1,11 @@
 var NAVTREEINDEX28 =
 {
+"structstxxl_1_1run__cursor.html#a625a059ed54c0b9102d2021e2d691cc8":[4,0,1,167,3],
+"structstxxl_1_1run__cursor.html#aa23a11b705494cac6471dafed48d7dbe":[4,0,1,167,0],
+"structstxxl_1_1run__cursor.html#ab28537c37a348ac319868d4b0778208e":[4,0,1,167,1],
+"structstxxl_1_1run__cursor.html#afee608f68f882bce48f99c1e08a54085":[4,0,1,167,4],
+"structstxxl_1_1run__cursor2.html":[4,0,1,168],
+"structstxxl_1_1run__cursor2.html#a14c88e24f4da4027c87de24a59c1f090":[4,0,1,168,4],
 "structstxxl_1_1run__cursor2.html#a1d7acd295d32cc3b74f7a222efb372dd":[4,0,1,168,3],
 "structstxxl_1_1run__cursor2.html#a315112bdd55556d8e9eb1120afaeb891":[4,0,1,168,9],
 "structstxxl_1_1run__cursor2.html#a5c197141ade109bdb9cda573ab801f8c":[4,0,1,168,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX28 =
 "structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01Plug_00_01Plug_01_4_1_1item__type.html#acab87a8c2dcede249bda4073ab6cbdda":[4,0,1,203,0,0],
 "structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html":[4,0,1,204],
 "structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a129a33b99db7afe69b999e5da95a183e":[4,0,1,204,12],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a1698677a53f85e835a4d6353667f736f":[4,0,1,204,13],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a3552e444bfd57dd47e2f253d2b417332":[4,0,1,204,3],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a5e5624100211c900226b347a6fe25ae2":[4,0,1,204,5],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a60b62ede19c3f3d1fc1b71e02033d596":[4,0,1,204,11],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a7acc3127fa29201ed94d6760aba5256b":[4,0,1,204,17],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a7d57630b82a6316139df59ff07e02f9f":[4,0,1,204,6],
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a7fe68a6f7af1c34a0f52be7b3ae0c707":[4,0,1,204,8]
+"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a1698677a53f85e835a4d6353667f736f":[4,0,1,204,13]
 };

@@ -6,6 +6,7 @@ var classstxxl_1_1parallel__priority__queue =
     [ "hint_comparator", "structstxxl_1_1parallel__priority__queue_1_1hint__comparator.html", "structstxxl_1_1parallel__priority__queue_1_1hint__comparator" ],
     [ "inv_compare_type", "structstxxl_1_1parallel__priority__queue_1_1inv__compare__type.html", "structstxxl_1_1parallel__priority__queue_1_1inv__compare__type" ],
     [ "ProcessorData", "structstxxl_1_1parallel__priority__queue_1_1ProcessorData.html", "structstxxl_1_1parallel__priority__queue_1_1ProcessorData" ],
+    [ "s_min_tree_comparator", "structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html", "structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator" ],
     [ "stats_type", "structstxxl_1_1parallel__priority__queue_1_1stats__type.html", "structstxxl_1_1parallel__priority__queue_1_1stats__type" ],
     [ "alloc_strategy", "classstxxl_1_1parallel__priority__queue.html#ac27fc11acd9684d64e24aa8053aaa1f0", null ],
     [ "bid_vector", "classstxxl_1_1parallel__priority__queue.html#a1c6e7496579abbab6fdf5fa696847290", null ],

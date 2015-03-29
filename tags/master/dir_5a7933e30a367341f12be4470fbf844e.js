@@ -16,6 +16,7 @@ var dir_5a7933e30a367341f12be4470fbf844e =
       [ "hint_comparator", "structstxxl_1_1parallel__priority__queue_1_1hint__comparator.html", "structstxxl_1_1parallel__priority__queue_1_1hint__comparator" ],
       [ "inv_compare_type", "structstxxl_1_1parallel__priority__queue_1_1inv__compare__type.html", "structstxxl_1_1parallel__priority__queue_1_1inv__compare__type" ],
       [ "ProcessorData", "structstxxl_1_1parallel__priority__queue_1_1ProcessorData.html", "structstxxl_1_1parallel__priority__queue_1_1ProcessorData" ],
+      [ "s_min_tree_comparator", "structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html", "structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator" ],
       [ "stats_type", "structstxxl_1_1parallel__priority__queue_1_1stats__type.html", "structstxxl_1_1parallel__priority__queue_1_1stats__type" ],
       [ "external_array", "classstxxl_1_1ppq__local_1_1external__array.html", "classstxxl_1_1ppq__local_1_1external__array" ],
       [ "external_array_writer", "classstxxl_1_1ppq__local_1_1external__array__writer.html", "classstxxl_1_1ppq__local_1_1external__array__writer" ],

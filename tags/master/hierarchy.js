@@ -488,6 +488,7 @@ var hierarchy =
     [ "stxxl::parallel_priority_queue< ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems >::hint_comparator", "structstxxl_1_1parallel__priority__queue_1_1hint__comparator.html", null ],
     [ "stxxl::parallel_priority_queue< ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems >::inv_compare_type", "structstxxl_1_1parallel__priority__queue_1_1inv__compare__type.html", null ],
     [ "stxxl::parallel_priority_queue< ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems >::ProcessorData", "structstxxl_1_1parallel__priority__queue_1_1ProcessorData.html", null ],
+    [ "stxxl::parallel_priority_queue< ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems >::s_min_tree_comparator", "structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html", null ],
     [ "stxxl::parallel_priority_queue< ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems >::stats_type", "structstxxl_1_1parallel__priority__queue_1_1stats__type.html", null ],
     [ "stxxl::Plug", "structstxxl_1_1Plug.html", null ],
     [ "stxxl::ppq_local::external_array_writer< ExternalArrayType >::iterator", "classstxxl_1_1ppq__local_1_1external__array__writer_1_1iterator.html", null ],

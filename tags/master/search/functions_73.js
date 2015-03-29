@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s_5fmin_5ftree_5fcomparator',['s_min_tree_comparator',['../structstxxl_1_1parallel__priority__queue_1_1s__min__tree__comparator.html#a4507a55a1a7e0fd6b7b716b8935e2da5',1,'stxxl::parallel_priority_queue::s_min_tree_comparator']]],
   ['save',['save',['../classstxxl_1_1btree_1_1normal__leaf.html#a62ef20659b2c9f98172ccf04373fe9f3',1,'stxxl::btree::normal_leaf::save()'],['../classstxxl_1_1btree_1_1normal__node.html#a8c20768c9bf601b630afb1794498f967',1,'stxxl::btree::normal_node::save()']]],
   ['scalar_5fmultiplication',['scalar_multiplication',['../structstxxl_1_1matrix__local_1_1matrix__operations_1_1scalar__multiplication.html#a277b550c4faacc7f2c81b9413d283aa3',1,'stxxl::matrix_local::matrix_operations::scalar_multiplication']]],
   ['schedule_5fnext_5foperations',['schedule_next_operations',['../classstxxl_1_1block__scheduler__algorithm__offline__lru__prefetching.html#afa498843473a660c6fe83b53c005c060',1,'stxxl::block_scheduler_algorithm_offline_lru_prefetching']]],
