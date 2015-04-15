@@ -125,12 +125,12 @@ $(document).ready(function(){initNavTree('tutorial_map.html','');});
 <div class="line">    <span class="keyword">static</span> <span class="keywordtype">int</span> max_value()</div>
 <div class="line">    { <span class="keywordflow">return</span> <a class="code" href="uint__types_8h.html#a969c1286bbe8eeb8811dac7a462d4a78">std::numeric_limits&lt;int&gt;::min</a>(); }</div>
 <div class="line">};</div>
-</div><!-- fragment --><p>If CompareGreater()(a,b) is true, then a is smaller than b. CompareType must also provide a static max_value method, that returns a value of type KeyType that is larger than any key stored in map, i.e. for all x in map holds CompareType()(x,CompareType::max_value())</p>
-<p>Naturally, we can define a comparator class which returns true if b is smaller than a as follows:</p>
+</div><!-- fragment --><p>If CompareGreater()(a,b) is true, then a is greater than b. CompareType must also provide a static max_value method, that returns a value of type KeyType that is larger than any key stored in map, i.e. for all x in map holds CompareType()(x,CompareType::max_value())</p>
+<p>Naturally, we can define a comparator class which returns true if a is smaller than b as follows:</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>CompareLess</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">bool</span> operator () (<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; a, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp; b)<span class="keyword"> const</span></div>
-<div class="line"><span class="keyword">    </span>{ <span class="keywordflow">return</span> a&lt;b; }</div>
+<div class="line"><span class="keyword">    </span>{ <span class="keywordflow">return</span> a &lt; b; }</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">static</span> <span class="keywordtype">int</span> max_value()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="uint__types_8h.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;int&gt;::max</a>(); }</div>
@@ -246,10 +246,10 @@ $(document).ready(function(){initNavTree('tutorial_map.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Welcome to STXXL</a></li><li class="navelem"><a class="el" href="tutorial.html">Tutorials and Examples</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/58ba76976ad57a54be97a4d036fd96410d6a3a45">STXXL 1.4.1-342-g58ba769</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f7389c79e946430f5e3f7efc15e5bcc29183d200">STXXL 1.4.1-343-gf7389c7</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Tue Apr 14 2015 18:26:06 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Apr 15 2015 12:26:12 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
