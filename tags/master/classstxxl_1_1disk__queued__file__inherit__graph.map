@@ -1,12 +1,12 @@
 <map id="stxxl::disk_queued_file" name="stxxl::disk_queued_file">
-<area shape="rect" id="node7" href="$classstxxl_1_1fileperblock__file.html" title="Implementation of file based on other files, dynamically allocate one file per block. Allows for dynamic disk space consumption. " alt="" coords="509,5,664,51"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1linuxaio__file.html" title="Implementation of file based on the Linux kernel interface for asynchronous I/O. " alt="" coords="524,75,649,104"/>
-<area shape="rect" id="node11" href="$classstxxl_1_1mem__file.html" title="Implementation of file based on new[] and memcpy. " alt="" coords="532,128,641,157"/>
-<area shape="rect" id="node13" href="$classstxxl_1_1mmap__file.html" title="Implementation of memory mapped access file. " alt="" coords="528,181,645,211"/>
-<area shape="rect" id="node15" href="$classstxxl_1_1sim__disk__file.html" title="Implementation of disk emulation. " alt="" coords="520,235,653,264"/>
-<area shape="rect" id="node17" href="$classstxxl_1_1syscall__file.html" title="Implementation of file based on UNIX syscalls. " alt="" coords="525,288,648,317"/>
-<area shape="rect" id="node19" href="$classstxxl_1_1wbtl__file.html" title="Implementation of file based on buffered writes and block remapping via a translation layer..." alt="" coords="533,341,640,371"/>
-<area shape="rect" id="node21" href="$classstxxl_1_1wincall__file.html" title="Implementation of file based on Windows native I/O calls. " alt="" coords="525,395,648,424"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="184,208,259,237"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,208,136,237"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1fileperblock__file.html" title="Implementation of file based on other files, dynamically allocate one file per block. Allows for dynamic disk space consumption. " alt="" coords="509,5,664,47"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1linuxaio__file.html" title="Implementation of file based on the Linux kernel interface for asynchronous I/O. " alt="" coords="523,71,650,98"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1mem__file.html" title="Implementation of file based on new[] and memcpy. " alt="" coords="531,122,642,149"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1mmap__file.html" title="Implementation of memory mapped access file. " alt="" coords="527,173,646,199"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1sim__disk__file.html" title="Implementation of disk emulation. " alt="" coords="519,223,654,250"/>
+<area shape="rect" id="node9" href="$classstxxl_1_1syscall__file.html" title="Implementation of file based on UNIX syscalls. " alt="" coords="525,274,648,301"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1wbtl__file.html" title="Implementation of file based on buffered writes and block remapping via a translation layer..." alt="" coords="533,325,640,351"/>
+<area shape="rect" id="node11" href="$classstxxl_1_1wincall__file.html" title="Implementation of file based on Windows native I/O calls. " alt="" coords="525,375,648,402"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="184,198,259,225"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,198,136,225"/>
 </map>

@@ -1,17 +1,17 @@
 <map id="stxxl::singleton&lt; INSTANCE, destroy_on_exit &gt;" name="stxxl::singleton&lt; INSTANCE, destroy_on_exit &gt;">
-<area shape="rect" id="node5" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; config \&gt;" alt="" coords="548,5,716,35"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; logger \&gt;" alt="" coords="548,59,716,88"/>
-<area shape="rect" id="node13" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; stats \&gt;" alt="" coords="551,112,713,141"/>
-<area shape="rect" id="node17" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; block\l_manager \&gt;" alt="" coords="556,165,708,211"/>
-<area shape="rect" id="node21" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; matrix\l_operation_statistic \&gt;" alt="" coords="553,234,711,281"/>
-<area shape="rect" id="node25" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; disk\l_queues \&gt;" alt="" coords="559,303,705,350"/>
-<area shape="rect" id="node29" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; tuning \&gt;" alt="" coords="548,373,716,403"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,173,136,203"/>
-<area shape="rect" id="node7" href="$classstxxl_1_1config.html" title="Access point to disks properties. Since 1.4.0: no config files are read automatically! ..." alt="" coords="803,5,896,35"/>
-<area shape="rect" id="node11" href="$classstxxl_1_1logger.html" title="stxxl::logger" alt="" coords="803,59,896,88"/>
-<area shape="rect" id="node15" href="$classstxxl_1_1stats.html" title="Collects various I/O statistics. " alt="" coords="807,112,892,141"/>
-<area shape="rect" id="node19" href="$classstxxl_1_1block__manager.html" title="Block manager class. " alt="" coords="776,173,923,203"/>
-<area shape="rect" id="node23" href="$structstxxl_1_1matrix__operation__statistic.html" title="stxxl::matrix_operation\l_statistic" alt="" coords="772,234,927,281"/>
-<area shape="rect" id="node27" href="$classstxxl_1_1disk__queues.html" title="Encapsulates disk queues. " alt="" coords="784,312,915,341"/>
-<area shape="rect" id="node31" href="$classstxxl_1_1hash__map_1_1tuning.html" title="Tuning parameters for external memory hash map. " alt="" coords="769,373,929,403"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; config \&gt;" alt="" coords="545,5,715,32"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; logger \&gt;" alt="" coords="545,56,715,83"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; stats \&gt;" alt="" coords="549,107,711,133"/>
+<area shape="rect" id="node9" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; block\l_manager \&gt;" alt="" coords="553,158,707,199"/>
+<area shape="rect" id="node11" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; matrix\l_operation_statistic \&gt;" alt="" coords="551,223,709,265"/>
+<area shape="rect" id="node13" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; disk\l_queues \&gt;" alt="" coords="557,289,703,330"/>
+<area shape="rect" id="node15" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; tuning \&gt;" alt="" coords="545,355,715,381"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,165,136,192"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1config.html" title="Access point to disks properties. Since 1.4.0: no config files are read automatically! ..." alt="" coords="798,5,891,32"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1logger.html" title="stxxl::logger" alt="" coords="798,56,891,83"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1stats.html" title="Collects various I/O statistics. " alt="" coords="801,107,888,133"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1block__manager.html" title="Block manager class. " alt="" coords="771,165,918,192"/>
+<area shape="rect" id="node12" href="$structstxxl_1_1matrix__operation__statistic.html" title="stxxl::matrix_operation\l_statistic" alt="" coords="767,223,922,265"/>
+<area shape="rect" id="node14" href="$classstxxl_1_1disk__queues.html" title="Encapsulates disk queues. " alt="" coords="779,296,910,323"/>
+<area shape="rect" id="node16" href="$classstxxl_1_1hash__map_1_1tuning.html" title="Tuning parameters for external memory hash map. " alt="" coords="764,355,925,381"/>
 </map>

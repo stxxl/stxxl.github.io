@@ -1,5 +1,5 @@
 <map id="stxxl::stable_ksort_local::bid_sequence&lt; BIDType, AllocStrategy &gt;" name="stxxl::stable_ksort_local::bid_sequence&lt; BIDType, AllocStrategy &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1simple__vector.html" title="stxxl::simple_vector\l\&lt; bid_type \&gt;" alt="" coords="28,201,167,247"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="45,5,176,35"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1simple__vector.html" title="Simpler non&#45;growing vector without initialization. " alt="" coords="113,86,252,133"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1simple__vector.html" title="stxxl::simple_vector\l\&lt; bid_type \&gt;" alt="" coords="28,185,167,227"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="45,5,176,32"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1simple__vector.html" title="Simpler non&#45;growing vector without initialization. " alt="" coords="113,81,252,123"/>
 </map>

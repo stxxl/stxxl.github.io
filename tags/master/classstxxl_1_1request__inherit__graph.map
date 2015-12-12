@@ -1,9 +1,9 @@
 <map id="stxxl::request" name="stxxl::request">
-<area shape="rect" id="node9" href="$classstxxl_1_1request__with__waiters.html" title="Request that is aware of threads waiting for it to complete. " alt="" coords="107,257,237,303"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1request__interface.html" title="Functional interface of a request. " alt="" coords="5,92,163,121"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="19,5,149,35"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="187,83,336,130"/>
-<area shape="rect" id="node11" href="$classstxxl_1_1request__with__state.html" title="Request with completion state. " alt="" coords="107,353,237,399"/>
-<area shape="rect" id="node13" href="$classstxxl_1_1linuxaio__request.html" title="Request for an linuxaio_file. " alt="" coords="9,448,161,477"/>
-<area shape="rect" id="node15" href="$classstxxl_1_1serving__request.html" title="Request which serves an I/O by calling the synchronous routine of the file. " alt="" coords="185,448,335,477"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1request__with__waiters.html" title="Request that is aware of threads waiting for it to complete. " alt="" coords="108,244,240,285"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1request__interface.html" title="Functional interface of a request. " alt="" coords="5,87,164,114"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="19,5,150,32"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="188,80,339,121"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1request__with__state.html" title="Request with completion state. " alt="" coords="108,333,240,375"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1linuxaio__request.html" title="Request for an linuxaio_file. " alt="" coords="10,423,162,449"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1serving__request.html" title="Request which serves an I/O by calling the synchronous routine of the file. " alt="" coords="187,423,337,449"/>
 </map>

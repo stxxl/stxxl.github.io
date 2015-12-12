@@ -1,5 +1,5 @@
 <map id="stxxl::linuxaio_queue" name="stxxl::linuxaio_queue">
-<area shape="rect" id="node2" href="$classstxxl_1_1request__queue__impl__worker.html" title="Implementation of request queue worker threads. Worker threads can be started by start_thread and sto..." alt="" coords="7,161,148,207"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1request__queue.html" title="Interface of a request_queue to which requests can be added and canceled. " alt="" coords="7,83,148,112"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="12,5,143,35"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1request__queue__impl__worker.html" title="Implementation of request queue worker threads. Worker threads can be started by start_thread and sto..." alt="" coords="6,155,149,196"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1request__queue.html" title="Interface of a request_queue to which requests can be added and canceled. " alt="" coords="6,80,149,107"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="12,5,143,32"/>
 </map>

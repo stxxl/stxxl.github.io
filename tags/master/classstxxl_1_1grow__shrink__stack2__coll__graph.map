@@ -1,29 +1,29 @@
 <map id="stxxl::grow_shrink_stack2&lt; StackConfig &gt;" name="stxxl::grow_shrink_stack2&lt; StackConfig &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="415,347,545,376"/>
-<area shape="rect" id="node22" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="1387,399,1461,428"/>
-<area shape="rect" id="node27" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="733,399,827,428"/>
-<area shape="rect" id="node54" href="$classstxxl_1_1read__write__pool.html" title="stxxl::read_write_pool\l\&lt; block_type \&gt;" alt="" coords="1349,153,1499,199"/>
-<area shape="rect" id="node57" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="712,93,848,139"/>
-<area shape="rect" id="node65" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="717,213,843,259"/>
-<area shape="rect" id="node68" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1057,153,1207,199"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="400,74,560,121"/>
-<area shape="rect" id="node25" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="1057,390,1207,437"/>
-<area shape="rect" id="node6" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="28,74,188,121"/>
-<area shape="rect" id="node8" href="$classstxxl_1_1typed__block.html" title="Block containing elements of fixed length. " alt="" coords="4159,181,4324,245"/>
-<area shape="rect" id="node10" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="stxxl::mng_local::expand\l_struct\&lt; mng_local::block\l_w_info\&lt; Type, RawSize, NRef,\l MetaInfoType \&gt;, RawSize \&gt;" alt="" coords="3895,246,4105,327"/>
-<area shape="rect" id="node12" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;, RawSize\l&#45;sizeof(mng_local::block_w_info\l\&lt; Type, RawSize, NRef, MetaInfoType \&gt;)\&gt;" alt="" coords="3419,229,3693,345"/>
-<area shape="rect" id="node14" href="$classstxxl_1_1mng__local_1_1block__w__info.html" title="stxxl::mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;" alt="" coords="3185,185,3359,249"/>
-<area shape="rect" id="node16" href="$classstxxl_1_1mng__local_1_1block__w__bids.html" title="stxxl::mng_local::block\l_w_bids\&lt; Type,((RawSize\l&#45;sizeof(BID\&lt; RawSize \&gt;)*NBids\l&#45;sizeof(MetaInfoType))/sizeof\l(Type)), RawSize, NBids \&gt;" alt="" coords="2504,219,2715,317"/>
-<area shape="rect" id="node38" href="$classstxxl_1_1mng__local_1_1block__w__info.html" title="Contains per block information for stxxl::typed_block , not intended for direct use. " alt="" coords="2799,167,2972,231"/>
-<area shape="rect" id="node18" href="$classstxxl_1_1mng__local_1_1element__block.html" title="Contains data elements for stxxl::typed_block , not intended for direct use. " alt="" coords="1856,197,2027,243"/>
-<area shape="rect" id="node34" href="$classstxxl_1_1mng__local_1_1block__w__bids.html" title="Contains BID references for stxxl::typed_block , not intended for direct use. " alt="" coords="2096,319,2307,383"/>
-<area shape="rect" id="node20" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="1863,336,2020,365"/>
-<area shape="rect" id="node31" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="1595,399,1725,428"/>
-<area shape="rect" id="node41" href="$classstxxl_1_1mng__local_1_1filler__struct.html" title="stxxl::mng_local::filler\l_struct\&lt; FillSize \&gt;" alt="" coords="2535,410,2684,457"/>
-<area shape="rect" id="node45" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="Contains per block filler for stxxl::typed_block , not intended for direct use. " alt="" coords="2792,410,2979,457"/>
-<area shape="rect" id="node50" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; Type, RawSize\l&#45;sizeof(Type)\&gt;" alt="" coords="3195,476,3349,540"/>
-<area shape="rect" id="node43" href="$classstxxl_1_1mng__local_1_1filler__struct.html" title="stxxl::mng_local::filler\l_struct\&lt; Bytes \&gt;" alt="" coords="2127,410,2276,457"/>
-<area shape="rect" id="node48" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="Helper to compute the size of the filler , not intended for direct use. " alt="" coords="3468,403,3644,450"/>
-<area shape="rect" id="node61" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; bid_type, busy\l_entry, bid_hash \&gt;" alt="" coords="405,147,555,211"/>
-<area shape="rect" id="node63" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="5,147,211,211"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="415,332,545,359"/>
+<area shape="rect" id="node12" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="1381,383,1456,409"/>
+<area shape="rect" id="node14" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="731,383,826,409"/>
+<area shape="rect" id="node23" href="$classstxxl_1_1read__write__pool.html" title="stxxl::read_write_pool\l\&lt; block_type \&gt;" alt="" coords="1344,145,1493,186"/>
+<area shape="rect" id="node24" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="711,86,847,127"/>
+<area shape="rect" id="node27" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="716,203,841,245"/>
+<area shape="rect" id="node28" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1054,145,1203,186"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="400,67,560,109"/>
+<area shape="rect" id="node13" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="1053,375,1204,417"/>
+<area shape="rect" id="node4" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="28,67,188,109"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1typed__block.html" title="Block containing elements of fixed length. " alt="" coords="4144,164,4311,220"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="stxxl::mng_local::expand\l_struct\&lt; mng_local::block\l_w_info\&lt; Type, RawSize, NRef,\l MetaInfoType \&gt;, RawSize \&gt;" alt="" coords="3883,219,4095,290"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;, RawSize\l&#45;sizeof(mng_local::block_w_info\l\&lt; Type, RawSize, NRef, MetaInfoType \&gt;)\&gt;" alt="" coords="3408,205,3683,305"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1mng__local_1_1block__w__info.html" title="stxxl::mng_local::block\l_w_info\&lt; Type, RawSize,\l NRef, MetaInfoType \&gt;" alt="" coords="3177,161,3350,217"/>
+<area shape="rect" id="node9" href="$classstxxl_1_1mng__local_1_1block__w__bids.html" title="stxxl::mng_local::block\l_w_bids\&lt; Type,((RawSize\l&#45;sizeof(BID\&lt; RawSize \&gt;)*NBids\l&#45;sizeof(MetaInfoType))/sizeof\l(Type)), RawSize, NBids \&gt;" alt="" coords="2496,204,2707,289"/>
+<area shape="rect" id="node17" href="$classstxxl_1_1mng__local_1_1block__w__info.html" title="Contains per block information for stxxl::typed_block , not intended for direct use. " alt="" coords="2791,153,2964,209"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1mng__local_1_1element__block.html" title="Contains data elements for stxxl::typed_block , not intended for direct use. " alt="" coords="1849,186,2020,227"/>
+<area shape="rect" id="node16" href="$classstxxl_1_1mng__local_1_1block__w__bids.html" title="Contains BID references for stxxl::typed_block , not intended for direct use. " alt="" coords="2088,307,2299,363"/>
+<area shape="rect" id="node11" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="1856,321,2013,348"/>
+<area shape="rect" id="node15" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="1589,383,1720,409"/>
+<area shape="rect" id="node18" href="$classstxxl_1_1mng__local_1_1filler__struct.html" title="stxxl::mng_local::filler\l_struct\&lt; FillSize \&gt;" alt="" coords="2527,391,2676,433"/>
+<area shape="rect" id="node20" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="Contains per block filler for stxxl::typed_block , not intended for direct use. " alt="" coords="2784,391,2971,433"/>
+<area shape="rect" id="node22" href="$classstxxl_1_1mng__local_1_1add__filler.html" title="stxxl::mng_local::add\l_filler\&lt; Type, RawSize\l&#45;sizeof(Type)\&gt;" alt="" coords="3186,428,3341,484"/>
+<area shape="rect" id="node19" href="$classstxxl_1_1mng__local_1_1filler__struct.html" title="stxxl::mng_local::filler\l_struct\&lt; Bytes \&gt;" alt="" coords="2119,391,2268,433"/>
+<area shape="rect" id="node21" href="$classstxxl_1_1mng__local_1_1expand__struct.html" title="Helper to compute the size of the filler , not intended for direct use. " alt="" coords="3457,371,3633,413"/>
+<area shape="rect" id="node25" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; bid_type, busy\l_entry, bid_hash \&gt;" alt="" coords="405,139,555,195"/>
+<area shape="rect" id="node26" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="5,139,211,195"/>
 </map>

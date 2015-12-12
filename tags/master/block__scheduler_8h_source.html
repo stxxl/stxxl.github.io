@@ -715,7 +715,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l00603"></a><span class="lineno"><a class="line" href="classstxxl_1_1block__scheduler__algorithm__online__lru.html#ab7b76072efd97ea017a04d10ff4e7d6d">  603</a></span>&#160;    <a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * <a class="code" href="classstxxl_1_1block__scheduler__algorithm__online__lru.html#ab7b76072efd97ea017a04d10ff4e7d6d">get_free_internal_block</a>()</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    {</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="comment">// try to get a free internal_block</span></div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = get_free_internal_block_from_block_scheduler())</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = get_free_internal_block_from_block_scheduler())</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;            <span class="keywordflow">return</span> iblock;</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <span class="comment">// evict block</span></div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        assert(! evictable_blocks.empty()); <span class="comment">// fails it there is not enough memory available</span></div>
@@ -748,7 +748,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        <span class="keywordflow">while</span> (! evictable_blocks.empty())</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        {</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;            SwappableBlockType&amp; sblock = swappable_blocks[evictable_blocks.pop()];</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                return_free_internal_block(iblock);</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        }</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    }</div>
@@ -818,7 +818,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        SwappableBlockType&amp; sblock = swappable_blocks[sbid];</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        <span class="keywordflow">if</span> (sblock.is_evictable())</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;            evictable_blocks.erase(sbid);</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            return_free_internal_block(iblock);</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    }</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
@@ -900,7 +900,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        <span class="keywordflow">while</span> (! evictable_blocks.empty())</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        {</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;            SwappableBlockType&amp; sblock = swappable_blocks[evictable_blocks.top()];</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                return_free_internal_block(iblock);</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;            evictable_blocks.pop();</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        }</div>
@@ -1053,7 +1053,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l00941"></a><span class="lineno"><a class="line" href="classstxxl_1_1block__scheduler__algorithm__offline__lfd.html#a6d118758bd51421802c0dc6b65ca60e6">  941</a></span>&#160;    <a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * <a class="code" href="classstxxl_1_1block__scheduler__algorithm__offline__lfd.html#a6d118758bd51421802c0dc6b65ca60e6">get_free_internal_block</a>()</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    {</div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;        <span class="comment">// try to get a free internal_block</span></div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = get_free_internal_block_from_block_scheduler())</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = get_free_internal_block_from_block_scheduler())</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;            <span class="keywordflow">return</span> iblock;</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        <span class="comment">// evict block</span></div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;        assert(! evictable_blocks.empty()); <span class="comment">// fails it there is not enough memory available</span></div>
@@ -1123,7 +1123,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;        <span class="keywordflow">while</span> (! evictable_blocks.empty())</div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        {</div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;            SwappableBlockType&amp; sblock = swappable_blocks[evictable_blocks.pop()];</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;                return_free_internal_block(iblock);</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        }</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    }</div>
@@ -1207,7 +1207,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        SwappableBlockType&amp; sblock = swappable_blocks[sbid];</div>
 <div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        <span class="keywordflow">if</span> (sblock.is_evictable())</div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;            evictable_blocks.erase(sbid);</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;            return_free_internal_block(iblock);</div>
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    }</div>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;</div>
@@ -1755,7 +1755,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;        <span class="keywordflow">while</span> (! free_evictable_blocks.empty())</div>
 <div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;        {</div>
 <div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;            SwappableBlockType&amp; sblock = swappable_blocks[<a class="code" href="namespacestxxl.html#a37feb00474dd76f7dfc8fc5352123a34">pop_begin</a>(free_evictable_blocks)];</div>
-<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;                return_free_internal_block(iblock);</div>
 <div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;        }</div>
 <div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;    }</div>
@@ -1896,7 +1896,7 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;                t = free_evictable_blocks.erase(sbid);</div>
 <div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;            assert(t != 0);</div>
 <div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;        }</div>
-<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a> * iblock = sblock.deinitialize())</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classstxxl_1_1block__scheduler__algorithm.html#ad1640b01510cdad9af156b6df4b23350">internal_block_type</a>* iblock = sblock.deinitialize())</div>
 <div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;        {</div>
 <div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;            <span class="keywordflow">if</span> (shall_keep_internal_block(schedule_meta))</div>
 <div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;                <span class="comment">// =&gt; swappable_block shall keep its internal_block</span></div>
@@ -2231,10 +2231,10 @@ $(document).ready(function(){initNavTree('block__scheduler_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ef3d45016f8136b9aff5ceb64fb3161.html">stxxl</a></li><li class="navelem"><a class="el" href="dir_3d4857524531d475c56368c3068e9332.html">bits</a></li><li class="navelem"><a class="el" href="dir_bc6b0a06bb04e35383e101a5ba9a3f9d.html">mng</a></li><li class="navelem"><a class="el" href="block__scheduler_8h.html">block_scheduler.h</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f7389c79e946430f5e3f7efc15e5bcc29183d200">STXXL 1.4.1-343-gf7389c7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1babe452214b4613a2a488d80073f4185c05a0b3">STXXL 1.4.1-356-g1babe45</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Apr 15 2015 12:25:55 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Dec 12 2015 06:25:57 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

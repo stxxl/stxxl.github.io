@@ -1,11 +1,11 @@
 <map id="stxxl::mng_local::block_w_bids&lt; Type, Size, RawSize, NBids &gt;" name="stxxl::mng_local::block_w_bids&lt; Type, Size, RawSize, NBids &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1mng__local_1_1element__block.html" title="Contains data elements for stxxl::typed_block , not intended for direct use. " alt="" coords="5,542,176,589"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="200,551,357,580"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="217,349,292,379"/>
-<area shape="rect" id="node19" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="305,445,436,475"/>
-<area shape="rect" id="node8" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="180,15,311,44"/>
-<area shape="rect" id="node12" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="253,129,347,159"/>
-<area shape="rect" id="node10" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="253,235,403,282"/>
-<area shape="rect" id="node15" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="409,121,569,167"/>
-<area shape="rect" id="node17" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="409,6,569,53"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1mng__local_1_1element__block.html" title="Contains data elements for stxxl::typed_block , not intended for direct use. " alt="" coords="5,496,176,537"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1BID.html" title="stxxl::BID\&lt; raw_size \&gt;" alt="" coords="200,503,357,530"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="217,317,292,344"/>
+<area shape="rect" id="node10" href="$structstxxl_1_1BID.html" title="Block identifier class. " alt="" coords="305,407,436,433"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="181,13,312,39"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="254,117,349,143"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="254,213,405,255"/>
+<area shape="rect" id="node8" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="411,109,571,151"/>
+<area shape="rect" id="node9" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="411,5,571,47"/>
 </map>

@@ -75,7 +75,7 @@ var NAVTREEINDEX =
 "structstxxl_1_1parallel_1_1Settings.html#a40dc0f4cb2f75d2d13dce74c3633af3e",
 "structstxxl_1_1run__cursor.html#a625a059ed54c0b9102d2021e2d691cc8",
 "structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a3552e444bfd57dd47e2f253d2b417332",
-"vector_8h.html#ga753a7428dcca564738d812649ac3b10f"
+"vector_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

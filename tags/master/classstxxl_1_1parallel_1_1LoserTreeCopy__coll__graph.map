@@ -1,4 +1,4 @@
 <map id="stxxl::parallel::LoserTreeCopy&lt; Stable, ValueType, Comparator &gt;" name="stxxl::parallel::LoserTreeCopy&lt; Stable, ValueType, Comparator &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1parallel_1_1LoserTreeCopyBase.html" title="stxxl::parallel::LoserTree\lCopyBase\&lt; ValueType, Comparator \&gt;" alt="" coords="5,137,251,183"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1parallel_1_1LoserTreeCopyBase_1_1Loser.html" title="Internal representation of a loser tree player/node. " alt="" coords="12,5,244,69"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1parallel_1_1LoserTreeCopyBase.html" title="stxxl::parallel::LoserTree\lCopyBase\&lt; ValueType, Comparator \&gt;" alt="" coords="5,124,251,165"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1parallel_1_1LoserTreeCopyBase_1_1Loser.html" title="Internal representation of a loser tree player/node. " alt="" coords="11,5,245,61"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="stxxl::state&lt; ValueType &gt;" name="stxxl::state&lt; ValueType &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="27,5,157,35"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="45,85,139,115"/>
-<area shape="rect" id="node7" href="$classstxxl_1_1condition__variable.html" title="stxxl::condition_variable" alt="" coords="163,85,325,115"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="27,5,157,32"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="45,81,139,108"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1condition__variable.html" title="stxxl::condition_variable" alt="" coords="164,81,327,108"/>
 </map>

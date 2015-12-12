@@ -1,6 +1,6 @@
 <map id="stxxl::stream::runs_merger&lt; RunsType, CompareType, AllocStr &gt;" name="stxxl::stream::runs_merger&lt; RunsType, CompareType, AllocStr &gt;">
-<area shape="rect" id="node7" href="$classstxxl_1_1stream_1_1runs__merger.html" title="stxxl::stream::runs\l_merger\&lt; sorted_runs\l_type, CompareType, AllocStr \&gt;" alt="" coords="861,5,1072,69"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1stream_1_1runs__merger.html" title="stxxl::stream::runs\l_merger\&lt; typename runs\l_creator_type::sorted\l_runs_type, cmp_type, alloc\l_strategy_type \&gt;" alt="" coords="873,93,1060,192"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1stream_1_1basic__runs__merger.html" title="Merges sorted runs. " alt="" coords="188,59,364,123"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,76,136,105"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1stream_1_1runs__merger.html" title="stxxl::stream::runs\l_merger\&lt; sorted_runs\l_type, CompareType, AllocStr \&gt;" alt="" coords="857,5,1068,61"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1stream_1_1runs__merger.html" title="stxxl::stream::runs\l_merger\&lt; typename runs\l_creator_type::sorted\l_runs_type, cmp_type, alloc\l_strategy_type \&gt;" alt="" coords="869,85,1056,171"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1stream_1_1basic__runs__merger.html" title="Merges sorted runs. " alt="" coords="185,53,363,109"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,68,136,95"/>
 </map>

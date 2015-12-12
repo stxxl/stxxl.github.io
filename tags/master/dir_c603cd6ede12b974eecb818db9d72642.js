@@ -80,7 +80,8 @@ var dir_c603cd6ede12b974eecb818db9d72642 =
       [ "tuple_greater1st", "structstxxl_1_1tuple__greater1st.html", "structstxxl_1_1tuple__greater1st" ],
       [ "tuple_less1st", "structstxxl_1_1tuple__less1st.html", "structstxxl_1_1tuple__less1st" ],
       [ "tuple_less1st_less2nd", "structstxxl_1_1tuple__less1st__less2nd.html", "structstxxl_1_1tuple__less1st__less2nd" ],
-      [ "tuple_less2nd", "structstxxl_1_1tuple__less2nd.html", "structstxxl_1_1tuple__less2nd" ]
+      [ "tuple_less2nd", "structstxxl_1_1tuple__less2nd.html", "structstxxl_1_1tuple__less2nd" ],
+      [ "tuple_less2nd_less1st", "structstxxl_1_1tuple__less2nd__less1st.html", "structstxxl_1_1tuple__less2nd__less1st" ]
     ] ],
     [ "types.h", "common_2types_8h.html", "common_2types_8h" ],
     [ "uint_types.h", "uint__types_8h.html", "uint__types_8h" ],

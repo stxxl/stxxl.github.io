@@ -1,4 +1,4 @@
 <map id="stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::equal_to" name="stxxl::hash_map::hash_map&lt; KeyType, MappedType, HashType, KeyCompareType, SubBlockSize, SubBlocksPerBlock, AllocatorType &gt;::equal_to">
-<area shape="rect" id="node2" href="$classstxxl_1_1hash__map_1_1hash__map.html" title="Main implementation of external memory hash map. " alt="" coords="188,5,423,104"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,40,136,69"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1hash__map_1_1hash__map.html" title="Main implementation of external memory hash map. " alt="" coords="185,5,421,91"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,35,136,61"/>
 </map>

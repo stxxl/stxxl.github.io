@@ -338,7 +338,7 @@ $(document).ready(function(){initNavTree('ufs__file__base_8cpp_source.html','');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (!(<a class="code" href="classstxxl_1_1ufs__file__base.html#a3151b8ec316dba999f960e17efb97edd">m_mode</a> &amp; <a class="code" href="classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4dacef691f6e56ce8f0e49154858a3e7bde">RDONLY</a>) &amp;&amp; !<a class="code" href="classstxxl_1_1ufs__file__base.html#a9299afd4db631b4fed7740c9898ab4a1">m_is_device</a>)</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#if STXXL_WINDOWS || defined(__MINGW32__)</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor"></span>        HANDLE hfile = (HANDLE) ::_get_osfhandle(<a class="code" href="classstxxl_1_1ufs__file__base.html#af5ba52f2497ae0ca12afac74846f83b7">file_des</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor"></span>        HANDLE hfile = (HANDLE)::_get_osfhandle(<a class="code" href="classstxxl_1_1ufs__file__base.html#af5ba52f2497ae0ca12afac74846f83b7">file_des</a>);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="error__handling_8h.html#ad5017c4c6b29f3889b0478cfd9559799">STXXL_THROW_ERRNO_NE_0</a>((hfile == INVALID_HANDLE_VALUE), <a class="code" href="classstxxl_1_1io__error.html">io_error</a>,</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                               <span class="stringliteral">&quot;_get_osfhandle() path=&quot;</span> &lt;&lt; <a class="code" href="classstxxl_1_1ufs__file__base.html#a6f55b9155318dd418cb3f70429e583fb">filename</a> &lt;&lt; <span class="stringliteral">&quot; fd=&quot;</span> &lt;&lt; <a class="code" href="classstxxl_1_1ufs__file__base.html#af5ba52f2497ae0ca12afac74846f83b7">file_des</a>);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
@@ -454,10 +454,10 @@ $(document).ready(function(){initNavTree('ufs__file__base_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="ufs__file__base_8cpp.html">ufs_file_base.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f7389c79e946430f5e3f7efc15e5bcc29183d200">STXXL 1.4.1-343-gf7389c7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1babe452214b4613a2a488d80073f4185c05a0b3">STXXL 1.4.1-356-g1babe45</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Apr 15 2015 12:26:00 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Dec 12 2015 06:26:08 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

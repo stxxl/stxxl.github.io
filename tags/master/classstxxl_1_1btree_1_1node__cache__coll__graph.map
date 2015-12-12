@@ -1,15 +1,15 @@
 <map id="stxxl::btree::node_cache&lt; NodeType, BTreeType &gt;" name="stxxl::btree::node_cache&lt; NodeType, BTreeType &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="20,351,151,380"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; block\l_manager \&gt;" alt="" coords="743,346,895,393"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; INSTANCE,\l destroy_on_exit \&gt;" alt="" coords="339,342,533,389"/>
-<area shape="rect" id="node12" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="1087,249,1161,279"/>
-<area shape="rect" id="node17" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="389,235,483,264"/>
-<area shape="rect" id="node24" href="$classstxxl_1_1disk__allocator.html" title="stxxl::disk_allocator" alt="" coords="1312,187,1451,216"/>
-<area shape="rect" id="node29" href="$classstxxl_1_1lru__pager.html" title="Pager with LRU replacement strategy. " alt="" coords="1032,491,1216,520"/>
-<area shape="rect" id="node32" href="$classstxxl_1_1simple__vector.html" title="stxxl::simple_vector\l\&lt; list_type::iterator \&gt;" alt="" coords="748,482,889,529"/>
-<area shape="rect" id="node35" href="$classstxxl_1_1simple__vector.html" title="Simpler non&#45;growing vector without initialization. " alt="" coords="367,513,505,559"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1block__manager.html" title="Block manager class. " alt="" coords="1592,256,1739,285"/>
-<area shape="rect" id="node15" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="744,226,893,273"/>
-<area shape="rect" id="node20" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="356,5,516,51"/>
-<area shape="rect" id="node22" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,5,165,51"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="20,345,151,371"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; block\l_manager \&gt;" alt="" coords="739,341,892,383"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1singleton.html" title="stxxl::singleton\&lt; INSTANCE,\l destroy_on_exit \&gt;" alt="" coords="337,337,532,379"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1file.html" title="Defines interface of file. " alt="" coords="1083,245,1157,271"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1mutex.html" title="stxxl::mutex" alt="" coords="387,231,482,258"/>
+<area shape="rect" id="node11" href="$classstxxl_1_1disk__allocator.html" title="stxxl::disk_allocator" alt="" coords="1308,186,1447,213"/>
+<area shape="rect" id="node12" href="$classstxxl_1_1lru__pager.html" title="Pager with LRU replacement strategy. " alt="" coords="1028,483,1212,510"/>
+<area shape="rect" id="node13" href="$classstxxl_1_1simple__vector.html" title="stxxl::simple_vector\l\&lt; list_type::iterator \&gt;" alt="" coords="744,476,887,517"/>
+<area shape="rect" id="node14" href="$classstxxl_1_1simple__vector.html" title="Simpler non&#45;growing vector without initialization. " alt="" coords="365,505,504,547"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1block__manager.html" title="Block manager class. " alt="" coords="1587,251,1733,278"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1atomic__counted__object.html" title="Provides reference counting abilities for use with counting_ptr with mutex locking. " alt="" coords="740,224,891,265"/>
+<area shape="rect" id="node9" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="355,5,515,47"/>
+<area shape="rect" id="node10" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,5,165,47"/>
 </map>

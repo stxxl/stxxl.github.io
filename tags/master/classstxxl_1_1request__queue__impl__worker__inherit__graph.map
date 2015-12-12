@@ -1,7 +1,7 @@
 <map id="stxxl::request_queue_impl_worker" name="stxxl::request_queue_impl_worker">
-<area shape="rect" id="node7" href="$classstxxl_1_1linuxaio__queue.html" title="Queue for linuxaio_file(s) " alt="" coords="5,265,149,295"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1request__queue__impl__1q.html" title="Implementation of a local request queue having only one queue for both read and write requests..." alt="" coords="173,257,315,303"/>
-<area shape="rect" id="node11" href="$classstxxl_1_1request__queue__impl__qwqr.html" title="Implementation of a local request queue having two queues, one for read and one for write requests..." alt="" coords="339,257,480,303"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1request__queue.html" title="Interface of a request_queue to which requests can be added and canceled. " alt="" coords="173,83,315,112"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="179,5,309,35"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1linuxaio__queue.html" title="Queue for linuxaio_file(s) " alt="" coords="5,251,149,278"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1request__queue__impl__1q.html" title="Implementation of a local request queue having only one queue for both read and write requests..." alt="" coords="174,244,317,285"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1request__queue__impl__qwqr.html" title="Implementation of a local request queue having two queues, one for read and one for write requests..." alt="" coords="341,244,483,285"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1request__queue.html" title="Interface of a request_queue to which requests can be added and canceled. " alt="" coords="174,80,317,107"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="180,5,311,32"/>
 </map>

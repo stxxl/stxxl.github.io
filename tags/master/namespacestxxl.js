@@ -210,6 +210,7 @@ var namespacestxxl =
     [ "tuple_less1st", "structstxxl_1_1tuple__less1st.html", "structstxxl_1_1tuple__less1st" ],
     [ "tuple_less1st_less2nd", "structstxxl_1_1tuple__less1st__less2nd.html", "structstxxl_1_1tuple__less1st__less2nd" ],
     [ "tuple_less2nd", "structstxxl_1_1tuple__less2nd.html", "structstxxl_1_1tuple__less2nd" ],
+    [ "tuple_less2nd_less1st", "structstxxl_1_1tuple__less2nd__less1st.html", "structstxxl_1_1tuple__less2nd__less1st" ],
     [ "two2one_dim_array_adapter_base", "structstxxl_1_1two2one__dim__array__adapter__base.html", "structstxxl_1_1two2one__dim__array__adapter__base" ],
     [ "typed_block", "classstxxl_1_1typed__block.html", "classstxxl_1_1typed__block" ],
     [ "ufs_file_base", "classstxxl_1_1ufs__file__base.html", "classstxxl_1_1ufs__file__base" ],

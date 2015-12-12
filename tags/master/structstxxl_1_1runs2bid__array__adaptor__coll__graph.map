@@ -1,6 +1,6 @@
 <map id="stxxl::runs2bid_array_adaptor&lt; BlockSize, RunType, PosType &gt;" name="stxxl::runs2bid_array_adaptor&lt; BlockSize, RunType, PosType &gt;">
-<area shape="rect" id="node2" href="$structstxxl_1_1two2one__dim__array__adapter__base.html" title="stxxl::two2one_dim\l_array_adapter_base\l\&lt; RunType *, BID\&lt; BlockSize\l \&gt;, PosType \&gt;" alt="" coords="447,5,644,86"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1two2one__dim__array__adapter__base.html" title="stxxl::two2one_dim\l_array_adapter_base\l\&lt; OneDimArrayType, DataType,\l PosType \&gt;" alt="" coords="5,5,216,86"/>
-<area shape="rect" id="node6" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="465,109,625,155"/>
-<area shape="rect" id="node8" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="31,109,191,155"/>
+<area shape="rect" id="node2" href="$structstxxl_1_1two2one__dim__array__adapter__base.html" title="stxxl::two2one_dim\l_array_adapter_base\l\&lt; RunType *, BID\&lt; BlockSize\l \&gt;, PosType \&gt;" alt="" coords="445,5,644,76"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1two2one__dim__array__adapter__base.html" title="stxxl::two2one_dim\l_array_adapter_base\l\&lt; OneDimArrayType, DataType,\l PosType \&gt;" alt="" coords="5,5,216,76"/>
+<area shape="rect" id="node4" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="465,100,625,141"/>
+<area shape="rect" id="node5" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="31,100,191,141"/>
 </map>

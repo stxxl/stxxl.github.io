@@ -1,5 +1,5 @@
 <map id="stxxl::stream::runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;" name="stxxl::stream::runs_creator&lt; Input, CompareType, BlockSize, AllocStr &gt;">
-<area shape="rect" id="node7" href="$classstxxl_1_1stream_1_1runs__creator.html" title="stxxl::stream::runs\l_creator\&lt; stream::use\l_push\&lt; ValueType \&gt;, cmp\l_type, block_size, alloc\l_strategy_type \&gt;" alt="" coords="869,8,1045,107"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1stream_1_1basic__runs__creator.html" title="Forms sorted runs of data from a stream. " alt="" coords="187,17,365,98"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,43,136,72"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1stream_1_1runs__creator.html" title="stxxl::stream::runs\l_creator\&lt; stream::use\l_push\&lt; ValueType \&gt;, cmp\l_type, block_size, alloc\l_strategy_type \&gt;" alt="" coords="865,7,1041,92"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1stream_1_1basic__runs__creator.html" title="Forms sorted runs of data from a stream. " alt="" coords="185,14,364,85"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,36,136,63"/>
 </map>

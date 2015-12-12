@@ -30,6 +30,7 @@ var searchData=
   ['tuple_5fless1st',['tuple_less1st',['../structstxxl_1_1tuple__less1st.html',1,'stxxl']]],
   ['tuple_5fless1st_5fless2nd',['tuple_less1st_less2nd',['../structstxxl_1_1tuple__less1st__less2nd.html',1,'stxxl']]],
   ['tuple_5fless2nd',['tuple_less2nd',['../structstxxl_1_1tuple__less2nd.html',1,'stxxl']]],
+  ['tuple_5fless2nd_5fless1st',['tuple_less2nd_less1st',['../structstxxl_1_1tuple__less2nd__less1st.html',1,'stxxl']]],
   ['two2one_5fdim_5farray_5fadapter_5fbase',['two2one_dim_array_adapter_base',['../structstxxl_1_1two2one__dim__array__adapter__base.html',1,'stxxl']]],
   ['two2one_5fdim_5farray_5fadapter_5fbase_3c_20runtype_20_2a_2c_20bid_3c_20blocksize_20_3e_2c_20postype_20_3e',['two2one_dim_array_adapter_base&lt; RunType *, BID&lt; BlockSize &gt;, PosType &gt;',['../structstxxl_1_1two2one__dim__array__adapter__base.html',1,'stxxl']]],
   ['type_5fkey',['type_key',['../structstxxl_1_1ksort__local_1_1type__key.html',1,'stxxl::ksort_local']]],

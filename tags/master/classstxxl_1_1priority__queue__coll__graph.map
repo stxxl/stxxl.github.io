@@ -1,25 +1,25 @@
 <map id="stxxl::priority_queue&lt; ConfigType &gt;" name="stxxl::priority_queue&lt; ConfigType &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="817,721,948,751"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1priority__queue__local_1_1int__merger.html" title="stxxl::priority_queue\l_local::int_merger\&lt; value\l_type, comparator_type,\l IntKMAX \&gt;" alt="" coords="2391,694,2559,775"/>
-<area shape="rect" id="node11" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="stxxl::priority_queue\l_local::loser_tree\&lt; self\l_type, comparator_type,\l MaxArity \&gt;" alt="" coords="1571,1298,1733,1379"/>
-<area shape="rect" id="node26" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="Loser tree from Knuth, &quot;Sorting and Searching&quot;, Section 5.4.1. " alt="" coords="1132,1132,1329,1196"/>
-<area shape="rect" id="node34" href="$classstxxl_1_1priority__queue__local_1_1int__merger.html" title="stxxl::priority_queue\l_local::int_merger\&lt; ValueType,\l CompareType, MaxArity \&gt;" alt="" coords="1917,633,2120,697"/>
-<area shape="rect" id="node38" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="stxxl::priority_queue\l_local::loser_tree\&lt; self\l_type, CompareType, MaxArity \&gt;" alt="" coords="1544,1049,1760,1113"/>
-<area shape="rect" id="node47" href="$classstxxl_1_1priority__queue__local_1_1ext__merger.html" title="External merger, based on the loser tree data structure. " alt="" coords="2371,287,2579,351"/>
-<area shape="rect" id="node50" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="stxxl::priority_queue\l_local::loser_tree\&lt; self\l_type, CompareType, Arity \&gt;" alt="" coords="1557,844,1747,908"/>
-<area shape="rect" id="node59" href="$classstxxl_1_1read__write__pool.html" title="stxxl::read_write_pool\l\&lt; block_type \&gt;" alt="" coords="1944,343,2093,390"/>
-<area shape="rect" id="node62" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="1163,146,1299,193"/>
-<area shape="rect" id="node70" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="1168,450,1293,497"/>
-<area shape="rect" id="node73" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1577,343,1727,390"/>
-<area shape="rect" id="node78" href="$structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html" title="stxxl::priority_queue\l_local::ext_merger\&lt; BlockType,\l CompareType, Arity, AllocStr\l \&gt;::sequence_state" alt="" coords="2737,173,2943,254"/>
-<area shape="rect" id="node7" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="363,1058,523,1105"/>
-<area shape="rect" id="node19" href="$structstxxl_1_1priority__queue__local_1_1loser__tree_1_1Entry.html" title="type of nodes in the loser tree " alt="" coords="773,1208,992,1272"/>
-<area shape="rect" id="node9" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,1058,165,1105"/>
-<area shape="rect" id="node15" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="stxxl::priority_queue\l_local::internal_bounded\l_stack\&lt; unsigned_type, arity \&gt;" alt="" coords="781,1713,984,1777"/>
-<area shape="rect" id="node17" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="Similar to std::stack, with the following differences: " alt="" coords="340,1681,545,1745"/>
-<area shape="rect" id="node23" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="stxxl::priority_queue\l_local::internal_bounded\l_stack\&lt; unsigned_type, MaxArity \&gt;" alt="" coords="768,1453,997,1517"/>
-<area shape="rect" id="node66" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; bid_type, busy\l_entry, bid_hash \&gt;" alt="" coords="808,8,957,72"/>
-<area shape="rect" id="node68" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="340,8,545,72"/>
-<area shape="rect" id="node84" href="$classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html" title="stxxl::priority_queue\l_local::internal_priority\l_queue\&lt; value_type, std\l::vector\&lt; value_type \&gt;, comparator_type \&gt;" alt="" coords="2340,478,2609,559"/>
-<area shape="rect" id="node86" href="$classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html" title="Similar to std::priority_queue, with the following differences: " alt="" coords="1901,478,2136,559"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="815,703,945,729"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1priority__queue__local_1_1int__merger.html" title="stxxl::priority_queue\l_local::int_merger\&lt; value\l_type, comparator_type,\l IntKMAX \&gt;" alt="" coords="2382,675,2550,746"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="stxxl::priority_queue\l_local::loser_tree\&lt; self\l_type, comparator_type,\l MaxArity \&gt;" alt="" coords="1565,1265,1728,1335"/>
+<area shape="rect" id="node11" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="Loser tree from Knuth, &quot;Sorting and Searching&quot;, Section 5.4.1. " alt="" coords="1128,1112,1327,1168"/>
+<area shape="rect" id="node12" href="$classstxxl_1_1priority__queue__local_1_1int__merger.html" title="stxxl::priority_queue\l_local::int_merger\&lt; ValueType,\l CompareType, MaxArity \&gt;" alt="" coords="1911,617,2113,673"/>
+<area shape="rect" id="node13" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="stxxl::priority_queue\l_local::loser_tree\&lt; self\l_type, CompareType, MaxArity \&gt;" alt="" coords="1539,1023,1755,1079"/>
+<area shape="rect" id="node14" href="$classstxxl_1_1priority__queue__local_1_1ext__merger.html" title="External merger, based on the loser tree data structure. " alt="" coords="2361,279,2571,335"/>
+<area shape="rect" id="node15" href="$classstxxl_1_1priority__queue__local_1_1loser__tree.html" title="stxxl::priority_queue\l_local::loser_tree\&lt; self\l_type, CompareType, Arity \&gt;" alt="" coords="1551,825,1742,881"/>
+<area shape="rect" id="node16" href="$classstxxl_1_1read__write__pool.html" title="stxxl::read_write_pool\l\&lt; block_type \&gt;" alt="" coords="1937,334,2087,375"/>
+<area shape="rect" id="node17" href="$classstxxl_1_1prefetch__pool.html" title="Implements dynamically resizable prefetching pool. " alt="" coords="1159,138,1295,179"/>
+<area shape="rect" id="node20" href="$classstxxl_1_1write__pool.html" title="Implements dynamically resizable buffered writing pool. " alt="" coords="1165,434,1290,475"/>
+<area shape="rect" id="node21" href="$classstxxl_1_1read__write__pool.html" title="Implements dynamically resizable buffered writing and prefetched reading pool. " alt="" coords="1572,333,1721,374"/>
+<area shape="rect" id="node22" href="$structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html" title="stxxl::priority_queue\l_local::ext_merger\&lt; BlockType,\l CompareType, Arity, AllocStr\l \&gt;::sequence_state" alt="" coords="2727,169,2933,239"/>
+<area shape="rect" id="node4" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="361,1034,521,1075"/>
+<area shape="rect" id="node9" href="$structstxxl_1_1priority__queue__local_1_1loser__tree_1_1Entry.html" title="type of nodes in the loser tree " alt="" coords="771,1181,989,1237"/>
+<area shape="rect" id="node5" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,1034,165,1075"/>
+<area shape="rect" id="node7" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="stxxl::priority_queue\l_local::internal_bounded\l_stack\&lt; unsigned_type, arity \&gt;" alt="" coords="779,1669,981,1725"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="Similar to std::stack, with the following differences: " alt="" coords="337,1641,544,1697"/>
+<area shape="rect" id="node10" href="$classstxxl_1_1priority__queue__local_1_1internal__bounded__stack.html" title="stxxl::priority_queue\l_local::internal_bounded\l_stack\&lt; unsigned_type, MaxArity \&gt;" alt="" coords="765,1427,995,1483"/>
+<area shape="rect" id="node18" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; bid_type, busy\l_entry, bid_hash \&gt;" alt="" coords="805,7,955,63"/>
+<area shape="rect" id="node19" href="$structstxxl_1_1compat__hash__map.html" title="stxxl::compat_hash\l_map\&lt; KeyType, MappedType,\l HashType \&gt;" alt="" coords="338,7,543,63"/>
+<area shape="rect" id="node23" href="$classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html" title="stxxl::priority_queue\l_local::internal_priority\l_queue\&lt; value_type, std\l::vector\&lt; value_type \&gt;, comparator_type \&gt;" alt="" coords="2331,467,2601,538"/>
+<area shape="rect" id="node24" href="$classstxxl_1_1priority__queue__local_1_1internal__priority__queue.html" title="Similar to std::priority_queue, with the following differences: " alt="" coords="1895,467,2129,538"/>
 </map>

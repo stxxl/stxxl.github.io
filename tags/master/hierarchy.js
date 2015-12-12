@@ -609,6 +609,7 @@ var hierarchy =
     [ "stxxl::tuple_less1st< TupleType >", "structstxxl_1_1tuple__less1st.html", null ],
     [ "stxxl::tuple_less1st_less2nd< TupleType >", "structstxxl_1_1tuple__less1st__less2nd.html", null ],
     [ "stxxl::tuple_less2nd< TupleType >", "structstxxl_1_1tuple__less2nd.html", null ],
+    [ "stxxl::tuple_less2nd_less1st< TupleType >", "structstxxl_1_1tuple__less2nd__less1st.html", null ],
     [ "stxxl::uint_pair< HighType >", "classstxxl_1_1uint__pair.html", null ],
     [ "stxxl::vector< ValueType, PageSize, PagerType, BlockSize, AllocStr, SizeType >", "classstxxl_1_1vector.html", null ],
     [ "stxxl::vector_bufreader_iterator< VectorBufReaderType >", "classstxxl_1_1vector__bufreader__iterator.html", null ],

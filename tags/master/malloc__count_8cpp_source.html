@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('malloc__count_8cpp_source.html','');})
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="malloc__count_8cpp.html#a77c7ac8dc42f36d2c7667399b42ddc83">real_malloc</a>)</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">/* call read malloc procedure in libc */</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        ret = (* real_malloc)(<a class="code" href="malloc__count_8cpp.html#aa7e7afc15aa79b64655c0bcc92991f1f">alignment</a> + size);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        ret = (*real_malloc)(<a class="code" href="malloc__count_8cpp.html#aa7e7afc15aa79b64655c0bcc92991f1f">alignment</a> + size);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="malloc__count_8cpp.html#a8d99230a8e18b6259fb0166483bb2088">inc_count</a>(size);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="malloc__count_8cpp.html#aed58ff0d6836991a332e5e11a6d66aba">log_operations</a> &amp;&amp; size &gt;= <a class="code" href="malloc__count_8cpp.html#a91965746cb999a430a4942ceb8dd7f67">log_operations_threshold</a>) {</div>
@@ -329,7 +329,7 @@ $(document).ready(function(){initNavTree('malloc__count_8cpp_source.html','');})
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                ptr, (<span class="keywordtype">long</span> <span class="keywordtype">long</span>)size, <a class="code" href="malloc__count_8cpp.html#aa74d456070d9a58b78a97f33912f0823">curr</a>);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    (* real_free)(ptr);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    (*real_free)(ptr);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">/* exported calloc() symbol that overrides loading from libc, implemented using</span></div>
@@ -403,7 +403,7 @@ $(document).ready(function(){initNavTree('malloc__count_8cpp_source.html','');})
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="malloc__count_8cpp.html#afa3c5c084fb6fa67f67bfbf3d679d5ed">dec_count</a>(oldsize);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="malloc__count_8cpp.html#a8d99230a8e18b6259fb0166483bb2088">inc_count</a>(size);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    newptr = (* real_realloc)(ptr, <a class="code" href="malloc__count_8cpp.html#aa7e7afc15aa79b64655c0bcc92991f1f">alignment</a> + size);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    newptr = (*real_realloc)(ptr, <a class="code" href="malloc__count_8cpp.html#aa7e7afc15aa79b64655c0bcc92991f1f">alignment</a> + size);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="malloc__count_8cpp.html#aed58ff0d6836991a332e5e11a6d66aba">log_operations</a> &amp;&amp; size &gt;= <a class="code" href="malloc__count_8cpp.html#a91965746cb999a430a4942ceb8dd7f67">log_operations_threshold</a>)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    {</div>
@@ -497,10 +497,10 @@ $(document).ready(function(){initNavTree('malloc__count_8cpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_4ce02b87227cef1244bdd1fa3b12a08b.html">utils</a></li><li class="navelem"><a class="el" href="malloc__count_8cpp.html">malloc_count.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f7389c79e946430f5e3f7efc15e5bcc29183d200">STXXL 1.4.1-343-gf7389c7</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/1babe452214b4613a2a488d80073f4185c05a0b3">STXXL 1.4.1-356-g1babe45</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Apr 15 2015 12:26:01 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Dec 12 2015 06:26:09 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="stxxl::RC" name="stxxl::RC">
-<area shape="rect" id="node5" href="$structstxxl_1_1RC__disk.html" title="stxxl::RC_disk" alt="" coords="5,160,115,189"/>
-<area shape="rect" id="node7" href="$structstxxl_1_1RC__flash.html" title="stxxl::RC_flash" alt="" coords="139,160,251,189"/>
-<area shape="rect" id="node2" href="$structstxxl_1_1striping.html" title="Striping disk allocation scheme functor. " alt="" coords="77,5,176,35"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1RC__disk.html" title="stxxl::RC_disk" alt="" coords="5,155,115,181"/>
+<area shape="rect" id="node4" href="$structstxxl_1_1RC__flash.html" title="stxxl::RC_flash" alt="" coords="139,155,253,181"/>
+<area shape="rect" id="node2" href="$structstxxl_1_1striping.html" title="Striping disk allocation scheme functor. " alt="" coords="78,5,178,32"/>
 </map>

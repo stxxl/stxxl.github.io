@@ -1,6 +1,6 @@
 <map id="stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::hint_comparator" name="stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::hint_comparator">
-<area shape="rect" id="node2" href="$structstxxl_1_1parallel__priority__queue_1_1inv__compare__type.html" title="Inverse comparison functor. " alt="" coords="512,5,763,86"/>
-<area shape="rect" id="node4" href="$classstxxl_1_1swap__vector.html" title="stxxl::swap_vector\l\&lt; external_array_type \&gt;" alt="" coords="557,109,717,155"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,116,136,145"/>
-<area shape="rect" id="node8" href="$classstxxl_1_1swap__vector.html" title="Vector that avoids copying of ValueType objects in push_back() (here: swap_back()) and resize() opera..." alt="" coords="188,143,319,190"/>
+<area shape="rect" id="node2" href="$structstxxl_1_1parallel__priority__queue_1_1inv__compare__type.html" title="Inverse comparison functor. " alt="" coords="508,5,759,76"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1swap__vector.html" title="stxxl::swap_vector\l\&lt; external_array_type \&gt;" alt="" coords="553,100,713,141"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="5,106,136,133"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1swap__vector.html" title="Vector that avoids copying of ValueType objects in push_back() (here: swap_back()) and resize() opera..." alt="" coords="185,135,317,176"/>
 </map>

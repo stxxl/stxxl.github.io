@@ -1,4 +1,4 @@
 <map id="stxxl::stream::make_tuple&lt; Input1, Input2, Input3, Input4, Input5, Input6 &gt;" name="stxxl::stream::make_tuple&lt; Input1, Input2, Input3, Input4, Input5, Input6 &gt;">
-<area shape="rect" id="node2" href="$structstxxl_1_1tuple.html" title="stxxl::tuple\&lt; typename\l Input1::value_type, typename\l Input2::value_type, typename\l Input3::value_type, typename\l Input4::value_type, typename\l Input5::value_type, typename Input6\l::value_type \&gt;" alt="" coords="375,77,612,211"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1tuple.html" title="k&#45;Tuple data type " alt="" coords="7,121,145,167"/>
+<area shape="rect" id="node2" href="$structstxxl_1_1tuple.html" title="stxxl::tuple\&lt; typename\l Input1::value_type, typename\l Input2::value_type, typename\l Input3::value_type, typename\l Input4::value_type, typename\l Input5::value_type, typename Input6\l::value_type \&gt;" alt="" coords="371,65,609,180"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1tuple.html" title="k&#45;Tuple data type " alt="" coords="5,102,145,143"/>
 </map>

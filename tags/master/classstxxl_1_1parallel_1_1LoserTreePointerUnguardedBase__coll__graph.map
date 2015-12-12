@@ -1,4 +1,4 @@
 <map id="stxxl::parallel::LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;" name="stxxl::parallel::LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;">
-<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="57,5,188,35"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1parallel_1_1LoserTreePointerUnguardedBase_1_1Loser.html" title="Internal representation of a loser tree player/node. " alt="" coords="5,59,240,123"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1noncopyable.html" title="stxxl::noncopyable" alt="" coords="57,5,188,32"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1parallel_1_1LoserTreePointerUnguardedBase_1_1Loser.html" title="Internal representation of a loser tree player/node. " alt="" coords="5,56,240,112"/>
 </map>

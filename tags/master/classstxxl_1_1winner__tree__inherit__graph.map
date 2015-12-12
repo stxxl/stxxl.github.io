@@ -1,7 +1,7 @@
 <map id="stxxl::winner_tree&lt; Comparator &gt;" name="stxxl::winner_tree&lt; Comparator &gt;">
-<area shape="rect" id="node3" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::ia_comp \&gt;" alt="" coords="424,24,587,88"/>
-<area shape="rect" id="node5" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::heaps_comp \&gt;" alt="" coords="412,112,599,176"/>
-<area shape="rect" id="node7" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::head_comp \&gt;" alt="" coords="416,200,595,264"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::parallel_priority\l_queue::hint_comparator \&gt;" alt="" coords="417,288,593,352"/>
-<area shape="rect" id="node11" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::parallel_priority\l_queue::external_min_comparator \&gt;" alt="" coords="391,376,620,440"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::ia_comp \&gt;" alt="" coords="422,21,585,77"/>
+<area shape="rect" id="node3" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::heaps_comp \&gt;" alt="" coords="410,101,597,157"/>
+<area shape="rect" id="node4" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::head_comp \&gt;" alt="" coords="413,181,593,237"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::parallel_priority\l_queue::hint_comparator \&gt;" alt="" coords="415,261,592,317"/>
+<area shape="rect" id="node6" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::parallel_priority\l_queue::external_min_comparator \&gt;" alt="" coords="388,341,619,397"/>
 </map>
