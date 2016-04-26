@@ -344,59 +344,68 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">// wait for at least one of them to finish</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">long</span> num_events = syscall(SYS_io_getevents, <a class="code" href="classstxxl_1_1linuxaio__queue.html#a569a3d3883776b64f51235b7d016171a">context</a>, 1, <a class="code" href="classstxxl_1_1linuxaio__queue.html#a8560d57ba84d41f76f325432d6f79e13">max_events</a>, events, NULL);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span> (num_events &lt; 0) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <a class="code" href="error__handling_8h.html#afc42e173421c4d0efdbe4bb19554bf49">STXXL_THROW_ERRNO</a>(<a class="code" href="classstxxl_1_1io__error.html">io_error</a>, <span class="stringliteral">&quot;linuxaio_queue::wait_requests&quot;</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                              <span class="stringliteral">&quot; io_getevents() nr_events=&quot;</span> &lt;&lt; <a class="code" href="classstxxl_1_1linuxaio__queue.html#a8560d57ba84d41f76f325432d6f79e13">max_events</a>);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="classstxxl_1_1linuxaio__queue.html#a00439003a90b8c28734c3012ca90f411">num_posted_requests</a>++; <span class="comment">// compensate for the one eaten prematurely above</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="classstxxl_1_1linuxaio__queue.html#ae8a5c7440d4e4cd4375f871b9fbae418">handle_events</a>(events, num_events, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">delete</span>[] events;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000">  249</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000">linuxaio_queue::post_async</a>(<span class="keywordtype">void</span>* arg)</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    (<span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">linuxaio_queue</a>*<span class="keyword">&gt;</span>(arg))-&gt;post_requests();</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>* pthis = <span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>*<span class="keyword">&gt;</span>(arg);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    pthis-&gt;<a class="code" href="classstxxl_1_1linuxaio__queue.html#a23056d4e321c3fc4c40743c2543c4c33">post_thread_state</a>.<a class="code" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">set_to</a>(<a class="code" href="classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00">TERMINATED</a>);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#if STXXL_STD_THREADS &amp;&amp; STXXL_MSVC &gt;= 1700</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Workaround for deadlock bug in Visual C++ Runtime 2012 and 2013, see</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// request_queue_impl_worker.cpp. -tb</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    ExitThread(NULL);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">long</span> num_events;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">while</span>(1) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            num_events = syscall(SYS_io_getevents, <a class="code" href="classstxxl_1_1linuxaio__queue.html#a569a3d3883776b64f51235b7d016171a">context</a>, 1, <a class="code" href="classstxxl_1_1linuxaio__queue.html#a8560d57ba84d41f76f325432d6f79e13">max_events</a>, events, NULL);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">if</span> (num_events &lt; 0) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">if</span> (errno == EINTR) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    <span class="comment">// io_getevents may return prematurely in case a signal is received</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <a class="code" href="error__handling_8h.html#afc42e173421c4d0efdbe4bb19554bf49">STXXL_THROW_ERRNO</a>(<a class="code" href="classstxxl_1_1io__error.html">io_error</a>, <span class="stringliteral">&quot;linuxaio_queue::wait_requests&quot;</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                  <span class="stringliteral">&quot; io_getevents() nr_events=&quot;</span> &lt;&lt; <a class="code" href="classstxxl_1_1linuxaio__queue.html#a8560d57ba84d41f76f325432d6f79e13">max_events</a>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="classstxxl_1_1linuxaio__queue.html#a00439003a90b8c28734c3012ca90f411">num_posted_requests</a>++; <span class="comment">// compensate for the one eaten prematurely above</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="classstxxl_1_1linuxaio__queue.html#ae8a5c7440d4e4cd4375f871b9fbae418">handle_events</a>(events, num_events, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">delete</span>[] events;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000">  258</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000">linuxaio_queue::post_async</a>(<span class="keywordtype">void</span>* arg)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    (<span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">linuxaio_queue</a>*<span class="keyword">&gt;</span>(arg))-&gt;post_requests();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>* pthis = <span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>*<span class="keyword">&gt;</span>(arg);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    pthis-&gt;<a class="code" href="classstxxl_1_1linuxaio__queue.html#a23056d4e321c3fc4c40743c2543c4c33">post_thread_state</a>.<a class="code" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">set_to</a>(<a class="code" href="classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00">TERMINATED</a>);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__queue.html#a56738460b8dc7c0afc3d868355c6ff5f">  265</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="classstxxl_1_1linuxaio__queue.html#a56738460b8dc7c0afc3d868355c6ff5f">linuxaio_queue::wait_async</a>(<span class="keywordtype">void</span>* arg)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    (<span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">linuxaio_queue</a>*<span class="keyword">&gt;</span>(arg))-&gt;wait_requests();</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>* pthis = <span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>*<span class="keyword">&gt;</span>(arg);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    pthis-&gt;<a class="code" href="classstxxl_1_1linuxaio__queue.html#ac39eac49b9617564fbc0e50ed5bdb81a">wait_thread_state</a>.<a class="code" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">set_to</a>(<a class="code" href="classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00">TERMINATED</a>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#if STXXL_STD_THREADS &amp;&amp; STXXL_MSVC &gt;= 1700</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Workaround for deadlock bug in Visual C++ Runtime 2012 and 2013, see</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// request_queue_impl_worker.cpp. -tb</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    ExitThread(NULL);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#if STXXL_STD_THREADS &amp;&amp; STXXL_MSVC &gt;= 1700</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Workaround for deadlock bug in Visual C++ Runtime 2012 and 2013, see</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// request_queue_impl_worker.cpp. -tb</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    ExitThread(NULL);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="classstxxl_1_1linuxaio__queue.html#a56738460b8dc7c0afc3d868355c6ff5f">  274</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="classstxxl_1_1linuxaio__queue.html#a56738460b8dc7c0afc3d868355c6ff5f">linuxaio_queue::wait_async</a>(<span class="keywordtype">void</span>* arg)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    (<span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">linuxaio_queue</a>*<span class="keyword">&gt;</span>(arg))-&gt;wait_requests();</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>* pthis = <span class="keyword">static_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__queue.html">self_type</a>*<span class="keyword">&gt;</span>(arg);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    pthis-&gt;<a class="code" href="classstxxl_1_1linuxaio__queue.html#ac39eac49b9617564fbc0e50ed5bdb81a">wait_thread_state</a>.<a class="code" href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">set_to</a>(<a class="code" href="classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00">TERMINATED</a>);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif // #if STXXL_HAVE_LINUXAIO_FILE</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#if STXXL_STD_THREADS &amp;&amp; STXXL_MSVC &gt;= 1700</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Workaround for deadlock bug in Visual C++ Runtime 2012 and 2013, see</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">// request_queue_impl_worker.cpp. -tb</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    ExitThread(NULL);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<a class="code" href="namespace_8h.html#abf690e046efa58c85da1f450bb098392">STXXL_END_NAMESPACE</a></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#endif // #if STXXL_HAVE_LINUXAIO_FILE</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor"></span><span class="comment">// vim: et:ts=4:sw=4</span></div>
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a8c57cd446b92bb2300a5f95888133232"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a8c57cd446b92bb2300a5f95888133232">stxxl::linuxaio_queue::cancel_request</a></div><div class="ttdeci">bool cancel_request(request_ptr &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00091">linuxaio_queue.cpp:91</a></div></div>
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a7225ff1425bab090252f660da243e4d6"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a7225ff1425bab090252f660da243e4d6">stxxl::linuxaio_queue::waiting_mtx</a></div><div class="ttdeci">mutex waiting_mtx</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8h_source.html#l00050">linuxaio_queue.h:50</a></div></div>
-<div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a56738460b8dc7c0afc3d868355c6ff5f"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a56738460b8dc7c0afc3d868355c6ff5f">stxxl::linuxaio_queue::wait_async</a></div><div class="ttdeci">static void * wait_async(void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00265">linuxaio_queue.cpp:265</a></div></div>
+<div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a56738460b8dc7c0afc3d868355c6ff5f"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a56738460b8dc7c0afc3d868355c6ff5f">stxxl::linuxaio_queue::wait_async</a></div><div class="ttdeci">static void * wait_async(void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00274">linuxaio_queue.cpp:274</a></div></div>
 <div class="ttc" id="classstxxl_1_1request__queue__impl__worker_html_a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00"><div class="ttname"><a href="classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00">stxxl::request_queue_impl_worker::TERMINATED</a></div><div class="ttdef"><b>Definition:</b> <a href="request__queue__impl__worker_8h_source.html#l00046">request_queue_impl_worker.h:46</a></div></div>
 <div class="ttc" id="classstxxl_1_1state_html_a116fab9c69268d59fe9af9882ce327e6"><div class="ttname"><a href="classstxxl_1_1state.html#a116fab9c69268d59fe9af9882ce327e6">stxxl::state::set_to</a></div><div class="ttdeci">void set_to(const value_type &amp;new_state)</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00043">state.h:43</a></div></div>
 <div class="ttc" id="classstxxl_1_1io__error_html"><div class="ttname"><a href="classstxxl_1_1io__error.html">stxxl::io_error</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00025">exceptions.h:25</a></div></div>
@@ -415,7 +424,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a666911eb34f79df5a08f7f3de74707ed"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a666911eb34f79df5a08f7f3de74707ed">stxxl::linuxaio_queue::add_request</a></div><div class="ttdeci">void add_request(request_ptr &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00076">linuxaio_queue.cpp:76</a></div></div>
 <div class="ttc" id="classstxxl_1_1request__queue__impl__worker_html_a6c07aa8083daf39e96f9f792e44f6a92abf3faca2fd4d99533959a08edb2d9621"><div class="ttname"><a href="classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92abf3faca2fd4d99533959a08edb2d9621">stxxl::request_queue_impl_worker::RUNNING</a></div><div class="ttdef"><b>Definition:</b> <a href="request__queue__impl__worker_8h_source.html#l00046">request_queue_impl_worker.h:46</a></div></div>
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a8560d57ba84d41f76f325432d6f79e13"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a8560d57ba84d41f76f325432d6f79e13">stxxl::linuxaio_queue::max_events</a></div><div class="ttdeci">int max_events</div><div class="ttdoc">max number of OS requests </div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8h_source.html#l00054">linuxaio_queue.h:54</a></div></div>
-<div class="ttc" id="classstxxl_1_1linuxaio__queue_html_addb91d3e57c5f40211496bd51eb64000"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000">stxxl::linuxaio_queue::post_async</a></div><div class="ttdeci">static void * post_async(void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00249">linuxaio_queue.cpp:249</a></div></div>
+<div class="ttc" id="classstxxl_1_1linuxaio__queue_html_addb91d3e57c5f40211496bd51eb64000"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#addb91d3e57c5f40211496bd51eb64000">stxxl::linuxaio_queue::post_async</a></div><div class="ttdeci">static void * post_async(void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00258">linuxaio_queue.cpp:258</a></div></div>
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a583e48c80960e7354ba9054f085eef34"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a583e48c80960e7354ba9054f085eef34">stxxl::linuxaio_queue::post_requests</a></div><div class="ttdeci">void post_requests()</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00147">linuxaio_queue.cpp:147</a></div></div>
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_a00439003a90b8c28734c3012ca90f411"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#a00439003a90b8c28734c3012ca90f411">stxxl::linuxaio_queue::num_posted_requests</a></div><div class="ttdeci">semaphore num_posted_requests</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8h_source.html#l00056">linuxaio_queue.h:56</a></div></div>
 <div class="ttc" id="classstxxl_1_1linuxaio__queue_html_ae8a5c7440d4e4cd4375f871b9fbae418"><div class="ttname"><a href="classstxxl_1_1linuxaio__queue.html#ae8a5c7440d4e4cd4375f871b9fbae418">stxxl::linuxaio_queue::handle_events</a></div><div class="ttdeci">void handle_events(io_event *events, long num_events, bool canceled)</div><div class="ttdef"><b>Definition:</b> <a href="linuxaio__queue_8cpp_source.html#l00206">linuxaio_queue.cpp:206</a></div></div>
@@ -451,10 +460,10 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="linuxaio__queue_8cpp.html">linuxaio_queue.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/052d8b31f26e77cea290d72da0b1e358f53a54dd">STXXL 1.4.1-358-g052d8b3</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/5b9663e6b769748f3b3d3a9a779b4b89e24d7a27">STXXL 1.4.1-360-g5b9663e</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Wed Mar 23 2016 06:25:53 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Tue Apr 26 2016 06:25:56 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
