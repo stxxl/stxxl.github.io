@@ -224,8 +224,8 @@ $(document).ready(function(){initNavTree('async__schedule_8cpp_source.html','');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span> (oldtime != cur.timestamp)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="comment">// clear disk_busy</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> i = 0; i &lt;= D; i++)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                disk_busy[i] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> j = 0; j &lt;= D; j++)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                disk_busy[j] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            oldtime = cur.timestamp;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
@@ -269,8 +269,8 @@ $(document).ready(function(){initNavTree('async__schedule_8cpp_source.html','');
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    assert(i == -1);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> i = 0; i &lt;= D; i++)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        assert(disk_queues[i].empty());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> j = 0; j &lt;= D; j++)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        assert(disk_queues[j].empty());</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> (oldtime - 1);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
@@ -348,10 +348,10 @@ $(document).ready(function(){initNavTree('async__schedule_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_7c0873e6b80b34380e48b0b11ab08777.html">algo</a></li><li class="navelem"><a class="el" href="async__schedule_8cpp.html">async_schedule.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f3b5d5c106688f08462a5397c8166fcda4131396">STXXL 1.4.1-364-gf3b5d5c</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/78dd7ec6e72d7d6ef1209e594fc08e3759af5099">STXXL 1.4.1-366-g78dd7ec</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Jul 22 2016 06:26:21 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Aug 5 2016 06:26:09 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -400,16 +400,16 @@ $(document).ready(function(){initNavTree('iostats_8cpp_source.html','');});
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="classstxxl_1_1stats.html#a4d30da95c200691a55e8b33eb9ea074e">p_waits</a> += (<a class="code" href="classstxxl_1_1stats.html#aa5e1a2fc34789251a35819832eff2758">acc_waits</a>--) ? diff : 0.0;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">if</span> (wait_op == <a class="code" href="classstxxl_1_1stats.html#acb8be11dc4107fc15b01587a83dc033da64aa699b0b51d5f35f5267f131f676ab">WAIT_OP_READ</a>) {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordtype">double</span> diff = now - <a class="code" href="classstxxl_1_1stats.html#ac4698b4712ef753e2d2065cbc395653e">p_begin_wait_read</a>;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a4a4d36412d5a7b4d942cd957eddaead9">t_wait_read</a> += double(<a class="code" href="classstxxl_1_1stats.html#a8918ea31470cd75d02c87f5cdaf07bd5">acc_wait_read</a>) * diff;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordtype">double</span> diff2 = now - <a class="code" href="classstxxl_1_1stats.html#ac4698b4712ef753e2d2065cbc395653e">p_begin_wait_read</a>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a4a4d36412d5a7b4d942cd957eddaead9">t_wait_read</a> += double(<a class="code" href="classstxxl_1_1stats.html#a8918ea31470cd75d02c87f5cdaf07bd5">acc_wait_read</a>) * diff2;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            p_begin_wait_read = now;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a38ea801cc282a491ea7db78e860316c1">p_wait_read</a> += (<a class="code" href="classstxxl_1_1stats.html#a8918ea31470cd75d02c87f5cdaf07bd5">acc_wait_read</a>--) ? diff : 0.0;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a38ea801cc282a491ea7db78e860316c1">p_wait_read</a> += (<a class="code" href="classstxxl_1_1stats.html#a8918ea31470cd75d02c87f5cdaf07bd5">acc_wait_read</a>--) ? diff2 : 0.0;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        }</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">else</span> <span class="comment">/* if (wait_op == WAIT_OP_WRITE) */</span> {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="keywordtype">double</span> diff = now - <a class="code" href="classstxxl_1_1stats.html#abd7f77c8bc931e94bf62b041206fdc95">p_begin_wait_write</a>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a4b71d906f712a58419d22b6387619059">t_wait_write</a> += double(<a class="code" href="classstxxl_1_1stats.html#a864f320b7ca7e393974832789a6b52b3">acc_wait_write</a>) * diff;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="keywordtype">double</span> diff2 = now - <a class="code" href="classstxxl_1_1stats.html#abd7f77c8bc931e94bf62b041206fdc95">p_begin_wait_write</a>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a4b71d906f712a58419d22b6387619059">t_wait_write</a> += double(<a class="code" href="classstxxl_1_1stats.html#a864f320b7ca7e393974832789a6b52b3">acc_wait_write</a>) * diff2;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            p_begin_wait_write = now;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a84a1d82851af86509892563775fe3e22">p_wait_write</a> += (<a class="code" href="classstxxl_1_1stats.html#a864f320b7ca7e393974832789a6b52b3">acc_wait_write</a>--) ? diff : 0.0;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <a class="code" href="classstxxl_1_1stats.html#a84a1d82851af86509892563775fe3e22">p_wait_write</a> += (<a class="code" href="classstxxl_1_1stats.html#a864f320b7ca7e393974832789a6b52b3">acc_wait_write</a>--) ? diff2 : 0.0;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#ifdef STXXL_WAIT_LOG_ENABLED</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span>        std::ofstream* waitlog = <a class="code" href="classstxxl_1_1singleton.html#ab81b99f8fc8157a2a4b1bdab8afb454b">stxxl::logger::get_instance</a>()-&gt;waitlog_stream();</div>
@@ -611,10 +611,10 @@ $(document).ready(function(){initNavTree('iostats_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="iostats_8cpp.html">iostats.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/f3b5d5c106688f08462a5397c8166fcda4131396">STXXL 1.4.1-364-gf3b5d5c</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/78dd7ec6e72d7d6ef1209e594fc08e3759af5099">STXXL 1.4.1-366-g78dd7ec</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Jul 22 2016 06:26:22 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Aug 5 2016 06:26:10 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
