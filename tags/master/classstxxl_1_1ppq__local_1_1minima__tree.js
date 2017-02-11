@@ -14,7 +14,7 @@ var classstxxl_1_1ppq__local_1_1minima__tree =
       [ "HEAP", "classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79caad3cfa909ebdbabb9756a572a1926a15", null ],
       [ "IA", "classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79ca2e43e9ee3ca44ae50e0d5f686434bebd", null ],
       [ "EB", "classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cabc8d6ec748f4036c0d84c58ba23a9789", null ],
-      [ "ERROR", "classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cab031724cfc9f4c64f8ebce9010909530", null ]
+      [ "TYPE_ERROR", "classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cafa55a52074d2807092608a1de7dee078", null ]
     ] ],
     [ "minima_tree", "classstxxl_1_1ppq__local_1_1minima__tree.html#a5513e5d34ea04845eef163cac532d61d", null ],
     [ "add_internal_array", "classstxxl_1_1ppq__local_1_1minima__tree.html#ac2cf9208c96aeda6def0b0fcbbb0fa70", null ],
@@ -29,7 +29,7 @@ var classstxxl_1_1ppq__local_1_1minima__tree =
     [ "to_string", "classstxxl_1_1ppq__local_1_1minima__tree.html#aa8e81fe779faa29c576592843b09e93c", null ],
     [ "top", "classstxxl_1_1ppq__local_1_1minima__tree.html#a7f6294a943d6f08f9ce4213aacceee8f", null ],
     [ "update_extract_buffer", "classstxxl_1_1ppq__local_1_1minima__tree.html#a9a7acd0ea384e8dadcf6c5eaa1410acf", null ],
-    [ "update_heap", "classstxxl_1_1ppq__local_1_1minima__tree.html#abaf2a7d646277fb1b7d40a878241ded9", null ],
+    [ "update_heap", "classstxxl_1_1ppq__local_1_1minima__tree.html#acdbee7b11d7e467435e71c47ececdc46", null ],
     [ "update_internal_array", "classstxxl_1_1ppq__local_1_1minima__tree.html#a94a6ed9618963e8e31ba28e1a474fda5", null ],
     [ "initial_ea_size", "classstxxl_1_1ppq__local_1_1minima__tree.html#ade3c5bcc4a86de47d4888dca56527782", null ],
     [ "initial_ia_size", "classstxxl_1_1ppq__local_1_1minima__tree.html#a82e9fcb4b73a927c4ca2c7e13ffcc7f6", null ],

@@ -126,7 +126,7 @@ class stxxl::ppq_local::minima_tree&lt; ParentType &gt;</h3>
 <p>The <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html" title="The minima_tree contains minima from all sources inside the PPQ. ">minima_tree</a> contains minima from all sources inside the PPQ. </p>
 <p>It contains four substructures: winner trees for insertion heaps, internal and external arrays, each containing the minima from all currently allocated structures. These three sources, plus the deletion buffer are combined using a "head" inner tree containing only up to four item. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01572">1572</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01577">1577</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::ppq_local::minima_tree&lt; ParentType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -140,7 +140,7 @@ class stxxl::ppq_local::minima_tree&lt; ParentType &gt;</h3>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1ppq__local_1_1minima__tree__coll__graph.svg" width="2103" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstxxl_1_1ppq__local_1_1minima__tree__coll__graph.svg" width="2200" height="564"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -177,7 +177,7 @@ parent_type::proc_vector_type&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a33a3c56e662b666938bec1a620bab79c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79c">Types</a> { <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79caad3cfa909ebdbabb9756a572a1926a15">HEAP</a> = 0, 
 <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79ca2e43e9ee3ca44ae50e0d5f686434bebd">IA</a> = 1, 
 <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cabc8d6ec748f4036c0d84c58ba23a9789">EB</a> = 2, 
-<a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cab031724cfc9f4c64f8ebce9010909530">ERROR</a> = 3
+<a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cafa55a52074d2807092608a1de7dee078">TYPE_ERROR</a> = 3
  }</td></tr>
 <tr class="memdesc:a33a3c56e662b666938bec1a620bab79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entries in the head winner tree.  <a href="classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79c">More...</a><br/></td></tr>
 <tr class="separator:a33a3c56e662b666938bec1a620bab79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,9 +224,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a7acd0ea384e8dadcf6c5eaa1410acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a9a7acd0ea384e8dadcf6c5eaa1410acf">update_extract_buffer</a> ()</td></tr>
 <tr class="memdesc:a9a7acd0ea384e8dadcf6c5eaa1410acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update minima tree after an item of the extract buffer was removed.  <a href="#a9a7acd0ea384e8dadcf6c5eaa1410acf">More...</a><br/></td></tr>
 <tr class="separator:a9a7acd0ea384e8dadcf6c5eaa1410acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaf2a7d646277fb1b7d40a878241ded9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#abaf2a7d646277fb1b7d40a878241ded9">update_heap</a> (unsigned index)</td></tr>
-<tr class="memdesc:abaf2a7d646277fb1b7d40a878241ded9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update minima tree after an item from the heap index was removed.  <a href="#abaf2a7d646277fb1b7d40a878241ded9">More...</a><br/></td></tr>
-<tr class="separator:abaf2a7d646277fb1b7d40a878241ded9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbee7b11d7e467435e71c47ececdc46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#acdbee7b11d7e467435e71c47ececdc46">update_heap</a> (<a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a> index)</td></tr>
+<tr class="memdesc:acdbee7b11d7e467435e71c47ececdc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update minima tree after an item from the heap index was removed.  <a href="#acdbee7b11d7e467435e71c47ececdc46">More...</a><br/></td></tr>
+<tr class="separator:acdbee7b11d7e467435e71c47ececdc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a6ed9618963e8e31ba28e1a474fda5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html#a94a6ed9618963e8e31ba28e1a474fda5">update_internal_array</a> (unsigned index)</td></tr>
 <tr class="memdesc:a94a6ed9618963e8e31ba28e1a474fda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update minima tree after an item from an internal array was removed.  <a href="#a94a6ed9618963e8e31ba28e1a474fda5">More...</a><br/></td></tr>
 <tr class="separator:a94a6ed9618963e8e31ba28e1a474fda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +274,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01578">1578</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01583">1583</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01582">1582</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01587">1587</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01581">1581</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01586">1586</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01575">1575</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01580">1580</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01580">1580</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01585">1585</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01576">1576</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01581">1581</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ template&lt;class ParentType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01579">1579</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01584">1584</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -395,11 +395,11 @@ template&lt;class ParentType&gt; </div>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a33a3c56e662b666938bec1a620bab79cabc8d6ec748f4036c0d84c58ba23a9789"></a>EB</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a33a3c56e662b666938bec1a620bab79cab031724cfc9f4c64f8ebce9010909530"></a>ERROR</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a33a3c56e662b666938bec1a620bab79cafa55a52074d2807092608a1de7dee078"></a>TYPE_ERROR</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01683">1683</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01688">1688</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Construct the tree of minima sources. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01691">1691</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01696">1696</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Add a newly created internal array to the minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01743">1743</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01748">1748</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Remove all insertion heaps from the minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01776">1776</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01781">1781</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Remove all internal arrays from the minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01783">1783</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01788">1788</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Remove the extract buffer from the minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01760">1760</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01765">1765</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +578,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Remove an insertion heap from the minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01750">1750</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01755">1755</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +608,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Remove an internal array from the minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01766">1766</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01771">1771</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +637,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Return size of internal arrays minima tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01799">1799</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01808">1808</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +666,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Prints statistical data. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01815">1815</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01824">1824</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01789">1789</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01794">1794</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Returns a readable representation of the winner tree as string. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01805">1805</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01814">1814</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +751,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Return smallest items of head winner tree. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01706">1706</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01711">1711</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -780,11 +780,11 @@ template&lt;class ParentType&gt; </div>
 
 <p>Update minima tree after an item of the extract buffer was removed. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01730">1730</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01735">1735</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abaf2a7d646277fb1b7d40a878241ded9"></a>
+<a class="anchor" id="acdbee7b11d7e467435e71c47ececdc46"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -796,7 +796,7 @@ template&lt;class ParentType&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html">stxxl::ppq_local::minima_tree</a>&lt; ParentType &gt;::update_heap </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacestxxl.html#add6239ebaf3d1e03a054aee6f1fd52d2">int_type</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -810,7 +810,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Update minima tree after an item from the heap index was removed. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01723">1723</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01728">1728</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -840,7 +840,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Update minima tree after an item from an internal array was removed. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01736">1736</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01741">1741</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +865,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01585">1585</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01590">1590</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01584">1584</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01589">1589</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -915,7 +915,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>value_type comparator </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01669">1669</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01674">1674</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -941,7 +941,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>The winner trees. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01677">1677</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01682">1682</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +967,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>Comperator instances. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01672">1672</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01677">1677</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +991,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01678">1678</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01683">1683</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1015,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01673">1673</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01678">1678</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1039,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01679">1679</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01684">1684</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1063,7 @@ template&lt;class ParentType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01674">1674</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01679">1679</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1089,7 @@ template&lt;class ParentType&gt; </div>
 
 <p>The priority queue. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01666">1666</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01671">1671</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -1102,10 +1102,10 @@ template&lt;class ParentType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1ppq__local.html">ppq_local</a></li><li class="navelem"><a class="el" href="classstxxl_1_1ppq__local_1_1minima__tree.html">minima_tree</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/78dd7ec6e72d7d6ef1209e594fc08e3759af5099">STXXL 1.4.1-366-g78dd7ec</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/0a80a8c55993948f7f2f6c2c5a51ff45b403045b">STXXL 1.4.1-380-g0a80a8c</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Aug 5 2016 06:26:54 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Feb 11 2017 06:27:24 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

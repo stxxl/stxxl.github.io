@@ -49,7 +49,7 @@ var searchData=
   ['update_5fblock_5fpointers',['update_block_pointers',['../classstxxl_1_1ppq__local_1_1external__array.html#adfcdf7c6227087754194a9d22b13a6ac',1,'stxxl::ppq_local::external_array']]],
   ['update_5fexternal_5fmin_5ftree',['update_external_min_tree',['../classstxxl_1_1parallel__priority__queue.html#a59331e843d5346f42339e18b49f8e05d',1,'stxxl::parallel_priority_queue']]],
   ['update_5fextract_5fbuffer',['update_extract_buffer',['../classstxxl_1_1ppq__local_1_1minima__tree.html#a9a7acd0ea384e8dadcf6c5eaa1410acf',1,'stxxl::ppq_local::minima_tree']]],
-  ['update_5fheap',['update_heap',['../classstxxl_1_1ppq__local_1_1minima__tree.html#abaf2a7d646277fb1b7d40a878241ded9',1,'stxxl::ppq_local::minima_tree']]],
+  ['update_5fheap',['update_heap',['../classstxxl_1_1ppq__local_1_1minima__tree.html#acdbee7b11d7e467435e71c47ececdc46',1,'stxxl::ppq_local::minima_tree']]],
   ['update_5fhint_5ftree',['update_hint_tree',['../classstxxl_1_1parallel__priority__queue.html#abbc3651bef86e5c1f8afce8555f0f7ac',1,'stxxl::parallel_priority_queue']]],
   ['update_5finternal_5farray',['update_internal_array',['../classstxxl_1_1ppq__local_1_1minima__tree.html#a94a6ed9618963e8e31ba28e1a474fda5',1,'stxxl::ppq_local::minima_tree']]],
   ['update_5fmax_5fdevice_5fid',['update_max_device_id',['../classstxxl_1_1config.html#a3ecfbee021014cb7fa3e1af8f85f0ba2',1,'stxxl::config']]],

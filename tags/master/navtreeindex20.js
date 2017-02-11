@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"deprecated_8h.html":[5,0,0,0,0,11],
 "deprecated_8h.html#a658dce45b7b08e131d60dcc2fe3421b5":[5,0,0,0,0,11,0],
 "deprecated_8h_source.html":[5,0,0,0,0,11],
 "deque.html":[5,0,0,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "functions_vars.html":[4,3,2],
 "functions_vars_0x61.html":[4,3,2,1],
 "functions_vars_0x62.html":[4,3,2,2],
-"functions_vars_0x63.html":[4,3,2,3],
-"functions_vars_0x64.html":[4,3,2,4]
+"functions_vars_0x63.html":[4,3,2,3]
 };

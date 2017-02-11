@@ -53,6 +53,7 @@ var searchData=
   ['stxxl_5fmerge3case',['STXXL_MERGE3CASE',['../multiway__merge_8h.html#a6205501af2dd9a760b5156e4e6f220ac',1,'multiway_merge.h']]],
   ['stxxl_5fmerge4case',['STXXL_MERGE4CASE',['../multiway__merge_8h.html#aa680e73606ca9127900b75d465d96a0b',1,'multiway_merge.h']]],
   ['stxxl_5fmng_5fcount_5fallocation',['STXXL_MNG_COUNT_ALLOCATION',['../block__manager_8h.html#a73be57524daf038ae09a467f64a92480',1,'block_manager.h']]],
+  ['stxxl_5fmove',['STXXL_MOVE',['../parallel__priority__queue_8h.html#ab484e7fb3625a7d4bc4c5917e6710463',1,'parallel_priority_queue.h']]],
   ['stxxl_5fmsg',['STXXL_MSG',['../verbose_8h.html#afec876b95f7d6cc4b0f0bd4c0d7d89a0',1,'verbose.h']]],
   ['stxxl_5fmsvc',['STXXL_MSVC',['../config_8h.html#a39cba26ce118740e13db29cf575fb148',1,'config.h']]],
   ['stxxl_5fmultiway_5fmergesort_5fcopy_5flast',['STXXL_MULTIWAY_MERGESORT_COPY_LAST',['../compiletime__settings_8h.html#a26cace5a811bf623ebf7def340f90ec2',1,'compiletime_settings.h']]],

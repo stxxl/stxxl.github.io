@@ -5,5 +5,6 @@ var searchData=
   ['terminated',['TERMINATED',['../classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92a0a58cb137e2cbe8a2d5e64a4d7e11f00',1,'stxxl::request_queue_impl_worker']]],
   ['terminating',['TERMINATING',['../classstxxl_1_1request__queue__impl__worker.html#a6c07aa8083daf39e96f9f792e44f6a92abb0c455e5e2f102d0668c43e959501e9',1,'stxxl::request_queue_impl_worker']]],
   ['total_5fnum_5fgroups',['total_num_groups',['../classstxxl_1_1priority__queue.html#a91f452e41cfaa7551464b2b691e11dbea1ad573d96313315171a1268039a197ed',1,'stxxl::priority_queue']]],
-  ['trunc',['TRUNC',['../classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4dad98093d5f87d92b611e1e5b92002e490',1,'stxxl::file']]]
+  ['trunc',['TRUNC',['../classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4dad98093d5f87d92b611e1e5b92002e490',1,'stxxl::file']]],
+  ['type_5ferror',['TYPE_ERROR',['../classstxxl_1_1ppq__local_1_1minima__tree.html#a33a3c56e662b666938bec1a620bab79cafa55a52074d2807092608a1de7dee078',1,'stxxl::ppq_local::minima_tree']]]
 ];

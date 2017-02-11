@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#aac469c10e327419d81ea51d0dfcb308a":[4,0,1,6,3,9],
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ace34657bbb0c5b056b2f91df45348781":[4,0,1,6,3,12],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ad056f31d97ff5537b5b4c394226f9c44":[4,0,1,6,3,7],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af189e12a61266a191f6ee3bc2fb2f6a2":[4,0,1,6,3,2],
 "structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#af6362f61687539d32308f475381d4ac5":[4,0,1,6,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structstxxl_1_1parallel_1_1LoserTreeReference_1_1Loser.html#a48c0805c373ecd0d23868b45159070c4":[4,0,1,8,43,0,1],
 "structstxxl_1_1parallel_1_1Settings.html":[4,0,1,8,45],
 "structstxxl_1_1parallel_1_1Settings.html#a05d908de83b316b16588b33f52f2e003":[4,0,1,8,45,16],
-"structstxxl_1_1parallel_1_1Settings.html#a078a08f8287d371369906ac9a538b5d8":[4,0,1,8,45,10],
-"structstxxl_1_1parallel_1_1Settings.html#a2b372a9e57f436b1ce47580ca24ef02f":[4,0,1,8,45,8],
-"structstxxl_1_1parallel_1_1Settings.html#a32868d4c80c77730db7bc78f156f471c":[4,0,1,8,45,18]
+"structstxxl_1_1parallel_1_1Settings.html#a078a08f8287d371369906ac9a538b5d8":[4,0,1,8,45,10]
 };

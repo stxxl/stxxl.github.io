@@ -22,7 +22,7 @@ var searchData=
   ['normal_5fstack',['normal_stack',['../classstxxl_1_1normal__stack.html#afa95b071973031ffd663cca9d2da9d87',1,'stxxl::normal_stack::normal_stack()'],['../classstxxl_1_1normal__stack.html#ad6b51214a04c748e2fc6224dcd4ca913',1,'stxxl::normal_stack::normal_stack(const StackType &amp;stack_)']]],
   ['not_5fsentinel',['not_sentinel',['../structstxxl_1_1priority__queue__local_1_1ext__merger_1_1sequence__state.html#a0af79ccebf0c42a212b95cfcaa510537',1,'stxxl::priority_queue_local::ext_merger::sequence_state::not_sentinel()'],['../classstxxl_1_1priority__queue__local_1_1loser__tree.html#a7c62aa47ec63dd46c7e5c16098f253f9',1,'stxxl::priority_queue_local::loser_tree::not_sentinel()']]],
   ['notify_5fall',['notify_all',['../classstxxl_1_1condition__variable.html#a7e83873729f95d010c22ec43bc9d211c',1,'stxxl::condition_variable']]],
-  ['notify_5fchange',['notify_change',['../classstxxl_1_1winner__tree.html#a02c7778f54116729cc3a523163d170a3',1,'stxxl::winner_tree']]],
+  ['notify_5fchange',['notify_change',['../classstxxl_1_1winner__tree.html#a29f0b50c3dc8fe5276ac3b5fa1db9f24',1,'stxxl::winner_tree']]],
   ['notify_5fone',['notify_one',['../classstxxl_1_1condition__variable.html#abd7d52a29a74c3646b830eea7523de47',1,'stxxl::condition_variable']]],
   ['notify_5fwaiters',['notify_waiters',['../classstxxl_1_1request__interface.html#aa305e70190a4c491d649ff7b9a9d56bc',1,'stxxl::request_interface::notify_waiters()'],['../classstxxl_1_1request__with__waiters.html#a5552a19a8169029341e9dfa48b47f97f',1,'stxxl::request_with_waiters::notify_waiters()']]],
   ['num_5fblocks',['num_blocks',['../classstxxl_1_1ppq__local_1_1external__array.html#a7491964281b8d38178b010e29622f0f6',1,'stxxl::ppq_local::external_array']]],

@@ -128,7 +128,7 @@ class stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;</h3>
 <p>An <a class="el" href="classstxxl_1_1ppq__local_1_1external__array__writer_1_1iterator.html">external_array_writer::iterator</a> has two states: normal and "live". In normal mode, the iterator only has a valid index into the external array's items. In normal mode, only index calculations are possible. Once operator*() is called, the iterators goes into "live" mode by requesting access to the corresponding block. Using reference counting the blocks is written once all iterators are finished with the corresponding block. Since with operator*() we cannot know if the value is going to be written or read, when going to live mode, the block must be read from EM. This read overhead, however, is optimized by marking blocks as uninitialized in <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html" title="External array stores a sorted sequence of values on the hard disk and allows access to the first blo...">external_array</a>, and skipping reads for then. In a full performance build, no block needs to be read from disk. Reads only occur in debug mode, when the results are verify.</p>
 <p>The iterator's normal/live mode only stays active for the individual iterator object. When an iterator is copied/assigned/calculated with the mode is NOT inherited! The exception is prefix operator ++, which is used by <a class="el" href="namespacestxxl_1_1potentially__parallel.html#a91128a51552d9769de40d4e2ee56eb5d" title="Multi-way merging dispatcher. ">multiway_merge()</a> to fill an array. Thus the implementation of the iterator heavily depends on the behavior of <a class="el" href="namespacestxxl_1_1potentially__parallel.html#a91128a51552d9769de40d4e2ee56eb5d" title="Multi-way merging dispatcher. ">multiway_merge()</a> and is optimized for it. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l00416">416</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l00421">421</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stxxl::ppq_local::external_array_writer&lt; ExternalArrayType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -222,7 +222,7 @@ template&lt;class ExternalArrayType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01231">1231</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01236">1236</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ template&lt;class ExternalArrayType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01226">1226</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01231">1231</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ template&lt;class ExternalArrayType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01228">1228</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01233">1233</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ template&lt;class ExternalArrayType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01230">1230</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01235">1235</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ template&lt;class ExternalArrayType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01509">1509</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01514">1514</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -338,7 +338,7 @@ template&lt;class ExternalArrayType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01544">1544</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01549">1549</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00220">STXXL_ASSERT</a>.</p>
 
@@ -368,9 +368,9 @@ template&lt;class ExternalArrayType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01553">1553</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01558">1558</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
-<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l04156">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::check_external_level()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l04039">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::flush_internal_arrays()</a>.</p>
+<p>Referenced by <a class="el" href="parallel__priority__queue_8h_source.html#l04165">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::check_external_level()</a>, and <a class="el" href="parallel__priority__queue_8h_source.html#l04048">stxxl::parallel_priority_queue&lt; ValueType, CompareType, AllocStrategy, BlockSize, DefaultMemSize, MaxItems &gt;::flush_internal_arrays()</a>.</p>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ template&lt;class ExternalArrayType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01558">1558</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01563">1563</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +427,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>decrease reference count on the block, and possibly write it to disk (called when an iterator releases live mode). </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01288">1288</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01293">1293</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -459,7 +459,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>read block into memory and increase reference count (called when an iterator goes live on the block). </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01263">1263</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01268">1268</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 <p>References <a class="el" href="verbose_8h_source.html#l00156">STXXL_DEBUG</a>.</p>
 
@@ -488,7 +488,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>scope based debug variable </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01237">1237</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01242">1242</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +514,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>reference to the external array to be written </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01241">1241</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01246">1246</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>optimization: hold live iterators for the expected boundary blocks of <a class="el" href="namespacestxxl_1_1potentially__parallel.html#a91128a51552d9769de40d4e2ee56eb5d" title="Multi-way merging dispatcher. ">multiway_merge()</a>. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01258">1258</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01263">1263</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +566,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>mutex for reference counting array (this is actually nicer than openmp's critical) </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01254">1254</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01259">1259</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>reference counters for the number of live iterators on the corresponding block in <a class="el" href="classstxxl_1_1ppq__local_1_1external__array.html" title="External array stores a sorted sequence of values on the hard disk and allows access to the first blo...">external_array</a>. </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01250">1250</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01255">1255</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ template&lt;class ExternalArrayType &gt; </div>
 
 <p>total number of iterators referencing this writer </p>
 
-<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01245">1245</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
+<p>Definition at line <a class="el" href="parallel__priority__queue_8h_source.html#l01250">1250</a> of file <a class="el" href="parallel__priority__queue_8h_source.html">parallel_priority_queue.h</a>.</p>
 
 </div>
 </div>
@@ -631,10 +631,10 @@ template&lt;class ExternalArrayType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestxxl.html">stxxl</a></li><li class="navelem"><a class="el" href="namespacestxxl_1_1ppq__local.html">ppq_local</a></li><li class="navelem"><a class="el" href="classstxxl_1_1ppq__local_1_1external__array__writer.html">external_array_writer</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/78dd7ec6e72d7d6ef1209e594fc08e3759af5099">STXXL 1.4.1-366-g78dd7ec</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/0a80a8c55993948f7f2f6c2c5a51ff45b403045b">STXXL 1.4.1-380-g0a80a8c</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Aug 5 2016 06:26:53 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Feb 11 2017 06:27:23 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

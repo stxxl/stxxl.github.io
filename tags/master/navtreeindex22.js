@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"linuxaio__queue_8cpp_source.html":[5,0,1,2,7],
 "linuxaio__queue_8h.html":[5,0,0,0,0,4,10],
 "linuxaio__queue_8h_source.html":[5,0,0,0,0,4,10],
 "linuxaio__request_8cpp.html":[5,0,1,2,8],
@@ -111,8 +112,8 @@ var NAVTREEINDEX22 =
 "msvc__compatibility_8h_source.html":[5,0,0,0,0,13],
 "multiseq__selection_8h.html":[5,0,0,0,0,6,5],
 "multiseq__selection_8h.html#a1c019cca175eda4487ec810dd020a9ad":[5,0,0,0,0,6,5,4],
-"multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780":[5,0,0,0,0,6,5,3],
 "multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780":[5,0,0,0,0,6,5,2],
+"multiseq__selection_8h.html#a4bd0975d41d84f7e96245fec7648a780":[5,0,0,0,0,6,5,3],
 "multiseq__selection_8h.html#a82de8c30e09e4ccc486e6b17edd3adcb":[5,0,0,0,0,6,5,5],
 "multiseq__selection_8h_source.html":[5,0,0,0,0,6,5],
 "multiway__merge_8h.html":[5,0,0,0,0,6,6],
@@ -172,8 +173,8 @@ var NAVTREEINDEX22 =
 "namespacemembers_0x77.html":[3,1,0,19],
 "namespacemembers_enum.html":[3,1,4],
 "namespacemembers_eval.html":[3,1,5],
-"namespacemembers_func.html":[3,1,1],
 "namespacemembers_func.html":[3,1,1,0],
+"namespacemembers_func.html":[3,1,1],
 "namespacemembers_func_0x61.html":[3,1,1,1],
 "namespacemembers_func_0x63.html":[3,1,1,2],
 "namespacemembers_func_0x64.html":[3,1,1,3],
@@ -212,8 +213,8 @@ var NAVTREEINDEX22 =
 "namespacestxxl_1_1matrix__local.html":[4,0,1,6],
 "namespacestxxl_1_1mng__local.html":[4,0,1,7],
 "namespacestxxl_1_1mng__local.html":[3,0,0,7],
-"namespacestxxl_1_1parallel.html":[4,0,1,8],
 "namespacestxxl_1_1parallel.html":[3,0,0,8],
+"namespacestxxl_1_1parallel.html":[4,0,1,8],
 "namespacestxxl_1_1potentially__parallel.html":[4,0,1,9],
 "namespacestxxl_1_1potentially__parallel.html":[3,0,0,9],
 "namespacestxxl_1_1ppq__local.html":[4,0,1,10],
@@ -222,10 +223,10 @@ var NAVTREEINDEX22 =
 "namespacestxxl_1_1priority__queue__local.html":[3,0,0,11],
 "namespacestxxl_1_1sort__helper.html":[4,0,1,12],
 "namespacestxxl_1_1sort__helper.html":[3,0,0,12],
-"namespacestxxl_1_1sort__local.html":[3,0,0,13],
 "namespacestxxl_1_1sort__local.html":[4,0,1,13],
-"namespacestxxl_1_1stable__ksort__local.html":[3,0,0,14],
+"namespacestxxl_1_1sort__local.html":[3,0,0,13],
 "namespacestxxl_1_1stable__ksort__local.html":[4,0,1,14],
+"namespacestxxl_1_1stable__ksort__local.html":[3,0,0,14],
 "namespacestxxl_1_1stream.html":[3,0,0,15],
 "namespacestxxl_1_1stream.html":[4,0,1,15],
 "new__alloc_8h.html":[5,0,0,0,0,1,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "pager_8h.html#gga35c83847f9847b5e2edc59305a11a52aa4328d560aa45511da84993d408e9b440":[5,0,0,0,0,3,7,0,0],
 "pager_8h.html#gga35c83847f9847b5e2edc59305a11a52aacb90206153ec622270b8289bf5a2179e":[5,0,0,0,0,3,7,0,1],
 "pager_8h_source.html":[5,0,0,0,0,3,7],
-"pages.html":[],
-"parallel_2losertree_8h.html":[5,0,0,0,0,6,3]
+"pages.html":[]
 };

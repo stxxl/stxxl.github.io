@@ -56,7 +56,7 @@ var NAVTREEINDEX =
 "classstxxl_1_1hash__map_1_1hash__map__iterator__base.html#a7eba57e6606b1186e5312b8d7560b8e1",
 "classstxxl_1_1matrix.html#a4b8027b11a1dbfd560d45c2b1b58de61",
 "classstxxl_1_1parallel_1_1LoserTreeCopy.html#a1d5c3a9bd4efecfe627e5987ee7e5d1c",
-"classstxxl_1_1parallel__priority__queue.html#ab2b0f0b72e787e8799909556a3f368ff",
+"classstxxl_1_1parallel__priority__queue.html#ab7ada3ef3b5f561e823d673360bcd3d2",
 "classstxxl_1_1ppq__local_1_1ppq__iterator.html#aa0a25626ae02ea3e690e22c53180d667",
 "classstxxl_1_1priority__queue__local_1_1loser__tree.html#acd8523d000fd31e2179b2c72f72009ad",
 "classstxxl_1_1scoped__mutex__lock.html#ab1caf543130a03cc070ea39bee0ab4c7",
@@ -65,17 +65,17 @@ var NAVTREEINDEX =
 "classstxxl_1_1stream_1_1vector__iterator2stream.html#aa5a210d89a3ccedd584c042e6d8bfe16",
 "classstxxl_1_1unordered__map.html#a79b43fa6d409ace1b803a99bb41819ae",
 "classstxxl_1_1vector__iterator.html#a56552774dc635650ad6d4c459246d320",
-"deprecated_8h.html#a658dce45b7b08e131d60dcc2fe3421b5",
-"functions_vars_0x65.html",
-"linuxaio__queue_8h.html",
-"parallel_2losertree_8h.html#a21bc3f07bffaee4cc9268f335b1c2c3f",
-"stream_8h_source.html",
-"structstxxl_1_1hash__map_1_1HashedValuesStream.html#a7c6e1606c21381efe283efb5d85353ed",
-"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#ad056f31d97ff5537b5b4c394226f9c44",
-"structstxxl_1_1parallel_1_1Settings.html#a40dc0f4cb2f75d2d13dce74c3633af3e",
-"structstxxl_1_1run__cursor.html#a625a059ed54c0b9102d2021e2d691cc8",
-"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a3552e444bfd57dd47e2f253d2b417332",
-"vector_8h.html"
+"deprecated_8h.html",
+"functions_vars_0x64.html",
+"linuxaio__queue_8cpp_source.html",
+"parallel_2losertree_8h.html",
+"stream_8h.html#gabe49ec6c7a8f693a2b75e10c3a04f447",
+"structstxxl_1_1hash__map_1_1HashedValuesStream.html#a70cd088d4a93f859a376b939c6a06a94",
+"structstxxl_1_1matrix__local_1_1feedable__strassen__winograd__block__grained_3_01ValueType_00_01e7c8bcfad33794a580e711dfab7e2cbb.html#aac469c10e327419d81ea51d0dfcb308a",
+"structstxxl_1_1parallel_1_1Settings.html#a2b372a9e57f436b1ce47580ca24ef02f",
+"structstxxl_1_1run__cursor.html",
+"structstxxl_1_1tuple_3_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01Plug_01_4.html#a129a33b99db7afe69b999e5da95a183e",
+"utils_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,11 +1,13 @@
 <map id="stxxl::ppq_local::minima_tree&lt; ParentType &gt;" name="stxxl::ppq_local::minima_tree&lt; ParentType &gt;">
-<area shape="rect" id="node8" href="$structstxxl_1_1ppq__local_1_1minima__tree_1_1head__comp.html" title="WinnerTree&#45;Comparator for the head winner tree. It accesses all relevant data structures from the pri..." alt="" coords="1605,233,1823,274"/>
-<area shape="rect" id="node2" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::heaps_comp \&gt;" alt="" coords="1013,105,1200,161"/>
-<area shape="rect" id="node3" href="$structstxxl_1_1ppq__local_1_1minima__tree_1_1heaps__comp.html" title="Comparator for the insertion heaps winner tree. " alt="" coords="592,206,816,247"/>
-<area shape="rect" id="node4" href="$structstxxl_1_1winner__tree_1_1stats__type.html" title="Collection of stats from the winner_tree. " alt="" coords="309,225,492,266"/>
-<area shape="rect" id="node6" href="$classstxxl_1_1winner__tree.html" title="The class winner_tree is a binary tournament tree. " alt="" coords="641,117,767,158"/>
-<area shape="rect" id="node7" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::head_comp \&gt;" alt="" coords="1917,260,2097,316"/>
-<area shape="rect" id="node9" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::ia_comp \&gt;" alt="" coords="1025,280,1188,336"/>
-<area shape="rect" id="node5" href="$classstxxl_1_1fake__timer.html" title="Class fake_timer is a drop&#45;in replacement for timer, which does nothing. " alt="" coords="5,232,124,259"/>
-<area shape="rect" id="node10" href="$structstxxl_1_1ppq__local_1_1minima__tree_1_1ia__comp.html" title="Comparator for the internal arrays winner tree. " alt="" coords="605,349,803,390"/>
+<area shape="rect" id="node10" href="$structstxxl_1_1ppq__local_1_1minima__tree_1_1head__comp.html" title="WinnerTree&#45;Comparator for the head winner tree. It accesses all relevant data structures from the pri..." alt="" coords="1703,306,1920,347"/>
+<area shape="rect" id="node2" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::heaps_comp \&gt;" alt="" coords="1085,89,1272,145"/>
+<area shape="rect" id="node3" href="$structstxxl_1_1ppq__local_1_1minima__tree_1_1heaps__comp.html" title="Comparator for the insertion heaps winner tree. " alt="" coords="664,183,888,225"/>
+<area shape="rect" id="node4" href="$structstxxl_1_1winner__tree_1_1stats__type.html" title="Collection of stats from the winner_tree. " alt="" coords="351,86,533,127"/>
+<area shape="rect" id="node8" href="$classstxxl_1_1winner__tree.html" title="The class winner_tree is a binary tournament tree. " alt="" coords="713,321,839,362"/>
+<area shape="rect" id="node9" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::head_comp \&gt;" alt="" coords="2015,299,2195,355"/>
+<area shape="rect" id="node11" href="$classstxxl_1_1winner__tree.html" title="stxxl::winner_tree\l\&lt; stxxl::ppq_local::\lminima_tree::ia_comp \&gt;" alt="" coords="1097,292,1260,348"/>
+<area shape="rect" id="node5" href="$classstxxl_1_1fake__timer.html" title="Class fake_timer is a drop&#45;in replacement for timer, which does nothing. " alt="" coords="26,93,145,120"/>
+<area shape="rect" id="node6" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; my_pointer_size \&gt;" alt="" coords="362,367,522,409"/>
+<area shape="rect" id="node7" href="$structstxxl_1_1choose__int__types.html" title="stxxl::choose_int_types\l\&lt; PtrSize \&gt;" alt="" coords="5,367,165,409"/>
+<area shape="rect" id="node12" href="$structstxxl_1_1ppq__local_1_1minima__tree_1_1ia__comp.html" title="Comparator for the internal arrays winner tree. " alt="" coords="677,471,875,513"/>
 </map>

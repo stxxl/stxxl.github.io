@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="comment">// polymorphic_downcast to linuxaio_request,</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="comment">// request is canceled, but was not yet posted.</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__request.html">linuxaio_request</a>*<span class="keyword">&gt;</span>(pos-&gt;get())-&gt;completed(<span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__request.html">linuxaio_request</a>*<span class="keyword">&gt;</span>(req.<a class="code" href="classstxxl_1_1counting__ptr.html#a1229e207a868d8fa4dc56478c53f0ac4">get</a>())-&gt;completed(<span class="keyword">false</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="classstxxl_1_1linuxaio__queue.html#a71c1bad5325ab9e87063ee3701652c5e">num_waiting_requests</a>--; <span class="comment">// will never block</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="comment">// polymorphic_downcast to linuxaio_request,</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="comment">// request is canceled, already posted</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__request.html">linuxaio_request</a>*<span class="keyword">&gt;</span>(pos-&gt;get())-&gt;completed(<span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classstxxl_1_1linuxaio__request.html">linuxaio_request</a>*<span class="keyword">&gt;</span>(req.<a class="code" href="classstxxl_1_1counting__ptr.html#a1229e207a868d8fa4dc56478c53f0ac4">get</a>())-&gt;completed(<span class="keyword">true</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="classstxxl_1_1linuxaio__queue.html#a40b1c10a5bf414425d1105a2702d24fb">num_free_events</a>++;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <a class="code" href="classstxxl_1_1linuxaio__queue.html#a00439003a90b8c28734c3012ca90f411">num_posted_requests</a>--; <span class="comment">// will never block</span></div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">// wait for at least one of them to finish</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">long</span> num_events;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">while</span>(1) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            num_events = syscall(SYS_io_getevents, <a class="code" href="classstxxl_1_1linuxaio__queue.html#a569a3d3883776b64f51235b7d016171a">context</a>, 1, <a class="code" href="classstxxl_1_1linuxaio__queue.html#a8560d57ba84d41f76f325432d6f79e13">max_events</a>, events, NULL);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">if</span> (num_events &lt; 0) {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">if</span> (errno == EINTR) {</div>
@@ -460,10 +460,10 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5d0aa56803c8250a5d891761f6bfc5c7.html">io</a></li><li class="navelem"><a class="el" href="linuxaio__queue_8cpp.html">linuxaio_queue.cpp</a></li>
-    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/78dd7ec6e72d7d6ef1209e594fc08e3759af5099">STXXL 1.4.1-366-g78dd7ec</a><script type="text/javascript">
+    <li class="footer"><a href="http://github.com/stxxl/stxxl/commit/0a80a8c55993948f7f2f6c2c5a51ff45b403045b">STXXL 1.4.1-380-g0a80a8c</a><script type="text/javascript">
 var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u='http://panthema.net/wik-331/';    _paq.push(['setTrackerUrl', u+'js/']);    _paq.push(['setSiteId', '1']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);  })();
 </script>
-<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Fri Aug 5 2016 06:26:10 for STXXL by
+<noscript><img src="http://panthema.net/wik-331/js/?idsite=1&amp;rec=1" style="border:0" alt="" /></noscript> - Generated on Sat Feb 11 2017 06:26:20 for STXXL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

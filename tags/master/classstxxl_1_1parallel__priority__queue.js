@@ -119,7 +119,7 @@ var classstxxl_1_1parallel__priority__queue =
     [ "m_mem_total", "classstxxl_1_1parallel__priority__queue.html#ab87ece0e393068cb21d0aa1cc8752bd9", null ],
     [ "m_minima", "classstxxl_1_1parallel__priority__queue.html#a65711b0635d336a1d9b8874dc5610d3e", null ],
     [ "m_num_hinted_blocks", "classstxxl_1_1parallel__priority__queue.html#a1469a4c20bda6b23f00181694467fd44", null ],
-    [ "m_num_insertion_heaps", "classstxxl_1_1parallel__priority__queue.html#a7ddbeee436022f09842c851cb159fa6e", null ],
+    [ "m_num_insertion_heaps", "classstxxl_1_1parallel__priority__queue.html#ab8ea3e5b7138f63f018768a90eb072a5", null ],
     [ "m_num_read_blocks", "classstxxl_1_1parallel__priority__queue.html#a1e590c3d0a28e83ddf968b9b22d9ad2f", null ],
     [ "m_num_read_blocks_per_ea", "classstxxl_1_1parallel__priority__queue.html#a9539e786cee2d79b0356397978f3bb54", null ],
     [ "m_num_used_read_blocks", "classstxxl_1_1parallel__priority__queue.html#a6a19b0319abcab20f35ef7987bb9d336", null ],
