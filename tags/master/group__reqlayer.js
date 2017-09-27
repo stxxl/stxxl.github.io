@@ -56,7 +56,7 @@ var group__reqlayer =
     ] ],
     [ "request", "classstxxl_1_1request.html", [
       [ "request", "classstxxl_1_1request.html#a1918e0d98776525030b749fdb934b9ba", null ],
-      [ "~request", "classstxxl_1_1request.html#aa493740b038cc9ee9f807f43d542027f", null ],
+      [ "~request", "classstxxl_1_1request.html#ac52c9d651726db8d13097297aee2389d", null ],
       [ "check_alignment", "classstxxl_1_1request.html#a2de8efcbd71b81c4f99bb7ab5cd97db7", null ],
       [ "check_errors", "classstxxl_1_1request.html#aa166e648300d441d7f7f24c4eabe9b97", null ],
       [ "check_nref", "classstxxl_1_1request.html#a57da42be833f1b124814641d04216298", null ],
@@ -86,7 +86,7 @@ var group__reqlayer =
         [ "READ", "classstxxl_1_1request__interface.html#a4774453b93e75d6ced620f825241b338a11d12dedaaf72fbd519716e2437521ba", null ],
         [ "WRITE", "classstxxl_1_1request__interface.html#a4774453b93e75d6ced620f825241b338aafd15541dd5bdeeeab27c71164abdf5e", null ]
       ] ],
-      [ "~request_interface", "classstxxl_1_1request__interface.html#a56cbeab8a6eeade4af5176491b920b99", null ],
+      [ "~request_interface", "classstxxl_1_1request__interface.html#a07133b0df3e66172cee4fd3dc712d875", null ],
       [ "add_waiter", "classstxxl_1_1request__interface.html#ae3194ef76daed5fcca680c5f69e8dbf5", null ],
       [ "cancel", "classstxxl_1_1request__interface.html#a11f008c40dea1c6df4d6167beddb505a", null ],
       [ "completed", "classstxxl_1_1request__interface.html#a95808758989f12a22a2825545a41318e", null ],
@@ -103,7 +103,7 @@ var group__reqlayer =
         [ "WRITE", "classstxxl_1_1request__queue.html#a330c5d52d07ab56a84ea661d2d5f2942a50e811b9c6e1e4c329590574b0dfc519", null ],
         [ "NONE", "classstxxl_1_1request__queue.html#a330c5d52d07ab56a84ea661d2d5f2942a6eb91131ab7966bac7fe1e795e996f34", null ]
       ] ],
-      [ "~request_queue", "classstxxl_1_1request__queue.html#ada7c33873c527d3d79fb9eb3430d9a22", null ],
+      [ "~request_queue", "classstxxl_1_1request__queue.html#a61a647c76a03400665c8444dc17c6fb7", null ],
       [ "add_request", "classstxxl_1_1request__queue.html#a0eaf39e88b503f5b6080aeb49c30b11b", null ],
       [ "cancel_request", "classstxxl_1_1request__queue.html#a2dd36e863a99fc6cce2a188a9835a6e3", null ],
       [ "set_priority_op", "classstxxl_1_1request__queue.html#aee00551ac8097a9e710947776f018afd", null ]

@@ -14,7 +14,7 @@ var classstxxl_1_1file =
       [ "REQUIRE_DIRECT", "classstxxl_1_1file.html#a276dbe4d84ff07cd1489bce799a8bb4da4b9a5825056045cc00843c95d6cc984d", null ]
     ] ],
     [ "file", "classstxxl_1_1file.html#ae9afae8a645c9c5c5fdf505eee31273f", null ],
-    [ "~file", "classstxxl_1_1file.html#aad6969db5f128ab177ef0e05a117cc59", null ],
+    [ "~file", "classstxxl_1_1file.html#a852aead09bedf392566699a9518a6ca3", null ],
     [ "add_request_ref", "classstxxl_1_1file.html#a1e77b6501f6dfe49b62a3624176d8400", null ],
     [ "aread", "classstxxl_1_1file.html#ad4ed5ac8e2d25005716fa420f05c56c1", null ],
     [ "awrite", "classstxxl_1_1file.html#a3aabedede40fe8447134847a2feb5722", null ],

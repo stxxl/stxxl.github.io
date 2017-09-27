@@ -1,7 +1,7 @@
 var classstxxl_1_1request =
 [
     [ "request", "classstxxl_1_1request.html#a1918e0d98776525030b749fdb934b9ba", null ],
-    [ "~request", "classstxxl_1_1request.html#aa493740b038cc9ee9f807f43d542027f", null ],
+    [ "~request", "classstxxl_1_1request.html#ac52c9d651726db8d13097297aee2389d", null ],
     [ "check_alignment", "classstxxl_1_1request.html#a2de8efcbd71b81c4f99bb7ab5cd97db7", null ],
     [ "check_errors", "classstxxl_1_1request.html#aa166e648300d441d7f7f24c4eabe9b97", null ],
     [ "check_nref", "classstxxl_1_1request.html#a57da42be833f1b124814641d04216298", null ],
